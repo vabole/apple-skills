@@ -77,6 +77,18 @@ curl -sL "https://sosumi.ai/design/human-interface-guidelines/buttons" > skills/
 | **ios-design-consultant** | — | UX/design guidance for Liquid Glass apps |
 | **ios-dev** | — | SwiftUI development patterns & aesthetics |
 
+### Workflow & Pattern Guides
+
+> These are **expert workflow/pattern guides** — they teach *how* to approach tasks (audit performance, refactor views, build apps), as opposed to the reference docs above which document *what APIs exist*.
+> Originally from [Dimillian/Skills](https://github.com/Dimillian/Skills) by Thomas Ricouard. MIT License.
+
+| Skill | Files | Description |
+|-------|-------|-------------|
+| **guide-swiftui-performance-audit** | 5 | Audit and improve SwiftUI runtime performance from code review and architecture |
+| **guide-swiftui-ui-patterns** | 27 | Best practices and examples for building SwiftUI views and components |
+| **guide-swiftui-view-refactor** | 2 | Refactor SwiftUI views for consistent structure and Observation usage |
+| **guide-macos-spm-packaging** | 16 | Scaffold, build, and package SwiftPM-based macOS apps without Xcode |
+
 ### Utilities
 | Skill | Description |
 |-------|-------------|
@@ -134,7 +146,7 @@ Each skill has a `SKILL.md` with metadata and instructions, plus reference `.md`
 ## Structure
 
 ```
-skills/                     # 26 skills
+skills/                     # 30 skills (26 reference + 4 guides)
 ├── swiftui/                # 50 SwiftUI reference files
 ├── hig/                    # 41 HIG reference files
 ├── ios-liquid-glass/       # 17 Liquid Glass API docs
@@ -145,7 +157,11 @@ skills/                     # 26 skills
 ├── tipkit/                 # TipKit framework
 ├── healthkit/              # HealthKit API docs
 ├── ...                     # and more
-└── apple-docs-index/       # Framework doc indexes
+├── apple-docs-index/       # Framework doc indexes
+├── guide-swiftui-performance-audit/  # Performance audit guide
+├── guide-swiftui-ui-patterns/        # UI patterns guide (26 references)
+├── guide-swiftui-view-refactor/      # View refactoring guide
+└── guide-macos-spm-packaging/        # macOS SPM packaging guide
 scripts/
 └── refresh-docs.sh         # Re-download all docs from sosumi.ai
 ```
