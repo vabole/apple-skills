@@ -1,0 +1,10 @@
+{
+  "name": "apple-skills",
+  "description": "Apple development skills for Claude Code and Codex — iOS 26+ APIs, SwiftUI, Liquid Glass, SwiftData, and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "vabole"
+  },
+  "repository": "https://github.com/vabole/apple-skills",
+  "keywords": ["ios", "swift", "swiftui", "xcode", "apple", "liquid-glass", "ios26"]
+}
