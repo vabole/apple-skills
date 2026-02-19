@@ -2,7 +2,7 @@
 title: TextField
 description: A control that displays an editable text interface.
 source: https://developer.apple.com/documentation/swiftui/textfield
-timestamp: 2026-01-19T10:23:14.801Z
+timestamp: 2026-02-19T07:56:07.517Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -47,7 +47,7 @@ var body: some View {
 }
 ```
 
-
+![A text field showing the typed email mruiz2@icloud.com, with a text](https://docs-assets.developer.apple.com/published/04af293882dc1735f3509e96b505c22f/SwiftUI-TextField-echoText%402x.png)
 
 The bound value doesn’t have to be a string. By using a [Format Style](/documentation/Foundation/FormatStyle), you can bind the text field to a nonstring type, using the format style to convert the typed text into an instance of the bound type. The following example uses a [Format Style](/documentation/Foundation/PersonNameComponents/FormatStyle) to convert the name typed in the text field to a [Person Name Components](/documentation/Foundation/PersonNameComponents) instance. A [Text](/documentation/swiftui/text) view below the text field shows the debug description string of this instance.
 
@@ -69,7 +69,7 @@ var body: some View {
 }
 ```
 
-
+![A text field showing the typed name Maria Ruiz, with a text view below](https://docs-assets.developer.apple.com/published/9402e56b2ab7d1ecb4affbf31b33a158/SwiftUI-TextField-nameComponents%402x.png)
 
 ### Text field prompts
 
@@ -88,9 +88,9 @@ Form {
 }
 ```
 
+![A macOS form, showing two text fields, arranged vertically, with labels to](https://docs-assets.developer.apple.com/published/57123691ff0ea6e4aef0b64159694c89/TextField-prompt-1%402x.png)
 
-
-
+![An iOS form, showing two text fields, arranged vertically, with prompt](https://docs-assets.developer.apple.com/published/44b9e3ed28de35f80542a55067929c3f/TextField-prompt-2%402x.png)
 
 ### Styling text fields
 
@@ -117,7 +117,7 @@ var body: some View {
 }
 ```
 
-
+![Two vertically-stacked text fields, with the prompt text Given Name and](https://docs-assets.developer.apple.com/published/db7d89f1d4ec1edf1cf57d9a07dca96b/SwiftUI-TextField-roundedBorderStyle%402x.png)
 
 ## Conforms To
 

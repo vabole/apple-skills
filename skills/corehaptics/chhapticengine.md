@@ -2,7 +2,7 @@
 title: CHHapticEngine
 description: An object that represents the connection to the haptic server.
 source: https://developer.apple.com/documentation/corehaptics/chhapticengine
-timestamp: 2026-01-19T11:03:13.746Z
+timestamp: 2026-02-19T07:56:04.478Z
 ---
 
 **Navigation:** [Corehaptics](/documentation/corehaptics)
@@ -23,7 +23,7 @@ class CHHapticEngine
 
 If you want your app to play custom haptics, you need to create a haptic engine. The haptic engine establishes the connection between your app and the underlying device hardware. Even though you can define a haptic pattern without an engine, you need the engine to play that pattern.
 
-
+![A dictionary defines a pattern, from which the haptic engine creates a pattern player for playing the haptic.](https://docs-assets.developer.apple.com/published/66a613deacd96bc7ac01d5a15e3eae73/media-3242669%402x.png)
 
 Even though your app makes a request through the haptic engine, the operating system could still override the request with system services, like haptics from system notifications.
 

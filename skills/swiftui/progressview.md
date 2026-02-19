@@ -2,7 +2,7 @@
 title: ProgressView
 description: A view that shows the progress toward completion of a task.
 source: https://developer.apple.com/documentation/swiftui/progressview
-timestamp: 2026-01-19T10:23:14.349Z
+timestamp: 2026-02-19T07:56:08.215Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -40,7 +40,7 @@ struct LinearProgressDemoView: View {
 }
 ```
 
-
+![A horizontal bar that represents progress, with a More button](https://docs-assets.developer.apple.com/published/3456594d290f72e26be845c9f9a84d6d/ProgressView-1-macOS%402x.png)
 
 To create an indeterminate progress view, use an initializer that doesn’t take a progress value:
 
@@ -50,7 +50,7 @@ var body: some View {
 }
 ```
 
-
+![An indeterminate progress view, presented as a spinning set of gray lines](https://docs-assets.developer.apple.com/published/23f14adddc00728dc65bed3ebbe411e7/ProgressView-2-macOS%402x.png)
 
 You can also create a progress view that covers a closed range of [Date](/documentation/Foundation/Date) values. As long as the current date is within the range, the progress view automatically updates, filling or depleting the progress view as it nears the end of the range. The following example shows a five-minute timer whose start time is that of the progress view’s initialization:
 
@@ -66,7 +66,7 @@ struct DateRelativeProgressDemoView: View {
 }
 ```
 
-
+![A horizontal progress view that shows a bar partially filled with as it](https://docs-assets.developer.apple.com/published/115df9b28ca681ce09da67b5bcbb3e7d/ProgressView-3-macOS%402x.png)
 
 ### Styling progress views
 
@@ -93,7 +93,7 @@ struct PinkBorderedProgressViewStyle: ProgressViewStyle {
 }
 ```
 
-
+![Two horizontal progress views, one at 25 percent complete and the other at 75 percent,](https://docs-assets.developer.apple.com/published/dc98a460b4d5e6b5babf527056cf7298/ProgressView-4-macOS%402x.png)
 
 SwiftUI provides two built-in progress view styles, [linear](/documentation/swiftui/progressviewstyle/linear) and [circular](/documentation/swiftui/progressviewstyle/circular), as well as an automatic style that defaults to the most appropriate style in the current context. The following example shows a circular progress view that starts at 60 percent completed.
 
@@ -110,7 +110,7 @@ struct CircularProgressDemoView: View {
 }
 ```
 
-
+![A ring shape, filled to 60 percent completion with a blue](https://docs-assets.developer.apple.com/published/a8e6132e107636866628b393aeccaa93/ProgressView-5-macOS%402x.png)
 
 On platforms other than macOS, the circular style may appear as an indeterminate indicator instead.
 

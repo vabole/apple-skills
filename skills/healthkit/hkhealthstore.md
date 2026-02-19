@@ -2,7 +2,7 @@
 title: HKHealthStore
 description: The access point for all data managed by HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkhealthstore
-timestamp: 2026-01-19T10:21:39.628Z
+timestamp: 2026-02-19T07:56:01.374Z
 ---
 
 **Navigation:** [Healthkit](/documentation/healthkit)
@@ -116,6 +116,10 @@ For more information, see [setting-up](/documentation/healthkit/setting-up-healt
 - [add(_:to:completion:)](/documentation/healthkit/hkhealthstore/add(_:to:completion:)) Associates the provided samples with the specified workout.
 - [start(_:)](/documentation/healthkit/hkhealthstore/start(_:)) Starts a workout session for the current app.
 - [end(_:)](/documentation/healthkit/hkhealthstore/end(_:)) Ends a workout session for the current app.
+
+## Structures
+
+- [HKHealthStore.HKUserPreferencesDidChangeMessage](/documentation/healthkit/hkhealthstore/hkuserpreferencesdidchangemessage)
 
 ## Instance Methods
 

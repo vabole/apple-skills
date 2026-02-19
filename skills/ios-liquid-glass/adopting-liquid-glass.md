@@ -2,7 +2,7 @@
 title: Adopting Liquid Glass
 description: Find out how to bring the new material to your app.
 source: https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass
-timestamp: 2026-01-17T15:42:13.016Z
+timestamp: 2026-02-19T07:56:03.554Z
 ---
 
 **Navigation:** [Technologyoverviews](/documentation/technologyoverviews)
@@ -15,7 +15,7 @@ timestamp: 2026-01-17T15:42:13.016Z
 
 If you have an existing app, adopting Liquid Glass doesn’t mean reinventing your app from the ground up. Start by building your app in the latest version of Xcode to see the changes. As you review your app, use the following sections to understand the scope of changes and learn how you can adopt these best practices in your interface.
 
-
+![An image of a Mac, iPad, and iPhone showing the Mount Fuji landmark in the Landmarks app.](https://docs-assets.developer.apple.com/published/ce193ec494e91d4150c3356442824213/adoption-guide-intoducing-liquid-glass-hero%402x.png)
 
 #### See your app with Liquid Glass
 
@@ -29,7 +29,7 @@ Interfaces across Apple platforms feature a new dynamic [materials](/design/Huma
 
 **Reduce your use of custom backgrounds in controls and navigation elements.** Any custom backgrounds and appearances you use in these elements might overlay or interfere with Liquid Glass or other effects that the system provides, such as the scroll edge effect. Make sure to check any custom backgrounds in elements like split views, tab bars, and toolbars. Prefer to remove custom effects and let the system determine the background appearance, especially for the following elements:
 
-**Test your interface with accessibility settings.** Translucency and fluid morphing animations contribute to the look and feel of Liquid Glass, but can adapt to people’s needs. For example, people might turn on accessibility settings that reduce transparency or motion in the interface, which can remove or modify certain effects. If you use standard components from system frameworks, this experience adapts automatically. Ensure your custom elements and animations provide a good fallback experience when these settings are on as well.
+**Test your interface with a variety of display and accessibility settings.** Translucency and fluid morphing animations contribute to the look and feel of Liquid Glass, but can adapt to people’s needs. For example, people can choose a preferred look for Liquid Glass in their device’s settings, or turn on accessibility settings that reduce transparency or motion in the interface. These settings can remove or modify certain effects. If you use standard components from system frameworks, this experience adapts automatically. Ensure you test your app’s custom elements, colors, and animations with different configurations of these settings.
 
 **Avoid overusing Liquid Glass effects.** If you apply Liquid Glass effects to a custom control, do so sparingly. Liquid Glass seeks to bring attention to the underlying content, and overusing this material in multiple custom controls can provide a subpar user experience by distracting from that content. Limit these effects to the most important functional elements in your app. To learn more, read [Applying-Liquid-Glass-to-custom](/documentation/SwiftUI/Applying-Liquid-Glass-to-custom-views).
 
@@ -37,7 +37,7 @@ Interfaces across Apple platforms feature a new dynamic [materials](/design/Huma
 
 [app](/design/Human-Interface-Guidelines/app-icons) take on a design that’s dynamic and expressive. Updates to the icon grid result in a standardized iconography that’s visually consistent across devices and concentric with hardware and other elements across the system. App icons now contain layers, which dynamically respond to lighting and other visual effects the system provides. iOS, iPadOS, and macOS all now offer default (light), dark, clear, and tinted appearance variants, empowering people to personalize the look and feel of their Home Screen.
 
-
+![A grid showing the Podcasts app icon in the six style variants: default, dark, clear (light), clear (dark), tinted (light), and tinted (dark).](https://docs-assets.developer.apple.com/published/4044e9125b89cc2a80d416b80ec5f087/adoption-guide-app-icons-render-modes%402x.png)
 
 **Reimagine your app icon for Liquid Glass.** Apply key design principles to help your app icon shine:
 
@@ -49,7 +49,7 @@ Interfaces across Apple platforms feature a new dynamic [materials](/design/Huma
 
 **Compose and preview in Icon Composer.** Drag and drop app icon layers that you export from your design app directly into the Icon Composer app. Icon Composer lets you add a background, create layer groupings, adjust layer attributes like opacity, and preview your design with system effects and appearances. Icon Composer is available in the latest version of Xcode and for download from [](https://developer.apple.com/design/resources/). To learn more, read [creating-your-app-icon-using-icon](/documentation/Xcode/creating-your-app-icon-using-icon-composer).
 
-
+![A screenshot of the Icon Composer app showing the Podcasts app icon in the default style.](https://docs-assets.developer.apple.com/published/2ee579d88374d7784e3de4698c3d542e/adoption-guide-icon-composer-overview%402x.png)
 
 **Preview against the updated grids.** The system applies masking to produce your final icon shape — rounded rectangle for iOS, iPadOS, and macOS, and circular for watchOS. Keep elements centered to avoid clipping. Irregularly shaped icons receive a system-provided background. See how your app icon looks with the updated grids to determine whether you need to make adjustments. Download these grids from [](https://developer.apple.com/design/resources/).
 
@@ -59,7 +59,7 @@ Controls have a refreshed look across platforms, and come to life when a person 
 
 **Review updates to control appearance and dimensions.** If you use standard controls from system frameworks and don’t hard-code their layout metrics, your app adopts changes to shapes and sizes automatically when you rebuild your app with the latest version of Xcode. Review changes to the following controls and any others and make sure they continue to look at home with the rest of your interface:
 
-**Review your use of color in controls.** Be judicious with your use of [color](/design/Human-Interface-Guidelines/color) in controls and navigation so they stay legible. If you do apply color to these elements, leverage system colors to automatically adapt to light and dark contexts.
+**Review your use of color in controls.** Be judicious with your use of [color](/design/Human-Interface-Guidelines/color) in controls and navigation so they stay legible. If you do apply color to these elements, leverage system colors, or define a custom color with light and dark variants, and an increased contrast option for each variant.
 
 **Check for crowding or overlapping of controls.** Prefer to use standard spacing metrics instead of overriding them, and avoid overcrowding or layering Liquid Glass elements on top of each other.
 

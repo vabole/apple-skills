@@ -2,7 +2,7 @@
 title: Landmarks: Refining the system provided Liquid Glass effect in toolbars
 description: Organize toolbars into related groupings to improve their appearance and utility.
 source: https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars
-timestamp: 2026-01-17T15:42:28.965Z
+timestamp: 2026-02-19T07:56:02.878Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -11,7 +11,7 @@ timestamp: 2026-01-17T15:42:28.965Z
 
 # Landmarks: Refining the system provided Liquid Glass effect in toolbars
 
-**Available on:** iOS 26.0+, iPadOS 26.0+, macOS 26.0+, Xcode 26.0+
+**Available on:** iOS 26.0+, iPadOS 26.0+, Mac Catalyst 26.0+, macOS 26.0+, Xcode 26.0+
 
 > Organize toolbars into related groupings to improve their appearance and utility.
 
@@ -28,7 +28,7 @@ This sample demonstrates how to refine the system provided glass effect in toolb
 
 The system applies Liquid Glass to the toolbar items automatically.
 
-
+![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/5074257308473e4332f64b4f188098de/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
 
 ## Organize the toolbar items into logical groupings
 

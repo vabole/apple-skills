@@ -2,7 +2,7 @@
 title: Buttons
 description: A button initiates an instantaneous action.
 source: https://developer.apple.com/design/human-interface-guidelines/buttons
-timestamp: 2026-01-17T15:45:10.374Z
+timestamp: 2026-02-19T07:55:54.884Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -39,7 +39,7 @@ System buttons offer a range of styles that support customization while providin
 
 **Use style — not size — to visually distinguish the preferred choice among multiple options.** When you use buttons of the same size to offer two or more options, you signal that the options form a coherent set of choices. By contrast, placing two buttons of different sizes near each other can make the interface look confusing and inconsistent. If you want to highlight the preferred or most likely option in a set, use a more prominent button style for that option and a less prominent style for the remaining ones.
 
-**Avoid applying a similar color to button labels and content layer backgrounds.** If your app already has bright, colorful content in the content layer, prefer using the default monochromatic appearance of button labels. If you use a similar color for labels on Liquid Glass controls and the content behind the controls, it can result in a lower color contrast. For more guidance, see [Liquid Glass color](/design/human-interface-guidelines/color#Liquid-Glass-color).
+**Avoid applying a similar color to button labels and content layer backgrounds.** If your app already has bright, colorful content in the content layer, prefer using the default monochromatic appearance of button labels. For more guidance, see [Liquid Glass color](/design/human-interface-guidelines/color#Liquid-Glass-color).
 
 ## Content
 

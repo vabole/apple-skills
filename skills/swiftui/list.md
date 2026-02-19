@@ -2,7 +2,7 @@
 title: List
 description: A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
 source: https://developer.apple.com/documentation/swiftui/list
-timestamp: 2026-01-17T15:34:52.564Z
+timestamp: 2026-02-19T07:56:08.396Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -33,7 +33,7 @@ var body: some View {
 }
 ```
 
-
+![A vertical list with three text views.](https://docs-assets.developer.apple.com/published/d78009ccd78b71238938528c05b70d1c/List-1-iOS%402x.png)
 
 More commonly, you create lists dynamically from an underlying collection of data. The following example shows how to create a simple list from an array of an `Ocean` type which conforms to [Identifiable](/documentation/Swift/Identifiable):
 
@@ -58,7 +58,7 @@ var body: some View {
 }
 ```
 
-
+![A vertical list with five text views, each with the name of an](https://docs-assets.developer.apple.com/published/a77e63fad0ed8d8fa53ef462fe01e2a6/List-2-iOS%402x.png)
 
 ### Supporting selection in lists
 
@@ -81,7 +81,7 @@ private var oceans = [
 @State private var multiSelection = Set<UUID>()
 
 var body: some View {
-    NavigationStack {
+    NavigationView {
         List(oceans, selection: $multiSelection) {
             Text($0.name)
         }
@@ -94,7 +94,7 @@ var body: some View {
 
 When people make a single selection by tapping or clicking, the selected cell changes its appearance to indicate the selection. To enable multiple selections with tap gestures, put the list into edit mode by either modifying the [edit Mode](/documentation/swiftui/environmentvalues/editmode) value, or adding an [Edit Button](/documentation/swiftui/editbutton) to your app’s interface. When you put the list into edit mode, the list shows a circle next to each list item. The circle contains a checkmark when the user selects the associated item. The example above uses an Edit button, which changes its title to Done while in edit mode:
 
-
+![A navigation view with the title Oceans and a vertical list that contains](https://docs-assets.developer.apple.com/published/949b2bed10274ec967fa27a113020e9b/List-3-iOS%402x.png)
 
 People can make multiple selections without needing to enter edit mode on devices that have a keyboard and mouse or trackpad, like Mac and iPad.
 
@@ -111,16 +111,15 @@ struct Ocean: Identifiable, Hashable {
      let stats: [String: String]
  }
 
- @Observable
- class OceanStore {
-     var oceans = [Ocean]()
+ class OceanStore: ObservableObject {
+     @Published var oceans = [Ocean]()
      func loadStats() async {}
  }
 
- @Environment(OceanStore.self) var store
+ @EnvironmentObject var store: OceanStore
 
  var body: some View {
-     NavigationStack {
+     NavigationView {
          List(store.oceans) { ocean in
              HStack {
                  Text(ocean.name)
@@ -173,7 +172,7 @@ struct ContentView: View {
     @State private var singleSelection: UUID?
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             List(selection: $singleSelection) {
                 ForEach(oceanRegions) { region in
                     Section(header: Text("Major \(region.name) Ocean Seas")) {
@@ -191,7 +190,7 @@ struct ContentView: View {
 
 Because this example uses single selection, people can make selections outside of edit mode on all platforms.
 
-
+![A vertical list split into sections titled Major Pacific Ocean Seas,](https://docs-assets.developer.apple.com/published/6bcb184683b070eed33ede7aa2775cea/List-4-iOS%402x.png)
 
 > [!NOTE]
 > In iOS 15, iPadOS 15, and tvOS 15 and earlier, lists support selection only in edit mode, even for single selections.
@@ -239,13 +238,13 @@ struct ContentView: View {
 }
 ```
 
-
+![A list providing an expanded view of a tree structure. Some rows have a](https://docs-assets.developer.apple.com/published/be9c84b8dbaf63becfdaed28332a89e0/List-5-iOS%402x.png)
 
 ### Styling lists
 
 SwiftUI chooses a display style for a list based on the platform and the view type in which it appears. Use the [listStyle(_:)](/documentation/swiftui/view/liststyle(_:)) modifier to apply a different [List Style](/documentation/swiftui/liststyle) to all lists within a view. For example, adding `.listStyle(.plain)` to the example shown in the “Creating Multidimensional Lists” topic applies the [plain](/documentation/swiftui/liststyle/plain) style, the following screenshot shows:
 
-
+![A vertical list split into sections titled Major Pacific Ocean Seas,](https://docs-assets.developer.apple.com/published/d1d46ab3e64ce8b26d1fe9a61ea3ffa5/List-6-iOS%402x.png)
 
 ## Conforms To
 

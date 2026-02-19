@@ -1,7 +1,7 @@
 ---
 title: User Notifications
 source: https://developer.apple.com/documentation/usernotifications
-timestamp: 2026-01-19T10:22:53.152Z
+timestamp: 2026-02-19T07:56:05.346Z
 ---
 
 ## Essentials
@@ -331,7 +331,7 @@ timestamp: 2026-01-19T10:22:53.152Z
 - [var request: UNNotificationRequest](/documentation/usernotifications/unnotification/request)
 - [var date: Date](/documentation/usernotifications/unnotification/date)
 
-## Push notifications in safari
+## Push notifications in Safari
 
 - [Sending web push notifications in web apps and browsers](/documentation/usernotifications/sending-web-push-notifications-in-web-apps-and-browsers)
 

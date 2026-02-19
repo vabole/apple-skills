@@ -2,7 +2,7 @@
 title: AreaMark
 description: Chart content that represents data using the area of one or more regions.
 source: https://developer.apple.com/documentation/charts/areamark
-timestamp: 2026-01-19T10:22:46.969Z
+timestamp: 2026-02-19T07:56:08.120Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -59,7 +59,7 @@ Chart(cheeseburgerCost) { cost in
 
 The resulting chart automatically scales and labels the axes based on the data, and fills the area under the data points with a default color:
 
-
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](https://docs-assets.developer.apple.com/published/36b91667605910cb6256e819437543de/AreaMark-1-macOS%402x.png)
 
 If you want only the line without filling in the area below the line, use [Line Mark](/documentation/charts/linemark) instead.
 
@@ -96,7 +96,7 @@ Chart(cheeseburgerCostByItem) { cost in
 
 The chart automatically assigns a different color to each region, and adds a legend that indicates what each color represents based on the names that you provide to the modifier:
 
-
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. Three irregular, non-intersecting, monotonically increasing, piecewise linear curves start near the lower left and continue toward the upper right. The area under the bottom curve is filled with blue. The area above the bottom curve and below the next curve is filled with green. The area above the second and below the top curve is filled with orange. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://docs-assets.developer.apple.com/published/f03ac9a62e36cdb1ce6df64115395802/AreaMark-2-macOS%402x.png)
 
 ### Stack the data in different ways
 
@@ -113,7 +113,7 @@ Chart(cheeseburgerCostByItem) { cost in
 }
 ```
 
-
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 100 on the y-axis. The entire chart is filled with color, divided into three different horizontal regions that are separated by irregular, piecewise linear curves that span the width of the chart. The area under the bottom curve is filled with blue. The area above the bottom curve and below the top curve is filled with green. The area above the top curve is filled with orange. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://docs-assets.developer.apple.com/published/f4379eba09194b147f20c639f3cd0683/AreaMark-3-macOS%402x.png)
 
 Alternatively, you can use [center](/documentation/charts/markstackingmethod/center) stacking to create a streamgraph, which shifts the area chart’s baseline to the center of the chart’s plotting area:
 
@@ -128,7 +128,7 @@ Chart(cheeseburgerCostByItem) { cost in
 }
 ```
 
-
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of -1 to 1 on the y-axis. Three irregular, piecewise linear horizontal regions appear near the middle of the chart, growing from small on the left to larger on the right. The top region is filled with orange, the middle region is filled with green, and the bottom region is filled with blue. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://docs-assets.developer.apple.com/published/bd7f2fe8fa45dce254912e1fbd5e86c1/AreaMark-4-macOS%402x.png)
 
 ### Create a range area chart
 
@@ -157,7 +157,7 @@ Chart(data) { day in
 
 This creates a filled region that’s shaped by the start and end points on each date:
 
-
+![A chart that shows month names on the x-axis, ranging from January to October, and a number in the range 0 to 80 on the y-axis. A solid blue region spans the chart from left to right. The region is close to the middle of the y-axis on either end, and closer to the top of the chart in the middle. The region is thinner at the ends and thicker in the middle.](https://docs-assets.developer.apple.com/published/312b9822d288c8f1e400decc5e04ad9e/AreaMark-5-macOS%402x.png)
 
 ```swift
 
@@ -167,6 +167,7 @@ This creates a filled region that’s shaped by the start and end points on each
 
 - [ChartContent](/documentation/charts/chartcontent)
 - [Copyable](/documentation/Swift/Copyable)
+- [Escapable](/documentation/Swift/Escapable)
 - [Sendable](/documentation/Swift/Sendable)
 - [SendableMetatype](/documentation/Swift/SendableMetatype)
 

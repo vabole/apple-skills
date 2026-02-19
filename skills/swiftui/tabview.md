@@ -2,7 +2,7 @@
 title: TabView
 description: A view that switches between multiple child views using interactive user interface elements.
 source: https://developer.apple.com/documentation/swiftui/tabview
-timestamp: 2026-01-17T15:34:51.974Z
+timestamp: 2026-02-19T07:56:06.030Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -43,7 +43,7 @@ TabView {
 }
 ```
 
-
+![A tab bar with three tabs, each with an icon image and a text label.](https://docs-assets.developer.apple.com/published/c472aa711f964c7e6b5127956e024e18/TabView-1%402x.png)
 
 To programmatically select different tabs, use the [init(selection:content:)](/documentation/swiftui/tabview/init(selection:content:)) initializer. You can assign a selection value to each tab using a `Tab` initializer that takes a value. Each tab should have a unique selection value and all tabs should have the same selection value type. When people select a tab in the tab view, the tab view updates the selection binding to the value of the currently selected tab.
 

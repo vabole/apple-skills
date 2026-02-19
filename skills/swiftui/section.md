@@ -2,7 +2,7 @@
 title: Section
 description: A container view that you can use to add hierarchy within certain views.
 source: https://developer.apple.com/documentation/swiftui/section
-timestamp: 2026-01-19T10:23:07.089Z
+timestamp: 2026-02-19T07:56:11.045Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -33,6 +33,7 @@ Create sections that expand and collapse by using an initializer that accepts an
 ## Conforms To
 
 - [Copyable](/documentation/Swift/Copyable)
+- [Escapable](/documentation/Swift/Escapable)
 - [TableRowContent](/documentation/swiftui/tablerowcontent)
 - [View](/documentation/swiftui/view)
 

@@ -2,7 +2,7 @@
 title: XCUIElement
 description: A UI element in an application.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuielement
-timestamp: 2026-01-17T15:38:14.342Z
+timestamp: 2026-02-19T07:56:00.668Z
 ---
 
 **Navigation:** [Xcuiautomation](/documentation/xcuiautomation)
@@ -41,6 +41,7 @@ In macOS and iPadOS 15 and later, [XCUIElement](/documentation/xcuiautomation/xc
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
 - [CustomStringConvertible](/documentation/Swift/CustomStringConvertible)
 - [Equatable](/documentation/Swift/Equatable)
+- [Escapable](/documentation/Swift/Escapable)
 - [Hashable](/documentation/Swift/Hashable)
 - [NSObjectProtocol](/documentation/ObjectiveC/NSObjectProtocol)
 - [Sendable](/documentation/Swift/Sendable)

@@ -2,7 +2,7 @@
 title: Toolbars
 description: A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
 source: https://developer.apple.com/design/human-interface-guidelines/toolbars
-timestamp: 2026-01-17T15:45:12.980Z
+timestamp: 2026-02-19T07:55:58.106Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -35,11 +35,9 @@ In contrast to a toolbar, a [Tab bars](/design/human-interface-guidelines/tab-ba
 
 **Reduce the use of toolbar backgrounds and tinted controls.** Any custom backgrounds and appearances you use might overlay or interfere with background effects that the system provides. Instead, use the content layer to inform the color and appearance of the toolbar, and use a [ScrollEdgeEffectStyle](/documentation/SwiftUI/ScrollEdgeEffectStyle) when necessary to distinguish the toolbar area from the content area. This approach helps your app express its unique personality without distracting from content.
 
-**Avoid applying a similar color to toolbar item labels and content layer backgrounds.** If your app already has bright, colorful content in the content layer, prefer using the default monochromatic appearance of toolbars. If you use a similar color for labels on Liquid Glass controls and the content behind the controls, it can result in a lower color contrast. For more guidance, see [Liquid Glass color](/design/human-interface-guidelines/color#Liquid-Glass-color).
+**Avoid applying a similar color to toolbar item labels and content layer backgrounds.** If your app already has bright, colorful content in the content layer, prefer using the default monochromatic appearance of toolbars. For more guidance, see [Liquid Glass color](/design/human-interface-guidelines/color#Liquid-Glass-color).
 
 **Prefer using standard components in a toolbar.** By default, standard buttons, text fields, headers, and footers have corner radii that are concentric with bar corners. If you need to create a custom component, ensure that its corner radius is also concentric with the bar’s corners.
-
-**Avoid using a segmented control in a toolbar.** Segmented controls let people switch contexts, whereas a toolbar’s actions are specific to the current view. For guidance, see [Segmented controls](/design/human-interface-guidelines/segmented-controls).
 
 **Consider temporarily hiding toolbars for a distraction-free experience.** Sometimes people appreciate a minimal interface to reduce distractions or reveal more content. If you support this, do so contextually when it makes the most sense, and offer ways to reliably restore hidden interface elements. For guidance, see [Going full screen](/design/human-interface-guidelines/going-full-screen). For guidance specific to visionOS, see [Immersive experiences](/design/human-interface-guidelines/immersive-experiences).
 

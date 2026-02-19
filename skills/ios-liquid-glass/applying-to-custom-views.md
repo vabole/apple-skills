@@ -2,7 +2,7 @@
 title: Applying Liquid Glass to custom views
 description: Configure, combine, and morph views using Liquid Glass effects.
 source: https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views
-timestamp: 2026-01-17T15:42:13.547Z
+timestamp: 2026-02-19T07:56:04.076Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -17,7 +17,7 @@ timestamp: 2026-01-17T15:42:13.547Z
 
 Interfaces across Apple platforms feature a new dynamic material called Liquid Glass, which combines the optical properties of glass with a sense of fluidity. Liquid Glass is a material that blurs content behind it, reflects color and light of surrounding content, and reacts to touch and pointer interactions in real time. Standard components in SwiftUI use Liquid Glass. Adopt Liquid Glass on custom components to move, combine, and morph them into one another with unique animations and transitions.
 
-
+![An image of the Landmarks sample code on iPad, in landscape, showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/86bea3b2d851de88291e52e7845ef990/liquid-glass-landmarks-hero%402x.png)
 
 To learn about Liquid Glass and more, see [Landmarks-Building-an-app-with-Liquid](/documentation/swiftui/landmarks-building-an-app-with-liquid-glass).
 
@@ -60,7 +60,7 @@ The `glassEffect(_:in:)` modifier captures the content to send to the container 
 
 In the example below, two images are placed close to each other and the Liquid Glass effects begin to blend their shapes together. This creates a fluid animation as components move around each other within a container:
 
-
+![Two Image views representing a scribble symbol on the left, and an eraser symbol on the right. The views are close to each other, which causes the Liquid Glass effects to merge the views.](https://docs-assets.developer.apple.com/published/1a45d9481869becc2c40374ece262425/liquid-glass-joined-view%402x.png)
 
 ```swift
 GlassEffectContainer(spacing: 40.0) {
@@ -84,7 +84,7 @@ GlassEffectContainer(spacing: 40.0) {
 
 In some cases, you want the geometries of multiple views to contribute to a single Liquid Glass effect capsule, even when your content is at rest. Use the [glassEffectUnion(id:namespace:)](/documentation/swiftui/view/glasseffectunion(id:namespace:)) modifier to specify that a view contributes to a unified effect with a particular ID. This combines all effects with a similar shape, Liquid Glass effect, and ID into a single shape with the applied Liquid Glass material. This is especially useful when creating views dynamically, or with views that live outside of a layout container, like an `HStack` or `VStack`.
 
-
+![Four Image views that have Liquid Glass effects applied. A rain cloud with lightning symbol and a sun with rain symbol have a unified Liquid Glass effect encapsulating both of them, followed by a unified Liquid Glass effect of a moon with stars symbol and a moon symbol.](https://docs-assets.developer.apple.com/published/4426e68642783951fe56b1d7485825cc/liquid-glass-unioned-views%402x.png)
 
 ```swift
 let symbolSet: [String] = ["cloud.bolt.rain.fill", "sun.rain.fill", "moon.stars.fill", "moon.fill"]

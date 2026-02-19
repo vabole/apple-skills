@@ -2,7 +2,7 @@
 title: Chart
 description: A SwiftUI view that displays a chart.
 source: https://developer.apple.com/documentation/charts/chart
-timestamp: 2026-01-19T10:22:44.859Z
+timestamp: 2026-02-19T07:56:10.806Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -49,7 +49,7 @@ Chart(data, id: \.category) { item in
 
 This chart initializer behaves a lot like a SwiftUI [For Each](/documentation/SwiftUI/ForEach), creating a mark — in this case, a bar — for each of the values in the `data` array:
 
-
+![A bar chart with three categories A, B, and C on the x-axis and a range of 0 to 10 on the y-axis. A bar appears in each category. All the bars are the same color. The first has a value of 5. The second has a value of 9. The third has a value of 7.](https://docs-assets.developer.apple.com/published/e8d88794fa77f18d67e494cac557a292/chart-1-macOS%402x.png)
 
 ### Controlling data series inside a chart
 
@@ -94,7 +94,7 @@ Chart {
 
 You indicate which series a line mark belongs to by specifying its `series` input parameter. The above chart also uses a [Rule Mark](/documentation/charts/rulemark) to produce a horizontal line segment that displays a constant threshold value across the width of the chart:
 
-
+![A line chart with three lines. Dates appear on the x-axis, spanning one full month, and company profit appears on the y-axis in the range of 0 to 750. Two of the lines trend upward from left to right, with occasional downward movement. The third line is purely horizontal at the level of 400.](https://docs-assets.developer.apple.com/published/689db8aa648e1884570bed622d3af3a1/chart-2-macOS%402x.png)
 
 ## Conforms To
 

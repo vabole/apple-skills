@@ -2,7 +2,7 @@
 title: Picker
 description: A control for selecting from a set of mutually exclusive values.
 source: https://developer.apple.com/documentation/swiftui/picker
-timestamp: 2026-01-19T10:23:15.837Z
+timestamp: 2026-02-19T07:56:10.518Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -48,7 +48,7 @@ List {
 
 If you provide a string label for the picker, as the example above does, the picker uses it to initialize a [Text](/documentation/swiftui/text) view as a label. Alternatively, you can use the [init(selection:content:label:)](/documentation/swiftui/picker/init(selection:content:label:)) initializer to compose the label from other views. The exact appearance of the picker depends on the context. If you use a picker in a [List](/documentation/swiftui/list) in iOS, it appears in a row with the label and selected value, and a chevron to indicate that you can tap the row to select a new value:
 
-
+![A screenshot of a list row that has the string Flavor on the left side,](https://docs-assets.developer.apple.com/published/4a351f4089665205b3b245871dac02b4/Picker-1-iOS%402x.png)
 
 For cases where adding a subtitle to the label is desired, use a view builder that creates multiple `Text` views where the first text represents the title and the second text represents the subtitle:
 
@@ -121,7 +121,7 @@ List {
 
 When the user selects chocolate, the picker sets `suggestedTopping` to the value in the associated tag:
 
-
+![A screenshot of two list rows. The first has the string Flavor on the left](https://docs-assets.developer.apple.com/published/8fa91ba9fd3404ee7c37adcf43ed6ebc/Picker-2-iOS%402x.png)
 
 Another example of when the views in a picker’s [For Each](/documentation/swiftui/foreach) need an explicit tag modifier is when you select over the cases of an enumeration that conforms to the [Identifiable](/documentation/Swift/Identifiable) protocol by using anything besides `Self` as the `id` parameter type. For example, a string enumeration might use the case’s `rawValue` string as the `id`. That identifier type doesn’t match the selection type, which is the type of the enumeration itself.
 
@@ -145,7 +145,7 @@ VStack {
 .pickerStyle(.segmented)
 ```
 
-
+![A screenshot of two segmented controls. The first has segments labeled](https://docs-assets.developer.apple.com/published/f82eb86c61133e4ffae038339d47ff3b/Picker-3-iOS%402x.png)
 
 ## Conforms To
 

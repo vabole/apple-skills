@@ -2,7 +2,7 @@
 title: LineMark
 description: Chart content that represents data using a sequence of connected line segments.
 source: https://developer.apple.com/documentation/charts/linemark
-timestamp: 2026-01-19T10:22:45.575Z
+timestamp: 2026-02-19T07:56:08.754Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -52,7 +52,7 @@ var body: some View {
 }
 ```
 
-
+![Line chart with date on x-axis and hours of sunshine on y-axis. One line showing 12 points representing hours of sunshine in a month 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62.](https://docs-assets.developer.apple.com/published/f5d223bb9ca48efff7a8b1d5772443a5/LineMarkSwift.LineMarkLineChart%402x.png)
 
 ### Plotting multiple lines
 
@@ -91,7 +91,7 @@ var body: some View {
 }
 ```
 
-
+![Multi-series line chart with date on x-axis and hours of sunshine on y-axis. Two lines showing 12 points representing hours of sunshine in a month for  a city. Seattle: 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62 and Cupertino: 1 196, 2 204, 3 253, 4 288, 5 311, 6 342, 7 360, 8 331, 9 300, 10 246, 11 212, 12 199.](https://docs-assets.developer.apple.com/published/664a5f51f8a32304b545b80911697bb0/LineMarkSwift.LineMarkMultiSeriesLineChart%402x.png)
 
 > [!NOTE]
 > Colors are repeated if the number of series is greater than the total number of colors.
@@ -100,6 +100,7 @@ var body: some View {
 
 - [ChartContent](/documentation/charts/chartcontent)
 - [Copyable](/documentation/Swift/Copyable)
+- [Escapable](/documentation/Swift/Escapable)
 - [Sendable](/documentation/Swift/Sendable)
 - [SendableMetatype](/documentation/Swift/SendableMetatype)
 

@@ -2,7 +2,7 @@
 title: Binding
 description: A property wrapper type that can read and write a value owned by a source of truth.
 source: https://developer.apple.com/documentation/swiftui/binding
-timestamp: 2026-01-17T15:34:41.318Z
+timestamp: 2026-02-19T07:56:07.915Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -67,6 +67,7 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 - [Collection](/documentation/Swift/Collection)
 - [Copyable](/documentation/Swift/Copyable)
 - [DynamicProperty](/documentation/swiftui/dynamicproperty)
+- [Escapable](/documentation/Swift/Escapable)
 - [Identifiable](/documentation/Swift/Identifiable)
 - [RandomAccessCollection](/documentation/Swift/RandomAccessCollection)
 - [Sendable](/documentation/Swift/Sendable)

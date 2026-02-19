@@ -2,7 +2,7 @@
 title: Image
 description: A view that displays an image.
 source: https://developer.apple.com/documentation/swiftui/image
-timestamp: 2026-01-19T10:23:05.861Z
+timestamp: 2026-02-19T07:56:06.903Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -37,7 +37,7 @@ Image("Landscape_4")
 Text("Water wheel")
 ```
 
-
+![An image of a water wheel and its adjoining building, resized to fit the](https://docs-assets.developer.apple.com/published/5d218460da75fc53e2a4398f3ab30a3b/Image-1%402x.png)
 
 You can use methods on the `Image` type as well as standard view modifiers to adjust the size of the image to fit your app’s interface. Here, the `Image` type’s [resizable(capInsets:resizingMode:)](/documentation/swiftui/image/resizable(capinsets:resizingmode:)) method scales the image to fit the current view. Then, the [aspectRatio(_:contentMode:)](/documentation/swiftui/view/aspectratio(_:contentmode:)) view modifier adjusts this resizing behavior to maintain the image’s original aspect ratio, rather than scaling the x- and y-axes independently to fill all four sides of the view. The article [Fitting-Images-into-Available](/documentation/swiftui/fitting-images-into-available-space) shows how to apply scaling, clipping, and tiling to `Image` instances of different sizes.
 
@@ -51,6 +51,7 @@ To use an image as a control, use one of the initializers that takes a `label` p
 
 - [Copyable](/documentation/Swift/Copyable)
 - [Equatable](/documentation/Swift/Equatable)
+- [Escapable](/documentation/Swift/Escapable)
 - [JournalingSuggestionAsset](/documentation/JournalingSuggestions/JournalingSuggestionAsset)
 - [Sendable](/documentation/Swift/Sendable)
 - [SendableMetatype](/documentation/Swift/SendableMetatype)

@@ -2,7 +2,7 @@
 title: State
 description: A property wrapper type that can read and write a value managed by SwiftUI.
 source: https://developer.apple.com/documentation/swiftui/state
-timestamp: 2026-01-17T15:34:40.973Z
+timestamp: 2026-02-19T07:56:07.220Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -35,13 +35,13 @@ struct PlayButton: View {
 }
 ```
 
-SwiftUI manages the property's storage. When the value changes, SwiftUI updates the parts of the view hierarchy that depend on the value. To access a state's underlying value, you use its [wrapped Value](/documentation/swiftui/state/wrappedvalue) property. However, as a shortcut Swift enables you to access the wrapped value by referring directly to the state instance. The above example reads and writes the `isPlaying` state property's wrapped value by referring to the property directly.
+SwiftUI manages the property’s storage. When the value changes, SwiftUI updates the parts of the view hierarchy that depend on the value. To access a state’s underlying value, you use its [wrapped Value](/documentation/swiftui/state/wrappedvalue) property. However, as a shortcut Swift enables you to access the wrapped value by referring directly to the state instance. The above example reads and writes the `isPlaying` state property’s wrapped value by referring to the property directly.
 
 Declare state as private in the highest view in the view hierarchy that needs access to the value. Then share the state with any subviews that also need access, either directly for read-only access, or as a binding for read-write access. You can safely mutate state properties from any thread.
 
 ### Share state with subviews
 
-If you pass a state property to a subview, SwiftUI updates the subview any time the value changes in the container view, but the subview can't modify the value. To enable the subview to modify the state's stored value, pass a [Binding](/documentation/swiftui/binding) instead.
+If you pass a state property to a subview, SwiftUI updates the subview any time the value changes in the container view, but the subview can’t modify the value. To enable the subview to modify the state’s stored value, pass a [Binding](/documentation/swiftui/binding) instead.
 
 For example, you can remove the `isPlaying` state from the play button in the above example, and instead make the button take a binding:
 
@@ -57,7 +57,7 @@ struct PlayButton: View {
 }
 ```
 
-Then you can define a player view that declares the state and creates a binding to the state. Get the binding to the state value by accessing the state's [projected Value](/documentation/swiftui/state/projectedvalue), which you get by prefixing the property name with a dollar sign (`$`):
+Then you can define a player view that declares the state and creates a binding to the state. Get the binding to the state value by accessing the state’s [projected Value](/documentation/swiftui/state/projectedvalue), which you get by prefixing the property name with a dollar sign (`$`):
 
 ```swift
 struct PlayerView: View {
@@ -73,7 +73,7 @@ struct PlayerView: View {
 }
 ```
 
-Like you do for a [State Object](/documentation/swiftui/stateobject), declare `State` as private to prevent setting it in a memberwise initializer, which can conflict with the storage management that SwiftUI provides. Unlike a state object, always initialize state by providing a default value in the state's declaration, as in the above examples. Use state only for storage that's local to a view and its subviews.
+Like you do for a [State Object](/documentation/swiftui/stateobject), declare `State` as private to prevent setting it in a memberwise initializer, which can conflict with the storage management that SwiftUI provides. Unlike a state object, always initialize state by providing a default value in the state’s declaration, as in the above examples. Use state only for storage that’s local to a view and its subviews.
 
 ### Store observable objects
 
@@ -95,7 +95,7 @@ struct ContentView: View {
 }
 ```
 
-A `State` property always instantiates its default value when SwiftUI instantiates the view. For this reason, avoid side effects and performance-intensive work when initializing the default value. For example, if a view updates frequently, allocating a new default object each time the view initializes can become expensive. Instead, you can defer the creation of the object using the [task(priority:_:)](/documentation/swiftui/view/task(priority:_:)) modifier, which is called only once when the view first appears:
+A `State` property always instantiates its default value when SwiftUI instantiates the view. For this reason, avoid side effects and performance-intensive work when initializing the default value. For example, if a view updates frequently, allocating a new default object each time the view initializes can become expensive. Instead, you can defer the creation of the object using the `View/task(priority:_:)` modifier, which is called only once when the view first appears:
 
 ```swift
 struct ContentView: View {
@@ -110,14 +110,14 @@ struct ContentView: View {
 }
 ```
 
-Delaying the creation of the observable state object ensures that unnecessary allocations of the object doesn't happen each time SwiftUI initializes the view. Using the [task(priority:_:)](/documentation/swiftui/view/task(priority:_:)) modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
+Delaying the creation of the observable state object ensures that unnecessary allocations of the object doesn’t happen each time SwiftUI initializes the view. Using the `View/task(priority:_:)` modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
 
 > [!NOTE]
-> For iOS 17+, use `@Observable` macro instead of `ObservableObject` protocol. Store `@Observable` objects in `@State` — SwiftUI will automatically track property changes. `@StateObject` and `@ObservedObject` are legacy patterns.
+> It’s possible to store an object that conforms to the [Observable Object](/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [State Object](/documentation/swiftui/stateobject) instead of [State](/documentation/swiftui/state) when storing the object.
 
 ### Share observable state objects with subviews
 
-To share an [Observable](/documentation/Observation/Observable) object stored in `State` with a subview, pass the object reference to the subview. SwiftUI updates the subview anytime an observable property of the object changes, but only when the subview's [body](/documentation/swiftui/view/body-8kl5o) reads the property. For example, in the following code `BookView` updates each time `title` changes but not when `isAvailable` changes:
+To share an [Observable](/documentation/Observation/Observable) object stored in `State` with a subview, pass the object reference to the subview. SwiftUI updates the subview anytime an observable property of the object changes, but only when the subview’s [body](/documentation/swiftui/view/body-8kl5o) reads the property. For example, in the following code `BookView` updates each time `title` changes but not when `isAvailable` changes:
 
 ```swift
 @Observable
@@ -168,7 +168,7 @@ struct DeleteBookView: View {
 }
 ```
 
-However, passing a [Binding](/documentation/swiftui/binding) to an object stored in `State` isn't necessary when you need to change properties of that object. For example, you can set the properties of the object to new values in a subview by passing the object reference instead of a binding to the reference:
+However, passing a [Binding](/documentation/swiftui/binding) to an object stored in `State` isn’t necessary when you need to change properties of that object. For example, you can set the properties of the object to new values in a subview by passing the object reference instead of a binding to the reference:
 
 ```swift
 struct ContentView: View {

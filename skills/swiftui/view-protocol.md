@@ -2,7 +2,7 @@
 title: View
 description: A type that represents part of your app’s user interface and provides modifiers that you use to configure views.
 source: https://developer.apple.com/documentation/swiftui/view
-timestamp: 2026-01-17T15:34:40.663Z
+timestamp: 2026-02-19T07:56:07.396Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -151,6 +151,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [NavigationLink](/documentation/swiftui/navigationlink)
 - [NavigationSplitView](/documentation/swiftui/navigationsplitview)
 - [NavigationStack](/documentation/swiftui/navigationstack)
+- [NavigationView](/documentation/swiftui/navigationview)
 - [NewDocumentButton](/documentation/swiftui/newdocumentbutton)
 - [OffsetShape](/documentation/swiftui/offsetshape)
 - [OutlineGroup](/documentation/swiftui/outlinegroup)
@@ -301,6 +302,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [dropPreviewsFormation(_:)](/documentation/swiftui/view/droppreviewsformation(_:)) Describes the way previews for a drop are composed.
 - [familyActivityPicker(title:headerText:footerText:isPresented:selection:)](/documentation/swiftui/view/familyactivitypicker(title:headertext:footertext:ispresented:selection:)) Present an activity picker sheet for selecting apps and websites to manage.
 - [formStyle(_:)](/documentation/swiftui/view/formstyle(_:)) Sets the style for forms in a view hierarchy.
+- [foveatedStreamingPauseSheet(session:)](/documentation/swiftui/view/foveatedstreamingpausesheet(session:))
 - [gameSaveSyncingAlert(directory:finishedLoading:)](/documentation/swiftui/view/gamesavesyncingalert(directory:finishedloading:)) Presents a modal view while the game synced directory loads.
 - [glassBackgroundEffect(_:displayMode:)](/documentation/swiftui/view/glassbackgroundeffect(_:displaymode:)) Fills the view’s background with a custom glass background effect and container-relative rounded rectangle shape.
 - [glassBackgroundEffect(_:in:displayMode:)](/documentation/swiftui/view/glassbackgroundeffect(_:in:displaymode:)) Fills the view’s background with a custom glass background effect and a shape that you specify.
@@ -317,6 +319,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [healthDataAccessRequest(store:readTypes:trigger:completion:)](/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion:)) Requests permission to read the specified HealthKit data types.
 - [healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)](/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:)) Requests permission to save and read the specified HealthKit data types.
 - [imagePlaygroundGenerationStyle(_:in:)](/documentation/swiftui/view/imageplaygroundgenerationstyle(_:in:)) Sets the generation style for an image playground.
+- [imagePlaygroundOptions(_:)](/documentation/swiftui/view/imageplaygroundoptions(_:)) Options influencing image generation
 - [imagePlaygroundPersonalizationPolicy(_:)](/documentation/swiftui/view/imageplaygroundpersonalizationpolicy(_:)) Policy determining whether to support the usage of people in the playground or not.
 - [imagePlaygroundSheet(isPresented:concept:sourceImage:onCompletion:onCancellation:)](/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:)) Presents the system sheet to create images from the specified input.
 - [imagePlaygroundSheet(isPresented:concept:sourceImageURL:onCompletion:onCancellation:)](/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation:)) Presents the system sheet to create images from the specified input.
@@ -359,7 +362,6 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [matchedTransitionSource(id:in:)](/documentation/swiftui/view/matchedtransitionsource(id:in:)) Identifies this view as the source of a navigation transition, such as a zoom transition.
 - [matchedTransitionSource(id:in:configuration:)](/documentation/swiftui/view/matchedtransitionsource(id:in:configuration:)) Identifies this view as the source of a navigation transition, such as a zoom transition.
 - [materialActiveAppearance(_:)](/documentation/swiftui/view/materialactiveappearance(_:)) Sets an explicit active appearance for materials in this view.
-- [multilineTextAlignment(strategy:)](/documentation/swiftui/view/multilinetextalignment(strategy:)) A modifier for the default text alignment strategy in the view hierarchy.
 - [navigationLinkIndicatorVisibility(_:)](/documentation/swiftui/view/navigationlinkindicatorvisibility(_:)) Configures whether navigation links show a disclosure indicator.
 - [navigationTransition(_:)](/documentation/swiftui/view/navigationtransition(_:)) Sets the navigation transition style for this view.
 - [onAppIntentExecution(_:perform:)](/documentation/swiftui/view/onappintentexecution(_:perform:)) Registers a handler to invoke in response to the specified app intent that your app receives.
@@ -376,7 +378,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [onInAppPurchaseStart(perform:)](/documentation/swiftui/view/oninapppurchasestart(perform:)) Add an action to perform when a user triggers the purchase button on a StoreKit view within this view.
 - [onInteractiveResizeChange(_:)](/documentation/swiftui/view/oninteractiveresizechange(_:)) Adds an action to perform when the enclosing window is being interactively resized.
 - [onMapCameraChange(frequency:_:)](/documentation/swiftui/view/onmapcamerachange(frequency:_:)) Performs an action when Map camera framing changes
-- [onOpenURL(prefersInApp:)](/documentation/swiftui/view/onopenurl(prefersinapp:)) Sets an  that prefers opening URL with an in-app browser. It’s equivalent to calling 
+- [onOpenURL(prefersInApp:)](/documentation/swiftui/view/onopenurl(prefersinapp:)) Sets an  that prefers opening URL with an in-app browser. The  closure takes a URL as input, and returns a  that indicates the outcome of the action.
 - [onWorldRecenter(action:)](/documentation/swiftui/view/onworldrecenter(action:)) Adds an action to perform when recentering the view with the digital crown.
 - [payLaterViewAction(_:)](/documentation/swiftui/view/paylaterviewaction(_:)) Sets the action on the PayLaterView. See .
 - [payLaterViewDisplayStyle(_:)](/documentation/swiftui/view/paylaterviewdisplaystyle(_:)) Sets the display style on the PayLaterView. See .
@@ -442,6 +444,9 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [tabletopGame(_:parent:automaticUpdate:)](/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:)) Adds a tabletop game to a view.
 - [tabletopGame(_:parent:automaticUpdate:interaction:)](/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:interaction:)) Supplies a closure which returns a new interaction whenever needed.
 - [task(id:name:executorPreference:priority:file:line:_:)](/documentation/swiftui/view/task(id:name:executorpreference:priority:file:line:_:)) Adds a task to perform before this view appears or when a specified value changes.
+- [task(id:name:priority:file:line:_:)](/documentation/swiftui/view/task(id:name:priority:file:line:_:)) Adds a task to perform before this view appears or when a specified value changes.
+- [task(name:executorPreference:priority:file:line:action:)](/documentation/swiftui/view/task(name:executorpreference:priority:file:line:action:)) Adds an asynchronous task to perform before this view appears.
+- [task(name:priority:file:line:_:)](/documentation/swiftui/view/task(name:priority:file:line:_:)) Adds an asynchronous task to perform before this view appears.
 - [textContentType(_:)](/documentation/swiftui/view/textcontenttype(_:)) Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [textInputFormattingControlVisibility(_:for:)](/documentation/swiftui/view/textinputformattingcontrolvisibility(_:for:)) Define which system text formatting controls are available.
 - [textRenderer(_:)](/documentation/swiftui/view/textrenderer(_:)) Returns a new view such that any text views within it will use  to draw themselves.
@@ -458,9 +463,6 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [toolbarItemHidden(_:)](/documentation/swiftui/view/toolbaritemhidden(_:)) Hides an individual view within a control group toolbar item.
 - [transactionPicker(isPresented:selection:)](/documentation/swiftui/view/transactionpicker(ispresented:selection:)) Presents a picker that selects a collection of transactions.
 - [transactionTask(_:action:)](/documentation/swiftui/view/transactiontask(_:action:)) Provides a task to perform before this view appears
-- [translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)](/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:)) Presents a translation popover when a given condition is true.
-- [translationTask(_:action:)](/documentation/swiftui/view/translationtask(_:action:)) Adds a task to perform before this view appears or when the translation configuration changes.
-- [translationTask(source:target:action:)](/documentation/swiftui/view/translationtask(source:target:action:)) Adds a task to perform before this view appears or when the specified source or target languages change.
 - [verifyIdentityWithWalletButtonStyle(_:)](/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:)) Sets the style to be used by the button. (see ).
 - [webViewBackForwardNavigationGestures(_:)](/documentation/swiftui/view/webviewbackforwardnavigationgestures(_:)) Determines whether horizontal swipe gestures trigger backward and forward page navigation.
 - [webViewContentBackground(_:)](/documentation/swiftui/view/webviewcontentbackground(_:)) Specifies the visibility of the webpage’s natural background color within this view.

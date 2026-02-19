@@ -2,7 +2,7 @@
 title: Landmarks: Applying a background extension effect
 description: Configure an image to blur and extend under a sidebar or inspector panel.
 source: https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect
-timestamp: 2026-01-17T15:42:27.848Z
+timestamp: 2026-02-19T07:56:02.665Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -11,7 +11,7 @@ timestamp: 2026-01-17T15:42:27.848Z
 
 # Landmarks: Applying a background extension effect
 
-**Available on:** iOS 26.0+, iPadOS 26.0+, macOS 26.0+, Xcode 26.0+
+**Available on:** iOS 26.0+, iPadOS 26.0+, Mac Catalyst 26.0+, macOS 26.0+, Xcode 26.0+
 
 > Configure an image to blur and extend under a sidebar or inspector panel.
 

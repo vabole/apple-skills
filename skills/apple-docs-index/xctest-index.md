@@ -1,7 +1,7 @@
 ---
 title: XCTest
 source: https://developer.apple.com/documentation/xctest
-timestamp: 2026-01-17T15:36:06.125Z
+timestamp: 2026-02-19T07:55:52.497Z
 ---
 
 ## Test cases and test methods
@@ -668,6 +668,22 @@ timestamp: 2026-01-17T15:36:06.125Z
 - [var name: String?](/documentation/xctest/xctattachment/name)
 - [var uniformTypeIdentifier: String](/documentation/xctest/xctattachment/uniformtypeidentifier)
 - [var userInfo: [AnyHashable : Any]?](/documentation/xctest/xctattachment/userinfo)
+
+#### Initializers
+
+- [convenience init(compressedContentsOfDirectory: URL)](/documentation/xctest/xctattachment/init(compressedcontentsofdirectory:))
+- [convenience init(contentsOfFile: URL)](/documentation/xctest/xctattachment/init(contentsoffile:))
+- [convenience init(contentsOfFile: URL, uniformTypeIdentifier: String)](/documentation/xctest/xctattachment/init(contentsoffile:uniformtypeidentifier:))
+
+#### Default Implementations
+
+- [XCTAttachment Implementations](/documentation/xctest/xctattachment/xctattachment-implementations)
+
+##### Initializers
+
+- [convenience init(compressedContentsOfDirectoryAtURL: URL)](/documentation/xctest/xctattachment/init(compressedcontentsofdirectoryaturl:))
+- [convenience init(contentsOfFileAtURL: URL)](/documentation/xctest/xctattachment/init(contentsoffileaturl:))
+- [convenience init(contentsOfFileAtURL: URL, uniformTypeIdentifier: String)](/documentation/xctest/xctattachment/init(contentsoffileaturl:uniformtypeidentifier:))
 
 ## Test execution
 

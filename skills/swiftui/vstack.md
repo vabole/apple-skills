@@ -2,7 +2,7 @@
 title: VStack
 description: A view that arranges its subviews in a vertical line.
 source: https://developer.apple.com/documentation/swiftui/vstack
-timestamp: 2026-01-19T10:23:07.565Z
+timestamp: 2026-02-19T07:56:08.629Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -41,7 +41,7 @@ var body: some View {
 }
 ```
 
-
+![Ten text views, named Item 1 through Item 10, arranged in a](https://docs-assets.developer.apple.com/published/93d31b000cb6f5419689a7b765474401/SwiftUI-VStack-simple%402x.png)
 
 > [!NOTE]
 > If you need a vertical stack that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [Any Layout](/documentation/swiftui/anylayout), use [VStack Layout](/documentation/swiftui/vstacklayout) instead.

@@ -1,14 +1,12 @@
 ---
 title: SwiftUI
 source: https://developer.apple.com/documentation/swiftui
-timestamp: 2026-01-17T15:34:40.312Z
+timestamp: 2026-02-19T07:56:09.637Z
 ---
 
 ## Essentials
 
 - [Adopting Liquid Glass](/documentation/technologyoverviews/adopting-liquid-glass)
-- [Learning SwiftUI](/tutorials/swiftui-concepts)
-- [Exploring SwiftUI Sample Apps](/tutorials/sample-apps)
 - [SwiftUI updates](/documentation/updates/swiftui)
 - [Landmarks: Building an app with Liquid Glass](/documentation/swiftui/landmarks-building-an-app-with-liquid-glass)
 
@@ -1164,7 +1162,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 
 ### Essentials
 
-- [Understanding the navigation stack](/documentation/swiftui/understanding-the-composition-of-navigation-stack)
+- [Understanding the navigation stack](/documentation/swiftui/understanding-the-navigation-stack)
 
 ### Presenting views in columns
 
@@ -1588,6 +1586,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 
 ### Deprecated Types
 
+- [NavigationView](/documentation/swiftui/navigationview)
 
 #### Creating a navigation view
 
@@ -1596,20 +1595,28 @@ timestamp: 2026-01-17T15:34:40.312Z
 #### Styling navigation views
 
 - [func navigationViewStyle<S>(S) -> some View](/documentation/swiftui/view/navigationviewstyle(_:))
+- [NavigationViewStyle](/documentation/swiftui/navigationviewstyle)
 
 ##### Getting built-in navigation view styles
 
+- [static var automatic: DefaultNavigationViewStyle](/documentation/swiftui/navigationviewstyle/automatic)
+- [static var columns: ColumnNavigationViewStyle](/documentation/swiftui/navigationviewstyle/columns)
+- [static var stack: StackNavigationViewStyle](/documentation/swiftui/navigationviewstyle/stack)
 
 ##### Supporting types
 
+- [DefaultNavigationViewStyle](/documentation/swiftui/defaultnavigationviewstyle)
 
 ###### Creating a default navigation view style
 
 - [init()](/documentation/swiftui/defaultnavigationviewstyle/init())
+- [ColumnNavigationViewStyle](/documentation/swiftui/columnnavigationviewstyle)
+- [StackNavigationViewStyle](/documentation/swiftui/stacknavigationviewstyle)
 
 ###### Creating a stack navigation view style
 
 - [init()](/documentation/swiftui/stacknavigationviewstyle/init())
+- [DoubleColumnNavigationViewStyle](/documentation/swiftui/doublecolumnnavigationviewstyle)
 
 ###### Create a double column view style
 
@@ -2786,6 +2793,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [var findContext: FindContext?](/documentation/swiftui/environmentvalues/findcontext)
 - [var fontResolutionContext: Font.Context](/documentation/swiftui/environmentvalues/fontresolutioncontext)
 - [var imagePlaygroundAllowedGenerationStyles: [ImagePlaygroundStyle]](/documentation/swiftui/environmentvalues/imageplaygroundallowedgenerationstyles)
+- [var imagePlaygroundOptions: ImagePlaygroundOptions](/documentation/swiftui/environmentvalues/imageplaygroundoptions) **Beta**
 - [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](/documentation/swiftui/environmentvalues/imageplaygroundpersonalizationpolicy)
 - [var imagePlaygroundSelectedGenerationStyle: ImagePlaygroundStyle](/documentation/swiftui/environmentvalues/imageplaygroundselectedgenerationstyle)
 - [var isActivityUpdateReduced: Bool](/documentation/swiftui/environmentvalues/isactivityupdatereduced)
@@ -2795,8 +2803,10 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [var levelOfDetail: LevelOfDetail](/documentation/swiftui/environmentvalues/levelofdetail)
 - [var lineHeight: AttributedString.LineHeight?](/documentation/swiftui/environmentvalues/lineheight)
 - [var navigationLinkIndicatorVisibility: Visibility](/documentation/swiftui/environmentvalues/navigationlinkindicatorvisibility)
+- [var openFoveatedStreamingSpace: OpenFoveatedStreamingSpaceAction](/documentation/swiftui/environmentvalues/openfoveatedstreamingspace) **Beta**
 - [var remoteDeviceIdentifier: RemoteDeviceIdentifier?](/documentation/swiftui/environmentvalues/remotedeviceidentifier)
 - [var requestAgeRange: DeclaredAgeRangeAction](/documentation/swiftui/environmentvalues/requestagerange)
+- [var showSignificantUpdateAcknowledgement: SignificantUpdateAction](/documentation/swiftui/environmentvalues/showsignificantupdateacknowledgement) **Beta**
 - [var supportedActivityFamilies: Set<ActivityFamily>](/documentation/swiftui/environmentvalues/supportedactivityfamilies)
 - [var supportsImagePlayground: Bool](/documentation/swiftui/environmentvalues/supportsimageplayground)
 - [var supportsRemoteScenes: Bool](/documentation/swiftui/environmentvalues/supportsremotescenes)
@@ -3408,6 +3418,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func lineLimit(Int, reservesSpace: Bool) -> some View](/documentation/swiftui/view/linelimit(_:reservesspace:))
 - [func lineSpacing(CGFloat) -> some View](/documentation/swiftui/view/linespacing(_:))
 - [func multilineTextAlignment(TextAlignment) -> some View](/documentation/swiftui/view/multilinetextalignment(_:))
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](/documentation/swiftui/view/multilinetextalignment(strategy:))
 
 ##### Text selection
 
@@ -3940,6 +3951,10 @@ timestamp: 2026-01-17T15:34:40.312Z
 
 ##### Submission
 
+- [func onAssignedDocumentDidSubmit((URL) -> Void) -> some View](/documentation/swiftui/view/onassigneddocumentdidsubmit(_:)) **Beta**
+- [func onAssignedDocumentDidWithdraw((URL) -> Void) -> some View](/documentation/swiftui/view/onassigneddocumentdidwithdraw(_:)) **Beta**
+- [func onAssignedDocumentWillSubmit((URL) async -> Bool) -> some View](/documentation/swiftui/view/onassigneddocumentwillsubmit(_:)) **Beta**
+- [func onAssignedDocumentWillWithdraw((URL) async -> Bool) -> some View](/documentation/swiftui/view/onassigneddocumentwillwithdraw(_:)) **Beta**
 - [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](/documentation/swiftui/view/onsubmit(of:_:))
 - [func submitScope(Bool) -> some View](/documentation/swiftui/view/submitscope(_:))
 - [func submitLabel(SubmitLabel) -> some View](/documentation/swiftui/view/submitlabel(_:))
@@ -3992,8 +4007,6 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func onAppear(perform: (() -> Void)?) -> some View](/documentation/swiftui/view/onappear(perform:))
 - [func onDisappear(perform: (() -> Void)?) -> some View](/documentation/swiftui/view/ondisappear(perform:))
 - [func onChange(of:initial:_:)](/documentation/swiftui/view/onchange(of:initial:_:))
-- [func task(priority: TaskPriority, () async -> Void) -> some View](/documentation/swiftui/view/task(priority:_:))
-- [func task<T>(id: T, priority: TaskPriority, () async -> Void) -> some View](/documentation/swiftui/view/task(id:priority:_:))
 
 ##### File renaming
 
@@ -4204,6 +4217,13 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func photosPickerAccessoryVisibility(Visibility, edges: Edge.Set) -> some View](/documentation/swiftui/view/photospickeraccessoryvisibility(_:edges:))
 - [func photosPickerDisabledCapabilities(PHPickerCapabilities) -> some View](/documentation/swiftui/view/photospickerdisabledcapabilities(_:))
 - [func photosPickerStyle(PhotosPickerStyle) -> some View](/documentation/swiftui/view/photospickerstyle(_:))
+
+##### Translation
+
+- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:))
+- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(_:action:))
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(source:target:action:))
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(source:target:preferredstrategy:action:))
 - [State modifiers](/documentation/swiftui/view-state)
 
 ##### Identity
@@ -4362,7 +4382,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func chartZSelection<P>(value: Binding<P?>) -> some View](/documentation/swiftui/view/chartzselection(value:))
 - [func contactAccessButtonCaption(ContactAccessButton.Caption) -> some View](/documentation/swiftui/view/contactaccessbuttoncaption(_:))
 - [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](/documentation/swiftui/view/contactaccessbuttonstyle(_:))
-- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> ()) -> some View](/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:))
+- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:))
 - [func containerCornerOffset(Edge.Set, sizeToFit: Bool) -> some View](/documentation/swiftui/view/containercorneroffset(_:sizetofit:))
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](/documentation/swiftui/view/containervalue(_:_:))
 - [func contentCaptureProtected(Bool) -> some View](/documentation/swiftui/view/contentcaptureprotected(_:))
@@ -4388,6 +4408,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func dropPreviewsFormation(DragDropPreviewsFormation) -> some View](/documentation/swiftui/view/droppreviewsformation(_:))
 - [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](/documentation/swiftui/view/familyactivitypicker(title:headertext:footertext:ispresented:selection:))
 - [func formStyle<S>(S) -> some View](/documentation/swiftui/view/formstyle(_:))
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](/documentation/swiftui/view/foveatedstreamingpausesheet(session:)) **Beta**
 - [func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: () -> Void) -> some View](/documentation/swiftui/view/gamesavesyncingalert(directory:finishedloading:))
 - [func glassBackgroundEffect<S>(S, displayMode: GlassBackgroundDisplayMode) -> some View](/documentation/swiftui/view/glassbackgroundeffect(_:displaymode:))
 - [func glassBackgroundEffect<T, S>(S, in: T, displayMode: GlassBackgroundDisplayMode) -> some View](/documentation/swiftui/view/glassbackgroundeffect(_:in:displaymode:))
@@ -4404,6 +4425,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func healthDataAccessRequest(store: HKHealthStore, readTypes: Set<HKObjectType>, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion:))
 - [func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:))
 - [func imagePlaygroundGenerationStyle(ImagePlaygroundStyle, in: [ImagePlaygroundStyle]) -> some View](/documentation/swiftui/view/imageplaygroundgenerationstyle(_:in:))
+- [func imagePlaygroundOptions(ImagePlaygroundOptions) -> some View](/documentation/swiftui/view/imageplaygroundoptions(_:)) **Beta**
 - [func imagePlaygroundPersonalizationPolicy(ImagePlaygroundPersonalizationPolicy) -> some View](/documentation/swiftui/view/imageplaygroundpersonalizationpolicy(_:))
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:))
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation:))
@@ -4446,7 +4468,6 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some View](/documentation/swiftui/view/matchedtransitionsource(id:in:))
 - [func matchedTransitionSource(id: some Hashable, in: Namespace.ID, configuration: (EmptyMatchedTransitionSourceConfiguration) -> some MatchedTransitionSourceConfiguration) -> some View](/documentation/swiftui/view/matchedtransitionsource(id:in:configuration:))
 - [func materialActiveAppearance(MaterialActiveAppearance) -> some View](/documentation/swiftui/view/materialactiveappearance(_:))
-- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](/documentation/swiftui/view/multilinetextalignment(strategy:))
 - [func navigationLinkIndicatorVisibility(Visibility) -> some View](/documentation/swiftui/view/navigationlinkindicatorvisibility(_:))
 - [func navigationTransition(some NavigationTransition) -> some View](/documentation/swiftui/view/navigationtransition(_:))
 - [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](/documentation/swiftui/view/onappintentexecution(_:perform:))
@@ -4528,7 +4549,10 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func tabViewSearchActivation(TabSearchActivation) -> some View](/documentation/swiftui/view/tabviewsearchactivation(_:))
 - [func tabletopGame(TabletopGame, parent: Entity, automaticUpdate: Bool) -> some View](/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:))
 - [func tabletopGame(TabletopGame, parent: Entity, automaticUpdate: Bool, interaction: (TabletopInteraction.Value) -> any TabletopInteraction.Delegate) -> some View](/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:interaction:))
-- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](/documentation/swiftui/view/task(id:name:executorpreference:priority:file:line:_:))
+- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](/documentation/swiftui/view/task(id:name:executorpreference:priority:file:line:_:)) **Beta**
+- [func task<T>(id: T, name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](/documentation/swiftui/view/task(id:name:priority:file:line:_:))
+- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](/documentation/swiftui/view/task(name:executorpreference:priority:file:line:action:)) **Beta**
+- [func task(name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](/documentation/swiftui/view/task(name:priority:file:line:_:))
 - [func textContentType(_:)](/documentation/swiftui/view/textcontenttype(_:))
 - [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](/documentation/swiftui/view/textinputformattingcontrolvisibility(_:for:))
 - [func textRenderer<T>(T) -> some View](/documentation/swiftui/view/textrenderer(_:))
@@ -4545,9 +4569,6 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func toolbarItemHidden(Bool) -> some View](/documentation/swiftui/view/toolbaritemhidden(_:))
 - [func transactionPicker(isPresented: Binding<Bool>, selection: Binding<[Transaction]>) -> some View](/documentation/swiftui/view/transactionpicker(ispresented:selection:))
 - [func transactionTask(CredentialTransaction.Configuration?, action: (CredentialTransaction) async -> Void) -> some View](/documentation/swiftui/view/transactiontask(_:action:))
-- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:))
-- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(_:action:))
-- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(source:target:action:))
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:))
 - [func webViewBackForwardNavigationGestures(WebView.BackForwardNavigationGesturesBehavior) -> some View](/documentation/swiftui/view/webviewbackforwardnavigationgestures(_:))
 - [func webViewContentBackground(Visibility) -> some View](/documentation/swiftui/view/webviewcontentbackground(_:))
@@ -4780,8 +4801,6 @@ timestamp: 2026-01-17T15:34:40.312Z
 
 - [func onAppear(perform: (() -> Void)?) -> some View](/documentation/swiftui/view/onappear(perform:))
 - [func onDisappear(perform: (() -> Void)?) -> some View](/documentation/swiftui/view/ondisappear(perform:))
-- [func task(priority: TaskPriority, () async -> Void) -> some View](/documentation/swiftui/view/task(priority:_:))
-- [func task<T>(id: T, priority: TaskPriority, () async -> Void) -> some View](/documentation/swiftui/view/task(id:priority:_:))
 
 ### Managing the view hierarchy
 
@@ -10953,7 +10972,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [init()](/documentation/swiftui/divider/init())
 - [Layout adjustments](/documentation/swiftui/layout-adjustments)
 
-### Finetuning a layout
+### Fine-tuning a layout
 
 - [Laying out a simple view](/documentation/swiftui/laying-out-a-simple-view)
 - [Inspecting view layout](/documentation/swiftui/inspecting-view-layout)
@@ -15269,6 +15288,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 - [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:))
 - [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(_:action:))
 - [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(source:target:action:))
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](/documentation/swiftui/view/translationtask(source:target:preferredstrategy:action:))
 
 ### Presenting journaling suggestions
 
@@ -15278,7 +15298,7 @@ timestamp: 2026-01-17T15:34:40.312Z
 
 - [func contactAccessButtonCaption(ContactAccessButton.Caption) -> some View](/documentation/swiftui/view/contactaccessbuttoncaption(_:))
 - [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](/documentation/swiftui/view/contactaccessbuttonstyle(_:))
-- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> ()) -> some View](/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:))
+- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:))
 
 ### Handling game controller events
 

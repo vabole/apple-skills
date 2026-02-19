@@ -1,7 +1,7 @@
 ---
 title: XCUIAutomation
 source: https://developer.apple.com/documentation/xcuiautomation
-timestamp: 2026-01-17T15:38:14.227Z
+timestamp: 2026-02-19T07:56:01.046Z
 ---
 
 ## Essentials
@@ -877,6 +877,28 @@ timestamp: 2026-01-17T15:38:14.227Z
 
 - [func press(XCUIRemote.Button)](/documentation/xcuiautomation/xcuiremote/press(_:))
 - [func press(XCUIRemote.Button, forDuration: TimeInterval)](/documentation/xcuiautomation/xcuiremote/press(_:forduration:))
+- [XCUIRemoteButton](/documentation/xcuiautomation/xcuiremote/button)
+
+#### Remote buttons
+
+- [case up](/documentation/xcuiautomation/xcuiremotebutton/up)
+- [case down](/documentation/xcuiautomation/xcuiremotebutton/down)
+- [case left](/documentation/xcuiautomation/xcuiremotebutton/left)
+- [case right](/documentation/xcuiautomation/xcuiremotebutton/right)
+- [case select](/documentation/xcuiautomation/xcuiremotebutton/select)
+- [case menu](/documentation/xcuiautomation/xcuiremotebutton/menu)
+- [case playPause](/documentation/xcuiautomation/xcuiremotebutton/playpause)
+- [case home](/documentation/xcuiautomation/xcuiremotebutton/home)
+- [case pageUp](/documentation/xcuiautomation/xcuiremotebutton/pageup)
+- [case pageDown](/documentation/xcuiautomation/xcuiremotebutton/pagedown)
+- [case guide](/documentation/xcuiautomation/xcuiremotebutton/guide)
+- [case fourColors](/documentation/xcuiautomation/xcuiremotebutton/fourcolors)
+- [case oneTwoThree](/documentation/xcuiautomation/xcuiremotebutton/onetwothree)
+- [case tvProvider](/documentation/xcuiautomation/xcuiremotebutton/tvprovider)
+
+#### Initializers
+
+- [init?(rawValue: UInt)](/documentation/xcuiautomation/xcuiremotebutton/init(rawvalue:))
 
 ## UI testing availability
 

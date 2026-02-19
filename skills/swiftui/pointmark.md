@@ -2,7 +2,7 @@
 title: PointMark
 description: Chart content that represents data using points.
 source: https://developer.apple.com/documentation/charts/pointmark
-timestamp: 2026-01-19T10:22:46.831Z
+timestamp: 2026-02-19T07:56:09.171Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -49,11 +49,17 @@ var body: some View {
 }
 ```
 
-
+![A scatter plot with wing width plotted on the x-axis and wing height plotted on the y-axis. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height.](https://docs-assets.developer.apple.com/published/fca032573a6787a1f164ba898618e71a/PointMarkSwift.PointMarkScatterChart%402x.png)
 
 ### Adding Additional Data Fields
 
 Swift Charts provides three additional modifiers for point mark that each allow you to plot an additional property to a unique visual channel.
+
+| Modifier | Visual Channel |
+| --- | --- |
+| [foregroundStyle(by:)](/documentation/charts/chartcontent/foregroundstyle(by:)) | plot an additional property with color |
+| [symbol(by:)](/documentation/charts/chartcontent/symbol(by:)) | plot an additional property with symbols |
+| [symbolSize(by:)](/documentation/charts/chartcontent/symbolsize(by:)) | plot an additional property with size |
 
 For example, to plot the `family` property from the previous example’s `Insect` structure as a color, add the [foregroundStyle(by:)](/documentation/charts/chartcontent/foregroundstyle(by:)) modifier:
 
@@ -67,7 +73,7 @@ Chart(data) {
 }
 ```
 
-
+![A scatter plot with wing width plotted on the x-axis, wing height plotted on the y-axis, and insect family mapped to a color. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height. The points appear in 3 clusters of 4 points each, where the points in each cluster have a different color. The cluster in the lower left has blue points. The cluster in the middle has green points. The cluster in the upper right has orange points. A legend below the plot maps each color to a different insect family. The mappings are Diptera in blue, Hymenoptera in green, and Lepidoptera in orange.](https://docs-assets.developer.apple.com/published/49e25992043ab6be4716951a42c79ec0/PointMarkSwift.PointMarkScatterChartModifiedForegroundColor%402x.png)
 
 The foreground style modifier automatically generates a color scale that provides each mark with a color that reflects its value property. To learn how to modify the default color scale, see `ScaleModifiers`. The modifier also provides a default legend. To learn how to modify or disable the legend, see `ChartLegend`.
 
@@ -83,7 +89,7 @@ Chart(data) {
 }
 ```
 
-
+![A scatter plot with wing width plotted on the x-axis, wing height plotted on the y-axis, and insect family mapped to a symbol. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height. The points appear in 3 clusters of 4 points each, where the points in each cluster have different symbols. The cluster in the lower left has circular points. The cluster in the middle has square points. The cluster in the upper right has triangular points. A legend below the plot maps each symbol to a different insect family. The mappings are circles for Diptera, squares for Hymenoptera, and triangles for Lepidoptera.](https://docs-assets.developer.apple.com/published/222692d8e981eed4acae351940ac42c8/PointMarkSwift.PointMarkScatterChartModifiedSymbol%402x.png)
 
 ### PointMark in Chart3D
 
@@ -126,6 +132,7 @@ Chart3D(PointMarkData.insectData) {
 - [Chart3DContent](/documentation/charts/chart3dcontent)
 - [ChartContent](/documentation/charts/chartcontent)
 - [Copyable](/documentation/Swift/Copyable)
+- [Escapable](/documentation/Swift/Escapable)
 - [Sendable](/documentation/Swift/Sendable)
 - [SendableMetatype](/documentation/Swift/SendableMetatype)
 

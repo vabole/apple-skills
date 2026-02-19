@@ -1,7 +1,7 @@
 ---
 title: HealthKit
 source: https://developer.apple.com/documentation/healthkit
-timestamp: 2026-01-17T15:36:07.300Z
+timestamp: 2026-02-19T07:55:53.328Z
 ---
 
 ## Essentials
@@ -292,6 +292,10 @@ timestamp: 2026-01-17T15:36:07.300Z
 - [func add([HKSample], to: HKWorkout, completion: (Bool, (any Error)?) -> Void)](/documentation/healthkit/hkhealthstore/add(_:to:completion:))
 - [func start(HKWorkoutSession)](/documentation/healthkit/hkhealthstore/start(_:))
 - [func end(HKWorkoutSession)](/documentation/healthkit/hkhealthstore/end(_:))
+
+### Structures
+
+- [HKHealthStore.HKUserPreferencesDidChangeMessage](/documentation/healthkit/hkhealthstore/hkuserpreferencesdidchangemessage) **Beta**
 
 ### Instance Methods
 
@@ -3041,7 +3045,7 @@ timestamp: 2026-01-17T15:36:07.300Z
 - [init(sampleType: HKSampleType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](/documentation/healthkit/hksamplequery/init(sampletype:predicate:limit:sortdescriptors:resultshandler:))
 - [init(queryDescriptors: [HKQueryDescriptor], limit: Int, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](/documentation/healthkit/hksamplequery/init(querydescriptors:limit:resultshandler:))
 - [init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](/documentation/healthkit/hksamplequery/init(querydescriptors:limit:sortdescriptors:resultshandler:))
-- [let HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
+- [var HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
 - [HealthKit sort descriptors](/documentation/healthkit/healthkit-sort-descriptors)
 
 ##### Sample sort identifiers
@@ -3064,7 +3068,7 @@ timestamp: 2026-01-17T15:36:07.300Z
 
 #### Setting Limits
 
-- [let HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
+- [var HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
 - [HKCorrelationQuery](/documentation/healthkit/hkcorrelationquery)
 
 #### Creating Correlation Queries
@@ -3566,7 +3570,7 @@ timestamp: 2026-01-17T15:36:07.300Z
 - [Executing Anchored Object Queries](/documentation/healthkit/executing-anchored-object-queries)
 - [init(type: HKSampleType, predicate: NSPredicate?, anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](/documentation/healthkit/hkanchoredobjectquery/init(type:predicate:anchor:limit:resultshandler:))
 - [init(queryDescriptors: [HKQueryDescriptor], anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](/documentation/healthkit/hkanchoredobjectquery/init(querydescriptors:anchor:limit:resultshandler:))
-- [let HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
+- [var HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
 - [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](/documentation/healthkit/hkanchoredobjectquery/init(type:predicate:anchor:limit:completionhandler:))
 
 ##### Constants
@@ -3905,7 +3909,7 @@ timestamp: 2026-01-17T15:36:07.300Z
 #### Creating Document Queries
 
 - [init(documentType: HKDocumentType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, includeDocumentData: Bool, resultsHandler: (HKDocumentQuery, [HKDocumentSample]?, Bool, (any Error)?) -> Void)](/documentation/healthkit/hkdocumentquery/init(documenttype:predicate:limit:sortdescriptors:includedocumentdata:resultshandler:))
-- [let HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
+- [var HKObjectQueryNoLimit: Int](/documentation/healthkit/hkobjectquerynolimit)
 
 #### Accessing the Document Query’s Properties
 

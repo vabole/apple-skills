@@ -2,7 +2,7 @@
 title: Button
 description: A control that initiates an action.
 source: https://developer.apple.com/documentation/swiftui/button
-timestamp: 2026-01-19T10:23:05.364Z
+timestamp: 2026-02-19T07:56:06.792Z
 ---
 
 **Navigation:** [Swiftui](/documentation/swiftui)
@@ -80,7 +80,7 @@ List {
 }
 ```
 
-
+![A screenshot of a list of four items. The first three items use a](https://docs-assets.developer.apple.com/published/fbd1e5d7c4f4493ad072bbf38451d71c/Button-1%402x.png)
 
 Similarly, to create a context menu item that initiates an action, add a button to the [contextMenu(_:)](/documentation/swiftui/view/contextmenu(_:)) modifier’s content closure:
 
@@ -92,7 +92,7 @@ Similarly, to create a context menu item that initiates an action, add a button 
 }
 ```
 
-
+![A screenshot of a context menu that contains the three items Cut, Copy,](https://docs-assets.developer.apple.com/published/13c3412be0b5c30960a790b56404502a/Button-2%402x.png)
 
 This pattern extends to most other container views in SwiftUI that have customizable, interactive content, like [Form](/documentation/swiftui/form) instances.
 
@@ -106,7 +106,7 @@ You can optionally initialize a button with a [Button Role](/documentation/swift
 
 The system uses the button’s role to style the button appropriately in every context. For example, a destructive button in a contextual menu appears with a red foreground color:
 
-
+![A screenshot of a context menu that contains the four items Cut, Copy,](https://docs-assets.developer.apple.com/published/7ade00fdf9d46f2f43939a37acb1e7f9/Button-3%402x.png)
 
 If you don’t specify a role for a button, the system applies an appropriate default appearance.
 
@@ -124,7 +124,7 @@ HStack {
 
 If you apply the style to a container view, as in the example above, all the buttons in the container use the style:
 
-
+![A screenshot of two buttons, side by side, each with a capsule shaped](https://docs-assets.developer.apple.com/published/c8c08c1104d95b8ed8f6d0e35cf017db/Button-4%402x.png)
 
 You can also create custom styles. To add a custom appearance with standard interaction behavior, create a style that conforms to the [Button Style](/documentation/swiftui/buttonstyle) protocol. To customize both appearance and interaction behavior, create a style that conforms to the [Primitive Button Style](/documentation/swiftui/primitivebuttonstyle) protocol. Custom styles can also read the button’s role and use it to adjust the button’s appearance.
 
