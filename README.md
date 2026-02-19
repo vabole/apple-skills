@@ -4,36 +4,83 @@ Apple development skills for **Claude Code** and **Codex** — latest iOS 26+ AP
 
 These are coding agent skills (reference docs + guidelines) that help AI assistants write production-grade iOS/macOS Swift code using current Apple APIs.
 
+## Keeping Docs Up-to-Date
+
+All reference documentation is downloaded verbatim from [sosumi.ai](https://sosumi.ai), which mirrors Apple's developer.apple.com as clean, LLM-friendly markdown.
+
+### Quick refresh
+
+```bash
+# Dry run — see what changed since last download
+./scripts/refresh-docs.sh
+
+# Apply updates
+./scripts/refresh-docs.sh --apply
+
+# Commit the changes
+git add -A && git commit -m "docs: refresh from sosumi.ai $(date +%Y-%m-%d)"
+```
+
+### How it works
+
+The script finds all `.md` files with a `source: https://developer.apple.com/...` header, re-downloads them from sosumi.ai, and diffs against the local copy. Only files with actual content changes (ignoring timestamp differences) are flagged.
+
+### Adding new docs
+
+To download a new Apple documentation page:
+
+```bash
+# Single topic
+curl -sL "https://sosumi.ai/documentation/swiftui/navigationstack" > skills/swiftui/navigationstack.md
+
+# Framework index
+curl -sL "https://sosumi.ai/documentation/storekit" > skills/storekit/storekit-index.md
+
+# HIG pages use a different path pattern
+curl -sL "https://sosumi.ai/design/human-interface-guidelines/buttons" > skills/hig/buttons.md
+```
+
+### Last refreshed
+
+**2026-02-19** — 50 files updated, 89 unchanged, 1 failed (navigation-bars HIG page moved).
+
+---
+
 ## What's Included
 
 ### Framework Reference Docs
-| Skill | Description |
-|-------|-------------|
-| **swiftui** | SwiftUI views, modifiers, navigation, state management, charts (40+ reference files) |
-| **swiftdata** | @Model, ModelContext, @Query, schema migrations |
-| **healthkit** | HKHealthStore, HKQuantitySample, workouts, health data |
-| **combine** | Publishers, subscribers, operators |
-| **appintents** | App Intents, Siri, Shortcuts, Spotlight integration |
-| **widgetkit** | Widget timelines, entries, providers |
-| **usernotifications** | Local/remote notifications, triggers |
-| **eventkit** | EKEventStore, EKEvent, EKReminder, calendar access |
-| **photosui** | PhotosPicker, photo selection |
-| **corehaptics** | CHHapticEngine, haptic patterns |
-| **backgroundtasks** | BGTaskScheduler, app refresh |
-| **xcuitest** | XCUITest with Swift 6 @MainActor patterns |
+| Skill | Files | Description |
+|-------|-------|-------------|
+| **swiftui** | 50 | SwiftUI views, modifiers, navigation, state management, charts |
+| **swift-testing** | 8 | Swift Testing framework (`@Test`, `@Suite`, `#expect`, `#require`) |
+| **swift-concurrency** | 8 | async/await, Task, TaskGroup, Actor, AsyncSequence |
+| **swiftdata** | — | @Model, ModelContext, @Query, schema migrations |
+| **healthkit** | — | HKHealthStore, HKQuantitySample, workouts, health data |
+| **combine** | — | Publishers, subscribers, operators |
+| **storekit** | 7 | StoreKit 2 (Product, Transaction, SubscriptionStoreView) |
+| **mapkit** | 8 | MapKit for SwiftUI (Map, Marker, Annotation, MapCameraPosition) |
+| **tipkit** | 7 | TipKit (Tip protocol, TipView, PopoverTipView) |
+| **appintents** | — | App Intents, Siri, Shortcuts, Spotlight integration |
+| **widgetkit** | — | Widget timelines, entries, providers |
+| **usernotifications** | — | Local/remote notifications, triggers |
+| **eventkit** | — | EKEventStore, EKEvent, EKReminder, calendar access |
+| **photosui** | — | PhotosPicker, photo selection |
+| **corehaptics** | — | CHHapticEngine, haptic patterns |
+| **backgroundtasks** | — | BGTaskScheduler, app refresh |
+| **xcuitest** | 10 | XCUITest with Swift 6 @MainActor patterns |
 
 ### Design & Guidelines
-| Skill | Description |
-|-------|-------------|
-| **hig** | Apple Human Interface Guidelines (40+ files) |
-| **ios-liquid-glass** | Liquid Glass API reference (iOS 26+) |
-| **ios-design-consultant** | UX/design guidance for Liquid Glass apps |
-| **ios-dev** | SwiftUI development patterns & aesthetics |
+| Skill | Files | Description |
+|-------|-------|-------------|
+| **hig** | 41 | Apple Human Interface Guidelines |
+| **ios-liquid-glass** | 17 | Liquid Glass API reference (iOS 26+) |
+| **ios-design-consultant** | — | UX/design guidance for Liquid Glass apps |
+| **ios-dev** | — | SwiftUI development patterns & aesthetics |
 
 ### Utilities
 | Skill | Description |
 |-------|-------------|
-| **apple-docs-index** | Index of Apple developer documentation |
+| **apple-docs-index** | Index of Apple developer documentation — start here to find what you need |
 | **simulator-utils** | iOS Simulator commands, screenshots, device management |
 | **apple-aso** | App Store Optimization for metadata |
 | **ios-app-icon** | App icon generation workflow |
@@ -48,19 +95,36 @@ These are coding agent skills (reference docs + guidelines) that help AI assista
 - Liquid Glass design system
 - Swift Testing where applicable
 
+## Doc Source
+
+All `.md` reference files (everything except `SKILL.md`) are **verbatim downloads** from [sosumi.ai](https://sosumi.ai). Each file has a YAML frontmatter header with:
+
+```yaml
+---
+title: Button
+description: A control that initiates an action.
+source: https://developer.apple.com/documentation/swiftui/button
+timestamp: 2026-02-19T07:52:54.922Z
+---
+```
+
+- `source` — the original Apple developer docs URL
+- `timestamp` — when the file was downloaded from sosumi.ai
+
+The `SKILL.md` files are hand-written skill descriptions and are the only non-verbatim content.
+
 ## Usage
 
 ### Claude Code Plugin
-Add to your project's `.claude/plugins` or reference directly:
-
 ```bash
 # Add as a Claude Code plugin
 claude plugins add vabole/apple-skills
 ```
 
-### Direct Reference
-Clone and reference the skills directory in your Claude Code configuration:
+### Codex
+Reference skills in your Codex global config or project `AGENTS.md`.
 
+### Direct Reference
 ```bash
 git clone https://github.com/vabole/apple-skills.git
 ```
@@ -70,14 +134,20 @@ Each skill has a `SKILL.md` with metadata and instructions, plus reference `.md`
 ## Structure
 
 ```
-skills/
-├── swiftui/           # 40+ SwiftUI reference files
-├── hig/               # 40+ HIG reference files  
-├── ios-liquid-glass/   # Liquid Glass API docs
-├── healthkit/         # HealthKit API docs
-├── swiftdata/         # SwiftData API docs
-├── ...                # 21 skills total
-└── xcuitest/          # XCUITest patterns & API
+skills/                     # 26 skills
+├── swiftui/                # 50 SwiftUI reference files
+├── hig/                    # 41 HIG reference files
+├── ios-liquid-glass/       # 17 Liquid Glass API docs
+├── swift-testing/          # Swift Testing framework
+├── swift-concurrency/      # async/await, actors
+├── storekit/               # StoreKit 2
+├── mapkit/                 # MapKit for SwiftUI
+├── tipkit/                 # TipKit framework
+├── healthkit/              # HealthKit API docs
+├── ...                     # and more
+└── apple-docs-index/       # Framework doc indexes
+scripts/
+└── refresh-docs.sh         # Re-download all docs from sosumi.ai
 ```
 
 ## License
