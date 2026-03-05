@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Percept Rapid Feedback"
+  short_description: "Run fast deterministic iOS UI feedback loops"
+  default_prompt: "Use $ui-percept-rapid-feedback to capture Quick Maths screens, run ui-percept with high-bar rules, and produce a prioritized feedback report."

@@ -1,0 +1,23 @@
+rules:
+  overlap:
+    interactive_severity: blocker
+    visual_severity: major
+  tap_target:
+    min_width: 48
+    min_height: 48
+    severity: major
+  spacing_grid:
+    base: 4
+    tolerance: 0.25
+    include_statictext_pairs: false
+    severity: major
+  clipping:
+    severity: major
+  offscreen:
+    severity: major
+  alignment:
+    tolerance: 1
+    severity: major
+  truncation_hint:
+    estimated_char_width: 7
+    severity: major
