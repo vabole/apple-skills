@@ -1,5 +1,5 @@
 ---
-name: tipkit-docs
+name: tipkit
 user-invocable: true
 description: "API reference: TipKit. Tip protocol, TipView, PopoverTipView, Tips.configure, inline and popover tips."
 context: fork

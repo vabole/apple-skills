@@ -1,5 +1,5 @@
 ---
-name: healthkit-docs
+name: healthkit
 user-invocable: true
 description: "API reference: HealthKit. Query for HKHealthStore, HKQuantitySample, workouts, health data read/write."
 context: fork

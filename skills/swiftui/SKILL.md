@@ -1,5 +1,5 @@
 ---
-name: swiftui-docs
+name: swiftui
 user-invocable: true
 description: "API reference: SwiftUI. Query for views, layouts, navigation, @State/@Binding/@Observable, view modifiers, NavigationStack, iOS 26+ features."
 context: fork

@@ -1,5 +1,5 @@
 ---
-name: storekit-docs
+name: storekit
 user-invocable: true
 description: "API reference: StoreKit 2. Product, Transaction, subscriptions, StoreView, SubscriptionStoreView."
 context: fork

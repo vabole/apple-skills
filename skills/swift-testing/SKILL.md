@@ -1,5 +1,5 @@
 ---
-name: swift-testing-docs
+name: swift-testing
 user-invocable: true
 description: "API reference: Swift Testing framework. @Test, @Suite, #expect, #require, traits, parameterized tests, migrating from XCTest."
 context: fork

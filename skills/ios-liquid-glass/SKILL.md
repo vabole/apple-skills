@@ -1,5 +1,5 @@
 ---
-name: ios-liquid-glass-docs
+name: ios-liquid-glass
 user-invocable: true
 description: "API reference: Liquid Glass (iOS 26+). Query for glass effects, navigation patterns, GlassEffect modifiers, design principles."
 context: fork

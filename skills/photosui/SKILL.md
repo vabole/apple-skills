@@ -1,5 +1,5 @@
 ---
-name: photosui-docs
+name: photosui
 user-invocable: true
 description: "API reference: PhotosUI. Query for PhotosPicker, PHLivePhotoView, photo selection."
 context: fork

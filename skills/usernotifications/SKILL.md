@@ -1,5 +1,5 @@
 ---
-name: usernotifications-docs
+name: usernotifications
 user-invocable: true
 description: "API reference: UserNotifications. Query for local/remote notifications, triggers, notification content."
 context: fork

@@ -1,5 +1,5 @@
 ---
-name: swiftdata-docs
+name: swiftdata
 user-invocable: true
 description: "API reference: SwiftData. Query for @Model, ModelContext, @Query, schema migrations."
 context: fork

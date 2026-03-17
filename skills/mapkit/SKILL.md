@@ -1,5 +1,5 @@
 ---
-name: mapkit-docs
+name: mapkit
 user-invocable: true
 description: "API reference: MapKit for SwiftUI. Map view, Marker, Annotation, camera positions, map features."
 context: fork

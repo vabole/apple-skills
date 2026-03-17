@@ -1,5 +1,5 @@
 ---
-name: swift-concurrency-docs
+name: swift-concurrency
 user-invocable: true
 description: "API reference: Swift Concurrency. async/await, Task, TaskGroup, actors, AsyncSequence, AsyncStream, continuations."
 context: fork

@@ -1,5 +1,5 @@
 ---
-name: appintents-docs
+name: appintents
 user-invocable: true
 description: "API reference: App Intents. Query for Siri, Shortcuts, Spotlight integration, exposing app functionality."
 context: fork

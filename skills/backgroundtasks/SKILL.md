@@ -1,5 +1,5 @@
 ---
-name: backgroundtasks-docs
+name: backgroundtasks
 user-invocable: true
 description: "API reference: BackgroundTasks. Query for BGTaskScheduler, app refresh, background processing."
 context: fork

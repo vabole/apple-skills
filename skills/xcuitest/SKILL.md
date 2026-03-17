@@ -1,5 +1,5 @@
 ---
-name: xcuitest-docs
+name: xcuitest
 user-invocable: true
 description: "API reference: XCUITest. Query for element queries, waiting patterns, Swift 6 @MainActor, assertions, screenshots, launch arguments."
 context: fork

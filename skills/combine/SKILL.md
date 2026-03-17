@@ -1,5 +1,5 @@
 ---
-name: combine-docs
+name: combine
 user-invocable: true
 description: "API reference: Combine. Query for publishers, subscribers, operators, async data streams."
 context: fork

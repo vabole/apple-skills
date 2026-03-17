@@ -1,5 +1,5 @@
 ---
-name: corehaptics-docs
+name: corehaptics
 user-invocable: true
 description: "API reference: Core Haptics. Query for CHHapticEngine, haptic patterns, tactile feedback."
 context: fork

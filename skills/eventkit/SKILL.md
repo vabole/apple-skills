@@ -1,5 +1,5 @@
 ---
-name: eventkit-docs
+name: eventkit
 user-invocable: true
 description: "API reference: EventKit. Query for EKEventStore, EKEvent, EKReminder, calendar access."
 context: fork

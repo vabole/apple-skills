@@ -1,5 +1,5 @@
 ---
-name: widgetkit-docs
+name: widgetkit
 user-invocable: true
 description: "API reference: WidgetKit. Query for widget timelines, entries, providers, home/lock screen widgets."
 context: fork

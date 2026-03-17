@@ -1,5 +1,5 @@
 ---
-name: hig-docs
+name: hig
 user-invocable: true
 description: "API reference: Apple Human Interface Guidelines. Query for design patterns, UI components, accessibility, color, typography, layout, haptics."
 context: fork
