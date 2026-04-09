@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest"
 
-import { renderHIGPageMarkdown } from "../scripts/apple-docs/render-hig"
-import { renderReferenceMarkdown } from "../scripts/apple-docs/render-reference"
-import type { AppleDocJson } from "../scripts/apple-docs/types"
+import { renderHIGPageMarkdown } from "../scripts/apple-docs/render-hig.ts"
+import { renderReferenceMarkdown } from "../scripts/apple-docs/render-reference.ts"
+import type { AppleDocJson } from "../scripts/apple-docs/types.ts"
 
 describe("renderReferenceMarkdown", () => {
   it("renders key reference sections", () => {

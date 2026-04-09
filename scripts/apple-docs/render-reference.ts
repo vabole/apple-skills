@@ -9,9 +9,9 @@ import {
   renderParameters,
   renderPlatforms,
   renderProperties,
-} from "./render-shared"
-import type { AppleDocJson } from "./types"
-import { cleanTitle, titleize } from "./utils"
+} from "./render-shared.ts"
+import type { AppleDocJson } from "./types.ts"
+import { cleanTitle, titleize } from "./utils.ts"
 
 export function renderReferenceMarkdown(json: AppleDocJson, sourceUrl: string): string {
   let markdown = renderFrontMatter({

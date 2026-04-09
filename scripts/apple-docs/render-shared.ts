@@ -6,8 +6,8 @@ import type {
   InlineNode,
   ReferenceMap,
   SectionNode,
-} from "./types"
-import { cleanTitle, oneLine, titleize } from "./utils"
+} from "./types.ts"
+import { cleanTitle, oneLine, titleize } from "./utils.ts"
 
 export function renderFrontMatter({ title, description, source }: FrontMatter): string {
   const lines = ["---"]

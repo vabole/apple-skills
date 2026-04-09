@@ -17,9 +17,6 @@ importers:
       '@typescript/native-preview':
         specifier: ^7.0.0-dev.20250408.1
         version: 7.0.0-dev.20260409.1
-      tsx:
-        specifier: ^4.21.0
-        version: 4.21.0
       typescript:
         specifier: ^5.9.2
         version: 5.9.3
@@ -1041,6 +1038,7 @@ snapshots:
   get-tsconfig@4.13.7:
     dependencies:
       resolve-pkg-maps: 1.0.0
+    optional: true
 
   js-tokens@9.0.1: {}
 
@@ -1068,7 +1066,8 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  resolve-pkg-maps@1.0.0: {}
+  resolve-pkg-maps@1.0.0:
+    optional: true
 
   rollup@4.60.1:
     dependencies:
@@ -1134,6 +1133,7 @@ snapshots:
       get-tsconfig: 4.13.7
     optionalDependencies:
       fsevents: 2.3.3
+    optional: true
 
   typescript@5.9.3: {}
 

@@ -8,17 +8,19 @@ These are coding agent skills (reference docs + guidelines) that help AI assista
 
 All reference documentation is fetched directly from Apple's DocC JSON endpoints on `developer.apple.com/tutorials/data` and rendered to markdown by the local TypeScript tooling in `scripts/apple-docs.ts`.
 
+Native TypeScript execution requires Node 25.2 or newer.
+
 ### Quick refresh
 
 ```bash
-# Install tooling once
-pnpm install
-
 # Dry run — see what changed since last download
 ./scripts/refresh-docs.sh
 
 # Apply updates
 ./scripts/refresh-docs.sh --apply
+
+# Install tooling for checks
+pnpm install
 
 # Run checks
 pnpm check
@@ -141,6 +143,8 @@ The `SKILL.md` files are hand-written skill descriptions and are the only non-ve
 
 The direct-fetch workflow is maintained with a small local TypeScript toolchain:
 
+- `pnpm refresh-docs` — native Node execution of the TypeScript refresh script
+- `pnpm fetch-doc` — native Node execution for one-off downloads
 - `pnpm typecheck` — `tsgo` preview compiler as the main typecheck gate
 - `pnpm lint` — Biome formatter + linter, configured to fail on warnings
 - `pnpm test` — Vitest renderer smoke tests

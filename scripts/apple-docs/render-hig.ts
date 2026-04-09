@@ -4,9 +4,9 @@ import {
   renderFrontMatter,
   renderIdentifierSections,
   renderInlineArray,
-} from "./render-shared"
-import type { AppleDocJson, IndexNode } from "./types"
-import { cleanTitle, titleize } from "./utils"
+} from "./render-shared.ts"
+import type { AppleDocJson, IndexNode } from "./types.ts"
+import { cleanTitle, titleize } from "./utils.ts"
 
 export function renderHIGPageMarkdown(json: AppleDocJson, sourceUrl: string): string {
   let markdown = renderFrontMatter({

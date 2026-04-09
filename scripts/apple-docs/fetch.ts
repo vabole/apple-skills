@@ -1,6 +1,6 @@
-import { APPLE_JSON_BASE_URL, DEFAULT_RETRIES, DEFAULT_TIMEOUT_MS, USER_AGENT } from "./config"
-import type { AppleDocJson } from "./types"
-import { normalizeDocumentationPath } from "./utils"
+import { APPLE_JSON_BASE_URL, DEFAULT_RETRIES, DEFAULT_TIMEOUT_MS, USER_AGENT } from "./config.ts"
+import type { AppleDocJson } from "./types.ts"
+import { normalizeDocumentationPath } from "./utils.ts"
 
 export async function fetchReferenceJSON(url: URL): Promise<AppleDocJson> {
   const normalizedPath = normalizeDocumentationPath(url.pathname)

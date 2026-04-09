@@ -4,11 +4,11 @@
   "type": "module",
   "packageManager": "pnpm@10.33.0",
   "engines": {
-    "node": ">=20.18.0"
+    "node": ">=25.2.0"
   },
   "scripts": {
-    "refresh-docs": "tsx scripts/apple-docs.ts refresh",
-    "fetch-doc": "tsx scripts/apple-docs.ts fetch",
+    "refresh-docs": "node scripts/apple-docs.ts refresh",
+    "fetch-doc": "node scripts/apple-docs.ts fetch",
     "typecheck": "tsgo --project tsconfig.json --noEmit",
     "typecheck:tsc": "tsc --noEmit",
     "lint": "biome check . --error-on-warnings",
@@ -20,7 +20,6 @@
     "@biomejs/biome": "^2.2.2",
     "@types/node": "^24.5.2",
     "@typescript/native-preview": "^7.0.0-dev.20250408.1",
-    "tsx": "^4.21.0",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   }

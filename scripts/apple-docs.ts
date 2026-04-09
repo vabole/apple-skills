@@ -4,13 +4,13 @@ import { readFile, writeFile } from "node:fs/promises"
 import path from "node:path"
 import process from "node:process"
 
-import { renderSourceToMarkdown } from "./apple-docs/index"
+import { renderSourceToMarkdown } from "./apple-docs/index.ts"
 import {
   collectMarkdownFiles,
   extractSourceUrl,
   isAppleSourceUrl,
   normalizeForCompare,
-} from "./apple-docs/utils"
+} from "./apple-docs/utils.ts"
 
 async function main() {
   const rawArgs = process.argv.slice(2)

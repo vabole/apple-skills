@@ -1,7 +1,7 @@
-import { fetchHIGIndexJSON, fetchHIGPageJSON, fetchReferenceJSON } from "./fetch"
-import { renderHIGIndexMarkdown, renderHIGPageMarkdown } from "./render-hig"
-import { renderReferenceMarkdown } from "./render-reference"
-import { normalizeSourceInput } from "./utils"
+import { fetchHIGIndexJSON, fetchHIGPageJSON, fetchReferenceJSON } from "./fetch.ts"
+import { renderHIGIndexMarkdown, renderHIGPageMarkdown } from "./render-hig.ts"
+import { renderReferenceMarkdown } from "./render-reference.ts"
+import { normalizeSourceInput } from "./utils.ts"
 
 export async function renderSourceToMarkdown(input: string): Promise<string> {
   const sourceUrl = normalizeSourceInput(input)

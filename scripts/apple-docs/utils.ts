@@ -1,7 +1,7 @@
 import { readdir } from "node:fs/promises"
 import path from "node:path"
 
-import { APPLE_BASE_URL, TITLE_OVERRIDES } from "./config"
+import { APPLE_BASE_URL, TITLE_OVERRIDES } from "./config.ts"
 
 export function normalizeSourceInput(input: string): string {
   if (/^https?:\/\//i.test(input)) {
