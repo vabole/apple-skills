@@ -9,7 +9,7 @@
     {
       "name": "apple-skills",
       "description": "Apple development skills — iOS 26+ APIs, SwiftUI, Liquid Glass, SwiftData, and more.",
-      "source": ".",
+      "source": "./",
       "version": "1.0.0",
       "category": "development"
     }
