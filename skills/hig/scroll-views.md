@@ -2,7 +2,7 @@
 title: Scroll views
 description: A scroll view lets people view content that’s larger than the view’s boundaries by moving the content vertically or horizontally.
 source: https://developer.apple.com/design/human-interface-guidelines/scroll-views
-timestamp: 2026-04-09T12:18:16.154Z
+timestamp: 2026-04-09T13:37:23.500Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:18:16.154Z
 # Scroll views
 
 > A scroll view lets people view content that’s larger than the view’s boundaries by moving the content vertically or horizontally.
+
+![A stylized representation of a scrollable image view. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e2b814efab83900282f34c04306401c1/components-scroll-view-intro%402x.png)
 
 The scroll view itself has no appearance, but it can display a translucent *scroll indicator* that typically appears after people begin scrolling the view’s content. Although the appearance and behavior of scroll indicators can vary per platform, all indicators provide visual feedback about the scrolling action. For example, in iOS, iPadOS, macOS, visionOS, and watchOS, the indicator shows whether the currently visible content is near the beginning, middle, or end of the view.
 

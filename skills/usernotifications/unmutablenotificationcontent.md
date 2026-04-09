@@ -2,7 +2,7 @@
 title: UNMutableNotificationContent
 description: The editable content for a notification.
 source: https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent
-timestamp: 2026-04-09T12:04:44.026Z
+timestamp: 2026-04-09T13:37:47.801Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)
@@ -26,6 +26,46 @@ Create a [UNMutableNotificationContent](/documentation/usernotifications/unmutab
 After creating your content object, assign it to a [UNNotificationRequest](/documentation/usernotifications/unnotificationrequest) object, add a trigger condition, and schedule your notification. The trigger condition defines when the system delivers the notification to the user. Listing 1 shows the scheduling of a local notification that displays an alert and plays a sound after a delay of five seconds. Store the strings for the alert’s title and body in the app’s `Localizable.strings` file.
 
 Listing 1. Creating the content for a local notification
+
+### Swift
+
+```swift
+// Configure the notification's payload.
+let content = UNMutableNotificationContent()
+content.title = NSString.localizedUserNotificationString(forKey: "Hello!", arguments: nil)
+content.body = NSString.localizedUserNotificationString(forKey: "Hello_message_body", arguments: nil)
+content.sound = UNNotificationSound.default
+ 
+// Deliver the notification in five seconds.
+let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+let request = UNNotificationRequest(identifier: "FiveSecond", content: content, trigger: trigger) // Schedule the notification.
+let center = UNUserNotificationCenter.current()
+center.add(request) { (error : Error?) in
+     if let theError = error {
+         // Handle any errors
+     }
+}
+```
+
+### Objective-C
+
+```objc
+// Configure the notification's payload.
+UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+content.title = [NSString localizedUserNotificationStringForKey:@"Hello!" arguments:nil];
+content.body = [NSString localizedUserNotificationStringForKey:@"Hello_message_body" arguments:nil];
+content.sound = [UNNotificationSound defaultSound];
+ 
+// Deliver the notification in five seconds.
+UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
+            triggerWithTimeInterval:5 repeats:NO];
+UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"FiveSecond"
+            content:content trigger:trigger];
+ 
+// Schedule the notification.
+UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
+[center addNotificationRequest:request];
+```
 
 > **Note:** Local notifications always result in user interactions, and the system ignores any interactions for which your app isn’t authorized. For information about how to request authorization for user interactions, see [Asking permission to use notifications](/documentation/usernotifications/asking-permission-to-use-notifications).
 

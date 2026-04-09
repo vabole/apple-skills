@@ -2,7 +2,7 @@
 title: Text
 description: A view that displays one or more lines of read-only text.
 source: https://developer.apple.com/documentation/swiftui/text
-timestamp: 2026-04-09T12:04:40.872Z
+timestamp: 2026-04-09T13:37:44.919Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -28,6 +28,8 @@ Text("Hamlet")
     .font(.title)
 ```
 
+![A text view showing the name “Hamlet” in a title](https://docs-assets.developer.apple.com/published/43b5a30d2c1d2176fe1cc88aa2c567ac/SwiftUI-Text-title%402x.png)
+
 If you need finer control over the styling of the text, you can use the same modifier to configure a system font or choose a custom font. You can also apply view modifiers like [bold()](/documentation/swiftui/text/bold()) or [italic()](/documentation/swiftui/text/italic()) to further adjust the formatting.
 
 ```swift
@@ -35,6 +37,8 @@ Text("by William Shakespeare")
     .font(.system(size: 12, weight: .light, design: .serif))
     .italic()
 ```
+
+![A text view showing by William Shakespeare in a 12 point, light, italic,](https://docs-assets.developer.apple.com/published/c6398423bafcaae5f2c2daccf3057e5e/SwiftUI-Text-font%402x.png)
 
 To apply styling within specific portions of the text, you can create the text view from an [AttributedString](/documentation/Foundation/AttributedString), which in turn allows you to use Markdown to style runs of text. You can mix string attributes and SwiftUI modifiers, with the string attributes taking priority.
 
@@ -48,12 +52,16 @@ var body: some View {
 }
 ```
 
+![A text view showing Hamlet by William Shakespeare in a 12 point, light,](https://docs-assets.developer.apple.com/published/ddb3ef16d3bec75a55f66268a153531b/SwiftUI-Text-attributed%402x.png)
+
 A text view always uses exactly the amount of space it needs to display its rendered contents, but you can affect the view’s layout. For example, you can use the [frame(width:height:alignment:)](/documentation/swiftui/view/frame(width:height:alignment:)) modifier to propose specific dimensions to the view. If the view accepts the proposal but the text doesn’t fit into the available space, the view uses a combination of wrapping, tightening, scaling, and truncation to make it fit. With a width of `100` points but no constraint on the height, a text view might wrap a long string:
 
 ```swift
 Text("To be, or not to be, that is the question:")
     .frame(width: 100)
 ```
+
+![A text view showing a quote from Hamlet split over three](https://docs-assets.developer.apple.com/published/122fc95483e6058c08280430279ba688/SwiftUI-Text-split%402x.png)
 
 Use modifiers like [lineLimit(_:)](/documentation/swiftui/view/linelimit(_:)), [allowsTightening(_:)](/documentation/swiftui/view/allowstightening(_:)), [minimumScaleFactor(_:)](/documentation/swiftui/view/minimumscalefactor(_:)), and [truncationMode(_:)](/documentation/swiftui/view/truncationmode(_:)) to configure how the view handles space constraints. For example, combining a fixed width and a line limit of `1` results in truncation for text that doesn’t fit in that space:
 
@@ -62,6 +70,8 @@ Text("Brevity is the soul of wit.")
     .frame(width: 100)
     .lineLimit(1)
 ```
+
+![A text view showing a truncated quote from Hamlet starting Brevity is t](https://docs-assets.developer.apple.com/published/d0f08188d0c13dc6fba6acb532579cf8/SwiftUI-Text-truncated%402x.png)
 
 ### Localizing strings
 

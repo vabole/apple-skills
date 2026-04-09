@@ -2,7 +2,7 @@
 title: ZStack
 description: A view that overlays its subviews, aligning them in both axes.
 source: https://developer.apple.com/documentation/swiftui/zstack
-timestamp: 2026-04-09T12:04:42.446Z
+timestamp: 2026-04-09T13:37:46.202Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -42,6 +42,8 @@ var body: some View {
 }
 ```
 
+![Six squares of different colors, stacked atop each other, with a 10-point](https://docs-assets.developer.apple.com/published/5ce47ef59a84b346d733bcf2f4a7853e/SwiftUI-ZStack-offset-rectangles%402x.png)
+
 The `ZStack` uses an [Alignment](/documentation/swiftui/alignment) to set the x- and y-axis coordinates of each subview, defaulting to a [center](/documentation/swiftui/alignment/center) alignment. In the following example, the `ZStack` uses a [bottomLeading](/documentation/swiftui/alignment/bottomleading) alignment to lay out two subviews, a red 100 x 50 point rectangle below, and a blue 50 x 100 point rectangle on top. Because of the alignment value, both rectangles share a bottom-left corner with the `ZStack` (in locales where left is the leading side).
 
 ```swift
@@ -57,6 +59,8 @@ var body: some View {
     .border(Color.green, width: 1)
 }
 ```
+
+![A green 100 by 100 square containing two overlapping rectangles: on the](https://docs-assets.developer.apple.com/published/b18f4156c9780e8200b05194bff17db4/SwiftUI-ZStack-alignment%402x.png)
 
 > **Note:** If you need a version of this stack that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [AnyLayout](/documentation/swiftui/anylayout), use [ZStackLayout](/documentation/swiftui/zstacklayout) instead.
 

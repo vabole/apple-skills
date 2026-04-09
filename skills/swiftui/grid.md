@@ -2,7 +2,7 @@
 title: Grid
 description: A container view that arranges other views in a two dimensional layout.
 source: https://developer.apple.com/documentation/swiftui/grid
-timestamp: 2026-04-09T12:04:35.829Z
+timestamp: 2026-04-09T13:37:40.313Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -38,6 +38,8 @@ Grid {
 
 A grid and its rows behave something like a collection of [HStack](/documentation/swiftui/hstack) instances wrapped in a [VStack](/documentation/swiftui/vstack). However, the grid handles row and column creation as a single operation, which applies alignment and spacing to cells, rather than first to rows and then to a column of unrelated rows. The grid produced by the example above demonstrates this:
 
+![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/6ce3d6ec21845fdf9aab2ca5cbe95f03/Grid-1-iOS%402x.png)
+
 > **Note:** If you need a grid that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [AnyLayout](/documentation/swiftui/anylayout), use [GridLayout](/documentation/swiftui/gridlayout) instead.
 
 ### Multicolumn cells
@@ -60,6 +62,8 @@ Grid {
 
 Because a divider takes as much horizontal space as its parent offers, the entire grid widens to fill the width offered by its parent view.
 
+![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/f20954fd2b30390306220984d444d0cf/Grid-2-iOS%402x.png)
+
 To prevent a flexible view from taking more space on a given axis than the other cells in a row or column require, add the [gridCellUnsizedAxes(_:)](/documentation/swiftui/view/gridcellunsizedaxes(_:)) view modifier to the view:
 
 ```swift
@@ -68,6 +72,8 @@ Divider()
 ```
 
 This restores the grid to the width that the text and images require:
+
+![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/f9a8d394b17ecb1bfd61218fb597b5d4/Grid-3-iOS%402x.png)
 
 To make a cell span a specific number of columns rather than the whole grid, use the [gridCellColumns(_:)](/documentation/swiftui/view/gridcellcolumns(_:)) modifier on a view that’s contained inside a [GridRow](/documentation/swiftui/gridrow).
 
@@ -94,6 +100,8 @@ Grid {
 
 The resulting grid has as many columns as the widest row, adding empty cells to rows that don’t specify enough views:
 
+![A screenshot of a grid with three rows and six columns. The first](https://docs-assets.developer.apple.com/published/dc6a493ef7b4cec08288741d2dfd6c0e/Grid-4-iOS%402x.png)
+
 The grid sets the width of all the cells in a column to match the needs of column’s widest cell. In the example above, the width of the first column depends on the width of the widest [Text](/documentation/swiftui/text) view that the column contains. The other columns, which contain flexible [Color](/documentation/swiftui/color) views, share the remaining horizontal space offered by the grid’s parent view equally.
 
 Similarly, the tallest cell in a row sets the height of the entire row. The cells in the first column of the grid above need only the height required for each string, but the [Color](/documentation/swiftui/color) cells expand to equally share the total height available to the grid. As a result, the color cells determine the row heights.
@@ -109,6 +117,8 @@ Grid(alignment: .bottom, horizontalSpacing: 1, verticalSpacing: 1) {
 ```
 
 This configuration causes all of the cells to use [bottom](/documentation/swiftui/alignment/bottom) alignment — which only affects the text cells because the colors fill their cells completely — and it reduces the spacing between cells:
+
+![A screenshot of a grid with three rows and six columns. The first](https://docs-assets.developer.apple.com/published/e5e7c222929c7b2e53711620201fae32/Grid-5-iOS%402x.png)
 
 You can override the alignment of specific cells or groups of cells. For example, you can change the horizontal alignment of the cells in a column by adding the [gridColumnAlignment(_:)](/documentation/swiftui/view/gridcolumnalignment(_:)) modifier, or the vertical alignment of the cells in a row by configuring the row’s [init(alignment:content:)](/documentation/swiftui/gridrow/init(alignment:content:)) initializer. You can also align a single cell with the [gridCellAnchor(_:)](/documentation/swiftui/view/gridcellanchor(_:)) modifier.
 

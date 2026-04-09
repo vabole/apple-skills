@@ -2,7 +2,7 @@
 title: Tab bars
 description: A tab bar lets people navigate between top-level sections of your app.
 source: https://developer.apple.com/design/human-interface-guidelines/tab-bars
-timestamp: 2026-04-09T12:18:18.509Z
+timestamp: 2026-04-09T13:37:26.007Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:18:18.509Z
 # Tab bars
 
 > A tab bar lets people navigate between top-level sections of your app.
+
+![A stylized representation of a tab bar containing four placeholder icons with names. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/ee5f6d676c6e45e45a667fe8d30b392d/components-tab-bar-intro%402x.png)
 
 Tab bars help people understand the different types of information or functionality that an app provides. They also let people quickly switch between sections of the view while preserving the current navigation state within each section.
 
@@ -31,9 +33,15 @@ Tab bars help people understand the different types of information or functional
 
 **Consider using SF Symbols to provide familiar, scalable tab bar icons.** When you use [SF Symbols](/design/human-interface-guidelines/sf-symbols), tab bar icons automatically adapt to different contexts. For example, the tab bar can be regular or compact, depending on the device and orientation. Tab bar icons appear above tab labels in compact views, whereas in regular views, the icons and labels appear side by side. Prefer filled symbols or icons for consistency with the platform.
 
+![An illustration of two iPhone devices side by side. The first iPhone is in landscape orientation with a tab bar at the bottom of the screen, with tab bar icons on the leading edge of each tab and tab labels on the trailing edge. The second iPhone is in portrait orientation with a tab bar at the bottom of the screen, with tab bar icons above their respective tab labels.](https://docs-assets.developer.apple.com/published/6871e7b24b6da37f753c61deba02c8ab/tab-bar-landscape%402x.png)
+
 If you’re creating custom tab bar icons, see [Apple Design Resources](https://developer.apple.com/design/resources/) for tab bar icon dimensions.
 
+![A diagram of a tab bar, with callouts indicating the location of the tab bar icon and tab label.](https://docs-assets.developer.apple.com/published/eb47e442c964d54ed32f9324c71511d1/tab-bar-anatomy-callouts%402x.png)
+
 **Use a badge to indicate that critical information is available.** You can display a badge — a red oval containing white text and either a number or an exclamation point — on a tab to indicate that there’s new or updated information in the section that warrants a person’s attention. Reserve badges for critical information so you don’t dilute their impact and meaning. For guidance, see [Notifications](/design/human-interface-guidelines/notifications).
+
+![An illustration of the bottom half of an iPhone in portrait orientation, with a tab bar at the bottom of the screen. Two of the tabs have red circular badges attached, indicating the presence of critical information.](https://docs-assets.developer.apple.com/published/29a93bc69eaa415e2e3d5440474a8d36/tab-bar-badges-iphone%402x.png)
 
 **Avoid applying a similar color to tab labels and content layer backgrounds.** If your app already has bright, colorful content in the content layer, prefer a monochromatic appearance for tab bars, or choose an accent color with sufficient visual differentiation. For more guidance, see [Liquid Glass color](/design/human-interface-guidelines/color#Liquid-Glass-color).
 
@@ -47,11 +55,23 @@ A tab bar floats above content at the bottom of the screen. Its items rest on a 
 
 For tab bars with an attached accessory, like the MiniPlayer in Music, you can choose to minimize the tab bar and move the accessory inline with it when a person scrolls down. A person can exit the minimized state by tapping a tab or scrolling to the top of the view. For developer guidance, see [TabBarMinimizeBehavior](/documentation/SwiftUI/TabBarMinimizeBehavior) and [UITabBarController.MinimizeBehavior](/documentation/UIKit/UITabBarController/MinimizeBehavior).
 
+![An illustration of the bottom half of an iPhone in portrait orientation, with the Music app open. The MiniPlayer is open above the tab bar at the bottom of the screen.](https://docs-assets.developer.apple.com/published/1b8fb04a802aacd9c9f46ba7b16be080/tab-bar-with-accessory-expanded%402x.png)
+
+![An illustration of the bottom half of an iPhone in portrait orientation, with the Music app open. The tab bar is minimized into the currently open tab at the leading bottom corner of the screen, with the MiniPlayer at the bottom center, and the search tab in the trailing corner.](https://docs-assets.developer.apple.com/published/d074ff4013a38155a887ceeecf2417fa/tab-bar-with-accessory-collapsed%402x.png)
+
 A tab bar can include a distinct search item at the trailing end. For guidance, see [Search fields](/design/human-interface-guidelines/search-fields).
 
 ### iPadOS
 
 The system displays a tab bar near the top of the screen. You can choose to have the tab bar appear as a fixed element, or with a button that converts it to a sidebar. For developer guidance, see [tabBarOnly](/documentation/SwiftUI/TabViewStyle/tabBarOnly) and [sidebarAdaptable](/documentation/SwiftUI/TabViewStyle/sidebarAdaptable).
+
+### Tab bar
+
+![A screenshot showing the Music app on iPad with the tab bar near the top of the screen.](https://docs-assets.developer.apple.com/published/66af6b050f67a05a82c5df2acb99913a/ipad-tab-bar-music-app%402x.png)
+
+### Sidebar
+
+![A screenshot showing the Music app on iPad with the tab bar converted to a sidebar on the leading edge of the screen.](https://docs-assets.developer.apple.com/published/0014d2d0207333d9624513167a69f2b2/ipad-sidebar-music-app%402x.png)
 
 > **Note:** To present a sidebar without the option to convert it to a tab bar, use a [navigation split view](https://developer.apple.com/documentation/swiftui/navigationsplitview) instead of a tab view. For guidance, see [Sidebars](/design/human-interface-guidelines/sidebars).
 
@@ -87,6 +107,10 @@ For additional guidance, see [Live-viewing apps](/design/human-interface-guideli
 In visionOS, a tab bar is always vertical, floating in a position that’s fixed relative to the window’s leading side. When people look at a tab bar, it automatically expands; to open a specific tab, people look at the tab and tap. While a tab bar is expanded, it can temporarily obscure the content behind it.
 
 **Supply a symbol and a text label for each tab.** A tab’s symbol is always visible in the tab bar. When people look at the tab bar, the system reveals tab labels, too. Even though the tab bar expands, you need to keep tab labels short so people can read them at a glance.
+
+![A screenshot showing a collapsed tab bar containing only symbols.](https://docs-assets.developer.apple.com/published/60282ea47a438f5b2bd84705212b44e4/visionos-tab-bar-collapsed%402x.png)
+
+![A screenshot showing an expanded tab bar containing both symbols and labels.](https://docs-assets.developer.apple.com/published/df1a14ce3d5e2743bfdfb0fea47fc340/visionos-tab-bar-expanded%402x.png)
 
 **If it makes sense in your app, consider using a sidebar within a tab.** If your app’s hierarchy is deep, you might want to use a [Sidebars](/design/human-interface-guidelines/sidebars) to support secondary navigation within a tab. If you do this, be sure to prevent selections in the sidebar from changing which tab is currently open.
 

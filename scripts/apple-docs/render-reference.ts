@@ -1,3 +1,4 @@
+import { type RenderArtifacts, renderVideoSidecar } from "./media.ts"
 import {
   finalizeMarkdown,
   renderBlocks,
@@ -13,7 +14,7 @@ import {
 import type { AppleDocJson } from "./types.ts"
 import { cleanTitle, titleize } from "./utils.ts"
 
-export function renderReferenceMarkdown(json: AppleDocJson, sourceUrl: string): string {
+export function renderReferenceArtifacts(json: AppleDocJson, sourceUrl: string): RenderArtifacts {
   let markdown = renderFrontMatter({
     title: cleanTitle(json.metadata?.title || json.interfaceLanguages?.swift?.[0]?.title || ""),
     description: renderInlineArray(json.abstract || [], json.references).trim(),
@@ -52,7 +53,21 @@ export function renderReferenceMarkdown(json: AppleDocJson, sourceUrl: string): 
   }
 
   markdown += renderIdentifierSections(json.seeAlsoSections, json.references)
-  return finalizeMarkdown(markdown, "documentation")
+  const content = json.primaryContentSections?.flatMap((section) => section.content || []) || []
+
+  return {
+    markdown: finalizeMarkdown(markdown, "documentation"),
+    videoSidecar: renderVideoSidecar(
+      cleanTitle(json.metadata?.title || ""),
+      sourceUrl,
+      content,
+      json.references,
+    ),
+  }
+}
+
+export function renderReferenceMarkdown(json: AppleDocJson, sourceUrl: string): string {
+  return renderReferenceArtifacts(json, sourceUrl).markdown
 }
 
 function renderReferenceBreadcrumbs(sourceUrl: string): string {

@@ -2,7 +2,7 @@
 title: CHHapticEngine
 description: An object that represents the connection to the haptic server.
 source: https://developer.apple.com/documentation/corehaptics/chhapticengine
-timestamp: 2026-04-09T12:04:08.656Z
+timestamp: 2026-04-09T13:37:14.265Z
 ---
 
 **Navigation:** [Core Haptics](/documentation/corehaptics)
@@ -23,6 +23,8 @@ class CHHapticEngine
 
 If you want your app to play custom haptics, you need to create a haptic engine. The haptic engine establishes the connection between your app and the underlying device hardware. Even though you can define a haptic pattern without an engine, you need the engine to play that pattern.
 
+![A dictionary defines a pattern, from which the haptic engine creates a pattern player for playing the haptic.](https://docs-assets.developer.apple.com/published/66a613deacd96bc7ac01d5a15e3eae73/media-3242669%402x.png)
+
 Even though your app makes a request through the haptic engine, the operating system could still override the request with system services, like haptics from system notifications.
 
 ### Prepare Your App To Play Haptics
@@ -32,6 +34,43 @@ To prepare your app to play haptics, follow these steps, as demonstrated in the 
 1. Create a haptic engine instance. Maintain a strong reference to it so it doesn’t go out of scope while the haptic is playing.
 2. Call the haptic engine’s [start(completionHandler:)](/documentation/corehaptics/chhapticengine/start(completionhandler:)) for an asynchronous start, or [start()](/documentation/corehaptics/chhapticengine/start()) to start the engine synchronously (immediately).
 3. Stop the engine by calling [stop(completionHandler:)](/documentation/corehaptics/chhapticengine/stop(completionhandler:)) when your app finishes haptic playback.
+
+### Swift
+
+```swift
+do {
+    // 1. Create a haptic engine instance.
+    hapticEngine = try CHHapticEngine()
+
+    // 2. Start the haptic engine.
+    try hapticEngine.start()
+} catch let error {
+    print("Engine Error: \(error)")
+}
+
+// 3. Stop the engine.
+hapticEngine.stop(completionHandler: { (_) -> Void in
+    // Insert code to call after engine stops.
+})
+```
+
+### Objective-C
+
+```objc
+// Create an error variable through which the engine returns error information.
+NSError* error = nil;
+
+// (1.) Create an instance of a haptic engine.
+self.hapticEngine = [[CHHapticEngine alloc] initAndReturnError:&error];
+
+// (2.) Start the haptic engine.
+[self.hapticEngine startAndReturnError:&error];
+
+// (3.) Stop the engine.
+[self.hapticEngine stopWithCompletionHandler:^(NSError* error){
+    // Insert code to call after engine stops.
+}];
+```
 
 Although it’s possible to create content—[CHHapticPattern](/documentation/corehaptics/chhapticpattern) instances—independent of a CHHapticEngine, your app must use an engine to play that content.
 

@@ -2,7 +2,7 @@
 title: Activity views
 description: An activity view — often called a *share sheet* — presents a range of tasks that people can perform in the current context.
 source: https://developer.apple.com/design/human-interface-guidelines/activity-views
-timestamp: 2026-04-09T12:04:12.650Z
+timestamp: 2026-04-09T13:37:18.463Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:04:12.650Z
 # Activity views
 
 > An activity view — often called a *share sheet* — presents a range of tasks that people can perform in the current context.
+
+![A stylized representation of an activity view or share sheet. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/db91332ad27ef2e58c95d58f4cf1435a/components-activity-view-intro%402x.png)
 
 Activity views present sharing activities like messaging and actions like Copy and Print, in addition to quick access to frequently used apps. People typically reveal a share sheet by choosing an Action button while viewing a page or document, or after they’ve selected an item. An activity view can appear as a sheet or a popover, depending on the device and orientation.
 
@@ -30,6 +32,10 @@ You can also create app extensions to provide custom share and action activities
 **Make sure activities are appropriate for the current context.** Although you can’t reorder system-provided tasks in an activity view, you can exclude tasks that aren’t applicable to your app. For example, if it doesn’t make sense to print from within your app, you can exclude the Print activity. You can also identify which custom tasks to show at any given time.
 
 **Use the Share button to display an activity view.** People are accustomed to accessing system-provided activities when they choose the Share button. Avoid confusing people by providing an alternative way to do the same thing.
+
+![A screenshot of the Notes app on iPhone, with an open Notes document titled Nature Walks. The top toolbar includes a Share button grouped with a More button on its trailing edge.](https://docs-assets.developer.apple.com/published/5cdc980290422f59da0f79ab5f5efd13/activity-views-share-button%402x.png)
+
+![A screenshot of the Notes app on iPhone, with an open Notes document titled Nature Walks. An activity view is open from the Share button, including controls for sharing the document with contacts or other apps, and copying, exporting, or adding markup to the document.](https://docs-assets.developer.apple.com/published/68a789fa9a70048fcef600615af180fd/activity-views-share-sheet%402x.png)
 
 ## Share and action extensions
 

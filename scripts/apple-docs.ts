@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { readFile, writeFile } from "node:fs/promises"
+import { readFile, rm, writeFile } from "node:fs/promises"
 import path from "node:path"
 import process from "node:process"
 
-import { renderSourceToMarkdown } from "./apple-docs/index.ts"
+import { renderSourceToArtifacts } from "./apple-docs/index.ts"
 import {
   collectMarkdownFiles,
   extractSourceUrl,
@@ -41,15 +41,16 @@ async function runFetch(args: string[]) {
 
   const outputIndex = args.indexOf("--output")
   const outputPath = outputIndex >= 0 ? args[outputIndex + 1] : null
-  const markdown = await renderSourceToMarkdown(target)
+  const artifacts = await renderSourceToArtifacts(target)
 
   if (outputPath) {
-    await writeFile(outputPath, markdown, "utf8")
+    await writeFile(outputPath, artifacts.markdown, "utf8")
+    await writeVideoSidecar(outputPath, artifacts.videoSidecar)
     console.log(`Wrote ${outputPath}`)
     return
   }
 
-  process.stdout.write(markdown)
+  process.stdout.write(artifacts.markdown)
 }
 
 async function runRefresh(args: string[]) {
@@ -57,7 +58,7 @@ async function runRefresh(args: string[]) {
   const matchIndex = args.indexOf("--match")
   const match = matchIndex >= 0 ? (args[matchIndex + 1]?.toLowerCase() ?? null) : null
   const files = (await collectMarkdownFiles(path.resolve("skills"))).filter(
-    (file) => !file.endsWith(`${path.sep}SKILL.md`),
+    (file) => !file.endsWith(`${path.sep}SKILL.md`) && !file.endsWith(".videos.md"),
   )
 
   let changed = 0
@@ -77,8 +78,13 @@ async function runRefresh(args: string[]) {
     if (!isAppleSourceUrl(sourceUrl)) continue
 
     try {
-      const next = await renderSourceToMarkdown(sourceUrl)
-      if (normalizeForCompare(current) === normalizeForCompare(next)) {
+      const next = await renderSourceToArtifacts(sourceUrl)
+      const sidecarPath = getVideoSidecarPath(file)
+      const currentVideoSidecar = await readOptionalFile(sidecarPath)
+      const mainUnchanged = normalizeForCompare(current) === normalizeForCompare(next.markdown)
+      const videoUnchanged = currentVideoSidecar === next.videoSidecar
+
+      if (mainUnchanged && videoUnchanged) {
         unchanged += 1
         continue
       }
@@ -86,7 +92,8 @@ async function runRefresh(args: string[]) {
       changed += 1
       console.log(`🔄 CHANGED: ${path.relative(process.cwd(), file)}`)
       if (apply) {
-        await writeFile(file, next, "utf8")
+        await writeFile(file, next.markdown, "utf8")
+        await writeVideoSidecar(file, next.videoSidecar)
         console.log("   ✅ Updated")
       }
     } catch (error) {
@@ -108,6 +115,30 @@ async function runRefresh(args: string[]) {
     console.log("")
     console.log("Run with --apply to update changed files.")
   }
+}
+
+function getVideoSidecarPath(markdownPath: string): string {
+  return markdownPath.endsWith(".md")
+    ? markdownPath.replace(/\.md$/, ".videos.md")
+    : `${markdownPath}.videos.md`
+}
+
+async function readOptionalFile(filePath: string): Promise<string | null> {
+  try {
+    return await readFile(filePath, "utf8")
+  } catch {
+    return null
+  }
+}
+
+async function writeVideoSidecar(markdownPath: string, content: string | null): Promise<void> {
+  const sidecarPath = getVideoSidecarPath(markdownPath)
+  if (!content) {
+    await rm(sidecarPath, { force: true })
+    return
+  }
+
+  await writeFile(sidecarPath, content, "utf8")
 }
 
 function printHelp() {

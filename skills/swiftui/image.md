@@ -2,7 +2,7 @@
 title: Image
 description: A view that displays an image.
 source: https://developer.apple.com/documentation/swiftui/image
-timestamp: 2026-04-09T12:04:36.243Z
+timestamp: 2026-04-09T13:37:40.659Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -36,6 +36,8 @@ Image("Landscape_4")
     .aspectRatio(contentMode: .fit)
 Text("Water wheel")
 ```
+
+![An image of a water wheel and its adjoining building, resized to fit the](https://docs-assets.developer.apple.com/published/5d218460da75fc53e2a4398f3ab30a3b/Image-1%402x.png)
 
 You can use methods on the `Image` type as well as standard view modifiers to adjust the size of the image to fit your app’s interface. Here, the `Image` type’s [resizable(capInsets:resizingMode:)](/documentation/swiftui/image/resizable(capinsets:resizingmode:)) method scales the image to fit the current view. Then, the [aspectRatio(_:contentMode:)](/documentation/swiftui/view/aspectratio(_:contentmode:)) view modifier adjusts this resizing behavior to maintain the image’s original aspect ratio, rather than scaling the x- and y-axes independently to fill all four sides of the view. The article [Fitting images into available space](/documentation/swiftui/fitting-images-into-available-space) shows how to apply scaling, clipping, and tiling to `Image` instances of different sizes.
 

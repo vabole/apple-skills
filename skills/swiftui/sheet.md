@@ -2,7 +2,7 @@
 title: sheet(isPresented:onDismiss:content:)
 description: Presents a sheet when a binding to a Boolean value that you provide is true.
 source: https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)
-timestamp: 2026-04-09T12:04:39.630Z
+timestamp: 2026-04-09T13:37:43.749Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
@@ -67,6 +67,8 @@ struct ShowLicenseAgreement: View {
     }
 }
 ```
+
+![A screenshot of a full-screen modal sheet showing the mockup of a](https://docs-assets.developer.apple.com/published/1f086a26afa553b6877f59b2b320cd85/SwiftUI-View-SheetIsPresentingContent%402x.png)
 
 In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [presentationCompactAdaptation(_:)](/documentation/swiftui/view/presentationcompactadaptation(_:)) or [presentationCompactAdaptation(horizontal:vertical:)](/documentation/swiftui/view/presentationcompactadaptation(horizontal:vertical:)) modifier to override this behavior.
 

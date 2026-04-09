@@ -2,7 +2,7 @@
 title: Launching
 description: A streamlined launch experience helps people start using your app or game immediately.
 source: https://developer.apple.com/design/human-interface-guidelines/launching
-timestamp: 2026-04-09T12:18:11.417Z
+timestamp: 2026-04-09T13:37:20.337Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:18:11.417Z
 # Launching
 
 > A streamlined launch experience helps people start using your app or game immediately.
+
+![A sketch of a square containing an arrow pointing to the upper-right corner, suggesting a transition to a new state. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5ef419551a96fe1df7df2bd5d610b5dc/patterns-launching-intro%402x.png)
 
 Launching begins when someone opens your app or game, includes an initial download, and ends when the first screen is ready. After launching completes, you might offer an [Onboarding](/design/human-interface-guidelines/onboarding) experience, which can give people a high-level view of your app or game.
 

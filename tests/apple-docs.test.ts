@@ -1,8 +1,76 @@
 import { describe, expect, it } from "vitest"
 
-import { renderHIGPageMarkdown } from "../scripts/apple-docs/render-hig.ts"
+import { renderHIGPageArtifacts, renderHIGPageMarkdown } from "../scripts/apple-docs/render-hig.ts"
 import { renderReferenceMarkdown } from "../scripts/apple-docs/render-reference.ts"
 import type { AppleDocJson } from "../scripts/apple-docs/types.ts"
+
+function createMediaRichHIGJson(): AppleDocJson {
+  return {
+    metadata: { title: "App icons", role: "article" },
+    references: {
+      "icon.png": {
+        identifier: "icon.png",
+        type: "image",
+        alt: "An app icon example.",
+        variants: [{ url: "https://docs-assets.example/icon.png", traits: ["2x", "light"] }],
+      },
+      "demo.mp4": {
+        identifier: "demo.mp4",
+        type: "video",
+        alt: "A short icon animation.",
+        poster: "poster.png",
+        variants: [{ url: "https://docs-assets.example/demo.mp4", traits: ["1x", "light"] }],
+      },
+      "poster.png": {
+        identifier: "poster.png",
+        type: "image",
+        alt: "The poster frame.",
+        variants: [{ url: "https://docs-assets.example/poster.png", traits: ["2x", "light"] }],
+      },
+    },
+    primaryContentSections: [
+      {
+        kind: "content",
+        content: [
+          {
+            type: "paragraph",
+            inlineContent: [{ type: "image", identifier: "icon.png" }],
+          },
+          {
+            type: "tabNavigator",
+            tabs: [
+              {
+                title: "iOS",
+                content: [
+                  {
+                    type: "row",
+                    columns: [
+                      {
+                        content: [
+                          {
+                            type: "paragraph",
+                            inlineContent: [{ type: "image", identifier: "icon.png" }],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            type: "video",
+            identifier: "demo.mp4",
+            metadata: {
+              abstract: [{ type: "text", text: "iOS app icon" }],
+            },
+          },
+        ],
+      },
+    ],
+  }
+}
 
 describe("renderReferenceMarkdown", () => {
   it("renders key reference sections", () => {
@@ -161,5 +229,24 @@ describe("renderHIGPageMarkdown", () => {
 
     expect(markdown).toContain("| Shape | Regular |")
     expect(markdown).toContain("| Circular | Supported |")
+  })
+
+  it("keeps images in the main doc and extracts videos to a sidecar", () => {
+    const json = createMediaRichHIGJson()
+    const artifacts = renderHIGPageArtifacts(
+      json,
+      "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+    )
+
+    expect(artifacts.markdown).toContain(
+      "![An app icon example.](https://docs-assets.example/icon.png)",
+    )
+    expect(artifacts.markdown).toContain("### iOS")
+    expect(artifacts.markdown).not.toContain("https://docs-assets.example/demo.mp4")
+    expect(artifacts.videoSidecar).toContain("# App icons videos")
+    expect(artifacts.videoSidecar).toContain("[iOS app icon](https://docs-assets.example/demo.mp4)")
+    expect(artifacts.videoSidecar).toContain(
+      "[Poster image](https://docs-assets.example/poster.png)",
+    )
   })
 })

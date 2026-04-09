@@ -2,7 +2,7 @@
 title: ViewThatFits
 description: A view that adapts to the available space by providing the first child view that fits.
 source: https://developer.apple.com/documentation/swiftui/viewthatfits
-timestamp: 2026-04-09T12:04:41.913Z
+timestamp: 2026-04-09T13:37:45.859Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -62,6 +62,8 @@ VStack {
         .frame(maxWidth: 50)
 }
 ```
+
+![A vertical stack showing three expressions of progress, constrained by](https://docs-assets.developer.apple.com/published/2b5e67f3b1922018a42dec9df80df304/ViewThatFits-1%402x.png)
 
 ## Conforms To
 

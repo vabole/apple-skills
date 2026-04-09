@@ -2,7 +2,7 @@
 title: HStack
 description: A view that arranges its subviews in a horizontal line.
 source: https://developer.apple.com/documentation/swiftui/hstack
-timestamp: 2026-04-09T12:04:36.018Z
+timestamp: 2026-04-09T13:37:40.480Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -40,6 +40,8 @@ var body: some View {
     }
 }
 ```
+
+![Five text views, named Item 1 through Item 5, arranged in a](https://docs-assets.developer.apple.com/published/4d9bc52c0fbde5252c797d82d913a50b/SwiftUI-HStack-simple%402x.png)
 
 > **Note:** If you need a horizontal stack that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [AnyLayout](/documentation/swiftui/anylayout), use [HStackLayout](/documentation/swiftui/hstacklayout) instead.
 

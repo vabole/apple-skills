@@ -2,7 +2,7 @@
 title: Form
 description: A container for grouping controls used for data entry, such as in settings or inspectors.
 source: https://developer.apple.com/documentation/swiftui/form
-timestamp: 2026-04-09T12:04:35.306Z
+timestamp: 2026-04-09T13:37:39.942Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -51,6 +51,8 @@ var body: some View {
 }
 ```
 
+![A form on iOS, presented as a grouped list with two sections. The](https://docs-assets.developer.apple.com/published/9b9f14a16c5d9d1fed7b121071bdb262/SwiftUI-Form-iOS%402x.png)
+
 On macOS, a similar form renders as a vertical stack. To adhere to macOS platform conventions, this version doesn’t use sections, and uses colons at the end of its labels. It also sets the picker to use the [inline](/documentation/swiftui/pickerstyle/inline) style, which produces radio buttons on macOS.
 
 ```swift
@@ -81,6 +83,8 @@ var body: some View {
     Spacer()
 }
 ```
+
+![A form on iOS, presented as a vertical stack of views. At top, it shows](https://docs-assets.developer.apple.com/published/cdbe25e36916e95c7d68402249d02bb4/SwiftUI-Form-macOS%402x.png)
 
 ## Conforms To
 

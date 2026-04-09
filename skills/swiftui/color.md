@@ -2,7 +2,7 @@
 title: Color
 description: A representation of a color that adapts to a given context.
 source: https://developer.apple.com/documentation/swiftui/color
-timestamp: 2026-04-09T12:04:34.358Z
+timestamp: 2026-04-09T13:37:39.080Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -53,6 +53,8 @@ Image(systemName: "leaf.fill")
     .foregroundStyle(Color.green)
 ```
 
+![A screenshot of a green leaf.](https://docs-assets.developer.apple.com/published/37c0a9c2c6246f3ca18bf7f74bed4d04/Color-1%402x.png)
+
 Because SwiftUI treats colors as [View](/documentation/swiftui/view) instances, you can also directly add them to a view hierarchy. For example, you can layer a rectangle beneath a sun image using colors defined above:
 
 ```swift
@@ -65,6 +67,8 @@ ZStack {
 ```
 
 A color used as a view expands to fill all the space it’s given, as defined by the frame of the enclosing [ZStack](/documentation/swiftui/zstack) in the above example:
+
+![A screenshot of a yellow sun on a blue background.](https://docs-assets.developer.apple.com/published/36855a93cc9257f1b96547cfd6087c28/Color-2%402x.png)
 
 SwiftUI only resolves a color to a concrete value just before using it in a given environment. This enables a context-dependent appearance for system defined colors, or those that you load from an Asset Catalog. For example, a color can have distinct light and dark variants that the system chooses from at render time.
 

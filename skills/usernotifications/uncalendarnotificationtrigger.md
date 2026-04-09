@@ -2,7 +2,7 @@
 title: UNCalendarNotificationTrigger
 description: A trigger condition that causes a notification the system delivers at a specific date and time.
 source: https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger
-timestamp: 2026-04-09T12:04:43.821Z
+timestamp: 2026-04-09T13:37:47.582Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)
@@ -26,6 +26,25 @@ Create a [UNCalendarNotificationTrigger](/documentation/usernotifications/uncale
 Listing 1 creates a trigger that delivers its notification every morning at 8:30. The repeating behavior is achieved by specifying `true` for the `repeats` parameter when creating the trigger.
 
 Listing 1. Creating a trigger that repeats at a specific time
+
+### Swift
+
+```swift
+var date = DateComponents()
+date.hour = 8
+date.minute = 30 
+let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+```
+
+### Objective-C
+
+```objc
+NSDateComponents* date = [[NSDateComponents alloc] init];
+date.hour = 8;
+date.minute = 30; 
+UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
+                     triggerWithDateMatchingComponents:date repeats:YES];
+```
 
 ## Inherits From
 

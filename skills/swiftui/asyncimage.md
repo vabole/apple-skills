@@ -2,7 +2,7 @@
 title: AsyncImage
 description: A view that asynchronously loads and displays an image.
 source: https://developer.apple.com/documentation/swiftui/asyncimage
-timestamp: 2026-04-09T12:04:33.000Z
+timestamp: 2026-04-09T13:37:37.998Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -30,6 +30,8 @@ AsyncImage(url: URL(string: "https://example.com/icon.png"))
 
 Until the image loads, the view displays a standard placeholder that fills the available space. After the load completes successfully, the view updates to display the image. In the example above, the icon is smaller than the frame, and so appears smaller than the placeholder.
 
+![A diagram that shows a grey box on the left, the SwiftUI icon on the](https://docs-assets.developer.apple.com/published/7a8d82fa0ae80e1c40ba9a151d56c704/AsyncImage-1%402x.png)
+
 You can specify a custom placeholder using [init(url:scale:content:placeholder:)](/documentation/swiftui/asyncimage/init(url:scale:content:placeholder:)). With this initializer, you can also use the `content` parameter to manipulate the loaded image. For example, you can add a modifier to make the loaded image resizable:
 
 ```swift
@@ -42,6 +44,8 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { image in
 ```
 
 For this example, SwiftUI shows a [ProgressView](/documentation/swiftui/progressview) first, and then the image scaled to fit in the specified frame:
+
+![A diagram that shows a progress view on the left, the SwiftUI icon on the](https://docs-assets.developer.apple.com/published/d288fdb7e0fd01131459d0fa071516aa/AsyncImage-2%402x.png)
 
 > **Important:** You can’t apply image-specific modifiers, like [resizable(capInsets:resizingMode:)](/documentation/swiftui/image/resizable(capinsets:resizingmode:)), directly to an `AsyncImage`. Instead, apply them to the [Image](/documentation/swiftui/image) instance that your `content` closure gets when defining the view’s appearance.
 

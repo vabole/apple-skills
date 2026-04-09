@@ -2,7 +2,7 @@
 title: Searching
 description: People use various search techniques to find content on their device, within an app, and within a document or file.
 source: https://developer.apple.com/design/human-interface-guidelines/searching
-timestamp: 2026-04-09T12:18:16.204Z
+timestamp: 2026-04-09T13:37:23.883Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:18:16.204Z
 # Searching
 
 > People use various search techniques to find content on their device, within an app, and within a document or file.
+
+![A sketch of a magnifying glass, suggesting the search for information. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d80bc4d95013730b824dc7956f912b4d/patterns-searching-intro%402x.png)
 
 To search for content within an app, people generally expect to use a [Search fields](/design/human-interface-guidelines/search-fields). When it makes sense, you can personalize the search experience by using what you know about how people interact with your app. For example, you might display recent searches, search suggestions, completions, or corrections based on terms people searched earlier in your app.
 

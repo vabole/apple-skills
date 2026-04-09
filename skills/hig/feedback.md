@@ -2,7 +2,7 @@
 title: Feedback
 description: Feedback helps people know what’s happening, discover what they can do next, understand the results of actions, and avoid mistakes.
 source: https://developer.apple.com/design/human-interface-guidelines/feedback
-timestamp: 2026-04-09T12:04:14.326Z
+timestamp: 2026-04-09T13:37:19.994Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:04:14.326Z
 # Feedback
 
 > Feedback helps people know what’s happening, discover what they can do next, understand the results of actions, and avoid mistakes.
+
+![A sketch of a pointer surrounded by a circular set of short lines, suggesting a response to a mouse click. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d7e2c91a509e05b5e8ee422c6fea86b3/patterns-feedback-intro%402x.png)
 
 Providing clear, consistent feedback as people interact with your app or game can make it feel intuitive and encourage deeper exploration. Feedback can communicate several different things, such as:
 

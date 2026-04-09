@@ -2,7 +2,7 @@
 title: Slider
 description: A control for selecting a value from a bounded linear range of values.
 source: https://developer.apple.com/documentation/swiftui/slider
-timestamp: 2026-04-09T12:04:39.870Z
+timestamp: 2026-04-09T13:37:43.916Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -44,6 +44,8 @@ var body: some View {
 }
 ```
 
+![An unlabeled slider, with its thumb about one third of the way from the](https://docs-assets.developer.apple.com/published/9a41fa64a088c04aef5d52935a5b4308/SwiftUI-Slider-simple%402x.png)
+
 You can also use a `step` parameter to provide incremental steps along the path of the slider. For example, if you have a slider with a range of `0` to `100`, and you set the `step` value to `5`, the slider’s increments would be `0`, `5`, `10`, and so on. The following example shows this approach, and also adds optional minimum and maximum value labels.
 
 ```swift
@@ -68,6 +70,8 @@ var body: some View {
         .foregroundColor(isEditing ? .red : .blue)
 }
 ```
+
+![A slider with labels show minimum and maximum values of 0 and 100,](https://docs-assets.developer.apple.com/published/391df10be6d7d1c252c6d81c8ca0b440/SwiftUI-Slider-withStepAndLabels%402x.png)
 
 The slider also uses the `step` to increase or decrease the value when a VoiceOver user adjusts the slider with voice commands.
 

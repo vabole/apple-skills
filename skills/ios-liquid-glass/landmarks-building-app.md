@@ -2,7 +2,7 @@
 title: Landmarks: Building an app with Liquid Glass
 description: Enhance your app experience with system-provided and custom Liquid Glass.
 source: https://developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass
-timestamp: 2026-04-09T12:04:23.938Z
+timestamp: 2026-04-09T13:37:28.377Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -19,6 +19,8 @@ timestamp: 2026-04-09T12:04:23.938Z
 
 Landmarks is a SwiftUI app that demonstrates how to use the new dynamic and expressive design feature, Liquid Glass. The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way. Landmarks runs on iPad, iPhone, and Mac.
 
+![An image of screenshots of the landmark detail view for Mount Fuji in the Landmarks app, in a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/ce193ec494e91d4150c3356442824213/Landmarks-Building-an-app-with-Liquid-Glass-1%402x.png)
+
 Landmarks uses a [NavigationSplitView](/documentation/swiftui/navigationsplitview) to organize and navigate to content in the app, and demonstrates several key concepts to optimize the use of Liquid Glass:
 
 - Stretching content behind the sidebar and inspector with the background extension effect.
@@ -33,6 +35,8 @@ The sample also demonstrates several techniques to use when changing window size
 
 The sample applies a background extension effect to the featured landmark header in the top view, and the main image in the landmark detail view. This effect extends and blurs the image under the sidebar and inspector when they’re open, creating a full edge-to-edge experience.
 
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/32d9f0bd8395e9cbd92e197c7aa2b4b3/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
+
 To achieve this effect, the sample creates and configures an [Image](/documentation/swiftui/image) that extends to both the leading and trailing edges of the containing view, and applies the [backgroundExtensionEffect()](/documentation/swiftui/view/backgroundextensioneffect()) modifier to the image. For the featured image, the sample adds an overlay with a headline and button after the modifier, so that only the image extends under the sidebar and inspector.
 
 > **Note:** The sample also extends the image beyond the top safe area, and adds logic to interactively extend the image when you scroll down beyond the view’s bounds. While this improves the experience of the image in the app, it isn’t required to implement the background extension effect.
@@ -44,6 +48,8 @@ For more information, see [Landmarks: Applying a background extension effect](/d
 Within each continent section in `LandmarksView`, an instance of `LandmarkHorizontalListView` shows a horizontally scrolling list of landmark views. When open, the landmark views can scroll underneath the sidebar or inspector.
 
 To achieve this effect, the app aligns the scroll views next to the leading and trailing edges of the containing view.
+
+![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](https://docs-assets.developer.apple.com/published/709551ab6017da3888bbb3b9b1620fed/Landmarks-Building-an-app-with-Liquid-Glass-3%402x.png)
 
 For more information, see [Landmarks: Extending horizontal scrolling under a sidebar or inspector](/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector).
 
@@ -58,11 +64,15 @@ In `LandmarkDetailView`, the sample adds toolbar items for:
 
 The system applies Liquid Glass to toolbar items automatically:
 
+![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/d57c72c1a92b1dcdd763b4a22670a4db/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
+
 The sample also organizes the toolbar into related groups, instead of having all the buttons in one group. For more information, see [Landmarks: Refining the system provided Liquid Glass effect in toolbars](/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars).
 
 ## Display badges with Liquid Glass
 
 Badges provide people with a visual indicator of the activities they’ve recorded in the Landmarks app. When a person completes all four activities for a landmark, they earn that landmark’s badge. The sample uses custom Liquid Glass elements with badges, and shows how to coordinate animations with Liquid Glass.
+
+![An image of the landmarks view on an iPhone, with the badges view visible over some landmarks.](https://docs-assets.developer.apple.com/published/0906c5ecab4688f18b19faf293acb363/Landmarks-Building-an-app-with-Liquid-Glass-5%402x.png)
 
 To create a custom Liquid Glass badge, Landmarks uses a view with an `Image` to display a system symbol image for the badge. The badge has a background hexagon `Image` filled with a custom color. The badge view uses the [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:)) modifier to apply Liquid Glass to the badge.
 

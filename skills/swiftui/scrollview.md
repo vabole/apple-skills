@@ -2,7 +2,7 @@
 title: ScrollView
 description: A scrollable view.
 source: https://developer.apple.com/documentation/swiftui/scrollview
-timestamp: 2026-04-09T12:04:39.014Z
+timestamp: 2026-04-09T13:37:43.413Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -36,6 +36,8 @@ var body: some View {
     }
 }
 ```
+
+![A scroll view with a series of vertically arranged rows, reading](https://docs-assets.developer.apple.com/published/0eab3cad2c7924af68ccb8d604044ce1/SwiftUI-ScrollView-rows-with-indicator%402x.png)
 
 ### Controlling Scroll Position
 

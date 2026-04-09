@@ -2,7 +2,7 @@
 title: Layout
 description: A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
 source: https://developer.apple.com/design/human-interface-guidelines/layout
-timestamp: 2026-04-09T12:17:26.810Z
+timestamp: 2026-04-09T13:37:20.563Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:17:26.810Z
 # Layout
 
 > A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
+
+![A sketch of a small rectangle in the upper-left quadrant of a larger rectangle, suggesting the position of a user interface element within a window. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/fe3e14f290a6986d2490634a9e2fab0c/foundations-layout-intro%402x.png)
 
 Your app’s layout helps ground people in your content from the moment they open it. People expect familiar relationships between controls and content to help them use and discover your app’s features, and designing the layout to take advantage of this makes your app feel at home on the platform.
 
@@ -26,6 +28,8 @@ Apple provides templates, guides, and other resources that can help you integrat
 **Extend content to fill the screen or window.** Make sure backgrounds and full-screen artwork extend to the edges of the display. Also ensure that scrollable layouts continue all the way to the bottom and the sides of the device screen. Controls and navigation components like sidebars and tab bars appear on top of content rather than on the same plane, so it’s important for your layout to take this into account.
 
 When your content doesn’t span the full window, use a background extension view to provide the appearance of content behind the control layer on either side of the screen, such as beneath the sidebar or inspector. For developer guidance, see [backgroundExtensionEffect()](/documentation/SwiftUI/View/backgroundExtensionEffect()) and [UIBackgroundExtensionView](/documentation/UIKit/UIBackgroundExtensionView).
+
+![A screenshot of a full screen iPad app with a sidebar on the leading edge. A photo of Mount Fuji fills the top half of the content area. The photo subtly blurs as it reaches the top of the screen, where toolbar items float above it grouped on the trailing edge. Where the photo meets the sidebar, the image flips, blurs, and extends fully beneath the sidebar to the edge of the screen.](https://docs-assets.developer.apple.com/published/ffacfee843cc378d0af09d8926f2408b/layout-background-extention-view%402x.png)
 
 ## Visual hierarchy
 
@@ -104,13 +108,113 @@ People can freely resize windows down to a minimum width and height, similar to 
 
 **Adhere to the screen’s safe area.** Inset primary content 60 points from the top and bottom of the screen, and 80 points from the sides. It can be difficult for people to see content that close to the edges, and unintended cropping can occur due to overscanning on older TVs. Allow only partially displayed offscreen content and elements that deliberately flow offscreen to appear outside this zone.
 
+![An illustration of a TV with a safe zone border on all sides. In width, the top and bottom borders measure 60 points, and the side borders both measure 80 points.](https://docs-assets.developer.apple.com/published/1be425edd08beb67cba3c1000983581f/visual-design-safe-zone%402x.png)
+
 **Include appropriate padding between focusable elements.** When you use UIKit and the focus APIs, an element gets bigger when it comes into focus. Consider how elements look when they’re focused, and make sure you don’t let them overlap important information. For developer guidance, see [About focus interactions for Apple TV](/documentation/UIKit/about-focus-interactions-for-apple-tv).
+
+![An illustration that uses vertical shaded rectangles to show padding between focusable items.](https://docs-assets.developer.apple.com/published/1cfcdddb80150197945945a6884a9ade/visual-design-padding%402x.png)
 
 #### Grids
 
 The following grid layouts provide an optimal viewing experience. Be sure to use appropriate spacing between unfocused rows and columns to prevent overlap when an item comes into focus.
 
 If you use the UIKit collection view flow element, the number of columns in a grid is automatically determined based on the width and spacing of your content. For developer guidance, see [UICollectionViewFlowLayout](/documentation/UIKit/UICollectionViewFlowLayout).
+
+### Two-column
+
+![An illustration of Apple TV, displaying a two-column grid of media items. Additional media items are partially visible on the right side and bottom edge of the screen.](https://docs-assets.developer.apple.com/published/29cbd7ef913d834c991bd303816e410d/visual-design-grid-2-column%402x.png)
+
+#### Two-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 860 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
+
+### Three-column
+
+![An illustration of Apple TV, displaying a three-column grid of media items. Additional media items are partially visible on the right side and bottom edge of the screen.](https://docs-assets.developer.apple.com/published/efc27c2f40d150e6350f03d8709527d8/visual-design-grid-3-column%402x.png)
+
+#### Three-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 560 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
+
+### Four-column
+
+![An illustration of Apple TV, displaying a four-column grid of media items. Additional media items are partially visible on the right side of the screen.](https://docs-assets.developer.apple.com/published/b02a182e769f7a89201719f46547dabf/visual-design-grid-4-column%402x.png)
+
+#### Four-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 410 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
+
+### Five-column
+
+![An illustration of Apple TV, displaying a five-column grid of media items. Additional media items are partially visible on the right side and bottom edge of the screen.](https://docs-assets.developer.apple.com/published/6eebe97a166aceb55ed18304ac46be8d/visual-design-grid-5-column%402x.png)
+
+#### Five-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 320 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
+
+### Six-column
+
+![An illustration of Apple TV, displaying a six-column grid of media items. Additional media items are partially visible on the right side and bottom edge of the screen.](https://docs-assets.developer.apple.com/published/a2a7efa8dc58b3615082ba7e62e81437/visual-design-grid-6-column%402x.png)
+
+#### Six-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 260 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
+
+### Seven-column
+
+![An illustration of Apple TV, displaying a seven-column grid of media items. Additional media items are partially visible on the right side of the screen.](https://docs-assets.developer.apple.com/published/3e625b746a4a31f083020cfa91674bd6/visual-design-grid-7-column%402x.png)
+
+#### Seven-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 217 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
+
+### Eight-column
+
+![An illustration of Apple TV, displaying an eight-column grid of media items. Additional media items are partially visible on the right side and bottom edge of the screen.](https://docs-assets.developer.apple.com/published/71f872111291a6f1b465ddfd4f4dc246/visual-design-grid-8-column%402x.png)
+
+#### Eight-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 184 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
+
+### Nine-column
+
+![An illustration of Apple TV, displaying a nine-column grid of media items.](https://docs-assets.developer.apple.com/published/19125b211b45864b26f33d8f54a98a87/visual-design-grid-9-column%402x.png)
+
+#### Nine-column grid
+
+| Attribute | Value |
+| --- | --- |
+| Unfocused content width | 160 pt |
+| Horizontal spacing | 40 pt |
+| Minimum vertical spacing | 100 pt |
 
 **Include additional vertical spacing for titled rows.** If a row has a title, provide enough spacing between the bottom of the previous unfocused row and the center of the title to avoid crowding. Also provide spacing between the bottom of the title and the top of the unfocused items in the row.
 
@@ -136,7 +240,11 @@ The guidance below can help you lay out content within the windows of your visio
 
 **Design your content to extend from one edge of the screen to the other.** The Apple Watch bezel provides a natural visual padding around your content. To avoid wasting valuable space, consider minimizing the padding between elements.
 
+![An illustration of the Workout app’s main list of workouts on Apple Watch. A callout indicates that the currently focused workout item spans the full width of the available screen area.](https://docs-assets.developer.apple.com/published/9b9b27a4e9e752fc4ed6be98f5eb5b0d/layout-full-width%402x.png)
+
 **Avoid placing more than two or three controls side by side in your interface.** As a general rule, display no more than three buttons that contain glyphs — or two buttons that contain text — in a row. Although it’s usually better to let text buttons span the full width of the screen, two side-by-side buttons with short text labels can also work well, as long as the screen doesn’t scroll.
+
+![A diagram of an Apple Watch screen showing two side-by-side buttons beneath three lines of text.](https://docs-assets.developer.apple.com/published/25c5882538789bded5a9953eb5e2001f/layout-controls%402x.png)
 
 **Support autorotation in views people might want to show others.** When people flip their wrist away, apps typically respond to the motion by sleeping the display, but in some cases it makes sense to autorotate the content. For example, a wearer might want to show an image to a friend or display a QR code to a reader. For developer guidance, see [isAutorotating](/documentation/WatchKit/WKExtension/isAutorotating).
 

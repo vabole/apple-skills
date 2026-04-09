@@ -1,3 +1,4 @@
+import { type RenderArtifacts, renderVideoSidecar } from "./media.ts"
 import {
   finalizeMarkdown,
   renderBlocks,
@@ -8,7 +9,7 @@ import {
 import type { AppleDocJson, IndexNode } from "./types.ts"
 import { cleanTitle, titleize } from "./utils.ts"
 
-export function renderHIGPageMarkdown(json: AppleDocJson, sourceUrl: string): string {
+export function renderHIGPageArtifacts(json: AppleDocJson, sourceUrl: string): RenderArtifacts {
   let markdown = renderFrontMatter({
     title: cleanTitle(json.metadata?.title || ""),
     description: renderInlineArray(json.abstract || [], json.references).trim(),
@@ -36,7 +37,24 @@ export function renderHIGPageMarkdown(json: AppleDocJson, sourceUrl: string): st
     markdown += renderIdentifierSections(json.topicSections, json.references)
   }
 
-  return finalizeMarkdown(markdown, "hig")
+  const content = [
+    ...(json.primaryContentSections?.flatMap((section) => section.content || []) || []),
+    ...(json.sections || []),
+  ]
+
+  return {
+    markdown: finalizeMarkdown(markdown, "hig"),
+    videoSidecar: renderVideoSidecar(
+      cleanTitle(json.metadata?.title || ""),
+      sourceUrl,
+      content,
+      json.references,
+    ),
+  }
+}
+
+export function renderHIGPageMarkdown(json: AppleDocJson, sourceUrl: string): string {
+  return renderHIGPageArtifacts(json, sourceUrl).markdown
 }
 
 export function renderHIGIndexMarkdown(json: AppleDocJson): string {

@@ -2,7 +2,7 @@
 title: Menus
 description: A menu reveals its options when people interact with it, making it a space-efficient way to present commands in your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/menus
-timestamp: 2026-04-09T12:18:12.254Z
+timestamp: 2026-04-09T13:37:21.200Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:18:12.254Z
 # Menus
 
 > A menu reveals its options when people interact with it, making it a space-efficient way to present commands in your app or game.
+
+![A stylized representation of a menu containing a selected item and displaying a submenu. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/1b80fb7536a25c7f39451d34f80672fd/components-menus-intro%402x.png)
 
 Menus are ubiquitous in apps and games, so most people already know how to use them. Whether you use system-provided components or custom ones, people expect menus to behave in familiar ways. For example, people understand that opening a menu reveals one or more *menu items*, each of which represents a command, option, or state that affects the current selection or context. The guidance for labeling and organizing menu items applies to all types of menus in all experiences.
 
@@ -39,7 +41,27 @@ A menu item’s label describes what it does and may include a symbol if it help
 
 **Don’t display an icon if you can’t find one that clearly represents the menu item.** Not all menu items need an icon. Be careful when adding icons for custom menu items to avoid confusion with other existing actions, and don’t add icons just for the sake of ornamentation.
 
+![An illustration of a menu containing the days of the week. Each menu item is represented by a different symbol with no relation to the corresponding day.](https://docs-assets.developer.apple.com/published/e612c40d780feb72382a1d387aa556f6/menus-days-of-the-week-incorrect-icons%402x.png)
+
+![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
+
+![An illustration of a menu containing the days of the week with no accompanying symbols.](https://docs-assets.developer.apple.com/published/72bddfbe313d096cac7f09d136d2a601/menus-days-of-the-week-correct-no-icons%402x.png)
+
+![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
+
 **Use a single icon to introduce a group of similar items.** Instead of adding individual icons for each action, or reusing the same icon for all of them, establish a common theme with the symbol for the first item and rely on the menu item text to keep the remaining items distinct.
+
+![An illustration of an Edit menu that includes several similar Copy actions, with each represented by a different symbol.](https://docs-assets.developer.apple.com/published/7deb98def27f19a33794b9ec6cee02b4/menus-copy-actions-different-icons-incorrect%402x.png)
+
+![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
+
+![An illustration of an Edit menu that includes several similar Copy actions, with each represented by the same Copy symbol.](https://docs-assets.developer.apple.com/published/60241bb399a7e5faa06e9e53de4d858b/menus-copy-actions-repeated-icons-incorrect%402x.png)
+
+![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
+
+![An illustration of an Edit menu that includes several similar Copy actions. The first is represented by the Copy symbol, and the others with no symbol.](https://docs-assets.developer.apple.com/published/ee3e63278a8b0b023e35e963077f2596/menus-copy-actions-single-icon-correct%402x.png)
+
+![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
 
 ## Organization
 
@@ -95,6 +117,8 @@ In-game menus give players ways to control gameplay as well as determine [settin
 
 In iOS and iPadOS, a menu can display items in one of the following three layouts.
 
+![A diagram showing small, medium, and large menu layouts, each containing the same set of menu items.](https://docs-assets.developer.apple.com/published/d04cabb2d7b38602590cd6d59d79a0a0/small-medium-large-menu-layouts%402x.png)
+
 - **Small.** A row of four items appears at the top of the menu, above a list that contains the remaining items. For each item in the top row, the menu displays a symbol or icon, but no label.
 - **Medium.** A row of three items appears at the top of the menu, above a list that contains the remaining items. For each item in the top row, the menu displays a symbol or icon above a short label.
 - **Large (the default).** The menu displays all items in a list.
@@ -108,6 +132,8 @@ For developer guidance, see [preferredElementSize](/documentation/UIKit/UIMenu/p
 In visionOS, a menu can display items using the small or large layout styles that iOS and iPadOS define (for guidance, see [iOS, iPadOS](/design/human-interface-guidelines/menus#iOS-iPadOS)). You can present a menu in your app or game from 3D content using a SwiftUI view. To ensure that your menu is always visible to people, even when other content occludes it, you can apply a [breakthrough effect](https://developer.apple.com/documentation/swiftui/view/presentationbreakthrougheffect(_:)). As in macOS, an open menu in a visionOS window can appear outside of the window’s boundaries.
 
 **Prefer displaying a menu near the content it controls.** Because people need to look at a menu item before tapping it, they might miss the item’s effect if the content it controls is too far away.
+
+![A partial screenshot showing an app window in visionOS. The window contains several buttons, including a 'More' button, which is selected. A menu containing a list of actions is displayed beneath the button.](https://docs-assets.developer.apple.com/published/b424693063f332d9edd65d555fec417e/visionos-notes-menu-popover-style%402x.png)
 
 **Prefer the subtle breakthrough effect in most cases.** This effect blends the presentation with its surrounding content, to maintain legibility and usability while preserving the depth and context of the scene. When you select [automatic](/documentation/SwiftUI/BreakthroughEffect/automatic) for the breakthrough effect of a menu that overlaps with 3D content, the system applies [subtle](/documentation/SwiftUI/BreakthroughEffect/subtle) by default. You can use [prominent](/documentation/SwiftUI/BreakthroughEffect/prominent) if it’s important to display a menu prominently over the entire scene in your app or game, but this can disrupt the experience for people and potentially cause discomfort. Alternatively, you can use [none](/documentation/SwiftUI/BreakthroughEffect/none) to fully occlude your menu behind other 3D content — for example, in a puzzle game that requires people to navigate around barriers — but this may make it difficult for people to see and access the menu.
 

@@ -3,6 +3,7 @@ export interface InlineNode {
   text?: string
   code?: string
   alt?: string | null
+  poster?: string
   name?: string
   style?: string
   syntax?: string
@@ -18,6 +19,10 @@ export interface InlineNode {
   content?: ContentNode[]
   items?: ContentNode[] | string[]
   rows?: Array<Array<string | ContentNode | ContentNode[]>>
+  columns?: Array<{ content?: ContentNode[]; size?: number }>
+  tabs?: Array<{ title?: string; content?: ContentNode[] }>
+  variants?: Array<{ url?: string; traits?: string[] }>
+  metadata?: { abstract?: InlineNode[] }
   children?: IndexNode[]
   [key: string]: unknown
 }

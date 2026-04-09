@@ -2,7 +2,7 @@
 title: Settings
 description: People expect apps and games to just work, but they also appreciate having ways to customize the experience to fit their needs.
 source: https://developer.apple.com/design/human-interface-guidelines/settings
-timestamp: 2026-04-09T12:18:16.772Z
+timestamp: 2026-04-09T13:37:24.341Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:18:16.772Z
 # Settings
 
 > People expect apps and games to just work, but they also appreciate having ways to customize the experience to fit their needs.
+
+![A sketch of a gear, suggesting configuration. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/38706162753c93aa16bfa6295987c33a/patterns-settings-intro%402x.png)
 
 On all Apple platforms, the system-provided Settings app lets people adjust things like the overall appearance of the system, network connections, account details, accessibility requirements, and language and region settings. On some platforms, the system-provided Settings app can also include settings for specific apps and games, often letting people adjust whether the app or game can access location information, use device features like microphone or camera, and integrate with system features like notifications, Siri, or Search.
 

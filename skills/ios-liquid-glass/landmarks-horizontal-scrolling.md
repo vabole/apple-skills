@@ -2,7 +2,7 @@
 title: Landmarks: Extending horizontal scrolling under a sidebar or inspector
 description: Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
 source: https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector
-timestamp: 2026-04-09T12:04:24.118Z
+timestamp: 2026-04-09T13:37:28.552Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -20,6 +20,8 @@ timestamp: 2026-04-09T12:04:24.118Z
 The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way.
 
 This sample demonstrates how to extend horizontal scrolling under a sidebar or inspector. Within each continent section in `LandmarksView`, an instance of `LandmarkHorizontalListView` shows a horizontally scrolling list of landmark views. When open, the landmark views can scroll underneath the sidebar or inspector.
+
+![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](https://docs-assets.developer.apple.com/published/709551ab6017da3888bbb3b9b1620fed/Landmarks-Building-an-app-with-Liquid-Glass-3%402x.png)
 
 ## Configure the scroll view
 

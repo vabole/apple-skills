@@ -1,3 +1,4 @@
+import { renderImageMarkdown } from "./media.ts"
 import type {
   ContentNode,
   DocReference,
@@ -63,6 +64,19 @@ export function renderBlocks(items: ContentNode[] = [], references?: ReferenceMa
       }
       case "table":
         markdown += renderTable(item, references)
+        break
+      case "row":
+        markdown += renderRow(item, references)
+        break
+      case "tabNavigator":
+        markdown += renderTabNavigator(item, references)
+        break
+      case "image": {
+        const image = renderImageMarkdown(item, references)
+        if (image) markdown += `${image}\n\n`
+        break
+      }
+      case "video":
         break
       default:
         if (Array.isArray(item.content)) markdown += renderBlocks(item.content, references)
@@ -255,6 +269,31 @@ function renderTable(item: ContentNode, references?: ReferenceMap): string {
   return `${markdown}\n`
 }
 
+function renderRow(item: ContentNode, references?: ReferenceMap): string {
+  const columns = Array.isArray(item.columns) ? item.columns : []
+  let markdown = ""
+
+  for (const column of columns) {
+    const content = renderBlocks(column.content || [], references).trim()
+    if (!content) continue
+    markdown += `${content}\n\n`
+  }
+
+  return markdown
+}
+
+function renderTabNavigator(item: ContentNode, references?: ReferenceMap): string {
+  const tabs = Array.isArray(item.tabs) ? item.tabs : []
+  let markdown = ""
+
+  for (const tab of tabs) {
+    if (tab.title) markdown += `### ${tab.title}\n\n`
+    markdown += renderBlocks(tab.content || [], references)
+  }
+
+  return markdown
+}
+
 function renderInlineItem(item: InlineNode, references?: ReferenceMap): string {
   if (!item || typeof item !== "object") return ""
   if (item.type === "text") return item.text || ""
@@ -268,7 +307,8 @@ function renderInlineItem(item: InlineNode, references?: ReferenceMap): string {
     return `**${renderInlineArray(item.inlineContent || [], references)}**`
   if (item.type === "emphasis")
     return `*${renderInlineArray(item.inlineContent || [], references)}*`
-  if (item.type === "image") return item.alt || ""
+  if (item.type === "image") return renderImageMarkdown(item, references)
+  if (item.type === "video") return ""
   if (Array.isArray(item.inlineContent)) return renderInlineArray(item.inlineContent, references)
   if (Array.isArray(item.content)) return renderBlocks(item.content, references).trim()
   return item.text || ""

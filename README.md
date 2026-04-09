@@ -33,6 +33,8 @@ git add -A && git commit -m "docs: refresh Apple docs $(date +%Y-%m-%d)"
 
 The refresh script finds all `.md` files with a `source: https://developer.apple.com/...` header, maps each source URL to Apple's underlying DocC JSON endpoint, renders markdown locally, and diffs against the checked-in copy. Only files with actual content changes (ignoring timestamp differences) are flagged.
 
+Images stay in the main generated docs. When Apple embeds DocC videos in a page, the refresh flow keeps those links in a neighboring `*.videos.md` sidecar so most agents don't pay the context cost unless they explicitly need video references.
+
 ### Adding new docs
 
 To download a new Apple documentation page:

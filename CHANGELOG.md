@@ -11,7 +11,7 @@ Refreshed all 179 skill docs from Apple’s DocC JSON directly (replaced sosumi)
 - **StoreKit, HealthKit, Combine, MapKit, SwiftData indexes** — large reshuffles as Apple reorganized their reference trees
 - **HIG** — tables now render correctly (typography sizes, accessibility contrast ratios, button styles, etc. were previously blank rows); layout and color pages gained substantial new content
 - **Liquid Glass** — all pages updated with refined API surface
-- **Rendering fixes across all docs** — platform availability no longer shows `undefined`, WWDC session links now have proper titles, link text uses real names instead of raw identifiers
+- **Rendering fixes across all docs** — platform availability no longer shows `undefined`, WWDC session links now have proper titles, link text uses real names instead of raw identifiers, Apple images now stay in the main docs, and embedded Apple videos move into neighboring `*.videos.md` sidecars
 
 ### Tooling
 

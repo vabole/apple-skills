@@ -2,7 +2,7 @@
 title: Charts
 description: Organize data in a chart to communicate information with clarity and visual appeal.
 source: https://developer.apple.com/design/human-interface-guidelines/charts
-timestamp: 2026-04-09T12:18:09.418Z
+timestamp: 2026-04-09T13:37:19.372Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,6 +12,8 @@ timestamp: 2026-04-09T12:18:09.418Z
 # Charts
 
 > Organize data in a chart to communicate information with clarity and visual appeal.
+
+![A stylized representation of a bar chart. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/0f58d997ca16e7706db9415167a477e9/components-charts-intro%402x.png)
 
 An effective chart highlights a few key pieces of information in a dataset, helping people gain insights and make decisions. For example, people might use a chart to:
 
@@ -24,6 +26,8 @@ To learn about designing charts to enhance your experience, see [Charting data](
 ## Anatomy
 
 A chart comprises several graphical elements that depict the values in a dataset and convey information about them.
+
+![A bar chart with callouts that identify chart components, such as axes, grid lines, marks, ticks, axis value labels, and the overall plot area.](https://docs-assets.developer.apple.com/published/3435cdf95a0a1c5faeeb347ccd4915d4/charts-anatomy%402x.png)
 
 A *mark* is a visual representation of a data value. You create a chart by supplying one or more series of data values, assigning each value to a mark. To specify the style of chart you want to display — such as bar chart, line chart, or scatter plot — you choose a mark type, such as bar, line, or point (for guidance, see [Marks](/design/human-interface-guidelines/charts#Marks)). The general task of depicting individual data values in a chart is called *plotting*, and the area that contains the marks is called the *plot area*.
 
@@ -45,9 +49,15 @@ Clear, accurate descriptions can help make a chart more approachable and accessi
 
 *Bar* marks work well in charts that help people compare values in different categories or view the relative proportions of various parts in a whole. When used to help people understand data that changes over time, bar charts work especially well when each value can represent a sum, like the total number of steps taken in a day.
 
+![A bar chart that depicts the number of steps for each day in a month.](https://docs-assets.developer.apple.com/published/69afb0247060876d7c148529bb6770ef/charts-bar-marks%402x.png)
+
 *Line* marks can also show how values change over time. In a line chart, a line connects all data values in one series of data. The slope of the line reveals the magnitude of change between data values and can help people visualize overall trends.
 
+![A line chart that depicts the performance of a stock over a five-year period.](https://docs-assets.developer.apple.com/published/a242ab0dd33e91b2928163ac76839aae/charts-line-marks%402x.png)
+
 *Point* marks help you depict individual data values as visually distinct marks. A set of point marks can show how two different properties of your data relate to each other, helping people inspect individual data values and identify outliers and clusters.
+
+![A point-mark chart that depicts per-day readings of heartbeats per minute over a 5 1/2-month period.](https://docs-assets.developer.apple.com/published/e425cf9c73689456ffe358c15a2db34c/charts-point-marks%402x.png)
 
 **Consider combining mark types when it adds clarity to your chart.** For example, if you use a line chart to show a change over time, you might want to add point marks on top of the line to highlight individual data points. By combining points with a line, you can help people understand the overall trend while also drawing their attention to individual values.
 
@@ -55,7 +65,13 @@ Clear, accurate descriptions can help make a chart more approachable and accessi
 
 **Use a fixed or dynamic axis range depending on the meaning of your chart.** In a *fixed* range, the upper and lower bounds of the axis never change, whereas in a *dynamic* range, the upper and lower bounds can vary with the current data. Consider using a fixed range when specific minimum and maximum values are meaningful for all possible data values. For example, people expect a chart that shows a battery’s current charge to have a minimum value of 0% (completely empty) and a maximum value of 100% (completely full).
 
+![An illustration of Battery Settings, which uses a chart to depict battery charge over time, where the charge can vary within a fixed range from 0% to 100%.](https://docs-assets.developer.apple.com/published/77814deac13d3c51e09eb47c57e690fa/charts-fixed-range-axis%402x.png)
+
 In contrast, consider using a dynamic range when the possible data values can vary widely and you want the marks to fill the available plot area. For example, the upper bound of the Y axis range in the Health app’s Steps chart varies so that the largest number of steps in a particular time period is close to the top of the chart.
+
+![An illustration of the Steps chart in the Health app, which shows the average number of steps per day for a single week.](https://docs-assets.developer.apple.com/published/ba6263f9c8e9b9afef93349f20cbdde7/charts-dynamic-range-axis-small%402x.png)
+
+![An illustration of the Steps chart in the Health app, which shows the average number of steps per day in a one-month period.](https://docs-assets.developer.apple.com/published/de535d589204fce38a55acfb5c869c3e/charts-dynamic-range-axis-large%402x.png)
 
 **Define the value of the lower bound based on mark type and chart usage.** For example, bar charts can work well when you use zero for the lower bound of the Y axis, because doing so lets people visually compare the relative heights of individual bars to get a reasonable estimate of their values. In contrast, defining a lower bound of zero can sometimes make meaningful differences between values more difficult to discern. For example, a heart rate chart that always uses zero for the lower bound could obscure important differences between resting and active readings because the differences occur in a range that’s far from zero.
 
@@ -68,6 +84,8 @@ In contrast, consider using a dynamic range when the possible data values can va
 **Write descriptions that help people understand what a chart does before they view it.** When you provide information-rich titles and labels that describe the purpose and functionality of a chart, you give people the context they need before they dive in and examine the details. Providing context in this way is especially important for VoiceOver users and those with certain types of cognitive disabilities because they rely on your descriptions to understand the purpose and primary message of your chart before they decide to investigate it further.
 
 **Summarize the main message of your chart to help make it approachable and useful for everyone.** Although a primary reason to use a chart is to display the data that supports the main message, it’s essential to summarize key information so that people can grasp it quickly. For example, Weather provides a title and subtitle that succinctly describe the expected precipitation for the next hour, giving people the most important information without requiring them to examine the details of the chart.
+
+![An illustration of the rain forecast for the next hour in the Weather app, which uses succinct, plain language to describe the expected precipitation.](https://docs-assets.developer.apple.com/published/28ee38d191d2f9816ded3e735bfee4a7/charts-descriptive-content%402x.png)
 
 ## Best practices
 
@@ -93,7 +111,11 @@ As in all other parts of your interface, using color in a chart can help you cla
 
 **Avoid relying solely on color to differentiate between different pieces of data or communicate essential information in a chart.** Using meaningful color in a chart works well to highlight differences and elevate key details, but it’s crucial to include alternative ways to convey this information so that people can use your chart regardless of whether they can discern colors. One way to supplement color is to use different shapes or patterns to depict different parts of data. For example, in addition to using red and black or red and white colors, Health uses two different shapes in the point marks that represent the two components of blood pressure.
 
+![An illustration of a blood pressure chart in the Health app that uses a red circle to represent systolic values and a black or white diamond to represent diastolic values.](https://docs-assets.developer.apple.com/published/47d2a6b70d030b1aa595826248cb1186/charts-colors%402x.png)
+
 **Aid comprehension by adding visual separation between contiguous areas of color.** For example, in a bar chart that stacks marks in a single row or column, it’s common to assign a different color to each mark. In this design, adding separators between the marks can help people distinguish individual ones.
+
+![An illustration of iPhone Storage Settings, which uses a single bar mark containing several segments of different colors to show the relative space taken by items such as music, apps, and photos. The bar includes a narrow strip of empty space between each pair of segments.](https://docs-assets.developer.apple.com/published/86da90aecee27935b14e2b48388d08a6/charts-colors-stacked%402x.png)
 
 ## Enhancing the accessibility of a chart
 
@@ -104,6 +126,8 @@ When you use Swift Charts to create a chart, you get a default implementation of
 > **Important:** Unlike an image — which requires one descriptive accessibility label — a chart often needs to offer an accessibility label for each important or interactive element. Depending on the purpose of your chart and the scope and density of its marks, you need to decide whether it’s essential to describe each mark or whether it improves the accessibility experience to describe groups of marks. In some cases, it can make sense to use a single accessibility label that provides a succinct, high-level description of the chart, such as when you use a small version of a chart in a button that reveals a more detailed version.
 
 **Write accessibility labels that support the purpose of your chart.** For example, Maps shows elevation for a cycling route using a chart that represents the change in elevation over the course of the route. The purpose of the chart is to give people a sense of the terrain for the entire route, not to provide individual elevations. For this reason, Maps provides accessibility labels that summarize the elevation changes over a portion of the route, rather than providing labels for each individual moment. In contrast, Health offers an accessibility label for each bar in the Steps chart, because the purpose of the chart is to give people their actual step count for each tracking period.
+
+![An illustration of a chart in Maps that shows the range of elevations over the total distance of the trip. A VoiceOver focus indicator is visible on top of the chart, containing approximately one-fifth of the total distance and elevation.](https://docs-assets.developer.apple.com/published/b85d8add4c38b6bedd65caf24fdbe03a/charts-bar-chart-with-voiceover-focus%402x.png)
 
 The following guidelines can help you write useful accessibility labels for chart elements.
 
