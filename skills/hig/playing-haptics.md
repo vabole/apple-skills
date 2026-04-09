@@ -2,7 +2,7 @@
 title: Playing haptics
 description: Playing haptics can engage people’s sense of touch and bring their familiarity with the physical world into your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
-timestamp: 2026-01-17T15:45:01.501Z
+timestamp: 2026-04-09T12:18:15.057Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:01.501Z
 # Playing haptics
 
 > Playing haptics can engage people’s sense of touch and bring their familiarity with the physical world into your app or game.
-
-
 
 Depending on the platform and the device people are using, the system can play haptics in addition to visual and auditory feedback. For example, components like switches, sliders, and pickers automatically play haptic feedback on supported iPhone models; on Apple Watch, the Taptic Engine generates haptics for a number of built-in feedback patterns, which watchOS combines with an audible tone. On a Mac that’s equipped with a Force Touch trackpad, an app can play haptics while people drag content or when they force click to change the speed of media controls.
 
@@ -78,6 +76,12 @@ Selection haptics provide feedback while the values of a UI element are changing
 
 When a Magic Trackpad is available, your app can provide one of the three following haptic patterns in response to a drag operation or force click.
 
+| Haptic feedback pattern | Description |
+| --- | --- |
+| Alignment | Indicates the alignment of a dragged item. For example, this pattern could be used in a drawing app when the people drag a shape into alignment with another shape. Other scenarios where this type of feedback could be used might include scaling an object to fit within specific dimensions, positioning an object at a preferred location, or reaching the beginning/end or minimum/maximum of something like a scrubber in a video app. |
+| Level change | Indicates movement between discrete levels of pressure. For example, as people press a fast-forward button on a video player, playback could increase or decrease and haptic feedback could be provided as different levels of pressure are reached. |
+| Generic | Intended for providing general feedback when the other patterns don’t apply. |
+
 For developer guidance, see [NSHapticFeedbackPerformer](/documentation/AppKit/NSHapticFeedbackPerformer).
 
 ### watchOS
@@ -107,7 +111,12 @@ To get the most out of this session, we recommend first watching “Expanding th
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| May 7, 2024 | Added guidance for playing haptics on Apple Pencil Pro. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,10 +2,10 @@
 title: Label
 description: A standard label for user interface items, consisting of an icon with a title.
 source: https://developer.apple.com/documentation/swiftui/label
-timestamp: 2026-02-19T07:52:36.981Z
+timestamp: 2026-04-09T12:04:36.445Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -23,13 +23,13 @@ struct Label<Title, Icon> where Title : View, Icon : View
 
 One of the most common and recognizable user interface components is the combination of an icon and a label. This idiom appears across many kinds of apps and shows up in collections, lists, menus of action items, and disclosable lists, just to name a few.
 
-You create a label, in its simplest form, by providing a title and the name of an image, such as an icon from the [sf](/design/Human-Interface-Guidelines/sf-symbols) collection:
+You create a label, in its simplest form, by providing a title and the name of an image, such as an icon from the [SF Symbols](/design/Human-Interface-Guidelines/sf-symbols) collection:
 
 ```swift
 Label("Lightning", systemImage: "bolt.fill")
 ```
 
-You can also apply styles to labels in several ways. In the case of dynamic changes to the view after device rotation or change to a window size you might want to show only the text portion of the label using the [title Only](/documentation/swiftui/labelstyle/titleonly) label style:
+You can also apply styles to labels in several ways. In the case of dynamic changes to the view after device rotation or change to a window size you might want to show only the text portion of the label using the [titleOnly](/documentation/swiftui/labelstyle/titleonly) label style:
 
 ```swift
 Label("Lightning", systemImage: "bolt.fill")
@@ -43,7 +43,7 @@ Label("Lightning", systemImage: "bolt.fill")
     .labelStyle(.iconOnly)
 ```
 
-Some containers might apply a different default label style, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, you can apply the [title And Icon](/documentation/swiftui/labelstyle/titleandicon) label style:
+Some containers might apply a different default label style, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, you can apply the [titleAndIcon](/documentation/swiftui/labelstyle/titleandicon) label style:
 
 ```swift
 Label("Lightning", systemImage: "bolt.fill")
@@ -61,7 +61,7 @@ struct RedBorderedLabelStyle: LabelStyle {
 }
 ```
 
-For more extensive customization or to create a completely new label style, you’ll need to adopt the [Label Style](/documentation/swiftui/labelstyle) protocol and implement a [Label Style Configuration](/documentation/swiftui/labelstyleconfiguration) for the new style.
+For more extensive customization or to create a completely new label style, you’ll need to adopt the [LabelStyle](/documentation/swiftui/labelstyle) protocol and implement a [LabelStyleConfiguration](/documentation/swiftui/labelstyleconfiguration) for the new style.
 
 To apply a common label style to a group of labels, apply the style to the view hierarchy that contains the labels:
 
@@ -106,10 +106,10 @@ Label {
 
 ## Displaying text
 
-- [Text](/documentation/swiftui/text)
-- [labelStyle(_:)](/documentation/swiftui/view/labelstyle(_:))
+- [Text](/documentation/swiftui/text) A view that displays one or more lines of read-only text.
+- [labelStyle(_:)](/documentation/swiftui/view/labelstyle(_:)) Sets the style for labels within this view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

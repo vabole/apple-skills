@@ -2,7 +2,7 @@
 title: Human Interface Guidelines
 description: Apple's Human Interface Guidelines - Complete table of contents
 source: https://developer.apple.com/design/human-interface-guidelines/
-timestamp: 2026-01-17T15:44:39.288Z
+timestamp: 2026-04-09T12:04:14.438Z
 ---
 
 # Human Interface Guidelines
@@ -69,85 +69,77 @@ timestamp: 2026-01-17T15:44:39.288Z
 - [Workouts](/design/human-interface-guidelines/workouts)
 ### Components
 
-#### Content
-
-- [Charts](/design/human-interface-guidelines/charts)
-- [Image views](/design/human-interface-guidelines/image-views)
-- [Text views](/design/human-interface-guidelines/text-views)
-- [Web views](/design/human-interface-guidelines/web-views)
-#### Layout and organization
-
-- [Boxes](/design/human-interface-guidelines/boxes)
-- [Collections](/design/human-interface-guidelines/collections)
-- [Column views](/design/human-interface-guidelines/column-views)
-- [Disclosure controls](/design/human-interface-guidelines/disclosure-controls)
-- [Labels](/design/human-interface-guidelines/labels)
-- [Lists and tables](/design/human-interface-guidelines/lists-and-tables)
-- [Lockups](/design/human-interface-guidelines/lockups)
-- [Outline views](/design/human-interface-guidelines/outline-views)
-- [Split views](/design/human-interface-guidelines/split-views)
-- [Tab views](/design/human-interface-guidelines/tab-views)
-#### Menus and actions
-
-- [Activity views](/design/human-interface-guidelines/activity-views)
-- [Buttons](/design/human-interface-guidelines/buttons)
-- [Context menus](/design/human-interface-guidelines/context-menus)
-- [Dock menus](/design/human-interface-guidelines/dock-menus)
-- [Edit menus](/design/human-interface-guidelines/edit-menus)
-- [Home Screen quick actions](/design/human-interface-guidelines/home-screen-quick-actions)
-- [Menus](/design/human-interface-guidelines/menus)
-- [Ornaments](/design/human-interface-guidelines/ornaments)
-- [Pop-up buttons](/design/human-interface-guidelines/pop-up-buttons)
-- [Pull-down buttons](/design/human-interface-guidelines/pull-down-buttons)
-- [The menu bar](/design/human-interface-guidelines/the-menu-bar)
-- [Toolbars](/design/human-interface-guidelines/toolbars)
-#### Navigation and search
-
-- [Path controls](/design/human-interface-guidelines/path-controls)
-- [Search fields](/design/human-interface-guidelines/search-fields)
-- [Sidebars](/design/human-interface-guidelines/sidebars)
-- [Tab bars](/design/human-interface-guidelines/tab-bars)
-- [Token fields](/design/human-interface-guidelines/token-fields)
-#### Presentation
-
-- [Action sheets](/design/human-interface-guidelines/action-sheets)
-- [Alerts](/design/human-interface-guidelines/alerts)
-- [Page controls](/design/human-interface-guidelines/page-controls)
-- [Panels](/design/human-interface-guidelines/panels)
-- [Popovers](/design/human-interface-guidelines/popovers)
-- [Scroll views](/design/human-interface-guidelines/scroll-views)
-- [Sheets](/design/human-interface-guidelines/sheets)
-- [Windows](/design/human-interface-guidelines/windows)
-#### Selection and input
-
-- [Color wells](/design/human-interface-guidelines/color-wells)
-- [Combo boxes](/design/human-interface-guidelines/combo-boxes)
-- [Digit entry views](/design/human-interface-guidelines/digit-entry-views)
-- [Image wells](/design/human-interface-guidelines/image-wells)
-- [Pickers](/design/human-interface-guidelines/pickers)
-- [Segmented controls](/design/human-interface-guidelines/segmented-controls)
-- [Sliders](/design/human-interface-guidelines/sliders)
-- [Steppers](/design/human-interface-guidelines/steppers)
-- [Text fields](/design/human-interface-guidelines/text-fields)
-- [Toggles](/design/human-interface-guidelines/toggles)
-- [Virtual keyboards](/design/human-interface-guidelines/virtual-keyboards)
-#### Status
-
-- [Activity rings](/design/human-interface-guidelines/activity-rings)
-- [Gauges](/design/human-interface-guidelines/gauges)
-- [Progress indicators](/design/human-interface-guidelines/progress-indicators)
-- [Rating indicators](/design/human-interface-guidelines/rating-indicators)
-#### System experiences
-
-- [App Shortcuts](/design/human-interface-guidelines/app-shortcuts)
-- [Complications](/design/human-interface-guidelines/complications)
-- [Controls](/design/human-interface-guidelines/controls)
-- [Live Activities](/design/human-interface-guidelines/live-activities)
-- [Notifications](/design/human-interface-guidelines/notifications)
-- [Status bars](/design/human-interface-guidelines/status-bars)
-- [Top Shelf](/design/human-interface-guidelines/top-shelf)
-- [Watch faces](/design/human-interface-guidelines/watch-faces)
-- [Widgets](/design/human-interface-guidelines/widgets)
+- [Content](/design/human-interface-guidelines/content)
+  - [Charts](/design/human-interface-guidelines/charts)
+  - [Image views](/design/human-interface-guidelines/image-views)
+  - [Text views](/design/human-interface-guidelines/text-views)
+  - [Web views](/design/human-interface-guidelines/web-views)
+- [Layout and organization](/design/human-interface-guidelines/layout-and-organization)
+  - [Boxes](/design/human-interface-guidelines/boxes)
+  - [Collections](/design/human-interface-guidelines/collections)
+  - [Column views](/design/human-interface-guidelines/column-views)
+  - [Disclosure controls](/design/human-interface-guidelines/disclosure-controls)
+  - [Labels](/design/human-interface-guidelines/labels)
+  - [Lists and tables](/design/human-interface-guidelines/lists-and-tables)
+  - [Lockups](/design/human-interface-guidelines/lockups)
+  - [Outline views](/design/human-interface-guidelines/outline-views)
+  - [Split views](/design/human-interface-guidelines/split-views)
+  - [Tab views](/design/human-interface-guidelines/tab-views)
+- [Menus and actions](/design/human-interface-guidelines/menus-and-actions)
+  - [Activity views](/design/human-interface-guidelines/activity-views)
+  - [Buttons](/design/human-interface-guidelines/buttons)
+  - [Context menus](/design/human-interface-guidelines/context-menus)
+  - [Dock menus](/design/human-interface-guidelines/dock-menus)
+  - [Edit menus](/design/human-interface-guidelines/edit-menus)
+  - [Home Screen quick actions](/design/human-interface-guidelines/home-screen-quick-actions)
+  - [Menus](/design/human-interface-guidelines/menus)
+  - [Ornaments](/design/human-interface-guidelines/ornaments)
+  - [Pop-up buttons](/design/human-interface-guidelines/pop-up-buttons)
+  - [Pull-down buttons](/design/human-interface-guidelines/pull-down-buttons)
+  - [The menu bar](/design/human-interface-guidelines/the-menu-bar)
+  - [Toolbars](/design/human-interface-guidelines/toolbars)
+- [Navigation and search](/design/human-interface-guidelines/navigation-and-search)
+  - [Path controls](/design/human-interface-guidelines/path-controls)
+  - [Search fields](/design/human-interface-guidelines/search-fields)
+  - [Sidebars](/design/human-interface-guidelines/sidebars)
+  - [Tab bars](/design/human-interface-guidelines/tab-bars)
+  - [Token fields](/design/human-interface-guidelines/token-fields)
+- [Presentation](/design/human-interface-guidelines/presentation)
+  - [Action sheets](/design/human-interface-guidelines/action-sheets)
+  - [Alerts](/design/human-interface-guidelines/alerts)
+  - [Page controls](/design/human-interface-guidelines/page-controls)
+  - [Panels](/design/human-interface-guidelines/panels)
+  - [Popovers](/design/human-interface-guidelines/popovers)
+  - [Scroll views](/design/human-interface-guidelines/scroll-views)
+  - [Sheets](/design/human-interface-guidelines/sheets)
+  - [Windows](/design/human-interface-guidelines/windows)
+- [Selection and input](/design/human-interface-guidelines/selection-and-input)
+  - [Color wells](/design/human-interface-guidelines/color-wells)
+  - [Combo boxes](/design/human-interface-guidelines/combo-boxes)
+  - [Digit entry views](/design/human-interface-guidelines/digit-entry-views)
+  - [Image wells](/design/human-interface-guidelines/image-wells)
+  - [Pickers](/design/human-interface-guidelines/pickers)
+  - [Segmented controls](/design/human-interface-guidelines/segmented-controls)
+  - [Sliders](/design/human-interface-guidelines/sliders)
+  - [Steppers](/design/human-interface-guidelines/steppers)
+  - [Text fields](/design/human-interface-guidelines/text-fields)
+  - [Toggles](/design/human-interface-guidelines/toggles)
+  - [Virtual keyboards](/design/human-interface-guidelines/virtual-keyboards)
+- [Status](/design/human-interface-guidelines/status)
+  - [Activity rings](/design/human-interface-guidelines/activity-rings)
+  - [Gauges](/design/human-interface-guidelines/gauges)
+  - [Progress indicators](/design/human-interface-guidelines/progress-indicators)
+  - [Rating indicators](/design/human-interface-guidelines/rating-indicators)
+- [System experiences](/design/human-interface-guidelines/system-experiences)
+  - [App Shortcuts](/design/human-interface-guidelines/app-shortcuts)
+  - [Complications](/design/human-interface-guidelines/complications)
+  - [Controls](/design/human-interface-guidelines/controls)
+  - [Live Activities](/design/human-interface-guidelines/live-activities)
+  - [Notifications](/design/human-interface-guidelines/notifications)
+  - [Status bars](/design/human-interface-guidelines/status-bars)
+  - [Top Shelf](/design/human-interface-guidelines/top-shelf)
+  - [Watch faces](/design/human-interface-guidelines/watch-faces)
+  - [Widgets](/design/human-interface-guidelines/widgets)
 ### Inputs
 
 - [Action button](/design/human-interface-guidelines/action-button)
@@ -195,8 +187,7 @@ timestamp: 2026-01-17T15:44:39.288Z
 - [VoiceOver](/design/human-interface-guidelines/voiceover)
 - [Wallet](/design/human-interface-guidelines/wallet)
 
-
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,10 +2,10 @@
 title: Binding
 description: A property wrapper type that can read and write a value owned by a source of truth.
 source: https://developer.apple.com/documentation/swiftui/binding
-timestamp: 2026-02-19T07:56:07.915Z
+timestamp: 2026-04-09T12:04:33.525Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -52,14 +52,13 @@ struct PlayerView: View {
 }
 ```
 
-When `PlayerView` initializes `PlayButton`, it passes a binding of its state property into the button’s binding property. Applying the `$` prefix to a property wrapped value returns its [projected Value](/documentation/swiftui/state/projectedvalue), which for a state property wrapper returns a binding to the value.
+When `PlayerView` initializes `PlayButton`, it passes a binding of its state property into the button’s binding property. Applying the `$` prefix to a property wrapped value returns its [projectedValue](/documentation/swiftui/state/projectedvalue), which for a state property wrapper returns a binding to the value.
 
 Whenever the user taps the `PlayButton`, the `PlayerView` updates its `isPlaying` state.
 
 A binding conforms to `Sendable` only if its wrapped value type also conforms to `Sendable`. It is always safe to pass a sendable binding between different concurrency domains. However, reading from or writing to a binding’s wrapped value from a different concurrency domain may or may not be safe, depending on how the binding was created. SwiftUI will issue a warning at runtime if it detects a binding being used in a way that may compromise data safety.
 
-> [!NOTE]
-> To create bindings to properties of a type that conforms to the [Observable](/documentation/Observation/Observable) protocol, use the [Bindable](/documentation/swiftui/bindable) property wrapper. For more information, see [Migrating-from-the-observable-object-protocol-to-the-observable](/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro).
+> **Note:** To create bindings to properties of a type that conforms to the [Observable](/documentation/Observation/Observable) protocol, use the [Bindable](/documentation/swiftui/bindable) property wrapper. For more information, see [Migrating from the Observable Object protocol to the Observable macro](/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro).
 
 ## Conforms To
 
@@ -89,7 +88,7 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 
 ## Managing changes
 
-- [id](/documentation/swiftui/binding/id) The stable identity of the entity associated with this instance, corresponding to the  of the binding’s wrapped value.
+- [id](/documentation/swiftui/binding/id) The stable identity of the entity associated with this instance, corresponding to the `id` of the binding’s wrapped value.
 - [animation(_:)](/documentation/swiftui/binding/animation(_:)) Specifies an animation to perform when the binding value changes.
 - [transaction(_:)](/documentation/swiftui/binding/transaction(_:)) Specifies a transaction for the binding.
 - [transaction](/documentation/swiftui/binding/transaction) The binding’s transaction.
@@ -104,11 +103,11 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 
 ## Creating and sharing view state
 
-- [Managing user interface state](/documentation/swiftui/managing-user-interface-state)
-- [State](/documentation/swiftui/state)
-- [Bindable](/documentation/swiftui/bindable)
+- [Managing user interface state](/documentation/swiftui/managing-user-interface-state) Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
+- [State](/documentation/swiftui/state) A property wrapper type that can read and write a value managed by SwiftUI.
+- [Bindable](/documentation/swiftui/bindable) A property wrapper type that supports creating bindings to the mutable properties of observable objects.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

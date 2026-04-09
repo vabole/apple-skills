@@ -2,7 +2,7 @@
 title: Scroll views
 description: A scroll view lets people view content that’s larger than the view’s boundaries by moving the content vertically or horizontally.
 source: https://developer.apple.com/design/human-interface-guidelines/scroll-views
-timestamp: 2026-01-19T10:22:58.232Z
+timestamp: 2026-04-09T12:18:16.154Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-19T10:22:58.232Z
 # Scroll views
 
 > A scroll view lets people view content that’s larger than the view’s boundaries by moving the content vertically or horizontally.
-
-
 
 The scroll view itself has no appearance, but it can display a translucent *scroll indicator* that typically appears after people begin scrolling the view’s content. Although the appearance and behavior of scroll indicators can vary per platform, all indicators provide visual feedback about the scrolling action. For example, in iOS, iPadOS, macOS, visionOS, and watchOS, the indicator shows whether the currently visible content is near the beginning, middle, or end of the view.
 
@@ -75,6 +73,20 @@ When people begin swiping content in the direction they want it to scroll, the s
 
 **If necessary, account for the size of the scroll indicator.** Although the indicator’s overall size is small, it’s a little thicker than the same component in iOS. If your content uses tight margins, consider increasing them to prevent the scroll indicator from overlapping the content.
 
+#### Look to Scroll
+
+In views that support Look to Scroll, people can scroll using only their eyes. Scrolling starts when people look near the boundary of the scroll view — along the top and bottom for vertical scroll views, or along the sides for horizontal scroll views. For example, a person can look at the bottom edge of a Safari window to scroll the page down, or look at an album on the trailing edge in the Music app to scroll it horizontally toward the center of the page. Look to Scroll works in conjunction with existing behavior, so someone can choose whether to use a gesture or their eyes to scroll. For developer guidance, see [look](/documentation/SwiftUI/ScrollInputKind/look).
+
+**Support Look to Scroll for reading or browsing views.** Because Look to Scroll doesn’t work by default, you need to add support for it to each individual scroll view. If your app contains reading or browsing views, add support for Look to Scroll to provide a comfortable and hands-free experience. For developer guidance, see [ScrollInputKind](/documentation/SwiftUI/ScrollInputKind).
+
+**Avoid using Look to Scroll for secondary content.** In general, support standard gestures — but not Look to Scroll — in views that contain UI controls or dense information that requires quick, precise scrolling. For example, the Notes app offers Look to Scroll within the main view to let people easily read their content, but doesn’t support it for the list of notes.
+
+**Maintain consistency across content.** If you support Look to Scroll for one view in your app, make sure to support it for all similar views. For example, if you offer several collection views of videos throughout your app, support Look to Scroll for each of these views so people know what to expect.
+
+**Define clear scroll areas within your app.** In views that support Look to Scroll, prefer making the view the full width or full height of the window. This gives people generous space to scroll and provides clear edges. If you inset a scroll view from a window, like in the Notes app, provide clear boundaries so people know where to look.
+
+**If your app uses custom scroll effects or animations, remove them before supporting Look to Scroll.** Custom effects that use scroll position to change content, such as parallax effects and animations, can cause Look to Scroll to behave unexpectedly.
+
 ### watchOS
 
 **Prefer vertically scrolling content.** People are accustomed to using the Digital Crown to navigate to and within apps on Apple Watch. If your app contains a single list or content view, rotating the Digital Crown scrolls vertically when your app’s content is taller than the height of the display.
@@ -95,17 +107,27 @@ When people begin swiping content in the direction they want it to scroll, the s
 
 #### Developer documentation
 
-[ScrollView](/documentation/SwiftUI/ScrollView)
+[ScrollView](/documentation/SwiftUI/ScrollView) — SwiftUI
 
-[UIScrollView](/documentation/UIKit/UIScrollView)
+[UIScrollView](/documentation/UIKit/UIScrollView) — UIKit
 
-[NSScrollView](/documentation/AppKit/NSScrollView)
+[NSScrollView](/documentation/AppKit/NSScrollView) — AppKit
 
-[WKPageOrientation](/documentation/WatchKit/WKPageOrientation)
+[WKPageOrientation](/documentation/WatchKit/WKPageOrientation) — WatchKit
+
+[look](/documentation/SwiftUI/ScrollInputKind/look) — SwiftUI
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| March 24, 2026 | Added guidance for Look to Scroll in visionOS. |
+| July 28, 2025 | Added guidance for scroll edge effects. |
+| February 2, 2024 | Added artwork showing the behavior of the visionOS scroll indicator. |
+| December 5, 2023 | Described the visionOS scroll indicator and added guidance for integrating it with window layout. |
+| June 5, 2023 | Updated guidance for using scroll views in watchOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

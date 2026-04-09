@@ -2,7 +2,7 @@
 title: Action sheets
 description: An action sheet is a modal view that presents choices related to an action people initiate.
 source: https://developer.apple.com/design/human-interface-guidelines/action-sheets
-timestamp: 2026-01-17T15:45:15.570Z
+timestamp: 2026-04-09T12:18:08.080Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,7 +13,7 @@ timestamp: 2026-01-17T15:45:15.570Z
 
 > An action sheet is a modal view that presents choices related to an action people initiate.
 
-
+> **Developer note:** When you use SwiftUI, you can offer action sheet functionality in all platforms by specifying a [presentation modifier](https://developer.apple.com/documentation/swiftui/view-presentation) for a confirmation dialog. If you use UIKit, you use the [UIAlertController.Style.actionSheet](/documentation/UIKit/UIAlertController/Style/actionSheet) to display an action sheet in iOS, iPadOS, and tvOS.
 
 ## Best practices
 
@@ -43,9 +43,13 @@ timestamp: 2026-01-17T15:45:15.570Z
 
 The system-defined style for action sheets includes a title, an optional message, a Cancel button, and one or more additional buttons. The appearance of this interface is different depending on the device.
 
-
-
 Each button has an associated style that conveys information about the button’s effect. There are three system-defined button styles:
+
+| Style | Meaning |
+| --- | --- |
+| Default | The button has no special meaning. |
+| Destructive | The button destroys user data or performs a destructive action in the app. |
+| Cancel | The button dismisses the view without taking any action. |
 
 **Avoid displaying more than four buttons in an action sheet, including the Cancel button.** When there are fewer buttons onscreen, it’s easier for people to view all their options at once. Because the Cancel button is required, aim to provide no more than three additional choices.
 
@@ -67,5 +71,5 @@ Each button has an associated style that conveys information about the button’
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

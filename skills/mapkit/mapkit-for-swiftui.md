@@ -2,10 +2,10 @@
 title: MapKit for SwiftUI
 description: MapKit for SwiftUI allows you to build map-centric views and apps across Apple platforms. You can design expressive and highly interactive Maps with minimal code by composing views, using ViewBuilders and view modifiers.
 source: https://developer.apple.com/documentation/mapkit/mapkit_for_swiftui
-timestamp: 2026-02-19T07:52:37.322Z
+timestamp: 2026-04-09T12:04:26.709Z
 ---
 
-**Navigation:** [Mapkit](/documentation/mapkit)
+**Navigation:** [MapKit](/documentation/mapkit)
 
 **API Collection**
 
@@ -15,10 +15,9 @@ timestamp: 2026-02-19T07:52:37.322Z
 
 ## Overview
 
-Like MapKit for AppKit and UIKit, MapKit for SwiftUI allows you to take advantage of map styles ranging from satellite imagery to rich, 3D perspective imagery to present vivid maps. Using [Map Content Builder](/documentation/mapkit/mapcontentbuilder) you can configure your maps to show [Marker](/documentation/mapkit/marker) and [Annotation](/documentation/mapkit/annotation) views, or — for more specialized content — you can design your own SwiftUI views to place on the map. To add even more interactivity, MapKit for SwiftUI supports overlays to highlight areas on the map, enabling you to animate paths and directions using [Map Polyline](/documentation/mapkit/mappolyline), or make it easy for people to dig deeper into on the ground details with tappable points of interest. People who use your app can also explore at street level using [Look Around Preview](/documentation/mapkit/lookaroundpreview) and Look Around viewer.
+Like MapKit for AppKit and UIKit, MapKit for SwiftUI allows you to take advantage of map styles ranging from satellite imagery to rich, 3D perspective imagery to present vivid maps. Using [MapContentBuilder](/documentation/mapkit/mapcontentbuilder) you can configure your maps to show [Marker](/documentation/mapkit/marker) and [Annotation](/documentation/mapkit/annotation) views, or — for more specialized content — you can design your own SwiftUI views to place on the map. To add even more interactivity, MapKit for SwiftUI supports overlays to highlight areas on the map, enabling you to animate paths and directions using [MapPolyline](/documentation/mapkit/mappolyline), or make it easy for people to dig deeper into on the ground details with tappable points of interest. People who use your app can also explore at street level using [LookAroundPreview](/documentation/mapkit/lookaroundpreview) and Look Around viewer.
 
-> [!NOTE]
-> For more information about integrating MapKit into your app using SwiftUI, see WWDC23 session 10043: [](https://developer.apple.com/videos/play/wwdc2023/10043/)
+> **Note:** For more information about integrating MapKit into your app using SwiftUI, see WWDC23 session 10043: [Meet MapKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2023/10043/)
 
 ## Essentials
 
@@ -103,9 +102,9 @@ Like MapKit for AppKit and UIKit, MapKit for SwiftUI allows you to take advantag
 ## The MapKit APIs
 
 - [MapKit for AppKit and UIKit](/documentation/mapkit/mapkit-for-appkit-and-uikit)
-- [Adopting unified Maps URLs](/documentation/mapkit/unified-map-urls)
+- [Adopting unified Maps URLs](/documentation/mapkit/unified-map-urls) Access Maps URLs and options for displaying Maps information across Apple platforms.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,7 +2,7 @@
 title: PointMark
 description: Chart content that represents data using points.
 source: https://developer.apple.com/documentation/charts/pointmark
-timestamp: 2026-02-19T07:56:09.171Z
+timestamp: 2026-04-09T12:18:39.481Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -49,8 +49,6 @@ var body: some View {
 }
 ```
 
-![A scatter plot with wing width plotted on the x-axis and wing height plotted on the y-axis. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height.](https://docs-assets.developer.apple.com/published/fca032573a6787a1f164ba898618e71a/PointMarkSwift.PointMarkScatterChart%402x.png)
-
 ### Adding Additional Data Fields
 
 Swift Charts provides three additional modifiers for point mark that each allow you to plot an additional property to a unique visual channel.
@@ -73,8 +71,6 @@ Chart(data) {
 }
 ```
 
-![A scatter plot with wing width plotted on the x-axis, wing height plotted on the y-axis, and insect family mapped to a color. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height. The points appear in 3 clusters of 4 points each, where the points in each cluster have a different color. The cluster in the lower left has blue points. The cluster in the middle has green points. The cluster in the upper right has orange points. A legend below the plot maps each color to a different insect family. The mappings are Diptera in blue, Hymenoptera in green, and Lepidoptera in orange.](https://docs-assets.developer.apple.com/published/49e25992043ab6be4716951a42c79ec0/PointMarkSwift.PointMarkScatterChartModifiedForegroundColor%402x.png)
-
 The foreground style modifier automatically generates a color scale that provides each mark with a color that reflects its value property. To learn how to modify the default color scale, see `ScaleModifiers`. The modifier also provides a default legend. To learn how to modify or disable the legend, see `ChartLegend`.
 
 Alternatively, you can distinguish families with different symbols by plotting the `family` property using the [symbol(by:)](/documentation/charts/chartcontent/symbol(by:)) modifier:
@@ -88,8 +84,6 @@ Chart(data) {
     .symbol(by: .value("Family", $0.family))
 }
 ```
-
-![A scatter plot with wing width plotted on the x-axis, wing height plotted on the y-axis, and insect family mapped to a symbol. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height. The points appear in 3 clusters of 4 points each, where the points in each cluster have different symbols. The cluster in the lower left has circular points. The cluster in the middle has square points. The cluster in the upper right has triangular points. A legend below the plot maps each symbol to a different insect family. The mappings are circles for Diptera, squares for Hymenoptera, and triangles for Lepidoptera.](https://docs-assets.developer.apple.com/published/222692d8e981eed4acae351940ac42c8/PointMarkSwift.PointMarkScatterChartModifiedSymbol%402x.png)
 
 ### PointMark in Chart3D
 
@@ -145,14 +139,14 @@ Chart3D(PointMarkData.insectData) {
 
 ## Marks
 
-- [AreaMark](/documentation/charts/areamark)
-- [LineMark](/documentation/charts/linemark)
-- [RectangleMark](/documentation/charts/rectanglemark)
-- [RuleMark](/documentation/charts/rulemark)
-- [BarMark](/documentation/charts/barmark)
-- [SectorMark](/documentation/charts/sectormark)
+- [AreaMark](/documentation/charts/areamark) Chart content that represents data using the area of one or more regions.
+- [LineMark](/documentation/charts/linemark) Chart content that represents data using a sequence of connected line segments.
+- [RectangleMark](/documentation/charts/rectanglemark) Chart content that represents data using rectangles.
+- [RuleMark](/documentation/charts/rulemark) Chart content that represents data using a single horizontal or vertical rule.
+- [BarMark](/documentation/charts/barmark) Chart content that represents data using bars.
+- [SectorMark](/documentation/charts/sectormark) A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

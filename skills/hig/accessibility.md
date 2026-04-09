@@ -2,7 +2,7 @@
 title: Accessibility
 description: Accessible user interfaces empower everyone to have a great experience with your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/accessibility
-timestamp: 2026-01-17T15:44:51.716Z
+timestamp: 2026-04-09T12:18:07.575Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:44:51.716Z
 # Accessibility
 
 > Accessible user interfaces empower everyone to have a great experience with your app or game.
-
-
 
 When you design for accessibility, you reach a larger audience and create a more inclusive experience. An accessible interface allows people to experience your app or game regardless of their capabilities or how they use their devices. Accessibility makes information and interactions available to everyone. An accessible interface is:
 
@@ -25,17 +23,29 @@ As you design your app, audit the accessibility of your interface. Use [Accessib
 
 ## Vision
 
-
-
 The people who use your interface may be blind, color blind, or have low vision or light sensitivity. They may also be in situations where lighting conditions and screen brightness affect their ability to interact with your interface.
 
 **Support larger text sizes.** Make sure people can adjust the size of your text or icons to make them more legible, visible, and comfortable to read. Ideally, give people the option to enlarge text by at least 200 percent (or 140 percent in watchOS apps). Your interface can support font size enlargement either through custom UI, or by adopting Dynamic Type. Dynamic Type is a systemwide setting that lets people adjust the size of text for comfort and legibility. For more guidance, see [Supporting Dynamic Type](/design/human-interface-guidelines/typography#Supporting-Dynamic-Type).
 
 **Use recommended defaults for custom type sizes.** Each platform has different default and minimum sizes for system-defined type styles to promote readability. If you’re using custom type styles, follow the recommended defaults.
 
+| Platform | Default size | Minimum size |
+| --- | --- | --- |
+| iOS, iPadOS | 17 pt | 11 pt |
+| macOS | 13 pt | 10 pt |
+| tvOS | 29 pt | 23 pt |
+| visionOS | 17 pt | 12 pt |
+| watchOS | 16 pt | 12 pt |
+
 **Bear in mind that font weight can also impact how easy text is to read.** If you’re using a custom font with a thin weight, aim for larger than the recommended sizes to increase legibility. For more guidance, see [Typography](/design/human-interface-guidelines/typography).
 
 **Strive to meet color contrast minimum standards.** To ensure all information in your app is legible, it’s important that there’s enough contrast between foreground text and icons and background colors. Two popular standards of measure for color contrast are the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG/) and the Accessible Perceptual Contrast Algorithm (APCA). Use standard contrast calculators to ensure your UI meets acceptable levels. [Accessibility Inspector](/documentation/Accessibility/accessibility-inspector) uses the following values from WCAG Level AA as guidance in determining whether your app’s colors have an acceptable contrast.
+
+| Text size | Text weight | Minimum contrast ratio |
+| --- | --- | --- |
+| Up to 17 pts | All | 4.5:1 |
+| 18 pts | All | 3:1 |
+| All | Bold | 3:1 |
 
 If your app doesn’t provide this minimum contrast by default, ensure it at least provides a higher contrast color scheme when the system setting Increase Contrast is turned on. If your app supports [Dark Mode](/design/human-interface-guidelines/dark-mode), make sure to check the minimum contrast in both light and dark appearances.
 
@@ -46,8 +56,6 @@ If your app doesn’t provide this minimum contrast by default, ensure it at lea
 **Describe your app’s interface and content for VoiceOver.** VoiceOver is a screen reader that lets people experience your app’s interface without needing to see the screen. For more guidance, see [VoiceOver](/design/human-interface-guidelines/voiceover).
 
 ## Hearing
-
-
 
 The people who use your interface may be deaf or hard of hearing. They may also be in noisy or public environments.
 
@@ -62,17 +70,21 @@ For developer guidance, see [Selecting subtitles and alternative audio tracks](/
 
 **Use haptics in addition to audio cues.** If your interface conveys information through audio cues — such as a success chime, error sound, or game feedback — consider pairing that sound with matching haptics for people who can’t perceive the audio or have their audio turned off. In iOS and iPadOS, you can also use [Music Haptics](/documentation/MediaAccessibility/music-haptics) and [Audio graphs](/documentation/Accessibility/audio-graphs) to let people experience music and infographics through vibration and texture. For guidance, see [Playing haptics](/design/human-interface-guidelines/playing-haptics).
 
-
-
 **Augment audio cues with visual cues.** This is especially important for games and spatial apps where important content might be taking place off screen. When using audio to guide people towards a specific action, also add in visual indicators that point to where you want people to interact.
 
 ## Mobility
 
-
-
 Ensure your interface offers a comfortable experience for people with limited dexterity or mobility.
 
 **Offer sufficiently sized controls.** Controls that are too small are hard for many people to interact with and select. Strive to meet the recommended minimum control size for each platform to ensure controls and menus are comfortable for all when tapping and clicking.
+
+| Platform | Default control size | Minimum control size |
+| --- | --- | --- |
+| iOS, iPadOS | 44x44 pt | 28x28 pt |
+| macOS | 28x28 pt | 20x20 pt |
+| tvOS | 66x66 pt | 56x56 pt |
+| visionOS | 60x60 pt | 28x28 pt |
+| watchOS | 44x44 pt | 28x28 pt |
 
 **Consider spacing between controls as important as size.** Include enough padding between elements to reduce the chance that someone taps the wrong control. In general, it works well to add about 12 points of padding around elements that include a bezel. For elements without a bezel, about 24 points of padding works well around the element’s visible edges.
 
@@ -88,8 +100,6 @@ Ensure your interface offers a comfortable experience for people with limited de
 
 ## Speech
 
-
-
 Apple’s accessibility features help people with speech disabilities and people who prefer text-based interactions to communicate effectively using their devices.
 
 **Let people use the keyboard alone to navigate and interact with your app.** People can turn on Full Keyboard Access to navigate apps using their physical keyboard. The system also defines accessibility keyboard shortcuts and a wide range of other [keyboard shortcuts](https://support.apple.com/en-us/102650) that many people use all the time. Avoid overriding system-defined keyboard shortcuts and evaluate your app to ensure it works well with Full Keyboard Access. For additional guidance, see [Keyboards](/design/human-interface-guidelines/keyboards). For developer guidance, see [Support Full Keyboard Access in your iOS app](https://developer.apple.com/videos/play/wwdc2021/10120).
@@ -97,8 +107,6 @@ Apple’s accessibility features help people with speech disabilities and people
 **Support Switch Control.** Switch Control is an assistive technology that lets people control their devices through separate hardware, game controllers, or sounds such as a click or a pop. People can perform actions like selecting, tapping, typing, and drawing when your app or game supports the ability to navigate using Switch Control. For developer guidance, see [Switch Control](/documentation/Accessibility/switch-control).
 
 ## Cognitive
-
-
 
 When you minimize complexity in your app or game, all people benefit.
 
@@ -170,11 +178,19 @@ For additional guidance, see [Create accessible spatial experiences](https://dev
 
 - [Principles of inclusive app design](https://developer.apple.com/videos/play/wwdc2025/316) - Discover how understanding disability can help you create better apps for everyone. Find out how to make your apps more inclusive by supporting multiple types of interaction, providing customization, and adopting accessibility APIs.
 - [Evaluate your app for Accessibility Nutrition Labels](https://developer.apple.com/videos/play/wwdc2025/224) - Use Accessibility Nutrition Labels on your App Store product page to highlight the accessibility features supported by your app. You’ll learn how to evaluate your app’s accessibility features — such as VoiceOver, Larger Text, Captions, and more — and choose accurate and informative Accessibility Nutrition Labels. You’ll also find out how to approach accessibility throughout the design phase.
-- [Catch up on accessibility in SwiftUI](https://developer.apple.com/videos/play/wwdc2024/10073) - SwiftUI makes it easy to build amazing experiences that are accessible to everyone. We’ll discover how assistive technologies understand and navigate your app through the rich accessibility elements provided by SwiftUI. We’ll also discuss how you can further customize these experiences by providing more information about your app’s content and interactions by using accessibility modifiers. 
+- [Catch up on accessibility in SwiftUI](https://developer.apple.com/videos/play/wwdc2024/10073) - SwiftUI makes it easy to build amazing experiences that are accessible to everyone. We’ll discover how assistive technologies understand and navigate your app through the rich accessibility elements provided by SwiftUI. We’ll also discuss how you can further customize these experiences by providing more information about your app’s content and interactions by using accessibility modifiers.
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 9, 2025 | Added guidance and links for Assistive Access, Switch Control, and Accessibility Nutrition Labels. |
+| March 7, 2025 | Expanded and refined all guidance. Moved Dynamic Type guidance to the Typography page, and moved VoiceOver guidance to a new VoiceOver page. |
+| June 10, 2024 | Added a link to Apple’s Unity plug-ins for supporting Dynamic Type. |
+| December 5, 2023 | Updated visionOS Zoom lens artwork. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,7 +2,7 @@
 title: Settings
 description: People expect apps and games to just work, but they also appreciate having ways to customize the experience to fit their needs.
 source: https://developer.apple.com/design/human-interface-guidelines/settings
-timestamp: 2026-01-17T15:45:02.719Z
+timestamp: 2026-04-09T12:18:16.772Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:02.719Z
 # Settings
 
 > People expect apps and games to just work, but they also appreciate having ways to customize the experience to fit their needs.
-
-
 
 On all Apple platforms, the system-provided Settings app lets people adjust things like the overall appearance of the system, network connections, account details, accessibility requirements, and language and region settings. On some platforms, the system-provided Settings app can also include settings for specific apps and games, often letting people adjust whether the app or game can access location information, use device features like microphone or camera, and integrate with system features like notifications, Siri, or Search.
 
@@ -38,6 +36,8 @@ When necessary, you can provide a custom settings area within your app or game t
 ## Task-specific options
 
 **When possible, prefer letting people modify task-specific options without going to your settings area.** For example, if people can adjust things like showing or hiding parts of the current view, reordering a collection of items, or filtering a list, make these options available in the screens they affect, where they’re discoverable and convenient. Putting this type of option in a separate settings area disconnects it from its context, requiring people to suspend their task to make adjustments, and often hiding the results until people resume the task.
+
+> **Note:** In games, players tend to adjust their approach to a specific task as part of the gameplay, not as a settings option to change.
 
 ## System settings
 
@@ -81,7 +81,11 @@ In watchOS, apps and games don’t add custom settings to the system-provided Se
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 10, 2024 | Reorganized some guidance into new topics and added game-specific examples. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

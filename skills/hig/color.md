@@ -2,7 +2,7 @@
 title: Color
 description: Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information.
 source: https://developer.apple.com/design/human-interface-guidelines/color
-timestamp: 2026-01-17T15:44:48.256Z
+timestamp: 2026-04-09T12:18:09.804Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:44:48.256Z
 # Color
 
 > Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information.
-
-
 
 The system defines colors that look good on various backgrounds and appearance modes, and can automatically adapt to vibrancy and accessibility settings. Using system colors is a convenient way to make your experience feel at home on the device.
 
@@ -65,8 +63,6 @@ For smaller elements like toolbars and tab bars, the system can adapt Liquid Gla
 
 A *color space* represents the colors in a *color model* like RGB or CMYK. Common color spaces — sometimes called *gamuts* — are sRGB and Display P3.
 
-
-
 A *color profile* describes the colors in a color space using, for example, mathematical formulas or tables of data that map colors to numerical representations. An image embeds its color profile so that a device can interpret the image’s colors correctly and reproduce them on a display.
 
 **Apply color profiles to your images.** Color profiles help ensure that your app’s colors appear as intended on different displays. The sRGB color space produces accurate colors on most displays.
@@ -89,15 +85,62 @@ With both sets of background colors, you generally use the variants to indicate 
 
 For foreground content, iOS defines the following dynamic colors:
 
+| Color | Use for… | UIKit API |
+| --- | --- | --- |
+| Label | A text label that contains primary content. | [label](/documentation/UIKit/UIColor/label) |
+| Secondary label | A text label that contains secondary content. | [secondaryLabel](/documentation/UIKit/UIColor/secondaryLabel) |
+| Tertiary label | A text label that contains tertiary content. | [tertiaryLabel](/documentation/UIKit/UIColor/tertiaryLabel) |
+| Quaternary label | A text label that contains quaternary content. | [quaternaryLabel](/documentation/UIKit/UIColor/quaternaryLabel) |
+| Placeholder text | Placeholder text in controls or text views. | [placeholderText](/documentation/UIKit/UIColor/placeholderText) |
+| Separator | A separator that allows some underlying content to be visible. | [separator](/documentation/UIKit/UIColor/separator) |
+| Opaque separator | A separator that doesn’t allow any underlying content to be visible. | [opaqueSeparator](/documentation/UIKit/UIColor/opaqueSeparator) |
+| Link | Text that functions as a link. | [link](/documentation/UIKit/UIColor/link) |
+
 ### macOS
 
 macOS defines the following dynamic system colors (you can also view them in the Developer palette of the standard Color panel):
 
+| Color | Use for… | AppKit API |
+| --- | --- | --- |
+| Alternate selected control text color | The text on a selected surface in a list or table. | [alternateSelectedControlTextColor](/documentation/AppKit/NSColor/alternateSelectedControlTextColor) |
+| Alternating content background colors | The backgrounds of alternating rows or columns in a list, table, or collection view. | [alternatingContentBackgroundColors](/documentation/AppKit/NSColor/alternatingContentBackgroundColors) |
+| Control accent | The accent color people select in System Settings. | [controlAccentColor](/documentation/AppKit/NSColor/controlAccentColor) |
+| Control background color | The background of a large interface element, such as a browser or table. | [controlBackgroundColor](/documentation/AppKit/NSColor/controlBackgroundColor) |
+| Control color | The surface of a control. | [controlColor](/documentation/AppKit/NSColor/controlColor) |
+| Control text color | The text of a control that is available. | [controlTextColor](/documentation/AppKit/NSColor/controlTextColor) |
+| Current control tint | The system-defined control tint. | [currentControlTint](/documentation/AppKit/NSColor/currentControlTint) |
+| Unavailable control text color | The text of a control that’s unavailable. | [disabledControlTextColor](/documentation/AppKit/NSColor/disabledControlTextColor) |
+| Find highlight color | The color of a find indicator. | [findHighlightColor](/documentation/AppKit/NSColor/findHighlightColor) |
+| Grid color | The gridlines of an interface element, such as a table. | [gridColor](/documentation/AppKit/NSColor/gridColor) |
+| Header text color | The text of a header cell in a table. | [headerTextColor](/documentation/AppKit/NSColor/headerTextColor) |
+| Highlight color | The virtual light source onscreen. | [highlightColor](/documentation/AppKit/NSColor/highlightColor) |
+| Keyboard focus indicator color | The ring that appears around the currently focused control when using the keyboard for interface navigation. | [keyboardFocusIndicatorColor](/documentation/AppKit/NSColor/keyboardFocusIndicatorColor) |
+| Label color | The text of a label containing primary content. | [labelColor](/documentation/AppKit/NSColor/labelColor) |
+| Link color | A link to other content. | [linkColor](/documentation/AppKit/NSColor/linkColor) |
+| Placeholder text color | A placeholder string in a control or text view. | [placeholderTextColor](/documentation/AppKit/NSColor/placeholderTextColor) |
+| Quaternary label color | The text of a label of lesser importance than a tertiary label, such as watermark text. | [quaternaryLabelColor](/documentation/AppKit/NSColor/quaternaryLabelColor) |
+| Secondary label color | The text of a label of lesser importance than a primary label, such as a label used to represent a subheading or additional information. | [secondaryLabelColor](/documentation/AppKit/NSColor/secondaryLabelColor) |
+| Selected content background color | The background for selected content in a key window or view. | [selectedContentBackgroundColor](/documentation/AppKit/NSColor/selectedContentBackgroundColor) |
+| Selected control color | The surface of a selected control. | [selectedControlColor](/documentation/AppKit/NSColor/selectedControlColor) |
+| Selected control text color | The text of a selected control. | [selectedControlTextColor](/documentation/AppKit/NSColor/selectedControlTextColor) |
+| Selected menu item text color | The text of a selected menu. | [selectedMenuItemTextColor](/documentation/AppKit/NSColor/selectedMenuItemTextColor) |
+| Selected text background color | The background of selected text. | [selectedTextBackgroundColor](/documentation/AppKit/NSColor/selectedTextBackgroundColor) |
+| Selected text color | The color for selected text. | [selectedTextColor](/documentation/AppKit/NSColor/selectedTextColor) |
+| Separator color | A separator between different sections of content. | [separatorColor](/documentation/AppKit/NSColor/separatorColor) |
+| Shadow color | The virtual shadow cast by a raised object onscreen. | [shadowColor](/documentation/AppKit/NSColor/shadowColor) |
+| Tertiary label color | The text of a label of lesser importance than a secondary label. | [tertiaryLabelColor](/documentation/AppKit/NSColor/tertiaryLabelColor) |
+| Text background color | The background color behind text. | [textBackgroundColor](/documentation/AppKit/NSColor/textBackgroundColor) |
+| Text color | The text in a document. | [textColor](/documentation/AppKit/NSColor/textColor) |
+| Under page background color | The background behind a document’s content. | [underPageBackgroundColor](/documentation/AppKit/NSColor/underPageBackgroundColor) |
+| Unemphasized selected content background color | The selected content in a non-key window or view. | [unemphasizedSelectedContentBackgroundColor](/documentation/AppKit/NSColor/unemphasizedSelectedContentBackgroundColor) |
+| Unemphasized selected text background color | A background for selected text in a non-key window or view. | [unemphasizedSelectedTextBackgroundColor](/documentation/AppKit/NSColor/unemphasizedSelectedTextBackgroundColor) |
+| Unemphasized selected text color | Selected text in a non-key window or view. | [unemphasizedSelectedTextColor](/documentation/AppKit/NSColor/unemphasizedSelectedTextColor) |
+| Window background color | The background of a window. | [windowBackgroundColor](/documentation/AppKit/NSColor/windowBackgroundColor) |
+| Window frame text color | The text in the window’s title bar area. | [windowFrameTextColor](/documentation/AppKit/NSColor/windowFrameTextColor) |
+
 #### App accent colors
 
 Beginning in macOS 11, you can specify an *accent color* to customize the appearance of your app’s buttons, selection highlighting, and sidebar icons. The system applies your accent color when the current value in General > Accent color settings is *multicolor*.
-
-
 
 If people set their accent color setting to a value other than multicolor, the system applies their chosen color to the relevant items throughout your app, replacing your accent color. The exception is a sidebar icon that uses a fixed color you specify. Because a fixed-color sidebar icon uses a specific color to provide meaning, the system doesn’t override its color when people change the value of accent color settings. For guidance, see [Sidebars](/design/human-interface-guidelines/sidebars).
 
@@ -125,9 +168,33 @@ If people set their accent color setting to a value other than multicolor, the s
 
 ### System colors
 
+| Name | SwiftUI API | Default (light) | Default (dark) | Increased contrast (light) | Increased contrast (dark) |
+| --- | --- | --- | --- | --- | --- |
+| Red | [red](/documentation/SwiftUI/Color/red) |  |  |  |  |
+| Orange | [orange](/documentation/SwiftUI/Color/orange) |  |  |  |  |
+| Yellow | [yellow](/documentation/SwiftUI/Color/yellow) |  |  |  |  |
+| Green | [green](/documentation/SwiftUI/Color/green) |  |  |  |  |
+| Mint | [mint](/documentation/SwiftUI/Color/mint) |  |  |  |  |
+| Teal | [teal](/documentation/SwiftUI/Color/teal) |  |  |  |  |
+| Cyan | [cyan](/documentation/SwiftUI/Color/cyan) |  |  |  |  |
+| Blue | [blue](/documentation/SwiftUI/Color/blue) |  |  |  |  |
+| Indigo | [indigo](/documentation/SwiftUI/Color/indigo) |  |  |  |  |
+| Purple | [purple](/documentation/SwiftUI/Color/purple) |  |  |  |  |
+| Pink | [pink](/documentation/SwiftUI/Color/pink) |  |  |  |  |
+| Brown | [brown](/documentation/SwiftUI/Color/brown) |  |  |  |  |
+
 visionOS system colors use the default dark color values.
 
 ### iOS, iPadOS system gray colors
+
+| Name | UIKit API | Default (light) | Default (dark) | Increased contrast (light) | Increased contrast (dark) |
+| --- | --- | --- | --- | --- | --- |
+| Gray | [systemGray](/documentation/UIKit/UIColor/systemGray) |  |  |  |  |
+| Gray (2) | [systemGray2](/documentation/UIKit/UIColor/systemGray2) |  |  |  |  |
+| Gray (3) | [systemGray3](/documentation/UIKit/UIColor/systemGray3) |  |  |  |  |
+| Gray (4) | [systemGray4](/documentation/UIKit/UIColor/systemGray4) |  |  |  |  |
+| Gray (5) | [systemGray5](/documentation/UIKit/UIColor/systemGray5) |  |  |  |  |
+| Gray (6) | [systemGray6](/documentation/UIKit/UIColor/systemGray6) |  |  |  |  |
 
 In SwiftUI, the equivalent of `systemGray` is [gray](/documentation/SwiftUI/Color/gray).
 
@@ -157,7 +224,17 @@ In SwiftUI, the equivalent of `systemGray` is [gray](/documentation/SwiftUI/Colo
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| December 16, 2025 | Updated guidance for Liquid Glass. |
+| June 9, 2025 | Updated system color values, and added guidance for Liquid Glass. |
+| February 2, 2024 | Distinguished UIKit and SwiftUI gray colors in iOS and iPadOS, and added guidance for balancing brightness levels in visionOS apps. |
+| September 12, 2023 | Enhanced guidance for using background color in watchOS views, and added color swatches for tvOS. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+| June 5, 2023 | Updated guidance for using background color in watchOS. |
+| December 19, 2022 | Corrected RGB values for system mint color (Dark Mode) in iOS and iPadOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,10 +2,10 @@
 title: sheet(isPresented:onDismiss:content:)
 description: Presents a sheet when a binding to a Boolean value that you provide is true.
 source: https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)
-timestamp: 2026-02-19T07:56:06.508Z
+timestamp: 2026-04-09T12:04:39.630Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui) › [view](/documentation/swiftui/view)
+**Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
 
 **Instance Method**
 
@@ -25,19 +25,13 @@ nonisolated func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Vo
 
 A binding to a Boolean value that determines whether to present the sheet that you create in the modifier’s `content` closure.
 
-
-
 **onDismiss**
 
 The closure to execute when dismissing the sheet.
 
-
-
 **content**
 
 A closure that returns the content of the sheet.
-
-
 
 ## Discussion
 
@@ -74,8 +68,6 @@ struct ShowLicenseAgreement: View {
 }
 ```
 
-![A screenshot of a full-screen modal sheet showing the mockup of a](https://docs-assets.developer.apple.com/published/1f086a26afa553b6877f59b2b320cd85/SwiftUI-View-SheetIsPresentingContent%402x.png)
-
 In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [presentationCompactAdaptation(_:)](/documentation/swiftui/view/presentationcompactadaptation(_:)) or [presentationCompactAdaptation(horizontal:vertical:)](/documentation/swiftui/view/presentationcompactadaptation(horizontal:vertical:)) modifier to override this behavior.
 
 ### Breakthrough effect
@@ -100,19 +92,18 @@ In visionOS, most system presentations appear with a breakthrough effect by defa
 }
 ```
 
-> [!NOTE]
-> Passing a `.none` value for a sheet has no effect.
+> **Note:** Passing a `.none` value for a sheet has no effect.
 
 ## Showing a sheet, cover, or popover
 
-- [sheet(item:onDismiss:content:)](/documentation/swiftui/view/sheet(item:ondismiss:content:))
-- [fullScreenCover(isPresented:onDismiss:content:)](/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content:))
-- [fullScreenCover(item:onDismiss:content:)](/documentation/swiftui/view/fullscreencover(item:ondismiss:content:))
-- [popover(item:attachmentAnchor:arrowEdge:content:)](/documentation/swiftui/view/popover(item:attachmentanchor:arrowedge:content:))
-- [popover(isPresented:attachmentAnchor:arrowEdge:content:)](/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:))
-- [PopoverAttachmentAnchor](/documentation/swiftui/popoverattachmentanchor)
+- [sheet(item:onDismiss:content:)](/documentation/swiftui/view/sheet(item:ondismiss:content:)) Presents a sheet using the given item as a data source for the sheet’s content.
+- [fullScreenCover(isPresented:onDismiss:content:)](/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content:)) Presents a modal view that covers as much of the screen as possible when binding to a Boolean value you provide is true.
+- [fullScreenCover(item:onDismiss:content:)](/documentation/swiftui/view/fullscreencover(item:ondismiss:content:)) Presents a modal view that covers as much of the screen as possible using the binding you provide as a data source for the sheet’s content.
+- [popover(item:attachmentAnchor:arrowEdge:content:)](/documentation/swiftui/view/popover(item:attachmentanchor:arrowedge:content:)) Presents a popover using the given item as a data source for the popover’s content.
+- [popover(isPresented:attachmentAnchor:arrowEdge:content:)](/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:)) Presents a popover when a given condition is true.
+- [PopoverAttachmentAnchor](/documentation/swiftui/popoverattachmentanchor) An attachment anchor for a popover.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

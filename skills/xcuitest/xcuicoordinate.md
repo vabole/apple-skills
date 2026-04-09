@@ -2,16 +2,16 @@
 title: XCUICoordinate
 description: A location on screen relative to a UI element.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate
-timestamp: 2026-01-17T15:38:15.923Z
+timestamp: 2026-04-09T12:04:45.793Z
 ---
 
-**Navigation:** [Xcuiautomation](/documentation/xcuiautomation)
+**Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
 
 **Class**
 
 # XCUICoordinate
 
-**Available on:** iOS undefined+, iPadOS undefined+, Mac Catalyst undefined+, macOS undefined+, visionOS undefined+, watchOS undefined+, Xcode 16.3+
+**Available on:** iOS, iPadOS, Mac Catalyst, macOS, visionOS, watchOS, Xcode 16.3+
 
 > A location on screen relative to a UI element.
 
@@ -84,12 +84,12 @@ Coordinates are dynamic, like the elements to which they refer, and may compute 
 
 ## UI elements
 
-- [XCUIElement](/documentation/xcuiautomation/xcuielement)
-- [XCUIElementAttributes](/documentation/xcuiautomation/xcuielementattributes)
-- [XCUIElementSnapshot](/documentation/xcuiautomation/xcuielementsnapshot)
-- [XCUIElementSnapshotProviding](/documentation/xcuiautomation/xcuielementsnapshotproviding)
+- [XCUIElement](/documentation/xcuiautomation/xcuielement) A UI element in an application.
+- [XCUIElementAttributes](/documentation/xcuiautomation/xcuielementattributes) Attributes exposed by UI elements.
+- [XCUIElementSnapshot](/documentation/xcuiautomation/xcuielementsnapshot) A set of attributes to express a snapshot of an element’s attributes and descendant user interface hierarchy.
+- [XCUIElementSnapshotProviding](/documentation/xcuiautomation/xcuielementsnapshotproviding) A method to capture a snapshot of an element’s attributes and descendant user interface hierarchy.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: ZStack
 description: A view that overlays its subviews, aligning them in both axes.
 source: https://developer.apple.com/documentation/swiftui/zstack
-timestamp: 2026-02-19T07:56:07.626Z
+timestamp: 2026-04-09T12:04:42.446Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -42,9 +42,7 @@ var body: some View {
 }
 ```
 
-![Six squares of different colors, stacked atop each other, with a 10-point](https://docs-assets.developer.apple.com/published/5ce47ef59a84b346d733bcf2f4a7853e/SwiftUI-ZStack-offset-rectangles%402x.png)
-
-The `ZStack` uses an [Alignment](/documentation/swiftui/alignment) to set the x- and y-axis coordinates of each subview, defaulting to a [center](/documentation/swiftui/alignment/center) alignment. In the following example, the `ZStack` uses a [bottom Leading](/documentation/swiftui/alignment/bottomleading) alignment to lay out two subviews, a red 100 x 50 point rectangle below, and a blue 50 x 100 point rectangle on top. Because of the alignment value, both rectangles share a bottom-left corner with the `ZStack` (in locales where left is the leading side).
+The `ZStack` uses an [Alignment](/documentation/swiftui/alignment) to set the x- and y-axis coordinates of each subview, defaulting to a [center](/documentation/swiftui/alignment/center) alignment. In the following example, the `ZStack` uses a [bottomLeading](/documentation/swiftui/alignment/bottomleading) alignment to lay out two subviews, a red 100 x 50 point rectangle below, and a blue 50 x 100 point rectangle on top. Because of the alignment value, both rectangles share a bottom-left corner with the `ZStack` (in locales where left is the leading side).
 
 ```swift
 var body: some View {
@@ -60,10 +58,7 @@ var body: some View {
 }
 ```
 
-![A green 100 by 100 square containing two overlapping rectangles: on the](https://docs-assets.developer.apple.com/published/b18f4156c9780e8200b05194bff17db4/SwiftUI-ZStack-alignment%402x.png)
-
-> [!NOTE]
-> If you need a version of this stack that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [Any Layout](/documentation/swiftui/anylayout), use [ZStack Layout](/documentation/swiftui/zstacklayout) instead.
+> **Note:** If you need a version of this stack that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [AnyLayout](/documentation/swiftui/anylayout), use [ZStackLayout](/documentation/swiftui/zstacklayout) instead.
 
 ## Conforms To
 
@@ -75,7 +70,7 @@ var body: some View {
 
 ## Supporting symbols
 
-- [ZStackContent3D](/documentation/swiftui/zstackcontent3d) A type that adds spacing to a .
+- [ZStackContent3D](/documentation/swiftui/zstackcontent3d) A type that adds spacing to a [ZStack](/documentation/swiftui/zstack).
 
 ## Initializers
 
@@ -83,22 +78,22 @@ var body: some View {
 
 ## Layering views
 
-- [Adding a background to your view](/documentation/swiftui/adding-a-background-to-your-view)
-- [zIndex(_:)](/documentation/swiftui/view/zindex(_:))
-- [background(alignment:content:)](/documentation/swiftui/view/background(alignment:content:))
-- [background(_:ignoresSafeAreaEdges:)](/documentation/swiftui/view/background(_:ignoressafeareaedges:))
-- [background(ignoresSafeAreaEdges:)](/documentation/swiftui/view/background(ignoressafeareaedges:))
-- [background(_:in:fillStyle:)](/documentation/swiftui/view/background(_:in:fillstyle:))
-- [background(in:fillStyle:)](/documentation/swiftui/view/background(in:fillstyle:))
-- [overlay(alignment:content:)](/documentation/swiftui/view/overlay(alignment:content:))
-- [overlay(_:ignoresSafeAreaEdges:)](/documentation/swiftui/view/overlay(_:ignoressafeareaedges:))
-- [overlay(_:in:fillStyle:)](/documentation/swiftui/view/overlay(_:in:fillstyle:))
-- [backgroundMaterial](/documentation/swiftui/environmentvalues/backgroundmaterial)
-- [containerBackground(_:for:)](/documentation/swiftui/view/containerbackground(_:for:))
-- [containerBackground(for:alignment:content:)](/documentation/swiftui/view/containerbackground(for:alignment:content:))
-- [ContainerBackgroundPlacement](/documentation/swiftui/containerbackgroundplacement)
+- [Adding a background to your view](/documentation/swiftui/adding-a-background-to-your-view) Compose a background behind your view and extend it beyond the safe area insets.
+- [zIndex(_:)](/documentation/swiftui/view/zindex(_:)) Controls the display order of overlapping views.
+- [background(alignment:content:)](/documentation/swiftui/view/background(alignment:content:)) Layers the views that you specify behind this view.
+- [background(_:ignoresSafeAreaEdges:)](/documentation/swiftui/view/background(_:ignoressafeareaedges:)) Sets the view’s background to a style.
+- [background(ignoresSafeAreaEdges:)](/documentation/swiftui/view/background(ignoressafeareaedges:)) Sets the view’s background to the default background style.
+- [background(_:in:fillStyle:)](/documentation/swiftui/view/background(_:in:fillstyle:)) Sets the view’s background to an insettable shape filled with a style.
+- [background(in:fillStyle:)](/documentation/swiftui/view/background(in:fillstyle:)) Sets the view’s background to an insettable shape filled with the default background style.
+- [overlay(alignment:content:)](/documentation/swiftui/view/overlay(alignment:content:)) Layers the views that you specify in front of this view.
+- [overlay(_:ignoresSafeAreaEdges:)](/documentation/swiftui/view/overlay(_:ignoressafeareaedges:)) Layers the specified style in front of this view.
+- [overlay(_:in:fillStyle:)](/documentation/swiftui/view/overlay(_:in:fillstyle:)) Layers a shape that you specify in front of this view.
+- [backgroundMaterial](/documentation/swiftui/environmentvalues/backgroundmaterial) The material underneath the current view.
+- [containerBackground(_:for:)](/documentation/swiftui/view/containerbackground(_:for:)) Sets the container background of the enclosing container using a view.
+- [containerBackground(for:alignment:content:)](/documentation/swiftui/view/containerbackground(for:alignment:content:)) Sets the container background of the enclosing container using a view.
+- [ContainerBackgroundPlacement](/documentation/swiftui/containerbackgroundplacement) The placement of a container background.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

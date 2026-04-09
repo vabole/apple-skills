@@ -2,10 +2,10 @@
 title: View
 description: A type that represents part of your app’s user interface and provides modifiers that you use to configure views.
 source: https://developer.apple.com/documentation/swiftui/view
-timestamp: 2026-02-19T07:56:07.396Z
+timestamp: 2026-04-09T12:04:41.692Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Protocol**
 
@@ -31,16 +31,16 @@ struct MyView: View {
 }
 ```
 
-Assemble the view’s body by combining one or more of the built-in views provided by SwiftUI, like the [Text](/documentation/swiftui/text) instance in the example above, plus other custom views that you define, into a hierarchy of views. For more information about creating custom views, see [Declaring-a-Custom](/documentation/swiftui/declaring-a-custom-view).
+Assemble the view’s body by combining one or more of the built-in views provided by SwiftUI, like the [Text](/documentation/swiftui/text) instance in the example above, plus other custom views that you define, into a hierarchy of views. For more information about creating custom views, see [Declaring a custom view](/documentation/swiftui/declaring-a-custom-view).
 
-The `View` protocol provides a set of modifiers — protocol methods with default implementations — that you use to configure views in the layout of your app. Modifiers work by wrapping the view instance on which you call them in another view with the specified characteristics, as described in [Configuring](/documentation/swiftui/configuring-views). For example, adding the [opacity(_:)](/documentation/swiftui/view/opacity(_:)) modifier to a text view returns a new view with some amount of transparency:
+The `View` protocol provides a set of modifiers — protocol methods with default implementations — that you use to configure views in the layout of your app. Modifiers work by wrapping the view instance on which you call them in another view with the specified characteristics, as described in [Configuring views](/documentation/swiftui/configuring-views). For example, adding the [opacity(_:)](/documentation/swiftui/view/opacity(_:)) modifier to a text view returns a new view with some amount of transparency:
 
 ```swift
 Text("Hello, World!")
     .opacity(0.5) // Display partially transparent text.
 ```
 
-The complete list of default modifiers provides a large set of controls for managing views. For example, you can fine tune [View](/documentation/swiftui/view-layout), add [View](/documentation/swiftui/view-accessibility) information, and respond to [View-Input-and](/documentation/swiftui/view-input-and-events). You can also collect groups of default modifiers into new, custom view modifiers for easy reuse.
+The complete list of default modifiers provides a large set of controls for managing views. For example, you can fine tune [Layout modifiers](/documentation/swiftui/view-layout), add [Accessibility modifiers](/documentation/swiftui/view-accessibility) information, and respond to [Input and event modifiers](/documentation/swiftui/view-input-and-events). You can also collect groups of default modifiers into new, custom view modifiers for easy reuse.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is declared in its original declaration. Isolation to the main actor is the default, but it’s not required. Declare the conformance in an extension to opt-out the isolation.
 
@@ -250,7 +250,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [accessibilityDefaultFocus(_:_:)](/documentation/swiftui/view/accessibilitydefaultfocus(_:_:)) Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [accessibilityScrollStatus(_:isEnabled:)](/documentation/swiftui/view/accessibilityscrollstatus(_:isenabled:)) Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [addOrderToWalletButtonStyle(_:)](/documentation/swiftui/view/addordertowalletbuttonstyle(_:)) Sets the button’s style.
-- [addPassToWalletButtonStyle(_:)](/documentation/swiftui/view/addpasstowalletbuttonstyle(_:)) Sets the style to be used by the button. (see ).
+- [addPassToWalletButtonStyle(_:)](/documentation/swiftui/view/addpasstowalletbuttonstyle(_:)) Sets the style to be used by the button. (see `PKAddPassButtonStyle`).
 - [allowsWindowActivationEvents()](/documentation/swiftui/view/allowswindowactivationevents()) Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [appStoreMerchandising(isPresented:kind:onDismiss:)](/documentation/swiftui/view/appstoremerchandising(ispresented:kind:ondismiss:))
 - [aspectRatio3D(_:contentMode:)](/documentation/swiftui/view/aspectratio3d(_:contentmode:)) Constrains this view’s dimensions to the specified 3D aspect ratio.
@@ -281,12 +281,12 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [containerValue(_:_:)](/documentation/swiftui/view/containervalue(_:_:)) Sets a particular container value of a view.
 - [contentCaptureProtected(_:)](/documentation/swiftui/view/contentcaptureprotected(_:))
 - [contentToolbar(for:content:)](/documentation/swiftui/view/contenttoolbar(for:content:)) Populates the toolbar of the specified content view type with the views you provide.
-- [continuityDevicePicker(isPresented:onDidConnect:)](/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:)) A  should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of  as possible when a given condition is true.
+- [continuityDevicePicker(isPresented:onDidConnect:)](/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:)) A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.
 - [controlWidgetActionHint(_:)](/documentation/swiftui/view/controlwidgetactionhint(_:)) The action hint of the control described by the modified label.
 - [controlWidgetStatus(_:)](/documentation/swiftui/view/controlwidgetstatus(_:)) The status of the control described by the modified label.
 - [currentEntitlementTask(for:priority:action:)](/documentation/swiftui/view/currententitlementtask(for:priority:action:)) Declares the view as dependent on the entitlement of an In-App Purchase product, and returns a modified view.
 - [dialogPreventsAppTermination(_:)](/documentation/swiftui/view/dialogpreventsapptermination(_:)) Whether the alert or confirmation dialog prevents the app from being quit/terminated by the system or app termination menu item.
-- [documentBrowserContextMenu(_:)](/documentation/swiftui/view/documentbrowsercontextmenu(_:)) Adds to a  actions that accept a list of selected files as their parameter.
+- [documentBrowserContextMenu(_:)](/documentation/swiftui/view/documentbrowsercontextmenu(_:)) Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 - [dragConfiguration(_:)](/documentation/swiftui/view/dragconfiguration(_:)) Configures a drag session.
 - [dragContainer(for:in:_:)](/documentation/swiftui/view/dragcontainer(for:in:_:)) A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
 - [dragContainer(for:itemID:in:_:)](/documentation/swiftui/view/dragcontainer(for:itemid:in:_:)) A container with draggable views.
@@ -302,7 +302,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [dropPreviewsFormation(_:)](/documentation/swiftui/view/droppreviewsformation(_:)) Describes the way previews for a drop are composed.
 - [familyActivityPicker(title:headerText:footerText:isPresented:selection:)](/documentation/swiftui/view/familyactivitypicker(title:headertext:footertext:ispresented:selection:)) Present an activity picker sheet for selecting apps and websites to manage.
 - [formStyle(_:)](/documentation/swiftui/view/formstyle(_:)) Sets the style for forms in a view hierarchy.
-- [foveatedStreamingPauseSheet(session:)](/documentation/swiftui/view/foveatedstreamingpausesheet(session:))
+- [foveatedStreamingPauseSheet(session:)](/documentation/swiftui/view/foveatedstreamingpausesheet(session:)) Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 - [gameSaveSyncingAlert(directory:finishedLoading:)](/documentation/swiftui/view/gamesavesyncingalert(directory:finishedloading:)) Presents a modal view while the game synced directory loads.
 - [glassBackgroundEffect(_:displayMode:)](/documentation/swiftui/view/glassbackgroundeffect(_:displaymode:)) Fills the view’s background with a custom glass background effect and container-relative rounded rectangle shape.
 - [glassBackgroundEffect(_:in:displayMode:)](/documentation/swiftui/view/glassbackgroundeffect(_:in:displaymode:)) Fills the view’s background with a custom glass background effect and a shape that you specify.
@@ -345,10 +345,10 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [manipulable(transform:coordinateSpace:operations:inertia:isEnabled:onChanged:)](/documentation/swiftui/view/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged:)) Applies the given 3D affine transform to the view and allows it to be manipulated using common hand gestures.
 - [manipulable(using:)](/documentation/swiftui/view/manipulable(using:)) Allows the view to be manipulated using a manipulation gesture attached to a different view.
 - [manipulationGesture(updating:coordinateSpace:operations:inertia:isEnabled:onChanged:)](/documentation/swiftui/view/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged:)) Adds a manipulation gesture to this view without allowing this view to be manipulable itself.
-- [mapCameraKeyframeAnimator(trigger:keyframes:)](/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes:)) Uses the given keyframes to animate the camera of a  when the given trigger value changes.
+- [mapCameraKeyframeAnimator(trigger:keyframes:)](/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes:)) Uses the given keyframes to animate the camera of a `Map` when the given trigger value changes.
 - [mapControlVisibility(_:)](/documentation/swiftui/view/mapcontrolvisibility(_:)) Configures all Map controls in the environment to have the specified visibility
-- [mapControls(_:)](/documentation/swiftui/view/mapcontrols(_:)) Configures all  views in the associated environment to have standard size and position controls
-- [mapFeatureSelectionAccessory(_:)](/documentation/swiftui/view/mapfeatureselectionaccessory(_:)) Specifies the selection accessory to display for a 
+- [mapControls(_:)](/documentation/swiftui/view/mapcontrols(_:)) Configures all `Map` views in the associated environment to have standard size and position controls
+- [mapFeatureSelectionAccessory(_:)](/documentation/swiftui/view/mapfeatureselectionaccessory(_:)) Specifies the selection accessory to display for a `MapFeature`
 - [mapFeatureSelectionContent(content:)](/documentation/swiftui/view/mapfeatureselectioncontent(content:)) Specifies a custom presentation for the currently selected feature.
 - [mapFeatureSelectionDisabled(_:)](/documentation/swiftui/view/mapfeatureselectiondisabled(_:)) Specifies which map features should have selection disabled.
 - [mapItemDetailPopover(isPresented:item:displaysMap:attachmentAnchor:)](/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:)) Presents a map item detail popover.
@@ -371,24 +371,25 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [onApplePayShippingMethodChange(perform:)](/documentation/swiftui/view/onapplepayshippingmethodchange(perform:)) Called when a user selected a shipping method. This is required if the user is being asked to provide a shipping method.
 - [onCameraCaptureEvent(isEnabled:defaultSoundDisabled:action:)](/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:action:)) Used to register an action triggered by system capture events.
 - [onCameraCaptureEvent(isEnabled:defaultSoundDisabled:primaryAction:secondaryAction:)](/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:primaryaction:secondaryaction:)) Used to register actions triggered by system capture events.
-- [onDragSessionUpdated(_:)](/documentation/swiftui/view/ondragsessionupdated(_:)) Specifies an action to perform on each update of an ongoing dragging operation activated by  or anther drag modifiers.
-- [onDropSessionUpdated(_:)](/documentation/swiftui/view/ondropsessionupdated(_:)) Specifies an action to perform on each update of an ongoing drop operation activated by  or other drop modifiers.
-- [onGeometryChange3D(for:of:action:)](/documentation/swiftui/view/ongeometrychange3d(for:of:action:)) Returns a new view that arranges to call  whenever the value computed by  changes, where  provides access to the view’s 3D geometry properties.
+- [onDragSessionUpdated(_:)](/documentation/swiftui/view/ondragsessionupdated(_:)) Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or anther drag modifiers.
+- [onDropSessionUpdated(_:)](/documentation/swiftui/view/ondropsessionupdated(_:)) Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
+- [onGeometryChange3D(for:of:action:)](/documentation/swiftui/view/ongeometrychange3d(for:of:action:)) Returns a new view that arranges to call `action(value)` whenever the value computed by `transform(proxy)` changes, where `proxy` provides access to the view’s 3D geometry properties.
 - [onInAppPurchaseCompletion(perform:)](/documentation/swiftui/view/oninapppurchasecompletion(perform:)) Add an action to perform when a purchase initiated from a StoreKit view within this view completes.
 - [onInAppPurchaseStart(perform:)](/documentation/swiftui/view/oninapppurchasestart(perform:)) Add an action to perform when a user triggers the purchase button on a StoreKit view within this view.
 - [onInteractiveResizeChange(_:)](/documentation/swiftui/view/oninteractiveresizechange(_:)) Adds an action to perform when the enclosing window is being interactively resized.
 - [onMapCameraChange(frequency:_:)](/documentation/swiftui/view/onmapcamerachange(frequency:_:)) Performs an action when Map camera framing changes
-- [onOpenURL(prefersInApp:)](/documentation/swiftui/view/onopenurl(prefersinapp:)) Sets an  that prefers opening URL with an in-app browser. The  closure takes a URL as input, and returns a  that indicates the outcome of the action.
+- [onOpenURL(prefersInApp:)](/documentation/swiftui/view/onopenurl(prefersinapp:)) Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `handler` closure takes a URL as input, and returns a `OpenURLAction.Result` that indicates the outcome of the action.
 - [onWorldRecenter(action:)](/documentation/swiftui/view/onworldrecenter(action:)) Adds an action to perform when recentering the view with the digital crown.
-- [payLaterViewAction(_:)](/documentation/swiftui/view/paylaterviewaction(_:)) Sets the action on the PayLaterView. See .
-- [payLaterViewDisplayStyle(_:)](/documentation/swiftui/view/paylaterviewdisplaystyle(_:)) Sets the display style on the PayLaterView. See .
+- [payLaterViewAction(_:)](/documentation/swiftui/view/paylaterviewaction(_:)) Sets the action on the PayLaterView. See `PKPayLaterAction`.
+- [payLaterViewDisplayStyle(_:)](/documentation/swiftui/view/paylaterviewdisplaystyle(_:)) Sets the display style on the PayLaterView. See `PKPayLaterDisplayStyle`.
 - [payWithApplePayButtonDisableCardArt()](/documentation/swiftui/view/paywithapplepaybuttondisablecardart()) Sets the features that should be allowed to show on the payment buttons.
-- [payWithApplePayButtonStyle(_:)](/documentation/swiftui/view/paywithapplepaybuttonstyle(_:)) Sets the style to be used by the button. (see ).
+- [payWithApplePayButtonStyle(_:)](/documentation/swiftui/view/paywithapplepaybuttonstyle(_:)) Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [popoverTip(_:arrowEdge:action:)](/documentation/swiftui/view/popovertip(_:arrowedge:action:)) Presents a popover tip on the modified view.
 - [popoverTip(_:isPresented:attachmentAnchor:arrowEdge:action:)](/documentation/swiftui/view/popovertip(_:ispresented:attachmentanchor:arrowedge:action:)) Presents a popover tip on the modified view.
 - [popoverTip(_:isPresented:attachmentAnchor:arrowEdges:action:)](/documentation/swiftui/view/popovertip(_:ispresented:attachmentanchor:arrowedges:action:)) Presents a popover tip on the modified view.
 - [postToPhotosSharedAlbumSheet(isPresented:items:photoLibrary:defaultAlbumIdentifier:completion:)](/documentation/swiftui/view/posttophotossharedalbumsheet(ispresented:items:photolibrary:defaultalbumidentifier:completion:)) Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
 - [preferredSubscriptionOffer(_:)](/documentation/swiftui/view/preferredsubscriptionoffer(_:)) Selects a subscription offer to apply to a purchase that a customer makes from a subscription store view, a store view, or a product view.
+- [preferredSubscriptionPricingTerms(_:)](/documentation/swiftui/view/preferredsubscriptionpricingterms(_:))
 - [preferredWindowClippingMargins(_:_:)](/documentation/swiftui/view/preferredwindowclippingmargins(_:_:)) Requests additional margins for drawing beyond the bounds of the window.
 - [presentationBreakthroughEffect(_:)](/documentation/swiftui/view/presentationbreakthrougheffect(_:)) Changes the way the enclosing presentation breaks through content occluding it.
 - [presentationPreventsAppTermination(_:)](/documentation/swiftui/view/presentationpreventsapptermination(_:)) Whether a presentation prevents the app from being terminated/quit by the system or app termination menu item.
@@ -396,7 +397,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [productIconBorder()](/documentation/swiftui/view/producticonborder()) Adds a standard border to an in-app purchase product’s icon .
 - [productViewStyle(_:)](/documentation/swiftui/view/productviewstyle(_:)) Sets the style for In-App Purchase product views within a view.
 - [realityViewCameraControls(_:)](/documentation/swiftui/view/realityviewcameracontrols(_:)) Adds gestures that control the position and direction of a virtual camera.
-- [realityViewLayoutBehavior(_:)](/documentation/swiftui/view/realityviewlayoutbehavior(_:)) A view modifier that controls the frame sizing and content alignment behavior for 
+- [realityViewLayoutBehavior(_:)](/documentation/swiftui/view/realityviewlayoutbehavior(_:)) A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 - [rotation3DLayout(_:)](/documentation/swiftui/view/rotation3dlayout(_:)) Rotates a view with impacts to its frame in a containing layout
 - [rotation3DLayout(_:axis:)](/documentation/swiftui/view/rotation3dlayout(_:axis:)) Rotates a view with impacts to its frame in a containing layout
 - [safeAreaBar(edge:alignment:spacing:content:)](/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:)) Shows the specified content as a custom bar beside the modified view.
@@ -405,11 +406,11 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [scrollEdgeEffectHidden(_:for:)](/documentation/swiftui/view/scrolledgeeffecthidden(_:for:)) Hides any scroll edge effects for scroll views within this hierarchy.
 - [scrollEdgeEffectStyle(_:for:)](/documentation/swiftui/view/scrolledgeeffectstyle(_:for:)) Configures the scroll edge effect style for scroll views within this hierarchy.
 - [scrollInputBehavior(_:for:)](/documentation/swiftui/view/scrollinputbehavior(_:for:)) Enables or disables scrolling in scrollable views when using particular inputs.
-- [searchSelection(_:)](/documentation/swiftui/view/searchselection(_:)) Binds the selection of the search field associated with the nearest searchable modifier to the given  value.
+- [searchSelection(_:)](/documentation/swiftui/view/searchselection(_:)) Binds the selection of the search field associated with the nearest searchable modifier to the given [TextSelection](/documentation/swiftui/textselection) value.
 - [searchToolbarBehavior(_:)](/documentation/swiftui/view/searchtoolbarbehavior(_:)) Configures the behavior for search in the toolbar.
 - [sectionIndexLabel(_:)](/documentation/swiftui/view/sectionindexlabel(_:)) Sets the label that is used in a section index to point to this section, typically only a single character long.
-- [signInWithAppleButtonStyle(_:)](/documentation/swiftui/view/signinwithapplebuttonstyle(_:)) Sets the style used for displaying the control (see ).
-- [sliderThumbVisibility(_:)](/documentation/swiftui/view/sliderthumbvisibility(_:)) Sets the thumb visibility for s within this view.
+- [signInWithAppleButtonStyle(_:)](/documentation/swiftui/view/signinwithapplebuttonstyle(_:)) Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
+- [sliderThumbVisibility(_:)](/documentation/swiftui/view/sliderthumbvisibility(_:)) Sets the thumb visibility for `Slider`s within this view.
 - [spatialOverlay(alignment:content:)](/documentation/swiftui/view/spatialoverlay(alignment:content:)) Adds secondary views within the 3D bounds of this view.
 - [spatialOverlayPreferenceValue(_:alignment:_:)](/documentation/swiftui/view/spatialoverlaypreferencevalue(_:alignment:_:)) Uses the specified preference value from the view to produce another view occupying the same 3D space of the first view.
 - [storeButton(_:for:)](/documentation/swiftui/view/storebutton(_:for:)) Specifies the visibility of auxiliary buttons that store view and subscription store view instances may use.
@@ -449,9 +450,9 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [task(name:priority:file:line:_:)](/documentation/swiftui/view/task(name:priority:file:line:_:)) Adds an asynchronous task to perform before this view appears.
 - [textContentType(_:)](/documentation/swiftui/view/textcontenttype(_:)) Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [textInputFormattingControlVisibility(_:for:)](/documentation/swiftui/view/textinputformattingcontrolvisibility(_:for:)) Define which system text formatting controls are available.
-- [textRenderer(_:)](/documentation/swiftui/view/textrenderer(_:)) Returns a new view such that any text views within it will use  to draw themselves.
+- [textRenderer(_:)](/documentation/swiftui/view/textrenderer(_:)) Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [textSelectionAffinity(_:)](/documentation/swiftui/view/textselectionaffinity(_:)) Sets the direction of a selection or cursor relative to a text character.
-- [tipAnchor(_:)](/documentation/swiftui/view/tipanchor(_:)) Sets a value for the specified tip anchor to be used to anchor a tip view to the  of the view.
+- [tipAnchor(_:)](/documentation/swiftui/view/tipanchor(_:)) Sets a value for the specified tip anchor to be used to anchor a tip view to the `.bounds` of the view.
 - [tipBackground(_:)](/documentation/swiftui/view/tipbackground(_:)) Sets the tip’s view background to a style. Currently this only applies to inline tips, not popover tips.
 - [tipBackgroundInteraction(_:)](/documentation/swiftui/view/tipbackgroundinteraction(_:)) Controls whether people can interact with the view behind a presented tip.
 - [tipCornerRadius(_:antialiased:)](/documentation/swiftui/view/tipcornerradius(_:antialiased:)) Sets the corner radius for an inline tip view.
@@ -463,7 +464,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [toolbarItemHidden(_:)](/documentation/swiftui/view/toolbaritemhidden(_:)) Hides an individual view within a control group toolbar item.
 - [transactionPicker(isPresented:selection:)](/documentation/swiftui/view/transactionpicker(ispresented:selection:)) Presents a picker that selects a collection of transactions.
 - [transactionTask(_:action:)](/documentation/swiftui/view/transactiontask(_:action:)) Provides a task to perform before this view appears
-- [verifyIdentityWithWalletButtonStyle(_:)](/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:)) Sets the style to be used by the button. (see ).
+- [verifyIdentityWithWalletButtonStyle(_:)](/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:)) Sets the style to be used by the button. (see `PKIdentityButtonStyle`).
 - [webViewBackForwardNavigationGestures(_:)](/documentation/swiftui/view/webviewbackforwardnavigationgestures(_:)) Determines whether horizontal swipe gestures trigger backward and forward page navigation.
 - [webViewContentBackground(_:)](/documentation/swiftui/view/webviewcontentbackground(_:)) Specifies the visibility of the webpage’s natural background color within this view.
 - [webViewContextMenu(menu:)](/documentation/swiftui/view/webviewcontextmenu(menu:)) Adds an item-based context menu to a WebView, replacing the default set of context menu items.
@@ -483,10 +484,10 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 
 ## Creating a view
 
-- [Declaring a custom view](/documentation/swiftui/declaring-a-custom-view)
-- [ViewBuilder](/documentation/swiftui/viewbuilder)
+- [Declaring a custom view](/documentation/swiftui/declaring-a-custom-view) Define views and assemble them into a view hierarchy.
+- [ViewBuilder](/documentation/swiftui/viewbuilder) A custom parameter attribute that constructs views from closures.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

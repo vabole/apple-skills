@@ -2,7 +2,7 @@
 title: Progress indicators
 description: Progress indicators let people know that your app isn’t stalled while it loads content or performs lengthy operations.
 source: https://developer.apple.com/design/human-interface-guidelines/progress-indicators
-timestamp: 2026-01-19T10:22:57.162Z
+timestamp: 2026-04-09T12:18:15.624Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-19T10:22:57.162Z
 # Progress indicators
 
 > Progress indicators let people know that your app isn’t stalled while it loads content or performs lengthy operations.
-
-
 
 Some progress indicators also give people a way to estimate how long they have to wait for something to complete. All progress indicators are transient, appearing only while an operation is ongoing and disappearing after it completes.
 
@@ -58,8 +56,6 @@ For developer guidance, see [ProgressView](/documentation/SwiftUI/ProgressView).
 
 A refresh control lets people immediately reload content, typically in a table view, without waiting for the next automatic content update to occur. A refresh control is a specialized type of activity indicator that’s hidden by default, becoming visible when people drag down the view they want to reload. In Mail, for example, people can drag down the list of Inbox messages to check for new messages.
 
-
-
 **Perform automatic content updates.** Although people appreciate being able to do an immediate content refresh, they also expect automatic refreshes to occur periodically. Don’t make people responsible for initiating every update. Keep data fresh by updating it regularly.
 
 **Supply a short title only if it adds value.** Optionally, a refresh control can include a title. In most cases, this is unnecessary, as the animation of the control indicates that content is loading. If you do include a title, don’t use it to explain how to perform a refresh. Instead, provide information of value about the content being refreshed. A refresh control in Podcasts, for example, uses a title to tell people when the last podcast update occurred.
@@ -94,7 +90,12 @@ By default the system displays the progress indicators in white over the scene�
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| September 12, 2023 | Combined guidance common to all platforms. |
+| June 5, 2023 | Updated guidance to reflect changes in watchOS 10. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

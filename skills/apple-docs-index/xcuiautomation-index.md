@@ -1,17 +1,17 @@
 ---
 title: XCUIAutomation
 source: https://developer.apple.com/documentation/xcuiautomation
-timestamp: 2026-02-19T07:55:52.911Z
+timestamp: 2026-04-09T12:04:07.586Z
 ---
+
+**Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
 
 ## Essentials
 
 - [Recording UI automation for testing](/documentation/xcuiautomation/recording-ui-automation-for-testing)
-
 ## UI element queries
 
 - [XCUIElementQuery](/documentation/xcuiautomation/xcuielementquery)
-
 ### Creating new queries
 
 - [func children(matching: XCUIElement.ElementType) -> XCUIElementQuery](/documentation/xcuiautomation/xcuielementquery/children(matching:))
@@ -21,7 +21,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func matching(identifier: String) -> XCUIElementQuery](/documentation/xcuiautomation/xcuielementquery/matching(identifier:))
 - [func matching(NSPredicate) -> XCUIElementQuery](/documentation/xcuiautomation/xcuielementquery/matching(_:))
 - [func matching(XCUIElement.ElementType, identifier: String?) -> XCUIElementQuery](/documentation/xcuiautomation/xcuielementquery/matching(_:identifier:))
-
 ### Accessing matched elements
 
 - [var allElementsBoundByAccessibilityElement: [XCUIElement]](/documentation/xcuiautomation/xcuielementquery/allelementsboundbyaccessibilityelement)
@@ -33,23 +32,20 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func element(matching: XCUIElement.ElementType, identifier: String?) -> XCUIElement](/documentation/xcuiautomation/xcuielementquery/element(matching:identifier:))
 - [subscript(String) -> XCUIElement](/documentation/xcuiautomation/xcuielementquery/subscript(_:))
 - [func element(at: Int) -> XCUIElement](/documentation/xcuiautomation/xcuielementquery/element(at:))
-
 ### Debugging element queries
 
 - [var debugDescription: String](/documentation/xcuiautomation/xcuielementquery/debugdescription)
-
 ### Identifying window buttons
 
 - [let XCUIIdentifierCloseWindow: String](/documentation/xcuiautomation/xcuiidentifierclosewindow)
 - [let XCUIIdentifierFullScreenWindow: String](/documentation/xcuiautomation/xcuiidentifierfullscreenwindow)
 - [let XCUIIdentifierMinimizeWindow: String](/documentation/xcuiautomation/xcuiidentifierminimizewindow)
 - [let XCUIIdentifierZoomWindow: String](/documentation/xcuiautomation/xcuiidentifierzoomwindow)
-- [XCUIElementTypeQueryProvider](/documentation/xcuiautomation/xcuielementtypequeryprovider)
 
+- [XCUIElementTypeQueryProvider](/documentation/xcuiautomation/xcuielementtypequeryprovider)
 ### Finding the first matching element
 
 - [var firstMatch: XCUIElement](/documentation/xcuiautomation/xcuielementtypequeryprovider/firstmatch)
-
 ### Querying descendant elements
 
 - [var activityIndicators: XCUIElementQuery](/documentation/xcuiautomation/xcuielementtypequeryprovider/activityindicators)
@@ -138,7 +134,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 ## UI elements
 
 - [XCUIElement](/documentation/xcuiautomation/xcuielement)
-
 ### Querying element state
 
 - [func waitForExistence(timeout: TimeInterval) -> Bool](/documentation/xcuiautomation/xcuielement/waitforexistence(timeout:))
@@ -147,22 +142,18 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [var exists: Bool](/documentation/xcuiautomation/xcuielement/exists)
 - [var isHittable: Bool](/documentation/xcuiautomation/xcuielement/ishittable)
 - [var debugDescription: String](/documentation/xcuiautomation/xcuielement/debugdescription)
-
 ### Querying descendant elements
 
 - [func children(matching: XCUIElement.ElementType) -> XCUIElementQuery](/documentation/xcuiautomation/xcuielement/children(matching:))
 - [func descendants(matching: XCUIElement.ElementType) -> XCUIElementQuery](/documentation/xcuiautomation/xcuielement/descendants(matching:))
-
 ### Typing text
 
 - [func typeText(String)](/documentation/xcuiautomation/xcuielement/typetext(_:))
-
 ### Combining keystrokes
 
 - [func typeKey(XCUIKeyboardKey, modifierFlags: XCUIElement.KeyModifierFlags)](/documentation/xcuiautomation/xcuielement/typekey(_:modifierflags:)-6gaoi)
 - [func typeKey(String, modifierFlags: XCUIElement.KeyModifierFlags)](/documentation/xcuiautomation/xcuielement/typekey(_:modifierflags:)-9ubn)
 - [XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey)
-
 #### Modifier keys
 
 - [static let command: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/command)
@@ -173,7 +164,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [static let rightControl: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/rightcontrol)
 - [static let rightOption: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/rightoption)
 - [static let rightShift: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/rightshift)
-
 #### Navigation keys
 
 - [static let upArrow: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/uparrow)
@@ -185,7 +175,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [static let pageUp: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/pageup)
 - [static let pageDown: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/pagedown)
 - [static let help: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/help)
-
 #### Function keys
 
 - [static let secondaryFn: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/secondaryfn)
@@ -208,7 +197,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [static let F17: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/f17)
 - [static let F18: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/f18)
 - [static let F19: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/f19)
-
 #### Text-editing keys
 
 - [static let capsLock: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/capslock)
@@ -216,21 +204,19 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [static let forwardDelete: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/forwarddelete)
 - [static let space: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/space)
 - [static let tab: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/tab)
-
 #### Other keys
 
 - [static let clear: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/clear)
 - [static let enter: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/enter)
 - [static let escape: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/escape)
 - [static let `return`: XCUIKeyboardKey](/documentation/xcuiautomation/xcuikeyboardkey/return)
-
 #### Initializers
 
 - [init(String)](/documentation/xcuiautomation/xcuikeyboardkey/init(_:))
 - [init(rawValue: String)](/documentation/xcuiautomation/xcuikeyboardkey/init(rawvalue:))
+
 - [class func perform(withKeyModifiers: XCUIElement.KeyModifierFlags, block: () -> Void)](/documentation/xcuiautomation/xcuielement/perform(withkeymodifiers:block:))
 - [XCUIElement.KeyModifierFlags](/documentation/xcuiautomation/xcuielement/keymodifierflags)
-
 #### Flags for combination keys
 
 - [static var command: XCUIElement.KeyModifierFlags](/documentation/xcuiautomation/xcuielement/keymodifierflags/command)
@@ -239,11 +225,9 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [static var shift: XCUIElement.KeyModifierFlags](/documentation/xcuiautomation/xcuielement/keymodifierflags/shift)
 - [static var capsLock: XCUIElement.KeyModifierFlags](/documentation/xcuiautomation/xcuielement/keymodifierflags/capslock)
 - [static var function: XCUIElement.KeyModifierFlags](/documentation/xcuiautomation/xcuielement/keymodifierflags/function)
-
 #### Initializers
 
 - [init(rawValue: UInt)](/documentation/xcuiautomation/xcuielement/keymodifierflags/init(rawvalue:))
-
 #### Legacy flags for combination keys
 
 - [static var alphaShift: XCUIElement.KeyModifierFlags](/documentation/xcuiautomation/xcuielement/keymodifierflags/alphashift)
@@ -252,7 +236,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 ### Moving the pointer
 
 - [func hover()](/documentation/xcuiautomation/xcuielement/hover())
-
 ### Clicking
 
 - [func click()](/documentation/xcuiautomation/xcuielement/click())
@@ -260,11 +243,9 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func click(forDuration: TimeInterval, thenDragTo: XCUIElement, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](/documentation/xcuiautomation/xcuielement/click(forduration:thendragto:withvelocity:thenholdforduration:))
 - [func doubleClick()](/documentation/xcuiautomation/xcuielement/doubleclick())
 - [func rightClick()](/documentation/xcuiautomation/xcuielement/rightclick())
-
 ### Scrolling
 
 - [func scroll(byDeltaX: CGFloat, deltaY: CGFloat)](/documentation/xcuiautomation/xcuielement/scroll(bydeltax:deltay:))
-
 ### Tapping and pressing
 
 - [func tap()](/documentation/xcuiautomation/xcuielement/tap())
@@ -272,12 +253,10 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func press(forDuration: TimeInterval)](/documentation/xcuiautomation/xcuielement/press(forduration:))
 - [func press(forDuration: TimeInterval, thenDragTo: XCUIElement)](/documentation/xcuiautomation/xcuielement/press(forduration:thendragto:))
 - [func press(forDuration: TimeInterval, thenDragTo: XCUIElement, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](/documentation/xcuiautomation/xcuielement/press(forduration:thendragto:withvelocity:thenholdforduration:))
-
 ### Tapping multiple times
 
 - [func twoFingerTap()](/documentation/xcuiautomation/xcuielement/twofingertap())
 - [func tap(withNumberOfTaps: Int, numberOfTouches: Int)](/documentation/xcuiautomation/xcuielement/tap(withnumberoftaps:numberoftouches:))
-
 ### Performing gestures
 
 - [func swipeLeft()](/documentation/xcuiautomation/xcuielement/swipeleft())
@@ -291,12 +270,10 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func pinch(withScale: CGFloat, velocity: CGFloat)](/documentation/xcuiautomation/xcuielement/pinch(withscale:velocity:))
 - [func rotate(CGFloat, withVelocity: CGFloat)](/documentation/xcuiautomation/xcuielement/rotate(_:withvelocity:))
 - [XCUIGestureVelocity](/documentation/xcuiautomation/xcuigesturevelocity)
-
 #### Creating a gesture velocity
 
 - [init(CGFloat)](/documentation/xcuiautomation/xcuigesturevelocity/init(_:))
 - [init(rawValue: CGFloat)](/documentation/xcuiautomation/xcuigesturevelocity/init(rawvalue:))
-
 #### Using typical gesture velocities
 
 - [static let `default`: XCUIGestureVelocity](/documentation/xcuiautomation/xcuigesturevelocity/default)
@@ -307,19 +284,15 @@ timestamp: 2026-02-19T07:55:52.911Z
 
 - [var normalizedSliderPosition: CGFloat](/documentation/xcuiautomation/xcuielement/normalizedsliderposition)
 - [func adjust(toNormalizedSliderPosition: CGFloat)](/documentation/xcuiautomation/xcuielement/adjust(tonormalizedsliderposition:))
-
 ### Interacting with pickers
 
 - [func adjust(toPickerWheelValue: String)](/documentation/xcuiautomation/xcuielement/adjust(topickerwheelvalue:))
-
 ### Calculating coordinates
 
 - [func coordinate(withNormalizedOffset: CGVector) -> XCUICoordinate](/documentation/xcuiautomation/xcuielement/coordinate(withnormalizedoffset:))
-
 ### Supporting types
 
 - [XCUIElement.ElementType](/documentation/xcuiautomation/xcuielement/elementtype)
-
 #### Enumeration cases
 
 - [case activityIndicator](/documentation/xcuiautomation/xcuielement/elementtype/activityindicator)
@@ -405,23 +378,21 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [case valueIndicator](/documentation/xcuiautomation/xcuielement/elementtype/valueindicator)
 - [case webView](/documentation/xcuiautomation/xcuielement/elementtype/webview)
 - [case window](/documentation/xcuiautomation/xcuielement/elementtype/window)
-
 #### Initializers
 
 - [init?(rawValue: UInt)](/documentation/xcuiautomation/xcuielement/elementtype/init(rawvalue:))
-- [XCUIElement.SizeClass](/documentation/xcuiautomation/xcuielement/sizeclass)
 
+- [XCUIElement.SizeClass](/documentation/xcuiautomation/xcuielement/sizeclass)
 #### Enumeration cases
 
 - [case regular](/documentation/xcuiautomation/xcuielement/sizeclass/regular)
 - [case compact](/documentation/xcuiautomation/xcuielement/sizeclass/compact)
 - [case unspecified](/documentation/xcuiautomation/xcuielement/sizeclass/unspecified)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/xcuiautomation/xcuielement/sizeclass/init(rawvalue:))
-- [XCUIElement.AttributeName](/documentation/xcuiautomation/xcuielement/attributename)
 
+- [XCUIElement.AttributeName](/documentation/xcuiautomation/xcuielement/attributename)
 #### Keys
 
 - [static let children: XCUIElement.AttributeName](/documentation/xcuiautomation/xcuielement/attributename/children)
@@ -437,7 +408,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [static let title: XCUIElement.AttributeName](/documentation/xcuiautomation/xcuielement/attributename/title)
 - [static let value: XCUIElement.AttributeName](/documentation/xcuiautomation/xcuielement/attributename/value)
 - [static let verticalSizeClass: XCUIElement.AttributeName](/documentation/xcuiautomation/xcuielement/attributename/verticalsizeclass)
-
 #### Initializers
 
 - [init(rawValue: String)](/documentation/xcuiautomation/xcuielement/attributename/init(rawvalue:))
@@ -448,14 +418,13 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func swipeUp(withVelocity: XCUIGestureVelocity)](/documentation/xcuiautomation/xcuielement/swipeup(withvelocity:))
 - [func swipeLeft(withVelocity: XCUIGestureVelocity)](/documentation/xcuiautomation/xcuielement/swipeleft(withvelocity:))
 - [func swipeRight(withVelocity: XCUIGestureVelocity)](/documentation/xcuiautomation/xcuielement/swiperight(withvelocity:))
-- [XCUIElementAttributes](/documentation/xcuiautomation/xcuielementattributes)
 
+- [XCUIElementAttributes](/documentation/xcuiautomation/xcuielementattributes)
 ### Identity
 
 - [var identifier: String](/documentation/xcuiautomation/xcuielementattributes/identifier)
 - [var elementType: XCUIElement.ElementType](/documentation/xcuiautomation/xcuielementattributes/elementtype)
 - [XCUIElement.ElementType](/documentation/xcuiautomation/xcuielement/elementtype)
-
 #### Enumeration cases
 
 - [case activityIndicator](/documentation/xcuiautomation/xcuielement/elementtype/activityindicator)
@@ -541,7 +510,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [case valueIndicator](/documentation/xcuiautomation/xcuielement/elementtype/valueindicator)
 - [case webView](/documentation/xcuiautomation/xcuielement/elementtype/webview)
 - [case window](/documentation/xcuiautomation/xcuielement/elementtype/window)
-
 #### Initializers
 
 - [init?(rawValue: UInt)](/documentation/xcuiautomation/xcuielement/elementtype/init(rawvalue:))
@@ -552,51 +520,46 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [var placeholderValue: String?](/documentation/xcuiautomation/xcuielementattributes/placeholdervalue)
 - [var title: String](/documentation/xcuiautomation/xcuielementattributes/title)
 - [var label: String](/documentation/xcuiautomation/xcuielementattributes/label)
-
 ### Interaction state
 
 - [var hasFocus: Bool](/documentation/xcuiautomation/xcuielementattributes/hasfocus)
 - [var isEnabled: Bool](/documentation/xcuiautomation/xcuielementattributes/isenabled)
 - [var isSelected: Bool](/documentation/xcuiautomation/xcuielementattributes/isselected)
-
 ### Size
 
 - [var frame: CGRect](/documentation/xcuiautomation/xcuielementattributes/frame)
 - [var horizontalSizeClass: XCUIElement.SizeClass](/documentation/xcuiautomation/xcuielementattributes/horizontalsizeclass)
 - [var verticalSizeClass: XCUIElement.SizeClass](/documentation/xcuiautomation/xcuielementattributes/verticalsizeclass)
 - [XCUIElement.SizeClass](/documentation/xcuiautomation/xcuielement/sizeclass)
-
 #### Enumeration cases
 
 - [case regular](/documentation/xcuiautomation/xcuielement/sizeclass/regular)
 - [case compact](/documentation/xcuiautomation/xcuielement/sizeclass/compact)
 - [case unspecified](/documentation/xcuiautomation/xcuielement/sizeclass/unspecified)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/xcuiautomation/xcuielement/sizeclass/init(rawvalue:))
-- [XCUIElementSnapshot](/documentation/xcuiautomation/xcuielementsnapshot)
 
+
+- [XCUIElementSnapshot](/documentation/xcuiautomation/xcuielementsnapshot)
 ### Inspecting attributes
 
 - [var children: [any XCUIElementSnapshot]](/documentation/xcuiautomation/xcuielementsnapshot/children)
 - [var dictionaryRepresentation: [XCUIElement.AttributeName : Any]](/documentation/xcuiautomation/xcuielementsnapshot/dictionaryrepresentation)
-- [XCUIElementSnapshotProviding](/documentation/xcuiautomation/xcuielementsnapshotproviding)
 
+- [XCUIElementSnapshotProviding](/documentation/xcuiautomation/xcuielementsnapshotproviding)
 ### Providing snapshots
 
 - [func snapshot() throws -> any XCUIElementSnapshot](/documentation/xcuiautomation/xcuielementsnapshotproviding/snapshot())
-- [XCUICoordinate](/documentation/xcuiautomation/xcuicoordinate)
 
+- [XCUICoordinate](/documentation/xcuiautomation/xcuicoordinate)
 ### Getting coordinate properties
 
 - [var referencedElement: XCUIElement](/documentation/xcuiautomation/xcuicoordinate/referencedelement)
 - [var screenPoint: CGPoint](/documentation/xcuiautomation/xcuicoordinate/screenpoint)
-
 ### Moving the pointer
 
 - [func hover()](/documentation/xcuiautomation/xcuicoordinate/hover())
-
 ### Clicking
 
 - [func click()](/documentation/xcuiautomation/xcuicoordinate/click())
@@ -604,11 +567,9 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func click(forDuration: TimeInterval, thenDragTo: XCUICoordinate, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](/documentation/xcuiautomation/xcuicoordinate/click(forduration:thendragto:withvelocity:thenholdforduration:))
 - [func doubleClick()](/documentation/xcuiautomation/xcuicoordinate/doubleclick())
 - [func rightClick()](/documentation/xcuiautomation/xcuicoordinate/rightclick())
-
 ### Scrolling
 
 - [func scroll(byDeltaX: CGFloat, deltaY: CGFloat)](/documentation/xcuiautomation/xcuicoordinate/scroll(bydeltax:deltay:))
-
 ### Tapping and pressing
 
 - [func tap()](/documentation/xcuiautomation/xcuicoordinate/tap())
@@ -616,7 +577,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func press(forDuration: TimeInterval)](/documentation/xcuiautomation/xcuicoordinate/press(forduration:))
 - [func press(forDuration: TimeInterval, thenDragTo: XCUICoordinate)](/documentation/xcuiautomation/xcuicoordinate/press(forduration:thendragto:))
 - [func press(forDuration: TimeInterval, thenDragTo: XCUICoordinate, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](/documentation/xcuiautomation/xcuicoordinate/press(forduration:thendragto:withvelocity:thenholdforduration:))
-
 ### Performing gestures
 
 - [func swipeLeft()](/documentation/xcuiautomation/xcuicoordinate/swipeleft())
@@ -627,7 +587,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [func swipeUp(velocity: XCUIGestureVelocity)](/documentation/xcuiautomation/xcuicoordinate/swipeup(velocity:))
 - [func swipeDown()](/documentation/xcuiautomation/xcuicoordinate/swipedown())
 - [func swipeDown(velocity: XCUIGestureVelocity)](/documentation/xcuiautomation/xcuicoordinate/swipedown(velocity:))
-
 ### Creating relative coordinates
 
 - [func withOffset(CGVector) -> XCUICoordinate](/documentation/xcuiautomation/xcuicoordinate/withoffset(_:))
@@ -635,33 +594,27 @@ timestamp: 2026-02-19T07:55:52.911Z
 ## Application lifecycle
 
 - [XCUIApplication](/documentation/xcuiautomation/xcuiapplication)
-
 ### Creating an application proxy
 
 - [init()](/documentation/xcuiautomation/xcuiapplication/init())
 - [init(bundleIdentifier: String)](/documentation/xcuiautomation/xcuiapplication/init(bundleidentifier:))
 - [init(url: URL)](/documentation/xcuiautomation/xcuiapplication/init(url:))
-
 ### Launching the application
 
 - [func launch()](/documentation/xcuiautomation/xcuiapplication/launch())
 - [var launchArguments: [String]](/documentation/xcuiautomation/xcuiapplication/launcharguments)
 - [var launchEnvironment: [String : String]](/documentation/xcuiautomation/xcuiapplication/launchenvironment)
 - [func open(URL)](/documentation/xcuiautomation/xcuiapplication/open(_:))
-
 ### Activating the application
 
 - [func activate()](/documentation/xcuiautomation/xcuiapplication/activate())
-
 ### Terminating the application
 
 - [func terminate()](/documentation/xcuiautomation/xcuiapplication/terminate())
-
 ### Determining application state
 
 - [var state: XCUIApplication.State](/documentation/xcuiautomation/xcuiapplication/state-swift.property)
 - [XCUIApplication.State](/documentation/xcuiautomation/xcuiapplication/state-swift.enum)
-
 #### Enumeration cases
 
 - [case unknown](/documentation/xcuiautomation/xcuiapplication/state-swift.enum/unknown)
@@ -669,7 +622,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [case runningBackgroundSuspended](/documentation/xcuiautomation/xcuiapplication/state-swift.enum/runningbackgroundsuspended)
 - [case runningBackground](/documentation/xcuiautomation/xcuiapplication/state-swift.enum/runningbackground)
 - [case runningForeground](/documentation/xcuiautomation/xcuiapplication/state-swift.enum/runningforeground)
-
 #### Initializers
 
 - [init?(rawValue: UInt)](/documentation/xcuiautomation/xcuiapplication/state-swift.enum/init(rawvalue:))
@@ -677,12 +629,10 @@ timestamp: 2026-02-19T07:55:52.911Z
 ### Waiting for an application state
 
 - [func wait(for: XCUIApplication.State, timeout: TimeInterval) -> Bool](/documentation/xcuiautomation/xcuiapplication/wait(for:timeout:))
-
 ### Resetting authorization status
 
 - [func resetAuthorizationStatus(for: XCUIProtectedResource)](/documentation/xcuiautomation/xcuiapplication/resetauthorizationstatus(for:))
 - [XCUIProtectedResource](/documentation/xcuiautomation/xcuiprotectedresource)
-
 #### Protected resources
 
 - [case location](/documentation/xcuiautomation/xcuiprotectedresource/location)
@@ -707,7 +657,6 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [case removableVolumes](/documentation/xcuiautomation/xcuiprotectedresource/removablevolumes)
 - [case networkVolumes](/documentation/xcuiautomation/xcuiprotectedresource/networkvolumes)
 - [case appleEvents](/documentation/xcuiautomation/xcuiprotectedresource/appleevents)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/xcuiautomation/xcuiprotectedresource/init(rawvalue:))
@@ -716,11 +665,9 @@ timestamp: 2026-02-19T07:55:52.911Z
 
 - [func performAccessibilityAudit(for: XCUIAccessibilityAuditType, ((XCUIAccessibilityAuditIssue) throws -> Bool)?) throws](/documentation/xcuiautomation/xcuiapplication/performaccessibilityaudit(for:_:))
 - [XCUIAccessibilityAuditType](/documentation/xcuiautomation/xcuiaccessibilityaudittype)
-
 #### Accessibility audit type creation
 
 - [init(rawValue: UInt64)](/documentation/xcuiautomation/xcuiaccessibilityaudittype/init(rawvalue:))
-
 #### Accessibility audit types
 
 - [static var action: XCUIAccessibilityAuditType](/documentation/xcuiautomation/xcuiaccessibilityaudittype/action)
@@ -733,34 +680,33 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [static var sufficientElementDescription: XCUIAccessibilityAuditType](/documentation/xcuiautomation/xcuiaccessibilityaudittype/sufficientelementdescription)
 - [static var textClipped: XCUIAccessibilityAuditType](/documentation/xcuiautomation/xcuiaccessibilityaudittype/textclipped)
 - [static var trait: XCUIAccessibilityAuditType](/documentation/xcuiautomation/xcuiaccessibilityaudittype/trait)
-- [XCUIAccessibilityAuditIssue](/documentation/xcuiautomation/xcuiaccessibilityauditissue)
 
+- [XCUIAccessibilityAuditIssue](/documentation/xcuiautomation/xcuiaccessibilityauditissue)
 #### Type and description
 
 - [var auditType: XCUIAccessibilityAuditType](/documentation/xcuiautomation/xcuiaccessibilityauditissue/audittype)
 - [var compactDescription: String](/documentation/xcuiautomation/xcuiaccessibilityauditissue/compactdescription)
 - [var detailedDescription: String](/documentation/xcuiautomation/xcuiaccessibilityauditissue/detaileddescription)
-
 #### UI element
 
 - [var element: XCUIElement?](/documentation/xcuiautomation/xcuiaccessibilityauditissue/element)
 
+
 ## Screenshots
 
 - [XCUIScreen](/documentation/xcuiautomation/xcuiscreen)
-
 ### Device screens
 
 - [class var main: XCUIScreen](/documentation/xcuiautomation/xcuiscreen/main)
 - [class var screens: [XCUIScreen]](/documentation/xcuiautomation/xcuiscreen/screens)
-- [XCUIScreenshot](/documentation/xcuiautomation/xcuiscreenshot)
 
+- [XCUIScreenshot](/documentation/xcuiautomation/xcuiscreenshot)
 ### Screenshot representations
 
 - [var image: UIImage](/documentation/xcuiautomation/xcuiscreenshot/image)
 - [var pngRepresentation: Data](/documentation/xcuiautomation/xcuiscreenshot/pngrepresentation)
-- [XCUIScreenshotProviding](/documentation/xcuiautomation/xcuiscreenshotproviding)
 
+- [XCUIScreenshotProviding](/documentation/xcuiautomation/xcuiscreenshotproviding)
 ### Taking a Screenshot
 
 - [func screenshot() -> XCUIScreenshot](/documentation/xcuiautomation/xcuiscreenshotproviding/screenshot())
@@ -768,19 +714,16 @@ timestamp: 2026-02-19T07:55:52.911Z
 ## Device simulation
 
 - [XCUIDevice](/documentation/xcuiautomation/xcuidevice)
-
 ### Accessing the current device
 
 - [class var shared: XCUIDevice](/documentation/xcuiautomation/xcuidevice/shared)
 - [var supportsPointerInteraction: Bool](/documentation/xcuiautomation/xcuidevice/supportspointerinteraction)
 - [var supportsHandGestures: Bool](/documentation/xcuiautomation/xcuidevice/supportshandgestures)
-
 ### Interacting with buttons and the Digital Crown
 
 - [func press(XCUIDevice.Button)](/documentation/xcuiautomation/xcuidevice/press(_:))
 - [func hasHardwareButton(XCUIDevice.Button) -> Bool](/documentation/xcuiautomation/xcuidevice/hashardwarebutton(_:))
 - [XCUIDevice.Button](/documentation/xcuiautomation/xcuidevice/button)
-
 #### Device buttons
 
 - [case home](/documentation/xcuiautomation/xcuidevice/button/home)
@@ -788,26 +731,22 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [case volumeDown](/documentation/xcuiautomation/xcuidevice/button/volumedown)
 - [case action](/documentation/xcuiautomation/xcuidevice/button/action)
 - [case camera](/documentation/xcuiautomation/xcuidevice/button/camera)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/xcuiautomation/xcuidevice/button/init(rawvalue:))
+
 - [func rotateDigitalCrown(delta: CGFloat)](/documentation/xcuiautomation/xcuidevice/rotatedigitalcrown(delta:))
 - [func rotateDigitalCrown(delta: CGFloat, velocity: XCUIGestureVelocity)](/documentation/xcuiautomation/xcuidevice/rotatedigitalcrown(delta:velocity:))
-
 ### Performing gestures
 
 - [func perform(handGesture: XCUIDeviceHandGesture)](/documentation/xcuiautomation/xcuidevice/perform(handgesture:))
 - [XCUIDeviceHandGesture](/documentation/xcuiautomation/xcuidevicehandgesture)
-
 #### Hand gestures
 
 - [case doubleTap](/documentation/xcuiautomation/xcuidevicehandgesture/doubletap)
-
 #### Enumeration Cases
 
 - [case flick](/documentation/xcuiautomation/xcuidevicehandgesture/flick)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/xcuiautomation/xcuidevicehandgesture/init(rawvalue:))
@@ -817,11 +756,9 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [var orientation: UIDeviceOrientation](/documentation/xcuiautomation/xcuidevice/orientation)
 - [var location: XCUILocation?](/documentation/xcuiautomation/xcuidevice/location)
 - [XCUILocation](/documentation/xcuiautomation/xcuilocation)
-
 #### Creating a location
 
 - [init(location: CLLocation)](/documentation/xcuiautomation/xcuilocation/init(location:))
-
 #### Determining the location
 
 - [var location: CLLocation](/documentation/xcuiautomation/xcuilocation/location)
@@ -832,13 +769,11 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [var system: XCUISystem](/documentation/xcuiautomation/xcuidevice/system)
 - [var appearance: XCUIDevice.Appearance](/documentation/xcuiautomation/xcuidevice/appearance-swift.property)
 - [XCUIDevice.Appearance](/documentation/xcuiautomation/xcuidevice/appearance-swift.enum)
-
 #### Appearances
 
 - [case unspecified](/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/unspecified)
 - [case light](/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/light)
 - [case dark](/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/dark)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/init(rawvalue:))
@@ -846,21 +781,19 @@ timestamp: 2026-02-19T07:55:52.911Z
 ### Interacting with Siri
 
 - [var siriService: XCUISiriService](/documentation/xcuiautomation/xcuidevice/siriservice)
-
 ### Deprecated
 
 - [init()](/documentation/xcuiautomation/xcuidevice/init())
-- [XCUISystem](/documentation/xcuiautomation/xcuisystem)
 
+- [XCUISystem](/documentation/xcuiautomation/xcuisystem)
 ### Opening items in applications by URL
 
 - [func open(URL)](/documentation/xcuiautomation/xcuisystem/open(_:))
-- [XCUISiriService](/documentation/xcuiautomation/xcuisiriservice)
 
+- [XCUISiriService](/documentation/xcuiautomation/xcuisiriservice)
 ### Siri activation
 
 - [func activate(voiceRecognitionText: String)](/documentation/xcuiautomation/xcuisiriservice/activate(voicerecognitiontext:))
-
 ### Siri proxy state
 
 - [var debugDescription: String](/documentation/xcuiautomation/xcuisiriservice/debugdescription)
@@ -868,17 +801,14 @@ timestamp: 2026-02-19T07:55:52.911Z
 ## Remote control simulation
 
 - [XCUIRemote](/documentation/xcuiautomation/xcuiremote)
-
 ### Accessing the simulated remote
 
 - [class var shared: XCUIRemote](/documentation/xcuiautomation/xcuiremote/shared)
-
 ### Pressing remote buttons
 
 - [func press(XCUIRemote.Button)](/documentation/xcuiautomation/xcuiremote/press(_:))
 - [func press(XCUIRemote.Button, forDuration: TimeInterval)](/documentation/xcuiautomation/xcuiremote/press(_:forduration:))
-- [XCUIRemoteButton](/documentation/xcuiautomation/xcuiremote/button)
-
+- [XCUIRemoteButton](/documentation/xcuiautomation/xcuiremotebutton)
 #### Remote buttons
 
 - [case up](/documentation/xcuiautomation/xcuiremotebutton/up)
@@ -895,10 +825,10 @@ timestamp: 2026-02-19T07:55:52.911Z
 - [case fourColors](/documentation/xcuiautomation/xcuiremotebutton/fourcolors)
 - [case oneTwoThree](/documentation/xcuiautomation/xcuiremotebutton/onetwothree)
 - [case tvProvider](/documentation/xcuiautomation/xcuiremotebutton/tvprovider)
-
 #### Initializers
 
 - [init?(rawValue: UInt)](/documentation/xcuiautomation/xcuiremotebutton/init(rawvalue:))
+
 
 ## UI testing availability
 
@@ -906,5 +836,5 @@ timestamp: 2026-02-19T07:55:52.911Z
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

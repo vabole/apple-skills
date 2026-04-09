@@ -2,7 +2,7 @@
 title: Searching
 description: People use various search techniques to find content on their device, within an app, and within a document or file.
 source: https://developer.apple.com/design/human-interface-guidelines/searching
-timestamp: 2026-01-17T15:45:02.076Z
+timestamp: 2026-04-09T12:18:16.204Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:02.076Z
 # Searching
 
 > People use various search techniques to find content on their device, within an app, and within a document or file.
-
-
 
 To search for content within an app, people generally expect to use a [Search fields](/design/human-interface-guidelines/search-fields). When it makes sense, you can personalize the search experience by using what you know about how people interact with your app. For example, you might display recent searches, search suggestions, completions, or corrections based on terms people searched earlier in your app.
 
@@ -67,12 +65,15 @@ In iOS, iPadOS, and macOS, Spotlight helps people find content across all apps i
 
 To get the most out of this session, we recommend first checking out Core Spotlight documentation on the Apple Developer website.
 - [What’s new in iPad app design](https://developer.apple.com/videos/play/wwdc2022/10009) - Discover the latest updates in iPad app design. We’ll take you through improvements to search, navigation bars, edit menus, multi-selection, and more. Learn how you can make your app both more powerful and easier to use when you incorporate customizable toolbars, multi-column tables, and find and replace.
-
 - [Craft search experiences in SwiftUI](https://developer.apple.com/videos/play/wwdc2021/10176) - Discover how you can help people quickly find specific content within your apps. Learn how to use SwiftUI’s .searchable modifier in conjunction with other views to best incorporate search for your app. And we’ll show you how to elevate your implementation by providing search suggestions to help people understand the types of searches they can perform.
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 9, 2025 | Updated best practices with general guidance from Search fields, and reorganized guidance for systemwide search. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,7 +2,7 @@
 title: Lists and tables
 description: Lists and tables present data in one or more columns of rows.
 source: https://developer.apple.com/design/human-interface-guidelines/lists-and-tables
-timestamp: 2026-01-17T15:45:11.550Z
+timestamp: 2026-04-09T12:18:11.708Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:11.550Z
 # Lists and tables
 
 > Lists and tables present data in one or more columns of rows.
-
-
 
 A table or list can represent data that’s organized in groups or hierarchies, and it can support user interactions like selecting, adding, deleting, and reordering. Apps and games in all platforms can use tables to present content and options; many apps use lists to express an overall information hierarchy and help people navigate it. For example, iOS Settings uses a hierarchy of lists to help people choose options, and several apps — such as Mail in iPadOS and macOS — use a table within a [split view](https://developer.apple.com/design/human-interface-guidelines/split-views).
 
@@ -97,7 +95,12 @@ To get the most out of this video, we recommend first checking out “SwiftUI Ap
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+| June 5, 2023 | Updated guidance to reflect changes in watchOS 10. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

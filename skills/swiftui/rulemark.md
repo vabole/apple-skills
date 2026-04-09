@@ -2,7 +2,7 @@
 title: RuleMark
 description: Chart content that represents data using a single horizontal or vertical rule.
 source: https://developer.apple.com/documentation/charts/rulemark
-timestamp: 2026-02-19T07:56:07.011Z
+timestamp: 2026-04-09T12:04:38.821Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -59,8 +59,6 @@ var body: some View {
 }
 ```
 
-![Horizontal rule chart with x-axis showing the month in the year 2020 starting with January and ending with December, and with y-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](https://docs-assets.developer.apple.com/published/5491601771c8ae97361331c393b3642b/LineSegmentMarkSwift.LineSegmentMarkHorizontalLineSegmentChart%402x.png)
-
 ### Annotate a chart with rule mark
 
 You can annotate a chart with horizontal or vertically spanning rules. This allows viewers to easily compare values over a range to a constant value. Use the [init(xStart:xEnd:y:)](/documentation/charts/rulemark/init(xstart:xend:y:)-444cp) initializer to represent a constant `y` value or [init(x:yStart:yEnd:)](/documentation/charts/rulemark/init(x:ystart:yend:)-6zemd) for a constant `x` value. To span the plotting area of a chart with a line, omit the optional start and end parameters and plot a constant value.  The example below results in a line that spans the chart horizontally at the y position of 9000:
@@ -91,16 +89,13 @@ var body: some View {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A rule mark at 9000 shows the break even threshold.](https://docs-assets.developer.apple.com/published/7e451f6fe310c4757a2b567b44b30323/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark%402x.png)
-
 ### RuleMark in Chart3D
 
 To plot a rule in a 3D chart, use the [init(x:y:z:)](/documentation/charts/rulemark/init(x:y:z:)) initializer.
 
 The rule extends along the axis that you provide a range for, and is positioned at the single points you specify for the other two axes.
 
-> [!IMPORTANT]
-> A 3D rule mark requires one parameter to be a numeric range and the other two parameters to be single numeric values.
+> **Important:** A 3D rule mark requires one parameter to be a numeric range and the other two parameters to be single numeric values.
 
 For example, the following `Chart3D` shows three rule marks. Each mark extends along one axis and is fixed at `0` on the other two.
 
@@ -153,14 +148,14 @@ Chart3D {
 
 ## Marks
 
-- [AreaMark](/documentation/charts/areamark)
-- [LineMark](/documentation/charts/linemark)
-- [PointMark](/documentation/charts/pointmark)
-- [RectangleMark](/documentation/charts/rectanglemark)
-- [BarMark](/documentation/charts/barmark)
-- [SectorMark](/documentation/charts/sectormark)
+- [AreaMark](/documentation/charts/areamark) Chart content that represents data using the area of one or more regions.
+- [LineMark](/documentation/charts/linemark) Chart content that represents data using a sequence of connected line segments.
+- [PointMark](/documentation/charts/pointmark) Chart content that represents data using points.
+- [RectangleMark](/documentation/charts/rectanglemark) Chart content that represents data using rectangles.
+- [BarMark](/documentation/charts/barmark) Chart content that represents data using bars.
+- [SectorMark](/documentation/charts/sectormark) A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

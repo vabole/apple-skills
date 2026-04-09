@@ -2,10 +2,10 @@
 title: confirmationDialog(_:isPresented:titleVisibility:actions:)
 description: Presents a confirmation dialog when a given condition is true, using a text view for the title.
 source: https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)
-timestamp: 2026-01-19T10:23:33.733Z
+timestamp: 2026-04-09T12:04:34.570Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui) › [view](/documentation/swiftui/view)
+**Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
 
 **Instance Method**
 
@@ -25,25 +25,17 @@ nonisolated func confirmationDialog<A>(_ title: Text, isPresented: Binding<Bool>
 
 The title of the dialog.
 
-
-
 **isPresented**
 
 A binding to a Boolean value that determines whether to present the dialog. When the user presses or taps the dialog’s default action button, the system sets this value to `false`, dismissing the dialog.
 
-
-
 **titleVisibility**
 
-The visibility of the dialog’s title. The default value is [automatic](/documentation/swiftui/visibility/automatic).
-
-
+The visibility of the dialog’s title. The default value is [Visibility.automatic](/documentation/swiftui/visibility/automatic).
 
 **actions**
 
 A view builder returning the dialog’s actions.
-
-
 
 ## Discussion
 
@@ -68,21 +60,20 @@ struct ConfirmEraseItems: View {
 }
 ```
 
-All actions in a confirmation dialog will dismiss the dialog after the action runs. The default button will be shown with greater prominence. You can influence the default button by assigning it the [default Action](/documentation/swiftui/keyboardshortcut/defaultaction) keyboard shortcut.
+All actions in a confirmation dialog will dismiss the dialog after the action runs. The default button will be shown with greater prominence. You can influence the default button by assigning it the [defaultAction](/documentation/swiftui/keyboardshortcut/defaultaction) keyboard shortcut.
 
 The system may reorder the buttons based on their role and prominence.
 
 Dialogs include a standard dismiss action by default. If you provide a button with a role of [cancel](/documentation/swiftui/buttonrole/cancel), that button takes the place of the default dismiss action. You don’t have to dismiss the presentation with the cancel button’s action.
 
-> [!NOTE]
-> In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
+> **Note:** In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
 
 ## Getting confirmation for an action
 
-- [confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:))
-- [dismissalConfirmationDialog(_:shouldPresent:actions:)](/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:))
+- [confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)) Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+- [dismissalConfirmationDialog(_:shouldPresent:actions:)](/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:)) Presents a confirmation dialog when a dismiss action has been triggered.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

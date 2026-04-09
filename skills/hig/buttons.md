@@ -2,7 +2,7 @@
 title: Buttons
 description: A button initiates an instantaneous action.
 source: https://developer.apple.com/design/human-interface-guidelines/buttons
-timestamp: 2026-02-19T07:55:54.884Z
+timestamp: 2026-04-09T12:17:26.396Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-02-19T07:55:54.884Z
 # Buttons
 
 > A button initiates an instantaneous action.
-
-
 
 Versatile and highly customizable, buttons give people simple, familiar ways to do tasks in your app. In general, a button combines three attributes to clearly communicate its function:
 
@@ -44,6 +42,8 @@ System buttons offer a range of styles that support customization while providin
 ## Content
 
 **Ensure that each button clearly communicates its purpose.** Depending on the platform, a button can contain a symbol (or icon), a text label, or both to help people understand what it does.
+
+> **Note:** In macOS and visionOS, the system displays a tooltip after people hover over a button for a moment. A tooltip displays a brief phrase that explains what a button does; for guidance, see [Offering help](/design/human-interface-guidelines/offering-help).
 
 **Try to associate familiar actions with familiar icons.** For example, people can predict that a button containing the `square.and.arrow.up` symbol will help them perform share-related activities. If it makes sense to use an icon in your button, consider using an existing or customized [SF Symbols](/design/human-interface-guidelines/sf-symbols). For a list of symbols that represent common actions, see [Standard icons](/design/human-interface-guidelines/icons#Standard-icons).
 
@@ -114,6 +114,12 @@ Help buttons are circular, consistently sized buttons that contain a question ma
 
 **Position help buttons where people expect to find them.** Use the following locations for guidance.
 
+| View style | Help button location |
+| --- | --- |
+| Dialog with dismissal buttons (like OK and Cancel) | Lower corner, opposite to the dismissal buttons and vertically aligned with them |
+| Dialog without dismissal buttons | Lower-left or lower-right corner |
+| Settings window or pane | Lower-left or lower-right corner |
+
 **Use a help button within a view, not in the window frame.** For example, avoid placing a help button in a toolbar or status bar.
 
 **Avoid displaying text that introduces a help button.** People know what a help button does, so they don’t need additional descriptive text.
@@ -136,9 +142,18 @@ There are three standard button shapes in visionOS. Typically, an icon-only butt
 
 visionOS buttons use different visual styles to communicate four different interaction states.
 
+> **Note:** In visionOS, buttons don’t support custom hover effects.
+
 In addition to the four states shown above, a button can also reveal a tooltip when people look at it for a brief time. In general, buttons that contain text don’t need to display a tooltip because the button’s descriptive label communicates what it does.
 
 In visionOS, buttons can have the following sizes.
+
+| Shape | Mini (28 pt) | Small (32 pt) | Regular (44 pt) | Large (52 pt) | Extra large (64 pt) |
+| --- | --- | --- | --- | --- | --- |
+| Circular |  |  |  |  |  |
+| Capsule (text only) |  |  |  |  |  |
+| Capsule (text and icon) |  |  |  |  |  |
+| Rounded rectangle |  |  |  |  |  |
 
 **Prefer buttons that have a discernible background shape and fill.** It tends to be easier for people to see a button when it’s enclosed in a shape that uses a contrasting background fill. The exception is a button in a toolbar, context menu, alert, or [Ornaments](/design/human-interface-guidelines/ornaments) where the shape and material of the larger component make the button comfortably visible. The following guidelines can help you ensure that a button looks good in different contexts:
 
@@ -159,11 +174,7 @@ In visionOS, buttons can have the following sizes.
 
 watchOS displays all inline buttons using the [capsule](/documentation/SwiftUI/ButtonBorderShape/capsule) button shape. When you place a button inline with content, it gains a material effect that contrasts with the background to ensure legibility.
 
-
-
 **Use a toolbar to place buttons in the corners.** The system automatically moves the time and title to accommodate toolbar buttons. The system also applies the [Liquid Glass](/design/human-interface-guidelines/materials#Liquid-Glass) appearance to toolbar buttons, providing a clear visual distinction from the content beneath them.
-
-
 
 **Prefer buttons that span the width of the screen for primary actions in your app.** Full-width buttons look better and are easier for people to tap. If two buttons must share the same horizontal space, use the same height for both, and use images or short text titles for each button’s content.
 
@@ -195,7 +206,16 @@ watchOS displays all inline buttons using the [capsule](/documentation/SwiftUI/B
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| December 16, 2025 | Updated guidance for Liquid Glass. |
+| June 9, 2025 | Updated guidance for button styles and content. |
+| February 2, 2024 | Noted that visionOS buttons don’t support custom hover effects. |
+| December 5, 2023 | Clarified some terminology and guidance for buttons in visionOS. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+| June 5, 2023 | Updated guidance for using buttons in watchOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

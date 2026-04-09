@@ -2,10 +2,10 @@
 title: Tip
 description: A type that sets a tip’s content, as well as the conditions for when it displays.
 source: https://developer.apple.com/documentation/tipkit/tip
-timestamp: 2026-02-19T07:52:37.023Z
+timestamp: 2026-04-09T12:04:42.831Z
 ---
 
-**Navigation:** [Tipkit](/documentation/tipkit)
+**Navigation:** [TipKit](/documentation/tipkit)
 
 **Protocol**
 
@@ -43,7 +43,7 @@ struct FavoriteBackyardTip: Tip {
 
 For a tip to be valid, you need to set its `title`. To control when a tip displays, pass instances of [Rule](/documentation/tipkit/tip/rule) and [Option](/documentation/tipkit/tip/option) into the [rules](/documentation/tipkit/tip/rules) and [options](/documentation/tipkit/tip/options) properties of the tip.
 
-After you define your tip’s content, display it in either a [Tip View](/documentation/tipkit/tipview) or a [popoverTip(_:arrowEdge:action:)](/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)).
+After you define your tip’s content, display it in either a [TipView](/documentation/tipkit/tipview) or a [popoverTip(_:arrowEdge:action:)](/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)).
 
 ## Inherits From
 
@@ -64,7 +64,7 @@ After you define your tip’s content, display it in either a [Tip View](/docume
 
 ## Controlling when tips appear
 
-- [rules](/documentation/tipkit/tip/rules) The rules that determine when a tip is eligible for display. For more information on rules, see .
+- [rules](/documentation/tipkit/tip/rules) The rules that determine when a tip is eligible for display. For more information on rules, see [Rule](/documentation/tipkit/tips/rule).
 - [Rule](/documentation/tipkit/tip/rule) A condition to meet before displaying a tip.
 - [Event](/documentation/tipkit/tip/event) A repeatable user-defined action.
 
@@ -83,7 +83,7 @@ After you define your tip’s content, display it in either a [Tip View](/docume
 
 ## Monitoring tip status
 
-- [status](/documentation/tipkit/tip/status-swift.property) The current status of a tip based on its rules and the configured .
+- [status](/documentation/tipkit/tip/status-swift.property) The current status of a tip based on its rules and the configured [displayFrequency(_:)](/documentation/tipkit/tips/configurationoption/displayfrequency(_:)).
 - [statusUpdates](/documentation/tipkit/tip/statusupdates) An asynchronous sequence for monitoring a tip’s status changes.
 - [shouldDisplay](/documentation/tipkit/tip/shoulddisplay) A Boolean value that determines whether to display a tip.
 - [shouldDisplayUpdates](/documentation/tipkit/tip/shoulddisplayupdates) An asynchronous sequence for monitoring a tip’s display eligibility.
@@ -97,9 +97,9 @@ After you define your tip’s content, display it in either a [Tip View](/docume
 
 ## Content
 
-- [TipGroup](/documentation/tipkit/tipgroup)
+- [TipGroup](/documentation/tipkit/tipgroup) A collection of tips that can be presented one at a time using a specific order or based on the first tip eligible for display.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

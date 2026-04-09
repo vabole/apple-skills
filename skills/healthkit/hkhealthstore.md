@@ -2,10 +2,10 @@
 title: HKHealthStore
 description: The access point for all data managed by HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkhealthstore
-timestamp: 2026-02-19T07:56:01.374Z
+timestamp: 2026-04-09T12:04:10.980Z
 ---
 
-**Navigation:** [Healthkit](/documentation/healthkit)
+**Navigation:** [HealthKit](/documentation/healthkit)
 
 **Class**
 
@@ -21,9 +21,9 @@ class HKHealthStore
 
 ## Overview
 
-Use a [HKHealth Store](/documentation/healthkit/hkhealthstore) object to request permission to share or read HealthKit data. After you have permission, you can use the HealthKit store to save new samples to the store, or to manage the samples that your app saved. Additionally, you can use the HealthKit store to start, stop, and manage queries.
+Use a [HKHealthStore](/documentation/healthkit/hkhealthstore) object to request permission to share or read HealthKit data. After you have permission, you can use the HealthKit store to save new samples to the store, or to manage the samples that your app saved. Additionally, you can use the HealthKit store to start, stop, and manage queries.
 
-For more information, see [setting-up](/documentation/healthkit/setting-up-healthkit).
+For more information, see [Setting up HealthKit](/documentation/healthkit/setting-up-healthkit).
 
 ## Inherits From
 
@@ -128,16 +128,16 @@ For more information, see [setting-up](/documentation/healthkit/setting-up-healt
 
 ## Health data
 
-- [Saving data to HealthKit](/documentation/healthkit/saving-data-to-healthkit)
-- [Reading data from HealthKit](/documentation/healthkit/reading-data-from-healthkit)
-- [Creating a Mobility Health App](/documentation/healthkit/creating-a-mobility-health-app)
-- [Data types](/documentation/healthkit/data-types)
-- [Samples](/documentation/healthkit/samples)
-- [Queries](/documentation/healthkit/queries)
-- [Visualizing HealthKit State of Mind in visionOS](/documentation/healthkit/visualizing-healthkit-state-of-mind-in-visionos)
-- [Logging symptoms associated with a medication](/documentation/healthkit/logging-symptoms-associated-with-a-medication)
+- [Saving data to HealthKit](/documentation/healthkit/saving-data-to-healthkit) Create and share HealthKit samples.
+- [Reading data from HealthKit](/documentation/healthkit/reading-data-from-healthkit) Use queries to request sample data from HealthKit.
+- [Creating a Mobility Health App](/documentation/healthkit/creating-a-mobility-health-app) Create a health app that allows a clinical care team to send and receive mobility data.
+- [Data types](/documentation/healthkit/data-types) Specify the kind of data used in HealthKit.
+- [Samples](/documentation/healthkit/samples) Create and save health and fitness samples.
+- [Queries](/documentation/healthkit/queries) Query health and fitness data.
+- [Visualizing HealthKit State of Mind in visionOS](/documentation/healthkit/visualizing-healthkit-state-of-mind-in-visionos) Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
+- [Logging symptoms associated with a medication](/documentation/healthkit/logging-symptoms-associated-with-a-medication) Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: List
 description: A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
 source: https://developer.apple.com/documentation/swiftui/list
-timestamp: 2026-02-19T07:56:08.396Z
+timestamp: 2026-04-09T12:04:37.247Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -33,8 +33,6 @@ var body: some View {
 }
 ```
 
-![A vertical list with three text views.](https://docs-assets.developer.apple.com/published/d78009ccd78b71238938528c05b70d1c/List-1-iOS%402x.png)
-
 More commonly, you create lists dynamically from an underlying collection of data. The following example shows how to create a simple list from an array of an `Ocean` type which conforms to [Identifiable](/documentation/Swift/Identifiable):
 
 ```swift
@@ -58,11 +56,9 @@ var body: some View {
 }
 ```
 
-![A vertical list with five text views, each with the name of an](https://docs-assets.developer.apple.com/published/a77e63fad0ed8d8fa53ef462fe01e2a6/List-2-iOS%402x.png)
-
 ### Supporting selection in lists
 
-To make members of a list selectable, provide a binding to a selection variable. Binding to a single instance of the list data’s `Identifiable.ID` type creates a single-selection list. Binding to a [Set](/documentation/Swift/Set) creates a list that supports multiple selections. The following example shows how to add multiselect to the previous example:
+To make members of a list selectable, provide a binding to a selection variable. Binding to a single instance of the list data’s `Identifiable.ID` type creates a single-selection list. Binding to a [Set](/documentation/Swift/Set) with a type that matches the list data’s `Identifiable.ID` type creates a list that supports multiple selections. The following example shows how to add multiselect to the previous example:
 
 ```swift
 struct Ocean: Identifiable, Hashable {
@@ -92,9 +88,7 @@ var body: some View {
 }
 ```
 
-When people make a single selection by tapping or clicking, the selected cell changes its appearance to indicate the selection. To enable multiple selections with tap gestures, put the list into edit mode by either modifying the [edit Mode](/documentation/swiftui/environmentvalues/editmode) value, or adding an [Edit Button](/documentation/swiftui/editbutton) to your app’s interface. When you put the list into edit mode, the list shows a circle next to each list item. The circle contains a checkmark when the user selects the associated item. The example above uses an Edit button, which changes its title to Done while in edit mode:
-
-![A navigation view with the title Oceans and a vertical list that contains](https://docs-assets.developer.apple.com/published/949b2bed10274ec967fa27a113020e9b/List-3-iOS%402x.png)
+When people make a single selection by tapping or clicking, the selected cell changes its appearance to indicate the selection. To enable multiple selections with tap gestures, put the list into edit mode by either modifying the [editMode](/documentation/swiftui/environmentvalues/editmode) value, or adding an [EditButton](/documentation/swiftui/editbutton) to your app’s interface. When you put the list into edit mode, the list shows a circle next to each list item. The circle contains a checkmark when the user selects the associated item. The example above uses an Edit button, which changes its title to Done while in edit mode:
 
 People can make multiple selections without needing to enter edit mode on devices that have a keyboard and mouse or trackpad, like Mac and iPad.
 
@@ -190,10 +184,7 @@ struct ContentView: View {
 
 Because this example uses single selection, people can make selections outside of edit mode on all platforms.
 
-![A vertical list split into sections titled Major Pacific Ocean Seas,](https://docs-assets.developer.apple.com/published/6bcb184683b070eed33ede7aa2775cea/List-4-iOS%402x.png)
-
-> [!NOTE]
-> In iOS 15, iPadOS 15, and tvOS 15 and earlier, lists support selection only in edit mode, even for single selections.
+> **Note:** In iOS 15, iPadOS 15, and tvOS 15 and earlier, lists support selection only in edit mode, even for single selections.
 
 ### Creating hierarchical lists
 
@@ -238,13 +229,9 @@ struct ContentView: View {
 }
 ```
 
-![A list providing an expanded view of a tree structure. Some rows have a](https://docs-assets.developer.apple.com/published/be9c84b8dbaf63becfdaed28332a89e0/List-5-iOS%402x.png)
-
 ### Styling lists
 
-SwiftUI chooses a display style for a list based on the platform and the view type in which it appears. Use the [listStyle(_:)](/documentation/swiftui/view/liststyle(_:)) modifier to apply a different [List Style](/documentation/swiftui/liststyle) to all lists within a view. For example, adding `.listStyle(.plain)` to the example shown in the “Creating Multidimensional Lists” topic applies the [plain](/documentation/swiftui/liststyle/plain) style, the following screenshot shows:
-
-![A vertical list split into sections titled Major Pacific Ocean Seas,](https://docs-assets.developer.apple.com/published/d1d46ab3e64ce8b26d1fe9a61ea3ffa5/List-6-iOS%402x.png)
+SwiftUI chooses a display style for a list based on the platform and the view type in which it appears. Use the [listStyle(_:)](/documentation/swiftui/view/liststyle(_:)) modifier to apply a different [ListStyle](/documentation/swiftui/liststyle) to all lists within a view. For example, adding `.listStyle(.plain)` to the example shown in the “Creating Multidimensional Lists” topic applies the [plain](/documentation/swiftui/liststyle/plain) style, the following screenshot shows:
 
 ## Conforms To
 
@@ -282,10 +269,10 @@ SwiftUI chooses a display style for a list based on the platform and the view ty
 
 ## Creating a list
 
-- [Displaying data in lists](/documentation/swiftui/displaying-data-in-lists)
-- [listStyle(_:)](/documentation/swiftui/view/liststyle(_:))
+- [Displaying data in lists](/documentation/swiftui/displaying-data-in-lists) Visualize collections of data with platform-appropriate appearance.
+- [listStyle(_:)](/documentation/swiftui/view/liststyle(_:)) Sets the style for lists within this view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

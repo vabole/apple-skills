@@ -2,7 +2,7 @@
 title: Task
 description: A unit of asynchronous work.
 source: https://developer.apple.com/documentation/swift/task
-timestamp: 2026-02-19T07:52:37.022Z
+timestamp: 2026-04-09T12:04:30.253Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -29,7 +29,7 @@ Only code that’s running as part of the task can interact with that task. To i
 
 A task’s execution can be seen as a series of periods where the task ran. Each such period ends at a suspension point or the completion of the task. These periods of execution are represented by instances of `PartialAsyncTask`. Unless you’re implementing a custom executor, you don’t directly interact with partial tasks.
 
-For information about the language-level concurrency model that `Task` is part of, see [Concurrency.html](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [](https://docs.swift.org/swift-book/).
+For information about the language-level concurrency model that `Task` is part of, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
 # Task Cancellation
 
@@ -101,20 +101,20 @@ deinit actor
 
 ## Creating a Task
 
-- [init(name:priority:operation:)](/documentation/swift/task/init(name:priority:operation:)-2dll5) Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
-- [init(name:priority:operation:)](/documentation/swift/task/init(name:priority:operation:)-43wmk) Runs the given throwing operation asynchronously as part of a new  top-level task.
-- [init(name:executorPreference:priority:operation:)](/documentation/swift/task/init(name:executorpreference:priority:operation:)-59bfi) Runs the given throwing operation asynchronously as part of a new  top-level task.
-- [init(name:executorPreference:priority:operation:)](/documentation/swift/task/init(name:executorpreference:priority:operation:)-81pay) Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+- [init(name:priority:operation:)](/documentation/swift/task/init(name:priority:operation:)-2dll5) Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
+- [init(name:priority:operation:)](/documentation/swift/task/init(name:priority:operation:)-43wmk) Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
+- [init(name:executorPreference:priority:operation:)](/documentation/swift/task/init(name:executorpreference:priority:operation:)-59bfi) Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
+- [init(name:executorPreference:priority:operation:)](/documentation/swift/task/init(name:executorpreference:priority:operation:)-81pay) Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [currentPriority](/documentation/swift/task/currentpriority) The current task’s priority.
 - [basePriority](/documentation/swift/task/basepriority) The current task’s base priority.
-- [withTaskPriorityEscalationHandler(operation:onPriorityEscalated:)](/documentation/swift/withtaskpriorityescalationhandler(operation:onpriorityescalated:)) Runs the passed  while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
+- [withTaskPriorityEscalationHandler(operation:onPriorityEscalated:)](/documentation/swift/withtaskpriorityescalationhandler(operation:onpriorityescalated:)) Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 
 ## Creating a Detached Task
 
-- [detached(name:priority:operation:)](/documentation/swift/task/detached(name:priority:operation:)-795w1) Runs the given throwing operation asynchronously as part of a new   top-level task.
-- [detached(name:priority:operation:)](/documentation/swift/task/detached(name:priority:operation:)-9xki7) Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
-- [detached(name:executorPreference:priority:operation:)](/documentation/swift/task/detached(name:executorpreference:priority:operation:)-6r16s) Runs the given throwing operation asynchronously as part of a new   top-level task.
-- [detached(name:executorPreference:priority:operation:)](/documentation/swift/task/detached(name:executorpreference:priority:operation:)-75ffe) Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
+- [detached(name:priority:operation:)](/documentation/swift/task/detached(name:priority:operation:)-795w1) Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
+- [detached(name:priority:operation:)](/documentation/swift/task/detached(name:priority:operation:)-9xki7) Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
+- [detached(name:executorPreference:priority:operation:)](/documentation/swift/task/detached(name:executorpreference:priority:operation:)-6r16s) Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
+- [detached(name:executorPreference:priority:operation:)](/documentation/swift/task/detached(name:executorpreference:priority:operation:)-75ffe) Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 
 ## Creating a Task that Starts Immediately
 
@@ -152,7 +152,7 @@ deinit actor
 
 ## Escalating Tasks
 
-- [escalatePriority(to:)](/documentation/swift/task/escalatepriority(to:)) Manually escalate the task  of this task to the .
+- [escalatePriority(to:)](/documentation/swift/task/escalatepriority(to:)) Manually escalate the task `priority` of this task to the `newPriority`.
 
 ## Comparing Tasks
 
@@ -184,18 +184,18 @@ deinit actor
 
 ## Tasks
 
-- [TaskGroup](/documentation/swift/taskgroup)
-- [withTaskGroup(of:returning:isolation:body:)](/documentation/swift/withtaskgroup(of:returning:isolation:body:))
-- [ThrowingTaskGroup](/documentation/swift/throwingtaskgroup)
-- [withThrowingTaskGroup(of:returning:isolation:body:)](/documentation/swift/withthrowingtaskgroup(of:returning:isolation:body:))
-- [TaskPriority](/documentation/swift/taskpriority)
-- [DiscardingTaskGroup](/documentation/swift/discardingtaskgroup)
-- [withDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withdiscardingtaskgroup(returning:isolation:body:))
-- [ThrowingDiscardingTaskGroup](/documentation/swift/throwingdiscardingtaskgroup)
-- [withThrowingDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withthrowingdiscardingtaskgroup(returning:isolation:body:))
-- [UnsafeCurrentTask](/documentation/swift/unsafecurrenttask)
+- [TaskGroup](/documentation/swift/taskgroup) A group that contains dynamically created child tasks.
+- [withTaskGroup(of:returning:isolation:body:)](/documentation/swift/withtaskgroup(of:returning:isolation:body:)) Starts a new scope that can contain a dynamic number of child tasks.
+- [ThrowingTaskGroup](/documentation/swift/throwingtaskgroup) A group that contains throwing, dynamically created child tasks.
+- [withThrowingTaskGroup(of:returning:isolation:body:)](/documentation/swift/withthrowingtaskgroup(of:returning:isolation:body:)) Starts a new scope that can contain a dynamic number of throwing child tasks.
+- [TaskPriority](/documentation/swift/taskpriority) The priority of a task.
+- [DiscardingTaskGroup](/documentation/swift/discardingtaskgroup) A discarding group that contains dynamically created child tasks.
+- [withDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withdiscardingtaskgroup(returning:isolation:body:)) Starts a new scope that can contain a dynamic number of child tasks.
+- [ThrowingDiscardingTaskGroup](/documentation/swift/throwingdiscardingtaskgroup) A throwing discarding group that contains dynamically created child tasks.
+- [withThrowingDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withthrowingdiscardingtaskgroup(returning:isolation:body:)) Starts a new scope that can contain a dynamic number of child tasks.
+- [UnsafeCurrentTask](/documentation/swift/unsafecurrenttask) An unsafe reference to the current task.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

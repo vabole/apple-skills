@@ -2,7 +2,7 @@
 title: Feedback
 description: Feedback helps people know what’s happening, discover what they can do next, understand the results of actions, and avoid mistakes.
 source: https://developer.apple.com/design/human-interface-guidelines/feedback
-timestamp: 2026-01-17T15:45:00.986Z
+timestamp: 2026-04-09T12:04:14.326Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:00.986Z
 # Feedback
 
 > Feedback helps people know what’s happening, discover what they can do next, understand the results of actions, and avoid mistakes.
-
-
 
 Providing clear, consistent feedback as people interact with your app or game can make it feel intuitive and encourage deeper exploration. Feedback can communicate several different things, such as:
 
@@ -67,5 +65,5 @@ The most effective feedback tends to match the significance of the information t
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

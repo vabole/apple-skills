@@ -2,7 +2,7 @@
 title: Alerts
 description: An alert gives people critical information they need right away.
 source: https://developer.apple.com/design/human-interface-guidelines/alerts
-timestamp: 2026-01-17T15:45:15.081Z
+timestamp: 2026-04-09T12:18:08.907Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:15.081Z
 # Alerts
 
 > An alert gives people critical information they need right away.
-
-
 
 For example, an alert can tell people about a problem, warn them when their action might destroy data, and give them an opportunity to confirm a purchase or another important action they initiated.
 
@@ -63,6 +61,12 @@ In all platforms, alerts display a title, optional informative text, and up to t
 
 **Provide alternative ways to cancel an alert when it makes sense.** In addition to choosing a Cancel button, people appreciate using keyboard shortcuts or other quick ways to cancel an onscreen alert. For example:
 
+| Action | Platform |
+| --- | --- |
+| Exit to the Home Screen | iOS, iPadOS |
+| Pressing Escape (Esc) or Command-Period (.) on an attached keyboard | iOS, iPadOS, macOS, visionOS |
+| Pressing Menu on the remote | tvOS |
+
 ## Platform considerations
 
 *No additional considerations for tvOS or watchOS.*
@@ -111,7 +115,13 @@ If you need to display an accessory view in a visionOS alert, create a view that
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| February 2, 2024 | Enhanced guidance for using default and Cancel buttons. |
+| September 12, 2023 | Added anatomy artwork for visionOS. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

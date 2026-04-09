@@ -2,7 +2,7 @@
 title: Pickers
 description: A picker displays one or more scrollable lists of distinct values that people can choose from.
 source: https://developer.apple.com/design/human-interface-guidelines/pickers
-timestamp: 2026-01-17T15:45:22.369Z
+timestamp: 2026-04-09T12:18:14.434Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:22.369Z
 # Pickers
 
 > A picker displays one or more scrollable lists of distinct values that people can choose from.
-
-
 
 The system provides several styles of pickers, each of which offers different types of selectable values and has a different appearance. The exact values shown in a picker, and their order, depend on the device language.
 
@@ -95,7 +93,11 @@ For longer lists, the navigation link displays the picker as a button. When some
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 5, 2023 | Updated guidance for using pickers in watchOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

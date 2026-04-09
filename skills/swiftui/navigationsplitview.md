@@ -2,10 +2,10 @@
 title: NavigationSplitView
 description: A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.
 source: https://developer.apple.com/documentation/swiftui/navigationsplitview
-timestamp: 2026-01-17T15:34:51.279Z
+timestamp: 2026-04-09T12:04:37.952Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -66,13 +66,13 @@ var body: some View {
 }
 ```
 
-You can also embed a [Navigation Stack](/documentation/swiftui/navigationstack) in a column. Tapping or clicking a [Navigation Link](/documentation/swiftui/navigationlink) that appears in an earlier column sets the view that the stack displays over its root view. Activating a link in the same column adds a view to the stack. Either way, the link must present a data type for which the stack has a corresponding [navigationDestination(for:destination:)](/documentation/swiftui/view/navigationdestination(for:destination:)) modifier.
+You can also embed a [NavigationStack](/documentation/swiftui/navigationstack) in a column. Tapping or clicking a [NavigationLink](/documentation/swiftui/navigationlink) that appears in an earlier column sets the view that the stack displays over its root view. Activating a link in the same column adds a view to the stack. Either way, the link must present a data type for which the stack has a corresponding [navigationDestination(for:destination:)](/documentation/swiftui/view/navigationdestination(for:destination:)) modifier.
 
-On watchOS and tvOS, and with narrow sizes like on iPhone or on iPad in Slide Over, the navigation split view collapses all of its columns into a stack, and shows the last column that displays useful information. For example, the three-column example above shows the list of departments to start, the employees in the department after someone selects a department, and the employee details when someone selects an employee. For rows in a list that have [Navigation Link](/documentation/swiftui/navigationlink) instances, the list draws disclosure chevrons while in the collapsed state.
+On watchOS and tvOS, and with narrow sizes like on iPhone or on iPad in Slide Over, the navigation split view collapses all of its columns into a stack, and shows the last column that displays useful information. For example, the three-column example above shows the list of departments to start, the employees in the department after someone selects a department, and the employee details when someone selects an employee. For rows in a list that have [NavigationLink](/documentation/swiftui/navigationlink) instances, the list draws disclosure chevrons while in the collapsed state.
 
 ### Control column visibility
 
-You can programmatically control the visibility of navigation split view columns by creating a [State](/documentation/swiftui/state) value of type [Navigation Split View Visibility](/documentation/swiftui/navigationsplitviewvisibility). Then pass a [Binding](/documentation/swiftui/binding) to that state to the appropriate initializer — such as [init(columnVisibility:sidebar:detail:)](/documentation/swiftui/navigationsplitview/init(columnvisibility:sidebar:detail:)) for two columns, or the [init(columnVisibility:sidebar:content:detail:)](/documentation/swiftui/navigationsplitview/init(columnvisibility:sidebar:content:detail:)) for three columns.
+You can programmatically control the visibility of navigation split view columns by creating a [State](/documentation/swiftui/state) value of type [NavigationSplitViewVisibility](/documentation/swiftui/navigationsplitviewvisibility). Then pass a [Binding](/documentation/swiftui/binding) to that state to the appropriate initializer — such as [init(columnVisibility:sidebar:detail:)](/documentation/swiftui/navigationsplitview/init(columnvisibility:sidebar:detail:)) for two columns, or the [init(columnVisibility:sidebar:content:detail:)](/documentation/swiftui/navigationsplitview/init(columnvisibility:sidebar:content:detail:)) for three columns.
 
 The following code updates the first example above to always hide the first column when the view appears:
 
@@ -98,7 +98,7 @@ The split view ignores the visibility control when it collapses its columns into
 
 At narrow size classes, such as on iPhone or Apple Watch, a navigation split view collapses into a single stack. Typically SwiftUI automatically chooses the view to show on top of this single stack, based on the content of the split view’s columns.
 
-For custom navigation experiences, you can provide more information to help SwiftUI choose the right column. Create a `State` value of type [Navigation Split View Column](/documentation/swiftui/navigationsplitviewcolumn). Then pass a `Binding` to that state to the appropriate initializer, such as [init(preferredCompactColumn:sidebar:detail:)](/documentation/swiftui/navigationsplitview/init(preferredcompactcolumn:sidebar:detail:)) or [init(preferredCompactColumn:sidebar:content:detail:)](/documentation/swiftui/navigationsplitview/init(preferredcompactcolumn:sidebar:content:detail:)).
+For custom navigation experiences, you can provide more information to help SwiftUI choose the right column. Create a `State` value of type [NavigationSplitViewColumn](/documentation/swiftui/navigationsplitviewcolumn). Then pass a `Binding` to that state to the appropriate initializer, such as [init(preferredCompactColumn:sidebar:detail:)](/documentation/swiftui/navigationsplitview/init(preferredcompactcolumn:sidebar:detail:)) or [init(preferredCompactColumn:sidebar:content:detail:)](/documentation/swiftui/navigationsplitview/init(preferredcompactcolumn:sidebar:content:detail:)).
 
 The following code shows the blue detail view when run on iPhone. When the person using the app taps the back button, they’ll see the yellow view. The value of `preferredPreferredCompactColumn` will change from `.detail` to `.sidebar`:
 
@@ -119,9 +119,9 @@ var body: some View {
 
 To specify a preferred column width in a navigation split view, use the [navigationSplitViewColumnWidth(_:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(_:)) modifier. To set minimum, maximum, and ideal sizes for a column, use [navigationSplitViewColumnWidth(min:ideal:max:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max:)). You can specify a different modifier in each column. The navigation split view does its best to accommodate the preferences that you specify, but might make adjustments based on other constraints.
 
-To specify how columns in a navigation split view interact, use the [navigationSplitViewStyle(_:)](/documentation/swiftui/view/navigationsplitviewstyle(_:)) modifier with a [Navigation Split View Style](/documentation/swiftui/navigationsplitviewstyle) value. For example, you can specify whether to emphasize the detail column or to give all of the columns equal prominence.
+To specify how columns in a navigation split view interact, use the [navigationSplitViewStyle(_:)](/documentation/swiftui/view/navigationsplitviewstyle(_:)) modifier with a [NavigationSplitViewStyle](/documentation/swiftui/navigationsplitviewstyle) value. For example, you can specify whether to emphasize the detail column or to give all of the columns equal prominence.
 
-On some platforms, `NavigationSplitView` adds a [sidebar Toggle](/documentation/swiftui/toolbardefaultitemkind/sidebartoggle) toolbar item. Use the [toolbar(removing:)](/documentation/swiftui/view/toolbar(removing:)) modifier to remove the default item.
+On some platforms, `NavigationSplitView` adds a [sidebarToggle](/documentation/swiftui/toolbardefaultitemkind/sidebartoggle) toolbar item. Use the [toolbar(removing:)](/documentation/swiftui/view/toolbar(removing:)) modifier to remove the default item.
 
 ## Conforms To
 
@@ -149,15 +149,15 @@ On some platforms, `NavigationSplitView` adds a [sidebar Toggle](/documentation/
 
 ## Presenting views in columns
 
-- [Bringing robust navigation structure to your SwiftUI app](/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app)
-- [Migrating to new navigation types](/documentation/swiftui/migrating-to-new-navigation-types)
-- [navigationSplitViewStyle(_:)](/documentation/swiftui/view/navigationsplitviewstyle(_:))
-- [navigationSplitViewColumnWidth(_:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(_:))
-- [navigationSplitViewColumnWidth(min:ideal:max:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max:))
-- [NavigationSplitViewVisibility](/documentation/swiftui/navigationsplitviewvisibility)
-- [NavigationLink](/documentation/swiftui/navigationlink)
+- [Bringing robust navigation structure to your SwiftUI app](/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app) Use navigation links, stacks, destinations, and paths to provide a streamlined experience for all platforms, as well as behaviors such as deep linking and state restoration.
+- [Migrating to new navigation types](/documentation/swiftui/migrating-to-new-navigation-types) Improve navigation behavior in your app by replacing navigation views with navigation stacks and navigation split views.
+- [navigationSplitViewStyle(_:)](/documentation/swiftui/view/navigationsplitviewstyle(_:)) Sets the style for navigation split views within this view.
+- [navigationSplitViewColumnWidth(_:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(_:)) Sets a fixed, preferred width for the column containing this view.
+- [navigationSplitViewColumnWidth(min:ideal:max:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max:)) Sets a flexible, preferred width for the column containing this view.
+- [NavigationSplitViewVisibility](/documentation/swiftui/navigationsplitviewvisibility) The visibility of the leading columns in a navigation split view.
+- [NavigationLink](/documentation/swiftui/navigationlink) A view that controls a navigation presentation.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

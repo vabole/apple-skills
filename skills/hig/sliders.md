@@ -2,7 +2,7 @@
 title: Sliders
 description: A slider is a horizontal track with a control, called a thumb, that people can adjust between a minimum and maximum value.
 source: https://developer.apple.com/design/human-interface-guidelines/sliders
-timestamp: 2026-01-17T15:45:22.846Z
+timestamp: 2026-04-09T12:18:17.782Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,8 +13,6 @@ timestamp: 2026-01-17T15:45:22.846Z
 
 > A slider is a horizontal track with a control, called a thumb, that people can adjust between a minimum and maximum value.
 
-
-
 As a slider’s value changes, the portion of track between the minimum value and the thumb fills with color. A slider can optionally display left and right icons that illustrate the meaning of the minimum and maximum values.
 
 ## Best practices
@@ -24,8 +22,6 @@ As a slider’s value changes, the portion of track between the minimum value an
 **Use familiar slider directions.** People expect the minimum and maximum sides of sliders to be consistent in all apps, with minimum values on the leading side and maximum values on the trailing side (for horizontal sliders) and minimum values at the bottom and maximum values at the top (for vertical sliders). For example, people expect to be able to move a horizontal slider that represents a percentage from 0 percent on the leading side to 100 percent on the trailing side.
 
 **Consider supplementing a slider with a corresponding text field and stepper.** Especially when a slider represents a wide range of values, people may appreciate seeing the exact slider value and having the ability to enter a specific value in a text field. Adding a stepper provides a convenient way for people to increment in whole values. For related guidance, see [Text fields](/design/human-interface-guidelines/text-fields) and [Steppers](/design/human-interface-guidelines/steppers).
-
-
 
 ## Platform considerations
 
@@ -50,8 +46,6 @@ In a circular slider, the thumb appears as a small circle. Tick marks, when pres
 **Consider using a label to introduce a slider.** Labels generally use [sentence-style capitalization](https://help.apple.com/applestyleguide/#/apsgb744e4a3?sub=apdca93e113f1d64) and end with a colon. For guidance, see [Labels](/design/human-interface-guidelines/labels).
 
 **Use tick marks to increase clarity and accuracy.** Tick marks help people understand the scale of measurements and make it easier to locate specific values.
-
-
 
 **Consider adding labels to tick marks for even greater clarity.** Labels can be numbers or words, depending on the slider’s values. It’s unnecessary to label every tick mark unless doing so is needed to reduce confusion. In many cases, labeling only the minimum and maximum values is sufficient. When the values of the slider are nonlinear, like in the Energy Saver settings pane, periodic labels provide context. It’s also a good idea to provide a [tooltip](https://developer.apple.com/design/human-interface-guidelines/offering-help#macOS-visionOS) that displays the value of the thumb when people hold their pointer over it.
 
@@ -83,7 +77,11 @@ A slider is a horizontal track — appearing as a set of discrete steps or as a 
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

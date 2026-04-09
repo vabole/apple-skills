@@ -2,7 +2,7 @@
 title: Onboarding
 description: Onboarding can help people get a quick start using your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/onboarding
-timestamp: 2026-01-17T15:44:59.070Z
+timestamp: 2026-04-09T12:18:14.207Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:44:59.070Z
 # Onboarding
 
 > Onboarding can help people get a quick start using your app or game.
-
-
 
 Ideally, people can understand your app or game simply by experiencing it, but if onboarding is necessary, design a flow that’s fast, fun, and optional. When available, onboarding occurs after [Launching](/design/human-interface-guidelines/launching) is complete — it isn’t part of the launch experience.
 
@@ -67,7 +65,12 @@ Ideally, people can understand your app or game simply by experiencing it, but i
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 10, 2024 | Clarified different approaches to onboarding and added a guideline on displaying a splash screen. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

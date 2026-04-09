@@ -2,10 +2,10 @@
 title: CHHapticEngine
 description: An object that represents the connection to the haptic server.
 source: https://developer.apple.com/documentation/corehaptics/chhapticengine
-timestamp: 2026-02-19T07:56:04.478Z
+timestamp: 2026-04-09T12:04:08.656Z
 ---
 
-**Navigation:** [Corehaptics](/documentation/corehaptics)
+**Navigation:** [Core Haptics](/documentation/corehaptics)
 
 **Class**
 
@@ -23,8 +23,6 @@ class CHHapticEngine
 
 If you want your app to play custom haptics, you need to create a haptic engine. The haptic engine establishes the connection between your app and the underlying device hardware. Even though you can define a haptic pattern without an engine, you need the engine to play that pattern.
 
-![A dictionary defines a pattern, from which the haptic engine creates a pattern player for playing the haptic.](https://docs-assets.developer.apple.com/published/66a613deacd96bc7ac01d5a15e3eae73/media-3242669%402x.png)
-
 Even though your app makes a request through the haptic engine, the operating system could still override the request with system services, like haptics from system notifications.
 
 ### Prepare Your App To Play Haptics
@@ -35,7 +33,7 @@ To prepare your app to play haptics, follow these steps, as demonstrated in the 
 2. Call the haptic engine’s [start(completionHandler:)](/documentation/corehaptics/chhapticengine/start(completionhandler:)) for an asynchronous start, or [start()](/documentation/corehaptics/chhapticengine/start()) to start the engine synchronously (immediately).
 3. Stop the engine by calling [stop(completionHandler:)](/documentation/corehaptics/chhapticengine/stop(completionhandler:)) when your app finishes haptic playback.
 
-Although it’s possible to create content—[CHHaptic Pattern](/documentation/corehaptics/chhapticpattern) instances—independent of a CHHapticEngine, your app must use an engine to play that content.
+Although it’s possible to create content—[CHHapticPattern](/documentation/corehaptics/chhapticpattern) instances—independent of a CHHapticEngine, your app must use an engine to play that content.
 
 ## Inherits From
 
@@ -120,17 +118,17 @@ Although it’s possible to create content—[CHHaptic Pattern](/documentation/c
 
 ## Instance Properties
 
-- [intendedSpatialExperience](/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0) The CHHapticEngine’s intended .
+- [intendedSpatialExperience](/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0) The CHHapticEngine’s intended [SpatialAudioExperience](/documentation/AudioToolbox/SpatialAudioExperience).
 
 ## Essentials
 
-- [Preparing your app to play haptics](/documentation/corehaptics/preparing-your-app-to-play-haptics)
-- [Playing a single-tap haptic pattern](/documentation/corehaptics/playing-a-single-tap-haptic-pattern)
-- [CHHapticPattern](/documentation/corehaptics/chhapticpattern)
-- [CHHapticPatternPlayer](/documentation/corehaptics/chhapticpatternplayer)
-- [CHHapticAdvancedPatternPlayer](/documentation/corehaptics/chhapticadvancedpatternplayer)
+- [Preparing your app to play haptics](/documentation/corehaptics/preparing-your-app-to-play-haptics) Set up your app to play haptics.
+- [Playing a single-tap haptic pattern](/documentation/corehaptics/playing-a-single-tap-haptic-pattern) Create and play a transient haptic pattern from a dictionary literal inline.
+- [CHHapticPattern](/documentation/corehaptics/chhapticpattern) An object representing a haptic waveform.
+- [CHHapticPatternPlayer](/documentation/corehaptics/chhapticpatternplayer) A protocol that defines a standard pattern player capable of playing haptic patterns with fixed parameters.
+- [CHHapticAdvancedPatternPlayer](/documentation/corehaptics/chhapticadvancedpatternplayer) A protocol that defines an advanced pattern player capable of looping, seeking, pausing, and resuming haptic playback.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

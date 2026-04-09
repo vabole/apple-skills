@@ -2,16 +2,16 @@
 title: HKQuantityTypeIdentifier
 description: The identifiers that create quantity type objects.
 source: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
-timestamp: 2026-01-19T10:21:33.419Z
+timestamp: 2026-04-09T12:04:11.511Z
 ---
 
-**Navigation:** [Healthkit](/documentation/healthkit)
+**Navigation:** [HealthKit](/documentation/healthkit)
 
 **Structure**
 
 # HKQuantityTypeIdentifier
 
-**Available on:** iOS undefined+, iPadOS undefined+, Mac Catalyst undefined+, macOS undefined+, visionOS undefined+, watchOS undefined+
+**Available on:** iOS, iPadOS, Mac Catalyst, macOS, visionOS, watchOS
 
 > The identifiers that create quantity type objects.
 
@@ -21,7 +21,7 @@ struct HKQuantityTypeIdentifier
 
 ## Overview
 
-To create an [HKQuantity Type](/documentation/healthkit/hkquantitytype) instance, pass an [HKQuantity Type Identifier](/documentation/healthkit/hkquantitytypeidentifier) value to the [quantityType(forIdentifier:)](/documentation/healthkit/hkobjecttype/quantitytype(foridentifier:)) method.
+To create an [HKQuantityType](/documentation/healthkit/hkquantitytype) instance, pass an [HKQuantityTypeIdentifier](/documentation/healthkit/hkquantitytypeidentifier) value to the [quantityType(forIdentifier:)](/documentation/healthkit/hkobjecttype/quantitytype(foridentifier:)) method.
 
 ## Conforms To
 
@@ -197,9 +197,9 @@ To create an [HKQuantity Type](/documentation/healthkit/hkquantitytype) instance
 
 ## Creating quantity types
 
-- [quantityType(forIdentifier:)](/documentation/healthkit/hkobjecttype/quantitytype(foridentifier:))
+- [quantityType(forIdentifier:)](/documentation/healthkit/hkobjecttype/quantitytype(foridentifier:)) Returns the shared quantity type for the provided identifier.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

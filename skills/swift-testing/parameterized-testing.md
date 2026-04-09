@@ -2,7 +2,7 @@
 title: Implementing parameterized tests
 description: Specify different input parameters to generate multiple test cases from a test function.
 source: https://developer.apple.com/documentation/testing/parameterizedtesting
-timestamp: 2026-02-19T07:52:36.967Z
+timestamp: 2026-04-09T12:04:31.429Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -17,7 +17,7 @@ timestamp: 2026-02-19T07:52:36.967Z
 
 Some tests need to be run over many different inputs. For instance, a test might need to validate all cases of an enumeration. The testing library lets developers specify one or more collections to iterate over during testing, with the elements of those collections being forwarded to a test function. An invocation of a test function with a particular set of argument values is called a test *case*.
 
-By default, the test cases of a test function run in parallel with each other. For more information about test parallelization, see [Parallelization](/documentation/testing/parallelization).
+By default, the test cases of a test function run in parallel with each other. For more information about test parallelization, see [Running tests serially or in parallel](/documentation/testing/parallelization).
 
 ### Parameterize over an array of values
 
@@ -83,8 +83,7 @@ func makeLargeOrder(count: Int) async throws {
 }
 ```
 
-> [!NOTE]
-> Very large ranges such as `0 ..< .max` may take an excessive amount of time to test, or may never complete due to resource constraints.
+> **Note:** Very large ranges such as `0 ..< .max` may take an excessive amount of time to test, or may never complete due to resource constraints.
 
 ### Pass the same arguments to multiple test functions
 
@@ -111,8 +110,7 @@ func `Package leftovers`(food: Food) throws {
 }
 ```
 
-> [!TIP]
-> You can prefix expressions passed to `arguments:` with `try` or `await`. The testing library evaluates them lazily only if it determines that the associated test will run.
+> **Tip:** You can prefix expressions passed to `arguments:` with `try` or `await`. The testing library evaluates them lazily only if it determines that the associated test will run.
 
 ### Test with more than one collection
 
@@ -130,7 +128,7 @@ Elements from the first collection are passed as the first argument to the test 
 
 Assuming there are five cases in the `Food` enumeration, this test function will, when run, be invoked 500 times (5 x 100) with every possible combination of food and order size. These combinations are referred to as the collections’ Cartesian product.
 
-To avoid the combinatoric semantics shown above, use [zip(_:_:)](https://developer.apple.com/documentation/swift/zip(_:_:)):
+To avoid the combinatoric semantics shown above, use [zip()](https://developer.apple.com/documentation/swift/zip(_:_:)):
 
 ```swift
 @Test("Can make large orders", arguments: zip(Food.allCases, 1 ... 100))
@@ -150,7 +148,7 @@ If a parameterized test meets certain requirements, the testing library allows p
 
 To support running selected test cases, it must be possible to deterministically match the test case’s arguments. When someone attempts to run selected test cases of a parameterized test function, the testing library evaluates each argument of the tests’ cases for conformance to one of several known protocols, and if all arguments of a test case conform to one of those protocols, that test case can be run selectively. The following lists the known protocols, in precedence order (highest to lowest):
 
-1. [Custom Test Argument Encodable](/documentation/testing/customtestargumentencodable)
+1. [CustomTestArgumentEncodable](/documentation/testing/customtestargumentencodable)
 2. `RawRepresentable`, where `RawValue` conforms to `Encodable`
 3. `Encodable`
 4. `Identifiable`, where `ID` conforms to `Encodable`
@@ -159,13 +157,13 @@ If any argument of a test case doesn’t meet one of the above requirements, the
 
 ## Test parameterization
 
-- [Test(_:_:arguments:)](/documentation/testing/test(_:_:arguments:)-8kn7a)
-- [Test(_:_:arguments:_:)](/documentation/testing/test(_:_:arguments:_:))
-- [Test(_:_:arguments:)](/documentation/testing/test(_:_:arguments:)-3rzok)
-- [CustomTestArgumentEncodable](/documentation/testing/customtestargumentencodable)
-- [Test.Case](/documentation/testing/test/case)
+- [Test(_:_:arguments:)](/documentation/testing/test(_:_:arguments:)-8kn7a) Declare a test parameterized over a collection of values.
+- [Test(_:_:arguments:_:)](/documentation/testing/test(_:_:arguments:_:)) Declare a test parameterized over two collections of values.
+- [Test(_:_:arguments:)](/documentation/testing/test(_:_:arguments:)-3rzok) Declare a test parameterized over two zipped collections of values.
+- [CustomTestArgumentEncodable](/documentation/testing/customtestargumentencodable) A protocol for customizing how arguments passed to parameterized tests are encoded, which is used to match against when running specific arguments.
+- [Test.Case](/documentation/testing/test/case) A single test case from a parameterized [Test](/documentation/testing/test).
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

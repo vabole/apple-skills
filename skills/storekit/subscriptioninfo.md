@@ -2,10 +2,10 @@
 title: Product.SubscriptionInfo
 description: Information about an auto-renewable subscription, such as its status, period, subscription group, and subscription offer details.
 source: https://developer.apple.com/documentation/storekit/product/subscriptioninfo
-timestamp: 2026-02-19T07:52:36.986Z
+timestamp: 2026-04-09T12:04:28.459Z
 ---
 
-**Navigation:** [Storekit](/documentation/storekit) › [product](/documentation/storekit/product)
+**Navigation:** [StoreKit](/documentation/storekit) › [Product](/documentation/storekit/product)
 
 **Structure**
 
@@ -64,14 +64,28 @@ struct SubscriptionInfo
 - [Product.SubscriptionInfo.RenewalInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo) The renewal information for an auto-renewable subscription.
 - [Product.SubscriptionInfo.RenewalState](/documentation/storekit/product/subscriptioninfo/renewalstate) The renewal states of auto-renewable subscriptions.
 
+## Structures
+
+- [Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype)
+- [Product.SubscriptionInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/commitmentinfo)
+- [Product.SubscriptionInfo.PricingTerms](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct)
+
+## Instance Properties
+
+- [pricingTerms](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.property)
+
+## Type Aliases
+
+- [Product.SubscriptionInfo.BillingPeriod](/documentation/storekit/product/subscriptioninfo/billingperiod)
+
 ## Product and subscription information
 
-- [Implementing a store in your app using the StoreKit API](/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api)
-- [Product](/documentation/storekit/product)
-- [SubscriptionInfo](/documentation/storekit/subscriptioninfo)
-- [SubscriptionStatus](/documentation/storekit/subscriptionstatus)
+- [Implementing a store in your app using the StoreKit API](/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api) Offer In-App Purchases and manage entitlements using signed transactions and status information.
+- [Product](/documentation/storekit/product) Information about a product that you configure in App Store Connect.
+- [SubscriptionInfo](/documentation/storekit/subscriptioninfo) Information about an auto-renewable subscription.
+- [SubscriptionStatus](/documentation/storekit/subscriptionstatus) Represents the renewal status information for an auto-renewable subscription.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

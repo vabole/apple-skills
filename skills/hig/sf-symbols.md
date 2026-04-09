@@ -2,7 +2,7 @@
 title: SF Symbols
 description: SF Symbols provides thousands of consistent, highly configurable symbols that integrate seamlessly with the San Francisco system font, automatically aligning with text in all weights and sizes.
 source: https://developer.apple.com/design/human-interface-guidelines/sf-symbols
-timestamp: 2026-01-17T15:44:52.337Z
+timestamp: 2026-04-09T12:18:17.098Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:44:52.337Z
 # SF Symbols
 
 > SF Symbols provides thousands of consistent, highly configurable symbols that integrate seamlessly with the San Francisco system font, automatically aligning with text in all weights and sizes.
-
-
 
 You can use a symbol to convey an object or concept wherever interface icons can appear, such as in toolbars, tab bars, context menus, and within text.
 
@@ -29,27 +27,17 @@ To support the rendering modes, SF Symbols organizes a symbol’s paths into dis
 
 Depending on the rendering mode you choose, a symbol can produce various appearances. For example, Hierarchical rendering mode assigns a different opacity of a single color to each layer, creating a visual hierarchy that gives depth to the symbol.
 
-
-
 To learn more about supporting rendering modes in custom symbols, see [Custom symbols](/design/human-interface-guidelines/sf-symbols#Custom-symbols).
 
 SF Symbols supports the following rendering modes.
 
 **Monochrome** — Applies one color to all layers in a symbol. Within a symbol, paths render in the color you specify or as a transparent shape within a color-filled path.
 
-
-
 **Hierarchical** — Applies one color to all layers in a symbol, varying the color’s opacity according to each layer’s hierarchical level.
-
-
 
 **Palette** — Applies two or more colors to a symbol, using one color per layer. Specifying only two colors for a symbol that defines three levels of hierarchy means the secondary and tertiary layers use the same color.
 
-
-
 **Multicolor** — Applies intrinsic colors to some symbols to enhance meaning. For example, the `leaf` symbol uses green to reflect the appearance of leaves in the physical world, whereas the `trash.slash` symbol uses red to signal data loss. Some multicolor symbols include layers that can receive other colors.
-
-
 
 Regardless of rendering mode, using system-provided colors ensures that symbols automatically adapt to accessibility accommodations and appearance modes like vibrancy and Dark Mode. For developer guidance, see [renderingMode(_:)](https://developer.apple.com/documentation/swiftui/image/renderingmode(_:)).
 
@@ -65,8 +53,6 @@ With variable color, you can represent a characteristic that can change over tim
 
 For example, you could use variable color with the `speaker.wave.3` symbol to communicate three different ranges of sound — plus the state where there’s no sound — by mapping the layers that represent the curved wave paths to different ranges of decibel values. In the case of no sound, no wave layers get color. In all other cases, a wave layer receives color when the sound reaches a threshold the system defines based on the  number of nonzero states you want to represent.
 
-
-
 Sometimes, it can make sense for some of a symbol’s layers to opt out of variable color. For example, in the `speaker.wave.3` symbol shown above, the layer that contains the speaker path doesn’t receive variable color because a speaker doesn’t change as the sound level changes. A symbol can support variable color in any number of layers.
 
 **Use variable color to communicate change — don’t use it to communicate depth.** To convey depth and visual hierarchy, use Hierarchical rendering mode to elevate certain layers and distinguish foreground and background elements in a symbol.
@@ -74,8 +60,6 @@ Sometimes, it can make sense for some of a symbol’s layers to opt out of varia
 ## Weights and scales
 
 SF Symbols provides symbols in a wide range of weights and scales to help you create adaptable designs.
-
-
 
 Each of the nine symbol weights — from ultralight to black — corresponds to a weight of the San Francisco system font, helping you achieve precise weight matching between symbols and adjacent text, while supporting flexibility for different sizes and contexts.
 
@@ -91,11 +75,7 @@ Outline is the most common variant in SF Symbols. An outlined symbol has no soli
 
 In addition to outline and fill, SF Symbols also defines variants that include a slash or enclose a symbol within a shape like a circle, square, or rectangle. In many cases, enclosed and slash variants can combine with outline or fill variants.
 
-
-
 SF Symbols provides many variants for specific languages and writing systems, including Latin, Arabic, Hebrew, Hindi, Thai, Chinese, Japanese, Korean, Cyrillic, Devanagari, and several Indic numeral systems. Language- and script-specific variants adapt automatically when the device language changes. For guidance, see [Images](/design/human-interface-guidelines/right-to-left#Images).
-
-
 
 Symbol variants support a range of design goals. For example:
 
@@ -153,6 +133,8 @@ The arrangement of layers within a symbol determines how variable color behaves 
 
 If you need a symbol that SF Symbols doesn’t provide, you can create your own. To create a custom symbol, first export the template for a symbol that’s similar to the design you want, then use a vector-editing tool to modify it. For developer guidance, see [Creating custom symbol images for your app](/documentation/UIKit/creating-custom-symbol-images-for-your-app).
 
+> **Important:** SF Symbols includes copyrighted symbols that depict Apple products and features. You can display these symbols in your app, but you can’t customize them. To help you identify a noncustomizable symbol, the SF Symbols app badges it with an Info icon; to help you use the symbol correctly, the inspector pane describes its usage restrictions.
+
 Using a process called *annotating*, you can assign a specific color — or a specific hierarchical level, such as primary, secondary, or tertiary — to each layer in a custom symbol. Depending on the rendering modes you support, you can use a different mode in each instance of the symbol in your app.
 
 **Use the template as a guide.** Create a custom symbol that’s consistent with the ones the system provides in level of detail, optical weight, alignment, position, and perspective. Strive to design a symbol that is:
@@ -204,7 +186,14 @@ For guidance, see [Icons](/design/human-interface-guidelines/icons).
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| July 28, 2025 | Updated with guidance for Draw animations and gradient rendering in SF Symbols 7. |
+| June 10, 2024 | Updated with guidance for new animations and features of SF Symbols 6. |
+| June 5, 2023 | Added a new section on animations. Included animation guidance for custom symbols. |
+| September 14, 2022 | Added a new section on variable color. Removed instructions on creating custom symbol paths, exporting templates, and layering paths, deferring to developer articles that cover these topics. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

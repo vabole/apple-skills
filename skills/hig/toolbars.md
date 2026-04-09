@@ -2,7 +2,7 @@
 title: Toolbars
 description: A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
 source: https://developer.apple.com/design/human-interface-guidelines/toolbars
-timestamp: 2026-02-19T07:55:58.106Z
+timestamp: 2026-04-09T12:18:19.315Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-02-19T07:55:58.106Z
 # Toolbars
 
 > A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
-
-
 
 A toolbar consists of one or more sets of controls arranged horizontally along the top or bottom edge of the view, grouped into logical sections.
 
@@ -28,6 +26,8 @@ In contrast to a toolbar, a [Tab bars](/design/human-interface-guidelines/tab-ba
 ## Best practices
 
 **Choose items deliberately to avoid overcrowding.** People need to be able to distinguish and activate each item, so you don’t want to put too many items in the toolbar. To accommodate variable view widths, define which items move to the overflow menu as the toolbar becomes narrower.
+
+> **Note:** The system automatically adds an overflow menu in macOS or iPadOS when items no longer fit. Don’t add an overflow menu manually, and avoid layouts that cause toolbar items to overflow by default.
 
 **Add a More menu to contain additional actions.** Prioritize less important actions for inclusion in the More menu. Try to include all actions in the toolbar if possible, and only add this menu if you really need it.
 
@@ -65,8 +65,6 @@ A toolbar with navigation controls appears at the top of a window, helping peopl
 
 **Use the `.prominent` style for key actions such as Done or Submit.** This separates and tints the action so there’s a clear focal point. Only specify one primary action, and put it on the trailing side of the toolbar.
 
-
-
 ## Item groupings
 
 You can position toolbar items in three locations: the leading edge, center area, and trailing edge of the toolbar. These areas provide familiar homes for navigation controls, window or document titles, common actions, and search.
@@ -74,8 +72,6 @@ You can position toolbar items in three locations: the leading edge, center area
 - **Leading edge.** Elements that let people return to the previous document and show or hide a sidebar appear at the far leading edge, followed by the view title. Next to the title, the toolbar can include a document menu that contains standard and app-specific commands that affect the document as a whole, such as Duplicate, Rename, Move, and Export. To ensure that these items are always available, items on the toolbar’s leading edge aren’t customizable.
 - **Center area.** Common, useful controls appear in the center area, and the view title can appear here if it’s not on the leading edge. In macOS and iPadOS, people can add, remove, and rearrange items here if you let them customize the toolbar, and items in this section automatically collapse into the system-managed overflow menu when the window shrinks enough in size.
 - **Trailing edge.** The trailing edge contains important items that need to remain available, buttons that open nearby inspectors, an optional search field, and the More menu that contains additional items and supports toolbar customization. It also includes a primary action like Done when one exists. Items on the trailing edge remain visible at all window sizes.
-
-
 
 To position items in the groupings you want, pin them to the leading edge, center, or trailing edge, and insert space between buttons or other items where appropriate.
 
@@ -107,23 +103,17 @@ To position items in the groupings you want, pin them to the leading edge, cente
 
 In a macOS app, the toolbar resides in the frame at the top of a window, either below or integrated with the title bar. Note that window titles can display inline with controls, and toolbar items don’t include a bezel.
 
-
-
 **Make every toolbar item available as a command in the menu bar.** Because people can customize the toolbar or hide it, it can’t be the only place that presents a command. In contrast, it doesn’t make sense to provide a toolbar item for every menu item, because not all menu commands are important enough or used often enough to warrant space in the toolbar.
 
 ### visionOS
 
 In visionOS, the system-provided toolbar appears along the bottom edge of a window, above the window-management controls, and in a parallel plane that’s slightly in front of the window along the z-axis.
 
-
-
 To maintain the legibility of toolbar items as content scrolls behind them, visionOS uses a variable blur in the bar background. The variable blur anchors the bar above the scrolling content while letting the view’s glass material remain uniform and undivided.
 
 In visionOS, you can supply either a symbol or a text label for each toolbar item. When people look at a toolbar item that contains a symbol, visionOS reveals the text label, providing additional information.
 
 **Prefer using a system-provided toolbar.** The standard toolbar has a consistent and familiar appearance and is optimized to work well with eye and hand input. In addition, the system automatically places a standard toolbar in the correct position in relation to its window.
-
-
 
 **Avoid creating a vertical toolbar.** In visionOS, [Tab bars](/design/human-interface-guidelines/tab-bars) are vertical, so presenting a vertical toolbar could confuse people.
 
@@ -175,7 +165,14 @@ For developer guidance, see [primaryAction](/documentation/SwiftUI/ToolbarItemPl
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| December 16, 2025 | Updated guidance for Liquid Glass. |
+| June 9, 2025 | Added guidance for grouping bar items, updated guidance for using symbols, and incorporated navigation bar guidance. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+| June 5, 2023 | Updated guidance for using toolbars in watchOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

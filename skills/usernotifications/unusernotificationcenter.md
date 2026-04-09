@@ -2,10 +2,10 @@
 title: UNUserNotificationCenter
 description: The central object for managing notification-related activities for your app or app extension.
 source: https://developer.apple.com/documentation/usernotifications/unusernotificationcenter
-timestamp: 2026-01-19T10:22:53.265Z
+timestamp: 2026-04-09T12:04:44.790Z
 ---
 
-**Navigation:** [Usernotifications](/documentation/usernotifications)
+**Navigation:** [UserNotifications](/documentation/usernotifications)
 
 **Class**
 
@@ -21,17 +21,17 @@ class UNUserNotificationCenter
 
 ## Overview
 
-Use the shared [UNUser Notification Center](/documentation/usernotifications/unusernotificationcenter) object to manage all notification-related behaviors in your app or app extension. Specifically, use this object to do the following:
+Use the shared [UNUserNotificationCenter](/documentation/usernotifications/unusernotificationcenter) object to manage all notification-related behaviors in your app or app extension. Specifically, use this object to do the following:
 
-- Request authorization to interact with the user through alerts, sounds, and icon badges. See [asking-permission-to-use](/documentation/usernotifications/asking-permission-to-use-notifications).
-- Declare the notification types that your app supports and the custom actions the user may perform when the system delivers those notifications. See [declaring-your-actionable-notification](/documentation/usernotifications/declaring-your-actionable-notification-types).
-- Schedule the delivery of notifications from your app. See [scheduling-a-notification-locally-from-your](/documentation/usernotifications/scheduling-a-notification-locally-from-your-app).
-- Process the payloads from remote notifications the system delivers by Apple Push Notification service (APNs). See [handling-notifications-and-notification-related](/documentation/usernotifications/handling-notifications-and-notification-related-actions).
+- Request authorization to interact with the user through alerts, sounds, and icon badges. See [Asking permission to use notifications](/documentation/usernotifications/asking-permission-to-use-notifications).
+- Declare the notification types that your app supports and the custom actions the user may perform when the system delivers those notifications. See [Declaring your actionable notification types](/documentation/usernotifications/declaring-your-actionable-notification-types).
+- Schedule the delivery of notifications from your app. See [Scheduling a notification locally from your app](/documentation/usernotifications/scheduling-a-notification-locally-from-your-app).
+- Process the payloads from remote notifications the system delivers by Apple Push Notification service (APNs). See [Handling notifications and notification-related actions](/documentation/usernotifications/handling-notifications-and-notification-related-actions).
 - Manage the already delivered notifications the system displays in Notification Center. See Managing Delivered Notifications.
-- Handle user-selected actions associated with your custom notification types. See [handling-notifications-and-notification-related](/documentation/usernotifications/handling-notifications-and-notification-related-actions).
+- Handle user-selected actions associated with your custom notification types. See [Handling notifications and notification-related actions](/documentation/usernotifications/handling-notifications-and-notification-related-actions).
 - Get the notification-related settings for your app. See Managing Settings and Authorization.
 
-To handle incoming notifications and notification-related actions, create an object that adopts the [UNUser Notification Center Delegate](/documentation/usernotifications/unusernotificationcenterdelegate) protocol and assign it to the [delegate](/documentation/usernotifications/unusernotificationcenter/delegate) property. Always assign an object to the [delegate](/documentation/usernotifications/unusernotificationcenter/delegate) property before performing any tasks that might interact with that delegate.
+To handle incoming notifications and notification-related actions, create an object that adopts the [UNUserNotificationCenterDelegate](/documentation/usernotifications/unusernotificationcenterdelegate) protocol and assign it to the [delegate](/documentation/usernotifications/unusernotificationcenter/delegate) property. Always assign an object to the [delegate](/documentation/usernotifications/unusernotificationcenter/delegate) property before performing any tasks that might interact with that delegate.
 
 You may use the shared user notification center object simultaneously from any of your app’s threads. The object processes requests serially in the order that the system initiates them.
 
@@ -91,10 +91,10 @@ You may use the shared user notification center object simultaneously from any o
 
 ## Notification management
 
-- [UNUserNotificationCenterDelegate](/documentation/usernotifications/unusernotificationcenterdelegate)
-- [UNNotificationSettings](/documentation/usernotifications/unnotificationsettings)
+- [UNUserNotificationCenterDelegate](/documentation/usernotifications/unusernotificationcenterdelegate) An interface for processing incoming notifications and responding to notification actions.
+- [UNNotificationSettings](/documentation/usernotifications/unnotificationsettings) The object for managing notification-related settings and the authorization status of your app.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

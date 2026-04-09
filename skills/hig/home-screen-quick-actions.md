@@ -2,7 +2,7 @@
 title: Home Screen quick actions
 description: Home Screen quick actions give people a way to perform app-specific actions from the Home Screen.
 source: https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions
-timestamp: 2026-01-19T10:23:00.893Z
+timestamp: 2026-04-09T12:04:14.649Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-19T10:23:00.893Z
 # Home Screen quick actions
 
 > Home Screen quick actions give people a way to perform app-specific actions from the Home Screen.
-
-
 
 People can get a menu of available quick actions when they touch and hold an app icon (on a 3D Touch device, people can press on the icon with increased pressure to see the menu). For example, Mail includes quick actions that open the Inbox or the VIP mailbox, initiate a search, and create a new message. In addition to app-specific actions, a Home Screen quick action menu also lists items for removing the app and editing the Home Screen.
 
@@ -49,5 +47,5 @@ If you design your own interface icon, use the Quick Action Icon Template thatâ€
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

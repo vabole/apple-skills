@@ -2,10 +2,10 @@
 title: TipView
 description: A user interface element that represents an inline tip.
 source: https://developer.apple.com/documentation/tipkit/tipview
-timestamp: 2026-02-19T07:52:37.118Z
+timestamp: 2026-04-09T12:04:43.352Z
 ---
 
-**Navigation:** [Tipkit](/documentation/tipkit)
+**Navigation:** [TipKit](/documentation/tipkit)
 
 **Structure**
 
@@ -30,8 +30,7 @@ For example, display a tip view, above an image, with an arrow edge along the bo
 3. Create an instance of a `TipView`, near the feature you want to highlight, passing in the instance your tip’s content, along with an optional arrow edge.
 4. Then configure and load the tips for your app by calling [configure(_:)](/documentation/tipkit/tips/configure(_:)).
 
-> [!IMPORTANT]
-> Use [Tip UIView](/documentation/tipkit/tipuiview) and [Tip NSView](/documentation/tipkit/tipnsview) when adding tips to UIView and NSView hierarchies.
+> **Important:** Use [TipUIView](/documentation/tipkit/tipuiview) and [TipNSView](/documentation/tipkit/tipnsview) when adding tips to UIView and NSView hierarchies.
 
 ```swift
 import SwiftUI
@@ -78,9 +77,9 @@ struct SampleView: View {
 
 ## Views
 
-- [popoverTip(_:arrowEdge:action:)](/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:))
+- [popoverTip(_:arrowEdge:action:)](/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)) Presents a popover tip on the modified view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

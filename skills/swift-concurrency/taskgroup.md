@@ -2,7 +2,7 @@
 title: TaskGroup
 description: A group that contains dynamically created child tasks.
 source: https://developer.apple.com/documentation/swift/taskgroup
-timestamp: 2026-02-19T07:52:37.026Z
+timestamp: 2026-04-09T12:04:30.456Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -78,16 +78,13 @@ Because a `TaskGroup` is a structured concurrency primitive, cancellation is aut
 
 A canceled task group can still keep adding tasks, however they will start being immediately canceled, and might respond accordingly. To avoid adding new tasks to an already canceled task group, use `addTaskUnlessCancelled(name:priority:body:)` rather than the plain `addTask(name:priority:body:)` which adds tasks unconditionally.
 
-For information about the language-level concurrency model that `TaskGroup` is part of, see [Concurrency.html](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [](https://docs.swift.org/swift-book/).
+For information about the language-level concurrency model that `TaskGroup` is part of, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
-> [!NOTE]
-> [Throwing Task Group](/documentation/swift/throwingtaskgroup)
+> **See Also:** [ThrowingTaskGroup](/documentation/swift/throwingtaskgroup)
 
-> [!NOTE]
-> [Discarding Task Group](/documentation/swift/discardingtaskgroup)
+> **See Also:** [DiscardingTaskGroup](/documentation/swift/discardingtaskgroup)
 
-> [!NOTE]
-> [Throwing Discarding Task Group](/documentation/swift/throwingdiscardingtaskgroup)
+> **See Also:** [ThrowingDiscardingTaskGroup](/documentation/swift/throwingdiscardingtaskgroup)
 
 ## Conforms To
 
@@ -165,18 +162,18 @@ For information about the language-level concurrency model that `TaskGroup` is p
 
 ## Tasks
 
-- [Task](/documentation/swift/task)
-- [withTaskGroup(of:returning:isolation:body:)](/documentation/swift/withtaskgroup(of:returning:isolation:body:))
-- [ThrowingTaskGroup](/documentation/swift/throwingtaskgroup)
-- [withThrowingTaskGroup(of:returning:isolation:body:)](/documentation/swift/withthrowingtaskgroup(of:returning:isolation:body:))
-- [TaskPriority](/documentation/swift/taskpriority)
-- [DiscardingTaskGroup](/documentation/swift/discardingtaskgroup)
-- [withDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withdiscardingtaskgroup(returning:isolation:body:))
-- [ThrowingDiscardingTaskGroup](/documentation/swift/throwingdiscardingtaskgroup)
-- [withThrowingDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withthrowingdiscardingtaskgroup(returning:isolation:body:))
-- [UnsafeCurrentTask](/documentation/swift/unsafecurrenttask)
+- [Task](/documentation/swift/task) A unit of asynchronous work.
+- [withTaskGroup(of:returning:isolation:body:)](/documentation/swift/withtaskgroup(of:returning:isolation:body:)) Starts a new scope that can contain a dynamic number of child tasks.
+- [ThrowingTaskGroup](/documentation/swift/throwingtaskgroup) A group that contains throwing, dynamically created child tasks.
+- [withThrowingTaskGroup(of:returning:isolation:body:)](/documentation/swift/withthrowingtaskgroup(of:returning:isolation:body:)) Starts a new scope that can contain a dynamic number of throwing child tasks.
+- [TaskPriority](/documentation/swift/taskpriority) The priority of a task.
+- [DiscardingTaskGroup](/documentation/swift/discardingtaskgroup) A discarding group that contains dynamically created child tasks.
+- [withDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withdiscardingtaskgroup(returning:isolation:body:)) Starts a new scope that can contain a dynamic number of child tasks.
+- [ThrowingDiscardingTaskGroup](/documentation/swift/throwingdiscardingtaskgroup) A throwing discarding group that contains dynamically created child tasks.
+- [withThrowingDiscardingTaskGroup(returning:isolation:body:)](/documentation/swift/withthrowingdiscardingtaskgroup(returning:isolation:body:)) Starts a new scope that can contain a dynamic number of child tasks.
+- [UnsafeCurrentTask](/documentation/swift/unsafecurrenttask) An unsafe reference to the current task.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

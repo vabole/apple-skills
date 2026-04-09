@@ -2,10 +2,10 @@
 title: Toggle
 description: A control that toggles between on and off states.
 source: https://developer.apple.com/documentation/swiftui/toggle
-timestamp: 2026-01-19T10:23:15.339Z
+timestamp: 2026-04-09T12:04:41.401Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -70,8 +70,7 @@ var body: some View {
 }
 ```
 
-> [!NOTE]
-> This behavior does not apply to [button](/documentation/swiftui/togglestyle/button).
+> **Note:** This behavior does not apply to [button](/documentation/swiftui/togglestyle/button).
 
 ### Styling toggles
 
@@ -87,7 +86,7 @@ VStack {
 .toggleStyle(.switch)
 ```
 
-You can also define custom styles by creating a type that conforms to the [Toggle Style](/documentation/swiftui/togglestyle) protocol.
+You can also define custom styles by creating a type that conforms to the [ToggleStyle](/documentation/swiftui/togglestyle) protocol.
 
 ## Conforms To
 
@@ -113,16 +112,16 @@ You can also define custom styles by creating a type that conforms to the [Toggl
 
 ## Creating a toggle for an App Intent
 
-- [init(isOn:intent:label:)](/documentation/swiftui/toggle/init(ison:intent:label:)) Creates a toggle performing an .
-- [init(_:isOn:intent:)](/documentation/swiftui/toggle/init(_:ison:intent:)) Creates a toggle performing an  and generates its label from a localized string key.
+- [init(isOn:intent:label:)](/documentation/swiftui/toggle/init(ison:intent:label:)) Creates a toggle performing an `AppIntent`.
+- [init(_:isOn:intent:)](/documentation/swiftui/toggle/init(_:ison:intent:)) Creates a toggle performing an `AppIntent` and generates its label from a localized string key.
 
 ## Getting numeric inputs
 
-- [Slider](/documentation/swiftui/slider)
-- [Stepper](/documentation/swiftui/stepper)
-- [toggleStyle(_:)](/documentation/swiftui/view/togglestyle(_:))
+- [Slider](/documentation/swiftui/slider) A control for selecting a value from a bounded linear range of values.
+- [Stepper](/documentation/swiftui/stepper) A control that performs increment and decrement actions.
+- [toggleStyle(_:)](/documentation/swiftui/view/togglestyle(_:)) Sets the style for toggles in a view hierarchy.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,7 +2,7 @@
 title: Materials
 description: A material is a visual effect that creates a sense of depth, layering, and hierarchy between foreground and background elements.
 source: https://developer.apple.com/design/human-interface-guidelines/materials
-timestamp: 2026-01-17T15:44:50.398Z
+timestamp: 2026-04-09T12:18:12.008Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:44:50.398Z
 # Materials
 
 > A material is a visual effect that creates a sense of depth, layering, and hierarchy between foreground and background elements.
-
-
 
 Materials help visually separate foreground elements, such as text and controls, from background elements, such as content and solid colors. By allowing color to pass through from background to foreground, a material establishes visual hierarchy to help people more easily retain a sense of place.
 
@@ -32,8 +30,6 @@ Liquid Glass forms a distinct functional layer for controls and navigation eleme
 The *regular* variant blurs and adjusts the luminosity of background content to maintain legibility of text and other foreground elements. Scroll edge effects further enhance legibility by blurring and reducing the opacity of background content. Most system components use this variant. Use the regular variant when background content might create legibility issues, or when components have a significant amount of text, such as alerts, sidebars, or popovers.
 
 The *clear* variant is highly translucent, which is ideal for prioritizing the visibility of the underlying content and ensuring visually rich background elements remain prominent. Use this variant for components that float above media backgrounds — such as photos and videos — to create a more immersive content experience.
-
-
 
 For optimal contrast and legibility, determine whether to add a dimming layer behind components with clear Liquid Glass:
 
@@ -92,13 +88,20 @@ macOS provides several standard materials with designated purposes, and vibrant 
 
 In tvOS, Liquid Glass appears throughout navigation elements and system experiences such as Top Shelf and Control Center. Certain interface elements, like image views and buttons, adopt Liquid Glass when they gain focus.
 
-
-
 In addition to Liquid Glass, tvOS continues to provide standard materials, which you can use to help define structure in the content layer. The thickness of a standard material affects how prominently the underlying content shows through. For example, consider using standard materials in the following ways:
+
+| Material | Recommended for |
+| --- | --- |
+| [ultraThin](/documentation/SwiftUI/Material/ultraThin) | Full-screen views that require a light color scheme |
+| [thin](/documentation/SwiftUI/Material/thin) | Overlay views that partially obscure onscreen content and require a light color scheme |
+| [regular](/documentation/SwiftUI/Material/regular) | Overlay views that partially obscure onscreen content |
+| [thick](/documentation/SwiftUI/Material/thick) | Overlay views that partially obscure onscreen content and require a dark color scheme |
 
 ### visionOS
 
 In visionOS, windows generally use an unmodifiable system-defined material called *glass* that helps people stay grounded by letting light, the current Environment, virtual content, and objects in people’s surroundings show through. Glass is an adaptive material that limits the range of background color information so a window can continue to provide contrast for app content while becoming brighter or darker depending on people’s physical surroundings and other virtual content.
+
+> **Note:** visionOS doesn’t have a distinct Dark Mode setting. Instead, glass automatically adapts to the luminance of the objects and colors behind it.
 
 **Prefer translucency to opaque colors in windows.** Areas of opacity can block people’s view, making them feel constricted and reducing their awareness of the virtual and physical objects around them.
 
@@ -107,8 +110,6 @@ In visionOS, windows generally use an unmodifiable system-defined material calle
 - The [thin](/documentation/SwiftUI/Material/thin) material brings attention to interactive elements like buttons and selected items.
 - The [regular](/documentation/SwiftUI/Material/regular) material can help you visually separate sections of your app, like a sidebar or a grouped table view.
 - The [thick](/documentation/SwiftUI/Material/thick) material lets you create a dark element that remains visually distinct when it’s on top of an area that uses a `regular` background.
-
-
 
 To ensure foreground content remains legible when it displays on top of a material, visionOS applies vibrancy to text, symbols, and fills. Vibrancy enhances the sense of depth by pulling light and color forward from both virtual and physical surroundings.
 
@@ -121,8 +122,6 @@ visionOS defines three vibrancy values that help you communicate a hierarchy of 
 ### watchOS
 
 **Use materials to provide context in a full-screen modal view.** Because full-screen modal views are common in watchOS, the contrast provided by material layers can help orient people in your app and distinguish controls and system elements from other content. Avoid removing or replacing material backgrounds for modal sheets when they’re provided by default.
-
-
 
 ## Resources
 
@@ -153,7 +152,16 @@ visionOS defines three vibrancy values that help you communicate a hierarchy of 
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| September 9, 2025 | Updated guidance for Liquid Glass. |
+| June 9, 2025 | Added guidance for Liquid Glass. |
+| August 6, 2024 | Added platform-specific art. |
+| December 5, 2023 | Updated descriptions of the various material types, and clarified terms related to vibrancy and material thickness. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+| June 5, 2023 | Added guidance on using materials to provide context and orientation in watchOS apps. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

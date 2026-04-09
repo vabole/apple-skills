@@ -2,16 +2,16 @@
 title: Map
 description: A view that displays an embedded map interface.
 source: https://developer.apple.com/documentation/mapkit/map
-timestamp: 2026-02-19T07:52:37.031Z
+timestamp: 2026-04-09T12:04:25.678Z
 ---
 
-**Navigation:** [Mapkit](/documentation/mapkit)
+**Navigation:** [MapKit](/documentation/mapkit)
 
 **Structure**
 
 # Map
 
-**Available on:** iOS 14.0+, iPadOS 14.0+, Mac Catalyst undefined+, macOS 11.0+, tvOS 14.0+, visionOS undefined+, watchOS 7.0+
+**Available on:** iOS 14.0+, iPadOS 14.0+, Mac Catalyst, macOS 11.0+, tvOS 14.0+, visionOS, watchOS 7.0+
 
 > A view that displays an embedded map interface.
 
@@ -45,23 +45,23 @@ Use this SwiftUI view to display a `Map` with markers, annotations, and custom c
     }
 ```
 
-You create markers, annotations, and overlays using [Map Content Builder](/documentation/mapkit/mapcontentbuilder) with any of several [Map Content](/documentation/mapkit/mapcontent) types including:
+You create markers, annotations, and overlays using [MapContentBuilder](/documentation/mapkit/mapcontentbuilder) with any of several [MapContent](/documentation/mapkit/mapcontent) types including:
 
 - [Annotation](/documentation/mapkit/annotation)
-- [User Annotation](/documentation/mapkit/userannotation)
+- [UserAnnotation](/documentation/mapkit/userannotation)
 - [Marker](/documentation/mapkit/marker)
-- [Map Circle](/documentation/mapkit/mapcircle)
-- [Map Polygon](/documentation/mapkit/mappolygon)
-- [Map Polyline](/documentation/mapkit/mappolyline)
+- [MapCircle](/documentation/mapkit/mapcircle)
+- [MapPolygon](/documentation/mapkit/mappolygon)
+- [MapPolyline](/documentation/mapkit/mappolyline)
 
 You can also add a variety of controls to allow a person to interact with the map to change the map’s scale, display or hide the device’s current location, and so on:
 
-- [Map Compass](/documentation/mapkit/mapcompass)
+- [MapCompass](/documentation/mapkit/mapcompass)
 - `MapPitchButton`
-- [Map Pitch Slider](/documentation/mapkit/mappitchslider)
-- [Map Scale View](/documentation/mapkit/mapscaleview)
-- [Map User Location Button](/documentation/mapkit/mapuserlocationbutton)
-- [Map Zoom Stepper](/documentation/mapkit/mapzoomstepper)
+- [MapPitchSlider](/documentation/mapkit/mappitchslider)
+- [MapScaleView](/documentation/mapkit/mapscaleview)
+- [MapUserLocationButton](/documentation/mapkit/mapuserlocationbutton)
+- [MapZoomStepper](/documentation/mapkit/mapzoomstepper)
 
 ## Conforms To
 
@@ -105,9 +105,9 @@ You can also add a variety of controls to allow a person to interact with the ma
 
 ## Essentials
 
-- [MapStyle](/documentation/mapkit/mapstyle)
+- [MapStyle](/documentation/mapkit/mapstyle) A style that you can apply to a map.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

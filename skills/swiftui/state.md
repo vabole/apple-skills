@@ -2,10 +2,10 @@
 title: State
 description: A property wrapper type that can read and write a value managed by SwiftUI.
 source: https://developer.apple.com/documentation/swiftui/state
-timestamp: 2026-02-19T07:56:07.220Z
+timestamp: 2026-04-09T12:04:40.342Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -35,7 +35,7 @@ struct PlayButton: View {
 }
 ```
 
-SwiftUI manages the property’s storage. When the value changes, SwiftUI updates the parts of the view hierarchy that depend on the value. To access a state’s underlying value, you use its [wrapped Value](/documentation/swiftui/state/wrappedvalue) property. However, as a shortcut Swift enables you to access the wrapped value by referring directly to the state instance. The above example reads and writes the `isPlaying` state property’s wrapped value by referring to the property directly.
+SwiftUI manages the property’s storage. When the value changes, SwiftUI updates the parts of the view hierarchy that depend on the value. To access a state’s underlying value, you use its [wrappedValue](/documentation/swiftui/state/wrappedvalue) property. However, as a shortcut Swift enables you to access the wrapped value by referring directly to the state instance. The above example reads and writes the `isPlaying` state property’s wrapped value by referring to the property directly.
 
 Declare state as private in the highest view in the view hierarchy that needs access to the value. Then share the state with any subviews that also need access, either directly for read-only access, or as a binding for read-write access. You can safely mutate state properties from any thread.
 
@@ -57,7 +57,7 @@ struct PlayButton: View {
 }
 ```
 
-Then you can define a player view that declares the state and creates a binding to the state. Get the binding to the state value by accessing the state’s [projected Value](/documentation/swiftui/state/projectedvalue), which you get by prefixing the property name with a dollar sign (`$`):
+Then you can define a player view that declares the state and creates a binding to the state. Get the binding to the state value by accessing the state’s [projectedValue](/documentation/swiftui/state/projectedvalue), which you get by prefixing the property name with a dollar sign (`$`):
 
 ```swift
 struct PlayerView: View {
@@ -73,7 +73,7 @@ struct PlayerView: View {
 }
 ```
 
-Like you do for a [State Object](/documentation/swiftui/stateobject), declare `State` as private to prevent setting it in a memberwise initializer, which can conflict with the storage management that SwiftUI provides. Unlike a state object, always initialize state by providing a default value in the state’s declaration, as in the above examples. Use state only for storage that’s local to a view and its subviews.
+Like you do for a [StateObject](/documentation/swiftui/stateobject), declare `State` as private to prevent setting it in a memberwise initializer, which can conflict with the storage management that SwiftUI provides. Unlike a state object, always initialize state by providing a default value in the state’s declaration, as in the above examples. Use state only for storage that’s local to a view and its subviews.
 
 ### Store observable objects
 
@@ -112,8 +112,7 @@ struct ContentView: View {
 
 Delaying the creation of the observable state object ensures that unnecessary allocations of the object doesn’t happen each time SwiftUI initializes the view. Using the `View/task(priority:_:)` modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
 
-> [!NOTE]
-> It’s possible to store an object that conforms to the [Observable Object](/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [State Object](/documentation/swiftui/stateobject) instead of [State](/documentation/swiftui/state) when storing the object.
+> **Note:** It’s possible to store an object that conforms to the [ObservableObject](/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [StateObject](/documentation/swiftui/stateobject) instead of [State](/documentation/swiftui/state) when storing the object.
 
 ### Share observable state objects with subviews
 
@@ -190,7 +189,7 @@ struct BookCheckoutView: View {
 }
 ```
 
-If you need a binding to a specific property of the object, pass either the binding to the object and extract bindings to specific properties where needed, or pass the object reference and use the [Bindable](/documentation/swiftui/bindable) property wrapper to create bindings to specific properties. For example, in the following code `BookEditorView` wraps `book` with `@Bindable`. Then the view uses the `$` syntax to pass to a [Text Field](/documentation/swiftui/textfield) a binding to `title`:
+If you need a binding to a specific property of the object, pass either the binding to the object and extract bindings to specific properties where needed, or pass the object reference and use the [Bindable](/documentation/swiftui/bindable) property wrapper to create bindings to specific properties. For example, in the following code `BookEditorView` wraps `book` with `@Bindable`. Then the view uses the `$` syntax to pass to a [TextField](/documentation/swiftui/textfield) a binding to `title`:
 
 ```swift
 struct ContentView: View {
@@ -237,11 +236,11 @@ struct BookEditorView: View {
 
 ## Creating and sharing view state
 
-- [Managing user interface state](/documentation/swiftui/managing-user-interface-state)
-- [Bindable](/documentation/swiftui/bindable)
-- [Binding](/documentation/swiftui/binding)
+- [Managing user interface state](/documentation/swiftui/managing-user-interface-state) Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
+- [Bindable](/documentation/swiftui/bindable) A property wrapper type that supports creating bindings to the mutable properties of observable objects.
+- [Binding](/documentation/swiftui/binding) A property wrapper type that can read and write a value owned by a source of truth.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

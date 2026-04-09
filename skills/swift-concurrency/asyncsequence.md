@@ -2,7 +2,7 @@
 title: AsyncSequence
 description: A type that provides asynchronous, sequential, iterated access to its elements.
 source: https://developer.apple.com/documentation/swift/asyncsequence
-timestamp: 2026-02-19T07:52:36.994Z
+timestamp: 2026-04-09T12:04:29.338Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -132,11 +132,11 @@ for await s in stream {
 
 ## Adapting Textual Sequences
 
-- [characters](/documentation/swift/asyncsequence/characters) A non-blocking sequence of  created by decoding the elements of  as UTF8.
+- [characters](/documentation/swift/asyncsequence/characters) A non-blocking sequence of `Characters` created by decoding the elements of `self` as UTF8.
 - [AsyncCharacterSequence](/documentation/Foundation/AsyncCharacterSequence) An asynchronous sequence of characters.
-- [unicodeScalars](/documentation/swift/asyncsequence/unicodescalars) A non-blocking sequence of  created by decoding the elements of  as UTF8.
+- [unicodeScalars](/documentation/swift/asyncsequence/unicodescalars) A non-blocking sequence of `UnicodeScalars` created by decoding the elements of `self` as UTF8.
 - [AsyncUnicodeScalarSequence](/documentation/Foundation/AsyncUnicodeScalarSequence) An asychronous sequence of Unicode scalar values.
-- [lines](/documentation/swift/asyncsequence/lines) A non-blocking sequence of newline-separated  created by decoding the elements of  as UTF8.
+- [lines](/documentation/swift/asyncsequence/lines) A non-blocking sequence of newline-separated `Strings` created by decoding the elements of `self` as UTF8.
 - [AsyncLineSequence](/documentation/Foundation/AsyncLineSequence) An asynchronous sequence of lines of text.
 
 ## Associated Types
@@ -152,10 +152,10 @@ for await s in stream {
 
 ## Asynchronous Sequences
 
-- [AsyncStream](/documentation/swift/asyncstream)
-- [AsyncThrowingStream](/documentation/swift/asyncthrowingstream)
+- [AsyncStream](/documentation/swift/asyncstream) An asynchronous sequence generated from a closure that calls a continuation to produce new elements.
+- [AsyncThrowingStream](/documentation/swift/asyncthrowingstream) An asynchronous sequence generated from an error-throwing closure that calls a continuation to produce new elements.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

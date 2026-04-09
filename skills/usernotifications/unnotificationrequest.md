@@ -2,10 +2,10 @@
 title: UNNotificationRequest
 description: A request to schedule a local notification, which includes the content of the notification and the trigger conditions for delivery.
 source: https://developer.apple.com/documentation/usernotifications/unnotificationrequest
-timestamp: 2026-01-19T10:22:53.467Z
+timestamp: 2026-04-09T12:04:44.208Z
 ---
 
-**Navigation:** [Usernotifications](/documentation/usernotifications)
+**Navigation:** [UserNotifications](/documentation/usernotifications)
 
 **Class**
 
@@ -21,7 +21,7 @@ class UNNotificationRequest
 
 ## Overview
 
-Create a [UNNotification Request](/documentation/usernotifications/unnotificationrequest) object when you want to schedule the delivery of a local notification. A notification request object contains a [UNNotification Content](/documentation/usernotifications/unnotificationcontent) object with the payload and the [UNNotification Trigger](/documentation/usernotifications/unnotificationtrigger) object with the conditions that trigger the delivery of the notification. To schedule the delivery of your notification, pass your request object to the [add(_:withCompletionHandler:)](/documentation/usernotifications/unusernotificationcenter/add(_:withcompletionhandler:)) method of the shared user notification center object.
+Create a [UNNotificationRequest](/documentation/usernotifications/unnotificationrequest) object when you want to schedule the delivery of a local notification. A notification request object contains a [UNNotificationContent](/documentation/usernotifications/unnotificationcontent) object with the payload and the [UNNotificationTrigger](/documentation/usernotifications/unnotificationtrigger) object with the conditions that trigger the delivery of the notification. To schedule the delivery of your notification, pass your request object to the [add(_:withCompletionHandler:)](/documentation/usernotifications/unusernotificationcenter/add(_:withcompletionhandler:)) method of the shared user notification center object.
 
 After scheduling a request, you interact with `UNNotificationRequest` objects in the following ways:
 
@@ -29,7 +29,7 @@ After scheduling a request, you interact with `UNNotificationRequest` objects in
 - When the system delivers a notification to your app, the provided [UNNotification](/documentation/usernotifications/unnotification) object contains a `UNNotificationRequest` object that you can inspect to get the notification details.
 - Use the request’s [identifier](/documentation/usernotifications/unnotificationrequest/identifier) to remove delivered notifications from Notification Center.
 
-When receiving a local or remote notification, use the provided [UNNotification Request](/documentation/usernotifications/unnotificationrequest) object to fetch details about the notification.
+When receiving a local or remote notification, use the provided [UNNotificationRequest](/documentation/usernotifications/unnotificationrequest) object to fetch details about the notification.
 
 ```swift
 // Create a content object with the message to convey.
@@ -70,10 +70,10 @@ let request = UNNotificationRequest(identifier: "com.example.mynotification", co
 
 ## Notification requests
 
-- [Scheduling a notification locally from your app](/documentation/usernotifications/scheduling-a-notification-locally-from-your-app)
-- [UNNotification](/documentation/usernotifications/unnotification)
+- [Scheduling a notification locally from your app](/documentation/usernotifications/scheduling-a-notification-locally-from-your-app) Create and schedule notifications from your app when you want to get the user’s attention.
+- [UNNotification](/documentation/usernotifications/unnotification) The data for a local or remote notification the system delivers to your app.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

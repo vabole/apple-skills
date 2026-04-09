@@ -2,10 +2,10 @@
 title: StoreView
 description: A view that merchandises a collection of In-App Purchase products.
 source: https://developer.apple.com/documentation/storekit/storeview
-timestamp: 2026-02-19T07:52:36.993Z
+timestamp: 2026-04-09T12:04:28.283Z
 ---
 
-**Navigation:** [Storekit](/documentation/storekit)
+**Navigation:** [StoreKit](/documentation/storekit)
 
 **Structure**
 
@@ -35,15 +35,15 @@ The `StoreView` arranges products in rows. If the view has enough horizontal spa
 
 The store view grows to fit its container, and scrolls when the container doesn’t have enough space to display all the products. Use the [fixedSize(horizontal:vertical:)](/documentation/SwiftUI/View/fixedSize(horizontal:vertical:)) modifier to change this behavior.
 
-To achieve a custom layout, you can compose [Product View](/documentation/storekit/productview) instances with other container views instead of using the `StoreView`.
+To achieve a custom layout, you can compose [ProductView](/documentation/storekit/productview) instances with other container views instead of using the `StoreView`.
 
 ### Customize the store
 
 You can customize the store by displaying additional buttons, and applying styles.
 
-To display a button that syncs in-app purchase entitlements with the App Store, modify the in-app store view or an ancestor view using the `storeButton(_:for:)` modifier with the parameters [visible](/documentation/SwiftUI/Visibility/visible) and [restore Purchases](/documentation/storekit/storebuttonkind/restorepurchases). The app calls the [sync()](/documentation/storekit/appstore/sync()) method when people use this button.
+To display a button that syncs in-app purchase entitlements with the App Store, modify the in-app store view or an ancestor view using the `storeButton(_:for:)` modifier with the parameters [Visibility.visible](/documentation/SwiftUI/Visibility/visible) and [restorePurchases](/documentation/storekit/storebuttonkind/restorepurchases). The app calls the [sync()](/documentation/storekit/appstore/sync()) method when people use this button.
 
-You can customize the appearance of the products using product view styles, such as [Compact Product View Style](/documentation/storekit/compactproductviewstyle), [Large Product View Style](/documentation/storekit/largeproductviewstyle), and [Regular Product View Style](/documentation/storekit/regularproductviewstyle). To apply the style, call the [productViewStyle(_:)](/documentation/SwiftUI/View/productViewStyle(_:)) modifier.
+You can customize the appearance of the products using product view styles, such as [CompactProductViewStyle](/documentation/storekit/compactproductviewstyle), [LargeProductViewStyle](/documentation/storekit/largeproductviewstyle), and [RegularProductViewStyle](/documentation/storekit/regularproductviewstyle). To apply the style, call the [productViewStyle(_:)](/documentation/SwiftUI/View/productViewStyle(_:)) modifier.
 
 ## Conforms To
 
@@ -70,12 +70,12 @@ You can customize the appearance of the products using product view styles, such
 
 ## Merchandising In-App Purchases, subscriptions, and offers
 
-- [ProductView](/documentation/storekit/productview)
-- [SubscriptionStoreView](/documentation/storekit/subscriptionstoreview)
+- [ProductView](/documentation/storekit/productview) A view that merchandises an individual In-App Purchase product.
+- [SubscriptionStoreView](/documentation/storekit/subscriptionstoreview) A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 - [SubscriptionOfferView](/documentation/storekit/subscriptionofferview)
-- [Backyard Birds: Building an app with SwiftData and widgets](/documentation/SwiftUI/Backyard-birds-sample)
+- [Backyard Birds: Building an app with SwiftData and widgets](/documentation/SwiftUI/Backyard-birds-sample) Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

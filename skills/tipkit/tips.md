@@ -2,10 +2,10 @@
 title: Tips
 description: TipKit namespace.
 source: https://developer.apple.com/documentation/tipkit/tips
-timestamp: 2026-02-19T07:52:36.770Z
+timestamp: 2026-04-09T12:04:43.176Z
 ---
 
-**Navigation:** [Tipkit](/documentation/tipkit)
+**Navigation:** [TipKit](/documentation/tipkit)
 
 **Enumeration**
 
@@ -74,5 +74,5 @@ A collection of objects for controlling the display of your tips.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

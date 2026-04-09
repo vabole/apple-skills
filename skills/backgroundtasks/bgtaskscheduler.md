@@ -2,10 +2,10 @@
 title: BGTaskScheduler
 description: A class for scheduling tasks that add background support to your app’s most critical work.
 source: https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler
-timestamp: 2026-01-19T11:03:11.124Z
+timestamp: 2026-04-09T12:04:08.034Z
 ---
 
-**Navigation:** [Backgroundtasks](/documentation/backgroundtasks)
+**Navigation:** [BackgroundTasks](/documentation/backgroundtasks)
 
 **Class**
 
@@ -23,8 +23,8 @@ class BGTaskScheduler
 
 Background tasks give your app a way to run code even when the app is suspended:
 
-- To register, schedule, and run tasks in the background, see [using-background-tasks-to-update-your](/documentation/UIKit/using-background-tasks-to-update-your-app).
-- To submit work in the foreground that can finish even if the app moves to the background, see [performing-long-running-tasks-on-ios-and](/documentation/backgroundtasks/performing-long-running-tasks-on-ios-and-ipados).
+- To register, schedule, and run tasks in the background, see [Using background tasks to update your app](/documentation/UIKit/using-background-tasks-to-update-your-app).
+- To submit work in the foreground that can finish even if the app moves to the background, see [Performing long-running tasks on iOS and iPadOS](/documentation/backgroundtasks/performing-long-running-tasks-on-ios-and-ipados).
 
 ## Inherits From
 
@@ -63,16 +63,16 @@ Background tasks give your app a way to run code even when the app is suspended:
 
 ## Handling errors
 
-- [BGTaskScheduler.Error](/documentation/backgroundtasks/bgtaskscheduler/error) The Errors for the  domain.
+- [BGTaskScheduler.Error](/documentation/backgroundtasks/bgtaskscheduler/error) The Errors for the `BGTaskSchedulerError` domain.
 - [BGTaskScheduler.Error.Code](/documentation/backgroundtasks/bgtaskscheduler/error/code) An enumeration of the task scheduling errors.
 - [errorDomain](/documentation/backgroundtasks/bgtaskscheduler/errordomain) The background tasks error domain as a string.
 
 ## Essentials
 
-- [Background Tasks updates](/documentation/Updates/BackgroundTasks)
-- [BGTask](/documentation/backgroundtasks/bgtask)
+- [Background Tasks updates](/documentation/Updates/BackgroundTasks) Learn about important changes in Background Tasks.
+- [BGTask](/documentation/backgroundtasks/bgtask) An abstract class for the framework’s tasks.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

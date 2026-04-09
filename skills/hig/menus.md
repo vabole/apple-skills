@@ -2,7 +2,7 @@
 title: Menus
 description: A menu reveals its options when people interact with it, making it a space-efficient way to present commands in your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/menus
-timestamp: 2026-01-17T15:45:11.158Z
+timestamp: 2026-04-09T12:18:12.254Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,13 +13,15 @@ timestamp: 2026-01-17T15:45:11.158Z
 
 > A menu reveals its options when people interact with it, making it a space-efficient way to present commands in your app or game.
 
-
-
 Menus are ubiquitous in apps and games, so most people already know how to use them. Whether you use system-provided components or custom ones, people expect menus to behave in familiar ways. For example, people understand that opening a menu reveals one or more *menu items*, each of which represents a command, option, or state that affects the current selection or context. The guidance for labeling and organizing menu items applies to all types of menus in all experiences.
+
+> **Note:** Several system-provided components also include menus that support specific use cases. For example, a [Pop-up buttons](/design/human-interface-guidelines/pop-up-buttons) or [Pull-down buttons](/design/human-interface-guidelines/pull-down-buttons) can reveal a menu of options directly related to its action; a [Context menus](/design/human-interface-guidelines/context-menus) lets people access a small number of frequently used actions relevant to their current view or task; and in macOS and iPadOS, [The menu bar](/design/human-interface-guidelines/the-menu-bar) menus contain all the commands people can perform in the app or game.
 
 ## Labels
 
 A menu item’s label describes what it does and may include a symbol if it helps to clarify meaning. In an app, a menu item can also display the associated keyboard command, if there is one; in a game, a menu item rarely displays a keyboard command because a game typically needs to handle input from a wider range of devices and may offer game-specific mappings for various keys.
+
+> **Note:** Depending on menu layout, an iOS, iPadOS, or visionOS app can display a few unlabeled menu items that use only symbols or icons to identify them. For guidance, see [visionOS](/design/human-interface-guidelines/menus#visionOS) and [iOS, iPadOS](/design/human-interface-guidelines/menus#iOS-iPadOS).
 
 **For each menu item, write a label that clearly and succinctly describes it.** In general, label a menu item that initiates an action using a verb or verb phrase that describes the action, such as View, Close, or Select. For guidance labeling menu items that show and hide something in the interface or show the currently selected state of something, see [Toggled items](/design/human-interface-guidelines/menus#Toggled-items). As with all the copy you write, let your app’s or game’s communication style guide the tone of the menu-item labels you create.
 
@@ -93,8 +95,6 @@ In-game menus give players ways to control gameplay as well as determine [settin
 
 In iOS and iPadOS, a menu can display items in one of the following three layouts.
 
-
-
 - **Small.** A row of four items appears at the top of the menu, above a list that contains the remaining items. For each item in the top row, the menu displays a symbol or icon, but no label.
 - **Medium.** A row of three items appears at the top of the menu, above a list that contains the remaining items. For each item in the top row, the menu displays a symbol or icon above a short label.
 - **Large (the default).** The menu displays all items in a list.
@@ -108,8 +108,6 @@ For developer guidance, see [preferredElementSize](/documentation/UIKit/UIMenu/p
 In visionOS, a menu can display items using the small or large layout styles that iOS and iPadOS define (for guidance, see [iOS, iPadOS](/design/human-interface-guidelines/menus#iOS-iPadOS)). You can present a menu in your app or game from 3D content using a SwiftUI view. To ensure that your menu is always visible to people, even when other content occludes it, you can apply a [breakthrough effect](https://developer.apple.com/documentation/swiftui/view/presentationbreakthrougheffect(_:)). As in macOS, an open menu in a visionOS window can appear outside of the window’s boundaries.
 
 **Prefer displaying a menu near the content it controls.** Because people need to look at a menu item before tapping it, they might miss the item’s effect if the content it controls is too far away.
-
-
 
 **Prefer the subtle breakthrough effect in most cases.** This effect blends the presentation with its surrounding content, to maintain legibility and usability while preserving the depth and context of the scene. When you select [automatic](/documentation/SwiftUI/BreakthroughEffect/automatic) for the breakthrough effect of a menu that overlaps with 3D content, the system applies [subtle](/documentation/SwiftUI/BreakthroughEffect/subtle) by default. You can use [prominent](/documentation/SwiftUI/BreakthroughEffect/prominent) if it’s important to display a menu prominently over the entire scene in your app or game, but this can disrupt the experience for people and potentially cause discomfort. Alternatively, you can use [none](/documentation/SwiftUI/BreakthroughEffect/none) to fully occlude your menu behind other 3D content — for example, in a puzzle game that requires people to navigate around barriers — but this may make it difficult for people to see and access the menu.
 
@@ -135,7 +133,15 @@ In visionOS, a menu can display items using the small or large layout styles tha
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| December 16, 2025 | Added guidance for presenting menus with breakthrough effects in visionOS. |
+| July 28, 2025 | Added guidance for representing menu items with icons. |
+| June 10, 2024 | Added guidance for in-game menus and included game-specific examples. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+| September 14, 2022 | Added guidelines for using the small, medium, and large menu layouts in iPadOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

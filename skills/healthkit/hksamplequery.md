@@ -2,16 +2,16 @@
 title: HKSampleQuery
 description: A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
 source: https://developer.apple.com/documentation/healthkit/hksamplequery
-timestamp: 2026-01-19T10:21:37.631Z
+timestamp: 2026-04-09T12:04:11.894Z
 ---
 
-**Navigation:** [Healthkit](/documentation/healthkit)
+**Navigation:** [HealthKit](/documentation/healthkit)
 
 **Class**
 
 # HKSampleQuery
 
-**Available on:** iOS undefined+, iPadOS undefined+, Mac Catalyst undefined+, macOS undefined+, visionOS undefined+, watchOS undefined+
+**Available on:** iOS, iPadOS, Mac Catalyst, macOS, visionOS, watchOS
 
 > A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
 
@@ -21,14 +21,13 @@ class HKSampleQuery
 
 ## Overview
 
-You can use sample queries to search for any concrete subclasses of the [HKSample](/documentation/healthkit/hksample) class, including [HKCategory Sample](/documentation/healthkit/hkcategorysample), [HKCorrelation](/documentation/healthkit/hkcorrelation), [HKQuantity Sample](/documentation/healthkit/hkquantitysample), and [HKWorkout](/documentation/healthkit/hkworkout) objects.
+You can use sample queries to search for any concrete subclasses of the [HKSample](/documentation/healthkit/hksample) class, including [HKCategorySample](/documentation/healthkit/hkcategorysample), [HKCorrelation](/documentation/healthkit/hkcorrelation), [HKQuantitySample](/documentation/healthkit/hkquantitysample), and [HKWorkout](/documentation/healthkit/hkworkout) objects.
 
 The sample query returns sample objects that match the provided type and predicate. You can provide a sort order for the returned samples, or limit the number of samples returned. Other query classes can be used to perform more specialized searches and calculations. For more information, see [HKQuery](/documentation/healthkit/hkquery).
 
 Sample queries are immutable: The query’s properties are set when the query is first created, and they can’t change.
 
-> [!NOTE]
-> Like many HealthKit classes, the [HKSample Query](/documentation/healthkit/hksamplequery) class should not be subclassed.
+> **Note:** Like many HealthKit classes, the [HKSampleQuery](/documentation/healthkit/hksamplequery) class should not be subclassed.
 
 ## Inherits From
 
@@ -65,12 +64,12 @@ Sample queries are immutable: The query’s properties are set when the query is
 
 ## Basic queries
 
-- [HKSampleQueryDescriptor](/documentation/healthkit/hksamplequerydescriptor)
-- [HKCorrelationQuery](/documentation/healthkit/hkcorrelationquery)
-- [HKQueryDescriptor](/documentation/healthkit/hkquerydescriptor)
-- [HKQuery](/documentation/healthkit/hkquery)
+- [HKSampleQueryDescriptor](/documentation/healthkit/hksamplequerydescriptor) A query interface that reads samples using Swift concurrency.
+- [HKCorrelationQuery](/documentation/healthkit/hkcorrelationquery) A query that performs complex searches based on the correlation’s contents, and returns a snapshot of all matching samples.
+- [HKQueryDescriptor](/documentation/healthkit/hkquerydescriptor) A descriptor that specifies a set of samples based on the data type and a predicate.
+- [HKQuery](/documentation/healthkit/hkquery) An abstract class for all the query classes in HealthKit.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

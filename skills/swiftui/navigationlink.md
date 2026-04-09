@@ -2,10 +2,10 @@
 title: NavigationLink
 description: A view that controls a navigation presentation.
 source: https://developer.apple.com/documentation/swiftui/navigationlink
-timestamp: 2026-01-19T10:23:16.883Z
+timestamp: 2026-04-09T12:04:37.720Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -21,7 +21,7 @@ struct NavigationLink<Label, Destination> where Label : View, Destination : View
 
 ## Overview
 
-People click or tap a navigation link to present a view inside a [Navigation Stack](/documentation/swiftui/navigationstack) or [Navigation Split View](/documentation/swiftui/navigationsplitview). You control the visual appearance of the link by providing view content in the link’s `label` closure. For example, you can use a [Label](/documentation/swiftui/label) to display a link:
+People click or tap a navigation link to present a view inside a [NavigationStack](/documentation/swiftui/navigationstack) or [NavigationSplitView](/documentation/swiftui/navigationsplitview). You control the visual appearance of the link by providing view content in the link’s `label` closure. For example, you can use a [Label](/documentation/swiftui/label) to display a link:
 
 ```swift
 NavigationLink {
@@ -53,7 +53,7 @@ struct ColorDetail: View {
 }
 ```
 
-The following [Navigation Stack](/documentation/swiftui/navigationstack) presents three links to color detail views:
+The following [NavigationStack](/documentation/swiftui/navigationstack) presents three links to color detail views:
 
 ```swift
 NavigationStack {
@@ -112,7 +112,7 @@ func showBlue() {
 
 ### Coordinate with a list
 
-You can also use a navigation link to control [List](/documentation/swiftui/list) selection in a [Navigation Split View](/documentation/swiftui/navigationsplitview):
+You can also use a navigation link to control [List](/documentation/swiftui/list) selection in a [NavigationSplitView](/documentation/swiftui/navigationsplitview):
 
 ```swift
 let colors: [Color] = [.mint, .pink, .teal]
@@ -159,15 +159,15 @@ The list coordinates with the navigation logic so that changing the selection st
 
 ## Presenting views in columns
 
-- [Bringing robust navigation structure to your SwiftUI app](/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app)
-- [Migrating to new navigation types](/documentation/swiftui/migrating-to-new-navigation-types)
-- [NavigationSplitView](/documentation/swiftui/navigationsplitview)
-- [navigationSplitViewStyle(_:)](/documentation/swiftui/view/navigationsplitviewstyle(_:))
-- [navigationSplitViewColumnWidth(_:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(_:))
-- [navigationSplitViewColumnWidth(min:ideal:max:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max:))
-- [NavigationSplitViewVisibility](/documentation/swiftui/navigationsplitviewvisibility)
+- [Bringing robust navigation structure to your SwiftUI app](/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app) Use navigation links, stacks, destinations, and paths to provide a streamlined experience for all platforms, as well as behaviors such as deep linking and state restoration.
+- [Migrating to new navigation types](/documentation/swiftui/migrating-to-new-navigation-types) Improve navigation behavior in your app by replacing navigation views with navigation stacks and navigation split views.
+- [NavigationSplitView](/documentation/swiftui/navigationsplitview) A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.
+- [navigationSplitViewStyle(_:)](/documentation/swiftui/view/navigationsplitviewstyle(_:)) Sets the style for navigation split views within this view.
+- [navigationSplitViewColumnWidth(_:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(_:)) Sets a fixed, preferred width for the column containing this view.
+- [navigationSplitViewColumnWidth(min:ideal:max:)](/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max:)) Sets a flexible, preferred width for the column containing this view.
+- [NavigationSplitViewVisibility](/documentation/swiftui/navigationsplitviewvisibility) The visibility of the leading columns in a navigation split view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

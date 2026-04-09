@@ -2,10 +2,10 @@
 title: configure(_:)
 description: Loads and configures the persistent state of all tips in your app.
 source: https://developer.apple.com/documentation/tipkit/tips/configure(_:)
-timestamp: 2026-02-19T07:52:36.972Z
+timestamp: 2026-04-09T12:04:42.626Z
 ---
 
-**Navigation:** [Tipkit](/documentation/tipkit) › [tips](/documentation/tipkit/tips)
+**Navigation:** [TipKit](/documentation/tipkit) › [Tips](/documentation/tipkit/tips)
 
 **Type Method**
 
@@ -25,12 +25,9 @@ static func configure(_ configuration: [Tips.ConfigurationOption] = []) throws
 
 An array of options for customizing your tip’s datastore location and default frequency control interval.
 
-
-
 ## Discussion
 
-> [!NOTE]
-> This function must be called before tips display in your app.
+> **Note:** This function must be called before tips display in your app.
 
 Call this function during app initialization. By default, all tips persist to a default location with a display frequency of [immediate](/documentation/tipkit/tips/configurationoption/displayfrequency/immediate).
 
@@ -70,11 +67,11 @@ catch {
 
 ## Configuration
 
-- [cloudKitContainer(_:)](/documentation/tipkit/tips/configurationoption/cloudkitcontainer(_:))
-- [datastoreLocation(_:)](/documentation/tipkit/tips/configurationoption/datastorelocation(_:))
-- [displayFrequency(_:)](/documentation/tipkit/tips/configurationoption/displayfrequency(_:))
+- [cloudKitContainer(_:)](/documentation/tipkit/tips/configurationoption/cloudkitcontainer(_:)) Sets the CloudKit container used for syncing tips.
+- [datastoreLocation(_:)](/documentation/tipkit/tips/configurationoption/datastorelocation(_:)) Specify a custom location for your tips datastore.
+- [displayFrequency(_:)](/documentation/tipkit/tips/configurationoption/displayfrequency(_:)) Customizes how often new tips are presented in your app after another tip has been displayed.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

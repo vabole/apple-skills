@@ -2,7 +2,7 @@
 title: BarMark
 description: Chart content that represents data using bars.
 source: https://developer.apple.com/documentation/charts/barmark
-timestamp: 2026-02-19T07:56:08.015Z
+timestamp: 2026-04-09T12:04:33.308Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -45,8 +45,6 @@ var body: some View {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000.](https://docs-assets.developer.apple.com/published/a69f46e0c2563656f66919f67861d18e/BarMarkSwift.BarMarkBarChart%402x.png)
-
 Swift Charts provides several other initializers for `BarMark`. Below are a few more examples using them. For a full list of initializers see the topic section.
 
 ### Stacked Bar Chart
@@ -82,8 +80,6 @@ var body: some View {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance with stacked product categories Gizmos, Gadgets, Widgets, and with y-axis ranging from 0 to 20,000. There are 3 bars: Production 15000, Marketing 8000, and Finance 10000.](https://docs-assets.developer.apple.com/published/a69f46e0c2563656f66919f67861d18e/BarMarkSwift.BarMarkStackedBarChart%402x.png)
-
 This results in a chart that looks identical to the chart seen in the Overview section because the bars with the same department category are stacked on top of each other. To differentiate the product categories, add a [foregroundStyle(by:)](/documentation/charts/chartcontent/foregroundstyle(by:)) modifer that specifies a visual encoding for the `productCategory`:
 
 ```swift
@@ -96,13 +92,11 @@ Chart(data) {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance with stacked product categories Gizmos, Gadgets, Widgets, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15,000: Gizmos 4000, Gadgets 5000, and Widgets 6000, Marketing 8000: Gizmos 2000, Gadgets 1000, and Widgets 5000, Finance 10000: Gizmos 2000, Gadgets 3000, and Widgets 500. Legend showing the color mapped to a product category.](https://docs-assets.developer.apple.com/published/f9963976e24f81fcb62eb62501d49795/BarMarkSwift.BarMarkStackedBarChartWithForegroundColor%402x.png)
-
-You can use the optional `stacking:` parameter in the `BarMark` initializer to modify the stacking mechanism. See [Mark Stacking Method](/documentation/charts/markstackingmethod) for the stacking options.
+You can use the optional `stacking:` parameter in the `BarMark` initializer to modify the stacking mechanism. See [MarkStackingMethod](/documentation/charts/markstackingmethod) for the stacking options.
 
 ### 1D Bar Chart
 
-To build a one dimensional chart, use one of the initializers that only requires a [Plottable Value](/documentation/charts/plottablevalue) for one dimension, like [init(x:yStart:yEnd:width:stacking:)](/documentation/charts/barmark/init(x:ystart:yend:width:stacking:)) for plotting with x. The example below reuses the data from the previous example to get the production department values:
+To build a one dimensional chart, use one of the initializers that only requires a [PlottableValue](/documentation/charts/plottablevalue) for one dimension, like [init(x:yStart:yEnd:width:stacking:)](/documentation/charts/barmark/init(x:ystart:yend:width:stacking:)) for plotting with x. The example below reuses the data from the previous example to get the production department values:
 
 ```swift
 Chart(data) { // Get the Production values.
@@ -112,8 +106,6 @@ Chart(data) { // Get the Production values.
     .foregroundStyle(by: .value("Product Category", $0.productCategory))
 }
 ```
-
-![Horizontal bar chart with one bar on the x-axis showing profit ranging from 0 to 15000 with stacked categoreis Gizmos, Gadgets and Widgets. Legend showing the color mapped to a product category.](https://docs-assets.developer.apple.com/published/866989cb862990508465e796c804535b/BarMarkSwift.BarMarkHorizontalStacked1DBarChartWithForegroundColor%402x.png)
 
 ### Interval Bar Chart
 
@@ -146,8 +138,6 @@ var body: some View {
 }
 ```
 
-![Horizontal bar chart with x-axis showing start and end time and y-axis showing task name. It has 5 bars, Task 1 range 0 to 15, range 20 to 35, and range 40 to 55, and Task 2 range 5 to 25 and range 30 to 60 task.](https://docs-assets.developer.apple.com/published/fd3042845d4db04fed8b1cf4bff7e0c8/BarMarkSwift.BarMarkHorizontalIntervalBarChart%402x.png)
-
 ## Conforms To
 
 - [ChartContent](/documentation/charts/chartcontent)
@@ -169,14 +159,14 @@ var body: some View {
 
 ## Marks
 
-- [AreaMark](/documentation/charts/areamark)
-- [LineMark](/documentation/charts/linemark)
-- [PointMark](/documentation/charts/pointmark)
-- [RectangleMark](/documentation/charts/rectanglemark)
-- [RuleMark](/documentation/charts/rulemark)
-- [SectorMark](/documentation/charts/sectormark)
+- [AreaMark](/documentation/charts/areamark) Chart content that represents data using the area of one or more regions.
+- [LineMark](/documentation/charts/linemark) Chart content that represents data using a sequence of connected line segments.
+- [PointMark](/documentation/charts/pointmark) Chart content that represents data using points.
+- [RectangleMark](/documentation/charts/rectanglemark) Chart content that represents data using rectangles.
+- [RuleMark](/documentation/charts/rulemark) Chart content that represents data using a single horizontal or vertical rule.
+- [SectorMark](/documentation/charts/sectormark) A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

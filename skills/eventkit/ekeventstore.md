@@ -2,10 +2,10 @@
 title: EKEventStore
 description: An object that accesses a person’s calendar events and reminders and supports the scheduling of new events.
 source: https://developer.apple.com/documentation/eventkit/ekeventstore
-timestamp: 2026-01-19T11:03:12.623Z
+timestamp: 2026-04-09T12:04:09.655Z
 ---
 
-**Navigation:** [Eventkit](/documentation/eventkit)
+**Navigation:** [EventKit](/documentation/eventkit)
 
 **Class**
 
@@ -25,8 +25,7 @@ The `EKEventStore` class is an app’s point of contact for accessing calendar a
 
 After initializing the event store, you must request access to events or reminders before attempting to fetch or create data. To request access to reminders, call [requestFullAccessToReminders(completion:)](/documentation/eventkit/ekeventstore/requestfullaccesstoreminders(completion:)). To request access to events, call [requestWriteOnlyAccessToEvents(completion:)](/documentation/eventkit/ekeventstore/requestwriteonlyaccesstoevents(completion:)) or [requestFullAccessToEvents(completion:)](/documentation/eventkit/ekeventstore/requestfullaccesstoevents(completion:)).
 
-> [!IMPORTANT]
-> To request access to events and reminders, your app needs to include permission strings in its `Info.plist` file that explain to someone why the app needs access. For more information, see [accessing-the-event](/documentation/eventkit/accessing-the-event-store).
+> **Important:** To request access to events and reminders, your app needs to include permission strings in its `Info.plist` file that explain to someone why the app needs access. For more information, see [Accessing the event store](/documentation/eventkit/accessing-the-event-store).
 
 A typical workflow for using an event store is:
 
@@ -125,10 +124,10 @@ After receiving an object from an event store, don’t use that object with a di
 
 ## Essentials
 
-- [Accessing the event store](/documentation/eventkit/accessing-the-event-store)
-- [Accessing Calendar using EventKit and EventKitUI](/documentation/eventkit/accessing-calendar-using-eventkit-and-eventkitui)
+- [Accessing the event store](/documentation/eventkit/accessing-the-event-store) Request access to a person’s calendar data through the event store.
+- [Accessing Calendar using EventKit and EventKitUI](/documentation/eventkit/accessing-calendar-using-eventkit-and-eventkitui) Choose and implement the appropriate Calendar access level in your app.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

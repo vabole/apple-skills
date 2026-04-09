@@ -1,67 +1,60 @@
 ---
 title: Core Haptics
 source: https://developer.apple.com/documentation/corehaptics
-timestamp: 2026-01-19T11:02:44.294Z
+timestamp: 2026-04-09T12:04:09.260Z
 ---
+
+**Navigation:** [Core Haptics](/documentation/corehaptics)
 
 ## Essentials
 
 - [Preparing your app to play haptics](/documentation/corehaptics/preparing-your-app-to-play-haptics)
 - [Playing a single-tap haptic pattern](/documentation/corehaptics/playing-a-single-tap-haptic-pattern)
 - [CHHapticEngine](/documentation/corehaptics/chhapticengine)
-
 ### Initializing a Haptic Engine
 
 - [init() throws](/documentation/corehaptics/chhapticengine/init())
 - [init(audioSession: AVAudioSession?) throws](/documentation/corehaptics/chhapticengine/init(audiosession:))
-
 ### Starting and Stopping the Haptic Engine
 
 - [func start() throws](/documentation/corehaptics/chhapticengine/start())
 - [func start(completionHandler: (((any Error)?) -> Void)?)](/documentation/corehaptics/chhapticengine/start(completionhandler:))
 - [func stop(completionHandler: (((any Error)?) -> Void)?)](/documentation/corehaptics/chhapticengine/stop(completionhandler:))
 - [CHHapticEngine.CompletionHandler](/documentation/corehaptics/chhapticengine/completionhandler)
-
 ### Creating Haptic Pattern Players
 
 - [func makePlayer(with: CHHapticPattern) throws -> any CHHapticPatternPlayer](/documentation/corehaptics/chhapticengine/makeplayer(with:))
 - [func makeAdvancedPlayer(with: CHHapticPattern) throws -> any CHHapticAdvancedPatternPlayer](/documentation/corehaptics/chhapticengine/makeadvancedplayer(with:))
-
 ### Modifying Playback Properties
 
 - [var playsAudioOnly: Bool](/documentation/corehaptics/chhapticengine/playsaudioonly)
 - [var playsHapticsOnly: Bool](/documentation/corehaptics/chhapticengine/playshapticsonly)
 - [var isMutedForAudio: Bool](/documentation/corehaptics/chhapticengine/ismutedforaudio)
 - [var isMutedForHaptics: Bool](/documentation/corehaptics/chhapticengine/ismutedforhaptics)
-
 ### Playing a Pattern
 
 - [func playPattern(from: URL) throws](/documentation/corehaptics/chhapticengine/playpattern(from:)-6m9m5)
 - [func playPattern(from: Data) throws](/documentation/corehaptics/chhapticengine/playpattern(from:)-7u8se)
-
 ### Registering Audio Resources
 
 - [func registerAudioResource(URL, options: [AnyHashable : Any]) throws -> CHHapticAudioResourceID](/documentation/corehaptics/chhapticengine/registeraudioresource(_:options:))
-
 #### Audio Resource Keys
 
 - [let CHHapticAudioResourceKeyLoopEnabled: String](/documentation/corehaptics/chhapticaudioresourcekeyloopenabled)
 - [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](/documentation/corehaptics/chhapticaudioresourcekeyusevolumeenvelope)
 - [CHHapticAudioResourceKey](/documentation/corehaptics/chhapticaudioresourcekey)
+
 - [func unregisterAudioResource(CHHapticAudioResourceID) throws](/documentation/corehaptics/chhapticengine/unregisteraudioresource(_:))
 - [CHHapticAudioResourceID](/documentation/corehaptics/chhapticaudioresourceid)
-
 ### Monitoring Finished Playback
 
 - [func notifyWhenPlayersFinished(finishedHandler: CHHapticEngine.FinishedHandler)](/documentation/corehaptics/chhapticengine/notifywhenplayersfinished(finishedhandler:))
 - [CHHapticEngine.FinishedHandler](/documentation/corehaptics/chhapticengine/finishedhandler)
 - [CHHapticEngine.FinishedAction](/documentation/corehaptics/chhapticengine/finishedaction)
-
 #### Finished Actions
 
 - [case leaveEngineRunning](/documentation/corehaptics/chhapticengine/finishedaction/leaveenginerunning)
 - [case stopEngine](/documentation/corehaptics/chhapticengine/finishedaction/stopengine)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/corehaptics/chhapticengine/finishedaction/init(rawvalue:))
@@ -70,13 +63,11 @@ timestamp: 2026-01-19T11:02:44.294Z
 
 - [var resetHandler: CHHapticEngine.ResetHandler](/documentation/corehaptics/chhapticengine/resethandler-swift.property)
 - [CHHapticEngine.ResetHandler](/documentation/corehaptics/chhapticengine/resethandler-swift.typealias)
-
 ### Handling Haptic Engine Stoppages
 
 - [var stoppedHandler: CHHapticEngine.StoppedHandler](/documentation/corehaptics/chhapticengine/stoppedhandler-swift.property)
 - [CHHapticEngine.StoppedHandler](/documentation/corehaptics/chhapticengine/stoppedhandler-swift.typealias)
 - [CHHapticEngine.StoppedReason](/documentation/corehaptics/chhapticengine/stoppedreason)
-
 #### Stopped Reasons
 
 - [case audioSessionInterrupt](/documentation/corehaptics/chhapticengine/stoppedreason/audiosessioninterrupt)
@@ -86,7 +77,6 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [case idleTimeout](/documentation/corehaptics/chhapticengine/stoppedreason/idletimeout)
 - [case notifyWhenFinished](/documentation/corehaptics/chhapticengine/stoppedreason/notifywhenfinished)
 - [case systemError](/documentation/corehaptics/chhapticengine/stoppedreason/systemerror)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/corehaptics/chhapticengine/stoppedreason/init(rawvalue:))
@@ -95,39 +85,35 @@ timestamp: 2026-01-19T11:02:44.294Z
 
 - [var currentTime: TimeInterval](/documentation/corehaptics/chhapticengine/currenttime)
 - [var CHHapticTimeImmediate: TimeInterval](/documentation/corehaptics/chhaptictimeimmediate)
-
 ### Querying System Capabilities
 
 - [class func capabilitiesForHardware() -> any CHHapticDeviceCapability](/documentation/corehaptics/chhapticengine/capabilitiesforhardware())
 - [CHHapticDeviceCapability](/documentation/corehaptics/chhapticdevicecapability)
-
 #### Determining Support for Haptics
 
 - [var supportsAudio: Bool](/documentation/corehaptics/chhapticdevicecapability/supportsaudio)
 - [var supportsHaptics: Bool](/documentation/corehaptics/chhapticdevicecapability/supportshaptics)
-
 #### Determining Supported Parameters
 
 - [func attributes(forDynamicParameter: CHHapticDynamicParameter.ID) throws -> any CHHapticParameterAttributes](/documentation/corehaptics/chhapticdevicecapability/attributes(fordynamicparameter:))
 - [func attributes(forEventParameter: CHHapticEvent.ParameterID, eventType: CHHapticEvent.EventType) throws -> any CHHapticParameterAttributes](/documentation/corehaptics/chhapticdevicecapability/attributes(foreventparameter:eventtype:))
-- [CHHapticParameterAttributes](/documentation/corehaptics/chhapticparameterattributes)
 
+- [CHHapticParameterAttributes](/documentation/corehaptics/chhapticparameterattributes)
 #### Parameter Attributes
 
 - [var defaultValue: Float](/documentation/corehaptics/chhapticparameterattributes/defaultvalue)
 - [var minValue: Float](/documentation/corehaptics/chhapticparameterattributes/minvalue)
 - [var maxValue: Float](/documentation/corehaptics/chhapticparameterattributes/maxvalue)
-- [func attributes(forDynamicParameter: CHHapticDynamicParameter.ID) throws -> any CHHapticParameterAttributes](/documentation/corehaptics/chhapticdevicecapability/attributes(fordynamicparameter:))
 
+- [func attributes(forDynamicParameter: CHHapticDynamicParameter.ID) throws -> any CHHapticParameterAttributes](/documentation/corehaptics/chhapticdevicecapability/attributes(fordynamicparameter:))
 ### Managing Power
 
 - [var isAutoShutdownEnabled: Bool](/documentation/corehaptics/chhapticengine/isautoshutdownenabled)
-
 ### Instance Properties
 
 - [var intendedSpatialExperience: any SpatialAudioExperience](/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0)
-- [CHHapticPattern](/documentation/corehaptics/chhapticpattern)
 
+- [CHHapticPattern](/documentation/corehaptics/chhapticpattern)
 ### Creating a Haptic Pattern
 
 - [init(contentsOf: URL) throws](/documentation/corehaptics/chhapticpattern/init(contentsof:))
@@ -135,7 +121,6 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [init(events: [CHHapticEvent], parameters: [CHHapticDynamicParameter]) throws](/documentation/corehaptics/chhapticpattern/init(events:parameters:))
 - [init(dictionary: [CHHapticPattern.Key : Any]) throws](/documentation/corehaptics/chhapticpattern/init(dictionary:))
 - [CHHapticPattern.Key](/documentation/corehaptics/chhapticpattern/key)
-
 #### Haptic Pattern Keys
 
 - [static let event: CHHapticPattern.Key](/documentation/corehaptics/chhapticpattern/key/event)
@@ -153,7 +138,6 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [static let pattern: CHHapticPattern.Key](/documentation/corehaptics/chhapticpattern/key/pattern)
 - [static let time: CHHapticPattern.Key](/documentation/corehaptics/chhapticpattern/key/time)
 - [static let version: CHHapticPattern.Key](/documentation/corehaptics/chhapticpattern/key/version)
-
 #### Initializers
 
 - [init(rawValue: String)](/documentation/corehaptics/chhapticpattern/key/init(rawvalue:))
@@ -161,28 +145,25 @@ timestamp: 2026-01-19T11:02:44.294Z
 ### Retrieving Haptic Pattern Duration
 
 - [var duration: TimeInterval](/documentation/corehaptics/chhapticpattern/duration)
-
 ### Exporting a Haptic Pattern
 
 - [func exportDictionary() throws -> [CHHapticPattern.Key : Any]](/documentation/corehaptics/chhapticpattern/exportdictionary())
-- [CHHapticPatternPlayer](/documentation/corehaptics/chhapticpatternplayer)
 
+- [CHHapticPatternPlayer](/documentation/corehaptics/chhapticpatternplayer)
 ### Starting and Stopping Playback
 
 - [func start(atTime: TimeInterval) throws](/documentation/corehaptics/chhapticpatternplayer/start(attime:))
 - [func stop(atTime: TimeInterval) throws](/documentation/corehaptics/chhapticpatternplayer/stop(attime:))
 - [func cancel() throws](/documentation/corehaptics/chhapticpatternplayer/cancel())
-
 ### Sending Parameters to a Haptic
 
 - [func sendParameters([CHHapticDynamicParameter], atTime: TimeInterval) throws](/documentation/corehaptics/chhapticpatternplayer/sendparameters(_:attime:))
 - [func scheduleParameterCurve(CHHapticParameterCurve, atTime: TimeInterval) throws](/documentation/corehaptics/chhapticpatternplayer/scheduleparametercurve(_:attime:))
-
 ### Silencing Haptic Playback
 
 - [var isMuted: Bool](/documentation/corehaptics/chhapticpatternplayer/ismuted)
-- [CHHapticAdvancedPatternPlayer](/documentation/corehaptics/chhapticadvancedpatternplayer)
 
+- [CHHapticAdvancedPatternPlayer](/documentation/corehaptics/chhapticadvancedpatternplayer)
 ### Setting Playback Properties
 
 - [var loopEnabled: Bool](/documentation/corehaptics/chhapticadvancedpatternplayer/loopenabled)
@@ -190,13 +171,11 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [var playbackRate: Float](/documentation/corehaptics/chhapticadvancedpatternplayer/playbackrate)
 - [var completionHandler: CHHapticAdvancedPatternPlayerCompletionHandler](/documentation/corehaptics/chhapticadvancedpatternplayer/completionhandler)
 - [CHHapticAdvancedPatternPlayerCompletionHandler](/documentation/corehaptics/chhapticadvancedpatternplayercompletionhandler)
-
 ### Controlling Playback
 
 - [func pause(atTime: TimeInterval) throws](/documentation/corehaptics/chhapticadvancedpatternplayer/pause(attime:))
 - [func resume(atTime: TimeInterval) throws](/documentation/corehaptics/chhapticadvancedpatternplayer/resume(attime:))
 - [func seek(toOffset: TimeInterval) throws](/documentation/corehaptics/chhapticadvancedpatternplayer/seek(tooffset:))
-
 ### Silencing Haptic Playback
 
 - [var isMuted: Bool](/documentation/corehaptics/chhapticadvancedpatternplayer/ismuted)
@@ -207,16 +186,13 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [Playing Collision-Based Haptic Patterns](/documentation/corehaptics/playing-collision-based-haptic-patterns)
 - [Updating Continuous and Transient Haptic Parameters in Real Time](/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time)
 - [CHHapticEvent](/documentation/corehaptics/chhapticevent)
-
 ### Categorizing Haptic Events
 
 - [var type: CHHapticEvent.EventType](/documentation/corehaptics/chhapticevent/type)
 - [CHHapticEvent.EventType](/documentation/corehaptics/chhapticevent/eventtype)
-
 #### Specifying a Type
 
 - [init(rawValue: String)](/documentation/corehaptics/chhapticevent/eventtype/init(rawvalue:))
-
 #### Enumerating Haptic Types
 
 - [static let audioContinuous: CHHapticEvent.EventType](/documentation/corehaptics/chhapticevent/eventtype/audiocontinuous)
@@ -230,12 +206,10 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [init(audioResourceID: CHHapticAudioResourceID, parameters: [CHHapticEventParameter], relativeTime: TimeInterval, duration: TimeInterval)](/documentation/corehaptics/chhapticevent/init(audioresourceid:parameters:relativetime:duration:))
 - [init(eventType: CHHapticEvent.EventType, parameters: [CHHapticEventParameter], relativeTime: TimeInterval)](/documentation/corehaptics/chhapticevent/init(eventtype:parameters:relativetime:))
 - [init(eventType: CHHapticEvent.EventType, parameters: [CHHapticEventParameter], relativeTime: TimeInterval, duration: TimeInterval)](/documentation/corehaptics/chhapticevent/init(eventtype:parameters:relativetime:duration:))
-
 ### Configuring Haptic Events
 
 - [var eventParameters: [CHHapticEventParameter]](/documentation/corehaptics/chhapticevent/eventparameters)
 - [CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid)
-
 #### Haptic Event Parameter IDs
 
 - [static let hapticIntensity: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/hapticintensity)
@@ -244,26 +218,24 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [static let decayTime: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/decaytime)
 - [static let releaseTime: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/releasetime)
 - [static let sustained: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/sustained)
-
 #### Audio Event Parameter IDs
 
 - [static let audioVolume: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiovolume)
 - [static let audioPan: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiopan)
 - [static let audioPitch: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiopitch)
 - [static let audioBrightness: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiobrightness)
-
 #### Swift Initializers
 
 - [init(rawValue: String)](/documentation/corehaptics/chhapticevent/parameterid/init(rawvalue:))
+
 - [var relativeTime: TimeInterval](/documentation/corehaptics/chhapticevent/relativetime)
 - [var duration: TimeInterval](/documentation/corehaptics/chhapticevent/duration)
-- [CHHapticEventParameter](/documentation/corehaptics/chhapticeventparameter)
 
+- [CHHapticEventParameter](/documentation/corehaptics/chhapticeventparameter)
 ### Creating an Event Parameter
 
 - [init(parameterID: CHHapticEvent.ParameterID, value: Float)](/documentation/corehaptics/chhapticeventparameter/init(parameterid:value:))
 - [CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid)
-
 #### Haptic Event Parameter IDs
 
 - [static let hapticIntensity: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/hapticintensity)
@@ -272,14 +244,12 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [static let decayTime: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/decaytime)
 - [static let releaseTime: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/releasetime)
 - [static let sustained: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/sustained)
-
 #### Audio Event Parameter IDs
 
 - [static let audioVolume: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiovolume)
 - [static let audioPan: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiopan)
 - [static let audioPitch: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiopitch)
 - [static let audioBrightness: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticevent/parameterid/audiobrightness)
-
 #### Swift Initializers
 
 - [init(rawValue: String)](/documentation/corehaptics/chhapticevent/parameterid/init(rawvalue:))
@@ -288,13 +258,12 @@ timestamp: 2026-01-19T11:02:44.294Z
 
 - [var parameterID: CHHapticEvent.ParameterID](/documentation/corehaptics/chhapticeventparameter/parameterid)
 - [var value: Float](/documentation/corehaptics/chhapticeventparameter/value)
-- [CHHapticDynamicParameter](/documentation/corehaptics/chhapticdynamicparameter)
 
+- [CHHapticDynamicParameter](/documentation/corehaptics/chhapticdynamicparameter)
 ### Creating a Dynamic Parameter
 
 - [init(parameterID: CHHapticDynamicParameter.ID, value: Float, relativeTime: TimeInterval)](/documentation/corehaptics/chhapticdynamicparameter/init(parameterid:value:relativetime:))
 - [CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id)
-
 #### Haptic Dynamic Parameter IDs
 
 - [static let hapticIntensityControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/hapticintensitycontrol)
@@ -302,7 +271,6 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [static let hapticAttackTimeControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/hapticattacktimecontrol)
 - [static let hapticDecayTimeControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/hapticdecaytimecontrol)
 - [static let hapticReleaseTimeControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/hapticreleasetimecontrol)
-
 #### Audio Dynamic Parameter IDs
 
 - [static let audioBrightnessControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/audiobrightnesscontrol)
@@ -312,7 +280,6 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [static let audioAttackTimeControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/audioattacktimecontrol)
 - [static let audioDecayTimeControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/audiodecaytimecontrol)
 - [static let audioReleaseTimeControl: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/id/audioreleasetimecontrol)
-
 #### Swift Initializers
 
 - [init(rawValue: String)](/documentation/corehaptics/chhapticdynamicparameter/id/init(rawvalue:))
@@ -322,17 +289,15 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [var parameterID: CHHapticDynamicParameter.ID](/documentation/corehaptics/chhapticdynamicparameter/parameterid)
 - [var relativeTime: TimeInterval](/documentation/corehaptics/chhapticdynamicparameter/relativetime)
 - [var value: Float](/documentation/corehaptics/chhapticdynamicparameter/value)
-- [CHHapticParameterCurve](/documentation/corehaptics/chhapticparametercurve)
 
+- [CHHapticParameterCurve](/documentation/corehaptics/chhapticparametercurve)
 ### Creating a Curve
 
 - [init(parameterID: CHHapticDynamicParameter.ID, controlPoints: [CHHapticParameterCurve.ControlPoint], relativeTime: TimeInterval)](/documentation/corehaptics/chhapticparametercurve/init(parameterid:controlpoints:relativetime:))
 - [CHHapticParameterCurve.ControlPoint](/documentation/corehaptics/chhapticparametercurve/controlpoint)
-
 #### Creating a Control Point
 
 - [init(relativeTime: TimeInterval, value: Float)](/documentation/corehaptics/chhapticparametercurve/controlpoint/init(relativetime:value:))
-
 #### Specifying Control Point Coordinates
 
 - [var relativeTime: TimeInterval](/documentation/corehaptics/chhapticparametercurve/controlpoint/relativetime)
@@ -348,20 +313,16 @@ timestamp: 2026-01-19T11:02:44.294Z
 
 - [Playing a Custom Haptic Pattern from a File](/documentation/corehaptics/playing-a-custom-haptic-pattern-from-a-file)
 - [Representing haptic patterns in AHAP files](/documentation/corehaptics/representing-haptic-patterns-in-ahap-files)
-
 ## Game controller haptics
 
 - [Playing Haptics on Game Controllers](/documentation/corehaptics/playing-haptics-on-game-controllers)
-
 ## Haptic errors
 
 - [let CoreHapticsErrorDomain: String](/documentation/corehaptics/corehapticserrordomain)
 - [CHHapticError](/documentation/corehaptics/chhapticerror)
-
 ### Inspecting an Error
 
 - [CHHapticError.Code](/documentation/corehaptics/chhapticerror/code)
-
 #### Error Codes
 
 - [case badEventEntry](/documentation/corehaptics/chhapticerror/code/badevententry)
@@ -388,12 +349,11 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [case serverInterrupted](/documentation/corehaptics/chhapticerror/code/serverinterrupted)
 - [case serverInitFailed](/documentation/corehaptics/chhapticerror/code/serverinitfailed)
 - [case unknownError](/documentation/corehaptics/chhapticerror/code/unknownerror)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/corehaptics/chhapticerror/code/init(rawvalue:))
-- [Error Constants](/documentation/corehaptics/error-constants)
 
+- [Error Constants](/documentation/corehaptics/error-constants)
 #### Error Code Constants
 
 - [static var badEventEntry: CHHapticError.Code](/documentation/corehaptics/chhapticerror/badevententry)
@@ -424,8 +384,8 @@ timestamp: 2026-01-19T11:02:44.294Z
 ### Type Properties
 
 - [static var errorDomain: String](/documentation/corehaptics/chhapticerror/errordomain)
-- [CHHapticError.Code](/documentation/corehaptics/chhapticerror/code)
 
+- [CHHapticError.Code](/documentation/corehaptics/chhapticerror/code)
 ### Error Codes
 
 - [case badEventEntry](/documentation/corehaptics/chhapticerror/code/badevententry)
@@ -452,7 +412,6 @@ timestamp: 2026-01-19T11:02:44.294Z
 - [case serverInterrupted](/documentation/corehaptics/chhapticerror/code/serverinterrupted)
 - [case serverInitFailed](/documentation/corehaptics/chhapticerror/code/serverinitfailed)
 - [case unknownError](/documentation/corehaptics/chhapticerror/code/unknownerror)
-
 ### Initializers
 
 - [init?(rawValue: Int)](/documentation/corehaptics/chhapticerror/code/init(rawvalue:))
@@ -461,12 +420,11 @@ timestamp: 2026-01-19T11:02:44.294Z
 
 - [let CHHapticAudioResourceKeyLoopEnabled: String](/documentation/corehaptics/chhapticaudioresourcekeyloopenabled)
 - [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](/documentation/corehaptics/chhapticaudioresourcekeyusevolumeenvelope)
-
 ## Type Aliases
 
 - [CHHapticAudioResourceKey](/documentation/corehaptics/chhapticaudioresourcekey)
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

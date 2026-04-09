@@ -2,7 +2,7 @@
 title: Defining test functions
 description: Define a test function to validate that code is working correctly.
 source: https://developer.apple.com/documentation/testing/definingtests
-timestamp: 2026-02-19T07:52:36.950Z
+timestamp: 2026-04-09T12:04:30.626Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -25,8 +25,7 @@ To import the testing library, add the following to the Swift source file that c
 import Testing
 ```
 
-> [!NOTE]
-> Only import the testing library into a test target or library meant for test targets. Importing the testing library into a target intended for distribution such as an application, app library, or executable target isn’t supported or recommended. Test functions aren’t stripped from binaries when building for release, so logic and fixtures of a test may be visible to anyone who inspects a build product that contains a test function.
+> **Note:** Only import the testing library into a test target or library meant for test targets. Importing the testing library into a target intended for distribution such as an application, app library, or executable target isn’t supported or recommended. Test functions aren’t stripped from binaries when building for release, so logic and fixtures of a test may be visible to anyone who inspects a build product that contains a test function.
 
 ### Declare a test function
 
@@ -38,9 +37,9 @@ To declare a test function, write a Swift function declaration that doesn’t ta
 }
 ```
 
-This test function can be present at file scope or within a type. A type containing test functions is automatically a *test suite* and can be optionally annotated with the `@Suite` attribute. For more information about suites, see [Organizing Tests](/documentation/testing/organizingtests).
+This test function can be present at file scope or within a type. A type containing test functions is automatically a *test suite* and can be optionally annotated with the `@Suite` attribute. For more information about suites, see [Organizing test functions with suite types](/documentation/testing/organizingtests).
 
-Note that, while this function is a valid test function, it doesn’t actually perform any action or test any code. To check for expected values and outcomes in test functions, add [Expectations](/documentation/testing/expectations) to the test function.
+Note that, while this function is a valid test function, it doesn’t actually perform any action or test any code. To check for expected values and outcomes in test functions, add [Expectations and confirmations](/documentation/testing/expectations) to the test function.
 
 ### Customize a test’s name
 
@@ -72,13 +71,13 @@ If a test function can only run on newer versions of an operating system or of t
 
 ## Essentials
 
-- [Organizing test functions with suite types](/documentation/testing/organizingtests)
-- [Migrating a test from XCTest](/documentation/testing/migratingfromxctest)
-- [Test(_:_:)](/documentation/testing/test(_:_:))
-- [Test](/documentation/testing/test)
-- [Suite(_:_:)](/documentation/testing/suite(_:_:))
+- [Organizing test functions with suite types](/documentation/testing/organizingtests) Organize tests into test suites.
+- [Migrating a test from XCTest](/documentation/testing/migratingfromxctest) Migrate an existing test method or test class written using XCTest.
+- [Test(_:_:)](/documentation/testing/test(_:_:)) Declare a test.
+- [Test](/documentation/testing/test) A type representing a test or suite.
+- [Suite(_:_:)](/documentation/testing/suite(_:_:)) Declare a test suite.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

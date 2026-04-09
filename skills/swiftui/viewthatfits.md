@@ -2,10 +2,10 @@
 title: ViewThatFits
 description: A view that adapts to the available space by providing the first child view that fits.
 source: https://developer.apple.com/documentation/swiftui/viewthatfits
-timestamp: 2026-02-19T07:52:37.455Z
+timestamp: 2026-04-09T12:04:41.913Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -25,7 +25,7 @@ timestamp: 2026-02-19T07:52:37.455Z
 
 The following example shows an `UploadProgressView` that uses `ViewThatFits` to display the upload progress in one of three ways. In order, it attempts to display:
 
-- An [HStack](/documentation/swiftui/hstack) that contains a [Text](/documentation/swiftui/text) view and a [Progress View](/documentation/swiftui/progressview).
+- An [HStack](/documentation/swiftui/hstack) that contains a [Text](/documentation/swiftui/text) view and a [ProgressView](/documentation/swiftui/progressview).
 - Only the `ProgressView`.
 - Only the `Text` view.
 
@@ -63,8 +63,6 @@ VStack {
 }
 ```
 
-![A vertical stack showing three expressions of progress, constrained by](https://docs-assets.developer.apple.com/published/2b5e67f3b1922018a42dec9df80df304/ViewThatFits-1%402x.png)
-
 ## Conforms To
 
 - [View](/documentation/swiftui/view)
@@ -75,5 +73,5 @@ VStack {
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

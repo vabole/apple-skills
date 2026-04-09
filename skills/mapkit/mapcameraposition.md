@@ -2,16 +2,16 @@
 title: MapCameraPosition
 description: A structure that describes how to position the map’s camera within the map.
 source: https://developer.apple.com/documentation/mapkit/mapcameraposition
-timestamp: 2026-02-19T07:52:36.972Z
+timestamp: 2026-04-09T12:04:25.866Z
 ---
 
-**Navigation:** [Mapkit](/documentation/mapkit)
+**Navigation:** [MapKit](/documentation/mapkit)
 
 **Structure**
 
 # MapCameraPosition
 
-**Available on:** iOS 17.0+, iPadOS 17.0+, Mac Catalyst undefined+, macOS 14.0+, tvOS 17.0+, visionOS undefined+, watchOS 10.0+
+**Available on:** iOS 17.0+, iPadOS 17.0+, Mac Catalyst, macOS 14.0+, tvOS 17.0+, visionOS, watchOS 10.0+
 
 > A structure that describes how to position the map’s camera within the map.
 
@@ -23,7 +23,7 @@ struct MapCameraPosition
 
 `MapCameraPosition` contains a variety of properties that you can use to control the semantic framings of the camera in relation to its position to the map, such as [automatic](/documentation/mapkit/mapcameraposition/automatic), which frames the content of the map, and the [camera](/documentation/mapkit/mapcameraposition/camera) property, which allows you to specify an explicit camera position.
 
-When you pass `MapCameraPosition` as a binding to a map, the map adjusts its camera to frame the requested content, or to exactly match the camera `MapCameraPosition` specifies. If a person interacts with the [Map](/documentation/mapkit/map) in a way that moves the map, the map resets the position to a value that specifies [positioned By User](/documentation/mapkit/mapcameraposition/positionedbyuser).
+When you pass `MapCameraPosition` as a binding to a map, the map adjusts its camera to frame the requested content, or to exactly match the camera `MapCameraPosition` specifies. If a person interacts with the [Map](/documentation/mapkit/map) in a way that moves the map, the map resets the position to a value that specifies [positionedByUser](/documentation/mapkit/mapcameraposition/positionedbyuser).
 
 ## Conforms To
 
@@ -55,12 +55,12 @@ When you pass `MapCameraPosition` as a binding to a map, the map adjusts its cam
 
 ## Map customization
 
-- [MapCamera](/documentation/mapkit/mapcamera)
-- [MapCameraBounds](/documentation/mapkit/mapcamerabounds)
-- [MapCameraUpdateContext](/documentation/mapkit/mapcameraupdatecontext)
-- [MapCameraUpdateFrequency](/documentation/mapkit/mapcameraupdatefrequency)
+- [MapCamera](/documentation/mapkit/mapcamera) Defines a virtual viewpoint above the map surface.
+- [MapCameraBounds](/documentation/mapkit/mapcamerabounds) Defines an optional boundary of an area within which the map’s center needs to remain.
+- [MapCameraUpdateContext](/documentation/mapkit/mapcameraupdatecontext) A structure that defines additional information about the map camera.
+- [MapCameraUpdateFrequency](/documentation/mapkit/mapcameraupdatefrequency) A structure that describes when the map camera updates.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: UNMutableNotificationContent
 description: The editable content for a notification.
 source: https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent
-timestamp: 2026-01-19T10:22:53.578Z
+timestamp: 2026-04-09T12:04:44.026Z
 ---
 
-**Navigation:** [Usernotifications](/documentation/usernotifications)
+**Navigation:** [UserNotifications](/documentation/usernotifications)
 
 **Class**
 
@@ -21,18 +21,17 @@ class UNMutableNotificationContent
 
 ## Overview
 
-Create a [UNMutable Notification Content](/documentation/usernotifications/unmutablenotificationcontent) object when you want to specify the payload for a local notification. Specifically, use this object to specify the title and message for an alert, the sound to play, or the value to assign to your app’s badge. You might also provide details about how the system handles the notification. For example, you can specify a custom launch image and a thread identifier for visually grouping related notifications.
+Create a [UNMutableNotificationContent](/documentation/usernotifications/unmutablenotificationcontent) object when you want to specify the payload for a local notification. Specifically, use this object to specify the title and message for an alert, the sound to play, or the value to assign to your app’s badge. You might also provide details about how the system handles the notification. For example, you can specify a custom launch image and a thread identifier for visually grouping related notifications.
 
-After creating your content object, assign it to a [UNNotification Request](/documentation/usernotifications/unnotificationrequest) object, add a trigger condition, and schedule your notification. The trigger condition defines when the system delivers the notification to the user. Listing 1 shows the scheduling of a local notification that displays an alert and plays a sound after a delay of five seconds. Store the strings for the alert’s title and body in the app’s `Localizable.strings` file.
+After creating your content object, assign it to a [UNNotificationRequest](/documentation/usernotifications/unnotificationrequest) object, add a trigger condition, and schedule your notification. The trigger condition defines when the system delivers the notification to the user. Listing 1 shows the scheduling of a local notification that displays an alert and plays a sound after a delay of five seconds. Store the strings for the alert’s title and body in the app’s `Localizable.strings` file.
 
 Listing 1. Creating the content for a local notification
 
-> [!NOTE]
-> Local notifications always result in user interactions, and the system ignores any interactions for which your app isn’t authorized. For information about how to request authorization for user interactions, see [asking-permission-to-use](/documentation/usernotifications/asking-permission-to-use-notifications).
+> **Note:** Local notifications always result in user interactions, and the system ignores any interactions for which your app isn’t authorized. For information about how to request authorization for user interactions, see [Asking permission to use notifications](/documentation/usernotifications/asking-permission-to-use-notifications).
 
 ### Localizing the Alert Strings
 
-Localize the strings you display in a notification alert for the current user. Although you can use the [NSLocalized String](/documentation/Foundation/NSLocalizedString) macros to load strings from your app’s resource files, a better option is to specify your string using the [localizedUserNotificationString(forKey:arguments:)](/documentation/Foundation/NSString/localizedUserNotificationString(forKey:arguments:)) method of [NSString](/documentation/Foundation/NSString). The [localizedUserNotificationString(forKey:arguments:)](/documentation/Foundation/NSString/localizedUserNotificationString(forKey:arguments:)) method delays the loading of the localized string until the system delivers the notification. If the user changes the language setting before the system delivers a notification, the system updates the alert text to the user’s current language instead of the language in use when the system scheduled the notification.
+Localize the strings you display in a notification alert for the current user. Although you can use the [NSLocalizedString](/documentation/Foundation/NSLocalizedString) macros to load strings from your app’s resource files, a better option is to specify your string using the [localizedUserNotificationString(forKey:arguments:)](/documentation/Foundation/NSString/localizedUserNotificationString(forKey:arguments:)) method of [NSString](/documentation/Foundation/NSString). The [localizedUserNotificationString(forKey:arguments:)](/documentation/Foundation/NSString/localizedUserNotificationString(forKey:arguments:)) method delays the loading of the localized string until the system delivers the notification. If the user changes the language setting before the system delivers a notification, the system updates the alert text to the user’s current language instead of the language in use when the system scheduled the notification.
 
 ## Inherits From
 
@@ -85,15 +84,15 @@ Localize the strings you display in a notification alert for the current user. A
 
 ## Notification content
 
-- [Implementing communication notifications](/documentation/usernotifications/implementing-communication-notifications)
-- [UNNotificationContentProviding](/documentation/usernotifications/unnotificationcontentproviding)
-- [UNNotificationActionIcon](/documentation/usernotifications/unnotificationactionicon)
-- [UNNotificationContent](/documentation/usernotifications/unnotificationcontent)
-- [UNNotificationAttachment](/documentation/usernotifications/unnotificationattachment)
-- [UNNotificationSound](/documentation/usernotifications/unnotificationsound)
-- [UNNotificationSoundName](/documentation/usernotifications/unnotificationsoundname)
+- [Implementing communication notifications](/documentation/usernotifications/implementing-communication-notifications) Configure and display your app’s communication notifications by using intents.
+- [UNNotificationContentProviding](/documentation/usernotifications/unnotificationcontentproviding) A protocol the system uses to provide context relevant to user notifications.
+- [UNNotificationActionIcon](/documentation/usernotifications/unnotificationactionicon) An icon associated with an action.
+- [UNNotificationContent](/documentation/usernotifications/unnotificationcontent) The uneditable content of a notification.
+- [UNNotificationAttachment](/documentation/usernotifications/unnotificationattachment) A media file associated with a notification.
+- [UNNotificationSound](/documentation/usernotifications/unnotificationsound) The sound played upon delivery of a notification.
+- [UNNotificationSoundName](/documentation/usernotifications/unnotificationsoundname) A string providing the name of a sound file.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

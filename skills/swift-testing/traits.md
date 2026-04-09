@@ -2,7 +2,7 @@
 title: Traits
 description: Annotate test functions and suites, and customize their behavior.
 source: https://developer.apple.com/documentation/testing/traits
-timestamp: 2026-02-19T07:52:37.023Z
+timestamp: 2026-04-09T12:04:31.680Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -15,14 +15,14 @@ timestamp: 2026-02-19T07:52:37.023Z
 
 ## Overview
 
-Pass built-in traits to test functions or suite types to comment, categorize, classify, and modify the runtime behavior of test suites and test functions. Implement the [Test Trait](/documentation/testing/testtrait), and [Suite Trait](/documentation/testing/suitetrait) protocols to create your own types that customize the behavior of your tests.
+Pass built-in traits to test functions or suite types to comment, categorize, classify, and modify the runtime behavior of test suites and test functions. Implement the [TestTrait](/documentation/testing/testtrait), and [SuiteTrait](/documentation/testing/suitetrait) protocols to create your own types that customize the behavior of your tests.
 
 ## Customizing runtime behaviors
 
 - [Enabling and disabling tests](/documentation/testing/enablinganddisabling) Conditionally enable or disable individual tests before they run.
 - [Limiting the running time of tests](/documentation/testing/limitingexecutiontime) Set limits on how long a test can run for until it fails.
-- [enabled(if:_:sourceLocation:)](/documentation/testing/trait/enabled(if:_:sourcelocation:)) Constructs a condition trait that disables a test if it returns .
-- [enabled(_:sourceLocation:_:)](/documentation/testing/trait/enabled(_:sourcelocation:_:)) Constructs a condition trait that disables a test if it returns .
+- [enabled(if:_:sourceLocation:)](/documentation/testing/trait/enabled(if:_:sourcelocation:)) Constructs a condition trait that disables a test if it returns `false`.
+- [enabled(_:sourceLocation:_:)](/documentation/testing/trait/enabled(_:sourcelocation:_:)) Constructs a condition trait that disables a test if it returns `false`.
 - [disabled(_:sourceLocation:)](/documentation/testing/trait/disabled(_:sourcelocation:)) Constructs a condition trait that disables a test unconditionally.
 - [disabled(if:_:sourceLocation:)](/documentation/testing/trait/disabled(if:_:sourcelocation:)) Constructs a condition trait that disables a test if its value is true.
 - [disabled(_:sourceLocation:_:)](/documentation/testing/trait/disabled(_:sourcelocation:_:)) Constructs a condition trait that disables a test if its value is true.
@@ -69,5 +69,5 @@ Pass built-in traits to test functions or suite types to comment, categorize, cl
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

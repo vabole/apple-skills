@@ -2,16 +2,16 @@
 title: AppShortcut
 description: A type that defines a preconfigured shortcut for a specific app intent.
 source: https://developer.apple.com/documentation/appintents/appshortcut
-timestamp: 2026-01-19T10:21:59.426Z
+timestamp: 2026-04-09T12:04:03.526Z
 ---
 
-**Navigation:** [Appintents](/documentation/appintents)
+**Navigation:** [App Intents](/documentation/appintents)
 
 **Structure**
 
 # AppShortcut
 
-**Available on:** iOS 16.0+, iPadOS 16.0+, Mac Catalyst undefined+, macOS 13.0+, tvOS 16.0+, visionOS undefined+, watchOS 9.0+
+**Available on:** iOS 16.0+, iPadOS 16.0+, Mac Catalyst, macOS 13.0+, tvOS 16.0+, visionOS, watchOS 9.0+
 
 > A type that defines a preconfigured shortcut for a specific app intent.
 
@@ -21,11 +21,9 @@ struct AppShortcut
 
 ## Overview
 
-> [!NOTE]
-> Session 10170: [10170](https://developer.apple.com/videos/play/wwdc2022/10170), and session 10169: [10169](https://developer.apple.com/videos/play/wwdc2022/10169).
+> **Related sessions from WWDC22:** Session 10170: [Implement App Shortcuts with App Intents](https://developer.apple.com/videos/play/wwdc2022/10170), and session 10169: [Design App Shortcuts](https://developer.apple.com/videos/play/wwdc2022/10169).
 
-> [!NOTE]
-> Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
+> **Note:** Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
 
 ## Creating an app shortcut
 
@@ -35,15 +33,17 @@ struct AppShortcut
 
 ## App Shortcut definition
 
-- [AppShortcutPhrase](/documentation/appintents/appshortcutphrase)
-- [NegativeAppShortcutPhrase](/documentation/appintents/negativeappshortcutphrase)
-- [NegativeAppShortcutPhrases](/documentation/appintents/negativeappshortcutphrases)
-- [NSAppIconActionTintColorName](/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconActionTintColorName)
-- [NSAppIconComplementingColorNames](/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconComplementingColorNames)
-- [AppShortcutsBuilder](/documentation/appintents/appshortcutsbuilder)
-- [ShortcutTileColor](/documentation/appintents/shortcuttilecolor)
+- [AppShortcutsContent](/documentation/appintents/appshortcutscontent)
+- [AppShortcutPhrase](/documentation/appintents/appshortcutphrase) A spoken phrase that causes the system to run the corresponding App Shortcut.
+- [AppShortcutPhraseToken](/documentation/appintents/appshortcutphrasetoken) Dynamic values you can include in the spoken phrases that run your shortcut.
+- [NegativeAppShortcutPhrase](/documentation/appintents/negativeappshortcutphrase) An object that represents a negative phrase.
+- [NegativeAppShortcutPhrases](/documentation/appintents/negativeappshortcutphrases) This is a set of negative phrases, which will all be added to the app-level negative training set. All the training data specified here, will be used to completely bypass your app
+- [NSAppIconActionTintColorName](/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconActionTintColorName) The tint color to apply to text and symbols in the App Shortcuts platter.
+- [NSAppIconComplementingColorNames](/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconComplementingColorNames) The names of the colors to use for the background of the App Shortcuts platter.
+- [AppShortcutsBuilder](/documentation/appintents/appshortcutsbuilder) A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
+- [ShortcutTileColor](/documentation/appintents/shortcuttilecolor) Describes the colors a shortcut tile in the Shortcuts app.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

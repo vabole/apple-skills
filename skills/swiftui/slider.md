@@ -2,10 +2,10 @@
 title: Slider
 description: A control for selecting a value from a bounded linear range of values.
 source: https://developer.apple.com/documentation/swiftui/slider
-timestamp: 2026-02-19T07:56:06.292Z
+timestamp: 2026-04-09T12:04:39.870Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -44,8 +44,6 @@ var body: some View {
 }
 ```
 
-![An unlabeled slider, with its thumb about one third of the way from the](https://docs-assets.developer.apple.com/published/9a41fa64a088c04aef5d52935a5b4308/SwiftUI-Slider-simple%402x.png)
-
 You can also use a `step` parameter to provide incremental steps along the path of the slider. For example, if you have a slider with a range of `0` to `100`, and you set the `step` value to `5`, the slider’s increments would be `0`, `5`, `10`, and so on. The following example shows this approach, and also adds optional minimum and maximum value labels.
 
 ```swift
@@ -71,8 +69,6 @@ var body: some View {
 }
 ```
 
-![A slider with labels show minimum and maximum values of 0 and 100,](https://docs-assets.developer.apple.com/published/391df10be6d7d1c252c6d81c8ca0b440/SwiftUI-Slider-withStepAndLabels%402x.png)
-
 The slider also uses the `step` to increase or decrease the value when a VoiceOver user adjusts the slider with voice commands.
 
 ## Conforms To
@@ -94,10 +90,10 @@ The slider also uses the `step` to increase or decrease the value when a VoiceOv
 ## Adding ticks to a slider
 
 - [SliderTick](/documentation/swiftui/slidertick) A representation of a tick in a slider, with associated value and optional label.
-- [SliderTickBuilder](/documentation/swiftui/slidertickbuilder) A result builder that constructs s for use when creating a .
+- [SliderTickBuilder](/documentation/swiftui/slidertickbuilder) A result builder that constructs `SliderTick`s for use when creating a `Slider`.
 - [SliderTickContentForEach](/documentation/swiftui/slidertickcontentforeach) A type of slider content that creates content by iterating over a collection.
 - [TupleSliderTickContent](/documentation/swiftui/tupleslidertickcontent) Slider content created from a Swift tuple of slider content.
-- [SliderTickContent](/documentation/swiftui/slidertickcontent) A type that provides content for a .
+- [SliderTickContent](/documentation/swiftui/slidertickcontent) A type that provides content for a `SliderTickBuilder`.
 
 ## Deprecated initializers
 
@@ -114,11 +110,11 @@ The slider also uses the `step` to increase or decrease the value when a VoiceOv
 
 ## Getting numeric inputs
 
-- [Stepper](/documentation/swiftui/stepper)
-- [Toggle](/documentation/swiftui/toggle)
-- [toggleStyle(_:)](/documentation/swiftui/view/togglestyle(_:))
+- [Stepper](/documentation/swiftui/stepper) A control that performs increment and decrement actions.
+- [Toggle](/documentation/swiftui/toggle) A control that toggles between on and off states.
+- [toggleStyle(_:)](/documentation/swiftui/view/togglestyle(_:)) Sets the style for toggles in a view hierarchy.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

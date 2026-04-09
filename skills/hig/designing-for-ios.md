@@ -2,7 +2,7 @@
 title: Designing for iOS
 description: People depend on their iPhone to help them stay connected, play games, view media, accomplish tasks, and track personal data in any location and while on the go.
 source: https://developer.apple.com/design/human-interface-guidelines/designing-for-ios
-timestamp: 2026-01-17T15:44:46.874Z
+timestamp: 2026-04-09T12:04:14.135Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:44:46.874Z
 # Designing for iOS
 
 > People depend on their iPhone to help them stay connected, play games, view media, accomplish tasks, and track personal data in any location and while on the go.
-
-
 
 As you begin designing your app or game for iOS, start by understanding the following fundamental device characteristics and patterns that distinguish the iOS experience. Using these characteristics and patterns to inform your design decisions can help you provide an app or game that iPhone users appreciate.
 
@@ -59,5 +57,5 @@ Great iPhone experiences integrate the platform and device capabilities that peo
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

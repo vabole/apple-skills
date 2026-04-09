@@ -2,7 +2,7 @@
 title: Layout
 description: A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
 source: https://developer.apple.com/design/human-interface-guidelines/layout
-timestamp: 2026-01-17T15:44:49.658Z
+timestamp: 2026-04-09T12:17:26.810Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:44:49.658Z
 # Layout
 
 > A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
-
-
 
 Your app’s layout helps ground people in your content from the moment they open it. People expect familiar relationships between controls and content to help them use and discover your app’s features, and designing the layout to take advantage of this makes your app feel at home on the platform.
 
@@ -28,8 +26,6 @@ Apple provides templates, guides, and other resources that can help you integrat
 **Extend content to fill the screen or window.** Make sure backgrounds and full-screen artwork extend to the edges of the display. Also ensure that scrollable layouts continue all the way to the bottom and the sides of the device screen. Controls and navigation components like sidebars and tab bars appear on top of content rather than on the same plane, so it’s important for your layout to take this into account.
 
 When your content doesn’t span the full window, use a background extension view to provide the appearance of content behind the control layer on either side of the screen, such as beneath the sidebar or inspector. For developer guidance, see [backgroundExtensionEffect()](/documentation/SwiftUI/View/backgroundExtensionEffect()) and [UIBackgroundExtensionView](/documentation/UIKit/UIBackgroundExtensionView).
-
-
 
 ## Visual hierarchy
 
@@ -108,11 +104,7 @@ People can freely resize windows down to a minimum width and height, similar to 
 
 **Adhere to the screen’s safe area.** Inset primary content 60 points from the top and bottom of the screen, and 80 points from the sides. It can be difficult for people to see content that close to the edges, and unintended cropping can occur due to overscanning on older TVs. Allow only partially displayed offscreen content and elements that deliberately flow offscreen to appear outside this zone.
 
-
-
 **Include appropriate padding between focusable elements.** When you use UIKit and the focus APIs, an element gets bigger when it comes into focus. Consider how elements look when they’re focused, and make sure you don’t let them overlap important information. For developer guidance, see [About focus interactions for Apple TV](/documentation/UIKit/about-focus-interactions-for-apple-tv).
-
-
 
 #### Grids
 
@@ -130,6 +122,8 @@ If you use the UIKit collection view flow element, the number of columns in a gr
 
 The guidance below can help you lay out content within the windows of your visionOS app or game, making it feel familiar and easy to use. For guidance on displaying windows in space and best practices for using depth, scale, and field of view in your visionOS app, see [Spatial layout](/design/human-interface-guidelines/spatial-layout). To learn more about visionOS window components, see [visionOS](/design/human-interface-guidelines/windows#visionOS).
 
+> **Note:** When you add depth to content in a standard window, the content extends beyond the window’s bounds along the z-axis. If content extends too far along the z-axis, the system clips it.
+
 **Consider centering the most important content and controls in your app or game.** Often, people can more easily discover and interact with content when it’s near the middle of a window, especially when the window is large.
 
 **Keep a window’s content within its bounds.** In visionOS, the system displays window controls just outside a window’s bounds in the XY plane. For example, the Share menu appears above the window and the controls for resizing, moving, and closing the window appear below it. Letting 2D or 3D content encroach on these areas can make the system-provided controls, especially those below the window, difficult for people to use.
@@ -142,11 +136,7 @@ The guidance below can help you lay out content within the windows of your visio
 
 **Design your content to extend from one edge of the screen to the other.** The Apple Watch bezel provides a natural visual padding around your content. To avoid wasting valuable space, consider minimizing the padding between elements.
 
-
-
 **Avoid placing more than two or three controls side by side in your interface.** As a general rule, display no more than three buttons that contain glyphs — or two buttons that contain text — in a row. Although it’s usually better to let text buttons span the full width of the screen, two side-by-side buttons with short text labels can also work well, as long as the screen doesn’t scroll.
-
-
 
 **Support autorotation in views people might want to show others.** When people flip their wrist away, apps typically respond to the motion by sleeping the display, but in some cases it makes sense to autorotate the content. For example, a wearer might want to show an image to a friend or display a QR code to a reader. For developer guidance, see [isAutorotating](/documentation/WatchKit/WKExtension/isAutorotating).
 
@@ -154,13 +144,139 @@ The guidance below can help you lay out content within the windows of your visio
 
 ### iOS, iPadOS device screen dimensions
 
+| Model | Dimensions (portrait) |
+| --- | --- |
+| iPad Pro 12.9-inch | 1024x1366 pt (2048x2732 px @2x) |
+| iPad Pro 11-inch | 834x1194 pt (1668x2388 px @2x) |
+| iPad Pro 10.5-inch | 834x1194 pt (1668x2388 px @2x) |
+| iPad Pro 9.7-inch | 768x1024 pt (1536x2048 px @2x) |
+| iPad Air 13-inch | 1024x1366 pt (2048x2732 px @2x) |
+| iPad Air 11-inch | 820x1180 pt (1640x2360 px @2x) |
+| iPad Air 10.9-inch | 820x1180 pt (1640x2360 px @2x) |
+| iPad Air 10.5-inch | 834x1112 pt (1668x2224 px @2x) |
+| iPad Air 9.7-inch | 768x1024 pt (1536x2048 px @2x) |
+| iPad 11-inch | 820x1180 pt (1640x2360 px @2x) |
+| iPad 10.2-inch | 810x1080 pt (1620x2160 px @2x) |
+| iPad 9.7-inch | 768x1024 pt (1536x2048 px @2x) |
+| iPad mini 8.3-inch | 744x1133 pt (1488x2266 px @2x) |
+| iPad mini 7.9-inch | 768x1024 pt (1536x2048 px @2x) |
+| iPhone 17 Pro Max | 440x956 pt (1320x2868 px @3x) |
+| iPhone 17 Pro | 402x874 pt (1206x2622 px @3x) |
+| iPhone Air | 420x912 pt (1260x2736 px @3x) |
+| iPhone 17 | 402x874 pt (1206x2622 px @3x) |
+| iPhone 16 Pro Max | 440x956 pt (1320x2868 px @3x) |
+| iPhone 16 Pro | 402x874 pt (1206x2622 px @3x) |
+| iPhone 16 Plus | 430x932 pt (1290x2796 px @3x) |
+| iPhone 16 | 393x852 pt (1179x2556 px @3x) |
+| iPhone 16e | 390x844 pt (1170x2532 px @3x) |
+| iPhone 15 Pro Max | 430x932 pt (1290x2796 px @3x) |
+| iPhone 15 Pro | 393x852 pt (1179x2556 px @3x) |
+| iPhone 15 Plus | 430x932 pt (1290x2796 px @3x) |
+| iPhone 15 | 393x852 pt (1179x2556 px @3x) |
+| iPhone 14 Pro Max | 430x932 pt (1290x2796 px @3x) |
+| iPhone 14 Pro | 393x852 pt (1179x2556 px @3x) |
+| iPhone 14 Plus | 428x926 pt (1284x2778 px @3x) |
+| iPhone 14 | 390x844 pt (1170x2532 px @3x) |
+| iPhone 13 Pro Max | 428x926 pt (1284x2778 px @3x) |
+| iPhone 13 Pro | 390x844 pt (1170x2532 px @3x) |
+| iPhone 13 | 390x844 pt (1170x2532 px @3x) |
+| iPhone 13 mini | 375x812 pt (1125x2436 px @3x) |
+| iPhone 12 Pro Max | 428x926 pt (1284x2778 px @3x) |
+| iPhone 12 Pro | 390x844 pt (1170x2532 px @3x) |
+| iPhone 12 | 390x844 pt (1170x2532 px @3x) |
+| iPhone 12 mini | 375x812 pt (1125x2436 px @3x) |
+| iPhone 11 Pro Max | 414x896 pt (1242x2688 px @3x) |
+| iPhone 11 Pro | 375x812 pt (1125x2436 px @3x) |
+| iPhone 11 | 414x896 pt (828x1792 px @2x) |
+| iPhone XS Max | 414x896 pt (1242x2688 px @3x) |
+| iPhone XS | 375x812 pt (1125x2436 px @3x) |
+| iPhone XR | 414x896 pt (828x1792 px @2x) |
+| iPhone X | 375x812 pt (1125x2436 px @3x) |
+| iPhone 8 Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 8 | 375x667 pt (750x1334 px @2x) |
+| iPhone 7 Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 7 | 375x667 pt (750x1334 px @2x) |
+| iPhone 6s Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 6s | 375x667 pt (750x1334 px @2x) |
+| iPhone 6 Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 6 | 375x667 pt (750x1334 px @2x) |
+| iPhone SE 4.7-inch | 375x667 pt (750x1334 px @2x) |
+| iPhone SE 4-inch | 320x568 pt (640x1136 px @2x) |
+| iPod touch 5th generation and later | 320x568 pt (640x1136 px @2x) |
+
+> **Note:** All scale factors in the table above are UIKit scale factors, which may differ from native scale factors. For developer guidance, see [scale](/documentation/UIKit/UIScreen/scale) and [nativeScale](/documentation/UIKit/UIScreen/nativeScale).
+
 ### iOS, iPadOS device size classes
 
 A size class is a value that’s either regular or compact, where *regular* refers to a larger screen or a screen in landscape orientation and *compact* refers to a smaller screen or a screen in portrait orientation. For developer guidance, see [UserInterfaceSizeClass](/documentation/SwiftUI/UserInterfaceSizeClass).
 
 Different size class combinations apply to the full-screen experience on different devices, based on screen size.
 
+| Model | Portrait orientation | Landscape orientation |
+| --- | --- | --- |
+| iPad Pro 12.9-inch | Regular width, regular height | Regular width, regular height |
+| iPad Pro 11-inch | Regular width, regular height | Regular width, regular height |
+| iPad Pro 10.5-inch | Regular width, regular height | Regular width, regular height |
+| iPad Air 13-inch | Regular width, regular height | Regular width, regular height |
+| iPad Air 11-inch | Regular width, regular height | Regular width, regular height |
+| iPad 11-inch | Regular width, regular height | Regular width, regular height |
+| iPad 9.7-inch | Regular width, regular height | Regular width, regular height |
+| iPad mini 7.9-inch | Regular width, regular height | Regular width, regular height |
+| iPhone 17 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 17 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone Air | Compact width, regular height | Regular width, compact height |
+| iPhone 17 | Compact width, regular height | Compact width, compact height |
+| iPhone 16 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 16 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 16 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 16 | Compact width, regular height | Compact width, compact height |
+| iPhone 16e | Compact width, regular height | Compact width, compact height |
+| iPhone 15 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 15 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 15 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 15 | Compact width, regular height | Compact width, compact height |
+| iPhone 14 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 14 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 14 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 14 | Compact width, regular height | Compact width, compact height |
+| iPhone 13 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 13 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 13 | Compact width, regular height | Compact width, compact height |
+| iPhone 13 mini | Compact width, regular height | Compact width, compact height |
+| iPhone 12 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 12 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 12 | Compact width, regular height | Compact width, compact height |
+| iPhone 12 mini | Compact width, regular height | Compact width, compact height |
+| iPhone 11 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 11 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 11 | Compact width, regular height | Regular width, compact height |
+| iPhone XS Max | Compact width, regular height | Regular width, compact height |
+| iPhone XS | Compact width, regular height | Compact width, compact height |
+| iPhone XR | Compact width, regular height | Regular width, compact height |
+| iPhone X | Compact width, regular height | Compact width, compact height |
+| iPhone 8 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 8 | Compact width, regular height | Compact width, compact height |
+| iPhone 7 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 7 | Compact width, regular height | Compact width, compact height |
+| iPhone 6s Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 6s | Compact width, regular height | Compact width, compact height |
+| iPhone SE | Compact width, regular height | Compact width, compact height |
+| iPod touch 5th generation and later | Compact width, regular height | Compact width, compact height |
+
 ### watchOS device screen dimensions
+
+| Series | Size | Width (pixels) | Height (pixels) |
+| --- | --- | --- | --- |
+| Apple Watch Ultra (3rd generation) | 49mm | 422 | 514 |
+| 10, 11 | 42mm | 374 | 446 |
+| 10, 11 | 46mm | 416 | 496 |
+| Apple Watch Ultra (1st and 2nd generations) | 49mm | 410 | 502 |
+| 7, 8, and 9 | 41mm | 352 | 430 |
+| 7, 8, and 9 | 45mm | 396 | 484 |
+| 4, 5, 6, and SE (all generations) | 40mm | 324 | 394 |
+| 4, 5, 6, and SE (all generations) | 44mm | 368 | 448 |
+| 1, 2, and 3 | 38mm | 272 | 340 |
+| 1, 2, and 3 | 42mm | 312 | 390 |
 
 ## Resources
 
@@ -180,12 +296,24 @@ Different size class combinations apply to the full-screen experience on differe
 
 - [Get to know the new design system](https://developer.apple.com/videos/play/wwdc2025/356) - Dive deeper into the new design system to explore key changes to visual design, information architecture, and core system components. Learn how the system reshapes the relationship between interface and content, enabling you to create designs that are dynamic, harmonious, and consistent across devices, screen sizes, and input modes.
 - [Compose custom layouts with SwiftUI](https://developer.apple.com/videos/play/wwdc2022/10056) - SwiftUI now offers powerful tools to level up your layouts and arrange views for your app’s interface. We’ll introduce you to the Grid container, which helps you create highly customizable, two-dimensional layouts, and show you how you can use the Layout protocol to build your own containers with completely custom behavior. We’ll also explore how you can create seamless animated transitions between your layout types, and share tips and best practices for creating great interfaces.
-
 - [Essential Design Principles](https://developer.apple.com/videos/play/wwdc2017/802) - Design principles are the key to understanding how design serves human needs for safety, meaning, achievement and beauty. Learn what these principles are and how they can help you design more welcoming, understandable, empowering and gratifying user experiences.
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| September 9, 2025 | Added specifications for iPhone 17, iPhone Air, iPhone 17 Pro, iPhone 17 Pro Max, Apple Watch SE 3, Apple Watch Series 11, and Apple Watch Ultra 3. |
+| June 9, 2025 | Added guidance for Liquid Glass. |
+| March 7, 2025 | Added specifications for iPhone 16e, iPad 11-inch, iPad Air 11-inch, and iPad Air 13-inch. |
+| September 9, 2024 | Added specifications for iPhone 16, iPhone 16 Plus, iPhone 16 Pro, iPhone 16 Pro Max, and Apple Watch Series 10. |
+| June 10, 2024 | Made minor corrections and organizational updates. |
+| February 2, 2024 | Enhanced guidance for avoiding system controls in iPadOS app layouts, and added specifications for 10.9-inch iPad Air and 8.3-inch iPad mini. |
+| December 5, 2023 | Clarified guidance on centering content in a visionOS window. |
+| September 15, 2023 | Added specifications for iPhone 15 Pro Max, iPhone 15 Pro, iPhone 15 Plus, iPhone 15, Apple Watch Ultra 2, and Apple Watch SE. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+| September 14, 2022 | Added specifications for iPhone 14 Pro Max, iPhone 14 Pro, iPhone 14 Plus, iPhone 14, and Apple Watch Ultra. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

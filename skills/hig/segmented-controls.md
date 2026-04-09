@@ -2,7 +2,7 @@
 title: Segmented controls
 description: A segmented control is a linear set of two or more segments, each of which functions as a button.
 source: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
-timestamp: 2026-01-19T10:22:57.611Z
+timestamp: 2026-04-09T12:18:16.477Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-19T10:22:57.611Z
 # Segmented controls
 
 > A segmented control is a linear set of two or more segments, each of which functions as a button.
-
-
 
 Within a segmented control, all segments are usually equal in width. Like [Buttons](/design/human-interface-guidelines/buttons), segments can contain text or images. Segments can also have text labels beneath them (or beneath the control as a whole).
 
@@ -49,15 +47,11 @@ In addition to representing the state of a single or multiple-choice selection, 
 
 **Consider a segmented control to switch between closely related subviews.** A segmented control can be useful as a way to quickly switch between related subviews. For example, the segmented control in Calendar’s New Event sheet switches between the subviews for creating a new event and a new reminder. For switching between completely separate sections of an app, use a [Tab bars](/design/human-interface-guidelines/tab-bars) instead.
 
-
-
 ### macOS
 
 **Consider using introductory text to clarify the purpose of a segmented control.** When the control uses symbols or interface icons, you could also add a label below each segment to clarify its meaning. If your app includes tooltips, provide one for each segment in a segmented control.
 
 **Use a tab view in the main window area — instead of a segmented control — for view switching.** A [Tab views](/design/human-interface-guidelines/tab-views) supports efficient view switching and is similar in appearance to a [Boxes](/design/human-interface-guidelines/boxes) combined with a segmented control. Consider using a segmented control to help people switch views in a toolbar or inspector pane.
-
-
 
 **Consider supporting spring loading.** On a Mac equipped with a Magic Trackpad, spring loading lets people activate a segment by dragging selected items over it and force clicking without dropping the selected items. People can also continue dragging the items after a segment activates.
 
@@ -87,7 +81,11 @@ When people look at a segmented control that uses icons, the system displays a t
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

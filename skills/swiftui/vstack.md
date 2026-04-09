@@ -2,10 +2,10 @@
 title: VStack
 description: A view that arranges its subviews in a vertical line.
 source: https://developer.apple.com/documentation/swiftui/vstack
-timestamp: 2026-02-19T07:56:08.629Z
+timestamp: 2026-04-09T12:04:42.140Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -21,7 +21,7 @@ timestamp: 2026-02-19T07:56:08.629Z
 
 ## Overview
 
-Unlike [Lazy VStack](/documentation/swiftui/lazyvstack), which only renders the views when your app needs to display them, a `VStack` renders the views all at once, regardless of whether they are on- or offscreen. Use the regular `VStack` when you have a small number of subviews or don’t want the delayed rendering behavior of the “lazy” version.
+Unlike [LazyVStack](/documentation/swiftui/lazyvstack), which only renders the views when your app needs to display them, a `VStack` renders the views all at once, regardless of whether they are on- or offscreen. Use the regular `VStack` when you have a small number of subviews or don’t want the delayed rendering behavior of the “lazy” version.
 
 The following example shows a simple vertical stack of 10 text views:
 
@@ -41,10 +41,7 @@ var body: some View {
 }
 ```
 
-![Ten text views, named Item 1 through Item 10, arranged in a](https://docs-assets.developer.apple.com/published/93d31b000cb6f5419689a7b765474401/SwiftUI-VStack-simple%402x.png)
-
-> [!NOTE]
-> If you need a vertical stack that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [Any Layout](/documentation/swiftui/anylayout), use [VStack Layout](/documentation/swiftui/vstacklayout) instead.
+> **Note:** If you need a vertical stack that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [AnyLayout](/documentation/swiftui/anylayout), use [VStackLayout](/documentation/swiftui/vstacklayout) instead.
 
 ## Conforms To
 
@@ -56,10 +53,10 @@ var body: some View {
 
 ## Statically arranging views in one dimension
 
-- [Building layouts with stack views](/documentation/swiftui/building-layouts-with-stack-views)
-- [HStack](/documentation/swiftui/hstack)
+- [Building layouts with stack views](/documentation/swiftui/building-layouts-with-stack-views) Compose complex layouts from primitive container views.
+- [HStack](/documentation/swiftui/hstack) A view that arranges its subviews in a horizontal line.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

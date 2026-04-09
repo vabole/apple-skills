@@ -2,10 +2,10 @@
 title: XCUIProtectedResource
 description: A system resource that requires user authorization to access.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuiprotectedresource
-timestamp: 2026-01-19T10:23:37.708Z
+timestamp: 2026-04-09T12:04:46.433Z
 ---
 
-**Navigation:** [Xcuiautomation](/documentation/xcuiautomation)
+**Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
 
 **Enumeration**
 
@@ -59,9 +59,9 @@ enum XCUIProtectedResource
 
 ## Resetting authorization status
 
-- [resetAuthorizationStatus(for:)](/documentation/xcuiautomation/xcuiapplication/resetauthorizationstatus(for:))
+- [resetAuthorizationStatus(for:)](/documentation/xcuiautomation/xcuiapplication/resetauthorizationstatus(for:)) Resets the authorization status for a protected resource.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

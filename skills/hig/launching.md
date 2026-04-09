@@ -2,7 +2,7 @@
 title: Launching
 description: A streamlined launch experience helps people start using your app or game immediately.
 source: https://developer.apple.com/design/human-interface-guidelines/launching
-timestamp: 2026-01-17T15:45:00.325Z
+timestamp: 2026-04-09T12:18:11.417Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:00.325Z
 # Launching
 
 > A streamlined launch experience helps people start using your app or game immediately.
-
-
 
 Launching begins when someone opens your app or game, includes an initial download, and ends when the first screen is ready. After launching completes, you might offer an [Onboarding](/design/human-interface-guidelines/onboarding) experience, which can give people a high-level view of your app or game.
 
@@ -49,6 +47,8 @@ Launching begins when someone opens your app or game, includes an initial downlo
 
 ### tvOS
 
+> **Note:** Unlike the [Layered images](/design/human-interface-guidelines/images#Layered-images) throughout much of a tvOS app, the launch screen is static.
+
 **In a live-viewing app, consider automatically starting playback soon after people start the app.** People come to your app to watch TV, so you might want to start playing new or recently viewed live content after a few seconds of inactivity. For guidance, see [Live-viewing apps](/design/human-interface-guidelines/live-viewing-apps).
 
 ### visionOS
@@ -76,7 +76,12 @@ Launching begins when someone opens your app or game, includes an initial downlo
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 10, 2024 | Added guidance on displaying a splash screen. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

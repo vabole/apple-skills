@@ -2,10 +2,10 @@
 title: Applying Liquid Glass to custom views
 description: Configure, combine, and morph views using Liquid Glass effects.
 source: https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views
-timestamp: 2026-02-19T07:56:04.076Z
+timestamp: 2026-04-09T12:04:22.756Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Article**
 
@@ -17,9 +17,7 @@ timestamp: 2026-02-19T07:56:04.076Z
 
 Interfaces across Apple platforms feature a new dynamic material called Liquid Glass, which combines the optical properties of glass with a sense of fluidity. Liquid Glass is a material that blurs content behind it, reflects color and light of surrounding content, and reacts to touch and pointer interactions in real time. Standard components in SwiftUI use Liquid Glass. Adopt Liquid Glass on custom components to move, combine, and morph them into one another with unique animations and transitions.
 
-![An image of the Landmarks sample code on iPad, in landscape, showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/86bea3b2d851de88291e52e7845ef990/liquid-glass-landmarks-hero%402x.png)
-
-To learn about Liquid Glass and more, see [Landmarks-Building-an-app-with-Liquid](/documentation/swiftui/landmarks-building-an-app-with-liquid-glass).
+To learn about Liquid Glass and more, see [Landmarks: Building an app with Liquid Glass](/documentation/swiftui/landmarks-building-an-app-with-liquid-glass).
 
 ## Apply and configure Liquid Glass effects
 
@@ -52,15 +50,13 @@ Text("Hello, World!")
 
 ## Combine multiple views with Liquid Glass containers
 
-Use [Glass Effect Container](/documentation/swiftui/glasseffectcontainer) when applying Liquid Glass effects on multiple views to achieve the best rendering performance. A container also allows views with Liquid Glass effects to blend their shapes together and to morph in and out of each other during transitions. Inside a container, each view with the [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:)) modifier renders with the effects behind it.
+Use [GlassEffectContainer](/documentation/swiftui/glasseffectcontainer) when applying Liquid Glass effects on multiple views to achieve the best rendering performance. A container also allows views with Liquid Glass effects to blend their shapes together and to morph in and out of each other during transitions. Inside a container, each view with the [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:)) modifier renders with the effects behind it.
 
 Customize the spacing on the container to control how the Liquid Glass effects behind views interact with one another. The larger the spacing value on the container, the sooner the Liquid Glass effects behind views blend together and merge the shapes during a transition. A spacing value on the container that’s larger than the spacing of an interior [HStack](/documentation/swiftui/hstack), [VStack](/documentation/swiftui/vstack), or other layout container causes Liquid Glass effects to blend together at rest because the views are too close to each other. Animating views in or out causes the shapes to morph apart or together as the space in the container changes.
 
 The `glassEffect(_:in:)` modifier captures the content to send to the container to render. Apply the `glassEffect(_:in:)` modifier after other modifiers that affect the appearance of the view.
 
 In the example below, two images are placed close to each other and the Liquid Glass effects begin to blend their shapes together. This creates a fluid animation as components move around each other within a container:
-
-![Two Image views representing a scribble symbol on the left, and an eraser symbol on the right. The views are close to each other, which causes the Liquid Glass effects to merge the views.](https://docs-assets.developer.apple.com/published/1a45d9481869becc2c40374ece262425/liquid-glass-joined-view%402x.png)
 
 ```swift
 GlassEffectContainer(spacing: 40.0) {
@@ -84,8 +80,6 @@ GlassEffectContainer(spacing: 40.0) {
 
 In some cases, you want the geometries of multiple views to contribute to a single Liquid Glass effect capsule, even when your content is at rest. Use the [glassEffectUnion(id:namespace:)](/documentation/swiftui/view/glasseffectunion(id:namespace:)) modifier to specify that a view contributes to a unified effect with a particular ID. This combines all effects with a similar shape, Liquid Glass effect, and ID into a single shape with the applied Liquid Glass material. This is especially useful when creating views dynamically, or with views that live outside of a layout container, like an `HStack` or `VStack`.
 
-![Four Image views that have Liquid Glass effects applied. A rain cloud with lightning symbol and a sun with rain symbol have a unified Liquid Glass effect encapsulating both of them, followed by a unified Liquid Glass effect of a moon with stars symbol and a moon symbol.](https://docs-assets.developer.apple.com/published/4426e68642783951fe56b1d7485825cc/liquid-glass-unioned-views%402x.png)
-
 ```swift
 let symbolSet: [String] = ["cloud.bolt.rain.fill", "sun.rain.fill", "moon.stars.fill", "moon.fill"]
 
@@ -104,7 +98,7 @@ GlassEffectContainer(spacing: 20.0) {
 
 ## Morph Liquid Glass effects during transitions
 
-Morphing effects occur during transitions or animations between views with Liquid Glass effects. Coordinate transitions between views with effects in a container by using the [glassEffectID(_:in:)](/documentation/swiftui/view/glasseffectid(_:in:)) modifier. [Glass Effect Transition](/documentation/swiftui/glasseffecttransition) allows you to specify the type of transition to use when you want to add or remove effects within a container. For effects you want to add or remove that are positioned within the container’s assigned spacing, the default transition type is [matched Geometry](/documentation/swiftui/glasseffecttransition/matchedgeometry).
+Morphing effects occur during transitions or animations between views with Liquid Glass effects. Coordinate transitions between views with effects in a container by using the [glassEffectID(_:in:)](/documentation/swiftui/view/glasseffectid(_:in:)) modifier. [GlassEffectTransition](/documentation/swiftui/glasseffecttransition) allows you to specify the type of transition to use when you want to add or remove effects within a container. For effects you want to add or remove that are positioned within the container’s assigned spacing, the default transition type is [matchedGeometry](/documentation/swiftui/glasseffecttransition/matchedgeometry).
 
 If you prefer to have a simpler transition or to create a custom transition, use the [materialize](/documentation/swiftui/glasseffecttransition/materialize) transition and [withAnimation(_:_:)](/documentation/swiftui/withanimation(_:_:)). Use the `materialize` transition for effects you want to add or remove that are farther from each other than the container’s assigned spacing. To provide people with a consistent experience, use `matchedGeometry` and `materialize` transitions across your apps. The system applies more than opacity changes with the available transition types.
 
@@ -148,20 +142,20 @@ var body: some View {
 
 ## Optimize performance when using Liquid Glass effects
 
-Creating too many Liquid Glass effect containers and applying too many effects to views outside of containers can degrade performance. Limit the use of Liquid Glass effects onscreen at the same time. Additionally, optimize how your app spends rendering time as people use it. To learn how to improve the performance of your UI, see [](https://developer.apple.com/videos/play/tech-talks/10855/) and [](https://developer.apple.com/videos/play/wwdc2025/306/).
+Creating too many Liquid Glass effect containers and applying too many effects to views outside of containers can degrade performance. Limit the use of Liquid Glass effects onscreen at the same time. Additionally, optimize how your app spends rendering time as people use it. To learn how to improve the performance of your UI, see [Explore UI animation hitches and the render loop](https://developer.apple.com/videos/play/tech-talks/10855/) and [Optimize SwiftUI performance with Instruments](https://developer.apple.com/videos/play/wwdc2025/306/).
 
 ## Styling views with Liquid Glass
 
-- [Landmarks: Building an app with Liquid Glass](/documentation/swiftui/landmarks-building-an-app-with-liquid-glass)
-- [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:))
-- [interactive(_:)](/documentation/swiftui/glass/interactive(_:))
-- [GlassEffectContainer](/documentation/swiftui/glasseffectcontainer)
-- [GlassEffectTransition](/documentation/swiftui/glasseffecttransition)
-- [GlassButtonStyle](/documentation/swiftui/glassbuttonstyle)
-- [GlassProminentButtonStyle](/documentation/swiftui/glassprominentbuttonstyle)
-- [DefaultGlassEffectShape](/documentation/swiftui/defaultglasseffectshape)
+- [Landmarks: Building an app with Liquid Glass](/documentation/swiftui/landmarks-building-an-app-with-liquid-glass) Enhance your app experience with system-provided and custom Liquid Glass.
+- [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:)) Applies the Liquid Glass effect to a view.
+- [interactive(_:)](/documentation/swiftui/glass/interactive(_:)) Returns a copy of the structure configured to be interactive.
+- [GlassEffectContainer](/documentation/swiftui/glasseffectcontainer) A view that combines multiple Liquid Glass shapes into a single shape that can morph individual shapes into one another.
+- [GlassEffectTransition](/documentation/swiftui/glasseffecttransition) A structure that describes changes to apply when a glass effect is added or removed from the view hierarchy.
+- [GlassButtonStyle](/documentation/swiftui/glassbuttonstyle) A button style that applies glass border artwork based on the button’s context.
+- [GlassProminentButtonStyle](/documentation/swiftui/glassprominentbuttonstyle) A button style that applies prominent glass border artwork based on the button’s context.
+- [DefaultGlassEffectShape](/documentation/swiftui/defaultglasseffectshape) The default shape applied by glass effects, a capsule.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -1,8 +1,8 @@
 ---
 title: Activity views
-description: An activity view — often called a  — presents a range of tasks that people can perform in the current context.
+description: An activity view — often called a *share sheet* — presents a range of tasks that people can perform in the current context.
 source: https://developer.apple.com/design/human-interface-guidelines/activity-views
-timestamp: 2026-01-19T10:22:59.331Z
+timestamp: 2026-04-09T12:04:12.650Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -11,9 +11,7 @@ timestamp: 2026-01-19T10:22:59.331Z
 
 # Activity views
 
-> An activity view — often called a  — presents a range of tasks that people can perform in the current context.
-
-
+> An activity view — often called a *share sheet* — presents a range of tasks that people can perform in the current context.
 
 Activity views present sharing activities like messaging and actions like Copy and Print, in addition to quick access to frequently used apps. People typically reveal a share sheet by choosing an Action button while viewing a page or document, or after they’ve selected an item. An activity view can appear as a sheet or a popover, depending on the device and orientation.
 
@@ -78,5 +76,5 @@ The system presents share and action extensions differently depending on the pla
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,7 +2,7 @@
 title: Text fields
 description: A text field is a rectangular area in which people enter or edit small, specific pieces of text.
 source: https://developer.apple.com/design/human-interface-guidelines/text-fields
-timestamp: 2026-01-17T15:45:24.039Z
+timestamp: 2026-04-09T12:18:18.747Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:24.039Z
 # Text fields
 
 > A text field is a rectangular area in which people enter or edit small, specific pieces of text.
-
-
 
 ## Best practices
 
@@ -32,8 +30,6 @@ timestamp: 2026-01-17T15:45:24.039Z
 **Validate fields when it makes sense.** For example, if the only legitimate value for a field is a string of digits, your app needs to alert people if they’ve entered characters other than digits. The appropriate time to check the data depends on the context: when entering an email address, it’s best to validate when people switch to another field; when creating a user name or password, validation needs to happen before people switch to another field.
 
 **Use a number formatter to help with numeric data.** A number formatter automatically configures the text field to accept only numeric values. It can also display the value in a specific way, such as with a certain number of decimal places, as a percentage, or as currency. Don’t assume the actual presentation of data, however, as formatting can vary significantly based on people’s locale.
-
-
 
 **Adjust line breaks according to the needs of the field.** By default, the system clips any text extending beyond the bounds of a text field. Alternatively, you can set up a text field to wrap text to a new line at the character or word level, or to truncate (indicated by an ellipsis) at the beginning, middle, or end.
 
@@ -83,7 +79,11 @@ timestamp: 2026-01-17T15:45:24.039Z
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 5, 2023 | Updated guidance to reflect changes in watchOS 10. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

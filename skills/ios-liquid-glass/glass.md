@@ -2,10 +2,10 @@
 title: Glass
 description: A structure that defines the configuration of the Liquid Glass material.
 source: https://developer.apple.com/documentation/swiftui/glass
-timestamp: 2026-01-17T15:42:14.210Z
+timestamp: 2026-04-09T12:04:22.943Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -30,7 +30,7 @@ Text("Hello, World!")
     .glassEffect()
 ```
 
-You can combine Liquid Glass effects using a [Glass Effect Container](/documentation/swiftui/glasseffectcontainer), which supports morphing views with this effect into each other based on the geometry of their associated views.
+You can combine Liquid Glass effects using a [GlassEffectContainer](/documentation/swiftui/glasseffectcontainer), which supports morphing views with this effect into each other based on the geometry of their associated views.
 
 ## Conforms To
 
@@ -51,20 +51,20 @@ You can combine Liquid Glass effects using a [Glass Effect Container](/documenta
 
 ## Styling content
 
-- [border(_:width:)](/documentation/swiftui/view/border(_:width:))
-- [foregroundStyle(_:)](/documentation/swiftui/view/foregroundstyle(_:))
-- [foregroundStyle(_:_:)](/documentation/swiftui/view/foregroundstyle(_:_:))
-- [foregroundStyle(_:_:_:)](/documentation/swiftui/view/foregroundstyle(_:_:_:))
-- [backgroundStyle(_:)](/documentation/swiftui/view/backgroundstyle(_:))
-- [backgroundStyle](/documentation/swiftui/environmentvalues/backgroundstyle)
-- [ShapeStyle](/documentation/swiftui/shapestyle)
-- [AnyShapeStyle](/documentation/swiftui/anyshapestyle)
-- [Gradient](/documentation/swiftui/gradient)
-- [MeshGradient](/documentation/swiftui/meshgradient)
-- [AnyGradient](/documentation/swiftui/anygradient)
-- [ShadowStyle](/documentation/swiftui/shadowstyle)
+- [border(_:width:)](/documentation/swiftui/view/border(_:width:)) Adds a border to this view with the specified style and width.
+- [foregroundStyle(_:)](/documentation/swiftui/view/foregroundstyle(_:)) Sets a view’s foreground elements to use a given style.
+- [foregroundStyle(_:_:)](/documentation/swiftui/view/foregroundstyle(_:_:)) Sets the primary and secondary levels of the foreground style in the child view.
+- [foregroundStyle(_:_:_:)](/documentation/swiftui/view/foregroundstyle(_:_:_:)) Sets the primary, secondary, and tertiary levels of the foreground style.
+- [backgroundStyle(_:)](/documentation/swiftui/view/backgroundstyle(_:)) Sets the specified style to render backgrounds within the view.
+- [backgroundStyle](/documentation/swiftui/environmentvalues/backgroundstyle) An optional style that overrides the default system background style when set.
+- [ShapeStyle](/documentation/swiftui/shapestyle) A color or pattern to use when rendering a shape.
+- [AnyShapeStyle](/documentation/swiftui/anyshapestyle) A type-erased ShapeStyle value.
+- [Gradient](/documentation/swiftui/gradient) A color gradient represented as an array of color stops, each having a parametric location value.
+- [MeshGradient](/documentation/swiftui/meshgradient) A two-dimensional gradient defined by a 2D grid of positioned colors.
+- [AnyGradient](/documentation/swiftui/anygradient) A color gradient.
+- [ShadowStyle](/documentation/swiftui/shadowstyle) A style to use when rendering shadows.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,7 +2,7 @@
 title: Toggles
 description: A toggle lets people choose between a pair of opposing states, like on and off, using a different appearance to indicate each state.
 source: https://developer.apple.com/design/human-interface-guidelines/toggles
-timestamp: 2026-01-17T15:45:21.814Z
+timestamp: 2026-04-09T12:18:19.271Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:21.814Z
 # Toggles
 
 > A toggle lets people choose between a pair of opposing states, like on and off, using a different appearance to indicate each state.
-
-
 
 A toggle can have various styles, such as switch and checkbox, and different platforms can use these styles in different ways. For guidance, see [Platform considerations](/design/human-interface-guidelines/toggles#Platform-considerations).
 
@@ -61,8 +59,6 @@ A checkbox is a small, square button that’s empty when the button is off, cont
 
 **Use a checkbox instead of a switch if you need to present a hierarchy of settings.** The visual style of checkboxes helps them align well and communicate grouping. By using alignment — generally along the leading edge of the checkboxes — and indentation, you can show dependencies, such as when the state of a checkbox governs the state of subordinate checkboxes.
 
-
-
 **Consider using radio buttons if you need to present a set of more than two mutually exclusive options.** When people need to choose from options in addition to just “on” or “off,” using multiple radio buttons can help you clarify each option with a unique label.
 
 **Consider using a label to introduce a group of checkboxes if their relationship isn’t clear.** Describe the set of options, and align the label’s baseline with the first checkbox in the group.
@@ -73,8 +69,6 @@ A checkbox is a small, square button that’s empty when the button is off, cont
 
 A radio button is a small, circular button followed by a label. Typically displayed in groups of two to five, radio buttons present a set of mutually exclusive choices.
 
-
-
 A radio button’s state is either selected (a filled circle) or deselected (an empty circle). Although a radio button can also display a mixed state (indicated by a dash), this state is rarely useful because you can communicate multiple states by using additional radio buttons. If you need to show that a setting or item has a mixed state, consider using a checkbox instead.
 
 **Prefer a set of radio buttons to present mutually exclusive options.** If you need to let people choose multiple options in a set, use checkboxes instead.
@@ -84,8 +78,6 @@ A radio button’s state is either selected (a filled circle) or deselected (an 
 **To present a single setting that can be on or off, prefer a checkbox.** Although a single radio button can also turn something on or off, the presence or absence of the checkmark in a checkbox can make the current state easier to understand at a glance. In rare cases where a single checkbox doesn’t clearly communicate the opposing states, you can use a pair of radio buttons, each with a label that specifies the state it controls.
 
 **Use consistent spacing when you display radio buttons horizontally.** Measure the space needed to accommodate the longest button label, and use that measurement consistently.
-
-
 
 ## Resources
 
@@ -105,7 +97,12 @@ A radio button’s state is either selected (a filled circle) or deselected (an 
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| March 29, 2024 | Enhanced guidance for using switches in macOS apps, clarified when a checkbox has a title, and added artwork for radio buttons. |
+| September 12, 2023 | Updated artwork. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

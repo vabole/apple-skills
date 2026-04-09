@@ -2,10 +2,10 @@
 title: Menu
 description: A control for presenting a menu of actions.
 source: https://developer.apple.com/documentation/swiftui/menu
-timestamp: 2026-02-19T07:52:36.946Z
+timestamp: 2026-04-09T12:04:37.457Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -36,7 +36,7 @@ Menu("Actions") {
 }
 ```
 
-You can create the menu’s title with a [Localized String Key](/documentation/swiftui/localizedstringkey), as seen in the previous example, or with a view builder that creates multiple views, such as an image and a text view:
+You can create the menu’s title with a [LocalizedStringKey](/documentation/swiftui/localizedstringkey), as seen in the previous example, or with a view builder that creates multiple views, such as an image and a text view:
 
 ```swift
 Menu {
@@ -64,8 +64,7 @@ Menu {
 }
 ```
 
-> [!NOTE]
-> This behavior does not apply to buttons outside of a menu’s content.
+> **Note:** This behavior does not apply to buttons outside of a menu’s content.
 
 ### Primary action
 
@@ -125,10 +124,10 @@ Menu("Editing") {
 
 ## Creating a menu
 
-- [Populating SwiftUI menus with adaptive controls](/documentation/swiftui/populating-swiftui-menus-with-adaptive-controls)
-- [menuStyle(_:)](/documentation/swiftui/view/menustyle(_:))
+- [Populating SwiftUI menus with adaptive controls](/documentation/swiftui/populating-swiftui-menus-with-adaptive-controls) Improve your app by populating menus with controls and organizing your content intuitively.
+- [menuStyle(_:)](/documentation/swiftui/view/menustyle(_:)) Sets the style for menus within this view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

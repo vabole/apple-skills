@@ -2,7 +2,7 @@
 title: Tab bars
 description: A tab bar lets people navigate between top-level sections of your app.
 source: https://developer.apple.com/design/human-interface-guidelines/tab-bars
-timestamp: 2026-01-17T15:45:12.264Z
+timestamp: 2026-04-09T12:18:18.509Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-17T15:45:12.264Z
 # Tab bars
 
 > A tab bar lets people navigate between top-level sections of your app.
-
-
 
 Tab bars help people understand the different types of information or functionality that an app provides. They also let people quickly switch between sections of the view while preserving the current navigation state within each section.
 
@@ -33,15 +31,9 @@ Tab bars help people understand the different types of information or functional
 
 **Consider using SF Symbols to provide familiar, scalable tab bar icons.** When you use [SF Symbols](/design/human-interface-guidelines/sf-symbols), tab bar icons automatically adapt to different contexts. For example, the tab bar can be regular or compact, depending on the device and orientation. Tab bar icons appear above tab labels in compact views, whereas in regular views, the icons and labels appear side by side. Prefer filled symbols or icons for consistency with the platform.
 
-
-
 If you’re creating custom tab bar icons, see [Apple Design Resources](https://developer.apple.com/design/resources/) for tab bar icon dimensions.
 
-
-
 **Use a badge to indicate that critical information is available.** You can display a badge — a red oval containing white text and either a number or an exclamation point — on a tab to indicate that there’s new or updated information in the section that warrants a person’s attention. Reserve badges for critical information so you don’t dilute their impact and meaning. For guidance, see [Notifications](/design/human-interface-guidelines/notifications).
-
-
 
 **Avoid applying a similar color to tab labels and content layer backgrounds.** If your app already has bright, colorful content in the content layer, prefer a monochromatic appearance for tab bars, or choose an accent color with sufficient visual differentiation. For more guidance, see [Liquid Glass color](/design/human-interface-guidelines/color#Liquid-Glass-color).
 
@@ -60,6 +52,8 @@ A tab bar can include a distinct search item at the trailing end. For guidance, 
 ### iPadOS
 
 The system displays a tab bar near the top of the screen. You can choose to have the tab bar appear as a fixed element, or with a button that converts it to a sidebar. For developer guidance, see [tabBarOnly](/documentation/SwiftUI/TabViewStyle/tabBarOnly) and [sidebarAdaptable](/documentation/SwiftUI/TabViewStyle/sidebarAdaptable).
+
+> **Note:** To present a sidebar without the option to convert it to a tab bar, use a [navigation split view](https://developer.apple.com/documentation/swiftui/navigationsplitview) instead of a tab view. For guidance, see [Sidebars](/design/human-interface-guidelines/sidebars).
 
 **Prefer a tab bar for navigation.** A tab bar provides access to the sections of your app that people use most. If your app is more complex, you can provide the option to convert the tab bar to a sidebar so people can access a wider set of navigation options.
 
@@ -127,7 +121,15 @@ In visionOS, a tab bar is always vertical, floating in a position that’s fixed
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| December 16, 2025 | Updated guidance for Liquid Glass. |
+| July 28, 2025 | Added guidance for Liquid Glass. |
+| September 9, 2024 | Added art representing the tab bar in iPadOS 18. |
+| August 6, 2024 | Updated with guidance for the tab bar in iPadOS 18. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,10 +2,10 @@
 title: Section
 description: A container view that you can use to add hierarchy within certain views.
 source: https://developer.apple.com/documentation/swiftui/section
-timestamp: 2026-02-19T07:56:11.045Z
+timestamp: 2026-04-09T12:04:39.196Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -27,8 +27,7 @@ Use `Section` instances in views like [List](/documentation/swiftui/list), [Pick
 
 Create sections that expand and collapse by using an initializer that accepts an `isExpanded` binding. A collapsible section in a [List](/documentation/swiftui/list) that uses the [sidebar](/documentation/swiftui/liststyle/sidebar) style shows a disclosure indicator next to the section’s header. Tapping on the disclosure indicator toggles the appearance of the section’s content.
 
-> [!NOTE]
-> Not all contexts provide a default control to trigger collapse or expansion.
+> **Note:** Not all contexts provide a default control to trigger collapse or expansion.
 
 ## Conforms To
 
@@ -62,10 +61,10 @@ Create sections that expand and collapse by using an initializer that accepts an
 
 ## Organizing views into sections
 
-- [SectionCollection](/documentation/swiftui/sectioncollection)
-- [SectionConfiguration](/documentation/swiftui/sectionconfiguration)
+- [SectionCollection](/documentation/swiftui/sectioncollection) An opaque collection representing the sections of view.
+- [SectionConfiguration](/documentation/swiftui/sectionconfiguration) Specifies the contents of a section.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,7 +2,7 @@
 title: Popovers
 description: A popover is a transient view that appears above other content when people click or tap a control or interactive area.
 source: https://developer.apple.com/design/human-interface-guidelines/popovers
-timestamp: 2026-01-19T10:22:58.819Z
+timestamp: 2026-04-09T12:04:18.414Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -12,8 +12,6 @@ timestamp: 2026-01-19T10:22:58.819Z
 # Popovers
 
 > A popover is a transient view that appears above other content when people click or tap a control or interactive area.
-
-
 
 ## Best practices
 
@@ -79,5 +77,5 @@ You can make a popover detachable in macOS, which becomes a separate panel when 
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

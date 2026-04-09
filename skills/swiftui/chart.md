@@ -2,7 +2,7 @@
 title: Chart
 description: A SwiftUI view that displays a chart.
 source: https://developer.apple.com/documentation/charts/chart
-timestamp: 2026-02-19T07:56:10.806Z
+timestamp: 2026-04-09T12:04:33.909Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -36,7 +36,7 @@ let data: [ValuePerCategory] = [
 ]
 ```
 
-You can use [Bar Mark](/documentation/charts/barmark) inside a chart to represent the `category` property as different bars in the chart and the `value` property as the y value for each bar:
+You can use [BarMark](/documentation/charts/barmark) inside a chart to represent the `category` property as different bars in the chart and the `value` property as the y value for each bar:
 
 ```swift
 Chart(data, id: \.category) { item in
@@ -47,9 +47,7 @@ Chart(data, id: \.category) { item in
 }
 ```
 
-This chart initializer behaves a lot like a SwiftUI [For Each](/documentation/SwiftUI/ForEach), creating a mark — in this case, a bar — for each of the values in the `data` array:
-
-![A bar chart with three categories A, B, and C on the x-axis and a range of 0 to 10 on the y-axis. A bar appears in each category. All the bars are the same color. The first has a value of 5. The second has a value of 9. The third has a value of 7.](https://docs-assets.developer.apple.com/published/e8d88794fa77f18d67e494cac557a292/chart-1-macOS%402x.png)
+This chart initializer behaves a lot like a SwiftUI [ForEach](/documentation/SwiftUI/ForEach), creating a mark — in this case, a bar — for each of the values in the `data` array:
 
 ### Controlling data series inside a chart
 
@@ -65,7 +63,7 @@ let departmentAProfit: [ProfitOverTime] = <#Profit array A#>
 let departmentBProfit: [ProfitOverTime] = <#Profit array B#>
 ```
 
-The following chart creates two different series of [Line Mark](/documentation/charts/linemark) instances with different colors to represent the data for each company. In effect, it moves the `ForEach` construct from the chart’s initializer into the body of the chart, enabling you to represent multiple different series:
+The following chart creates two different series of [LineMark](/documentation/charts/linemark) instances with different colors to represent the data for each company. In effect, it moves the `ForEach` construct from the chart’s initializer into the body of the chart, enabling you to represent multiple different series:
 
 ```swift
 Chart {
@@ -92,9 +90,7 @@ Chart {
 }
 ```
 
-You indicate which series a line mark belongs to by specifying its `series` input parameter. The above chart also uses a [Rule Mark](/documentation/charts/rulemark) to produce a horizontal line segment that displays a constant threshold value across the width of the chart:
-
-![A line chart with three lines. Dates appear on the x-axis, spanning one full month, and company profit appears on the y-axis in the range of 0 to 750. Two of the lines trend upward from left to right, with occasional downward movement. The third line is purely horizontal at the level of 400.](https://docs-assets.developer.apple.com/published/689db8aa648e1884570bed622d3af3a1/chart-2-macOS%402x.png)
+You indicate which series a line mark belongs to by specifying its `series` input parameter. The above chart also uses a [RuleMark](/documentation/charts/rulemark) to produce a horizontal line segment that displays a constant threshold value across the width of the chart:
 
 ## Conforms To
 
@@ -114,13 +110,13 @@ You indicate which series a line mark belongs to by specifying its `series` inpu
 
 ## Charts
 
-- [Creating a chart using Swift Charts](/documentation/charts/creating-a-chart-using-swift-charts)
-- [Visualizing your app’s data](/documentation/charts/visualizing-your-app-s-data)
-- [ChartContent](/documentation/charts/chartcontent)
-- [ChartContentBuilder](/documentation/charts/chartcontentbuilder)
-- [Plot](/documentation/charts/plot)
+- [Creating a chart using Swift Charts](/documentation/charts/creating-a-chart-using-swift-charts) Make a chart by combining chart building blocks in SwiftUI.
+- [Visualizing your app’s data](/documentation/charts/visualizing-your-app-s-data) Build complex and interactive charts using Swift Charts.
+- [ChartContent](/documentation/charts/chartcontent) A type that represents the content that you draw on a chart.
+- [ChartContentBuilder](/documentation/charts/chartcontentbuilder) A result builder that you use to compose the contents of a chart.
+- [Plot](/documentation/charts/plot) A mechanism for grouping chart contents into a single entity.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

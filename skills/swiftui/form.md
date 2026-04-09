@@ -2,10 +2,10 @@
 title: Form
 description: A container for grouping controls used for data entry, such as in settings or inspectors.
 source: https://developer.apple.com/documentation/swiftui/form
-timestamp: 2026-02-19T07:56:06.603Z
+timestamp: 2026-04-09T12:04:35.306Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -51,8 +51,6 @@ var body: some View {
 }
 ```
 
-![A form on iOS, presented as a grouped list with two sections. The](https://docs-assets.developer.apple.com/published/9b9f14a16c5d9d1fed7b121071bdb262/SwiftUI-Form-iOS%402x.png)
-
 On macOS, a similar form renders as a vertical stack. To adhere to macOS platform conventions, this version doesn’t use sections, and uses colons at the end of its labels. It also sets the picker to use the [inline](/documentation/swiftui/pickerstyle/inline) style, which produces radio buttons on macOS.
 
 ```swift
@@ -84,8 +82,6 @@ var body: some View {
 }
 ```
 
-![A form on iOS, presented as a vertical stack of views. At top, it shows](https://docs-assets.developer.apple.com/published/cdbe25e36916e95c7d68402249d02bb4/SwiftUI-Form-macOS%402x.png)
-
 ## Conforms To
 
 - [View](/documentation/swiftui/view)
@@ -100,11 +96,11 @@ var body: some View {
 
 ## Grouping inputs
 
-- [formStyle(_:)](/documentation/swiftui/view/formstyle(_:))
-- [LabeledContent](/documentation/swiftui/labeledcontent)
-- [labeledContentStyle(_:)](/documentation/swiftui/view/labeledcontentstyle(_:))
+- [formStyle(_:)](/documentation/swiftui/view/formstyle(_:)) Sets the style for forms in a view hierarchy.
+- [LabeledContent](/documentation/swiftui/labeledcontent) A container for attaching a label to a value-bearing view.
+- [labeledContentStyle(_:)](/documentation/swiftui/view/labeledcontentstyle(_:)) Sets a style for labeled content.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*
