@@ -89,10 +89,7 @@ export function renderIdentifierSections(
     }
 
     markdown += `## ${section.title}\n\n`
-    const seen = new Set<string>()
     for (const identifier of section.identifiers) {
-      if (seen.has(identifier)) continue
-      seen.add(identifier)
       const reference = references?.[identifier]
       if (!reference) {
         markdown += `- ${resolveReferenceLabelFromIdentifier(identifier)}\n`
