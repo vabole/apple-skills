@@ -158,8 +158,9 @@ Biome also enforces line-count limits so the refresh tooling stays modular inste
 
 ### Claude Code Plugin
 ```bash
-# Add as a Claude Code plugin
-claude plugins add vabole/apple-skills
+# Add the marketplace and install the plugin
+/plugin marketplace add vabole/apple-skills
+/plugin install apple-skills@apple-skills
 ```
 
 ### Codex
