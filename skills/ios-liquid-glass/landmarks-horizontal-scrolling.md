@@ -2,10 +2,10 @@
 title: Landmarks: Extending horizontal scrolling under a sidebar or inspector
 description: Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
 source: https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector
-timestamp: 2026-02-19T07:56:03.254Z
+timestamp: 2026-04-09T13:37:28.552Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Sample Code**
 
@@ -27,7 +27,7 @@ This sample demonstrates how to extend horizontal scrolling under a sidebar or i
 
 To achieve this effect, the sample configures the `LandmarkHorizontalListView` so it touches the leading and trailing edges. When a scroll view touches the sidebar or inspector, the system automatically adjusts it to scroll under the sidebar or inspector and then off the edge of the screen.
 
-The sample adds a [Spacer](/documentation/swiftui/spacer) at the beginning of the [Scroll View](/documentation/swiftui/scrollview) to inset the content so it aligns with the title padding:
+The sample adds a [Spacer](/documentation/swiftui/spacer) at the beginning of the [ScrollView](/documentation/swiftui/scrollview) to inset the content so it aligns with the title padding:
 
 ```swift
 ScrollView(.horizontal, showsIndicators: false) {
@@ -43,11 +43,11 @@ ScrollView(.horizontal, showsIndicators: false) {
 
 ## App features
 
-- [Landmarks: Applying a background extension effect](/documentation/swiftui/landmarks-applying-a-background-extension-effect)
-- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars)
-- [Landmarks: Displaying custom activity badges](/documentation/swiftui/landmarks-displaying-custom-activity-badges)
+- [Landmarks: Applying a background extension effect](/documentation/swiftui/landmarks-applying-a-background-extension-effect) Configure an image to blur and extend under a sidebar or inspector panel.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars) Organize toolbars into related groupings to improve their appearance and utility.
+- [Landmarks: Displaying custom activity badges](/documentation/swiftui/landmarks-displaying-custom-activity-badges) Provide people with a way to mark their adventures by displaying animated custom activity badges.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

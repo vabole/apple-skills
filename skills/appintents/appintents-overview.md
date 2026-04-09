@@ -1,420 +1,102 @@
 ---
 title: App Intents
 source: https://developer.apple.com/documentation/appintents
-timestamp: 2026-02-19T07:56:01.983Z
+timestamp: 2026-04-09T12:04:04.402Z
 ---
+
+**Navigation:** [App Intents](/documentation/appintents)
 
 ## Essentials
 
 - [App Intents updates](/documentation/updates/appintents)
 - [Making actions and content discoverable and widely available](/documentation/appintents/making-actions-and-content-discoverable-and-widely-available)
-- [Creating your first app intent](/documentation/appintents/creating-your-first-app-intent)
+## System experiences
+
 - [Adopting App Intents to support system experiences](/documentation/appintents/adopting-app-intents-to-support-system-experiences)
-- [Accelerating app interactions with App Intents](/documentation/appintents/acceleratingappinteractionswithappintents)
+- [Making app entities available in Spotlight](/documentation/appintents/making-app-entities-available-in-spotlight)
+- [Launching your voice-based conversational app from the side button of iPhone](/documentation/appintents/launching-your-voice-based-conversational-app-from-the-side-button-of-iphone)
+- [Siri](/documentation/appintents/siri)
+### Adding Siri support
 
-## Siri and Apple Intelligence
-
+- [Making your app’s functionality available to Siri](/documentation/appintents/making-your-app-s-functionality-available-to-siri)
 - [Integrating actions with Siri and Apple Intelligence](/documentation/appintents/integrating-actions-with-siri-and-apple-intelligence)
 - [Making onscreen content available to Siri and Apple Intelligence](/documentation/appintents/making-onscreen-content-available-to-siri-and-apple-intelligence)
-
-### System protocols
+#### System protocols
 
 - [AppEntityAnnotatable](/documentation/appintents/appentityannotatable)
-
-#### Instance Properties
+##### Instance Properties
 
 - [var appEntityIdentifier: EntityIdentifier?](/documentation/appintents/appentityannotatable/appentityidentifier)
+
+
 - [App intent domains](/documentation/appintents/app-intent-domains)
+#### Domains
 
-### Macros
-
-- [macro AppIntent<T>(schema: T)](/documentation/appintents/appintent(schema:))
-- [macro AppEntity<T>(schema: T)](/documentation/appintents/appentity(schema:))
-- [macro AppEnum<T>(schema: T)](/documentation/appintents/appenum(schema:))
-
-### Books
-
-- [Making ebook actions available to Siri and Apple Intelligence](/documentation/appintents/making-ebook-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
-
-#### Instance Properties
-
-- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
-- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
-- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/search)
-- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
-- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
-- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
-- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
-- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
-- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
-
-#### Instance Properties
-
-- [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
-- [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
-- [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
-- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
-
-#### Instance Properties
-
-- [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
-- [var font: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/font)
-- [var fontSize: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/fontsize)
-- [var navigationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/navigationdirection)
-- [var pageNavigationSetting: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/pagenavigationsetting)
-- [var relativeCharacterSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativecharacterspacingchange)
-- [var relativeFontChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativefontchange)
-- [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
-- [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
-- [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
-
-### Browser
-
-- [Making browser actions available to Siri and Apple Intelligence](/documentation/appintents/making-browser-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/browserintent)
-
-#### Instance Properties
-
-- [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
-- [var bookmarkURL: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarkurl)
-- [var clearHistory: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/clearhistory)
-- [var closeTabs: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closetabs)
-- [var closeWindows: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closewindows)
-- [var createTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createtab)
-- [var createWindow: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createwindow)
-- [var deleteBookmarks: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/deletebookmarks)
-- [var findOnPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/findonpage)
-- [var openBookmark: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openbookmark)
-- [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
-- [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
-- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
-
-#### Instance Properties
-
-- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
-- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
-- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
-- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
-
-#### Instance Properties
-
-- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
-
-### Camera
-
-- [Making camera actions available to Siri and Apple Intelligence](/documentation/appintents/making-camera-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
-
-#### Instance Properties
-
-- [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
-- [var setDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/setdevice)
-- [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
-- [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
-- [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
-- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
-
-#### Instance Properties
-
-- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
-- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
-- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
-
-### Document reader
-
-- [Making document reader actions available to Siri and Apple Intelligence](/documentation/appintents/making-document-reader-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/readerintent)
-
-#### Instance Properties
-
-- [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
-- [var enhanceDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/enhancedocuments)
-- [var insertPages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/insertpages)
-- [var openDocument: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/opendocument)
-- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/openpage)
-- [var resizeDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/resizedocuments)
-- [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
-- [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
-- [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
-- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
-
-#### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
-- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
-- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
-
-#### Instance Properties
-
-- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
-
-### File management
-
-- [Making file management actions available to Siri and Apple Intelligence](/documentation/appintents/making-file-management-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
-
-#### Instance Properties
-
-- [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
-- [var deleteFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/deletefiles)
-- [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
-- [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
-- [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
-- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
-
-#### Instance Properties
-
-- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
-
-### iPhone side button access (only in Japan)
+- [Assistant](/documentation/appintents/app-intent-domain-assistant)
+##### Essentials
 
 - [Launching your voice-based conversational app from the side button of iPhone](/documentation/appintents/launching-your-voice-based-conversational-app-from-the-side-button-of-iphone)
-- [AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/assistantintent)
-
-#### Schemas
+##### Actions
 
 - [var activate: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/assistantintent/activate)
-
-### Journaling
-
-- [Making journaling actions available to Siri and Apple Intelligence](/documentation/appintents/making-journaling-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
-
-#### Instance Properties
-
-- [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
-- [var createEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createentry)
-- [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
-- [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
-- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
-
-#### Instance Properties
-
-- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
-
-### Email
-
-- [Making email actions available to Siri and Apple Intelligence](/documentation/appintents/making-email-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/mailintent)
-
-#### Instance Properties
-
-- [var archiveMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/archivemail)
-- [var createDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/createdraft)
-- [var deleteDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletedraft)
-- [var deleteMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletemail)
-- [var forwardMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/forwardmail)
-- [var replyMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/replymail)
-- [var saveDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/savedraft)
-- [var sendDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/senddraft)
-- [var updateDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatedraft)
-- [var updateMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatemail)
-- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
-
-#### Instance Properties
-
-- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
-- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
-- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
-- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
-
-### Photos and videos
-
-- [Making photo and video actions available to Siri and Apple Intelligence](/documentation/appintents/making-photo-and-video-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/photosintent)
-
-#### Instance Properties
-
-- [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
-- [var cleanupPhoto: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/cleanupphoto)
-- [var copyEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/copyedits)
-- [var createAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createalbum)
-- [var createAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createassets)
-- [var crop: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/crop)
-- [var deleteAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deletealbum)
-- [var deleteAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deleteassets)
-- [var duplicateAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/duplicateassets)
-- [var openAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openalbum)
-- [var openAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openasset)
-- [var pasteEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/pasteedits)
-- [var postToSharedAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/posttosharedalbum)
-- [var removeAssetsFromAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/removeassetsfromalbum)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/search)
-- [var setDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setdepth)
-- [var setExposure: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setexposure)
-- [var setFilter: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setfilter)
-- [var setRotation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setrotation)
-- [var setSaturation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setsaturation)
-- [var setWarmth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setwarmth)
-- [var straighten: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/straighten)
-- [var toggleDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/toggledepth)
-- [var toggleSuggestedEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/togglesuggestededits)
-- [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
-- [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
-- [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
-- [AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/photosentity)
-
-#### Instance Properties
-
-- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
-- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
-- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
-- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
-
-#### Instance Properties
-
-- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
-- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
-- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
-- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
-
-### Presentations
-
-- [Making presentation actions available to Siri and Apple Intelligence](/documentation/appintents/making-presentation-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
-
-#### Instance Properties
-
-- [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
-- [var addCommentToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addcommenttoslide)
-- [var addImageToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addimagetoslide)
-- [var addTextBoxToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addtextboxtoslide)
-- [var addVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addvideotoslide)
-- [var addWebVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addwebvideotoslide)
-- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/create)
-- [var createSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/createslide)
-- [var deleteSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/deleteslide)
-- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/open)
-- [var openSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/openslide)
-- [var setSlideTitle: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/setslidetitle)
-- [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
-- [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
-- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
-- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
-
-#### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
-- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
-
-### Spreadsheets
-
-- [Making spreadsheet actions available to Siri and Apple Intelligence](/documentation/appintents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
-
-#### Instance Properties
-
-- [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
-- [var addCommentToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addcommenttosheet)
-- [var addImageToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addimagetosheet)
-- [var addTextBoxToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addtextboxtosheet)
-- [var addVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addvideotosheet)
-- [var addWebVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addwebvideotosheet)
-- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/create)
-- [var createSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/createsheet)
-- [var delete: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/delete)
-- [var deleteSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/deletesheet)
-- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/open)
-- [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
-- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
-- [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
-- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
-
-#### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
-- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
-
-### System and in-app search
-
-- [Making in-app search actions available to Siri and Apple Intelligence](/documentation/appintents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
-
-#### Instance Properties
-
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
-
-### Whiteboard
-
-- [Making whiteboard actions available to Siri and Apple Intelligence](/documentation/appintents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/whiteboardintent)
-
-#### Instance Properties
-
-- [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
-- [var createItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createitem)
-- [var deleteBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteboard)
-- [var deleteItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteitem)
-- [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
-- [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
-- [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
-- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
-
-#### Instance Properties
-
-- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
-- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
-- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
-
-#### Instance Properties
-
-- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
-- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
-
-### Word processor and text editing
-
-- [Making word processor actions available to Siri and Apple Intelligence](/documentation/appintents/making-word-processor-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
-
-#### Instance Properties
-
-- [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
-- [var addImageToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addimagetopage)
-- [var addTextBoxToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addtextboxtopage)
-- [var addVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addvideotopage)
-- [var addWebVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addwebvideotopage)
-- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/create)
-- [var createPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/createpage)
-- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/open)
-- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/openpage)
-- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
-
-#### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
-- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
-
-### Base protocols
-
-- [Assistant schema base protocols](/documentation/appintents/assistant-schema-base-protocols)
-
-#### Assistant schema protocols
-
-- [AssistantSchemas](/documentation/appintents/assistantschemas)
-
-##### Protocols
-
 - [AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/assistantintent)
-
 ###### Schemas
 
 - [var activate: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/assistantintent/activate)
-- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
 
+
+- [Books](/documentation/appintents/app-intent-domain-books)
+##### Essentials
+
+- [Making ebook actions available to Siri and Apple Intelligence](/documentation/appintents/making-ebook-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
+- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
+- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
+- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
+- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
+- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
+- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
+- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
+- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
+###### Instance Properties
+
+- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
+- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
+- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/search)
+- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
+- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
+- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
+- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
+- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
+
+##### Content and parameter types
+
+- [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
+- [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
+- [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
+- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
 ###### Instance Properties
 
 - [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
 - [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
 - [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
-- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
 
+##### Types for static parameters
+
+- [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
+- [var font: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/font)
+- [var fontSize: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/fontsize)
+- [var navigationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/navigationdirection)
+- [var relativeFontChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativefontchange)
+- [var relativeCharacterSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativecharacterspacingchange)
+- [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
+- [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
+- [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
+- [var pageNavigationSetting: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/pagenavigationsetting)
+- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
 ###### Instance Properties
 
 - [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
@@ -427,33 +109,30 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
 - [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
 - [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
-- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
 
-###### Instance Properties
+##### Deprecated schemas
 
-- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
-- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
-- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
 - [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/search)
-- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
-- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
-- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
-- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
-- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
-- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
 
-###### Instance Properties
+- [Browser](/documentation/appintents/app-intent-domain-browser)
+##### Essentials
 
-- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
-- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
-- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
-- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
+- [Making browser actions available to Siri and Apple Intelligence](/documentation/appintents/making-browser-actions-available-to-siri-and-apple-intelligence)
+##### Actions
 
-###### Instance Properties
-
-- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
+- [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
+- [var bookmarkURL: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarkurl)
+- [var clearHistory: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/clearhistory)
+- [var closeTabs: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closetabs)
+- [var closeWindows: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closewindows)
+- [var createTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createtab)
+- [var createWindow: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createwindow)
+- [var deleteBookmarks: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/deletebookmarks)
+- [var findOnPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/findonpage)
+- [var openBookmark: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openbookmark)
+- [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
+- [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
 - [AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/browserintent)
-
 ###### Instance Properties
 
 - [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
@@ -469,15 +148,43 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
 - [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
 - [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
-- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
 
+##### Content and parameter types
+
+- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
+- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
+- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
+- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
 ###### Instance Properties
 
-- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
-- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
-- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
-- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
+- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
+- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
+- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
 
+##### Types for static parameters
+
+- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
+- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
+###### Instance Properties
+
+- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
+
+##### Deprecated schemas
+
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
+
+- [Camera](/documentation/appintents/app-intent-domain-camera)
+##### Essentials
+
+- [Making camera actions available to Siri and Apple Intelligence](/documentation/appintents/making-camera-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
+- [var setDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/setdevice)
+- [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
+- [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
+- [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
+- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
 ###### Instance Properties
 
 - [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
@@ -485,38 +192,32 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
 - [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
 - [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
-- [AssistantSchemas.Entity](/documentation/appintents/assistantschemas/entity)
 
-###### Type Properties
+##### Types for static parameters
 
-- [static var books: some AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/entity/books)
-- [static var browser: some AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/entity/browser)
-- [static var files: some AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/entity/files)
-- [static var journal: some AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/entity/journal)
-- [static var mail: some AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/entity/mail)
-- [static var photos: some AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/entity/photos)
-- [static var presentation: some AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/entity/presentation)
-- [static var reader: some AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/entity/reader)
-- [static var spreadsheet: some AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/entity/spreadsheet)
-- [static var whiteboard: some AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/entity/whiteboard)
-- [static var wordProcessor: some AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/entity/wordprocessor)
-- [AssistantSchemas.Enum](/documentation/appintents/assistantschemas/enum)
-
-###### Type Properties
-
-- [static var books: some AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/enum/books)
-- [static var browser: some AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/enum/browser)
-- [static var camera: some AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/enum/camera)
-- [static var photos: some AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/enum/photos)
-- [static var reader: some AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/enum/reader)
-- [static var whiteboard: some AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/enum/whiteboard)
-- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
-
+- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
+- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
+- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
+- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
 ###### Instance Properties
 
-- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
-- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
+- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
+- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
+- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
 
+
+- [File management](/documentation/appintents/app-intent-domain-file-management)
+##### Essentials
+
+- [Making file management actions available to Siri and Apple Intelligence](/documentation/appintents/making-file-management-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
+- [var deleteFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/deletefiles)
+- [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
+- [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
+- [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
+- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
 ###### Instance Properties
 
 - [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
@@ -524,32 +225,28 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
 - [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
 - [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
-- [AssistantSchemas.Intent](/documentation/appintents/assistantschemas/intent)
 
-###### Type Properties
+##### Content and parameter types
 
-- [static var assistant: some AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/intent/assistant)
-- [static var books: some AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/intent/books)
-- [static var browser: some AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/intent/browser)
-- [static var camera: some AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/intent/camera)
-- [static var files: some AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/intent/files)
-- [static var journal: some AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/intent/journal)
-- [static var mail: some AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/intent/mail)
-- [static var photos: some AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/intent/photos)
-- [static var presentation: some AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/intent/presentation)
-- [static var reader: some AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/intent/reader)
-- [static var spreadsheet: some AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/intent/spreadsheet)
-- [static var system: some AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/intent/system)
-- [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/intent/visualintelligence)
-- [static var whiteboard: some AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/intent/whiteboard)
-- [static var wordProcessor: some AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/intent/wordprocessor)
-- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
-
+- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
+- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
 ###### Instance Properties
 
-- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
-- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
+- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
 
+
+- [Journaling](/documentation/appintents/app-intent-domain-journaling)
+##### Essentials
+
+- [Making journaling actions available to Siri and Apple Intelligence](/documentation/appintents/making-journaling-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
+- [var createEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createentry)
+- [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
+- [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
+- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
 ###### Instance Properties
 
 - [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
@@ -557,17 +254,21 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
 - [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
 - [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
-- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
 
+##### Content and parameter types
+
+- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
+- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
 ###### Instance Properties
 
-- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
-- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
-- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
-- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
-- [AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/mailintent)
+- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
 
-###### Instance Properties
+
+- [Mail](/documentation/appintents/app-intent-domain-mail)
+##### Essentials
+
+- [Making email actions available to Siri and Apple Intelligence](/documentation/appintents/making-email-actions-available-to-siri-and-apple-intelligence)
+##### Actions
 
 - [var archiveMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/archivemail)
 - [var createDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/createdraft)
@@ -576,27 +277,56 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var forwardMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/forwardmail)
 - [var replyMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/replymail)
 - [var saveDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/savedraft)
-- [var sendDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/senddraft)
 - [var updateDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatedraft)
 - [var updateMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatemail)
-- [AssistantSchemas.Model](/documentation/appintents/assistantschemas/model)
-- [AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/photosentity)
+##### Content and parameter types
 
+- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
+- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
+- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
+- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
+- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
 ###### Instance Properties
 
-- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
-- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
-- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
-- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
+- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
+- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
+- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
+- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
 
-###### Instance Properties
 
-- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
-- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
-- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
-- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
+- [Photos](/documentation/appintents/app-intent-domain-photos)
+##### Essentials
+
+- [Making photo and video actions available to Siri and Apple Intelligence](/documentation/appintents/making-photo-and-video-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
+- [var cleanupPhoto: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/cleanupphoto)
+- [var copyEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/copyedits)
+- [var createAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createalbum)
+- [var createAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createassets)
+- [var crop: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/crop)
+- [var deleteAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deletealbum)
+- [var deleteAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deleteassets)
+- [var duplicateAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/duplicateassets)
+- [var openAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openalbum)
+- [var pasteEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/pasteedits)
+- [var postToSharedAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/posttosharedalbum)
+- [var removeAssetsFromAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/removeassetsfromalbum)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/search)
+- [var setDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setdepth)
+- [var setExposure: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setexposure)
+- [var setFilter: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setfilter)
+- [var setRotation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setrotation)
+- [var setSaturation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setsaturation)
+- [var setWarmth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setwarmth)
+- [var straighten: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/straighten)
+- [var toggleDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/toggledepth)
+- [var toggleSuggestedEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/togglesuggestededits)
+- [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
+- [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
+- [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
 - [AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/photosintent)
-
 ###### Instance Properties
 
 - [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
@@ -626,15 +356,55 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
 - [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
 - [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
-- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
 
+##### Content and parameter types
+
+- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
+- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
+- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
+- [AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/photosentity)
 ###### Instance Properties
 
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
-- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
-- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
+- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
+- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
+- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
 
+##### Types for static parameters
+
+- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
+- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
+- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
+- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
+- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
+###### Instance Properties
+
+- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
+- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
+- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
+- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
+
+
+- [Presentations](/documentation/appintents/app-intent-domain-presentation)
+##### Essentials
+
+- [Making presentation actions available to Siri and Apple Intelligence](/documentation/appintents/making-presentation-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
+- [var addCommentToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addcommenttoslide)
+- [var addImageToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addimagetoslide)
+- [var addTextBoxToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addtextboxtoslide)
+- [var addWebVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addwebvideotoslide)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/create)
+- [var createSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/createslide)
+- [var deleteSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/deleteslide)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/open)
+- [var openSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/openslide)
+- [var setSlideTitle: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/setslidetitle)
+- [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
+- [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
+- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
 ###### Instance Properties
 
 - [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
@@ -652,19 +422,36 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
 - [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
 - [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
-- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
 
+##### Content and parameter types
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
+- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
+- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
 ###### Instance Properties
 
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
-- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
-- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
+- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
 
-###### Instance Properties
 
-- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
+- [Reader](/documentation/appintents/app-intent-domain-reader)
+##### Essentials
+
+- [Making document reader actions available to Siri and Apple Intelligence](/documentation/appintents/making-document-reader-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
+- [var enhanceDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/enhancedocuments)
+- [var insertPages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/insertpages)
+- [var openDocument: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/opendocument)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/openpage)
+- [var resizeDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/resizedocuments)
+- [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
+- [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
+- [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
 - [AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/readerintent)
-
 ###### Instance Properties
 
 - [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
@@ -676,15 +463,47 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
 - [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
 - [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
-- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
 
+##### Content and parameter types
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
+- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
 ###### Instance Properties
 
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
-- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
-- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
 
+##### Types for static parameters
+
+- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
+- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
+###### Instance Properties
+
+- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
+
+
+- [Spreadsheet](/documentation/appintents/app-intent-domain-spreadsheet)
+##### Essentials
+
+- [Making spreadsheet actions available to Siri and Apple Intelligence](/documentation/appintents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
+- [var addCommentToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addcommenttosheet)
+- [var addImageToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addimagetosheet)
+- [var addTextBoxToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addtextboxtosheet)
+- [var addVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addvideotosheet)
+- [var addWebVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addwebvideotosheet)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/create)
+- [var createSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/createsheet)
+- [var delete: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/delete)
+- [var deleteSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/deletesheet)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/open)
+- [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
+- [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
+- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
 ###### Instance Properties
 
 - [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
@@ -701,30 +520,60 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
 - [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
 - [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
-- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
 
+##### Content and parameter types
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
+- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
+- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
+###### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
+- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
+
+
+- [System and in-app search](/documentation/appintents/app-intent-domain-system-and-search)
+##### Essentials
+
+- [Making in-app search actions available to Siri and Apple Intelligence](/documentation/appintents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
+- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
 ###### Instance Properties
 
 - [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
-- [AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/visualintelligenceintent)
 
+
+- [Visual intelligence](/documentation/appintents/app-intent-domain-visual-intelligence)
+##### Essentials
+
+- [Integrating your app with visual intelligence](/documentation/visualintelligence/integrating-your-app-with-visual-intelligence)
+##### Actions
+
+- [var semanticContentSearch: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/visualintelligenceintent/semanticcontentsearch)
+- [AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/visualintelligenceintent)
 ###### Instance Properties
 
 - [var semanticContentSearch: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/visualintelligenceintent/semanticcontentsearch)
-- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
 
-###### Instance Properties
 
-- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
-- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
-- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
+- [Whiteboard](/documentation/appintents/app-intent-domain-whiteboard)
+##### Essentials
 
-###### Instance Properties
+- [Making whiteboard actions available to Siri and Apple Intelligence](/documentation/appintents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)
+##### Actions
 
-- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
-- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
+- [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
+- [var createItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createitem)
+- [var deleteBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteboard)
+- [var deleteItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteitem)
+- [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
+- [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
+- [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
 - [AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/whiteboardintent)
-
 ###### Instance Properties
 
 - [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
@@ -734,15 +583,44 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
 - [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
 - [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
-- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
 
+##### Content and parameter types
+
+- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
+- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
+- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
 ###### Instance Properties
 
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
-- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
-- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
+- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
+- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
 
+##### Types
+
+- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
+- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
+- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
+###### Instance Properties
+
+- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
+- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
+
+
+- [Word proccessor](/documentation/appintents/app-intent-domain-wordprocessor)
+##### Essentials
+
+- [Making word processor actions available to Siri and Apple Intelligence](/documentation/appintents/making-word-processor-actions-available-to-siri-and-apple-intelligence)
+##### Actions
+
+- [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
+- [var addImageToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addimagetopage)
+- [var addTextBoxToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addtextboxtopage)
+- [var addVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addvideotopage)
+- [var addWebVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addwebvideotopage)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/create)
+- [var createPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/createpage)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/open)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/openpage)
+- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
 ###### Instance Properties
 
 - [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
@@ -755,872 +633,45 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/open)
 - [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/openpage)
 
-##### Structures
+##### Content and parameter types
 
-- [AssistantSchemas.EntitySchema](/documentation/appintents/assistantschemas/entityschema)
-- [AssistantSchemas.EnumSchema](/documentation/appintents/assistantschemas/enumschema)
-- [AssistantSchemas.IntentSchema](/documentation/appintents/assistantschemas/intentschema)
-- [AssistantSchema](/documentation/appintents/assistantschema)
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
+- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
+###### Instance Properties
 
-##### Structures
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
 
-- [AssistantSchema.EntitySchema](/documentation/appintents/assistantschema/entityschema)
-- [AssistantSchema.EnumSchema](/documentation/appintents/assistantschema/enumschema)
-- [AssistantSchema.IntentSchema](/documentation/appintents/assistantschema/intentschema)
-
-##### Initializers
-
-- [init(some AssistantSchemas.Entity)](/documentation/appintents/assistantschema/init(_:)-8yk4w)
-- [init(some AssistantSchemas.Intent)](/documentation/appintents/assistantschema/init(_:)-9exua)
-- [init(some AssistantSchemas.Enum)](/documentation/appintents/assistantschema/init(_:)-ym1l)
-
-#### Schema conformance
-
-- [AssistantSchema.IntentSchema](/documentation/appintents/assistantschema/intentschema)
-- [AssistantSchema.EntitySchema](/documentation/appintents/assistantschema/entityschema)
-- [AssistantSchema.EnumSchema](/documentation/appintents/assistantschema/enumschema)
-
-#### Base protocols
-
-- [AssistantIntent](/documentation/appintents/assistantintent)
-- [AssistantSchemaIntent](/documentation/appintents/assistantschemaintent)
-
-##### Type Properties
-
-- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaintent/isassistantonly)
-- [AssistantEntity](/documentation/appintents/assistantentity)
-- [AssistantSchemaEntity](/documentation/appintents/assistantschemaentity)
-
-##### Type Properties
-
-- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaentity/isassistantonly)
-- [AssistantEnum](/documentation/appintents/assistantenum)
-- [AssistantSchemaEnum](/documentation/appintents/assistantschemaenum)
-
-##### Type Properties
-
-- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaenum/isassistantonly)
-
-### Deprecated symbols
-
-- [macro AssistantIntent<T>(schema: T)](/documentation/appintents/assistantintent(schema:))
-- [macro AssistantEntity<T>(schema: T)](/documentation/appintents/assistantentity(schema:))
-- [macro AssistantEnum<T>(schema: T)](/documentation/appintents/assistantenum(schema:))
-- [Making your app’s functionality available to Siri](/documentation/appintents/making-your-app-s-functionality-available-to-siri)
-
-## Visual intelligence
-
-- [Integrating your app with visual intelligence](/documentation/visualintelligence/integrating-your-app-with-visual-intelligence)
-- [Visual Intelligence](/documentation/visualintelligence)
-- [IntentValueQuery](/documentation/appintents/intentvaluequery)
-
-### Associated Types
-
-- [Input](/documentation/appintents/intentvaluequery/input)
-- [Result](/documentation/appintents/intentvaluequery/result)
-- [ResultValue](/documentation/appintents/intentvaluequery/resultvalue)
-
-### Initializers
-
-- [init()](/documentation/appintents/intentvaluequery/init())
-
-### Instance Methods
-
-- [func values(for: Self.Input) async throws -> Self.Result](/documentation/appintents/intentvaluequery/values(for:))
-
-## Interactive Snippets
-
-- [Displaying static and interactive snippets](/documentation/appintents/displaying-static-and-interactive-snippets)
-- [SnippetIntent](/documentation/appintents/snippetintent)
-
-### Default implementation
-
-- [EmptySnippetIntent](/documentation/appintents/emptysnippetintent)
-
-### Type Methods
-
-- [static func reload()](/documentation/appintents/snippetintent/reload())
-
-## Other system experiences
-
-- [Making app entities available in Spotlight](/documentation/appintents/making-app-entities-available-in-spotlight)
-- [Focus](/documentation/appintents/focus)
-
-### Focus filters
-
-- [SetFocusFilterIntent](/documentation/appintents/setfocusfilterintent)
-
-#### Getting the current app configuration
-
-- [static var current: Self](/documentation/appintents/setfocusfilterintent/current)
-- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](/documentation/appintents/setfocusfilterintent/suggestedfocusfilters(for:))
-
-#### Configuring app context for the Focus
-
-- [var appContext: FocusFilterAppContext](/documentation/appintents/setfocusfilterintent/appcontext)
-- [static func invalidateFocusFilterAppContext()](/documentation/appintents/setfocusfilterintent/invalidatefocusfilterappcontext())
-- [Defining your app’s Focus filter](/documentation/appintents/defining-your-app-s-focus-filter)
-- [FocusFilterAppContext](/documentation/appintents/focusfilterappcontext)
-
-#### Creating the app context
-
-- [init(notificationFilterPredicate: NSPredicate?)](/documentation/appintents/focusfilterappcontext/init(notificationfilterpredicate:))
-
-#### Getting the filter predicate
-
-- [let notificationFilterPredicate: NSPredicate?](/documentation/appintents/focusfilterappcontext/notificationfilterpredicate)
-
-#### Initializers
-
-- [init(notificationFilterPredicate: NSPredicate?, targetContentIdentifierPrefix: String?)](/documentation/appintents/focusfilterappcontext/init(notificationfilterpredicate:targetcontentidentifierprefix:))
-
-#### Instance Properties
-
-- [let targetContentIdentifierPrefix: String?](/documentation/appintents/focusfilterappcontext/targetcontentidentifierprefix)
-- [FocusFilterSuggestionContext](/documentation/appintents/focusfiltersuggestioncontext)
-
-### Errors
-
-- [SetFocusFilterIntentError](/documentation/appintents/setfocusfilterintenterror)
-
-#### Getting the error codes
-
-- [case missingParameterValue](/documentation/appintents/setfocusfilterintenterror/missingparametervalue)
-- [case notFound](/documentation/appintents/setfocusfilterintenterror/notfound)
-- [Action button on iPhone and Apple Watch](/documentation/appintents/actionbutton)
-
-### Responding to the Action button
-
-- [Responding to the Action button on Apple Watch Ultra](/documentation/appintents/actionbuttonarticle)
-- [StartWorkoutIntent](/documentation/appintents/startworkoutintent)
-
-#### Creating an intent
-
-- [init(style: Self.WorkoutStyle)](/documentation/appintents/startworkoutintent/init(style:))
-
-#### Defining supported workouts
-
-- [WorkoutStyle](/documentation/appintents/startworkoutintent/workoutstyle-swift.associatedtype)
-- [var workoutStyle: Self.WorkoutStyle](/documentation/appintents/startworkoutintent/workoutstyle-swift.property)
-- [static var suggestedWorkouts: [Self]](/documentation/appintents/startworkoutintent/suggestedworkouts)
-- [static func invalidateSuggestedWorkouts()](/documentation/appintents/startworkoutintent/invalidatesuggestedworkouts())
-- [PauseWorkoutIntent](/documentation/appintents/pauseworkoutintent)
-- [ResumeWorkoutIntent](/documentation/appintents/resumeworkoutintent)
-- [StartDiveIntent](/documentation/appintents/startdiveintent)
-- [ConfirmationActionName](/documentation/appintents/confirmationactionname)
-
-#### Type Properties
-
-- [static var add: ConfirmationActionName](/documentation/appintents/confirmationactionname/add)
-- [static var addData: ConfirmationActionName](/documentation/appintents/confirmationactionname/adddata)
-- [static var book: ConfirmationActionName](/documentation/appintents/confirmationactionname/book)
-- [static var buy: ConfirmationActionName](/documentation/appintents/confirmationactionname/buy)
-- [static var call: ConfirmationActionName](/documentation/appintents/confirmationactionname/call)
-- [static var checkIn: ConfirmationActionName](/documentation/appintents/confirmationactionname/checkin)
-- [static var `continue`: ConfirmationActionName](/documentation/appintents/confirmationactionname/continue)
-- [static var create: ConfirmationActionName](/documentation/appintents/confirmationactionname/create)
-- [static var `do`: ConfirmationActionName](/documentation/appintents/confirmationactionname/do)
-- [static var download: ConfirmationActionName](/documentation/appintents/confirmationactionname/download)
-- [static var filter: ConfirmationActionName](/documentation/appintents/confirmationactionname/filter)
-- [static var find: ConfirmationActionName](/documentation/appintents/confirmationactionname/find)
-- [static var get: ConfirmationActionName](/documentation/appintents/confirmationactionname/get)
-- [static var go: ConfirmationActionName](/documentation/appintents/confirmationactionname/go)
-- [static var log: ConfirmationActionName](/documentation/appintents/confirmationactionname/log)
-- [static var open: ConfirmationActionName](/documentation/appintents/confirmationactionname/open)
-- [static var order: ConfirmationActionName](/documentation/appintents/confirmationactionname/order)
-- [static var pay: ConfirmationActionName](/documentation/appintents/confirmationactionname/pay)
-- [static var play: ConfirmationActionName](/documentation/appintents/confirmationactionname/play)
-- [static var playSound: ConfirmationActionName](/documentation/appintents/confirmationactionname/playsound)
-- [static var post: ConfirmationActionName](/documentation/appintents/confirmationactionname/post)
-- [static var request: ConfirmationActionName](/documentation/appintents/confirmationactionname/request)
-- [static var run: ConfirmationActionName](/documentation/appintents/confirmationactionname/run)
-- [static var search: ConfirmationActionName](/documentation/appintents/confirmationactionname/search)
-- [static var send: ConfirmationActionName](/documentation/appintents/confirmationactionname/send)
-- [static var set: ConfirmationActionName](/documentation/appintents/confirmationactionname/set)
-- [static var share: ConfirmationActionName](/documentation/appintents/confirmationactionname/share)
-- [static var start: ConfirmationActionName](/documentation/appintents/confirmationactionname/start)
-- [static var startNavigation: ConfirmationActionName](/documentation/appintents/confirmationactionname/startnavigation)
-- [static var toggle: ConfirmationActionName](/documentation/appintents/confirmationactionname/toggle)
-- [static var turnOff: ConfirmationActionName](/documentation/appintents/confirmationactionname/turnoff)
-- [static var turnOn: ConfirmationActionName](/documentation/appintents/confirmationactionname/turnon)
-- [static var view: ConfirmationActionName](/documentation/appintents/confirmationactionname/view)
-
-#### Type Methods
-
-- [static func custom(acceptLabel: LocalizedStringResource, acceptAlternatives: [LocalizedStringResource], denyLabel: LocalizedStringResource, denyAlternatives: [LocalizedStringResource], destructive: Bool) -> ConfirmationActionName](/documentation/appintents/confirmationactionname/custom(acceptlabel:acceptalternatives:denylabel:denyalternatives:destructive:))
-- [Launching your voice-based conversational app from the side button of iPhone](/documentation/appintents/launching-your-voice-based-conversational-app-from-the-side-button-of-iphone)
-- [Developing a WidgetKit strategy](/documentation/widgetkit/developing-a-widgetkit-strategy)
-
-## SiriKit migration
-
-- [Soup Chef with App Intents: Migrating custom intents](/documentation/sirikit/soup-chef-with-app-intents-migrating-custom-intents)
-
-## Actions
-
-- [App intents](/documentation/appintents/app-intents)
-
-### Actions
-
-- [AppIntent](/documentation/appintents/appintent)
-
-#### Creating an app intent
-
-- [init()](/documentation/appintents/appintent/init())
-
-#### Specifying the authentication policy
-
-- [static var authenticationPolicy: IntentAuthenticationPolicy](/documentation/appintents/appintent/authenticationpolicy)
-- [IntentAuthenticationPolicy](/documentation/appintents/intentauthenticationpolicy)
-
-##### Authentication policies
-
-- [case alwaysAllowed](/documentation/appintents/intentauthenticationpolicy/alwaysallowed)
-- [case requiresAuthentication](/documentation/appintents/intentauthenticationpolicy/requiresauthentication)
-- [case requiresLocalDeviceAuthentication](/documentation/appintents/intentauthenticationpolicy/requireslocaldeviceauthentication)
-
-#### Configuring the metadata
-
-- [static var title: LocalizedStringResource](/documentation/appintents/appintent/title)
-- [static var description: IntentDescription?](/documentation/appintents/appintent/description)
-- [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun)
-- [static var isDiscoverable: Bool](/documentation/appintents/appintent/isdiscoverable)
-
-#### Performing the action
-
-- [func perform() async throws -> Self.PerformResult](/documentation/appintents/appintent/perform())
-- [var systemContext: IntentSystemContext](/documentation/appintents/appintent/systemcontext)
-- [PerformResult](/documentation/appintents/appintent/performresult)
-
-#### Requesting confirmation
-
-- [func requestConfirmation() async throws](/documentation/appintents/appintent/requestconfirmation())
-- [func requestConfirmation(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog) async throws](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:))
-- [func requestConfirmation<Content>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, content: () -> Content) async throws](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:content:))
-- [func requestConfirmation<Result>(result: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](/documentation/appintents/appintent/requestconfirmation(result:confirmationactionname:showprompt:))
-- [func requestConfirmation<Result>(output: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](/documentation/appintents/appintent/requestconfirmation(output:confirmationactionname:showprompt:))
-
-#### Donating the intent to the system
-
-- [func donate() async throws -> IntentDonationIdentifier](/documentation/appintents/appintent/donate()-1e60c)
-- [func donate() -> IntentDonationIdentifier](/documentation/appintents/appintent/donate()-jp6k)
-- [func donate(result: some IntentResult) async throws -> IntentDonationIdentifier](/documentation/appintents/appintent/donate(result:)-36cia)
-- [func donate(result: some IntentResult) -> IntentDonationIdentifier](/documentation/appintents/appintent/donate(result:)-9b25i)
-- [func callAsFunction(donate: Bool) async throws -> Self.PerformResult.Value](/documentation/appintents/appintent/callasfunction(donate:)-3qvbt)
-- [func callAsFunction(donate: Bool) async throws](/documentation/appintents/appintent/callasfunction(donate:)-7v1om)
-
-#### Summarizing the parameters
-
-- [SummaryContent](/documentation/appintents/appintent/summarycontent)
-- [static var parameterSummary: Self.SummaryContent](/documentation/appintents/appintent/parametersummary)
-- [static var parameterSummary: some ParameterSummary](/documentation/appintents/appintent/parametersummary-4vgic)
-- [ParameterSummaryBuilder](/documentation/appintents/parametersummarybuilder)
-
-##### Type Methods
-
-- [static func buildBlock<Summary>(Summary) -> Summary](/documentation/appintents/parametersummarybuilder/buildblock(_:))
-- [static func buildExpression<Summary>(Summary) -> Summary](/documentation/appintents/parametersummarybuilder/buildexpression(_:))
-- [AppIntent.Parameter](/documentation/appintents/appintent/parameter)
-- [AppIntent.Case](/documentation/appintents/appintent/case)
-- [AppIntent.DefaultCase](/documentation/appintents/appintent/defaultcase)
-- [AppIntent.Summary](/documentation/appintents/appintent/summary)
-- [AppIntent.Switch](/documentation/appintents/appintent/switch)
-- [AppIntent.When](/documentation/appintents/appintent/when)
-
-#### Instance Methods
-
-- [func continueInForeground(IntentDialog?, alwaysConfirm: Bool) async throws](/documentation/appintents/appintent/continueinforeground(_:alwaysconfirm:))
-- [func needsToContinueInForegroundError(IntentDialog?, alwaysConfirm: Bool) -> AppIntentError](/documentation/appintents/appintent/needstocontinueinforegrounderror(_:alwaysconfirm:))
-- [func requestChoice(between: [IntentChoiceOption], dialog: IntentDialog?) async throws -> IntentChoiceOption](/documentation/appintents/appintent/requestchoice(between:dialog:))
-- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, content: () -> Content) async throws -> IntentChoiceOption](/documentation/appintents/appintent/requestchoice(between:dialog:content:))
-- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, view: Content) async throws -> IntentChoiceOption](/documentation/appintents/appintent/requestchoice(between:dialog:view:))
-- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj)
-- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-jxb8)
-
-#### Type Aliases
-
-- [AppIntent.Option](/documentation/appintents/appintent/option)
-
-#### Type Properties
-
-- [static var supportedModes: IntentModes](/documentation/appintents/appintent/supportedmodes)
-- [AudioPlaybackIntent](/documentation/appintents/audioplaybackintent)
-- [AudioRecordingIntent](/documentation/appintents/audiorecordingintent)
-- [AudioStartingIntent](/documentation/appintents/audiostartingintent)
-- [CameraCaptureIntent](/documentation/appintents/cameracaptureintent)
-
-#### Associated Types
-
-- [AppContext](/documentation/appintents/cameracaptureintent/appcontext-swift.associatedtype)
-
-#### Type Properties
-
-- [static var appContext: Self.AppContext?](/documentation/appintents/cameracaptureintent/appcontext-swift.type.property)
-
-#### Type Methods
-
-- [static func updateAppContext(Self.AppContext?) async throws](/documentation/appintents/cameracaptureintent/updateappcontext(_:))
-- [DeleteIntent](/documentation/appintents/deleteintent)
-
-#### Associated Types
-
-- [Entity](/documentation/appintents/deleteintent/entity)
-
-#### Instance Properties
-
-- [var entities: [Self.Entity]](/documentation/appintents/deleteintent/entities)
-- [DeprecatedAppIntent](/documentation/appintents/deprecatedappintent)
-
-#### Associated Types
-
-- [ReplacementIntent](/documentation/appintents/deprecatedappintent/replacementintent)
-
-#### Type Properties
-
-- [static var deprecation: IntentDeprecation<Self.ReplacementIntent>](/documentation/appintents/deprecatedappintent/deprecation)
-- [ForegroundContinuableIntent](/documentation/appintents/foregroundcontinuableintent)
-
-#### Instance Methods
-
-- [func needsToContinueInForegroundError(IntentDialog?, continuation: (() async throws -> Void)?) -> AppIntentError](/documentation/appintents/foregroundcontinuableintent/needstocontinueinforegrounderror(_:continuation:))
-- [func requestToContinueInForeground<ResultValue>(IntentDialog?, continuation: () async throws -> ResultValue) async throws -> ResultValue](/documentation/appintents/foregroundcontinuableintent/requesttocontinueinforeground(_:continuation:))
-- [OpenIntent](/documentation/appintents/openintent)
-
-#### Associated Types
-
-- [Value](/documentation/appintents/openintent/value)
-
-#### Instance Properties
-
-- [var target: Self.Value](/documentation/appintents/openintent/target)
-- [OpenURLIntent](/documentation/appintents/openurlintent)
-
-#### Initializers
-
-- [init(URL)](/documentation/appintents/openurlintent/init(_:))
-- [init(urlRepresentable: some URLRepresentableEnum) throws](/documentation/appintents/openurlintent/init(urlrepresentable:)-53fa0)
-- [init(urlRepresentable: some URLRepresentableEntity) async throws](/documentation/appintents/openurlintent/init(urlrepresentable:)-8r4bl)
-
-#### Instance Properties
-
-- [var $url: IntentParameter<URL>](/documentation/appintents/openurlintent/$url)
-- [var url: URL](/documentation/appintents/openurlintent/url)
-- [PlayVideoIntent](/documentation/appintents/playvideointent)
-
-#### Instance Properties
-
-- [var term: String](/documentation/appintents/playvideointent/term)
-
-#### Type Properties
-
-- [static var supportedCategories: [VideoCategory]](/documentation/appintents/playvideointent/supportedcategories)
-- [ProgressReportingIntent](/documentation/appintents/progressreportingintent)
-
-#### Instance Properties
-
-- [var progress: Progress](/documentation/appintents/progressreportingintent/progress)
-- [PushToTalkTransmissionIntent](/documentation/appintents/pushtotalktransmissionintent)
-- [URLRepresentableIntent](/documentation/appintents/urlrepresentableintent)
-
-#### Type Aliases
-
-- [URLRepresentableIntent.URLRepresentation](/documentation/appintents/urlrepresentableintent/urlrepresentation-swift.typealias)
-
-#### Type Properties
-
-- [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableintent/urlrepresentation-4fzwq)
-- [SetValueIntent](/documentation/appintents/setvalueintent)
-
-#### Associated Types
-
-- [ValueType](/documentation/appintents/setvalueintent/valuetype)
-
-#### Instance Properties
-
-- [var value: Self.ValueType](/documentation/appintents/setvalueintent/value)
-- [ShowInAppSearchResultsIntent](/documentation/appintents/showinappsearchresultsintent)
-
-#### Scoping the search
-
-- [static var searchScopes: Self.Criteria.SearchScopes](/documentation/appintents/showinappsearchresultsintent/searchscopes)
-- [StringSearchScope](/documentation/appintents/stringsearchscope)
-
-##### Search scopes
-
-- [case freeformVideo](/documentation/appintents/stringsearchscope/freeformvideo)
-- [case general](/documentation/appintents/stringsearchscope/general)
-- [case movies](/documentation/appintents/stringsearchscope/movies)
-- [case tv](/documentation/appintents/stringsearchscope/tv)
-
-##### Type Aliases
-
-- [StringSearchScope.Specification](/documentation/appintents/stringsearchscope/specification)
-- [StringSearchScope.UnwrappedType](/documentation/appintents/stringsearchscope/unwrappedtype)
-- [StringSearchScope.ValueType](/documentation/appintents/stringsearchscope/valuetype)
-
-#### Defining the search criteria
-
-- [var criteria: Self.Criteria](/documentation/appintents/showinappsearchresultsintent/criteria-swift.property)
-- [SearchCriteria](/documentation/appintents/searchcriteria)
-
-##### Associated Types
-
-- [SearchScopes](/documentation/appintents/searchcriteria/searchscopes)
-- [StringSearchCriteria](/documentation/appintents/stringsearchcriteria)
-
-##### Initializers
-
-- [init(term: String)](/documentation/appintents/stringsearchcriteria/init(term:))
-
-##### Instance Properties
-
-- [var term: String](/documentation/appintents/stringsearchcriteria/term)
-
-##### Type Aliases
-
-- [StringSearchCriteria.Specification](/documentation/appintents/stringsearchcriteria/specification)
-- [StringSearchCriteria.UnwrappedType](/documentation/appintents/stringsearchcriteria/unwrappedtype)
-- [StringSearchCriteria.ValueType](/documentation/appintents/stringsearchcriteria/valuetype)
-
-##### Type Properties
-
-- [static var defaultResolverSpecification: some ResolverSpecification](/documentation/appintents/stringsearchcriteria/defaultresolverspecification)
-- [Criteria](/documentation/appintents/showinappsearchresultsintent/criteria-swift.associatedtype)
-- [SystemIntent](/documentation/appintents/systemintent)
-
-### Controls, widgets, and Live Activities
-
-- [ControlConfigurationIntent](/documentation/appintents/controlconfigurationintent)
-
-#### Associated Types
-
-- [NeverResult](/documentation/appintents/controlconfigurationintent/neverresult)
-- [LiveActivityStartingIntent](/documentation/appintents/liveactivitystartingintent)
-- [LiveActivityIntent](/documentation/appintents/liveactivityintent)
-- [WidgetConfigurationIntent](/documentation/appintents/widgetconfigurationintent)
-
-#### Widget families
-
-- [IntentWidgetFamily](/documentation/appintents/intentwidgetfamily)
-
-##### Enumeration Cases
-
-- [case accessoryCircular](/documentation/appintents/intentwidgetfamily/accessorycircular)
-- [case accessoryCorner](/documentation/appintents/intentwidgetfamily/accessorycorner)
-- [case accessoryInline](/documentation/appintents/intentwidgetfamily/accessoryinline)
-- [case accessoryRectangular](/documentation/appintents/intentwidgetfamily/accessoryrectangular)
-- [case systemExtraLarge](/documentation/appintents/intentwidgetfamily/systemextralarge)
-- [case systemLarge](/documentation/appintents/intentwidgetfamily/systemlarge)
-- [case systemMedium](/documentation/appintents/intentwidgetfamily/systemmedium)
-- [case systemSmall](/documentation/appintents/intentwidgetfamily/systemsmall)
-
-##### Type Aliases
-
-- [IntentWidgetFamily.Specification](/documentation/appintents/intentwidgetfamily/specification)
-- [IntentWidgetFamily.UnwrappedType](/documentation/appintents/intentwidgetfamily/unwrappedtype)
-- [IntentWidgetFamily.ValueType](/documentation/appintents/intentwidgetfamily/valuetype)
-
-##### Type Properties
-
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentWidgetFamily>](/documentation/appintents/intentwidgetfamily/defaultresolverspecification)
-
-#### Associated Types
-
-- [NeverResult](/documentation/appintents/widgetconfigurationintent/neverresult)
-
-### Siri and Apple Intelligence
-
-- [Integrating actions with Siri and Apple Intelligence](/documentation/appintents/integrating-actions-with-siri-and-apple-intelligence)
-- [App intent domains](/documentation/appintents/app-intent-domains)
 
 #### Macros
 
 - [macro AppIntent<T>(schema: T)](/documentation/appintents/appintent(schema:))
 - [macro AppEntity<T>(schema: T)](/documentation/appintents/appentity(schema:))
 - [macro AppEnum<T>(schema: T)](/documentation/appintents/appenum(schema:))
-
-#### Books
-
-- [Making ebook actions available to Siri and Apple Intelligence](/documentation/appintents/making-ebook-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
-
-##### Instance Properties
-
-- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
-- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
-- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/search)
-- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
-- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
-- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
-- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
-- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
-- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
-
-##### Instance Properties
-
-- [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
-- [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
-- [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
-- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
-
-##### Instance Properties
-
-- [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
-- [var font: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/font)
-- [var fontSize: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/fontsize)
-- [var navigationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/navigationdirection)
-- [var pageNavigationSetting: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/pagenavigationsetting)
-- [var relativeCharacterSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativecharacterspacingchange)
-- [var relativeFontChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativefontchange)
-- [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
-- [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
-- [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
-
-#### Browser
-
-- [Making browser actions available to Siri and Apple Intelligence](/documentation/appintents/making-browser-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/browserintent)
-
-##### Instance Properties
-
-- [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
-- [var bookmarkURL: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarkurl)
-- [var clearHistory: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/clearhistory)
-- [var closeTabs: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closetabs)
-- [var closeWindows: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closewindows)
-- [var createTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createtab)
-- [var createWindow: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createwindow)
-- [var deleteBookmarks: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/deletebookmarks)
-- [var findOnPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/findonpage)
-- [var openBookmark: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openbookmark)
-- [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
-- [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
-- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
-
-##### Instance Properties
-
-- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
-- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
-- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
-- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
-
-##### Instance Properties
-
-- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
-
-#### Camera
-
-- [Making camera actions available to Siri and Apple Intelligence](/documentation/appintents/making-camera-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
-
-##### Instance Properties
-
-- [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
-- [var setDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/setdevice)
-- [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
-- [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
-- [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
-- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
-
-##### Instance Properties
-
-- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
-- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
-- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
-
-#### Document reader
-
-- [Making document reader actions available to Siri and Apple Intelligence](/documentation/appintents/making-document-reader-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/readerintent)
-
-##### Instance Properties
-
-- [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
-- [var enhanceDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/enhancedocuments)
-- [var insertPages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/insertpages)
-- [var openDocument: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/opendocument)
-- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/openpage)
-- [var resizeDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/resizedocuments)
-- [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
-- [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
-- [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
-- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
-
-##### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
-- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
-- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
-
-##### Instance Properties
-
-- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
-
-#### File management
-
-- [Making file management actions available to Siri and Apple Intelligence](/documentation/appintents/making-file-management-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
-
-##### Instance Properties
-
-- [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
-- [var deleteFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/deletefiles)
-- [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
-- [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
-- [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
-- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
-
-##### Instance Properties
-
-- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
-
-#### iPhone side button access (only in Japan)
-
-- [Launching your voice-based conversational app from the side button of iPhone](/documentation/appintents/launching-your-voice-based-conversational-app-from-the-side-button-of-iphone)
-- [AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/assistantintent)
-
-##### Schemas
-
-- [var activate: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/assistantintent/activate)
-
-#### Journaling
-
-- [Making journaling actions available to Siri and Apple Intelligence](/documentation/appintents/making-journaling-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
-
-##### Instance Properties
-
-- [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
-- [var createEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createentry)
-- [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
-- [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
-- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
-
-##### Instance Properties
-
-- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
-
-#### Email
-
-- [Making email actions available to Siri and Apple Intelligence](/documentation/appintents/making-email-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/mailintent)
-
-##### Instance Properties
-
-- [var archiveMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/archivemail)
-- [var createDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/createdraft)
-- [var deleteDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletedraft)
-- [var deleteMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletemail)
-- [var forwardMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/forwardmail)
-- [var replyMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/replymail)
-- [var saveDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/savedraft)
-- [var sendDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/senddraft)
-- [var updateDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatedraft)
-- [var updateMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatemail)
-- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
-
-##### Instance Properties
-
-- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
-- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
-- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
-- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
-
-#### Photos and videos
-
-- [Making photo and video actions available to Siri and Apple Intelligence](/documentation/appintents/making-photo-and-video-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/photosintent)
-
-##### Instance Properties
-
-- [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
-- [var cleanupPhoto: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/cleanupphoto)
-- [var copyEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/copyedits)
-- [var createAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createalbum)
-- [var createAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createassets)
-- [var crop: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/crop)
-- [var deleteAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deletealbum)
-- [var deleteAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deleteassets)
-- [var duplicateAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/duplicateassets)
-- [var openAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openalbum)
-- [var openAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openasset)
-- [var pasteEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/pasteedits)
-- [var postToSharedAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/posttosharedalbum)
-- [var removeAssetsFromAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/removeassetsfromalbum)
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/search)
-- [var setDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setdepth)
-- [var setExposure: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setexposure)
-- [var setFilter: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setfilter)
-- [var setRotation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setrotation)
-- [var setSaturation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setsaturation)
-- [var setWarmth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setwarmth)
-- [var straighten: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/straighten)
-- [var toggleDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/toggledepth)
-- [var toggleSuggestedEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/togglesuggestededits)
-- [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
-- [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
-- [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
-- [AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/photosentity)
-
-##### Instance Properties
-
-- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
-- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
-- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
-- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
-
-##### Instance Properties
-
-- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
-- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
-- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
-- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
-
-#### Presentations
-
-- [Making presentation actions available to Siri and Apple Intelligence](/documentation/appintents/making-presentation-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
-
-##### Instance Properties
-
-- [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
-- [var addCommentToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addcommenttoslide)
-- [var addImageToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addimagetoslide)
-- [var addTextBoxToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addtextboxtoslide)
-- [var addVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addvideotoslide)
-- [var addWebVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addwebvideotoslide)
-- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/create)
-- [var createSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/createslide)
-- [var deleteSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/deleteslide)
-- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/open)
-- [var openSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/openslide)
-- [var setSlideTitle: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/setslidetitle)
-- [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
-- [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
-- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
-- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
-
-##### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
-- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
-
-#### Spreadsheets
-
-- [Making spreadsheet actions available to Siri and Apple Intelligence](/documentation/appintents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
-
-##### Instance Properties
-
-- [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
-- [var addCommentToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addcommenttosheet)
-- [var addImageToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addimagetosheet)
-- [var addTextBoxToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addtextboxtosheet)
-- [var addVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addvideotosheet)
-- [var addWebVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addwebvideotosheet)
-- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/create)
-- [var createSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/createsheet)
-- [var delete: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/delete)
-- [var deleteSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/deletesheet)
-- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/open)
-- [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
-- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
-- [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
-- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
-
-##### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
-- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
-
-#### System and in-app search
-
-- [Making in-app search actions available to Siri and Apple Intelligence](/documentation/appintents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
-
-##### Instance Properties
-
-- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
-
-#### Whiteboard
-
-- [Making whiteboard actions available to Siri and Apple Intelligence](/documentation/appintents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/whiteboardintent)
-
-##### Instance Properties
-
-- [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
-- [var createItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createitem)
-- [var deleteBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteboard)
-- [var deleteItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteitem)
-- [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
-- [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
-- [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
-- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
-
-##### Instance Properties
-
-- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
-- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
-- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
-
-##### Instance Properties
-
-- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
-- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
-
-#### Word processor and text editing
-
-- [Making word processor actions available to Siri and Apple Intelligence](/documentation/appintents/making-word-processor-actions-available-to-siri-and-apple-intelligence)
-- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
-
-##### Instance Properties
-
-- [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
-- [var addImageToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addimagetopage)
-- [var addTextBoxToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addtextboxtopage)
-- [var addVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addvideotopage)
-- [var addWebVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addwebvideotopage)
-- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/create)
-- [var createPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/createpage)
-- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/open)
-- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/openpage)
-- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
-
-##### Instance Properties
-
-- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
-- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
-- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
-
 #### Base protocols
 
 - [Assistant schema base protocols](/documentation/appintents/assistant-schema-base-protocols)
-
 ##### Assistant schema protocols
 
 - [AssistantSchemas](/documentation/appintents/assistantschemas)
-
 ###### Protocols
 
 - [AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/assistantintent)
-
 ###### Schemas
 
 - [var activate: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/assistantintent/activate)
-- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
 
+- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
 ###### Instance Properties
 
 - [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
 - [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
 - [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
-- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
 
+- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
 ###### Instance Properties
 
 - [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
@@ -1633,8 +684,8 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
 - [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
 - [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
-- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
 
+- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
 ###### Instance Properties
 
 - [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
@@ -1646,20 +697,20 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
 - [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
 - [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
-- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
 
+- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
 ###### Instance Properties
 
 - [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
 - [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
 - [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
-- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
 
+- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
 ###### Instance Properties
 
 - [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
-- [AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/browserintent)
 
+- [AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/browserintent)
 ###### Instance Properties
 
 - [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
@@ -1675,15 +726,15 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
 - [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
 - [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
-- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
 
+- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
 ###### Instance Properties
 
 - [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
 - [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
 - [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
-- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
 
+- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
 ###### Instance Properties
 
 - [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
@@ -1691,8 +742,8 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
 - [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
 - [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
-- [AssistantSchemas.Entity](/documentation/appintents/assistantschemas/entity)
 
+- [AssistantSchemas.Entity](/documentation/appintents/assistantschemas/entity)
 ###### Type Properties
 
 - [static var books: some AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/entity/books)
@@ -1706,8 +757,8 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [static var spreadsheet: some AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/entity/spreadsheet)
 - [static var whiteboard: some AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/entity/whiteboard)
 - [static var wordProcessor: some AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/entity/wordprocessor)
-- [AssistantSchemas.Enum](/documentation/appintents/assistantschemas/enum)
 
+- [AssistantSchemas.Enum](/documentation/appintents/assistantschemas/enum)
 ###### Type Properties
 
 - [static var books: some AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/enum/books)
@@ -1716,13 +767,13 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [static var photos: some AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/enum/photos)
 - [static var reader: some AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/enum/reader)
 - [static var whiteboard: some AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/enum/whiteboard)
-- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
 
+- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
 ###### Instance Properties
 
 - [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
-- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
 
+- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
 ###### Instance Properties
 
 - [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
@@ -1730,8 +781,8 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
 - [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
 - [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
-- [AssistantSchemas.Intent](/documentation/appintents/assistantschemas/intent)
 
+- [AssistantSchemas.Intent](/documentation/appintents/assistantschemas/intent)
 ###### Type Properties
 
 - [static var assistant: some AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/intent/assistant)
@@ -1749,13 +800,13 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/intent/visualintelligence)
 - [static var whiteboard: some AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/intent/whiteboard)
 - [static var wordProcessor: some AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/intent/wordprocessor)
-- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
 
+- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
 ###### Instance Properties
 
 - [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
-- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
 
+- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
 ###### Instance Properties
 
 - [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
@@ -1763,16 +814,16 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
 - [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
 - [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
-- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
 
+- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
 ###### Instance Properties
 
 - [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
 - [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
 - [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
 - [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
-- [AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/mailintent)
 
+- [AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/mailintent)
 ###### Instance Properties
 
 - [var archiveMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/archivemail)
@@ -1785,24 +836,24 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var sendDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/senddraft)
 - [var updateDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatedraft)
 - [var updateMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatemail)
+
 - [AssistantSchemas.Model](/documentation/appintents/assistantschemas/model)
 - [AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/photosentity)
-
 ###### Instance Properties
 
 - [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
 - [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
 - [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
-- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
 
+- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
 ###### Instance Properties
 
 - [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
 - [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
 - [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
 - [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
-- [AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/photosintent)
 
+- [AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/photosintent)
 ###### Instance Properties
 
 - [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
@@ -1832,15 +883,15 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
 - [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
 - [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
-- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
 
+- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
 ###### Instance Properties
 
 - [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
 - [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
 - [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
-- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
 
+- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
 ###### Instance Properties
 
 - [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
@@ -1858,19 +909,19 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
 - [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
 - [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
-- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
 
+- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
 ###### Instance Properties
 
 - [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
 - [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
-- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
 
+- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
 ###### Instance Properties
 
 - [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
-- [AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/readerintent)
 
+- [AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/readerintent)
 ###### Instance Properties
 
 - [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
@@ -1882,15 +933,15 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
 - [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
 - [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
-- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
 
+- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
 ###### Instance Properties
 
 - [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
 - [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
 - [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
-- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
 
+- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
 ###### Instance Properties
 
 - [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
@@ -1907,30 +958,30 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
 - [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
 - [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
-- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
 
+- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
 ###### Instance Properties
 
 - [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
-- [AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/visualintelligenceintent)
 
+- [AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/visualintelligenceintent)
 ###### Instance Properties
 
 - [var semanticContentSearch: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/visualintelligenceintent/semanticcontentsearch)
-- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
 
+- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
 ###### Instance Properties
 
 - [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
 - [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
-- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
 
+- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
 ###### Instance Properties
 
 - [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
 - [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
-- [AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/whiteboardintent)
 
+- [AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/whiteboardintent)
 ###### Instance Properties
 
 - [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
@@ -1940,15 +991,15 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
 - [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
 - [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
-- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
 
+- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
 ###### Instance Properties
 
 - [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
 - [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
 - [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
-- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
 
+- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
 ###### Instance Properties
 
 - [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
@@ -1966,14 +1017,13 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [AssistantSchemas.EntitySchema](/documentation/appintents/assistantschemas/entityschema)
 - [AssistantSchemas.EnumSchema](/documentation/appintents/assistantschemas/enumschema)
 - [AssistantSchemas.IntentSchema](/documentation/appintents/assistantschemas/intentschema)
-- [AssistantSchema](/documentation/appintents/assistantschema)
 
+- [AssistantSchema](/documentation/appintents/assistantschema)
 ###### Structures
 
 - [AssistantSchema.EntitySchema](/documentation/appintents/assistantschema/entityschema)
 - [AssistantSchema.EnumSchema](/documentation/appintents/assistantschema/enumschema)
 - [AssistantSchema.IntentSchema](/documentation/appintents/assistantschema/intentschema)
-
 ###### Initializers
 
 - [init(some AssistantSchemas.Entity)](/documentation/appintents/assistantschema/init(_:)-8yk4w)
@@ -1985,303 +1035,82 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [AssistantSchema.IntentSchema](/documentation/appintents/assistantschema/intentschema)
 - [AssistantSchema.EntitySchema](/documentation/appintents/assistantschema/entityschema)
 - [AssistantSchema.EnumSchema](/documentation/appintents/assistantschema/enumschema)
-
 ##### Base protocols
 
 - [AssistantIntent](/documentation/appintents/assistantintent)
 - [AssistantSchemaIntent](/documentation/appintents/assistantschemaintent)
-
 ###### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaintent/isassistantonly)
+
 - [AssistantEntity](/documentation/appintents/assistantentity)
 - [AssistantSchemaEntity](/documentation/appintents/assistantschemaentity)
-
 ###### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaentity/isassistantonly)
+
 - [AssistantEnum](/documentation/appintents/assistantenum)
 - [AssistantSchemaEnum](/documentation/appintents/assistantschemaenum)
-
 ###### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaenum/isassistantonly)
 
-#### Deprecated symbols
+
+#### Deprecated macros
 
 - [macro AssistantIntent<T>(schema: T)](/documentation/appintents/assistantintent(schema:))
 - [macro AssistantEntity<T>(schema: T)](/documentation/appintents/assistantentity(schema:))
 - [macro AssistantEnum<T>(schema: T)](/documentation/appintents/assistantenum(schema:))
 
-### SiriKit intent migration
-
-- [CustomIntentMigratedAppIntent](/documentation/appintents/customintentmigratedappintent)
-
-#### Specifying the migrated intent’s class name
-
-- [static var intentClassName: String](/documentation/appintents/customintentmigratedappintent/intentclassname)
-
-### Dependency management
-
-- [AppDependencyManager](/documentation/appintents/appdependencymanager)
-
-#### Initializers
-
-- [init()](/documentation/appintents/appdependencymanager/init())
-
-#### Instance Methods
-
-- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> () throws -> Dependency)](/documentation/appintents/appdependencymanager/add(key:dependency:)-1hqkg)
-- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> Dependency)](/documentation/appintents/appdependencymanager/add(key:dependency:)-2le3x)
-- [func add<Dependency>(key: AnyHashable?, dependency: () async throws -> Dependency)](/documentation/appintents/appdependencymanager/add(key:dependency:)-gth5)
-
-#### Type Properties
-
-- [static var shared: AppDependencyManager](/documentation/appintents/appdependencymanager/shared)
-
-#### Enumerations
-
-- [AppDependencyManager.Error](/documentation/appintents/appdependencymanager/error)
-
-##### Enumeration Cases
-
-- [case failedToLoadDependency(AnyHashable, Value.Type)](/documentation/appintents/appdependencymanager/error/failedtoloaddependency(_:_:))
-- [case failedToRetrieveDependency(AnyHashable, Value.Type)](/documentation/appintents/appdependencymanager/error/failedtoretrievedependency(_:_:))
-- [case incorrectDependencyType(AnyHashable, Value.Type, any Any.Type)](/documentation/appintents/appdependencymanager/error/incorrectdependencytype(_:_:_:))
-- [AppDependency](/documentation/appintents/appdependency)
-
-#### Initializers
-
-- [convenience init(key: AnyHashable?, manager: AppDependencyManager)](/documentation/appintents/appdependency/init(key:manager:))
-- [convenience init(key: AnyHashable?, manager: AppDependencyManager, default: () async throws -> Value)](/documentation/appintents/appdependency/init(key:manager:default:)-226je)
-- [convenience init(key: AnyHashable?, manager: AppDependencyManager, default: @autoclosure () -> Value)](/documentation/appintents/appdependency/init(key:manager:default:)-wvhz)
-
-#### Instance Properties
-
-- [var projectedValue: AppDependency<Value>](/documentation/appintents/appdependency/projectedvalue)
-- [var wrappedValue: Value](/documentation/appintents/appdependency/wrappedvalue)
-
-### Supplementary content
-
-- [AppIntentsPackage](/documentation/appintents/appintentspackage)
-
-#### Type Properties
-
-- [static var includedPackages: [any AppIntentsPackage.Type]](/documentation/appintents/appintentspackage/includedpackages)
-- [IntentDescription](/documentation/appintents/intentdescription)
-
-#### Creating a description
-
-- [init(LocalizedStringResource, categoryName: LocalizedStringResource?, searchKeywords: [LocalizedStringResource])](/documentation/appintents/intentdescription/init(_:categoryname:searchkeywords:))
-
-#### Initializers
-
-- [init(LocalizedStringResource, categoryName: LocalizedStringResource?, searchKeywords: [LocalizedStringResource], resultValueName: LocalizedStringResource?)](/documentation/appintents/intentdescription/init(_:categoryname:searchkeywords:resultvaluename:))
-
-#### Instance Properties
-
-- [var categoryName: LocalizedStringResource?](/documentation/appintents/intentdescription/categoryname)
-- [var descriptionText: LocalizedStringResource](/documentation/appintents/intentdescription/descriptiontext)
-- [var resultValueName: LocalizedStringResource?](/documentation/appintents/intentdescription/resultvaluename)
-- [var searchKeywords: [LocalizedStringResource]](/documentation/appintents/intentdescription/searchkeywords)
-- [IntentDialog](/documentation/appintents/intentdialog)
-
-#### Creating a dialog
-
-- [init(LocalizedStringResource)](/documentation/appintents/intentdialog/init(_:))
-- [init(full: LocalizedStringResource, supporting: LocalizedStringResource)](/documentation/appintents/intentdialog/init(full:supporting:))
-- [init(full: LocalizedStringResource, systemImageName: String)](/documentation/appintents/intentdialog/init(full:systemimagename:))
-- [init(full: LocalizedStringResource, supporting: LocalizedStringResource, systemImageName: String)](/documentation/appintents/intentdialog/init(full:supporting:systemimagename:))
-- [IntentDeprecation](/documentation/appintents/intentdeprecation)
-
-#### Initializers
-
-- [init(message: LocalizedStringResource)](/documentation/appintents/intentdeprecation/init(message:))
-- [init(message: LocalizedStringResource, replacedBy: ReplacementIntent.Type?)](/documentation/appintents/intentdeprecation/init(message:replacedby:))
-- [init(replacedBy: ReplacementIntent.Type)](/documentation/appintents/intentdeprecation/init(replacedby:))
-
-#### Instance Properties
-
-- [var message: LocalizedStringResource](/documentation/appintents/intentdeprecation/message)
-- [var replacedBy: ReplacementIntent.Type?](/documentation/appintents/intentdeprecation/replacedby)
-- [IntentProjection](/documentation/appintents/intentprojection)
-
-#### Subscripts
-
-- [subscript<Value>(dynamicMember _: KeyPath<Intent, Value>) -> Value.UnwrappedType](/documentation/appintents/intentprojection/subscript(dynamicmember:))
-- [IntentSystemContext](/documentation/appintents/intentsystemcontext)
-
-#### Instance Properties
-
-- [var currentMode: IntentModes.Current](/documentation/appintents/intentsystemcontext/currentmode)
-- [var preciseTimestamp: Date?](/documentation/appintents/intentsystemcontext/precisetimestamp)
-
-### Results
-
-- [IntentResult](/documentation/appintents/intentresult)
-
-#### Getting the result value
-
-- [var value: Self.Value?](/documentation/appintents/intentresult/value-swift.property)
-
-#### Communicating the result to the user
-
-- [Dialog](/documentation/appintents/intentresult/dialog)
-
-#### Associated Types
-
-- [OpensAppIntent](/documentation/appintents/intentresult/opensappintent)
-- [Snippet](/documentation/appintents/intentresult/snippet)
-- [Value](/documentation/appintents/intentresult/value-swift.associatedtype)
-
-#### Type Methods
-
-- [static func result() -> Self](/documentation/appintents/intentresult/result())
-- [static func result<Intent>(actionButtonIntent: Intent) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:))
-- [static func result<Intent>(actionButtonIntent: Intent, activityIdentifier: String) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:activityidentifier:))
-- [static func result<Intent>(actionButtonIntent: Intent, activityIdentifier: String, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:activityidentifier:dialog:))
-- [static func result<Intent>(actionButtonIntent: Intent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:dialog:))
-- [static func result<Content>(content: () -> Content) -> Self](/documentation/appintents/intentresult/result(content:))
-- [static func result(dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(dialog:))
-- [static func result<Content>(dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(dialog:content:))
-- [static func result(dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(dialog:snippetintent:))
-- [static func result<Content>(dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(dialog:view:))
-- [static func result(opensIntent: some AppIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:)-8t8q8)
-- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:content:)-2h5ux)
-- [static func result<Content>(opensIntent: some AppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:content:)-965vk)
-- [static func result(opensIntent: some AppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:)-64q5v)
-- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:content:)-2g81m)
-- [static func result<Content>(opensIntent: some AppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:content:)-9kg66)
-- [static func result(opensIntent: some AppIntent, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:snippetintent:))
-- [static func result<Content>(opensIntent: some AppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:view:)-1w6b6)
-- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:view:)-8wkpg)
-- [static func result(opensIntent: some AppIntent, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:snippetintent:))
-- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:view:)-4l1d4)
-- [static func result<Content>(opensIntent: some AppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:view:)-5hm2s)
-- [static func result(snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(snippetintent:))
-- [static func result<Value>(value: Value) -> Self](/documentation/appintents/intentresult/result(value:))
-- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:))
-- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, activityIdentifier: String) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:activityidentifier:))
-- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, activityIdentifier: String, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:activityidentifier:dialog:))
-- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:dialog:))
-- [static func result<Value, Content>(value: Value, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:content:))
-- [static func result<Value>(value: Value, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:dialog:))
-- [static func result<Value, Content>(value: Value, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:dialog:content:))
-- [static func result<Value>(value: Value, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:dialog:snippetintent:))
-- [static func result<Value, Content>(value: Value, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(value:dialog:view:))
-- [static func result<Value>(value: Value, opensIntent: some AppIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:)-8v5op)
-- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:content:)-2f6ht)
-- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:content:)-95tmb)
-- [static func result<Value>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:)-1eg3x)
-- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:content:)-4iwem)
-- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:content:)-mwwf)
-- [static func result<Value>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:snippetintent:))
-- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:view:)-5sg4p)
-- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:view:)-88j6a)
-- [static func result<Value>(value: Value, opensIntent: some AppIntent, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:snippetintent:))
-- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:view:)-12wbo)
-- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:view:)-5z5t0)
-- [static func result<Value>(value: Value, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:snippetintent:))
-- [static func result<Value, Content>(value: Value, view: Content) -> Self](/documentation/appintents/intentresult/result(value:view:))
-- [static func result<Content>(view: Content) -> Self](/documentation/appintents/intentresult/result(view:))
-
-#### Default Implementations
-
-- [IntentResult Implementations](/documentation/appintents/intentresult/intentresult-implementations)
-
-##### Type Methods
-
-- [static func result<OpensAppIntent>(opensIntent: OpensAppIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:)-6l7s5)
-- [static func result<OpensAppIntent>(opensIntent: OpensAppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:)-925mk)
-- [static func result<Value, OpensAppIntent>(value: Value, opensIntent: OpensAppIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:)-1mbbt)
-- [static func result<Value, OpensAppIntent>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:)-2j58s)
-- [IntentResultContainer](/documentation/appintents/intentresultcontainer)
-
-#### Instance Properties
-
-- [var activityIdentifier: String?](/documentation/appintents/intentresultcontainer/activityidentifier)
-- [var dialog: IntentDialog?](/documentation/appintents/intentresultcontainer/dialog)
-- [var opensIntent: OpensAppIntent?](/documentation/appintents/intentresultcontainer/opensintent)
-- [OpensIntent](/documentation/appintents/opensintent)
-- [ProvidesDialog](/documentation/appintents/providesdialog)
-- [ReturnsValue](/documentation/appintents/returnsvalue)
-- [ShowsSnippetView](/documentation/appintents/showssnippetview)
-- [ResultsCollection](/documentation/appintents/resultscollection)
-
-#### Associated Types
-
-- [Result](/documentation/appintents/resultscollection/result)
-
-#### Instance Properties
-
-- [var items: [Self.Result.ValueType]](/documentation/appintents/resultscollection/items)
-- [var promptLabel: LocalizedStringResource?](/documentation/appintents/resultscollection/promptlabel)
-- [var usesIndexedCollation: Bool](/documentation/appintents/resultscollection/usesindexedcollation)
-
-#### Type Properties
-
-- [static var empty: Self](/documentation/appintents/resultscollection/empty)
-
-### Extensions
-
-- [AppIntentsExtension](/documentation/appintents/appintentsextension)
 - [Intent discovery](/documentation/appintents/intent-discovery)
-
-### Donation management
+#### Donation management
 
 - [IntentDonationManager](/documentation/appintents/intentdonationmanager)
-
-#### Getting the donation manager
+##### Getting the donation manager
 
 - [static var shared: IntentDonationManager](/documentation/appintents/intentdonationmanager/shared)
-
-#### Donating intents to the system
+##### Donating intents to the system
 
 - [func donate(intent: some AppIntent) -> IntentDonationIdentifier](/documentation/appintents/intentdonationmanager/donate(intent:)-57fg4)
 - [func donate(intent: some AppIntent) async throws -> IntentDonationIdentifier](/documentation/appintents/intentdonationmanager/donate(intent:)-hly2)
 - [func donate(intent: some AppIntent, result: some IntentResult) async throws -> IntentDonationIdentifier](/documentation/appintents/intentdonationmanager/donate(intent:result:)-1ltmi)
 - [func donate(intent: some AppIntent, result: some IntentResult) -> IntentDonationIdentifier](/documentation/appintents/intentdonationmanager/donate(intent:result:)-7ztce)
-
-#### Deleting previous donations
+##### Deleting previous donations
 
 - [func deleteDonations(matching: IntentDonationMatchingPredicate) async throws -> [IntentDonationIdentifier]](/documentation/appintents/intentdonationmanager/deletedonations(matching:))
+
 - [IntentDonationIdentifier](/documentation/appintents/intentdonationidentifier)
 - [IntentDonationMatchingPredicate](/documentation/appintents/intentdonationmatchingpredicate)
-
-#### Creating a predicate
+##### Creating a predicate
 
 - [static func donationIdentifier(IntentDonationIdentifier) -> IntentDonationMatchingPredicate](/documentation/appintents/intentdonationmatchingpredicate/donationidentifier(_:))
 - [static func entityIdentifier(EntityIdentifier) -> IntentDonationMatchingPredicate](/documentation/appintents/intentdonationmatchingpredicate/entityidentifier(_:))
 - [static func intentType(any AppIntent.Type, entityIdentifier: EntityIdentifier?) -> IntentDonationMatchingPredicate](/documentation/appintents/intentdonationmatchingpredicate/intenttype(_:entityidentifier:))
-
-#### Type Methods
+##### Type Methods
 
 - [static func donationIdentifiers([IntentDonationIdentifier]) -> IntentDonationMatchingPredicate](/documentation/appintents/intentdonationmatchingpredicate/donationidentifiers(_:))
 - [static func entityIdentifiers([EntityIdentifier]) -> IntentDonationMatchingPredicate](/documentation/appintents/intentdonationmatchingpredicate/entityidentifiers(_:))
 
-### Intent predictions
+#### Intent predictions
 
 - [PredictableIntent](/documentation/appintents/predictableintent)
-
-#### Providing predictions
+##### Providing predictions
 
 - [static var predictionConfiguration: Self.Prediction](/documentation/appintents/predictableintent/predictionconfiguration)
 - [Prediction](/documentation/appintents/predictableintent/prediction)
 - [IntentPredictionConfiguration](/documentation/appintents/intentpredictionconfiguration)
-
-##### Associated Types
+###### Associated Types
 
 - [Intent](/documentation/appintents/intentpredictionconfiguration/intent)
-- [IntentPredictionsBuilder](/documentation/appintents/intentpredictionsbuilder)
 
-##### Building predictions
+- [IntentPredictionsBuilder](/documentation/appintents/intentpredictionsbuilder)
+###### Building predictions
 
 - [static func buildBlock<A0>(A0) -> A0](/documentation/appintents/intentpredictionsbuilder/buildblock(_:))
 - [static func buildBlock<A0, A1>(A0, A1) -> TupleIntentPrediction<A0.Intent, (A0, A1)>](/documentation/appintents/intentpredictionsbuilder/buildblock(_:_:))
 - [static func buildBlock<A0, A1, A2>(A0, A1, A2) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2)>](/documentation/appintents/intentpredictionsbuilder/buildblock(_:_:_:))
 - [TupleIntentPrediction](/documentation/appintents/tupleintentprediction)
-
-##### Type Methods
+###### Type Methods
 
 - [static func buildBlock<A0, A1, A2, A3>(A0, A1, A2, A3) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3)>](/documentation/appintents/intentpredictionsbuilder/buildblock(_:_:_:_:))
 - [static func buildBlock<A0, A1, A2, A3, A4>(A0, A1, A2, A3, A4) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4)>](/documentation/appintents/intentpredictionsbuilder/buildblock(_:_:_:_:_:))
@@ -2296,9 +1125,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13)>](/documentation/appintents/intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
 - [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14)>](/documentation/appintents/intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
 - [static func buildExpression<A0>(A0) -> A0](/documentation/appintents/intentpredictionsbuilder/buildexpression(_:))
-- [IntentPrediction](/documentation/appintents/intentprediction)
 
-#### Creating a prediction
+
+- [IntentPrediction](/documentation/appintents/intentprediction)
+##### Creating a prediction
 
 - [init(displayRepresentation: () -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(displayrepresentation:))
 - [init<V0, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, P0, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, K0, K1, K2, K3, K4, K5, K6, K7, K8, K9, K10>(parameters: T, displayRepresentation: (V0, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10) -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(parameters:displayrepresentation:)-1zdkp)
@@ -2314,41 +1144,57 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [init<V0, V1, V2, P0, P1, P2, K0, K1, K2>(parameters: T, displayRepresentation: (V0, V1, V2) -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(parameters:displayrepresentation:)-8b851)
 - [init<V0, V1, V2, V3, V4, V5, V6, P0, P1, P2, P3, P4, P5, P6, K0, K1, K2, K3, K4, K5, K6>(parameters: T, displayRepresentation: (V0, V1, V2, V3, V4, V5, V6) -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(parameters:displayrepresentation:)-9ibp3)
 - [init<V0, V1, V2, V3, V4, V5, V6, V7, V8, P0, P1, P2, P3, P4, P5, P6, P7, P8, K0, K1, K2, K3, K4, K5, K6, K7, K8>(parameters: T, displayRepresentation: (V0, V1, V2, V3, V4, V5, V6, V7, V8) -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(parameters:displayrepresentation:)-alik)
-
-#### Initializers
+##### Initializers
 
 - [init<V0, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, P0, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, K0, K1, K2, K3, K4, K5, K6, K7, K8, K9, K10, K11>(parameters: T, displayRepresentation: (V0, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11) -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(parameters:displayrepresentation:)-1uup3)
 - [init<V0, V1, V2, V3, P0, P1, P2, P3, K0, K1, K2, K3>(parameters: T, displayRepresentation: (V0, V1, V2, V3) -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(parameters:displayrepresentation:)-n8dp)
 - [init<V0, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, P0, P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, K0, K1, K2, K3, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13>(parameters: T, displayRepresentation: (V0, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13) -> DisplayRepresentation)](/documentation/appintents/intentprediction/init(parameters:displayrepresentation:)-te8o)
 
-### Intent relevancy
+#### Intent relevancy
 
 - [RelevantIntent](/documentation/appintents/relevantintent)
-
-#### Initializers
+##### Initializers
 
 - [init<IntentType>(IntentType, widgetKind: String, relevance: RelevantContext)](/documentation/appintents/relevantintent/init(_:widgetkind:relevance:))
-- [RelevantIntentManager](/documentation/appintents/relevantintentmanager)
 
-#### Instance Methods
+- [RelevantIntentManager](/documentation/appintents/relevantintentmanager)
+##### Instance Methods
 
 - [func updateRelevantIntents([RelevantIntent]) async throws](/documentation/appintents/relevantintentmanager/updaterelevantintents(_:))
-
-#### Type Properties
+##### Type Properties
 
 - [static let shared: RelevantIntentManager](/documentation/appintents/relevantintentmanager/shared)
-- [RelevantContext](/documentation/relevancekit/relevantcontext)
-- [App Shortcuts](/documentation/appintents/app-shortcuts)
 
+- [RelevantContext](/documentation/relevancekit/relevantcontext)
+
+
+- [Visual intelligence](/documentation/appintents/visual-intelligence)
+### Supporting visual intelligence
+
+- [Integrating your app with visual intelligence](/documentation/visualintelligence/integrating-your-app-with-visual-intelligence)
+- [Visual Intelligence](/documentation/visualintelligence)
+- [IntentValueQuery](/documentation/appintents/intentvaluequery)
+#### Associated Types
+
+- [Input](/documentation/appintents/intentvaluequery/input)
+- [Result](/documentation/appintents/intentvaluequery/result)
+- [ResultValue](/documentation/appintents/intentvaluequery/resultvalue)
+#### Initializers
+
+- [init()](/documentation/appintents/intentvaluequery/init())
+#### Instance Methods
+
+- [func values(for: Self.Input) async throws -> Self.Result](/documentation/appintents/intentvaluequery/values(for:))
+
+
+- [App Shortcuts](/documentation/appintents/app-shortcuts)
 ### App Shortcut management
 
 - [AppShortcutsProvider](/documentation/appintents/appshortcutsprovider)
-
 #### Providing App Shortcuts
 
 - [static var appShortcuts: [AppShortcut]](/documentation/appintents/appshortcutsprovider/appshortcuts)
 - [AppShortcutsBuilder](/documentation/appintents/appshortcutsbuilder)
-
 ##### Building App Shortcuts
 
 - [static func buildBlock() -> [AppShortcut]](/documentation/appintents/appshortcutsbuilder/buildblock())
@@ -2364,7 +1210,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 
 - [static var shortcutTileColor: ShortcutTileColor](/documentation/appintents/appshortcutsprovider/shortcuttilecolor)
 - [ShortcutTileColor](/documentation/appintents/shortcuttilecolor)
-
 ##### Getting the tile colors
 
 - [case blue](/documentation/appintents/shortcuttilecolor/blue)
@@ -2386,14 +1231,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Updating stored parameters
 
 - [static func updateAppShortcutParameters()](/documentation/appintents/appshortcutsprovider/updateappshortcutparameters())
-
 #### Type Aliases
 
 - [AppShortcutsProvider.OptionsCollection](/documentation/appintents/appshortcutsprovider/optionscollection)
 - [AppShortcutsProvider.ParameterPresentation](/documentation/appintents/appshortcutsprovider/parameterpresentation)
 - [AppShortcutsProvider.Summary](/documentation/appintents/appshortcutsprovider/summary)
 - [AppShortcutsProvider.Title](/documentation/appintents/appshortcutsprovider/title)
-
 #### Type Properties
 
 - [static var negativePhrases: NegativeAppShortcutPhrases](/documentation/appintents/appshortcutsprovider/negativephrases)
@@ -2401,23 +1244,31 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### App Shortcut definition
 
 - [AppShortcut](/documentation/appintents/appshortcut)
-
 #### Creating an app shortcut
 
 - [init<Intent>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource, systemImageName: String)](/documentation/appintents/appshortcut/init(intent:phrases:shorttitle:systemimagename:)-8yntq)
 - [init<Intent, Value, Parameter, ParameterKeyPath>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource, systemImageName: String, parameterPresentation: AppShortcutParameterPresentation<Intent, Value, Parameter, ParameterKeyPath>)](/documentation/appintents/appshortcut/init(intent:phrases:shorttitle:systemimagename:parameterpresentation:))
 - [init<Intent>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource?, systemImageName: String?)](/documentation/appintents/appshortcut/init(intent:phrases:shorttitle:systemimagename:)-2hk1x)
-- [AppShortcutPhrase](/documentation/appintents/appshortcutphrase)
 
+- [AppShortcutsContent](/documentation/appintents/appshortcutscontent)
+#### Instance Properties
+
+- [var appShortcuts: [AppShortcut]](/documentation/appintents/appshortcutscontent/appshortcuts)
+
+- [AppShortcutPhrase](/documentation/appintents/appshortcutphrase)
 #### Creating a shortcut phrase
 
 - [init(String)](/documentation/appintents/appshortcutphrase/init(_:))
-- [NegativeAppShortcutPhrase](/documentation/appintents/negativeappshortcutphrase)
 
+- [AppShortcutPhraseToken](/documentation/appintents/appshortcutphrasetoken)
+#### Getting the tokens
+
+- [case applicationName](/documentation/appintents/appshortcutphrasetoken/applicationname)
+
+- [NegativeAppShortcutPhrase](/documentation/appintents/negativeappshortcutphrase)
 #### Structures
 
 - [NegativeAppShortcutPhrase.StringInterpolation](/documentation/appintents/negativeappshortcutphrase/stringinterpolation)
-
 ##### Instance Methods
 
 - [func appendInterpolation(AppShortcutPhraseToken)](/documentation/appintents/negativeappshortcutphrase/stringinterpolation/appendinterpolation(_:))
@@ -2425,15 +1276,15 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Initializers
 
 - [init(String)](/documentation/appintents/negativeappshortcutphrase/init(_:))
-- [NegativeAppShortcutPhrases](/documentation/appintents/negativeappshortcutphrases)
 
+- [NegativeAppShortcutPhrases](/documentation/appintents/negativeappshortcutphrases)
 #### Initializers
 
 - [init(phrases: [NegativeAppShortcutPhrase])](/documentation/appintents/negativeappshortcutphrases/init(phrases:))
+
 - [NSAppIconActionTintColorName](/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname)
 - [NSAppIconComplementingColorNames](/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconcomplementingcolornames)
 - [AppShortcutsBuilder](/documentation/appintents/appshortcutsbuilder)
-
 #### Building App Shortcuts
 
 - [static func buildBlock() -> [AppShortcut]](/documentation/appintents/appshortcutsbuilder/buildblock())
@@ -2444,8 +1295,8 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [static func buildLimitedAvailability([AppShortcut]) -> any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker](/documentation/appintents/appshortcutsbuilder/buildlimitedavailability(_:))
 - [static func buildOptional((any _AppShortcutsContentEmitterMarker & _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](/documentation/appintents/appshortcutsbuilder/buildoptional(_:)-3pbr9)
 - [static func buildOptional((any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](/documentation/appintents/appshortcutsbuilder/buildoptional(_:)-4urzx)
-- [ShortcutTileColor](/documentation/appintents/shortcuttilecolor)
 
+- [ShortcutTileColor](/documentation/appintents/shortcuttilecolor)
 #### Getting the tile colors
 
 - [case blue](/documentation/appintents/shortcuttilecolor/blue)
@@ -2467,28 +1318,26 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### App Shortcut options
 
 - [AppShortcutOptionsCollection](/documentation/appintents/appshortcutoptionscollection)
-
 #### Initializers
 
 - [init(Provider, title: LocalizedStringResource, systemImageName: String?)](/documentation/appintents/appshortcutoptionscollection/init(_:title:systemimagename:))
-- [AppShortcutOptionsCollectionProtocol](/documentation/appintents/appshortcutoptionscollectionprotocol)
 
+- [AppShortcutOptionsCollectionProtocol](/documentation/appintents/appshortcutoptionscollectionprotocol)
 #### Associated Types
 
 - [Provider](/documentation/appintents/appshortcutoptionscollectionprotocol/provider)
-
 #### Instance Properties
 
 - [var dynamicOptionsProvider: Self.Provider](/documentation/appintents/appshortcutoptionscollectionprotocol/dynamicoptionsprovider)
 - [var systemImageName: String?](/documentation/appintents/appshortcutoptionscollectionprotocol/systemimagename)
 - [var title: LocalizedStringResource](/documentation/appintents/appshortcutoptionscollectionprotocol/title)
-- [AppShortcutOptionsCollectionSpecification](/documentation/appintents/appshortcutoptionscollectionspecification)
 
+- [AppShortcutOptionsCollectionSpecification](/documentation/appintents/appshortcutoptionscollectionspecification)
 #### Associated Types
 
 - [Value](/documentation/appintents/appshortcutoptionscollectionspecification/value)
-- [AppShortcutOptionsCollectionSpecificationBuilder](/documentation/appintents/appshortcutoptionscollectionspecificationbuilder)
 
+- [AppShortcutOptionsCollectionSpecificationBuilder](/documentation/appintents/appshortcutoptionscollectionspecificationbuilder)
 #### Type Methods
 
 - [static func buildBlock<C0>(C0) -> some AppShortcutOptionsCollectionSpecification<Value>
@@ -2525,27 +1374,26 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### App Shortcut parameter presentation
 
 - [AppShortcutParameterPresentation](/documentation/appintents/appshortcutparameterpresentation)
-
 #### Initializers
 
 - [init(for: ParameterKeyPath, summary: AppShortcutParameterPresentationSummary<Intent, Value, Parameter, ParameterKeyPath>, optionsCollections: () -> some AppShortcutOptionsCollectionSpecification<Value.UnwrappedType>)](/documentation/appintents/appshortcutparameterpresentation/init(for:summary:optionscollections:))
-- [AppShortcutParameterPresentationSummary](/documentation/appintents/appshortcutparameterpresentationsummary)
 
+- [AppShortcutParameterPresentationSummary](/documentation/appintents/appshortcutparameterpresentationsummary)
 #### Initializers
 
 - [init(AppShortcutParameterPresentationSummaryString<Intent, Value, Parameter, ParameterKeyPath>, table: StaticString?)](/documentation/appintents/appshortcutparameterpresentationsummary/init(_:table:))
-- [AppShortcutParameterPresentationSummaryString](/documentation/appintents/appshortcutparameterpresentationsummarystring)
 
+- [AppShortcutParameterPresentationSummaryString](/documentation/appintents/appshortcutparameterpresentationsummarystring)
 #### Initializers
 
 - [init(String)](/documentation/appintents/appshortcutparameterpresentationsummarystring/init(_:))
-- [AppShortcutParameterPresentationTitle](/documentation/appintents/appshortcutparameterpresentationtitle)
 
+- [AppShortcutParameterPresentationTitle](/documentation/appintents/appshortcutparameterpresentationtitle)
 #### Initializers
 
 - [init(specific: AppShortcutParameterPresentationTitleString<Intent, Value, Parameter, ParameterKeyPath>, generic: StaticString, table: StaticString?)](/documentation/appintents/appshortcutparameterpresentationtitle/init(specific:generic:table:))
-- [AppShortcutParameterPresentationTitleString](/documentation/appintents/appshortcutparameterpresentationtitlestring)
 
+- [AppShortcutParameterPresentationTitleString](/documentation/appintents/appshortcutparameterpresentationtitlestring)
 #### Initializers
 
 - [init(String)](/documentation/appintents/appshortcutparameterpresentationtitlestring/init(_:))
@@ -2553,29 +1401,25 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### Buttons
 
 - [ShortcutsUIButton](/documentation/appintents/shortcutsuibutton)
-
 #### Creating the button
 
 - [init(style: ShortcutsLinkStyle)](/documentation/appintents/shortcutsuibutton/init(style:))
-
 #### Getting the button style
 
 - [var style: ShortcutsLinkStyle](/documentation/appintents/shortcutsuibutton/style)
-
 #### Configuring additional actions
 
 - [func addTarget(Any?, action: Selector, for: UIControl.Event)](/documentation/appintents/shortcutsuibutton/addtarget(_:action:for:))
-
 #### Resizing the button
 
 - [func sizeThatFits(CGSize) -> CGSize](/documentation/appintents/shortcutsuibutton/sizethatfits(_:))
-- [ShortcutsLink](/documentation/appintents/shortcutslink)
 
+- [ShortcutsLink](/documentation/appintents/shortcutslink)
 #### Initializers
 
 - [init(action: () -> Void)](/documentation/appintents/shortcutslink/init(action:))
-- [ShortcutsLinkStyle](/documentation/appintents/shortcutslinkstyle)
 
+- [ShortcutsLinkStyle](/documentation/appintents/shortcutslinkstyle)
 #### Getting the styles
 
 - [static let automatic: ShortcutsLinkStyle](/documentation/appintents/shortcutslinkstyle/automatic)
@@ -2588,16 +1432,13 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### Tip views
 
 - [SiriTipUIView](/documentation/appintents/siritipuiview)
-
 #### Creating a tip view
 
 - [init(style: SiriTipViewStyle)](/documentation/appintents/siritipuiview/init(style:))
-
 #### Getting the view style
 
 - [var style: SiriTipViewStyle](/documentation/appintents/siritipuiview/style)
 - [SiriTipViewStyle](/documentation/appintents/siritipviewstyle)
-
 ##### Getting the styles
 
 - [static let automatic: SiriTipViewStyle](/documentation/appintents/siritipviewstyle/automatic)
@@ -2608,43 +1449,1583 @@ timestamp: 2026-02-19T07:56:01.983Z
 
 - [var allowsDismissal: Bool](/documentation/appintents/siritipuiview/allowsdismissal)
 - [var isPresented: Bool](/documentation/appintents/siritipuiview/ispresented)
-
 #### Instance Properties
 
 - [var intrinsicContentSize: CGSize](/documentation/appintents/siritipuiview/intrinsiccontentsize)
-
 #### Instance Methods
 
 - [func didMoveToWindow()](/documentation/appintents/siritipuiview/didmovetowindow())
 - [func setIntent<Intent>(intent: Intent)](/documentation/appintents/siritipuiview/setintent(intent:))
 - [func sizeThatFits(CGSize) -> CGSize](/documentation/appintents/siritipuiview/sizethatfits(_:))
-- [SiriTipView](/documentation/appintents/siritipview)
 
+- [SiriTipView](/documentation/appintents/siritipview)
 #### Creating the view
 
 - [init<Intent>(intent: Intent, isVisible: Binding<Bool>?)](/documentation/appintents/siritipview/init(intent:isvisible:))
-- [SiriTipViewStyle](/documentation/appintents/siritipviewstyle)
 
+- [SiriTipViewStyle](/documentation/appintents/siritipviewstyle)
 #### Getting the styles
 
 - [static let automatic: SiriTipViewStyle](/documentation/appintents/siritipviewstyle/automatic)
 - [static let dark: SiriTipViewStyle](/documentation/appintents/siritipviewstyle/dark)
 - [static let light: SiriTipViewStyle](/documentation/appintents/siritipviewstyle/light)
 
-## Parameters, custom data types, and queries
+
+- [Widgets, Live Activities, and controls](/documentation/appintents/widgets-and-live-activities)
+### Essentials
+
+- [Adding interactivity to widgets and Live Activities](/documentation/widgetkit/adding-interactivity-to-widgets-and-live-activities)
+- [Developing a WidgetKit strategy](/documentation/widgetkit/developing-a-widgetkit-strategy)
+### Controls
+
+- [Controls](/documentation/widgetkit/controls-collection)
+- [ControlConfigurationIntent](/documentation/appintents/controlconfigurationintent)
+#### Associated Types
+
+- [NeverResult](/documentation/appintents/controlconfigurationintent/neverresult)
+
+### Live Activities
+
+- [Live Activities](/documentation/widgetkit/liveactivities-collection)
+- [LiveActivityStartingIntent](/documentation/appintents/liveactivitystartingintent)
+- [LiveActivityIntent](/documentation/appintents/liveactivityintent)
+- [ActivityKit](/documentation/activitykit)
+### Widgets
+
+- [Increasing the visibility of widgets in Smart Stacks](/documentation/widgetkit/widget-suggestions-in-smart-stacks)
+- [Migrating widgets from SiriKit Intents to App Intents](/documentation/widgetkit/migrating-from-sirikit-intents-to-app-intents)
+- [WidgetConfigurationIntent](/documentation/appintents/widgetconfigurationintent)
+#### Widget families
+
+- [IntentWidgetFamily](/documentation/appintents/intentwidgetfamily)
+##### Enumeration Cases
+
+- [case accessoryCircular](/documentation/appintents/intentwidgetfamily/accessorycircular)
+- [case accessoryCorner](/documentation/appintents/intentwidgetfamily/accessorycorner)
+- [case accessoryInline](/documentation/appintents/intentwidgetfamily/accessoryinline)
+- [case accessoryRectangular](/documentation/appintents/intentwidgetfamily/accessoryrectangular)
+- [case systemExtraLarge](/documentation/appintents/intentwidgetfamily/systemextralarge)
+- [case systemLarge](/documentation/appintents/intentwidgetfamily/systemlarge)
+- [case systemMedium](/documentation/appintents/intentwidgetfamily/systemmedium)
+- [case systemSmall](/documentation/appintents/intentwidgetfamily/systemsmall)
+##### Type Aliases
+
+- [IntentWidgetFamily.Specification](/documentation/appintents/intentwidgetfamily/specification)
+- [IntentWidgetFamily.UnwrappedType](/documentation/appintents/intentwidgetfamily/unwrappedtype)
+- [IntentWidgetFamily.ValueType](/documentation/appintents/intentwidgetfamily/valuetype)
+##### Type Properties
+
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentWidgetFamily>](/documentation/appintents/intentwidgetfamily/defaultresolverspecification)
+
+#### Associated Types
+
+- [NeverResult](/documentation/appintents/widgetconfigurationintent/neverresult)
+
+- [WidgetKit](/documentation/widgetkit)
+
+- [Action button on iPhone and Apple Watch](/documentation/appintents/actionbutton)
+### Responding to the Action button
+
+- [Responding to the Action button on Apple Watch Ultra](/documentation/appintents/actionbuttonarticle)
+- [StartWorkoutIntent](/documentation/appintents/startworkoutintent)
+#### Creating an intent
+
+- [init(style: Self.WorkoutStyle)](/documentation/appintents/startworkoutintent/init(style:))
+#### Defining supported workouts
+
+- [WorkoutStyle](/documentation/appintents/startworkoutintent/workoutstyle-swift.associatedtype)
+- [var workoutStyle: Self.WorkoutStyle](/documentation/appintents/startworkoutintent/workoutstyle-swift.property)
+- [static var suggestedWorkouts: [Self]](/documentation/appintents/startworkoutintent/suggestedworkouts)
+- [static func invalidateSuggestedWorkouts()](/documentation/appintents/startworkoutintent/invalidatesuggestedworkouts())
+
+- [PauseWorkoutIntent](/documentation/appintents/pauseworkoutintent)
+- [ResumeWorkoutIntent](/documentation/appintents/resumeworkoutintent)
+- [StartDiveIntent](/documentation/appintents/startdiveintent)
+- [ConfirmationActionName](/documentation/appintents/confirmationactionname)
+#### Type Properties
+
+- [static var add: ConfirmationActionName](/documentation/appintents/confirmationactionname/add)
+- [static var addData: ConfirmationActionName](/documentation/appintents/confirmationactionname/adddata)
+- [static var book: ConfirmationActionName](/documentation/appintents/confirmationactionname/book)
+- [static var buy: ConfirmationActionName](/documentation/appintents/confirmationactionname/buy)
+- [static var call: ConfirmationActionName](/documentation/appintents/confirmationactionname/call)
+- [static var checkIn: ConfirmationActionName](/documentation/appintents/confirmationactionname/checkin)
+- [static var `continue`: ConfirmationActionName](/documentation/appintents/confirmationactionname/continue)
+- [static var create: ConfirmationActionName](/documentation/appintents/confirmationactionname/create)
+- [static var `do`: ConfirmationActionName](/documentation/appintents/confirmationactionname/do)
+- [static var download: ConfirmationActionName](/documentation/appintents/confirmationactionname/download)
+- [static var filter: ConfirmationActionName](/documentation/appintents/confirmationactionname/filter)
+- [static var find: ConfirmationActionName](/documentation/appintents/confirmationactionname/find)
+- [static var get: ConfirmationActionName](/documentation/appintents/confirmationactionname/get)
+- [static var go: ConfirmationActionName](/documentation/appintents/confirmationactionname/go)
+- [static var log: ConfirmationActionName](/documentation/appintents/confirmationactionname/log)
+- [static var open: ConfirmationActionName](/documentation/appintents/confirmationactionname/open)
+- [static var order: ConfirmationActionName](/documentation/appintents/confirmationactionname/order)
+- [static var pay: ConfirmationActionName](/documentation/appintents/confirmationactionname/pay)
+- [static var play: ConfirmationActionName](/documentation/appintents/confirmationactionname/play)
+- [static var playSound: ConfirmationActionName](/documentation/appintents/confirmationactionname/playsound)
+- [static var post: ConfirmationActionName](/documentation/appintents/confirmationactionname/post)
+- [static var request: ConfirmationActionName](/documentation/appintents/confirmationactionname/request)
+- [static var run: ConfirmationActionName](/documentation/appintents/confirmationactionname/run)
+- [static var search: ConfirmationActionName](/documentation/appintents/confirmationactionname/search)
+- [static var send: ConfirmationActionName](/documentation/appintents/confirmationactionname/send)
+- [static var set: ConfirmationActionName](/documentation/appintents/confirmationactionname/set)
+- [static var share: ConfirmationActionName](/documentation/appintents/confirmationactionname/share)
+- [static var start: ConfirmationActionName](/documentation/appintents/confirmationactionname/start)
+- [static var startNavigation: ConfirmationActionName](/documentation/appintents/confirmationactionname/startnavigation)
+- [static var toggle: ConfirmationActionName](/documentation/appintents/confirmationactionname/toggle)
+- [static var turnOff: ConfirmationActionName](/documentation/appintents/confirmationactionname/turnoff)
+- [static var turnOn: ConfirmationActionName](/documentation/appintents/confirmationactionname/turnon)
+- [static var view: ConfirmationActionName](/documentation/appintents/confirmationactionname/view)
+#### Type Methods
+
+- [static func custom(acceptLabel: LocalizedStringResource, acceptAlternatives: [LocalizedStringResource], denyLabel: LocalizedStringResource, denyAlternatives: [LocalizedStringResource], destructive: Bool) -> ConfirmationActionName](/documentation/appintents/confirmationactionname/custom(acceptlabel:acceptalternatives:denylabel:denyalternatives:destructive:))
+
+
+- [Focus](/documentation/appintents/focus)
+### Focus filters
+
+- [SetFocusFilterIntent](/documentation/appintents/setfocusfilterintent)
+#### Getting the current app configuration
+
+- [static var current: Self](/documentation/appintents/setfocusfilterintent/current)
+- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](/documentation/appintents/setfocusfilterintent/suggestedfocusfilters(for:))
+#### Configuring app context for the Focus
+
+- [var appContext: FocusFilterAppContext](/documentation/appintents/setfocusfilterintent/appcontext)
+- [static func invalidateFocusFilterAppContext()](/documentation/appintents/setfocusfilterintent/invalidatefocusfilterappcontext())
+
+- [Defining your app’s Focus filter](/documentation/appintents/defining-your-app-s-focus-filter)
+- [FocusFilterAppContext](/documentation/appintents/focusfilterappcontext)
+#### Creating the app context
+
+- [init(notificationFilterPredicate: NSPredicate?)](/documentation/appintents/focusfilterappcontext/init(notificationfilterpredicate:))
+#### Getting the filter predicate
+
+- [let notificationFilterPredicate: NSPredicate?](/documentation/appintents/focusfilterappcontext/notificationfilterpredicate)
+#### Initializers
+
+- [init(notificationFilterPredicate: NSPredicate?, targetContentIdentifierPrefix: String?)](/documentation/appintents/focusfilterappcontext/init(notificationfilterpredicate:targetcontentidentifierprefix:))
+#### Instance Properties
+
+- [let targetContentIdentifierPrefix: String?](/documentation/appintents/focusfilterappcontext/targetcontentidentifierprefix)
+
+- [FocusFilterSuggestionContext](/documentation/appintents/focusfiltersuggestioncontext)
+### Errors
+
+- [SetFocusFilterIntentError](/documentation/appintents/setfocusfilterintenterror)
+#### Getting the error codes
+
+- [case missingParameterValue](/documentation/appintents/setfocusfilterintenterror/missingparametervalue)
+- [case notFound](/documentation/appintents/setfocusfilterintenterror/notfound)
+
+
+## Actions
+
+- [Accelerating app interactions with App Intents](/documentation/appintents/acceleratingappinteractionswithappintents)
+- [Creating your first app intent](/documentation/appintents/creating-your-first-app-intent)
+- [App intents](/documentation/appintents/app-intents)
+### General actions
+
+- [AppIntent](/documentation/appintents/appintent)
+#### Creating an app intent
+
+- [init()](/documentation/appintents/appintent/init())
+#### Specifying the authentication policy
+
+- [static var authenticationPolicy: IntentAuthenticationPolicy](/documentation/appintents/appintent/authenticationpolicy)
+- [IntentAuthenticationPolicy](/documentation/appintents/intentauthenticationpolicy)
+##### Authentication policies
+
+- [case alwaysAllowed](/documentation/appintents/intentauthenticationpolicy/alwaysallowed)
+- [case requiresAuthentication](/documentation/appintents/intentauthenticationpolicy/requiresauthentication)
+- [case requiresLocalDeviceAuthentication](/documentation/appintents/intentauthenticationpolicy/requireslocaldeviceauthentication)
+
+#### Configuring the metadata
+
+- [static var title: LocalizedStringResource](/documentation/appintents/appintent/title)
+- [static var description: IntentDescription?](/documentation/appintents/appintent/description)
+- [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun)
+- [static var isDiscoverable: Bool](/documentation/appintents/appintent/isdiscoverable)
+#### Performing the action
+
+- [func perform() async throws -> Self.PerformResult](/documentation/appintents/appintent/perform())
+- [var systemContext: IntentSystemContext](/documentation/appintents/appintent/systemcontext)
+- [PerformResult](/documentation/appintents/appintent/performresult)
+#### Requesting confirmation
+
+- [func requestConfirmation() async throws](/documentation/appintents/appintent/requestconfirmation())
+- [func requestConfirmation(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog) async throws](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:))
+- [func requestConfirmation<Content>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, content: () -> Content) async throws](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:content:))
+- [func requestConfirmation<Result>(result: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](/documentation/appintents/appintent/requestconfirmation(result:confirmationactionname:showprompt:))
+- [func requestConfirmation<Result>(output: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](/documentation/appintents/appintent/requestconfirmation(output:confirmationactionname:showprompt:))
+#### Donating the intent to the system
+
+- [func donate() async throws -> IntentDonationIdentifier](/documentation/appintents/appintent/donate()-1e60c)
+- [func donate() -> IntentDonationIdentifier](/documentation/appintents/appintent/donate()-jp6k)
+- [func donate(result: some IntentResult) async throws -> IntentDonationIdentifier](/documentation/appintents/appintent/donate(result:)-36cia)
+- [func donate(result: some IntentResult) -> IntentDonationIdentifier](/documentation/appintents/appintent/donate(result:)-9b25i)
+- [func callAsFunction(donate: Bool) async throws -> Self.PerformResult.Value](/documentation/appintents/appintent/callasfunction(donate:)-3qvbt)
+- [func callAsFunction(donate: Bool) async throws](/documentation/appintents/appintent/callasfunction(donate:)-7v1om)
+#### Summarizing the parameters
+
+- [SummaryContent](/documentation/appintents/appintent/summarycontent)
+- [static var parameterSummary: Self.SummaryContent](/documentation/appintents/appintent/parametersummary)
+- [static var parameterSummary: some ParameterSummary](/documentation/appintents/appintent/parametersummary-4vgic)
+- [ParameterSummaryBuilder](/documentation/appintents/parametersummarybuilder)
+##### Type Methods
+
+- [static func buildBlock<Summary>(Summary) -> Summary](/documentation/appintents/parametersummarybuilder/buildblock(_:))
+- [static func buildExpression<Summary>(Summary) -> Summary](/documentation/appintents/parametersummarybuilder/buildexpression(_:))
+
+- [AppIntent.Parameter](/documentation/appintents/appintent/parameter)
+- [AppIntent.Case](/documentation/appintents/appintent/case)
+- [AppIntent.DefaultCase](/documentation/appintents/appintent/defaultcase)
+- [AppIntent.Summary](/documentation/appintents/appintent/summary)
+- [AppIntent.Switch](/documentation/appintents/appintent/switch)
+- [AppIntent.When](/documentation/appintents/appintent/when)
+#### URL representation
+
+- [IntentURLRepresentation](/documentation/appintents/intenturlrepresentation)
+##### Initializers
+
+- [init(String)](/documentation/appintents/intenturlrepresentation/init(_:))
+
+#### Instance Methods
+
+- [func continueInForeground(IntentDialog?, alwaysConfirm: Bool) async throws](/documentation/appintents/appintent/continueinforeground(_:alwaysconfirm:))
+- [func needsToContinueInForegroundError(IntentDialog?, alwaysConfirm: Bool) -> AppIntentError](/documentation/appintents/appintent/needstocontinueinforegrounderror(_:alwaysconfirm:))
+- [func requestChoice(between: [IntentChoiceOption], dialog: IntentDialog?) async throws -> IntentChoiceOption](/documentation/appintents/appintent/requestchoice(between:dialog:))
+- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, content: () -> Content) async throws -> IntentChoiceOption](/documentation/appintents/appintent/requestchoice(between:dialog:content:))
+- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, view: Content) async throws -> IntentChoiceOption](/documentation/appintents/appintent/requestchoice(between:dialog:view:))
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj)
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value](/documentation/appintents/appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-jxb8)
+#### Type Aliases
+
+- [AppIntent.Option](/documentation/appintents/appintent/option)
+#### Type Properties
+
+- [static var supportedModes: IntentModes](/documentation/appintents/appintent/supportedmodes)
+
+- [IntentDescription](/documentation/appintents/intentdescription)
+#### Creating a description
+
+- [init(LocalizedStringResource, categoryName: LocalizedStringResource?, searchKeywords: [LocalizedStringResource])](/documentation/appintents/intentdescription/init(_:categoryname:searchkeywords:))
+#### Initializers
+
+- [init(LocalizedStringResource, categoryName: LocalizedStringResource?, searchKeywords: [LocalizedStringResource], resultValueName: LocalizedStringResource?)](/documentation/appintents/intentdescription/init(_:categoryname:searchkeywords:resultvaluename:))
+#### Instance Properties
+
+- [var categoryName: LocalizedStringResource?](/documentation/appintents/intentdescription/categoryname)
+- [var descriptionText: LocalizedStringResource](/documentation/appintents/intentdescription/descriptiontext)
+- [var resultValueName: LocalizedStringResource?](/documentation/appintents/intentdescription/resultvaluename)
+- [var searchKeywords: [LocalizedStringResource]](/documentation/appintents/intentdescription/searchkeywords)
+
+### Specialized actions
+
+- [DeleteIntent](/documentation/appintents/deleteintent)
+#### Associated Types
+
+- [Entity](/documentation/appintents/deleteintent/entity)
+#### Instance Properties
+
+- [var entities: [Self.Entity]](/documentation/appintents/deleteintent/entities)
+
+- [DeprecatedAppIntent](/documentation/appintents/deprecatedappintent)
+#### Associated Types
+
+- [ReplacementIntent](/documentation/appintents/deprecatedappintent/replacementintent)
+#### Type Properties
+
+- [static var deprecation: IntentDeprecation<Self.ReplacementIntent>](/documentation/appintents/deprecatedappintent/deprecation)
+
+- [ForegroundContinuableIntent](/documentation/appintents/foregroundcontinuableintent)
+#### Instance Methods
+
+- [func needsToContinueInForegroundError(IntentDialog?, continuation: (() async throws -> Void)?) -> AppIntentError](/documentation/appintents/foregroundcontinuableintent/needstocontinueinforegrounderror(_:continuation:))
+- [func requestToContinueInForeground<ResultValue>(IntentDialog?, continuation: () async throws -> ResultValue) async throws -> ResultValue](/documentation/appintents/foregroundcontinuableintent/requesttocontinueinforeground(_:continuation:))
+
+- [OpenIntent](/documentation/appintents/openintent)
+#### Associated Types
+
+- [Value](/documentation/appintents/openintent/value)
+#### Instance Properties
+
+- [var target: Self.Value](/documentation/appintents/openintent/target)
+
+- [OpenURLIntent](/documentation/appintents/openurlintent)
+#### Initializers
+
+- [init(URL)](/documentation/appintents/openurlintent/init(_:))
+- [init(urlRepresentable: some URLRepresentableEnum) throws](/documentation/appintents/openurlintent/init(urlrepresentable:)-53fa0)
+- [init(urlRepresentable: some URLRepresentableEntity) async throws](/documentation/appintents/openurlintent/init(urlrepresentable:)-8r4bl)
+#### Instance Properties
+
+- [var $url: IntentParameter<URL>](/documentation/appintents/openurlintent/$url)
+- [var url: URL](/documentation/appintents/openurlintent/url)
+
+- [ProgressReportingIntent](/documentation/appintents/progressreportingintent)
+#### Instance Properties
+
+- [var progress: Progress](/documentation/appintents/progressreportingintent/progress)
+
+- [SetValueIntent](/documentation/appintents/setvalueintent)
+#### Associated Types
+
+- [ValueType](/documentation/appintents/setvalueintent/valuetype)
+#### Instance Properties
+
+- [var value: Self.ValueType](/documentation/appintents/setvalueintent/value)
+
+- [ShowInAppSearchResultsIntent](/documentation/appintents/showinappsearchresultsintent)
+#### Scoping the search
+
+- [static var searchScopes: Self.Criteria.SearchScopes](/documentation/appintents/showinappsearchresultsintent/searchscopes)
+- [StringSearchScope](/documentation/appintents/stringsearchscope)
+##### Search scopes
+
+- [case freeformVideo](/documentation/appintents/stringsearchscope/freeformvideo)
+- [case general](/documentation/appintents/stringsearchscope/general)
+- [case movies](/documentation/appintents/stringsearchscope/movies)
+- [case tv](/documentation/appintents/stringsearchscope/tv)
+##### Type Aliases
+
+- [StringSearchScope.Specification](/documentation/appintents/stringsearchscope/specification)
+- [StringSearchScope.UnwrappedType](/documentation/appintents/stringsearchscope/unwrappedtype)
+- [StringSearchScope.ValueType](/documentation/appintents/stringsearchscope/valuetype)
+
+#### Defining the search criteria
+
+- [var criteria: Self.Criteria](/documentation/appintents/showinappsearchresultsintent/criteria-swift.property)
+- [SearchCriteria](/documentation/appintents/searchcriteria)
+##### Associated Types
+
+- [SearchScopes](/documentation/appintents/searchcriteria/searchscopes)
+
+- [StringSearchCriteria](/documentation/appintents/stringsearchcriteria)
+##### Initializers
+
+- [init(term: String)](/documentation/appintents/stringsearchcriteria/init(term:))
+##### Instance Properties
+
+- [var term: String](/documentation/appintents/stringsearchcriteria/term)
+##### Type Aliases
+
+- [StringSearchCriteria.Specification](/documentation/appintents/stringsearchcriteria/specification)
+- [StringSearchCriteria.UnwrappedType](/documentation/appintents/stringsearchcriteria/unwrappedtype)
+- [StringSearchCriteria.ValueType](/documentation/appintents/stringsearchcriteria/valuetype)
+##### Type Properties
+
+- [static var defaultResolverSpecification: some ResolverSpecification](/documentation/appintents/stringsearchcriteria/defaultresolverspecification)
+
+- [Criteria](/documentation/appintents/showinappsearchresultsintent/criteria-swift.associatedtype)
+
+- [SnippetIntent](/documentation/appintents/snippetintent)
+#### Default implementation
+
+- [EmptySnippetIntent](/documentation/appintents/emptysnippetintent)
+#### Type Methods
+
+- [static func reload()](/documentation/appintents/snippetintent/reload())
+
+- [SystemIntent](/documentation/appintents/systemintent)
+- [TargetContentProvidingIntent](/documentation/appintents/targetcontentprovidingintent)
+#### Instance Properties
+
+- [var contentIdentifier: String](/documentation/appintents/targetcontentprovidingintent/contentidentifier)
+
+- [UISceneAppIntent](/documentation/appintents/uisceneappintent)
+#### Instance Properties
+
+- [var uiScene: UIScene?](/documentation/appintents/uisceneappintent/uiscene)
+#### Instance Methods
+
+- [func performNavigation(forScene: UIScene)](/documentation/appintents/uisceneappintent/performnavigation(forscene:))
+
+- [URLRepresentableIntent](/documentation/appintents/urlrepresentableintent)
+#### Type Aliases
+
+- [URLRepresentableIntent.URLRepresentation](/documentation/appintents/urlrepresentableintent/urlrepresentation-swift.typealias)
+#### Type Properties
+
+- [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableintent/urlrepresentation-4fzwq)
+
+### Media actions
+
+- [AudioPlaybackIntent](/documentation/appintents/audioplaybackintent)
+- [AudioRecordingIntent](/documentation/appintents/audiorecordingintent)
+- [AudioStartingIntent](/documentation/appintents/audiostartingintent)
+- [CameraCaptureIntent](/documentation/appintents/cameracaptureintent)
+#### Associated Types
+
+- [AppContext](/documentation/appintents/cameracaptureintent/appcontext-swift.associatedtype)
+#### Type Properties
+
+- [static var appContext: Self.AppContext?](/documentation/appintents/cameracaptureintent/appcontext-swift.type.property)
+#### Type Methods
+
+- [static func updateAppContext(Self.AppContext?) async throws](/documentation/appintents/cameracaptureintent/updateappcontext(_:))
+
+- [PlayVideoIntent](/documentation/appintents/playvideointent)
+#### Instance Properties
+
+- [var term: String](/documentation/appintents/playvideointent/term)
+#### Type Properties
+
+- [static var supportedCategories: [VideoCategory]](/documentation/appintents/playvideointent/supportedcategories)
+
+### Communication actions
+
+- [PushToTalkTransmissionIntent](/documentation/appintents/pushtotalktransmissionintent)
+### Controls, widgets, and Live Activities
+
+- [ControlConfigurationIntent](/documentation/appintents/controlconfigurationintent)
+#### Associated Types
+
+- [NeverResult](/documentation/appintents/controlconfigurationintent/neverresult)
+
+- [LiveActivityStartingIntent](/documentation/appintents/liveactivitystartingintent)
+- [LiveActivityIntent](/documentation/appintents/liveactivityintent)
+- [WidgetConfigurationIntent](/documentation/appintents/widgetconfigurationintent)
+#### Widget families
+
+- [IntentWidgetFamily](/documentation/appintents/intentwidgetfamily)
+##### Enumeration Cases
+
+- [case accessoryCircular](/documentation/appintents/intentwidgetfamily/accessorycircular)
+- [case accessoryCorner](/documentation/appintents/intentwidgetfamily/accessorycorner)
+- [case accessoryInline](/documentation/appintents/intentwidgetfamily/accessoryinline)
+- [case accessoryRectangular](/documentation/appintents/intentwidgetfamily/accessoryrectangular)
+- [case systemExtraLarge](/documentation/appintents/intentwidgetfamily/systemextralarge)
+- [case systemLarge](/documentation/appintents/intentwidgetfamily/systemlarge)
+- [case systemMedium](/documentation/appintents/intentwidgetfamily/systemmedium)
+- [case systemSmall](/documentation/appintents/intentwidgetfamily/systemsmall)
+##### Type Aliases
+
+- [IntentWidgetFamily.Specification](/documentation/appintents/intentwidgetfamily/specification)
+- [IntentWidgetFamily.UnwrappedType](/documentation/appintents/intentwidgetfamily/unwrappedtype)
+- [IntentWidgetFamily.ValueType](/documentation/appintents/intentwidgetfamily/valuetype)
+##### Type Properties
+
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentWidgetFamily>](/documentation/appintents/intentwidgetfamily/defaultresolverspecification)
+
+#### Associated Types
+
+- [NeverResult](/documentation/appintents/widgetconfigurationintent/neverresult)
+
+### SiriKit intent migration
+
+- [CustomIntentMigratedAppIntent](/documentation/appintents/customintentmigratedappintent)
+#### Specifying the migrated intent’s class name
+
+- [static var intentClassName: String](/documentation/appintents/customintentmigratedappintent/intentclassname)
+
+
+- [App intent domains](/documentation/appintents/app-intent-domains)
+### Domains
+
+- [Assistant](/documentation/appintents/app-intent-domain-assistant)
+#### Essentials
+
+- [Launching your voice-based conversational app from the side button of iPhone](/documentation/appintents/launching-your-voice-based-conversational-app-from-the-side-button-of-iphone)
+#### Actions
+
+- [var activate: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/assistantintent/activate)
+- [AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/assistantintent)
+##### Schemas
+
+- [var activate: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/assistantintent/activate)
+
+
+- [Books](/documentation/appintents/app-intent-domain-books)
+#### Essentials
+
+- [Making ebook actions available to Siri and Apple Intelligence](/documentation/appintents/making-ebook-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
+- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
+- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
+- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
+- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
+- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
+- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
+- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
+- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
+##### Instance Properties
+
+- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
+- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
+- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/search)
+- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
+- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
+- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
+- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
+- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
+
+#### Content and parameter types
+
+- [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
+- [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
+- [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
+- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
+##### Instance Properties
+
+- [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
+- [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
+- [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
+
+#### Types for static parameters
+
+- [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
+- [var font: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/font)
+- [var fontSize: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/fontsize)
+- [var navigationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/navigationdirection)
+- [var relativeFontChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativefontchange)
+- [var relativeCharacterSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativecharacterspacingchange)
+- [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
+- [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
+- [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
+- [var pageNavigationSetting: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/pagenavigationsetting)
+- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
+##### Instance Properties
+
+- [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
+- [var font: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/font)
+- [var fontSize: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/fontsize)
+- [var navigationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/navigationdirection)
+- [var pageNavigationSetting: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/pagenavigationsetting)
+- [var relativeCharacterSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativecharacterspacingchange)
+- [var relativeFontChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativefontchange)
+- [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
+- [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
+- [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
+
+#### Deprecated schemas
+
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/search)
+
+- [Browser](/documentation/appintents/app-intent-domain-browser)
+#### Essentials
+
+- [Making browser actions available to Siri and Apple Intelligence](/documentation/appintents/making-browser-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
+- [var bookmarkURL: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarkurl)
+- [var clearHistory: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/clearhistory)
+- [var closeTabs: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closetabs)
+- [var closeWindows: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closewindows)
+- [var createTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createtab)
+- [var createWindow: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createwindow)
+- [var deleteBookmarks: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/deletebookmarks)
+- [var findOnPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/findonpage)
+- [var openBookmark: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openbookmark)
+- [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
+- [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
+- [AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/browserintent)
+##### Instance Properties
+
+- [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
+- [var bookmarkURL: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarkurl)
+- [var clearHistory: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/clearhistory)
+- [var closeTabs: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closetabs)
+- [var closeWindows: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closewindows)
+- [var createTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createtab)
+- [var createWindow: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createwindow)
+- [var deleteBookmarks: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/deletebookmarks)
+- [var findOnPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/findonpage)
+- [var openBookmark: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openbookmark)
+- [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
+- [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
+
+#### Content and parameter types
+
+- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
+- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
+- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
+- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
+##### Instance Properties
+
+- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
+- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
+- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
+
+#### Types for static parameters
+
+- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
+- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
+##### Instance Properties
+
+- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
+
+#### Deprecated schemas
+
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
+
+- [Camera](/documentation/appintents/app-intent-domain-camera)
+#### Essentials
+
+- [Making camera actions available to Siri and Apple Intelligence](/documentation/appintents/making-camera-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
+- [var setDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/setdevice)
+- [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
+- [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
+- [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
+- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
+##### Instance Properties
+
+- [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
+- [var setDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/setdevice)
+- [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
+- [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
+- [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
+
+#### Types for static parameters
+
+- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
+- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
+- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
+- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
+##### Instance Properties
+
+- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
+- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
+- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
+
+
+- [File management](/documentation/appintents/app-intent-domain-file-management)
+#### Essentials
+
+- [Making file management actions available to Siri and Apple Intelligence](/documentation/appintents/making-file-management-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
+- [var deleteFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/deletefiles)
+- [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
+- [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
+- [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
+- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
+##### Instance Properties
+
+- [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
+- [var deleteFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/deletefiles)
+- [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
+- [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
+- [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
+
+#### Content and parameter types
+
+- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
+- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
+##### Instance Properties
+
+- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
+
+
+- [Journaling](/documentation/appintents/app-intent-domain-journaling)
+#### Essentials
+
+- [Making journaling actions available to Siri and Apple Intelligence](/documentation/appintents/making-journaling-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
+- [var createEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createentry)
+- [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
+- [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
+- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
+##### Instance Properties
+
+- [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
+- [var createEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createentry)
+- [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
+- [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
+
+#### Content and parameter types
+
+- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
+- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
+##### Instance Properties
+
+- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
+
+
+- [Mail](/documentation/appintents/app-intent-domain-mail)
+#### Essentials
+
+- [Making email actions available to Siri and Apple Intelligence](/documentation/appintents/making-email-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var archiveMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/archivemail)
+- [var createDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/createdraft)
+- [var deleteDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletedraft)
+- [var deleteMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletemail)
+- [var forwardMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/forwardmail)
+- [var replyMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/replymail)
+- [var saveDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/savedraft)
+- [var updateDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatedraft)
+- [var updateMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatemail)
+#### Content and parameter types
+
+- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
+- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
+- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
+- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
+- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
+##### Instance Properties
+
+- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
+- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
+- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
+- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
+
+
+- [Photos](/documentation/appintents/app-intent-domain-photos)
+#### Essentials
+
+- [Making photo and video actions available to Siri and Apple Intelligence](/documentation/appintents/making-photo-and-video-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
+- [var cleanupPhoto: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/cleanupphoto)
+- [var copyEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/copyedits)
+- [var createAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createalbum)
+- [var createAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createassets)
+- [var crop: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/crop)
+- [var deleteAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deletealbum)
+- [var deleteAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deleteassets)
+- [var duplicateAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/duplicateassets)
+- [var openAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openalbum)
+- [var pasteEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/pasteedits)
+- [var postToSharedAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/posttosharedalbum)
+- [var removeAssetsFromAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/removeassetsfromalbum)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/search)
+- [var setDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setdepth)
+- [var setExposure: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setexposure)
+- [var setFilter: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setfilter)
+- [var setRotation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setrotation)
+- [var setSaturation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setsaturation)
+- [var setWarmth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setwarmth)
+- [var straighten: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/straighten)
+- [var toggleDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/toggledepth)
+- [var toggleSuggestedEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/togglesuggestededits)
+- [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
+- [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
+- [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
+- [AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/photosintent)
+##### Instance Properties
+
+- [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
+- [var cleanupPhoto: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/cleanupphoto)
+- [var copyEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/copyedits)
+- [var createAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createalbum)
+- [var createAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createassets)
+- [var crop: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/crop)
+- [var deleteAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deletealbum)
+- [var deleteAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deleteassets)
+- [var duplicateAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/duplicateassets)
+- [var openAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openalbum)
+- [var openAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openasset)
+- [var pasteEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/pasteedits)
+- [var postToSharedAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/posttosharedalbum)
+- [var removeAssetsFromAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/removeassetsfromalbum)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/search)
+- [var setDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setdepth)
+- [var setExposure: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setexposure)
+- [var setFilter: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setfilter)
+- [var setRotation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setrotation)
+- [var setSaturation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setsaturation)
+- [var setWarmth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setwarmth)
+- [var straighten: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/straighten)
+- [var toggleDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/toggledepth)
+- [var toggleSuggestedEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/togglesuggestededits)
+- [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
+- [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
+- [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
+
+#### Content and parameter types
+
+- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
+- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
+- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
+- [AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/photosentity)
+##### Instance Properties
+
+- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
+- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
+- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
+
+#### Types for static parameters
+
+- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
+- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
+- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
+- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
+- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
+##### Instance Properties
+
+- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
+- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
+- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
+- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
+
+
+- [Presentations](/documentation/appintents/app-intent-domain-presentation)
+#### Essentials
+
+- [Making presentation actions available to Siri and Apple Intelligence](/documentation/appintents/making-presentation-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
+- [var addCommentToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addcommenttoslide)
+- [var addImageToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addimagetoslide)
+- [var addTextBoxToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addtextboxtoslide)
+- [var addWebVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addwebvideotoslide)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/create)
+- [var createSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/createslide)
+- [var deleteSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/deleteslide)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/open)
+- [var openSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/openslide)
+- [var setSlideTitle: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/setslidetitle)
+- [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
+- [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
+- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
+##### Instance Properties
+
+- [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
+- [var addCommentToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addcommenttoslide)
+- [var addImageToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addimagetoslide)
+- [var addTextBoxToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addtextboxtoslide)
+- [var addVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addvideotoslide)
+- [var addWebVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addwebvideotoslide)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/create)
+- [var createSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/createslide)
+- [var deleteSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/deleteslide)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/open)
+- [var openSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/openslide)
+- [var setSlideTitle: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/setslidetitle)
+- [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
+- [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
+
+#### Content and parameter types
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
+- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
+- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
+##### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
+- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
+
+
+- [Reader](/documentation/appintents/app-intent-domain-reader)
+#### Essentials
+
+- [Making document reader actions available to Siri and Apple Intelligence](/documentation/appintents/making-document-reader-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
+- [var enhanceDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/enhancedocuments)
+- [var insertPages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/insertpages)
+- [var openDocument: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/opendocument)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/openpage)
+- [var resizeDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/resizedocuments)
+- [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
+- [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
+- [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
+- [AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/readerintent)
+##### Instance Properties
+
+- [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
+- [var enhanceDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/enhancedocuments)
+- [var insertPages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/insertpages)
+- [var openDocument: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/opendocument)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/openpage)
+- [var resizeDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/resizedocuments)
+- [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
+- [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
+- [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
+
+#### Content and parameter types
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
+- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
+##### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
+
+#### Types for static parameters
+
+- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
+- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
+##### Instance Properties
+
+- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
+
+
+- [Spreadsheet](/documentation/appintents/app-intent-domain-spreadsheet)
+#### Essentials
+
+- [Making spreadsheet actions available to Siri and Apple Intelligence](/documentation/appintents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
+- [var addCommentToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addcommenttosheet)
+- [var addImageToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addimagetosheet)
+- [var addTextBoxToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addtextboxtosheet)
+- [var addVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addvideotosheet)
+- [var addWebVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addwebvideotosheet)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/create)
+- [var createSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/createsheet)
+- [var delete: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/delete)
+- [var deleteSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/deletesheet)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/open)
+- [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
+- [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
+- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
+##### Instance Properties
+
+- [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
+- [var addCommentToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addcommenttosheet)
+- [var addImageToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addimagetosheet)
+- [var addTextBoxToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addtextboxtosheet)
+- [var addVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addvideotosheet)
+- [var addWebVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addwebvideotosheet)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/create)
+- [var createSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/createsheet)
+- [var delete: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/delete)
+- [var deleteSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/deletesheet)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/open)
+- [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
+- [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
+
+#### Content and parameter types
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
+- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
+- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
+##### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
+- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
+
+
+- [System and in-app search](/documentation/appintents/app-intent-domain-system-and-search)
+#### Essentials
+
+- [Making in-app search actions available to Siri and Apple Intelligence](/documentation/appintents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
+- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
+##### Instance Properties
+
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
+
+
+- [Visual intelligence](/documentation/appintents/app-intent-domain-visual-intelligence)
+#### Essentials
+
+- [Integrating your app with visual intelligence](/documentation/visualintelligence/integrating-your-app-with-visual-intelligence)
+#### Actions
+
+- [var semanticContentSearch: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/visualintelligenceintent/semanticcontentsearch)
+- [AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/visualintelligenceintent)
+##### Instance Properties
+
+- [var semanticContentSearch: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/visualintelligenceintent/semanticcontentsearch)
+
+
+- [Whiteboard](/documentation/appintents/app-intent-domain-whiteboard)
+#### Essentials
+
+- [Making whiteboard actions available to Siri and Apple Intelligence](/documentation/appintents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
+- [var createItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createitem)
+- [var deleteBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteboard)
+- [var deleteItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteitem)
+- [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
+- [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
+- [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
+- [AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/whiteboardintent)
+##### Instance Properties
+
+- [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
+- [var createItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createitem)
+- [var deleteBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteboard)
+- [var deleteItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteitem)
+- [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
+- [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
+- [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
+
+#### Content and parameter types
+
+- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
+- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
+- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
+##### Instance Properties
+
+- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
+- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
+
+#### Types
+
+- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
+- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
+- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
+##### Instance Properties
+
+- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
+- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
+
+
+- [Word proccessor](/documentation/appintents/app-intent-domain-wordprocessor)
+#### Essentials
+
+- [Making word processor actions available to Siri and Apple Intelligence](/documentation/appintents/making-word-processor-actions-available-to-siri-and-apple-intelligence)
+#### Actions
+
+- [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
+- [var addImageToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addimagetopage)
+- [var addTextBoxToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addtextboxtopage)
+- [var addVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addvideotopage)
+- [var addWebVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addwebvideotopage)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/create)
+- [var createPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/createpage)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/open)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/openpage)
+- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
+##### Instance Properties
+
+- [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
+- [var addImageToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addimagetopage)
+- [var addTextBoxToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addtextboxtopage)
+- [var addVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addvideotopage)
+- [var addWebVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addwebvideotopage)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/create)
+- [var createPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/createpage)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/open)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/openpage)
+
+#### Content and parameter types
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
+- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
+##### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
+
+
+### Macros
+
+- [macro AppIntent<T>(schema: T)](/documentation/appintents/appintent(schema:))
+- [macro AppEntity<T>(schema: T)](/documentation/appintents/appentity(schema:))
+- [macro AppEnum<T>(schema: T)](/documentation/appintents/appenum(schema:))
+### Base protocols
+
+- [Assistant schema base protocols](/documentation/appintents/assistant-schema-base-protocols)
+#### Assistant schema protocols
+
+- [AssistantSchemas](/documentation/appintents/assistantschemas)
+##### Protocols
+
+- [AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/assistantintent)
+###### Schemas
+
+- [var activate: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/assistantintent/activate)
+
+- [AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/booksentity)
+###### Instance Properties
+
+- [var audiobook: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/audiobook)
+- [var book: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/book)
+- [var settings: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/booksentity/settings)
+
+- [AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/booksenum)
+###### Instance Properties
+
+- [var contentType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/contenttype)
+- [var font: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/font)
+- [var fontSize: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/fontsize)
+- [var navigationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/navigationdirection)
+- [var pageNavigationSetting: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/pagenavigationsetting)
+- [var relativeCharacterSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativecharacterspacingchange)
+- [var relativeFontChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativefontchange)
+- [var relativeLineSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativelinespacingchange)
+- [var relativeWordSpacingChange: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/relativewordspacingchange)
+- [var theme: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/booksenum/theme)
+
+- [AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/booksintent)
+###### Instance Properties
+
+- [var navigatePage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/navigatepage)
+- [var openBook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/openbook)
+- [var playAudiobook: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/playaudiobook)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/search)
+- [var updateCharacterSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatecharacterspacing)
+- [var updateFontSize: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatefontsize)
+- [var updateLineSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatelinespacing)
+- [var updateSettings: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatesettings)
+- [var updateWordSpacing: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/booksintent/updatewordspacing)
+
+- [AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/browserentity)
+###### Instance Properties
+
+- [var bookmark: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/bookmark)
+- [var tab: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/tab)
+- [var window: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/browserentity/window)
+
+- [AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/browserenum)
+###### Instance Properties
+
+- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/browserenum/clearhistorytimeframe)
+
+- [AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/browserintent)
+###### Instance Properties
+
+- [var bookmarkTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarktab)
+- [var bookmarkURL: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/bookmarkurl)
+- [var clearHistory: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/clearhistory)
+- [var closeTabs: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closetabs)
+- [var closeWindows: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/closewindows)
+- [var createTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createtab)
+- [var createWindow: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/createwindow)
+- [var deleteBookmarks: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/deletebookmarks)
+- [var findOnPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/findonpage)
+- [var openBookmark: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openbookmark)
+- [var openURLInTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/openurlintab)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/search)
+- [var switchTab: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/browserintent/switchtab)
+
+- [AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/cameraenum)
+###### Instance Properties
+
+- [var captureDevice: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturedevice)
+- [var captureDuration: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/captureduration)
+- [var captureMode: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/cameraenum/capturemode)
+
+- [AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/cameraintent)
+###### Instance Properties
+
+- [var openInCaptureMode: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/openincapturemode)
+- [var setDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/setdevice)
+- [var startCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/startcapture)
+- [var stopCapture: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/stopcapture)
+- [var switchDevice: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/cameraintent/switchdevice)
+
+- [AssistantSchemas.Entity](/documentation/appintents/assistantschemas/entity)
+###### Type Properties
+
+- [static var books: some AssistantSchemas.BooksEntity](/documentation/appintents/assistantschemas/entity/books)
+- [static var browser: some AssistantSchemas.BrowserEntity](/documentation/appintents/assistantschemas/entity/browser)
+- [static var files: some AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/entity/files)
+- [static var journal: some AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/entity/journal)
+- [static var mail: some AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/entity/mail)
+- [static var photos: some AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/entity/photos)
+- [static var presentation: some AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/entity/presentation)
+- [static var reader: some AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/entity/reader)
+- [static var spreadsheet: some AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/entity/spreadsheet)
+- [static var whiteboard: some AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/entity/whiteboard)
+- [static var wordProcessor: some AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/entity/wordprocessor)
+
+- [AssistantSchemas.Enum](/documentation/appintents/assistantschemas/enum)
+###### Type Properties
+
+- [static var books: some AssistantSchemas.BooksEnum](/documentation/appintents/assistantschemas/enum/books)
+- [static var browser: some AssistantSchemas.BrowserEnum](/documentation/appintents/assistantschemas/enum/browser)
+- [static var camera: some AssistantSchemas.CameraEnum](/documentation/appintents/assistantschemas/enum/camera)
+- [static var photos: some AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/enum/photos)
+- [static var reader: some AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/enum/reader)
+- [static var whiteboard: some AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/enum/whiteboard)
+
+- [AssistantSchemas.FilesEntity](/documentation/appintents/assistantschemas/filesentity)
+###### Instance Properties
+
+- [var file: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/filesentity/file)
+
+- [AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/filesintent)
+###### Instance Properties
+
+- [var createFolder: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/createfolder)
+- [var deleteFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/deletefiles)
+- [var moveFiles: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/movefiles)
+- [var openFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/openfile)
+- [var renameFile: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/filesintent/renamefile)
+
+- [AssistantSchemas.Intent](/documentation/appintents/assistantschemas/intent)
+###### Type Properties
+
+- [static var assistant: some AssistantSchemas.AssistantIntent](/documentation/appintents/assistantschemas/intent/assistant)
+- [static var books: some AssistantSchemas.BooksIntent](/documentation/appintents/assistantschemas/intent/books)
+- [static var browser: some AssistantSchemas.BrowserIntent](/documentation/appintents/assistantschemas/intent/browser)
+- [static var camera: some AssistantSchemas.CameraIntent](/documentation/appintents/assistantschemas/intent/camera)
+- [static var files: some AssistantSchemas.FilesIntent](/documentation/appintents/assistantschemas/intent/files)
+- [static var journal: some AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/intent/journal)
+- [static var mail: some AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/intent/mail)
+- [static var photos: some AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/intent/photos)
+- [static var presentation: some AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/intent/presentation)
+- [static var reader: some AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/intent/reader)
+- [static var spreadsheet: some AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/intent/spreadsheet)
+- [static var system: some AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/intent/system)
+- [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/intent/visualintelligence)
+- [static var whiteboard: some AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/intent/whiteboard)
+- [static var wordProcessor: some AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/intent/wordprocessor)
+
+- [AssistantSchemas.JournalEntity](/documentation/appintents/assistantschemas/journalentity)
+###### Instance Properties
+
+- [var entry: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/journalentity/entry)
+
+- [AssistantSchemas.JournalIntent](/documentation/appintents/assistantschemas/journalintent)
+###### Instance Properties
+
+- [var createAudioEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createaudioentry)
+- [var createEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/createentry)
+- [var deleteEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/deleteentry)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/search)
+- [var updateEntry: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/journalintent/updateentry)
+
+- [AssistantSchemas.MailEntity](/documentation/appintents/assistantschemas/mailentity)
+###### Instance Properties
+
+- [var account: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/account)
+- [var draft: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/draft)
+- [var mailbox: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/mailbox)
+- [var message: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/mailentity/message)
+
+- [AssistantSchemas.MailIntent](/documentation/appintents/assistantschemas/mailintent)
+###### Instance Properties
+
+- [var archiveMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/archivemail)
+- [var createDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/createdraft)
+- [var deleteDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletedraft)
+- [var deleteMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/deletemail)
+- [var forwardMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/forwardmail)
+- [var replyMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/replymail)
+- [var saveDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/savedraft)
+- [var sendDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/senddraft)
+- [var updateDraft: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatedraft)
+- [var updateMail: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/mailintent/updatemail)
+
+- [AssistantSchemas.Model](/documentation/appintents/assistantschemas/model)
+- [AssistantSchemas.PhotosEntity](/documentation/appintents/assistantschemas/photosentity)
+###### Instance Properties
+
+- [var album: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/album)
+- [var asset: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/asset)
+- [var recognizedPerson: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/photosentity/recognizedperson)
+
+- [AssistantSchemas.PhotosEnum](/documentation/appintents/assistantschemas/photosenum)
+###### Instance Properties
+
+- [var albumType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/albumtype)
+- [var assetType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/assettype)
+- [var filterType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/filtertype)
+- [var rotationDirection: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/photosenum/rotationdirection)
+
+- [AssistantSchemas.PhotosIntent](/documentation/appintents/assistantschemas/photosintent)
+###### Instance Properties
+
+- [var addAssetsToAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/addassetstoalbum)
+- [var cleanupPhoto: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/cleanupphoto)
+- [var copyEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/copyedits)
+- [var createAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createalbum)
+- [var createAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/createassets)
+- [var crop: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/crop)
+- [var deleteAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deletealbum)
+- [var deleteAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/deleteassets)
+- [var duplicateAssets: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/duplicateassets)
+- [var openAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openalbum)
+- [var openAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/openasset)
+- [var pasteEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/pasteedits)
+- [var postToSharedAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/posttosharedalbum)
+- [var removeAssetsFromAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/removeassetsfromalbum)
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/search)
+- [var setDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setdepth)
+- [var setExposure: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setexposure)
+- [var setFilter: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setfilter)
+- [var setRotation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setrotation)
+- [var setSaturation: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setsaturation)
+- [var setWarmth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/setwarmth)
+- [var straighten: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/straighten)
+- [var toggleDepth: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/toggledepth)
+- [var toggleSuggestedEdits: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/togglesuggestededits)
+- [var updateAlbum: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updatealbum)
+- [var updateAsset: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updateasset)
+- [var updateRecognizedPerson: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/photosintent/updaterecognizedperson)
+
+- [AssistantSchemas.PresentationEntity](/documentation/appintents/assistantschemas/presentationentity)
+###### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/document)
+- [var slide: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/slide)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/presentationentity/template)
+
+- [AssistantSchemas.PresentationIntent](/documentation/appintents/assistantschemas/presentationintent)
+###### Instance Properties
+
+- [var addAudioToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addaudiotoslide)
+- [var addCommentToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addcommenttoslide)
+- [var addImageToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addimagetoslide)
+- [var addTextBoxToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addtextboxtoslide)
+- [var addVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addvideotoslide)
+- [var addWebVideoToSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/addwebvideotoslide)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/create)
+- [var createSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/createslide)
+- [var deleteSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/deleteslide)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/open)
+- [var openSlide: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/openslide)
+- [var setSlideTitle: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/setslidetitle)
+- [var startPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/startplayback)
+- [var stopPlayback: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/stopplayback)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/presentationintent/update)
+
+- [AssistantSchemas.ReaderEntity](/documentation/appintents/assistantschemas/readerentity)
+###### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/readerentity/page)
+
+- [AssistantSchemas.ReaderEnum](/documentation/appintents/assistantschemas/readerenum)
+###### Instance Properties
+
+- [var documentKind: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/readerenum/documentkind)
+
+- [AssistantSchemas.ReaderIntent](/documentation/appintents/assistantschemas/readerintent)
+###### Instance Properties
+
+- [var deletePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/deletepages)
+- [var enhanceDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/enhancedocuments)
+- [var insertPages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/insertpages)
+- [var openDocument: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/opendocument)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/openpage)
+- [var resizeDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/resizedocuments)
+- [var rotateDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatedocuments)
+- [var rotatePages: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/rotatepages)
+- [var searchDocuments: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/readerintent/searchdocuments)
+
+- [AssistantSchemas.SpreadsheetEntity](/documentation/appintents/assistantschemas/spreadsheetentity)
+###### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/document)
+- [var sheet: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/sheet)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/spreadsheetentity/template)
+
+- [AssistantSchemas.SpreadsheetIntent](/documentation/appintents/assistantschemas/spreadsheetintent)
+###### Instance Properties
+
+- [var addAudioToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addaudiotosheet)
+- [var addCommentToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addcommenttosheet)
+- [var addImageToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addimagetosheet)
+- [var addTextBoxToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addtextboxtosheet)
+- [var addVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addvideotosheet)
+- [var addWebVideoToSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/addwebvideotosheet)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/create)
+- [var createSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/createsheet)
+- [var delete: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/delete)
+- [var deleteSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/deletesheet)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/open)
+- [var openSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/opensheet)
+- [var update: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/update)
+- [var updateSheet: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/spreadsheetintent/updatesheet)
+
+- [AssistantSchemas.SystemIntent](/documentation/appintents/assistantschemas/systemintent)
+###### Instance Properties
+
+- [var search: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/systemintent/search)
+
+- [AssistantSchemas.VisualIntelligenceIntent](/documentation/appintents/assistantschemas/visualintelligenceintent)
+###### Instance Properties
+
+- [var semanticContentSearch: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/visualintelligenceintent/semanticcontentsearch)
+
+- [AssistantSchemas.WhiteboardEntity](/documentation/appintents/assistantschemas/whiteboardentity)
+###### Instance Properties
+
+- [var board: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/board)
+- [var item: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/whiteboardentity/item)
+
+- [AssistantSchemas.WhiteboardEnum](/documentation/appintents/assistantschemas/whiteboardenum)
+###### Instance Properties
+
+- [var color: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/color)
+- [var itemType: some AssistantSchemas.Enum](/documentation/appintents/assistantschemas/whiteboardenum/itemtype)
+
+- [AssistantSchemas.WhiteboardIntent](/documentation/appintents/assistantschemas/whiteboardintent)
+###### Instance Properties
+
+- [var createBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createboard)
+- [var createItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/createitem)
+- [var deleteBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteboard)
+- [var deleteItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/deleteitem)
+- [var openBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/openboard)
+- [var updateBoard: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateboard)
+- [var updateItem: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/whiteboardintent/updateitem)
+
+- [AssistantSchemas.WordProcessorEntity](/documentation/appintents/assistantschemas/wordprocessorentity)
+###### Instance Properties
+
+- [var document: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/document)
+- [var page: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/page)
+- [var template: some AssistantSchemas.Entity](/documentation/appintents/assistantschemas/wordprocessorentity/template)
+
+- [AssistantSchemas.WordProcessorIntent](/documentation/appintents/assistantschemas/wordprocessorintent)
+###### Instance Properties
+
+- [var addAudioToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addaudiotopage)
+- [var addImageToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addimagetopage)
+- [var addTextBoxToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addtextboxtopage)
+- [var addVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addvideotopage)
+- [var addWebVideoToPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/addwebvideotopage)
+- [var create: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/create)
+- [var createPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/createpage)
+- [var open: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/open)
+- [var openPage: some AssistantSchemas.Intent](/documentation/appintents/assistantschemas/wordprocessorintent/openpage)
+
+##### Structures
+
+- [AssistantSchemas.EntitySchema](/documentation/appintents/assistantschemas/entityschema)
+- [AssistantSchemas.EnumSchema](/documentation/appintents/assistantschemas/enumschema)
+- [AssistantSchemas.IntentSchema](/documentation/appintents/assistantschemas/intentschema)
+
+- [AssistantSchema](/documentation/appintents/assistantschema)
+##### Structures
+
+- [AssistantSchema.EntitySchema](/documentation/appintents/assistantschema/entityschema)
+- [AssistantSchema.EnumSchema](/documentation/appintents/assistantschema/enumschema)
+- [AssistantSchema.IntentSchema](/documentation/appintents/assistantschema/intentschema)
+##### Initializers
+
+- [init(some AssistantSchemas.Entity)](/documentation/appintents/assistantschema/init(_:)-8yk4w)
+- [init(some AssistantSchemas.Intent)](/documentation/appintents/assistantschema/init(_:)-9exua)
+- [init(some AssistantSchemas.Enum)](/documentation/appintents/assistantschema/init(_:)-ym1l)
+
+#### Schema conformance
+
+- [AssistantSchema.IntentSchema](/documentation/appintents/assistantschema/intentschema)
+- [AssistantSchema.EntitySchema](/documentation/appintents/assistantschema/entityschema)
+- [AssistantSchema.EnumSchema](/documentation/appintents/assistantschema/enumschema)
+#### Base protocols
+
+- [AssistantIntent](/documentation/appintents/assistantintent)
+- [AssistantSchemaIntent](/documentation/appintents/assistantschemaintent)
+##### Type Properties
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaintent/isassistantonly)
+
+- [AssistantEntity](/documentation/appintents/assistantentity)
+- [AssistantSchemaEntity](/documentation/appintents/assistantschemaentity)
+##### Type Properties
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaentity/isassistantonly)
+
+- [AssistantEnum](/documentation/appintents/assistantenum)
+- [AssistantSchemaEnum](/documentation/appintents/assistantschemaenum)
+##### Type Properties
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaenum/isassistantonly)
+
+
+### Deprecated macros
+
+- [macro AssistantIntent<T>(schema: T)](/documentation/appintents/assistantintent(schema:))
+- [macro AssistantEntity<T>(schema: T)](/documentation/appintents/assistantentity(schema:))
+- [macro AssistantEnum<T>(schema: T)](/documentation/appintents/assistantenum(schema:))
+
+- [Intent infrastructure](/documentation/appintents/intent-infrastructure)
+### Code reuse
+
+- [AppDependencyManager](/documentation/appintents/appdependencymanager)
+#### Initializers
+
+- [init()](/documentation/appintents/appdependencymanager/init())
+#### Instance Methods
+
+- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> () throws -> Dependency)](/documentation/appintents/appdependencymanager/add(key:dependency:)-1hqkg)
+- [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> Dependency)](/documentation/appintents/appdependencymanager/add(key:dependency:)-2le3x)
+- [func add<Dependency>(key: AnyHashable?, dependency: () async throws -> Dependency)](/documentation/appintents/appdependencymanager/add(key:dependency:)-gth5)
+#### Type Properties
+
+- [static var shared: AppDependencyManager](/documentation/appintents/appdependencymanager/shared)
+#### Enumerations
+
+- [AppDependencyManager.Error](/documentation/appintents/appdependencymanager/error)
+##### Enumeration Cases
+
+- [case failedToLoadDependency(AnyHashable, Value.Type)](/documentation/appintents/appdependencymanager/error/failedtoloaddependency(_:_:))
+- [case failedToRetrieveDependency(AnyHashable, Value.Type)](/documentation/appintents/appdependencymanager/error/failedtoretrievedependency(_:_:))
+- [case incorrectDependencyType(AnyHashable, Value.Type, any Any.Type)](/documentation/appintents/appdependencymanager/error/incorrectdependencytype(_:_:_:))
+
+
+- [AppDependency](/documentation/appintents/appdependency)
+#### Initializers
+
+- [convenience init(key: AnyHashable?, manager: AppDependencyManager)](/documentation/appintents/appdependency/init(key:manager:))
+- [convenience init(key: AnyHashable?, manager: AppDependencyManager, default: () async throws -> Value)](/documentation/appintents/appdependency/init(key:manager:default:)-226je)
+- [convenience init(key: AnyHashable?, manager: AppDependencyManager, default: @autoclosure () -> Value)](/documentation/appintents/appdependency/init(key:manager:default:)-wvhz)
+#### Instance Properties
+
+- [var projectedValue: AppDependency<Value>](/documentation/appintents/appdependency/projectedvalue)
+- [var wrappedValue: Value](/documentation/appintents/appdependency/wrappedvalue)
+
+- [AppIntentsExtension](/documentation/appintents/appintentsextension)
+- [AppIntentsPackage](/documentation/appintents/appintentspackage)
+#### Type Properties
+
+- [static var includedPackages: [any AppIntentsPackage.Type]](/documentation/appintents/appintentspackage/includedpackages)
+
+### Supplementary content
+
+- [IntentSystemContext](/documentation/appintents/intentsystemcontext)
+#### Instance Properties
+
+- [var currentMode: IntentModes.Current](/documentation/appintents/intentsystemcontext/currentmode)
+- [var preciseTimestamp: Date?](/documentation/appintents/intentsystemcontext/precisetimestamp)
+
+- [IntentDeprecation](/documentation/appintents/intentdeprecation)
+#### Initializers
+
+- [init(message: LocalizedStringResource)](/documentation/appintents/intentdeprecation/init(message:))
+- [init(message: LocalizedStringResource, replacedBy: ReplacementIntent.Type?)](/documentation/appintents/intentdeprecation/init(message:replacedby:))
+- [init(replacedBy: ReplacementIntent.Type)](/documentation/appintents/intentdeprecation/init(replacedby:))
+#### Instance Properties
+
+- [var message: LocalizedStringResource](/documentation/appintents/intentdeprecation/message)
+- [var replacedBy: ReplacementIntent.Type?](/documentation/appintents/intentdeprecation/replacedby)
+
+
+## Parameters and data types
 
 - [Adding parameters to an app intent](/documentation/appintents/adding-parameters-to-an-app-intent)
-- [Integrating custom data types into your intents](/documentation/appintents/integrating-custom-types-into-your-intents)
 - [Parameter resolution](/documentation/appintents/parameter-resolution)
-
 ### Intent parameters
 
 - [IntentParameter](/documentation/appintents/intentparameter)
-
 #### Creating an intent parameter for primitive types
 
 - [Integers](/documentation/appintents/intentparameter-int)
-
 ##### Creating an intent parameter
 
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, controlStyle: IntentParameter<Value>.IntControlStyle, inclusiveRange: IntentParameter<Value>.InclusiveRange<Value.ValueType>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:controlstyle:inclusiverange:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-86n3q)
@@ -2652,18 +3033,17 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, controlStyle: IntentParameter<Value>.IntControlStyle, inclusiveRange: IntentParameter<Value>.InclusiveRange<Value.ValueType>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:controlstyle:inclusiverange:requestvaluedialog:inputconnectionbehavior:)-2wjbq)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, controlStyle: IntentParameter<Value>.IntControlStyle, inclusiveRange: IntentParameter<Value>.InclusiveRange<Value.ValueType>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:controlstyle:inclusiverange:requestvaluedialog:inputconnectionbehavior:resolvers:)-83igq)
 - [IntentParameter.InclusiveRange](/documentation/appintents/intentparameter/inclusiverange-swift.typealias)
-
 ##### Accessing the control style
 
 - [var controlStyle: IntentParameter<Value>.IntControlStyle?](/documentation/appintents/intentparameter/controlstyle-4q1s9)
 - [IntentParameter.IntControlStyle](/documentation/appintents/intentparameter/intcontrolstyle)
-
 ###### Enumeration Cases
 
 - [case field](/documentation/appintents/intentparameter/intcontrolstyle/field)
 - [case stepper](/documentation/appintents/intentparameter/intcontrolstyle/stepper)
-- [Doubles](/documentation/appintents/intentparameter-double)
 
+
+- [Doubles](/documentation/appintents/intentparameter-double)
 ##### Creating an intent parameter
 
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, controlStyle: IntentParameter<Value>.DoubleControlStyle, inclusiveRange: IntentParameter<Value>.InclusiveRange<Value.ValueType>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:controlstyle:inclusiverange:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-3la41)
@@ -2671,48 +3051,44 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, controlStyle: IntentParameter<Value>.DoubleControlStyle, inclusiveRange: IntentParameter<Value>.InclusiveRange<Value.ValueType>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:controlstyle:inclusiverange:requestvaluedialog:inputconnectionbehavior:)-4mc52)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, controlStyle: IntentParameter<Value>.DoubleControlStyle, inclusiveRange: IntentParameter<Value>.InclusiveRange<Value.ValueType>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:controlstyle:inclusiverange:requestvaluedialog:inputconnectionbehavior:resolvers:)-9yclx)
 - [IntentParameter.InclusiveRange](/documentation/appintents/intentparameter/inclusiverange-swift.typealias)
-
 ##### Accessing the control style
 
 - [var controlStyle: IntentParameter<Value>.DoubleControlStyle?](/documentation/appintents/intentparameter/controlstyle-5ryd1)
 - [IntentParameter.DoubleControlStyle](/documentation/appintents/intentparameter/doublecontrolstyle)
-
 ###### Enumeration Cases
 
 - [case field](/documentation/appintents/intentparameter/doublecontrolstyle/field)
 - [case slider](/documentation/appintents/intentparameter/doublecontrolstyle/slider)
 - [case stepper](/documentation/appintents/intentparameter/doublecontrolstyle/stepper)
-- [Booleans](/documentation/appintents/intentparameter-boolean)
 
+
+- [Booleans](/documentation/appintents/intentparameter-boolean)
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, displayName: Bool.IntentDisplayName?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:displayname:requestvaluedialog:inputconnectionbehavior:))
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, displayName: Bool.IntentDisplayName?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:displayname:requestvaluedialog:inputconnectionbehavior:resolvers:))
-
 ##### Specifying the display name
 
 - [var displayName: Bool.IntentDisplayName?](/documentation/appintents/intentparameter/displayname)
-- [Strings](/documentation/appintents/intentparameter-string)
 
+- [Strings](/documentation/appintents/intentparameter-string)
 ##### Creating an intent parameter for a string
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, inputOptions: String.IntentInputOptions?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:inputoptions:requestvaluedialog:inputconnectionbehavior:))
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, inputOptions: String.IntentInputOptions?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:inputoptions:requestvaluedialog:inputconnectionbehavior:resolvers:))
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, inputOptions: String.IntentInputOptions?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:inputoptions:requestvaluedialog:inputconnectionbehavior:optionsprovider:))
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, inputOptions: String.IntentInputOptions?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:inputoptions:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:))
-
 ##### Creating an intent parameter for an attributed string
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:inputconnectionbehavior:)-5ouxs)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:inputconnectionbehavior:resolvers:)-7u5zw)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-2i6xs)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-7dvis)
-
 ##### Accessing the input options
 
 - [var inputOptions: String.IntentInputOptions?](/documentation/appintents/intentparameter/inputoptions)
-- [URLs](/documentation/appintents/intentparameter-url)
 
+- [URLs](/documentation/appintents/intentparameter-url)
 ##### Creating an intent parameter
 
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-17a31)
@@ -2726,74 +3102,71 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Creating an intent parameter for common framework types
 
 - [Dates](/documentation/appintents/intentparameter-date)
-
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:)-97fq8)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-1adrk)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-3hg6n)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:resolvers:)-6834b)
-
 ##### Accessing the date kind
 
 - [var dateKind: IntentParameter<Value>.DateKind?](/documentation/appintents/intentparameter/datekind-15hd7)
 - [IntentParameter.DateKind](/documentation/appintents/intentparameter/datekind-swift.enum)
-
 ###### Enumeration Cases
 
 - [case date](/documentation/appintents/intentparameter/datekind-swift.enum/date)
 - [case dateTime](/documentation/appintents/intentparameter/datekind-swift.enum/datetime)
 - [case time](/documentation/appintents/intentparameter/datekind-swift.enum/time)
-- [Date components](/documentation/appintents/intentparameter-date-components)
 
+
+- [Date components](/documentation/appintents/intentparameter-date-components)
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:)-1no2a)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-38o37)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-4438x)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, kind: IntentParameter<Value>.DateKind, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:kind:requestvaluedialog:inputconnectionbehavior:resolvers:)-8vfnx)
-
 ##### Accessing the date kind
 
 - [var dateKind: IntentParameter<Value>.DateKind?](/documentation/appintents/intentparameter/datekind-7wjso)
 - [IntentParameter.DateKind](/documentation/appintents/intentparameter/datekind-swift.enum)
-
 ###### Enumeration Cases
 
 - [case date](/documentation/appintents/intentparameter/datekind-swift.enum/date)
 - [case dateTime](/documentation/appintents/intentparameter/datekind-swift.enum/datetime)
 - [case time](/documentation/appintents/intentparameter/datekind-swift.enum/time)
-- [Files](/documentation/appintents/intentparameter-file)
 
+
+- [Files](/documentation/appintents/intentparameter-file)
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, supportedTypeIdentifiers: [String], requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:supportedtypeidentifiers:requestvaluedialog:inputconnectionbehavior:))
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, supportedTypeIdentifiers: [String], requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:supportedtypeidentifiers:requestvaluedialog:inputconnectionbehavior:resolvers:))
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, supportedTypeIdentifiers: [String], requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:supportedtypeidentifiers:requestvaluedialog:inputconnectionbehavior:optionsprovider:))
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, supportedTypeIdentifiers: [String], requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:supportedtypeidentifiers:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:))
-- [Currencies](/documentation/appintents/intentparameter-currencies)
 
+- [Currencies](/documentation/appintents/intentparameter-currencies)
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, currencyCodes: [String], inclusiveRange: IntentParameter<Value>.InclusiveRange<Decimal>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:currencycodes:inclusiverange:requestvaluedialog:inputconnectionbehavior:))
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, currencyCodes: [String], inclusiveRange: IntentParameter<Value>.InclusiveRange<Decimal>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:currencycodes:inclusiverange:requestvaluedialog:inputconnectionbehavior:optionsprovider:))
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, currencyCodes: [String], inclusiveRange: IntentParameter<Value>.InclusiveRange<Decimal>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:currencycodes:inclusiverange:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:))
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, currencyCodes: [String], inclusiveRange: IntentParameter<Value>.InclusiveRange<Decimal>?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:currencycodes:inclusiverange:requestvaluedialog:inputconnectionbehavior:resolvers:))
-
 ##### Accessing the configuration
 
 - [var currencyCodes: [String]?](/documentation/appintents/intentparameter/currencycodes)
 - [var inclusiveRange: IntentParameter<Value>.InclusiveRange<Decimal>?](/documentation/appintents/intentparameter/inclusiverange-swift.property)
 - [IntentParameter.InclusiveRange](/documentation/appintents/intentparameter/inclusiverange-swift.typealias)
-- [Payments](/documentation/appintents/intentparameter-payments)
 
+- [Payments](/documentation/appintents/intentparameter-payments)
 ##### Creating an intent parameter
 
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-7urpy)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-7y2uj)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-1x2m9)
-- [People](/documentation/appintents/intentparameter-person)
+- [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:))
 
+- [People](/documentation/appintents/intentparameter-person)
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:mode:requestvaluedialog:inputconnectionbehavior:))
@@ -2802,43 +3175,40 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:mode:requestvaluedialog:inputconnectionbehavior:resolvers:))
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, size: [IntentWidgetFamily : IntentCollectionSize], inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:mode:size:inputconnectionbehavior:)-1i2sn)
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:mode:size:inputconnectionbehavior:)-6efsz)
-
 ##### Accessing the parameter mode
 
 - [var parameterMode: IntentPerson.ParameterMode?](/documentation/appintents/intentparameter/parametermode)
 - [IntentPerson.ParameterMode](/documentation/appintents/intentperson/parametermode)
-
 ###### Getting the interface type
 
 - [case contact](/documentation/appintents/intentperson/parametermode/contact)
 - [case email](/documentation/appintents/intentperson/parametermode/email)
 - [case emailOrPhone](/documentation/appintents/intentperson/parametermode/emailorphone)
 - [case phone](/documentation/appintents/intentperson/parametermode/phone)
-- [Placemarks](/documentation/appintents/intentparameter-placemark)
 
+
+- [Placemarks](/documentation/appintents/intentparameter-placemark)
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:))
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:optionsprovider:))
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:))
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:displaystyle:requestvaluedialog:inputconnectionbehavior:resolvers:))
-
 ##### Accessing the display style
 
 - [var displayStyle: IntentParameter<Value>.PlacemarkDisplayStyle?](/documentation/appintents/intentparameter/displaystyle)
 - [IntentParameter.PlacemarkDisplayStyle](/documentation/appintents/intentparameter/placemarkdisplaystyle)
-
 ###### Getting the display styles
 
 - [case name](/documentation/appintents/intentparameter/placemarkdisplaystyle/name)
 - [case address](/documentation/appintents/intentparameter/placemarkdisplaystyle/address)
 - [case city](/documentation/appintents/intentparameter/placemarkdisplaystyle/city)
-- [Measurements](/documentation/appintents/intentparameter-measurements)
 
+
+- [Measurements](/documentation/appintents/intentparameter-measurements)
 ##### Creating an intent parameter for measurements
 
 - [Acceleration](/documentation/appintents/intentparameter-measurements-acceleration)
-
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Acceleration?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-1rgf3)
@@ -2847,21 +3217,20 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Acceleration, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-4yeng)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-ytbn)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-5q8nx)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Acceleration?](/documentation/appintents/intentparameter/unit-4kgwq)
 - [IntentParameter.Acceleration](/documentation/appintents/intentparameter/acceleration)
-
 ###### Enumeration Cases
 
 - [case gravity](/documentation/appintents/intentparameter/acceleration/gravity)
 - [case metersPerSecondSquared](/documentation/appintents/intentparameter/acceleration/meterspersecondsquared)
+
 - [var defaultUnit: IntentParameter<Value>.Acceleration?](/documentation/appintents/intentparameter/defaultunit-6s3bu)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-8d17e)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-2jck9)
-- [Angles](/documentation/appintents/intentparameter-measurements-angle)
 
+- [Angles](/documentation/appintents/intentparameter-measurements-angle)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Angle?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-8tn46)
@@ -2870,12 +3239,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Angle, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-8j7z1)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-25607)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-7tt26)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Angle?](/documentation/appintents/intentparameter/unit-egg9)
 - [IntentParameter.Angle](/documentation/appintents/intentparameter/angle)
-
 ###### Enumeration Cases
 
 - [case arcMinutes](/documentation/appintents/intentparameter/angle/arcminutes)
@@ -2884,11 +3251,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case gradians](/documentation/appintents/intentparameter/angle/gradians)
 - [case radians](/documentation/appintents/intentparameter/angle/radians)
 - [case revolutions](/documentation/appintents/intentparameter/angle/revolutions)
+
 - [var defaultUnit: IntentParameter<Value>.Angle?](/documentation/appintents/intentparameter/defaultunit-9huqe)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-35m3l)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-9lff6)
-- [Area](/documentation/appintents/intentparameter-measurements-area)
 
+- [Area](/documentation/appintents/intentparameter-measurements-area)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Area, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-5kph6)
@@ -2898,12 +3266,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Area, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-8t00h)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-9l0az)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-3m63b)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Area?](/documentation/appintents/intentparameter/unit-42nhg)
 - [IntentParameter.Area](/documentation/appintents/intentparameter/area)
-
 ###### Enumeration Cases
 
 - [case acres](/documentation/appintents/intentparameter/area/acres)
@@ -2920,11 +3286,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case squareMillimeters](/documentation/appintents/intentparameter/area/squaremillimeters)
 - [case squareNanometers](/documentation/appintents/intentparameter/area/squarenanometers)
 - [case squareYards](/documentation/appintents/intentparameter/area/squareyards)
+
 - [var defaultUnit: IntentParameter<Value>.Area?](/documentation/appintents/intentparameter/defaultunit-9sm2x)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-38cqc)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-8xbaf)
-- [Concentration mass](/documentation/appintents/intentparameter-measurements-concentration-mass)
 
+- [Concentration mass](/documentation/appintents/intentparameter-measurements-concentration-mass)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.ConcentrationMass?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-8lmlo)
@@ -2933,21 +3300,20 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.ConcentrationMass, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-8ymzv)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-6tije)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-4iyul)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.ConcentrationMass?](/documentation/appintents/intentparameter/unit-4ukvz)
 - [IntentParameter.ConcentrationMass](/documentation/appintents/intentparameter/concentrationmass)
-
 ###### Enumeration Cases
 
 - [case gramsPerLiter](/documentation/appintents/intentparameter/concentrationmass/gramsperliter)
 - [case milligramsPerDeciliter](/documentation/appintents/intentparameter/concentrationmass/milligramsperdeciliter)
+
 - [var defaultUnit: IntentParameter<Value>.ConcentrationMass?](/documentation/appintents/intentparameter/defaultunit-6mid8)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-5s36k)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-831sz)
-- [Dispersion](/documentation/appintents/intentparameter-measurements-dispersion)
 
+- [Dispersion](/documentation/appintents/intentparameter-measurements-dispersion)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Dispersion?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-tpe)
@@ -2956,20 +3322,19 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Dispersion, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-7o9q1)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-8kqrp)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-5tmvj)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Dispersion?](/documentation/appintents/intentparameter/unit-9rnvi)
 - [IntentParameter.Dispersion](/documentation/appintents/intentparameter/dispersion)
-
 ###### Enumeration Cases
 
 - [case partsPerMillion](/documentation/appintents/intentparameter/dispersion/partspermillion)
+
 - [var defaultUnit: IntentParameter<Value>.Dispersion?](/documentation/appintents/intentparameter/defaultunit-tk2s)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-1bmpc)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-8ge3z)
-- [Durations](/documentation/appintents/intentparameter-measurements-duration)
 
+- [Durations](/documentation/appintents/intentparameter-measurements-duration)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Duration?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-9llvy)
@@ -2978,12 +3343,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Duration, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-92pkd)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-hetl)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-8ba5t)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Duration?](/documentation/appintents/intentparameter/unit-6yxwx)
 - [IntentParameter.Duration](/documentation/appintents/intentparameter/duration)
-
 ###### Enumeration Cases
 
 - [case hours](/documentation/appintents/intentparameter/duration/hours)
@@ -2993,11 +3356,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case nanoseconds](/documentation/appintents/intentparameter/duration/nanoseconds)
 - [case picoseconds](/documentation/appintents/intentparameter/duration/picoseconds)
 - [case seconds](/documentation/appintents/intentparameter/duration/seconds)
+
 - [var defaultUnit: IntentParameter<Value>.Duration?](/documentation/appintents/intentparameter/defaultunit-7lkkh)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-89ub3)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-2bek3)
-- [Electric charge](/documentation/appintents/intentparameter-measurements-electric-charge)
 
+- [Electric charge](/documentation/appintents/intentparameter-measurements-electric-charge)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.ElectricCharge?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-2csec)
@@ -3006,12 +3370,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.ElectricCharge, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-28f3o)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-96w5w)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-8kaep)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.ElectricCharge?](/documentation/appintents/intentparameter/unit-81ehc)
 - [IntentParameter.ElectricCharge](/documentation/appintents/intentparameter/electriccharge)
-
 ###### Enumeration Cases
 
 - [case ampereHours](/documentation/appintents/intentparameter/electriccharge/amperehours)
@@ -3020,11 +3382,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case megaampereHours](/documentation/appintents/intentparameter/electriccharge/megaamperehours)
 - [case microampereHours](/documentation/appintents/intentparameter/electriccharge/microamperehours)
 - [case milliampereHours](/documentation/appintents/intentparameter/electriccharge/milliamperehours)
+
 - [var defaultUnit: IntentParameter<Value>.ElectricCharge?](/documentation/appintents/intentparameter/defaultunit-1cdc2)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-2g1sv)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-3wgie)
-- [Electric current](/documentation/appintents/intentparameter-measurements-electric-current)
 
+- [Electric current](/documentation/appintents/intentparameter-measurements-electric-current)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.ElectricCurrent?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-9yrm9)
@@ -3033,12 +3396,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.ElectricCurrent, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-631td)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-8rqdf)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-4ixko)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.ElectricCurrent?](/documentation/appintents/intentparameter/unit-5prj2)
 - [IntentParameter.ElectricCurrent](/documentation/appintents/intentparameter/electriccurrent)
-
 ###### Enumeration Cases
 
 - [case amperes](/documentation/appintents/intentparameter/electriccurrent/amperes)
@@ -3046,11 +3407,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case megaamperes](/documentation/appintents/intentparameter/electriccurrent/megaamperes)
 - [case microamperes](/documentation/appintents/intentparameter/electriccurrent/microamperes)
 - [case milliamperes](/documentation/appintents/intentparameter/electriccurrent/milliamperes)
+
 - [var defaultUnit: IntentParameter<Value>.ElectricCurrent?](/documentation/appintents/intentparameter/defaultunit-m6h5)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-4hant)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-44r3e)
-- [Electric potential difference](/documentation/appintents/intentparameter-measurements-electric-difference)
 
+- [Electric potential difference](/documentation/appintents/intentparameter-measurements-electric-difference)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.ElectricPotentialDifference?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-20tna)
@@ -3058,12 +3420,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.ElectricPotentialDifference, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-85h1x)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.ElectricPotentialDifference, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-90byi)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-5tqr4)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.ElectricPotentialDifference?](/documentation/appintents/intentparameter/unit-3clo2)
 - [IntentParameter.ElectricPotentialDifference](/documentation/appintents/intentparameter/electricpotentialdifference)
-
 ###### Enumeration Cases
 
 - [case kilovolts](/documentation/appintents/intentparameter/electricpotentialdifference/kilovolts)
@@ -3071,11 +3431,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case microvolts](/documentation/appintents/intentparameter/electricpotentialdifference/microvolts)
 - [case millivolts](/documentation/appintents/intentparameter/electricpotentialdifference/millivolts)
 - [case volts](/documentation/appintents/intentparameter/electricpotentialdifference/volts)
+
 - [var defaultUnit: IntentParameter<Value>.ElectricPotentialDifference?](/documentation/appintents/intentparameter/defaultunit-2uqct)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-4hoq0)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-7e0ti)
-- [Electric resistance](/documentation/appintents/intentparameter-measurements-electric-resistance)
 
+- [Electric resistance](/documentation/appintents/intentparameter-measurements-electric-resistance)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.ElectricResistance?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-3hah0)
@@ -3084,12 +3445,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.ElectricResistance, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-19rj5)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-7gjzx)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-7tfgo)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.ElectricResistance?](/documentation/appintents/intentparameter/unit-670ic)
 - [IntentParameter.ElectricResistance](/documentation/appintents/intentparameter/electricresistance)
-
 ###### Enumeration Cases
 
 - [case kiloohms](/documentation/appintents/intentparameter/electricresistance/kiloohms)
@@ -3097,11 +3456,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case microohms](/documentation/appintents/intentparameter/electricresistance/microohms)
 - [case milliohms](/documentation/appintents/intentparameter/electricresistance/milliohms)
 - [case ohms](/documentation/appintents/intentparameter/electricresistance/ohms)
+
 - [var defaultUnit: IntentParameter<Value>.ElectricResistance?](/documentation/appintents/intentparameter/defaultunit-4mrsv)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-8gwi5)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-14ddy)
-- [Energy](/documentation/appintents/intentparameter-measurements-energy)
 
+- [Energy](/documentation/appintents/intentparameter-measurements-energy)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Energy?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-7t16t)
@@ -3110,12 +3470,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Energy, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-5ftzv)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-96pe0)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-74lkf)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Energy?](/documentation/appintents/intentparameter/unit-91p3x)
 - [IntentParameter.Energy](/documentation/appintents/intentparameter/energy)
-
 ###### Enumeration Cases
 
 - [case calories](/documentation/appintents/intentparameter/energy/calories)
@@ -3123,11 +3481,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case kilocalories](/documentation/appintents/intentparameter/energy/kilocalories)
 - [case kilojoules](/documentation/appintents/intentparameter/energy/kilojoules)
 - [case kilowattHours](/documentation/appintents/intentparameter/energy/kilowatthours)
+
 - [var defaultUnit: IntentParameter<Value>.Energy?](/documentation/appintents/intentparameter/defaultunit-2n8ud)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-493zp)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-6p731)
-- [Frequency](/documentation/appintents/intentparameter-measurements-frequency)
 
+- [Frequency](/documentation/appintents/intentparameter-measurements-frequency)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Frequency?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-9tm7b)
@@ -3136,12 +3495,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Frequency, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-5xtid)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-3vk1g)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-4xd9k)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Frequency?](/documentation/appintents/intentparameter/unit-69agf)
 - [IntentParameter.Frequency](/documentation/appintents/intentparameter/frequency)
-
 ###### Enumeration Cases
 
 - [case framesPerSecond](/documentation/appintents/intentparameter/frequency/framespersecond)
@@ -3153,11 +3510,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case millihertz](/documentation/appintents/intentparameter/frequency/millihertz)
 - [case nanohertz](/documentation/appintents/intentparameter/frequency/nanohertz)
 - [case terahertz](/documentation/appintents/intentparameter/frequency/terahertz)
+
 - [var defaultUnit: IntentParameter<Value>.Frequency?](/documentation/appintents/intentparameter/defaultunit-61co5)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-8i8i1)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-52v1p)
-- [Fuel efficiency](/documentation/appintents/intentparameter-measurements-fuel-efficiency)
 
+- [Fuel efficiency](/documentation/appintents/intentparameter-measurements-fuel-efficiency)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.FuelEfficiency?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-77uev)
@@ -3166,22 +3524,21 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.FuelEfficiency, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-3uzkv)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-23z3f)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-7fcqo)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.FuelEfficiency?](/documentation/appintents/intentparameter/unit-3ek73)
 - [IntentParameter.FuelEfficiency](/documentation/appintents/intentparameter/fuelefficiency)
-
 ###### Enumeration Cases
 
 - [case litersPer100Kilometers](/documentation/appintents/intentparameter/fuelefficiency/litersper100kilometers)
 - [case milesPerGallon](/documentation/appintents/intentparameter/fuelefficiency/milespergallon)
 - [case milesPerImperialGallon](/documentation/appintents/intentparameter/fuelefficiency/milesperimperialgallon)
+
 - [var defaultUnit: IntentParameter<Value>.FuelEfficiency?](/documentation/appintents/intentparameter/defaultunit-2u2qw)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-6wblf)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-322mt)
-- [Illuminance](/documentation/appintents/intentparameter-measurements-illuminance)
 
+- [Illuminance](/documentation/appintents/intentparameter-measurements-illuminance)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Illuminance?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-81yqr)
@@ -3190,20 +3547,19 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Illuminance, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-1ji9i)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-8j88q)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-4hm4)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Illuminance?](/documentation/appintents/intentparameter/unit-5d6kq)
 - [IntentParameter.Illuminance](/documentation/appintents/intentparameter/illuminance)
-
 ###### Enumeration Cases
 
 - [case lux](/documentation/appintents/intentparameter/illuminance/lux)
+
 - [var defaultUnit: IntentParameter<Value>.Illuminance?](/documentation/appintents/intentparameter/defaultunit-2j2ui)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-6mvvw)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-po5z)
-- [Information storage](/documentation/appintents/intentparameter-measurements-information-storage)
 
+- [Information storage](/documentation/appintents/intentparameter-measurements-information-storage)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.InformationStorage?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-7i4yk)
@@ -3212,12 +3568,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.InformationStorage, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-2jxve)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-7fp2k)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-zx45)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.InformationStorage?](/documentation/appintents/intentparameter/unit-36fxd)
 - [IntentParameter.InformationStorage](/documentation/appintents/intentparameter/informationstorage)
-
 ###### Enumeration Cases
 
 - [case bits](/documentation/appintents/intentparameter/informationstorage/bits)
@@ -3255,11 +3609,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case zebibytes](/documentation/appintents/intentparameter/informationstorage/zebibytes)
 - [case zettabits](/documentation/appintents/intentparameter/informationstorage/zettabits)
 - [case zettabytes](/documentation/appintents/intentparameter/informationstorage/zettabytes)
+
 - [var defaultUnit: IntentParameter<Value>.InformationStorage?](/documentation/appintents/intentparameter/defaultunit-ry6s)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-9qbxt)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-f41e)
-- [Length](/documentation/appintents/intentparameter-measurements-length)
 
+- [Length](/documentation/appintents/intentparameter-measurements-length)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Length?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-98i2y)
@@ -3268,12 +3623,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Length, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-qevc)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-1o4j9)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-3wceb)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Length?](/documentation/appintents/intentparameter/unit-9xzg4)
 - [IntentParameter.Length](/documentation/appintents/intentparameter/length)
-
 ###### Enumeration Cases
 
 - [case astronomicalUnits](/documentation/appintents/intentparameter/length/astronomicalunits)
@@ -3298,11 +3651,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case picometers](/documentation/appintents/intentparameter/length/picometers)
 - [case scandinavianMiles](/documentation/appintents/intentparameter/length/scandinavianmiles)
 - [case yards](/documentation/appintents/intentparameter/length/yards)
+
 - [var defaultUnit: IntentParameter<Value>.Length?](/documentation/appintents/intentparameter/defaultunit-2blhs)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-1r83r)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-8ouwi)
-- [Mass](/documentation/appintents/intentparameter-measurements-mass)
 
+- [Mass](/documentation/appintents/intentparameter-measurements-mass)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Mass?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-5l545)
@@ -3311,12 +3665,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Mass, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-7ttsy)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-9ao8)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-6hhad)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Mass?](/documentation/appintents/intentparameter/unit-15bj6)
 - [IntentParameter.Mass](/documentation/appintents/intentparameter/mass)
-
 ###### Enumeration Cases
 
 - [case carats](/documentation/appintents/intentparameter/mass/carats)
@@ -3335,11 +3687,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case shortTons](/documentation/appintents/intentparameter/mass/shorttons)
 - [case slugs](/documentation/appintents/intentparameter/mass/slugs)
 - [case stones](/documentation/appintents/intentparameter/mass/stones)
+
 - [var defaultUnit: IntentParameter<Value>.Mass?](/documentation/appintents/intentparameter/defaultunit-6a913)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-5kbp3)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-1lh4n)
-- [Power](/documentation/appintents/intentparameter-measurements-power)
 
+- [Power](/documentation/appintents/intentparameter-measurements-power)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Power?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-4mwnc)
@@ -3348,12 +3701,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Power, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-1j23d)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-dpn5)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-4k1b5)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Power?](/documentation/appintents/intentparameter/unit-3mp17)
 - [IntentParameter.Power](/documentation/appintents/intentparameter/power)
-
 ###### Enumeration Cases
 
 - [case femtowatts](/documentation/appintents/intentparameter/power/femtowatts)
@@ -3367,11 +3718,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case picowatts](/documentation/appintents/intentparameter/power/picowatts)
 - [case terawatts](/documentation/appintents/intentparameter/power/terawatts)
 - [case watts](/documentation/appintents/intentparameter/power/watts)
+
 - [var defaultUnit: IntentParameter<Value>.Power?](/documentation/appintents/intentparameter/defaultunit-4fr1a)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-2if8y)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-hnv2)
-- [Pressure](/documentation/appintents/intentparameter-measurements-pressure)
 
+- [Pressure](/documentation/appintents/intentparameter-measurements-pressure)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Pressure?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-4pnv9)
@@ -3380,12 +3732,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Pressure, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-31nta)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-8yymb)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-35vja)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Pressure?](/documentation/appintents/intentparameter/unit-991uj)
 - [IntentParameter.Pressure](/documentation/appintents/intentparameter/pressure)
-
 ###### Enumeration Cases
 
 - [case bars](/documentation/appintents/intentparameter/pressure/bars)
@@ -3398,11 +3748,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case millimetersOfMercury](/documentation/appintents/intentparameter/pressure/millimetersofmercury)
 - [case newtonsPerMetersSquared](/documentation/appintents/intentparameter/pressure/newtonspermeterssquared)
 - [case poundsForcePerSquareInch](/documentation/appintents/intentparameter/pressure/poundsforcepersquareinch)
+
 - [var defaultUnit: IntentParameter<Value>.Pressure?](/documentation/appintents/intentparameter/defaultunit-4p4yh)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-83fjo)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-832oo)
-- [Speed](/documentation/appintents/intentparameter-measurements-speed)
 
+- [Speed](/documentation/appintents/intentparameter-measurements-speed)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Speed?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-5i0hc)
@@ -3411,23 +3762,22 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Speed, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-7pyxn)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-6c1ac)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-3owho)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Speed?](/documentation/appintents/intentparameter/unit-620ka)
 - [IntentParameter.Speed](/documentation/appintents/intentparameter/speed)
-
 ###### Enumeration Cases
 
 - [case kilometersPerHour](/documentation/appintents/intentparameter/speed/kilometersperhour)
 - [case knots](/documentation/appintents/intentparameter/speed/knots)
 - [case metersPerSecond](/documentation/appintents/intentparameter/speed/meterspersecond)
 - [case milesPerHour](/documentation/appintents/intentparameter/speed/milesperhour)
+
 - [var defaultUnit: IntentParameter<Value>.Speed?](/documentation/appintents/intentparameter/defaultunit-92l04)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-1bekt)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-8a31x)
-- [Temperature](/documentation/appintents/intentparameter-measurements-temperature)
 
+- [Temperature](/documentation/appintents/intentparameter-measurements-temperature)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Speed?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-5i0hc)
@@ -3437,22 +3787,21 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Temperature, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-3t56o)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-3u0y1)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-9iqxr)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Temperature?](/documentation/appintents/intentparameter/unit-irv)
 - [IntentParameter.Temperature](/documentation/appintents/intentparameter/temperature)
-
 ###### Enumeration Cases
 
 - [case celsius](/documentation/appintents/intentparameter/temperature/celsius)
 - [case fahrenheit](/documentation/appintents/intentparameter/temperature/fahrenheit)
 - [case kelvin](/documentation/appintents/intentparameter/temperature/kelvin)
+
 - [var defaultUnit: IntentParameter<Value>.Temperature?](/documentation/appintents/intentparameter/defaultunit-62blf)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-9bl77)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-2ca9l)
-- [Volume](/documentation/appintents/intentparameter-measurements-volume)
 
+- [Volume](/documentation/appintents/intentparameter-measurements-volume)
 ###### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, defaultUnit: IntentParameter<Value>.Volume?, defaultUnitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:defaultunit:defaultunitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:)-3u9af)
@@ -3461,12 +3810,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Volume, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-59wna)
 - [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-2v1t4)
 - [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-42ayi)
-
 ###### Accessing unit details
 
 - [var unit: IntentParameter<Value>.Volume?](/documentation/appintents/intentparameter/unit-95hrl)
 - [IntentParameter.Volume](/documentation/appintents/intentparameter/volume)
-
 ###### Enumeration Cases
 
 - [case acreFeet](/documentation/appintents/intentparameter/volume/acrefeet)
@@ -3500,20 +3847,20 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [case quarts](/documentation/appintents/intentparameter/volume/quarts)
 - [case tablespoons](/documentation/appintents/intentparameter/volume/tablespoons)
 - [case teaspoons](/documentation/appintents/intentparameter/volume/teaspoons)
+
 - [var defaultUnit: IntentParameter<Value>.Volume?](/documentation/appintents/intentparameter/defaultunit-2bsyg)
 - [var supportsNegativeNumbers: Bool?](/documentation/appintents/intentparameter/supportsnegativenumbers-903r6)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparameter/unitadjustforlocale-9ln52)
 
+
 #### Creating an intent parameter for custom types
 
 - [App entities](/documentation/appintents/intentparameter-app-entity)
-
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, requestDisambiguationDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:requestdisambiguationdialog:inputconnectionbehavior:)-90j68)
 - [convenience init<Query>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, requestDisambiguationDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, query: Query)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:requestdisambiguationdialog:inputconnectionbehavior:query:)-4yyz3)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, requestDisambiguationDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:requestdisambiguationdialog:inputconnectionbehavior:resolvers:)-9fsdb)
-
 ##### Deprecated intiializers
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, size: [IntentWidgetFamily : IntentCollectionSize], inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:size:inputconnectionbehavior:)-7cox5)
@@ -3528,8 +3875,8 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, requestDisambiguationDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:requestdisambiguationdialog:inputconnectionbehavior:)-tfj8)
 - [convenience init<Query>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, requestDisambiguationDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, query: Query)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:requestdisambiguationdialog:inputconnectionbehavior:query:)-49n42)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, requestDisambiguationDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:requestdisambiguationdialog:inputconnectionbehavior:resolvers:)-1csrx)
-- [App enums](/documentation/appintents/intentparameter-app-enum)
 
+- [App enums](/documentation/appintents/intentparameter-app-enum)
 ##### Creating an intent parameter
 
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, requestValueDialog: IntentDialog?, requestDisambiguationDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, supportedValues: [Value.ValueType])](/documentation/appintents/intentparameter/init(title:description:default:requestvaluedialog:requestdisambiguationdialog:inputconnectionbehavior:supportedvalues:)-2wsgy)
@@ -3546,7 +3893,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var wrappedValue: Value](/documentation/appintents/intentparameter/wrappedvalue)
 - [var valueState: IntentParameter<Value>.ValueState](/documentation/appintents/intentparameter/valuestate-swift.property)
 - [IntentParameter.ValueState](/documentation/appintents/intentparameter/valuestate-swift.enum)
-
 ##### Enumeration Cases
 
 - [case set(Value)](/documentation/appintents/intentparameter/valuestate-swift.enum/set(_:))
@@ -3556,22 +3902,18 @@ timestamp: 2026-02-19T07:56:01.983Z
 
 - [func requestValue(IntentDialog?) async throws -> Value.ValueType](/documentation/appintents/intentparameter/requestvalue(_:)-592nd)
 - [func needsValueError(IntentDialog?) -> AppIntentError](/documentation/appintents/intentparameter/needsvalueerror(_:))
-
 #### Requesting confirmation
 
 - [func requestConfirmation(for: Value.ValueType, dialog: IntentDialog?) async throws -> Bool](/documentation/appintents/intentparameter/requestconfirmation(for:dialog:))
 - [func requestConfirmation<ViewType>(for: Value.ValueType, dialog: IntentDialog?, view: ViewType) async throws -> Bool](/documentation/appintents/intentparameter/requestconfirmation(for:dialog:view:)-6hiyi)
 - [func requestConfirmation<ViewType>(for: Value.ValueType, dialog: IntentDialog?, view: () -> ViewType) async throws -> Bool](/documentation/appintents/intentparameter/requestconfirmation(for:dialog:view:)-9z0pe)
-
 #### Requesting disambiguation
 
 - [func requestDisambiguation(among: [Value.ValueType], dialog: IntentDialog?) async throws -> Value.ValueType](/documentation/appintents/intentparameter/requestdisambiguation(among:dialog:))
 - [func needsDisambiguationError(among: [Value.ValueType], dialog: IntentDialog?) -> AppIntentError](/documentation/appintents/intentparameter/needsdisambiguationerror(among:dialog:))
-
 #### Deprecated
 
 - [Deprecated symbols](/documentation/appintents/intentparameter-deprecated)
-
 ##### Deprecated methods
 
 - [func requestValue(IntentDialog?) -> any Error](/documentation/appintents/intentparameter/requestvalue(_:)-70qzm)
@@ -3752,8 +4094,7 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Spec>(description: LocalizedStringResource?, defaultValue: Double?, unit: IntentParameter<Value>.Mass, unitAdjustForLocale: Bool, supportsNegativeNumbers: Bool, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(description:defaultvalue:unit:unitadjustforlocale:supportsnegativenumbers:requestvaluedialog:inputconnectionbehavior:resolvers:)-zupw)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, inputOptions: String.IntentInputOptions?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:inputoptions:requestvaluedialog:inputconnectionbehavior:optionsprovider:))
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, inputOptions: String.IntentInputOptions?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(description:inputoptions:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:))
-- [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:)-420y8)
-- [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:)-9sr60)
+- [convenience init(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:))
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-14xjm)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-18ve1)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-1lhvb)
@@ -3767,7 +4108,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-4g95c)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-5isny)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-6ogfm)
-- [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-6ygak)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-7c1z)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-7pg6p)
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-7v8ra)
@@ -3781,8 +4121,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-91uk9)
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-6ewsn)
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-8nhkf)
-- [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-m1gg)
-- [convenience init<Spec>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:resolvers:))
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-1lg4d)
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-1ya6b)
 - [convenience init<Spec, OptionsProvider>(description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(description:requestvaluedialog:inputconnectionbehavior:resolvers:optionsprovider:)-2ds5x)
@@ -3865,15 +4203,10 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Query>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, supportedContentTypes: Array<UTType>?, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior, query: Query)](/documentation/appintents/intentparameter/init(title:description:default:supportedcontenttypes:size:inputconnectionbehavior:query:)-5y5ep)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, supportedContentTypes: Array<UTType>?, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:supportedcontenttypes:size:inputconnectionbehavior:resolvers:)-26ujo)
 - [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, default: Value.UnwrappedType?, supportedContentTypes: Array<UTType>?, size: [IntentWidgetFamily : IntentCollectionSize], inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:default:supportedcontenttypes:size:inputconnectionbehavior:resolvers:)-3da75)
-- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-253ni)
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-25jti)
 - [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:)-51hn9)
-- [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-8likq)
-- [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:)-7twy6)
-- [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:)-35yv4)
-- [convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource?, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, resolvers: () -> Spec)](/documentation/appintents/intentparameter/init(title:description:requestvaluedialog:inputconnectionbehavior:resolvers:)-k1m2)
-- [IntentParameterDependency](/documentation/appintents/intentparameterdependency)
 
+- [IntentParameterDependency](/documentation/appintents/intentparameterdependency)
 #### Initializers
 
 - [convenience init<V0, P0>(KeyPath<Intent, P0>)](/documentation/appintents/intentparameterdependency/init(_:))
@@ -3891,12 +4224,11 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>)](/documentation/appintents/intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:_:_:))
 - [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12, V13, P13>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>, KeyPath<Intent, P13>)](/documentation/appintents/intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
 - [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12, V13, P13, V14, P14>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>, KeyPath<Intent, P13>, KeyPath<Intent, P14>)](/documentation/appintents/intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
-
 #### Instance Properties
 
 - [var wrappedValue: IntentProjection<Intent>?](/documentation/appintents/intentparameterdependency/wrappedvalue)
-- [IntentParameterContext](/documentation/appintents/intentparametercontext)
 
+- [IntentParameterContext](/documentation/appintents/intentparametercontext)
 #### Instance Properties
 
 - [var controlStyle: IntentParameter<Value>.IntControlStyle?](/documentation/appintents/intentparametercontext/controlstyle-2sflf)
@@ -3998,7 +4330,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparametercontext/unitadjustforlocale-fh5h)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparametercontext/unitadjustforlocale-q9qf)
 - [var unitAdjustForLocale: Bool?](/documentation/appintents/intentparametercontext/unitadjustforlocale-srcg)
-
 #### Instance Methods
 
 - [func needsDisambiguationError(among: [Value.ValueType], dialog: IntentDialog?) -> AppIntentError](/documentation/appintents/intentparametercontext/needsdisambiguationerror(among:dialog:))
@@ -4008,8 +4339,8 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [func requestConfirmation<ViewType>(for: Value.ValueType, dialog: IntentDialog?, view: () -> ViewType) async throws -> Bool](/documentation/appintents/intentparametercontext/requestconfirmation(for:dialog:view:)-97i0g)
 - [func requestDisambiguation(among: [Value.ValueType], dialog: IntentDialog?) async throws -> Value.ValueType](/documentation/appintents/intentparametercontext/requestdisambiguation(among:dialog:))
 - [func requestValue(IntentDialog?) async throws -> Value.ValueType](/documentation/appintents/intentparametercontext/requestvalue(_:))
-- [InputConnectionBehavior](/documentation/appintents/inputconnectionbehavior)
 
+- [InputConnectionBehavior](/documentation/appintents/inputconnectionbehavior)
 #### Getting the connection behaviors
 
 - [case `default`](/documentation/appintents/inputconnectionbehavior/default)
@@ -4019,60 +4350,71 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### Parameter choices
 
 - [DynamicOptionsProvider](/documentation/appintents/dynamicoptionsprovider)
-
 #### Returning the parameter options
 
 - [func results() async throws -> Self.Result](/documentation/appintents/dynamicoptionsprovider/results())
 - [func defaultResult() async -> Self.DefaultValue?](/documentation/appintents/dynamicoptionsprovider/defaultresult())
 - [Result](/documentation/appintents/dynamicoptionsprovider/result)
-
 #### Associated Types
 
 - [DefaultValue](/documentation/appintents/dynamicoptionsprovider/defaultvalue)
-
 #### Type Aliases
 
 - [DynamicOptionsProvider.Item](/documentation/appintents/dynamicoptionsprovider/item)
 - [DynamicOptionsProvider.ItemCollection](/documentation/appintents/dynamicoptionsprovider/itemcollection)
 - [DynamicOptionsProvider.ItemSection](/documentation/appintents/dynamicoptionsprovider/itemsection)
 - [DynamicOptionsProvider.ParameterDependency](/documentation/appintents/dynamicoptionsprovider/parameterdependency)
-- [AppEnum](/documentation/appintents/appenum)
 
+- [AppEnum](/documentation/appintents/appenum)
 #### Resolving the type
 
 - [static var defaultResolverSpecification: some ResolverSpecification](/documentation/appintents/appenum/defaultresolverspecification)
+#### URL representation
+
+- [EnumURLRepresentation](/documentation/appintents/enumurlrepresentation)
+##### Structures
+
+- [EnumURLRepresentation.EnumSingleURLRepresentation](/documentation/appintents/enumurlrepresentation/enumsingleurlrepresentation)
+##### Initializers
+
+- [init([Enum : EnumURLRepresentation<Enum>.EnumSingleURLRepresentation])](/documentation/appintents/enumurlrepresentation/init(_:)-1odm)
+- [init(String)](/documentation/appintents/enumurlrepresentation/init(_:)-6p999)
+
+
+- [IntentProjection](/documentation/appintents/intentprojection)
+#### Subscripts
+
+- [subscript<Value>(dynamicMember _: KeyPath<Intent, Value>) -> Value.UnwrappedType](/documentation/appintents/intentprojection/subscript(dynamicmember:))
 
 ### Shortcuts support
 
 - [ParameterSummary](/documentation/appintents/parametersummary)
-
 #### Associated Types
 
 - [Intent](/documentation/appintents/parametersummary/intent)
-- [IntentParameterSummary](/documentation/appintents/intentparametersummary)
 
+- [IntentParameterSummary](/documentation/appintents/intentparametersummary)
 #### Crearing a parameter summary
 
 - [init()](/documentation/appintents/intentparametersummary/init())
 - [init(() -> [PartialKeyPath<Intent>])](/documentation/appintents/intentparametersummary/init(_:))
 - [init(ParameterSummaryString<Intent>, table: String?)](/documentation/appintents/intentparametersummary/init(_:table:))
 - [init(ParameterSummaryString<Intent>, table: String?, () -> [PartialKeyPath<Intent>])](/documentation/appintents/intentparametersummary/init(_:table:_:))
-
 #### Building the parameter key paths
 
 - [IntentParameterSummary.ParameterKeyPathsBuilder](/documentation/appintents/intentparametersummary/parameterkeypathsbuilder)
-
 ##### Building the path
 
 - [static func buildBlock(PartialKeyPath<Intent>...) -> [PartialKeyPath<Intent>]](/documentation/appintents/intentparametersummary/parameterkeypathsbuilder/buildblock(_:))
 - [static func buildExpression<ValueType>(KeyPath<Intent, IntentParameter<ValueType>>) -> PartialKeyPath<Intent>](/documentation/appintents/intentparametersummary/parameterkeypathsbuilder/buildexpression(_:))
-- [ParameterSummaryString](/documentation/appintents/parametersummarystring)
 
+
+- [ParameterSummaryString](/documentation/appintents/parametersummarystring)
 #### Creating the summary string
 
 - [init(String)](/documentation/appintents/parametersummarystring/init(_:))
-- [ParameterSummaryWhenCondition](/documentation/appintents/parametersummarywhencondition)
 
+- [ParameterSummaryWhenCondition](/documentation/appintents/parametersummarywhencondition)
 #### Creating a conditional statement
 
 - [init<Parameter>(KeyPath<Intent, Parameter>, HasValueComparisonOperator, () -> WhenCondition, otherwise: () -> Otherwise)](/documentation/appintents/parametersummarywhencondition/init(_:_:_:otherwise:))
@@ -4092,38 +4434,37 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [init(widgetFamily: OneOfComparisonOperator, [IntentWidgetFamily], () -> WhenCondition, otherwise: () -> Otherwise)](/documentation/appintents/parametersummarywhencondition/init(widgetfamily:_:_:otherwise:)-3fujn)
 - [init(widgetFamily: EquatableComparisonOperator, IntentWidgetFamily, () -> WhenCondition, otherwise: () -> Otherwise)](/documentation/appintents/parametersummarywhencondition/init(widgetfamily:_:_:otherwise:)-9l1to)
 - [EquatableComparisonOperator](/documentation/appintents/equatablecomparisonoperator)
-
 ##### Equatable operators
 
 - [case equalTo](/documentation/appintents/equatablecomparisonoperator/equalto)
 - [case notEqualTo](/documentation/appintents/equatablecomparisonoperator/notequalto)
-- [ComparableComparisonOperator](/documentation/appintents/comparablecomparisonoperator)
 
+- [ComparableComparisonOperator](/documentation/appintents/comparablecomparisonoperator)
 ##### Comparable operators
 
 - [case greaterThan](/documentation/appintents/comparablecomparisonoperator/greaterthan)
 - [case greaterThanOrEqualTo](/documentation/appintents/comparablecomparisonoperator/greaterthanorequalto)
 - [case lessThan](/documentation/appintents/comparablecomparisonoperator/lessthan)
 - [case lessThanOrEqualTo](/documentation/appintents/comparablecomparisonoperator/lessthanorequalto)
-- [HasValueComparisonOperator](/documentation/appintents/hasvaluecomparisonoperator)
 
+- [HasValueComparisonOperator](/documentation/appintents/hasvaluecomparisonoperator)
 ##### Value operators
 
 - [case hasAnyValue](/documentation/appintents/hasvaluecomparisonoperator/hasanyvalue)
 - [case hasNoValue](/documentation/appintents/hasvaluecomparisonoperator/hasnovalue)
-- [OneOfComparisonOperator](/documentation/appintents/oneofcomparisonoperator)
 
+- [OneOfComparisonOperator](/documentation/appintents/oneofcomparisonoperator)
 ##### Containment operators
 
 - [case oneOf](/documentation/appintents/oneofcomparisonoperator/oneof)
-- [ParameterSummarySwitchCondition](/documentation/appintents/parametersummaryswitchcondition)
 
+
+- [ParameterSummarySwitchCondition](/documentation/appintents/parametersummaryswitchcondition)
 #### Creating a switch condition
 
 - [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](/documentation/appintents/parametersummaryswitchcondition/init(_:_:)-4vxvs)
 - [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](/documentation/appintents/parametersummaryswitchcondition/init(_:_:)-6cdw3)
 - [ParameterSummaryCaseBuilder](/documentation/appintents/parametersummarycasebuilder)
-
 ##### Building switch statement cases
 
 - [static func buildBlock<C0, DefaultSummary>(C0, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](/documentation/appintents/parametersummarycasebuilder/buildblock(_:_:))
@@ -4142,7 +4483,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](/documentation/appintents/parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
 - [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](/documentation/appintents/parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
 - [ParameterSummaryTupleCaseCondition](/documentation/appintents/parametersummarytuplecasecondition)
-
 ###### Type Aliases
 
 - [ParameterSummaryTupleCaseCondition.Summary](/documentation/appintents/parametersummarytuplecasecondition/summary)
@@ -4150,119 +4490,487 @@ timestamp: 2026-02-19T07:56:01.983Z
 ##### Type Methods
 
 - [static func buildExpression<C0>(C0) -> C0](/documentation/appintents/parametersummarycasebuilder/buildexpression(_:))
-- [ParameterSummarySwitchCondition.WidgetFamily](/documentation/appintents/parametersummaryswitchcondition/widgetfamily)
 
+- [ParameterSummarySwitchCondition.WidgetFamily](/documentation/appintents/parametersummaryswitchcondition/widgetfamily)
 ##### Enumeration Cases
 
 - [case widgetFamily](/documentation/appintents/parametersummaryswitchcondition/widgetfamily/widgetfamily)
-- [ParameterSummaryCaseCondition](/documentation/appintents/parametersummarycasecondition)
 
+
+- [ParameterSummaryCaseCondition](/documentation/appintents/parametersummarycasecondition)
 #### Creating the case condition
 
 - [init(Value, () -> Summary)](/documentation/appintents/parametersummarycasecondition/init(_:_:)-3680j)
 - [init([Value], () -> Summary)](/documentation/appintents/parametersummarycasecondition/init(_:_:)-4029f)
-- [ParameterSummaryDefaultCaseCondition](/documentation/appintents/parametersummarydefaultcasecondition)
 
+- [ParameterSummaryDefaultCaseCondition](/documentation/appintents/parametersummarydefaultcasecondition)
 #### Creating the case condition
 
 - [init(() -> Summary)](/documentation/appintents/parametersummarydefaultcasecondition/init(_:))
-- [App entities](/documentation/appintents/app-entities)
 
-### Entities
+
+- [Resolvers](/documentation/appintents/resolvers)
+### Integer resolution
+
+- [IntFromDoubleResolver](/documentation/appintents/intfromdoubleresolver)
+#### Creating the resolver
+
+- [init(roundingRule: FloatingPointRoundingRule)](/documentation/appintents/intfromdoubleresolver/init(roundingrule:))
+#### Getting the rounding rule
+
+- [var roundingRule: FloatingPointRoundingRule](/documentation/appintents/intfromdoubleresolver/roundingrule)
+
+- [IntFromStringResolver](/documentation/appintents/intfromstringresolver)
+#### Creating the resolver
+
+- [init(radix: Int)](/documentation/appintents/intfromstringresolver/init(radix:))
+#### Getting the radix setting
+
+- [var radix: Int](/documentation/appintents/intfromstringresolver/radix)
+
+- [IntResolver](/documentation/appintents/intresolver)
+### Floating-point resolution
+
+- [DoubleFromIntResolver](/documentation/appintents/doublefromintresolver)
+- [DoubleFromStringResolver](/documentation/appintents/doublefromstringresolver)
+- [DoubleResolver](/documentation/appintents/doubleresolver)
+### String resolution
+
+- [AttributedStringFromStringResolver](/documentation/appintents/attributedstringfromstringresolver)
+- [StringFromDoubleResolver](/documentation/appintents/stringfromdoubleresolver)
+- [StringFromIntResolver](/documentation/appintents/stringfromintresolver)
+### Boolean resolution
+
+- [BoolFromStringResolver](/documentation/appintents/boolfromstringresolver)
+### URL resolution
+
+- [URLFromStringResolver](/documentation/appintents/urlfromstringresolver)
+### Custom resolution
+
+- [Resolver](/documentation/appintents/resolver)
+#### Resolving the type
+
+- [func resolve(from: Self.Input, context: IntentParameterContext<Self.Output>) async throws -> Self.Output?](/documentation/appintents/resolver/resolve(from:context:))
+- [Input](/documentation/appintents/resolver/input)
+- [Output](/documentation/appintents/resolver/output)
+#### Managing the resolution process
+
+- [ResolverSpecification](/documentation/appintents/resolverspecification)
+##### Getting the value type
+
+- [Output](/documentation/appintents/resolverspecification/output)
+
+- [EmptyResolverSpecification](/documentation/appintents/emptyresolverspecification)
+##### Creating the specification type
+
+- [init()](/documentation/appintents/emptyresolverspecification/init())
+
+- [StringSearchCriteriaFromStringResolverSpecificification](/documentation/appintents/stringsearchcriteriafromstringresolverspecificification)
+- [ResolverSpecificationBuilder](/documentation/appintents/resolverspecificationbuilder)
+##### Building the resolver specification
+
+- [static func buildBlock() -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock())
+- [static func buildBlock<R0>(R0) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:))
+- [static func buildBlock<R0, R1>(R0, R1) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:))
+- [static func buildBlock<R0, R1, R2>(R0, R1, R2) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3>(R0, R1, R2, R3) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4>(R0, R1, R2, R3, R4) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5>(R0, R1, R2, R3, R4, R5) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6>(R0, R1, R2, R3, R4, R5, R6) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7>(R0, R1, R2, R3, R4, R5, R6, R7) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8>(R0, R1, R2, R3, R4, R5, R6, R7, R8) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:))
+##### Structures
+
+- [ResolverSpecificationBuilder.Specification](/documentation/appintents/resolverspecificationbuilder/specification)
+##### Type Methods
+
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
+- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
+- [static func buildExpression<ResolverType>(ResolverType) -> ResolverType](/documentation/appintents/resolverspecificationbuilder/buildexpression(_:))
+- [static func buildPartialBlock<each Accumulated, R>(accumulated: ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated>, next: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated, R>](/documentation/appintents/resolverspecificationbuilder/buildpartialblock(accumulated:next:))
+- [static func buildPartialBlock<R>(first: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, R>](/documentation/appintents/resolverspecificationbuilder/buildpartialblock(first:))
+
+#### Type Aliases
+
+- [Resolver.Context](/documentation/appintents/resolver/context)
+
+### Range validation
+
+- [RangeCheckingResolver](/documentation/appintents/rangecheckingresolver)
+#### Checking the range of a parameter
+
+- [func checkParameterRangeContains<Value>(value: Value, context: IntentParameterContext<Self.Output>) throws](/documentation/appintents/rangecheckingresolver/checkparameterrangecontains(value:context:))
+
+- [RangeComparableProperty](/documentation/appintents/rangecomparableproperty)
+
+- [Common data types](/documentation/appintents/common-data-types)
+### Contacts
+
+- [IntentPerson](/documentation/appintents/intentperson)
+#### Creating a contact
+
+- [init(identifier: IntentPerson.Identifier, name: IntentPerson.Name, handle: IntentPerson.Handle?, aliases: [IntentPerson.Handle], isMe: Bool, image: DisplayRepresentation.Image?)](/documentation/appintents/intentperson/init(identifier:name:handle:aliases:isme:image:))
+#### Getting the person’s name
+
+- [var name: IntentPerson.Name](/documentation/appintents/intentperson/name-swift.property)
+- [IntentPerson.Name](/documentation/appintents/intentperson/name-swift.enum)
+##### Getting a displayable name
+
+- [case displayName(String)](/documentation/appintents/intentperson/name-swift.enum/displayname(_:))
+##### Getting the name components
+
+- [case components(PersonNameComponents)](/documentation/appintents/intentperson/name-swift.enum/components(_:))
+##### Enumeration Cases
+
+- [case unknown](/documentation/appintents/intentperson/name-swift.enum/unknown)
+
+#### Getting identifying information
+
+- [var handle: IntentPerson.Handle?](/documentation/appintents/intentperson/handle-swift.property)
+- [var aliases: [IntentPerson.Handle]](/documentation/appintents/intentperson/aliases)
+- [var isMe: Bool](/documentation/appintents/intentperson/isme)
+- [var image: DisplayRepresentation.Image?](/documentation/appintents/intentperson/image)
+- [IntentPerson.Handle](/documentation/appintents/intentperson/handle-swift.struct)
+##### Creating a handle
+
+- [init(emailAddress: String, label: IntentPerson.Handle.Label)](/documentation/appintents/intentperson/handle-swift.struct/init(emailaddress:label:))
+- [init(phoneNumber: String, label: IntentPerson.Handle.Label)](/documentation/appintents/intentperson/handle-swift.struct/init(phonenumber:label:))
+- [init(identifier: IntentPerson.Identifier, name: IntentPerson.Name, handle: IntentPerson.Handle?, aliases: [IntentPerson.Handle], isMe: Bool, image: DisplayRepresentation.Image?)](/documentation/appintents/intentperson/init(identifier:name:handle:aliases:isme:image:))
+- [init(handle: IntentPerson.Handle)](/documentation/appintents/intentperson/init(handle:))
+- [init(IntentPerson.Handle.Value, label: IntentPerson.Handle.Label)](/documentation/appintents/intentperson/handle-swift.struct/init(_:label:))
+- [init(applicationDefined: String, label: String?)](/documentation/appintents/intentperson/handle-swift.struct/init(applicationdefined:label:))
+##### Getting the handle’s label
+
+- [var label: IntentPerson.Handle.Label](/documentation/appintents/intentperson/handle-swift.struct/label-swift.property)
+- [IntentPerson.Handle.Label](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum)
+###### Getting the handle labels
+
+- [case home](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/home)
+- [case homeFax](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/homefax)
+- [case iPhone](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/iphone)
+- [case main](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/main)
+- [case mobile](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/mobile)
+- [case other](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/other)
+- [case pager](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/pager)
+- [case school](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/school)
+- [case work](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/work)
+- [case workFax](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/workfax)
+- [case custom(String)](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/custom(_:))
+
+##### Getting the handle’s value
+
+- [var value: IntentPerson.Handle.Value](/documentation/appintents/intentperson/handle-swift.struct/value-swift.property)
+- [IntentPerson.Handle.Value](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum)
+###### Enumeration Cases
+
+- [case applicationDefined(String)](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum/applicationdefined(_:))
+- [case emailAddress(String)](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum/emailaddress(_:))
+- [case phoneNumber(String)](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum/phonenumber(_:))
+
+
+- [IntentPerson.ParameterMode](/documentation/appintents/intentperson/parametermode)
+##### Getting the interface type
+
+- [case contact](/documentation/appintents/intentperson/parametermode/contact)
+- [case email](/documentation/appintents/intentperson/parametermode/email)
+- [case emailOrPhone](/documentation/appintents/intentperson/parametermode/emailorphone)
+- [case phone](/documentation/appintents/intentperson/parametermode/phone)
+
+#### Getting person-related identifiers
+
+- [var identifier: IntentPerson.Identifier](/documentation/appintents/intentperson/identifier-swift.property)
+- [IntentPerson.Identifier](/documentation/appintents/intentperson/identifier-swift.enum)
+##### Getting the identifier types
+
+- [case contact(String)](/documentation/appintents/intentperson/identifier-swift.enum/contact(_:))
+- [case applicationDefined(String)](/documentation/appintents/intentperson/identifier-swift.enum/applicationdefined(_:))
+##### Enumeration Cases
+
+- [case unknown](/documentation/appintents/intentperson/identifier-swift.enum/unknown)
+
+#### Initializers
+
+- [init(handle: IntentPerson.Handle)](/documentation/appintents/intentperson/init(handle:))
+#### Type Aliases
+
+- [IntentPerson.Specification](/documentation/appintents/intentperson/specification)
+- [IntentPerson.UnwrappedType](/documentation/appintents/intentperson/unwrappedtype)
+- [IntentPerson.ValueType](/documentation/appintents/intentperson/valuetype)
+#### Type Properties
+
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPerson>](/documentation/appintents/intentperson/defaultresolverspecification)
+
+### Files
+
+- [IntentFile](/documentation/appintents/intentfile)
+#### Creating a file
+
+- [init(data: Data, filename: String, type: UTType?)](/documentation/appintents/intentfile/init(data:filename:type:))
+- [init(fileURL: URL, filename: String?, type: UTType?)](/documentation/appintents/intentfile/init(fileurl:filename:type:))
+#### Getting the file information
+
+- [var filename: String](/documentation/appintents/intentfile/filename)
+- [var fileURL: URL?](/documentation/appintents/intentfile/fileurl)
+- [var type: UTType?](/documentation/appintents/intentfile/type)
+- [var data: Data](/documentation/appintents/intentfile/data)
+- [var removedOnCompletion: Bool](/documentation/appintents/intentfile/removedoncompletion)
+#### Instance Properties
+
+- [var availableContentTypes: [UTType]](/documentation/appintents/intentfile/availablecontenttypes)
+#### Instance Methods
+
+- [func data(contentType: UTType) async throws -> Data](/documentation/appintents/intentfile/data(contenttype:))
+- [func file(contentType: UTType, destinationDirectory: URL?) async throws -> (fileURL: URL, openedInPlace: Bool)](/documentation/appintents/intentfile/file(contenttype:destinationdirectory:))
+- [func withFile<Result>(contentType: UTType, allowOpenInPlace: Bool, fileHandler: (URL, Bool) async throws -> Result) async throws -> Result](/documentation/appintents/intentfile/withfile(contenttype:allowopeninplace:filehandler:))
+#### Type Aliases
+
+- [IntentFile.Specification](/documentation/appintents/intentfile/specification)
+- [IntentFile.UnwrappedType](/documentation/appintents/intentfile/unwrappedtype)
+- [IntentFile.ValueType](/documentation/appintents/intentfile/valuetype)
+#### Type Properties
+
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentFile>](/documentation/appintents/intentfile/defaultresolverspecification)
+#### Enumerations
+
+- [IntentFile.IntentFileError](/documentation/appintents/intentfile/intentfileerror)
+##### Enumeration Cases
+
+- [case failedToLoadData](/documentation/appintents/intentfile/intentfileerror/failedtoloaddata)
+- [case failedToLoadFile](/documentation/appintents/intentfile/intentfileerror/failedtoloadfile)
+
+
+### Monetary types
+
+- [IntentCurrencyAmount](/documentation/appintents/intentcurrencyamount)
+#### Creating a currency type
+
+- [init(amount: Decimal, currencyCode: String)](/documentation/appintents/intentcurrencyamount/init(amount:currencycode:))
+#### Getting the currency details
+
+- [let amount: Decimal](/documentation/appintents/intentcurrencyamount/amount)
+- [let currencyCode: String](/documentation/appintents/intentcurrencyamount/currencycode)
+#### Type Aliases
+
+- [IntentCurrencyAmount.Specification](/documentation/appintents/intentcurrencyamount/specification)
+- [IntentCurrencyAmount.UnwrappedType](/documentation/appintents/intentcurrencyamount/unwrappedtype)
+- [IntentCurrencyAmount.ValueType](/documentation/appintents/intentcurrencyamount/valuetype)
+#### Type Properties
+
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentCurrencyAmount>](/documentation/appintents/intentcurrencyamount/defaultresolverspecification)
+
+- [IntentPaymentMethod](/documentation/appintents/intentpaymentmethod)
+#### Creating a payment method
+
+- [init(type: IntentPaymentMethod.PaymentType, name: LocalizedStringResource?, identificationHint: String?, icon: DisplayRepresentation.Image?)](/documentation/appintents/intentpaymentmethod/init(type:name:identificationhint:icon:))
+#### Getting the payment details
+
+- [var paymentType: IntentPaymentMethod.PaymentType](/documentation/appintents/intentpaymentmethod/paymenttype-swift.property)
+- [var name: String?](/documentation/appintents/intentpaymentmethod/name)
+- [var identificationHint: String?](/documentation/appintents/intentpaymentmethod/identificationhint)
+- [var icon: DisplayRepresentation.Image?](/documentation/appintents/intentpaymentmethod/icon)
+- [IntentPaymentMethod.PaymentType](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum)
+##### Getting the payment options
+
+- [case applePay](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/applepay)
+- [case brokerage](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/brokerage)
+- [case checking](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/checking)
+- [case credit](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/credit)
+- [case debit](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/debit)
+- [case prepaid](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/prepaid)
+- [case savings](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/savings)
+- [case store](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/store)
+- [case unknown](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/unknown)
+
+#### Type Aliases
+
+- [IntentPaymentMethod.Specification](/documentation/appintents/intentpaymentmethod/specification)
+- [IntentPaymentMethod.UnwrappedType](/documentation/appintents/intentpaymentmethod/unwrappedtype)
+- [IntentPaymentMethod.ValueType](/documentation/appintents/intentpaymentmethod/valuetype)
+#### Type Properties
+
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPaymentMethod>](/documentation/appintents/intentpaymentmethod/defaultresolverspecification)
+
+### Items and collections
+
+- [IntentItem](/documentation/appintents/intentitem)
+#### Initializers
+
+- [init(Value)](/documentation/appintents/intentitem/init(_:))
+- [init(Value, title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?)](/documentation/appintents/intentitem/init(_:title:subtitle:image:))
+#### Instance Properties
+
+- [var description: DisplayRepresentation](/documentation/appintents/intentitem/description)
+- [var value: Value](/documentation/appintents/intentitem/value)
+#### Enumerations
+
+- [IntentItem.Builder](/documentation/appintents/intentitem/builder)
+##### Type Methods
+
+- [static func buildArray([[IntentItem<Value>]]) -> [IntentItem<Value>]](/documentation/appintents/intentitem/builder/buildarray(_:))
+- [static func buildBlock() -> [Value]](/documentation/appintents/intentitem/builder/buildblock())
+- [static func buildBlock(IntentItem<Value>...) -> [IntentItem<Value>]](/documentation/appintents/intentitem/builder/buildblock(_:)-9j0sn)
+- [static func buildBlock([IntentItem<Value>]) -> [IntentItem<Value>]](/documentation/appintents/intentitem/builder/buildblock(_:)-pgo1)
+- [static func buildExpression(Value) -> IntentItem<Value>](/documentation/appintents/intentitem/builder/buildexpression(_:)-202yw)
+- [static func buildExpression<ExpressionValue>(IntentItem<ExpressionValue>) -> IntentItem<ExpressionValue>](/documentation/appintents/intentitem/builder/buildexpression(_:)-90pb0)
+
+
+- [IntentItemCollection](/documentation/appintents/intentitemcollection)
+#### Initializers
+
+- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, items: [Result])](/documentation/appintents/intentitemcollection/init(promptlabel:usesindexedcollation:items:))
+- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sections: [IntentItemSection<Result>])](/documentation/appintents/intentitemcollection/init(promptlabel:usesindexedcollation:sections:))
+- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sectionsBuilder: () -> [IntentItemSection<Result>])](/documentation/appintents/intentitemcollection/init(promptlabel:usesindexedcollation:sectionsbuilder:))
+#### Instance Properties
+
+- [var items: [Result.ValueType]](/documentation/appintents/intentitemcollection/items)
+- [var sections: [IntentItemSection<Result>]](/documentation/appintents/intentitemcollection/sections)
+#### Type Properties
+
+- [static var empty: IntentItemCollection<Result>](/documentation/appintents/intentitemcollection/empty)
+
+- [IntentItemSection](/documentation/appintents/intentitemsection)
+#### Initializers
+
+- [init(LocalizedStringResource, items: [Result])](/documentation/appintents/intentitemsection/init(_:items:)-2frw8)
+- [init(LocalizedStringResource, items: [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(_:items:)-8p4y0)
+- [init(LocalizedStringResource?, itemsBuilder: () -> [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(_:itemsbuilder:))
+- [init(LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, itemsBuilder: () -> [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(_:subtitle:image:itemsbuilder:))
+- [init(items: [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(items:))
+- [init(title: LocalizedStringResource, items: [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(title:items:))
+#### Instance Properties
+
+- [var description: DisplayRepresentation?](/documentation/appintents/intentitemsection/description)
+- [var items: [IntentItem<Result>]](/documentation/appintents/intentitemsection/items)
+#### Enumerations
+
+- [IntentItemSection.Builder](/documentation/appintents/intentitemsection/builder)
+##### Type Methods
+
+- [static func buildBlock() -> [IntentItemSection<Result>]](/documentation/appintents/intentitemsection/builder/buildblock())
+- [static func buildBlock(IntentItemSection<Result>...) -> [IntentItemSection<Result>]](/documentation/appintents/intentitemsection/builder/buildblock(_:)-4a4je)
+- [static func buildBlock(IntentItem<Result>...) -> [IntentItemSection<Result>]](/documentation/appintents/intentitemsection/builder/buildblock(_:)-7uwpz)
+
+
+- [IntentCollectionSize](/documentation/appintents/intentcollectionsize)
+#### Initializers
+
+- [init(exactly: Int)](/documentation/appintents/intentcollectionsize/init(exactly:))
+- [init(min: Int, max: Int)](/documentation/appintents/intentcollectionsize/init(min:max:))
+
+
+- [App entities](/documentation/appintents/app-entities)
+### Essentials
 
 - [Integrating custom data types into your intents](/documentation/appintents/integrating-custom-types-into-your-intents)
-- [AppEntity](/documentation/appintents/appentity)
+### App entity types
 
+- [AppEntity](/documentation/appintents/appentity)
 #### Specifying properties
 
 - [AppEntity.Property](/documentation/appintents/appentity/property)
-
 #### Making the entity queryable
 
 - [static var defaultQuery: Self.DefaultQuery](/documentation/appintents/appentity/defaultquery-4khg7)
 - [DefaultQuery](/documentation/appintents/appentity/defaultquery-swift.associatedtype)
 - [static var defaultResolverSpecification: EmptyResolverSpecification<Self>](/documentation/appintents/appentity/defaultresolverspecification-2dpf2)
 - [static var defaultResolverSpecification: some ResolverSpecification](/documentation/appintents/appentity/defaultresolverspecification-589eq)
+#### URL representation
+
+- [EntityURLRepresentation](/documentation/appintents/entityurlrepresentation)
+##### Initializers
+
+- [init(String)](/documentation/appintents/entityurlrepresentation/init(_:))
 
 #### Default Implementations
 
 - [Identifiable Implementations](/documentation/appintents/appentity/identifiable-implementations)
-
 ##### Instance Properties
 
 - [var id: Self.ID](/documentation/appintents/appentity/id)
-- [FileEntity](/documentation/appintents/fileentity)
 
+
+- [FileEntity](/documentation/appintents/fileentity)
 #### Type Properties
 
 - [static var supportedContentTypes: [UTType]](/documentation/appintents/fileentity/supportedcontenttypes)
-- [IndexedEntity](/documentation/appintents/indexedentity)
 
-#### Instance Properties
+- [IndexedEntity](/documentation/appintents/indexedentity)
+#### Specifying entity-related attributes
 
 - [var attributeSet: CSSearchableItemAttributeSet](/documentation/appintents/indexedentity/attributeset)
 - [var defaultAttributeSet: CSSearchableItemAttributeSet](/documentation/appintents/indexedentity/defaultattributeset)
-- [var hideInSpotlight: Bool](/documentation/appintents/indexedentity/hideinspotlight)
-- [TransientAppEntity](/documentation/appintents/transientappentity)
+#### Hiding an entity from search results
 
+- [var hideInSpotlight: Bool](/documentation/appintents/indexedentity/hideinspotlight)
+
+- [TransientAppEntity](/documentation/appintents/transientappentity)
 #### Initializers
 
 - [init()](/documentation/appintents/transientappentity/init())
+
 - [UniqueAppEntity](/documentation/appintents/uniqueappentity)
 - [URLRepresentableEntity](/documentation/appintents/urlrepresentableentity)
-
 #### Type Aliases
 
 - [URLRepresentableEntity.URLRepresentation](/documentation/appintents/urlrepresentableentity/urlrepresentation-swift.typealias)
-
 #### Type Properties
 
 - [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableentity/urlrepresentation-swift.type.property)
 
+- [macro UnionValue()](/documentation/appintents/unionvalue())
 ### Entity identity
 
 - [PersistentlyIdentifiable](/documentation/appintents/persistentlyidentifiable)
-
 #### Type Properties
 
 - [static var persistentIdentifier: String](/documentation/appintents/persistentlyidentifiable/persistentidentifier)
-- [EntityIdentifier](/documentation/appintents/entityidentifier)
 
+- [EntityIdentifier](/documentation/appintents/entityidentifier)
 #### Creating an entity identifier
 
 - [init<Entity>(for: Entity)](/documentation/appintents/entityidentifier/init(for:))
 - [init<Entity>(for: Entity.Type, identifier: Entity.ID)](/documentation/appintents/entityidentifier/init(for:identifier:))
 - [init?(activityIdentifier: String)](/documentation/appintents/entityidentifier/init(activityidentifier:))
-
 #### Getting the identifier details
 
 - [let identifier: String](/documentation/appintents/entityidentifier/identifier)
 - [let entityType: any AppEntity.Type](/documentation/appintents/entityidentifier/entitytype)
 - [static let valueMaximumLength: Int](/documentation/appintents/entityidentifier/valuemaximumlength)
-
 #### Type Aliases
 
 - [EntityIdentifier.Specification](/documentation/appintents/entityidentifier/specification)
 - [EntityIdentifier.UnwrappedType](/documentation/appintents/entityidentifier/unwrappedtype)
 - [EntityIdentifier.ValueType](/documentation/appintents/entityidentifier/valuetype)
-
 #### Type Properties
 
 - [static var defaultResolverSpecification: EmptyResolverSpecification<EntityIdentifier>](/documentation/appintents/entityidentifier/defaultresolverspecification)
-- [EntityIdentifierConvertible](/documentation/appintents/entityidentifierconvertible)
 
+- [EntityIdentifierConvertible](/documentation/appintents/entityidentifierconvertible)
 #### Creating an identifier string
 
 - [static func entityIdentifier(for: String) -> Self?](/documentation/appintents/entityidentifierconvertible/entityidentifier(for:))
-
 #### Getting the identifier string
 
 - [var entityIdentifierString: String](/documentation/appintents/entityidentifierconvertible/entityidentifierstring)
 
+- [FileEntityIdentifier](/documentation/appintents/fileentityidentifier)
+#### Instance Properties
+
+- [var draftIdentifier: String?](/documentation/appintents/fileentityidentifier/draftidentifier)
+- [var fileURL: URL?](/documentation/appintents/fileentityidentifier/fileurl)
+- [var isDraft: Bool](/documentation/appintents/fileentityidentifier/isdraft)
+#### Type Methods
+
+- [static func draft(identifier: String) -> FileEntityIdentifier](/documentation/appintents/fileentityidentifier/draft(identifier:))
+- [static func file(url: URL) throws -> FileEntityIdentifier](/documentation/appintents/fileentityidentifier/file(url:))
+
 ### Entity content
 
 - [EntityProperty](/documentation/appintents/entityproperty)
-
 #### Initializers
 
 - [convenience init()](/documentation/appintents/entityproperty/init()-1rgp4)
@@ -4300,7 +5008,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init()](/documentation/appintents/entityproperty/init()-8k8p6)
 - [convenience init()](/documentation/appintents/entityproperty/init()-923hj)
 - [convenience init()](/documentation/appintents/entityproperty/init()-93vj2)
-- [convenience init()](/documentation/appintents/entityproperty/init()-97rm5)
 - [convenience init()](/documentation/appintents/entityproperty/init()-9h9cx)
 - [convenience init()](/documentation/appintents/entityproperty/init()-9ojq1)
 - [convenience init()](/documentation/appintents/entityproperty/init()-ci85)
@@ -4342,7 +5049,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(customindexingkey:)-9ftku)
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(customindexingkey:)-9xbzc)
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(customindexingkey:)-fw6i)
-- [convenience init(customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(customindexingkey:)-g4g4)
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(customindexingkey:)-ko6r)
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(customindexingkey:)-pgtj)
 - [convenience init(customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(customindexingkey:)-s36s)
@@ -4379,7 +5085,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(identifier: String)](/documentation/appintents/entityproperty/init(identifier:)-7aauq)
 - [convenience init(identifier: String)](/documentation/appintents/entityproperty/init(identifier:)-7dc9c)
 - [convenience init(identifier: String)](/documentation/appintents/entityproperty/init(identifier:)-7pjrs)
-- [convenience init(identifier: String)](/documentation/appintents/entityproperty/init(identifier:)-7s2an)
 - [convenience init(identifier: String)](/documentation/appintents/entityproperty/init(identifier:)-81k0c)
 - [convenience init(identifier: String)](/documentation/appintents/entityproperty/init(identifier:)-82pvf)
 - [convenience init(identifier: String)](/documentation/appintents/entityproperty/init(identifier:)-8rbz8)
@@ -4420,7 +5125,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:asyncgetter:)-7ot5)
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:asyncgetter:)-7wd24)
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:asyncgetter:)-7xf6)
-- [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:asyncgetter:)-7z385)
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:asyncgetter:)-89hin)
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:asyncgetter:)-8fnw3)
 - [convenience init<Entity>(identifier: String, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:asyncgetter:)-8oegi)
@@ -4470,7 +5174,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:)-9q91x)
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:)-9tq4f)
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:)-9z3yp)
-- [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:)-dr8c)
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:)-dz25)
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:)-khpz)
 - [convenience init(identifier: String, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:)-p78n)
@@ -4481,7 +5184,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getsetter:)-27k7b)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getsetter:)-2ykkq)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getsetter:)-30yhq)
-- [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getsetter:)-38xi)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getsetter:)-3pu07)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getsetter:)-3rulq)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getsetter:)-4318r)
@@ -4530,7 +5232,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getter:)-2xdb9)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getter:)-2xqs6)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getter:)-31xxq)
-- [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getter:)-32h54)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getter:)-32mgg)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getter:)-38c7x)
 - [convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:customindexingkey:getter:)-3dvry)
@@ -4586,7 +5287,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getsetter:)-795az)
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getsetter:)-7a7li)
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getsetter:)-7es1q)
-- [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getsetter:)-7gjvq)
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getsetter:)-7gl7g)
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getsetter:)-7s3ov)
 - [convenience init<Entity>(identifier: String, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getsetter:)-8bu81)
@@ -4632,7 +5332,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getter:)-8or16)
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getter:)-8ztp9)
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getter:)-996ei)
-- [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getter:)-9b7ss)
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getter:)-9jv23)
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getter:)-9l41i)
 - [convenience init<Entity>(identifier: String, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:getter:)-9nw7u)
@@ -4676,7 +5375,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:)-7u2ie)
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:)-89dlx)
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:)-8bkuw)
-- [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:)-8pndc)
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:)-8vhty)
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:)-90s7c)
 - [convenience init(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:)-91n72)
@@ -4693,7 +5391,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getsetter:)-1x9ef)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getsetter:)-285rk)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getsetter:)-29jby)
-- [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getsetter:)-2kea8)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getsetter:)-2pt7d)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getsetter:)-3brlp)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getsetter:)-3hxwp)
@@ -4737,7 +5434,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getter:)-2745q)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getter:)-27q8s)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getter:)-2nq08)
-- [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getter:)-2x7h9)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getter:)-363er)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getter:)-3dfoi)
 - [convenience init<Entity>(identifier: String, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:indexingkey:getter:)-3ulk0)
@@ -4810,7 +5506,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(identifier: String, title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(identifier:title:)-fcbf)
 - [convenience init(identifier: String, title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(identifier:title:)-lehi)
 - [convenience init(identifier: String, title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(identifier:title:)-wdj7)
-- [convenience init(identifier: String, title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(identifier:title:)-ycdv)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-13xnz)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-1bnq3)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-1c5ws)
@@ -4847,7 +5542,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-8j12u)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-8rgn4)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-8rhb1)
-- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-8zjbm)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-9bfki)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-9j32a)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, asyncGetter: (Entity) async throws -> Value)](/documentation/appintents/entityproperty/init(identifier:title:asyncgetter:)-i6t3)
@@ -4856,7 +5550,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:)-18iqn)
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:)-1aujk)
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:)-1bz54)
-- [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:)-1cqi9)
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:)-1io91)
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:)-1l849)
 - [convenience init(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:)-1mutr)
@@ -4919,7 +5612,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getsetter:)-6z3sm)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getsetter:)-70r52)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getsetter:)-79rax)
-- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getsetter:)-7kvdx)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getsetter:)-7o4mm)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getsetter:)-80ten)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getsetter:)-83cy4)
@@ -4943,7 +5635,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getter:)-1gsrw)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getter:)-1u0pg)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getter:)-25een)
-- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getter:)-295ww)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getter:)-2zrbu)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getter:)-3uxvx)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:customindexingkey:getter:)-414a3)
@@ -5003,7 +5694,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getsetter:)-5cbob)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getsetter:)-5j2w0)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getsetter:)-62bbz)
-- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getsetter:)-6gjse)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getsetter:)-6iqrp)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getsetter:)-6qxo7)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getsetter:)-7858)
@@ -5028,7 +5718,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getter:)-2lyqk)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getter:)-2siy3)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getter:)-3dhy5)
-- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getter:)-3hwyu)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getter:)-3ncc7)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getter:)-3slre)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:getter:)-402fk)
@@ -5090,7 +5779,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:)-5gnjk)
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:)-5lf3m)
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:)-5ots1)
-- [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:)-63pff)
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:)-6njuf)
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:)-6z0g1)
 - [convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:)-719ie)
@@ -5146,7 +5834,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getsetter:)-j4b3)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getsetter:)-kjwe)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getsetter:)-ljc8)
-- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getSetter: WritableKeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getsetter:)-tmzu)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-1ah3y)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-1b8aq)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-1hav2)
@@ -5163,7 +5850,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-4lfwn)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-4m3tr)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-55ksi)
-- [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-58az0)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-5hncv)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-5l3d9)
 - [convenience init<Entity>(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>, getter: KeyPath<Entity, Value>)](/documentation/appintents/entityproperty/init(identifier:title:indexingkey:getter:)-5ly72)
@@ -5210,7 +5896,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(indexingkey:)-5oigm)
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(indexingkey:)-5r3ta)
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(indexingkey:)-5uukx)
-- [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(indexingkey:)-62p8a)
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(indexingkey:)-64hzn)
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(indexingkey:)-67920)
 - [convenience init(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(indexingkey:)-6ajfc)
@@ -5254,7 +5939,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(title:)-5pb1r)
 - [convenience init(title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(title:)-5sctd)
 - [convenience init(title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(title:)-5wa3x)
-- [convenience init(title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(title:)-6av70)
 - [convenience init(title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(title:)-6l4hm)
 - [convenience init(title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(title:)-6n85w)
 - [convenience init(title: LocalizedStringResource)](/documentation/appintents/entityproperty/init(title:)-6tv32)
@@ -5283,7 +5967,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(title:customindexingkey:)-2eglc)
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(title:customindexingkey:)-2kgu7)
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(title:customindexingkey:)-2me54)
-- [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(title:customindexingkey:)-2wpks)
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(title:customindexingkey:)-34nxo)
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(title:customindexingkey:)-36akc)
 - [convenience init(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](/documentation/appintents/entityproperty/init(title:customindexingkey:)-36gcg)
@@ -5339,7 +6022,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-5fi7j)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-5xk73)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-6dbum)
-- [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-6f87j)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-6fcb5)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-6qpbc)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-6woh7)
@@ -5357,36 +6039,26 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-9txtw)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-9yblh)
 - [convenience init(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/entityproperty/init(title:indexingkey:)-vhxo)
-
 #### Instance Properties
 
 - [var projectedValue: EntityProperty<Value>](/documentation/appintents/entityproperty/projectedvalue)
 - [var wrappedValue: Value](/documentation/appintents/entityproperty/wrappedvalue)
+
+- [EntityPropertyModifiers](/documentation/appintents/entitypropertymodifiers)
+#### Type Properties
+
+- [static let async: EntityPropertyModifiers](/documentation/appintents/entitypropertymodifiers/async)
+- [static let readOnly: EntityPropertyModifiers](/documentation/appintents/entitypropertymodifiers/readonly)
+
 - [AppValue](/documentation/appintents/appvalue)
 - [AnyIntentValue](/documentation/appintents/anyintentvalue)
-
 #### Getting the value type
 
 - [Value](/documentation/appintents/anyintentvalue/value)
-
 #### Getting type-specific information
 
 - [var title: LocalizedStringResource](/documentation/appintents/anyintentvalue/title)
 - [var isOptional: Bool](/documentation/appintents/anyintentvalue/isoptional)
-- [AppEnum](/documentation/appintents/appenum)
-
-#### Resolving the type
-
-- [static var defaultResolverSpecification: some ResolverSpecification](/documentation/appintents/appenum/defaultresolverspecification)
-- [URLRepresentableEnum](/documentation/appintents/urlrepresentableenum)
-
-#### Type Aliases
-
-- [URLRepresentableEnum.URLRepresentation](/documentation/appintents/urlrepresentableenum/urlrepresentation-swift.typealias)
-
-#### Type Properties
-
-- [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableenum/urlrepresentation-swift.type.property)
 
 ### Entity property macros
 
@@ -5398,26 +6070,21 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [macro ComputedProperty(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](/documentation/appintents/computedproperty(title:indexingkey:))
 - [macro DeferredProperty()](/documentation/appintents/deferredproperty())
 - [macro DeferredProperty(title: LocalizedStringResource)](/documentation/appintents/deferredproperty(title:))
-
 ### Entity presentation
 
 - [DisplayRepresentation](/documentation/appintents/displayrepresentation)
-
 #### Creating a representation
 
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?)](/documentation/appintents/displayrepresentation/init(title:subtitle:image:))
-
 #### Displaying the content
 
 - [var title: LocalizedStringResource](/documentation/appintents/displayrepresentation/title)
 - [var subtitle: LocalizedStringResource?](/documentation/appintents/displayrepresentation/subtitle)
 - [var image: DisplayRepresentation.Image?](/documentation/appintents/displayrepresentation/image-swift.property)
 - [DisplayRepresentation.Image](/documentation/appintents/displayrepresentation/image-swift.struct)
-
 ##### Structures
 
 - [DisplayRepresentation.Image.DisplayStyle](/documentation/appintents/displayrepresentation/image-swift.struct/displaystyle)
-
 ###### Type Properties
 
 - [static var circular: DisplayRepresentation.Image.DisplayStyle](/documentation/appintents/displayrepresentation/image-swift.struct/displaystyle/circular)
@@ -5440,76 +6107,96 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Initializers
 
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, synonyms: [LocalizedStringResource])](/documentation/appintents/displayrepresentation/init(title:subtitle:image:synonyms:))
-
 #### Instance Properties
 
 - [var synonyms: [LocalizedStringResource]](/documentation/appintents/displayrepresentation/synonyms)
+
 - [DisplayRepresentable](/documentation/appintents/displayrepresentable)
 - [InstanceDisplayRepresentable](/documentation/appintents/instancedisplayrepresentable)
-
 #### Providing the visual content
 
 - [var displayRepresentation: DisplayRepresentation](/documentation/appintents/instancedisplayrepresentable/displayrepresentation)
-
 #### Providing a localized description
 
 - [var localizedStringResource: LocalizedStringResource](/documentation/appintents/instancedisplayrepresentable/localizedstringresource)
-- [TypeDisplayRepresentable](/documentation/appintents/typedisplayrepresentable)
 
+- [TypeDisplayRepresentable](/documentation/appintents/typedisplayrepresentable)
 #### Describing the type
 
 - [static var typeDisplayRepresentation: TypeDisplayRepresentation](/documentation/appintents/typedisplayrepresentable/typedisplayrepresentation)
-- [TypeDisplayRepresentation](/documentation/appintents/typedisplayrepresentation)
 
+- [TypeDisplayRepresentation](/documentation/appintents/typedisplayrepresentation)
 #### Initializers
 
 - [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?)](/documentation/appintents/typedisplayrepresentation/init(name:numericformat:))
 - [init(name: LocalizedStringResource, numericFormat: LocalizedStringResource?, synonyms: [LocalizedStringResource])](/documentation/appintents/typedisplayrepresentation/init(name:numericformat:synonyms:))
-
 #### Instance Properties
 
 - [var name: LocalizedStringResource](/documentation/appintents/typedisplayrepresentation/name)
 - [var numericFormat: LocalizedStringResource?](/documentation/appintents/typedisplayrepresentation/numericformat)
 - [var synonyms: [LocalizedStringResource]](/documentation/appintents/typedisplayrepresentation/synonyms)
+
 - [StaticDisplayRepresentable](/documentation/appintents/staticdisplayrepresentable)
 - [CaseDisplayRepresentable](/documentation/appintents/casedisplayrepresentable)
-
 #### Describing the case conditions
 
 - [static var caseDisplayRepresentations: [Self : DisplayRepresentation]](/documentation/appintents/casedisplayrepresentable/casedisplayrepresentations)
-
 #### Providing a localized description
 
 - [var localizedStringResource: LocalizedStringResource](/documentation/appintents/casedisplayrepresentable/localizedstringresource-7gj71)
 - [var localizedStringResource: LocalizedStringResource](/documentation/appintents/casedisplayrepresentable/localizedstringresource-78c15)
-- [Entity queries](/documentation/appintents/entity-queries)
 
+
+- [Static parameter types](/documentation/appintents/app-enums)
+### App enum
+
+- [AppEnum](/documentation/appintents/appenum)
+#### Resolving the type
+
+- [static var defaultResolverSpecification: some ResolverSpecification](/documentation/appintents/appenum/defaultresolverspecification)
+#### URL representation
+
+- [EnumURLRepresentation](/documentation/appintents/enumurlrepresentation)
+##### Structures
+
+- [EnumURLRepresentation.EnumSingleURLRepresentation](/documentation/appintents/enumurlrepresentation/enumsingleurlrepresentation)
+##### Initializers
+
+- [init([Enum : EnumURLRepresentation<Enum>.EnumSingleURLRepresentation])](/documentation/appintents/enumurlrepresentation/init(_:)-1odm)
+- [init(String)](/documentation/appintents/enumurlrepresentation/init(_:)-6p999)
+
+
+- [URLRepresentableEnum](/documentation/appintents/urlrepresentableenum)
+#### Type Aliases
+
+- [URLRepresentableEnum.URLRepresentation](/documentation/appintents/urlrepresentableenum/urlrepresentation-swift.typealias)
+#### Type Properties
+
+- [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableenum/urlrepresentation-swift.type.property)
+
+
+- [Entity queries](/documentation/appintents/entity-queries)
 ### Identifier-based queries
 
 - [EntityQuery](/documentation/appintents/entityquery)
-
 #### Creating a query
 
 - [init()](/documentation/appintents/entityquery/init())
-
 #### Searching for entities
 
 - [func entities(for: [Self.Entity.ID]) async throws -> [Self.Entity]](/documentation/appintents/entityquery/entities(for:))
 - [Entity](/documentation/appintents/entityquery/entity)
-
 #### Suggesting entities
 
 - [func suggestedEntities() async throws -> Self.Result](/documentation/appintents/entityquery/suggestedentities())
-
 #### Associated Types
 
 - [Result](/documentation/appintents/entityquery/result)
-- [EnumerableEntityQuery](/documentation/appintents/enumerableentityquery)
 
+- [EnumerableEntityQuery](/documentation/appintents/enumerableentityquery)
 #### Instance Methods
 
 - [func allEntities() async throws -> Self.Result](/documentation/appintents/enumerableentityquery/allentities())
-
 #### Type Properties
 
 - [static var findIntentDescription: IntentDescription?](/documentation/appintents/enumerableentityquery/findintentdescription)
@@ -5517,7 +6204,6 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### String-based queries
 
 - [EntityStringQuery](/documentation/appintents/entitystringquery)
-
 #### Searching for entities
 
 - [func entities(matching: String) async throws -> Self.Result](/documentation/appintents/entitystringquery/entities(matching:))
@@ -5525,27 +6211,23 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### Property-matched queries
 
 - [EntityPropertyQuery](/documentation/appintents/entitypropertyquery)
-
 #### Specifying the queryable properties
 
 - [static var properties: Self.QueryProperties](/documentation/appintents/entitypropertyquery/properties)
 - [EntityPropertyQuery.QueryProperties](/documentation/appintents/entitypropertyquery/queryproperties)
 - [EntityPropertyQuery.Property](/documentation/appintents/entitypropertyquery/property)
 - [ComparatorMappingType](/documentation/appintents/entitypropertyquery/comparatormappingtype)
-
 #### Sorting the results
 
 - [static var sortingOptions: Self.SortingOptions](/documentation/appintents/entitypropertyquery/sortingoptions-swift.type.property)
 - [EntityPropertyQuery.SortingOptions](/documentation/appintents/entitypropertyquery/sortingoptions-swift.typealias)
 - [EntityPropertyQuery.SortableBy](/documentation/appintents/entitypropertyquery/sortableby)
-
 #### Searching for entities
 
 - [func entities(matching: [Self.ComparatorMappingType], mode: Self.ComparatorMode, sortedBy: [EntityQuerySort<Self.Entity>], limit: Int?) async throws -> Self.Result](/documentation/appintents/entitypropertyquery/entities(matching:mode:sortedby:limit:))
 - [EntityPropertyQuery.Sort](/documentation/appintents/entitypropertyquery/sort)
 - [EntityPropertyQuery.ComparatorMode](/documentation/appintents/entitypropertyquery/comparatormode)
 - [EntityQueryComparatorMode](/documentation/appintents/entityquerycomparatormode)
-
 ##### Comparator modes
 
 - [case and](/documentation/appintents/entityquerycomparatormode/and)
@@ -5554,18 +6236,16 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Type Properties
 
 - [static var findIntentDescription: IntentDescription?](/documentation/appintents/entitypropertyquery/findintentdescription)
-- [EntityQueryProperties](/documentation/appintents/entityqueryproperties)
 
+- [EntityQueryProperties](/documentation/appintents/entityqueryproperties)
 #### Creating the query properties
 
 - [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](/documentation/appintents/entityqueryproperties/init(properties:))
 - [EntityQueryPropertiesBuilder](/documentation/appintents/entityquerypropertiesbuilder)
-
 ##### Building queryable properties
 
 - [static func buildBlock(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>...) -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>]](/documentation/appintents/entityquerypropertiesbuilder/buildblock(_:))
 - [EntityQueryPropertyDeclaration](/documentation/appintents/entityquerypropertydeclaration)
-
 ##### Type Methods
 
 - [static func buildExpression(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](/documentation/appintents/entityquerypropertiesbuilder/buildexpression(_:))
@@ -5573,15 +6253,14 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Getting the query properties
 
 - [subscript(Int) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](/documentation/appintents/entityqueryproperties/subscript(_:))
-- [EntityQueryProperty](/documentation/appintents/entityqueryproperty)
 
+- [EntityQueryProperty](/documentation/appintents/entityqueryproperty)
 #### Creating queryable properties
 
 - [convenience init(KeyPath<Subject, Property>, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](/documentation/appintents/entityqueryproperty/init(_:comparators:))
 - [init(KeyPath<Subject, Property>, entityProvider: (Entity) -> Subject, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](/documentation/appintents/entityqueryproperty/init(_:entityprovider:comparators:))
 - [EntityQueryProperty.QueryComparators](/documentation/appintents/entityqueryproperty/querycomparators)
 - [EntityQueryComparatorsBuilder](/documentation/appintents/entityquerycomparatorsbuilder)
-
 ##### Building query comparators
 
 - [static func buildBlock(AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>...) -> [AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>]](/documentation/appintents/entityquerycomparatorsbuilder/buildblock(_:))
@@ -5591,60 +6270,60 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [static func buildExpression<InputType>(ContainsComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](/documentation/appintents/entityquerycomparatorsbuilder/buildexpression(_:)-6v6cj)
 - [static func buildExpression<InputType>(IsBetweenComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](/documentation/appintents/entityquerycomparatorsbuilder/buildexpression(_:)-8jx4k)
 - [EntityQueryComparator](/documentation/appintents/entityquerycomparator)
-- [Property comparators](/documentation/appintents/property-comparators)
 
+
+- [Property comparators](/documentation/appintents/property-comparators)
 #### Equatable comparisons
 
 - [EqualToComparator](/documentation/appintents/equaltocomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(mappingtransform:))
 - [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(withresolvers:mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(withresolvers:mappingtransform:))
+
 - [NotEqualToComparator](/documentation/appintents/notequaltocomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(mappingtransform:))
 - [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(withresolvers:mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(withresolvers:mappingtransform:))
+
 - [GreaterThanComparator](/documentation/appintents/greaterthancomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(mappingtransform:))
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(withresolvers:mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(withresolvers:mappingtransform:))
+
 - [GreaterThanOrEqualToComparator](/documentation/appintents/greaterthanorequaltocomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(mappingtransform:))
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(withresolvers:mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(withresolvers:mappingtransform:))
+
 - [LessThanComparator](/documentation/appintents/lessthancomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(mappingtransform:))
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(withresolvers:mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(withresolvers:mappingtransform:))
+
 - [LessThanOrEqualToComparator](/documentation/appintents/lessthanorequaltocomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(mappingtransform:))
 - [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(withresolvers:mappingtransform:))
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(withresolvers:mappingtransform:))
-- [IsBetweenComparator](/documentation/appintents/isbetweencomparator)
 
+- [IsBetweenComparator](/documentation/appintents/isbetweencomparator)
 ##### Initializers
 
 - [init(mappingTransform: (InputType, InputType) -> ComparatorMappingType)](/documentation/appintents/isbetweencomparator/init(mappingtransform:))
@@ -5653,23 +6332,22 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### String comparisons
 
 - [HasPrefixComparator](/documentation/appintents/hasprefixcomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(mappingtransform:)-4i1bf)
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(mappingtransform:)-5kri6)
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(withresolvers:mappingtransform:)-2n67a)
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(withresolvers:mappingtransform:)-48o75)
-- [HasSuffixComparator](/documentation/appintents/hassuffixcomparator)
 
+- [HasSuffixComparator](/documentation/appintents/hassuffixcomparator)
 ##### Creating a comparator
 
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(mappingtransform:)-4dp26)
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(mappingtransform:)-5cmgi)
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(withresolvers:mappingtransform:)-5rtmw)
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(withresolvers:mappingtransform:)-7tdan)
-- [StringComparisonOperator](/documentation/appintents/stringcomparisonoperator)
 
+- [StringComparisonOperator](/documentation/appintents/stringcomparisonoperator)
 ##### Enumeration Cases
 
 - [case contains](/documentation/appintents/stringcomparisonoperator/contains)
@@ -5680,14 +6358,12 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Containment comparisons
 
 - [ContainsComparator](/documentation/appintents/containscomparator)
-
 ##### Creating a comparator
 
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-xvws)
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-3xuvt)
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-7rx55)
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-4482k)
-
 ##### Initializers
 
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-7ya5)
@@ -5698,17 +6374,16 @@ timestamp: 2026-02-19T07:56:01.983Z
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-7vx0d)
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-83nih)
 - [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-wpei)
-- [EntityQuerySortingOptions](/documentation/appintents/entityquerysortingoptions)
 
+
+- [EntityQuerySortingOptions](/documentation/appintents/entityquerysortingoptions)
 #### Creating the sorting options
 
 - [init(content: () -> [EntityQuerySortableByProperty<Entity>])](/documentation/appintents/entityquerysortingoptions/init(content:))
 - [EntityQuerySortingOptionsBuilder](/documentation/appintents/entityquerysortingoptionsbuilder)
-
 ##### Building sorting options
 
 - [static func buildBlock(EntityQuerySortableByProperty<Entity>...) -> [EntityQuerySortableByProperty<Entity>]](/documentation/appintents/entityquerysortingoptionsbuilder/buildblock(_:))
-
 ##### Type Methods
 
 - [static func buildExpression(EntityQuerySortableByProperty<Entity>) -> EntityQuerySortableByProperty<Entity>](/documentation/appintents/entityquerysortingoptionsbuilder/buildexpression(_:))
@@ -5716,582 +6391,264 @@ timestamp: 2026-02-19T07:56:01.983Z
 #### Getting the sorting options
 
 - [subscript(Int) -> EntityQuerySortableByProperty<Entity>](/documentation/appintents/entityquerysortingoptions/subscript(_:))
-
 #### Initializers
 
 - [init()](/documentation/appintents/entityquerysortingoptions/init())
-- [EntityQuerySortableByProperty](/documentation/appintents/entityquerysortablebyproperty)
 
+- [EntityQuerySortableByProperty](/documentation/appintents/entityquerysortablebyproperty)
 #### Creating the sort option
 
 - [init<Property>(KeyPath<Entity, Property>)](/documentation/appintents/entityquerysortablebyproperty/init(_:))
-- [EntityQuerySort](/documentation/appintents/entityquerysort)
 
+- [EntityQuerySort](/documentation/appintents/entityquerysort)
 #### Getting the property details
 
 - [let by: PartialKeyPath<Entity>](/documentation/appintents/entityquerysort/by)
-
 #### Getting the sort order
 
 - [let order: EntityQuerySort<Entity>.Ordering](/documentation/appintents/entityquerysort/order)
 - [EntityQuerySort.Ordering](/documentation/appintents/entityquerysort/ordering)
-
 ##### Enumeration Cases
 
 - [case ascending](/documentation/appintents/entityquerysort/ordering/ascending)
 - [case descending](/documentation/appintents/entityquerysort/ordering/descending)
 
+
 ### Unique entity queries
 
 - [UniqueAppEntityQuery](/documentation/appintents/uniqueappentityquery)
-
 #### Associated Types
 
 - [Unique](/documentation/appintents/uniqueappentityquery/unique)
-
 #### Instance Methods
 
 - [func uniqueEntity() async throws -> Self.Unique](/documentation/appintents/uniqueappentityquery/uniqueentity())
-- [UniqueAppEntityProvider](/documentation/appintents/uniqueappentityprovider)
 
+- [UniqueAppEntityProvider](/documentation/appintents/uniqueappentityprovider)
 #### Initializers
 
 - [init(() async throws -> Entity)](/documentation/appintents/uniqueappentityprovider/init(_:))
-- [Resolvers](/documentation/appintents/resolvers)
 
-### Integer resolution
 
-- [IntFromDoubleResolver](/documentation/appintents/intfromdoubleresolver)
+- [Property comparators](/documentation/appintents/property-comparators)
+### Equatable comparisons
 
-#### Creating the resolver
+- [EqualToComparator](/documentation/appintents/equaltocomparator)
+#### Creating a comparator
 
-- [init(roundingRule: FloatingPointRoundingRule)](/documentation/appintents/intfromdoubleresolver/init(roundingrule:))
+- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(mappingtransform:))
+- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(withresolvers:mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/equaltocomparator/init(withresolvers:mappingtransform:))
 
-#### Getting the rounding rule
+- [NotEqualToComparator](/documentation/appintents/notequaltocomparator)
+#### Creating a comparator
 
-- [var roundingRule: FloatingPointRoundingRule](/documentation/appintents/intfromdoubleresolver/roundingrule)
-- [IntFromStringResolver](/documentation/appintents/intfromstringresolver)
+- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(mappingtransform:))
+- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(withresolvers:mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType) -> ComparatorMappingType)](/documentation/appintents/notequaltocomparator/init(withresolvers:mappingtransform:))
 
-#### Creating the resolver
+- [GreaterThanComparator](/documentation/appintents/greaterthancomparator)
+#### Creating a comparator
 
-- [init(radix: Int)](/documentation/appintents/intfromstringresolver/init(radix:))
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(mappingtransform:))
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(withresolvers:mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthancomparator/init(withresolvers:mappingtransform:))
 
-#### Getting the radix setting
+- [GreaterThanOrEqualToComparator](/documentation/appintents/greaterthanorequaltocomparator)
+#### Creating a comparator
 
-- [var radix: Int](/documentation/appintents/intfromstringresolver/radix)
-- [IntResolver](/documentation/appintents/intresolver)
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(mappingtransform:))
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(withresolvers:mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/greaterthanorequaltocomparator/init(withresolvers:mappingtransform:))
 
-### Floating-point resolution
+- [LessThanComparator](/documentation/appintents/lessthancomparator)
+#### Creating a comparator
 
-- [DoubleFromIntResolver](/documentation/appintents/doublefromintresolver)
-- [DoubleFromStringResolver](/documentation/appintents/doublefromstringresolver)
-- [DoubleResolver](/documentation/appintents/doubleresolver)
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(mappingtransform:))
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(withresolvers:mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthancomparator/init(withresolvers:mappingtransform:))
 
-### String resolution
+- [LessThanOrEqualToComparator](/documentation/appintents/lessthanorequaltocomparator)
+#### Creating a comparator
 
-- [AttributedStringFromStringResolver](/documentation/appintents/attributedstringfromstringresolver)
-- [StringFromDoubleResolver](/documentation/appintents/stringfromdoubleresolver)
-- [StringFromIntResolver](/documentation/appintents/stringfromintresolver)
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(mappingtransform:))
+- [init(mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(withresolvers:mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (PropertyType.UnwrappedType) -> ComparatorMappingType)](/documentation/appintents/lessthanorequaltocomparator/init(withresolvers:mappingtransform:))
 
-### Boolean resolution
-
-- [BoolFromStringResolver](/documentation/appintents/boolfromstringresolver)
-
-### URL resolution
-
-- [URLFromStringResolver](/documentation/appintents/urlfromstringresolver)
-
-### Custom resolution
-
-- [Resolver](/documentation/appintents/resolver)
-
-#### Resolving the type
-
-- [func resolve(from: Self.Input, context: IntentParameterContext<Self.Output>) async throws -> Self.Output?](/documentation/appintents/resolver/resolve(from:context:))
-- [Input](/documentation/appintents/resolver/input)
-- [Output](/documentation/appintents/resolver/output)
-
-#### Managing the resolution process
-
-- [ResolverSpecification](/documentation/appintents/resolverspecification)
-
-##### Getting the value type
-
-- [Output](/documentation/appintents/resolverspecification/output)
-- [EmptyResolverSpecification](/documentation/appintents/emptyresolverspecification)
-
-##### Creating the specification type
-
-- [init()](/documentation/appintents/emptyresolverspecification/init())
-- [StringSearchCriteriaFromStringResolverSpecificification](/documentation/appintents/stringsearchcriteriafromstringresolverspecificification)
-- [ResolverSpecificationBuilder](/documentation/appintents/resolverspecificationbuilder)
-
-##### Building the resolver specification
-
-- [static func buildBlock() -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock())
-- [static func buildBlock<R0>(R0) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:))
-- [static func buildBlock<R0, R1>(R0, R1) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:))
-- [static func buildBlock<R0, R1, R2>(R0, R1, R2) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3>(R0, R1, R2, R3) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4>(R0, R1, R2, R3, R4) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5>(R0, R1, R2, R3, R4, R5) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6>(R0, R1, R2, R3, R4, R5, R6) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7>(R0, R1, R2, R3, R4, R5, R6, R7) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8>(R0, R1, R2, R3, R4, R5, R6, R7, R8) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:))
-
-##### Structures
-
-- [ResolverSpecificationBuilder.Specification](/documentation/appintents/resolverspecificationbuilder/specification)
-
-##### Type Methods
-
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
-- [static func buildBlock<R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14>(R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14) -> some ResolverSpecification](/documentation/appintents/resolverspecificationbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:))
-- [static func buildExpression<ResolverType>(ResolverType) -> ResolverType](/documentation/appintents/resolverspecificationbuilder/buildexpression(_:))
-- [static func buildPartialBlock<each Accumulated, R>(accumulated: ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated>, next: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, repeat each Accumulated, R>](/documentation/appintents/resolverspecificationbuilder/buildpartialblock(accumulated:next:))
-- [static func buildPartialBlock<R>(first: R) -> ResolverSpecificationBuilder<Property>.Specification<Property, R>](/documentation/appintents/resolverspecificationbuilder/buildpartialblock(first:))
-
-#### Type Aliases
-
-- [Resolver.Context](/documentation/appintents/resolver/context)
-
-### Range validation
-
-- [RangeCheckingResolver](/documentation/appintents/rangecheckingresolver)
-
-#### Checking the range of a parameter
-
-- [func checkParameterRangeContains<Value>(value: Value, context: IntentParameterContext<Self.Output>) throws](/documentation/appintents/rangecheckingresolver/checkparameterrangecontains(value:context:))
-- [RangeComparableProperty](/documentation/appintents/rangecomparableproperty)
-
-## Utility types
-
-- [Common types](/documentation/appintents/common-data-types)
-
-### Contacts
-
-- [IntentPerson](/documentation/appintents/intentperson)
-
-#### Creating a contact
-
-- [init(identifier: IntentPerson.Identifier, name: IntentPerson.Name, handle: IntentPerson.Handle?, aliases: [IntentPerson.Handle], isMe: Bool, image: DisplayRepresentation.Image?)](/documentation/appintents/intentperson/init(identifier:name:handle:aliases:isme:image:))
-
-#### Getting the person’s name
-
-- [var name: IntentPerson.Name](/documentation/appintents/intentperson/name-swift.property)
-- [IntentPerson.Name](/documentation/appintents/intentperson/name-swift.enum)
-
-##### Getting a displayable name
-
-- [case displayName(String)](/documentation/appintents/intentperson/name-swift.enum/displayname(_:))
-
-##### Getting the name components
-
-- [case components(PersonNameComponents)](/documentation/appintents/intentperson/name-swift.enum/components(_:))
-
-##### Enumeration Cases
-
-- [case unknown](/documentation/appintents/intentperson/name-swift.enum/unknown)
-
-#### Getting identifying information
-
-- [var handle: IntentPerson.Handle?](/documentation/appintents/intentperson/handle-swift.property)
-- [var aliases: [IntentPerson.Handle]](/documentation/appintents/intentperson/aliases)
-- [var isMe: Bool](/documentation/appintents/intentperson/isme)
-- [var image: DisplayRepresentation.Image?](/documentation/appintents/intentperson/image)
-- [IntentPerson.Handle](/documentation/appintents/intentperson/handle-swift.struct)
-
-##### Creating a handle
-
-- [init(emailAddress: String, label: IntentPerson.Handle.Label)](/documentation/appintents/intentperson/handle-swift.struct/init(emailaddress:label:))
-- [init(phoneNumber: String, label: IntentPerson.Handle.Label)](/documentation/appintents/intentperson/handle-swift.struct/init(phonenumber:label:))
-- [init(identifier: IntentPerson.Identifier, name: IntentPerson.Name, handle: IntentPerson.Handle?, aliases: [IntentPerson.Handle], isMe: Bool, image: DisplayRepresentation.Image?)](/documentation/appintents/intentperson/init(identifier:name:handle:aliases:isme:image:))
-- [init(handle: IntentPerson.Handle)](/documentation/appintents/intentperson/init(handle:))
-- [init(IntentPerson.Handle.Value, label: IntentPerson.Handle.Label)](/documentation/appintents/intentperson/handle-swift.struct/init(_:label:))
-- [init(applicationDefined: String, label: String?)](/documentation/appintents/intentperson/handle-swift.struct/init(applicationdefined:label:))
-
-##### Getting the handle’s label
-
-- [var label: IntentPerson.Handle.Label](/documentation/appintents/intentperson/handle-swift.struct/label-swift.property)
-- [IntentPerson.Handle.Label](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum)
-
-###### Getting the handle labels
-
-- [case home](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/home)
-- [case homeFax](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/homefax)
-- [case iPhone](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/iphone)
-- [case main](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/main)
-- [case mobile](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/mobile)
-- [case other](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/other)
-- [case pager](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/pager)
-- [case school](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/school)
-- [case work](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/work)
-- [case workFax](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/workfax)
-- [case custom(String)](/documentation/appintents/intentperson/handle-swift.struct/label-swift.enum/custom(_:))
-
-##### Getting the handle’s value
-
-- [var value: IntentPerson.Handle.Value](/documentation/appintents/intentperson/handle-swift.struct/value-swift.property)
-- [IntentPerson.Handle.Value](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum)
-
-###### Enumeration Cases
-
-- [case applicationDefined(String)](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum/applicationdefined(_:))
-- [case emailAddress(String)](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum/emailaddress(_:))
-- [case phoneNumber(String)](/documentation/appintents/intentperson/handle-swift.struct/value-swift.enum/phonenumber(_:))
-- [IntentPerson.ParameterMode](/documentation/appintents/intentperson/parametermode)
-
-##### Getting the interface type
-
-- [case contact](/documentation/appintents/intentperson/parametermode/contact)
-- [case email](/documentation/appintents/intentperson/parametermode/email)
-- [case emailOrPhone](/documentation/appintents/intentperson/parametermode/emailorphone)
-- [case phone](/documentation/appintents/intentperson/parametermode/phone)
-
-#### Getting person-related identifiers
-
-- [var identifier: IntentPerson.Identifier](/documentation/appintents/intentperson/identifier-swift.property)
-- [IntentPerson.Identifier](/documentation/appintents/intentperson/identifier-swift.enum)
-
-##### Getting the identifier types
-
-- [case contact(String)](/documentation/appintents/intentperson/identifier-swift.enum/contact(_:))
-- [case applicationDefined(String)](/documentation/appintents/intentperson/identifier-swift.enum/applicationdefined(_:))
-
-##### Enumeration Cases
-
-- [case unknown](/documentation/appintents/intentperson/identifier-swift.enum/unknown)
-
+- [IsBetweenComparator](/documentation/appintents/isbetweencomparator)
 #### Initializers
 
-- [init(handle: IntentPerson.Handle)](/documentation/appintents/intentperson/init(handle:))
+- [init(mappingTransform: (InputType, InputType) -> ComparatorMappingType)](/documentation/appintents/isbetweencomparator/init(mappingtransform:))
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType, InputType) -> ComparatorMappingType)](/documentation/appintents/isbetweencomparator/init(withresolvers:mappingtransform:))
 
-#### Type Aliases
+### String comparisons
 
-- [IntentPerson.Specification](/documentation/appintents/intentperson/specification)
-- [IntentPerson.UnwrappedType](/documentation/appintents/intentperson/unwrappedtype)
-- [IntentPerson.ValueType](/documentation/appintents/intentperson/valuetype)
+- [HasPrefixComparator](/documentation/appintents/hasprefixcomparator)
+#### Creating a comparator
 
-#### Type Properties
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(mappingtransform:)-4i1bf)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(mappingtransform:)-5kri6)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(withresolvers:mappingtransform:)-2n67a)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hasprefixcomparator/init(withresolvers:mappingtransform:)-48o75)
 
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPerson>](/documentation/appintents/intentperson/defaultresolverspecification)
+- [HasSuffixComparator](/documentation/appintents/hassuffixcomparator)
+#### Creating a comparator
 
-### Files
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(mappingtransform:)-4dp26)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(mappingtransform:)-5cmgi)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(withresolvers:mappingtransform:)-5rtmw)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/hassuffixcomparator/init(withresolvers:mappingtransform:)-7tdan)
 
-- [IntentFile](/documentation/appintents/intentfile)
+- [StringComparisonOperator](/documentation/appintents/stringcomparisonoperator)
+#### Enumeration Cases
 
-#### Creating a file
+- [case contains](/documentation/appintents/stringcomparisonoperator/contains)
+- [case doesNotContain](/documentation/appintents/stringcomparisonoperator/doesnotcontain)
+- [case hasPrefix](/documentation/appintents/stringcomparisonoperator/hasprefix)
+- [case hasSuffix](/documentation/appintents/stringcomparisonoperator/hassuffix)
 
-- [init(data: Data, filename: String, type: UTType?)](/documentation/appintents/intentfile/init(data:filename:type:))
-- [init(fileURL: URL, filename: String?, type: UTType?)](/documentation/appintents/intentfile/init(fileurl:filename:type:))
+### Containment comparisons
 
-#### Getting the file information
+- [ContainsComparator](/documentation/appintents/containscomparator)
+#### Creating a comparator
 
-- [var filename: String](/documentation/appintents/intentfile/filename)
-- [var fileURL: URL?](/documentation/appintents/intentfile/fileurl)
-- [var type: UTType?](/documentation/appintents/intentfile/type)
-- [var data: Data](/documentation/appintents/intentfile/data)
-- [var removedOnCompletion: Bool](/documentation/appintents/intentfile/removedoncompletion)
-
-#### Instance Properties
-
-- [var availableContentTypes: [UTType]](/documentation/appintents/intentfile/availablecontenttypes)
-
-#### Instance Methods
-
-- [func data(contentType: UTType) async throws -> Data](/documentation/appintents/intentfile/data(contenttype:))
-- [func file(contentType: UTType, destinationDirectory: URL?) async throws -> (fileURL: URL, openedInPlace: Bool)](/documentation/appintents/intentfile/file(contenttype:destinationdirectory:))
-- [func withFile<Result>(contentType: UTType, allowOpenInPlace: Bool, fileHandler: (URL, Bool) async throws -> Result) async throws -> Result](/documentation/appintents/intentfile/withfile(contenttype:allowopeninplace:filehandler:))
-
-#### Type Aliases
-
-- [IntentFile.Specification](/documentation/appintents/intentfile/specification)
-- [IntentFile.UnwrappedType](/documentation/appintents/intentfile/unwrappedtype)
-- [IntentFile.ValueType](/documentation/appintents/intentfile/valuetype)
-
-#### Type Properties
-
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentFile>](/documentation/appintents/intentfile/defaultresolverspecification)
-
-#### Enumerations
-
-- [IntentFile.IntentFileError](/documentation/appintents/intentfile/intentfileerror)
-
-##### Enumeration Cases
-
-- [case failedToLoadData](/documentation/appintents/intentfile/intentfileerror/failedtoloaddata)
-- [case failedToLoadFile](/documentation/appintents/intentfile/intentfileerror/failedtoloadfile)
-
-### Monetary types
-
-- [IntentCurrencyAmount](/documentation/appintents/intentcurrencyamount)
-
-#### Creating a currency type
-
-- [init(amount: Decimal, currencyCode: String)](/documentation/appintents/intentcurrencyamount/init(amount:currencycode:))
-
-#### Getting the currency details
-
-- [let amount: Decimal](/documentation/appintents/intentcurrencyamount/amount)
-- [let currencyCode: String](/documentation/appintents/intentcurrencyamount/currencycode)
-
-#### Type Aliases
-
-- [IntentCurrencyAmount.Specification](/documentation/appintents/intentcurrencyamount/specification)
-- [IntentCurrencyAmount.UnwrappedType](/documentation/appintents/intentcurrencyamount/unwrappedtype)
-- [IntentCurrencyAmount.ValueType](/documentation/appintents/intentcurrencyamount/valuetype)
-
-#### Type Properties
-
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentCurrencyAmount>](/documentation/appintents/intentcurrencyamount/defaultresolverspecification)
-- [IntentPaymentMethod](/documentation/appintents/intentpaymentmethod)
-
-#### Creating a payment method
-
-- [init(type: IntentPaymentMethod.PaymentType, name: LocalizedStringResource?, identificationHint: String?, icon: DisplayRepresentation.Image?)](/documentation/appintents/intentpaymentmethod/init(type:name:identificationhint:icon:))
-
-#### Getting the payment details
-
-- [var paymentType: IntentPaymentMethod.PaymentType](/documentation/appintents/intentpaymentmethod/paymenttype-swift.property)
-- [var name: String?](/documentation/appintents/intentpaymentmethod/name)
-- [var identificationHint: String?](/documentation/appintents/intentpaymentmethod/identificationhint)
-- [var icon: DisplayRepresentation.Image?](/documentation/appintents/intentpaymentmethod/icon)
-- [IntentPaymentMethod.PaymentType](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum)
-
-##### Getting the payment options
-
-- [case applePay](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/applepay)
-- [case brokerage](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/brokerage)
-- [case checking](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/checking)
-- [case credit](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/credit)
-- [case debit](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/debit)
-- [case prepaid](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/prepaid)
-- [case savings](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/savings)
-- [case store](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/store)
-- [case unknown](/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/unknown)
-
-#### Type Aliases
-
-- [IntentPaymentMethod.Specification](/documentation/appintents/intentpaymentmethod/specification)
-- [IntentPaymentMethod.UnwrappedType](/documentation/appintents/intentpaymentmethod/unwrappedtype)
-- [IntentPaymentMethod.ValueType](/documentation/appintents/intentpaymentmethod/valuetype)
-
-#### Type Properties
-
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPaymentMethod>](/documentation/appintents/intentpaymentmethod/defaultresolverspecification)
-
-### Items and collections
-
-- [IntentItem](/documentation/appintents/intentitem)
-
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-xvws)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-3xuvt)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-7rx55)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-4482k)
 #### Initializers
 
-- [init(Value)](/documentation/appintents/intentitem/init(_:))
-- [init(Value, title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?)](/documentation/appintents/intentitem/init(_:title:subtitle:image:))
-
-#### Instance Properties
-
-- [var description: DisplayRepresentation](/documentation/appintents/intentitem/description)
-- [var value: Value](/documentation/appintents/intentitem/value)
-
-#### Enumerations
-
-- [IntentItem.Builder](/documentation/appintents/intentitem/builder)
-
-##### Type Methods
-
-- [static func buildArray([[IntentItem<Value>]]) -> [IntentItem<Value>]](/documentation/appintents/intentitem/builder/buildarray(_:))
-- [static func buildBlock() -> [Value]](/documentation/appintents/intentitem/builder/buildblock())
-- [static func buildBlock(IntentItem<Value>...) -> [IntentItem<Value>]](/documentation/appintents/intentitem/builder/buildblock(_:)-9j0sn)
-- [static func buildBlock([IntentItem<Value>]) -> [IntentItem<Value>]](/documentation/appintents/intentitem/builder/buildblock(_:)-pgo1)
-- [static func buildExpression(Value) -> IntentItem<Value>](/documentation/appintents/intentitem/builder/buildexpression(_:)-202yw)
-- [static func buildExpression<ExpressionValue>(IntentItem<ExpressionValue>) -> IntentItem<ExpressionValue>](/documentation/appintents/intentitem/builder/buildexpression(_:)-90pb0)
-- [IntentItemCollection](/documentation/appintents/intentitemcollection)
-
-#### Initializers
-
-- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, items: [Result])](/documentation/appintents/intentitemcollection/init(promptlabel:usesindexedcollation:items:))
-- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sections: [IntentItemSection<Result>])](/documentation/appintents/intentitemcollection/init(promptlabel:usesindexedcollation:sections:))
-- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sectionsBuilder: () -> [IntentItemSection<Result>])](/documentation/appintents/intentitemcollection/init(promptlabel:usesindexedcollation:sectionsbuilder:))
-
-#### Instance Properties
-
-- [var items: [Result.ValueType]](/documentation/appintents/intentitemcollection/items)
-- [var sections: [IntentItemSection<Result>]](/documentation/appintents/intentitemcollection/sections)
-
-#### Type Properties
-
-- [static var empty: IntentItemCollection<Result>](/documentation/appintents/intentitemcollection/empty)
-- [IntentItemSection](/documentation/appintents/intentitemsection)
-
-#### Initializers
-
-- [init(LocalizedStringResource, items: [Result])](/documentation/appintents/intentitemsection/init(_:items:)-2frw8)
-- [init(LocalizedStringResource, items: [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(_:items:)-8p4y0)
-- [init(LocalizedStringResource?, itemsBuilder: () -> [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(_:itemsbuilder:))
-- [init(LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, itemsBuilder: () -> [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(_:subtitle:image:itemsbuilder:))
-- [init(items: [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(items:))
-- [init(title: LocalizedStringResource, items: [IntentItem<Result>])](/documentation/appintents/intentitemsection/init(title:items:))
-
-#### Instance Properties
-
-- [var description: DisplayRepresentation?](/documentation/appintents/intentitemsection/description)
-- [var items: [IntentItem<Result>]](/documentation/appintents/intentitemsection/items)
-
-#### Enumerations
-
-- [IntentItemSection.Builder](/documentation/appintents/intentitemsection/builder)
-
-##### Type Methods
-
-- [static func buildBlock() -> [IntentItemSection<Result>]](/documentation/appintents/intentitemsection/builder/buildblock())
-- [static func buildBlock(IntentItemSection<Result>...) -> [IntentItemSection<Result>]](/documentation/appintents/intentitemsection/builder/buildblock(_:)-4a4je)
-- [static func buildBlock(IntentItem<Result>...) -> [IntentItemSection<Result>]](/documentation/appintents/intentitemsection/builder/buildblock(_:)-7uwpz)
-- [IntentCollectionSize](/documentation/appintents/intentcollectionsize)
-
-#### Initializers
-
-- [init(exactly: Int)](/documentation/appintents/intentcollectionsize/init(exactly:))
-- [init(min: Int, max: Int)](/documentation/appintents/intentcollectionsize/init(min:max:))
-
-## Errors
-
-- [AppIntentError](/documentation/appintents/appintenterror)
-
-### Getting the error codes
-
-- [static var restartPerform: AppIntentError](/documentation/appintents/appintenterror/restartperform)
-
-### Enumerations
-
-- [AppIntentError.PermissionRequired](/documentation/appintents/appintenterror/permissionrequired)
-
-#### Type Properties
-
-- [static let bluetooth: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/bluetooth)
-- [static let contacts: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/contacts)
-- [static let localNetwork: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/localnetwork)
-- [static let photos: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/photos)
-- [static let siri: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/siri)
-
-#### Type Methods
-
-- [static func location(precise: Bool) -> AppIntentError](/documentation/appintents/appintenterror/permissionrequired/location(precise:))
-- [AppIntentError.Unrecoverable](/documentation/appintents/appintenterror/unrecoverable)
-
-#### Type Properties
-
-- [static let entityNotFound: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/entitynotfound)
-- [static let featureCurrentlyRestricted: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/featurecurrentlyrestricted)
-- [static let networkFailure: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/networkfailure)
-- [static let notAllowed: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/notallowed)
-- [static let partialFailure: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/partialfailure)
-- [static let unknown: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/unknown)
-- [static let unsupportedOnDevice: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/unsupportedondevice)
-- [AppIntentError.UserActionRequired](/documentation/appintents/appintenterror/useractionrequired)
-
-#### Type Properties
-
-- [static let accountSetup: AppIntentError](/documentation/appintents/appintenterror/useractionrequired/accountsetup)
-- [static let confirmation: AppIntentError](/documentation/appintents/appintenterror/useractionrequired/confirmation)
-- [static let signin: AppIntentError](/documentation/appintents/appintenterror/useractionrequired/signin)
-
-### Default Implementations
-
-- [CustomLocalizedStringResourceConvertible Implementations](/documentation/appintents/appintenterror/customlocalizedstringresourceconvertible-implementations)
-
-#### Instance Properties
-
-- [var localizedStringResource: LocalizedStringResource](/documentation/appintents/appintenterror/localizedstringresource)
-
-## Protocols
-
-- [AppIntentSceneDelegate](/documentation/appintents/appintentscenedelegate)
-
-### Instance Methods
-
-- [func scene(UIScene, willPerformAppIntent: any UISceneAppIntent)](/documentation/appintents/appintentscenedelegate/scene(_:willperformappintent:))
-- [AppShortcutsContent](/documentation/appintents/appshortcutscontent)
-
-### Instance Properties
-
-- [var appShortcuts: [AppShortcut]](/documentation/appintents/appshortcutscontent/appshortcuts)
-- [CustomURLRepresentationParameterConvertible](/documentation/appintents/customurlrepresentationparameterconvertible)
-
-### Instance Properties
-
-- [var urlRepresentationParameter: String?](/documentation/appintents/customurlrepresentationparameterconvertible/urlrepresentationparameter)
-- [ShowsSnippetIntent](/documentation/appintents/showssnippetintent)
-- [TargetContentProvidingIntent](/documentation/appintents/targetcontentprovidingintent)
-
-### Instance Properties
-
-- [var contentIdentifier: String](/documentation/appintents/targetcontentprovidingintent/contentidentifier)
-- [UISceneAppIntent](/documentation/appintents/uisceneappintent)
-
-### Instance Properties
-
-- [var uiScene: UIScene?](/documentation/appintents/uisceneappintent/uiscene)
-
-### Instance Methods
-
-- [func performNavigation(forScene: UIScene)](/documentation/appintents/uisceneappintent/performnavigation(forscene:))
-- [UndoableIntent](/documentation/appintents/undoableintent)
-
-### Instance Properties
-
-- [var undoManager: UndoManager?](/documentation/appintents/undoableintent/undomanager)
-
-## Structures
-
-- [ConfirmationConditions](/documentation/appintents/confirmationconditions)
-
-### Type Properties
-
-- [static let lowConfidenceSource: ConfirmationConditions](/documentation/appintents/confirmationconditions/lowconfidencesource)
-- [EntityPropertyModifiers](/documentation/appintents/entitypropertymodifiers)
-
-### Type Properties
-
-- [static let async: EntityPropertyModifiers](/documentation/appintents/entitypropertymodifiers/async)
-- [static let readOnly: EntityPropertyModifiers](/documentation/appintents/entitypropertymodifiers/readonly)
-- [EntityURLRepresentation](/documentation/appintents/entityurlrepresentation)
-
-### Initializers
-
-- [init(String)](/documentation/appintents/entityurlrepresentation/init(_:))
-- [EnumURLRepresentation](/documentation/appintents/enumurlrepresentation)
-
-### Structures
-
-- [EnumURLRepresentation.EnumSingleURLRepresentation](/documentation/appintents/enumurlrepresentation/enumsingleurlrepresentation)
-
-### Initializers
-
-- [init([Enum : EnumURLRepresentation<Enum>.EnumSingleURLRepresentation])](/documentation/appintents/enumurlrepresentation/init(_:)-1odm)
-- [init(String)](/documentation/appintents/enumurlrepresentation/init(_:)-6p999)
-- [FileEntityIdentifier](/documentation/appintents/fileentityidentifier)
-
-### Instance Properties
-
-- [var draftIdentifier: String?](/documentation/appintents/fileentityidentifier/draftidentifier)
-- [var fileURL: URL?](/documentation/appintents/fileentityidentifier/fileurl)
-- [var isDraft: Bool](/documentation/appintents/fileentityidentifier/isdraft)
-
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-7ya5)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-9fn0e)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(mappingtransform:)-coon)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-3esov)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-5j3ie)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-7vx0d)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-83nih)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](/documentation/appintents/containscomparator/init(withresolvers:mappingtransform:)-wpei)
+
+
+## Outcomes
+
+- [Displaying static and interactive snippets](/documentation/appintents/displaying-static-and-interactive-snippets)
+- [IntentDialog](/documentation/appintents/intentdialog)
+### Creating a dialog
+
+- [init(LocalizedStringResource)](/documentation/appintents/intentdialog/init(_:))
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource)](/documentation/appintents/intentdialog/init(full:supporting:))
+- [init(full: LocalizedStringResource, systemImageName: String)](/documentation/appintents/intentdialog/init(full:systemimagename:))
+- [init(full: LocalizedStringResource, supporting: LocalizedStringResource, systemImageName: String)](/documentation/appintents/intentdialog/init(full:supporting:systemimagename:))
+
+- [IntentResult](/documentation/appintents/intentresult)
+### Getting the result value
+
+- [var value: Self.Value?](/documentation/appintents/intentresult/value-swift.property)
+### Communicating the result to the user
+
+- [Dialog](/documentation/appintents/intentresult/dialog)
+### Associated Types
+
+- [OpensAppIntent](/documentation/appintents/intentresult/opensappintent)
+- [Snippet](/documentation/appintents/intentresult/snippet)
+- [Value](/documentation/appintents/intentresult/value-swift.associatedtype)
 ### Type Methods
 
-- [static func draft(identifier: String) -> FileEntityIdentifier](/documentation/appintents/fileentityidentifier/draft(identifier:))
-- [static func file(url: URL) throws -> FileEntityIdentifier](/documentation/appintents/fileentityidentifier/file(url:))
-- [IntentChoiceOption](/documentation/appintents/intentchoiceoption)
+- [static func result() -> Self](/documentation/appintents/intentresult/result())
+- [static func result<Intent>(actionButtonIntent: Intent) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:))
+- [static func result<Intent>(actionButtonIntent: Intent, activityIdentifier: String) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:activityidentifier:))
+- [static func result<Intent>(actionButtonIntent: Intent, activityIdentifier: String, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:activityidentifier:dialog:))
+- [static func result<Intent>(actionButtonIntent: Intent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(actionbuttonintent:dialog:))
+- [static func result<Content>(content: () -> Content) -> Self](/documentation/appintents/intentresult/result(content:))
+- [static func result(dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(dialog:))
+- [static func result<Content>(dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(dialog:content:))
+- [static func result(dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(dialog:snippetintent:))
+- [static func result<Content>(dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(dialog:view:))
+- [static func result(opensIntent: some AppIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:)-8t8q8)
+- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:content:)-2h5ux)
+- [static func result<Content>(opensIntent: some AppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:content:)-965vk)
+- [static func result(opensIntent: some AppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:)-64q5v)
+- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:content:)-2g81m)
+- [static func result<Content>(opensIntent: some AppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:content:)-9kg66)
+- [static func result(opensIntent: some AppIntent, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:snippetintent:))
+- [static func result<Content>(opensIntent: some AppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:view:)-1w6b6)
+- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:view:)-8wkpg)
+- [static func result(opensIntent: some AppIntent, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:snippetintent:))
+- [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:view:)-4l1d4)
+- [static func result<Content>(opensIntent: some AppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(opensintent:view:)-5hm2s)
+- [static func result(snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(snippetintent:))
+- [static func result<Value>(value: Value) -> Self](/documentation/appintents/intentresult/result(value:))
+- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:))
+- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, activityIdentifier: String) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:activityidentifier:))
+- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, activityIdentifier: String, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:activityidentifier:dialog:))
+- [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:actionbuttonintent:dialog:))
+- [static func result<Value, Content>(value: Value, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:content:))
+- [static func result<Value>(value: Value, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:dialog:))
+- [static func result<Value, Content>(value: Value, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:dialog:content:))
+- [static func result<Value>(value: Value, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:dialog:snippetintent:))
+- [static func result<Value, Content>(value: Value, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(value:dialog:view:))
+- [static func result<Value>(value: Value, opensIntent: some AppIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:)-8v5op)
+- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:content:)-2f6ht)
+- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:content:)-95tmb)
+- [static func result<Value>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:)-1eg3x)
+- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:content:)-4iwem)
+- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, content: () -> Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:content:)-mwwf)
+- [static func result<Value>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:snippetintent:))
+- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:view:)-5sg4p)
+- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:view:)-88j6a)
+- [static func result<Value>(value: Value, opensIntent: some AppIntent, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:snippetintent:))
+- [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:view:)-12wbo)
+- [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, view: Content) -> Self](/documentation/appintents/intentresult/result(value:opensintent:view:)-5z5t0)
+- [static func result<Value>(value: Value, snippetIntent: some SnippetIntent) -> Self](/documentation/appintents/intentresult/result(value:snippetintent:))
+- [static func result<Value, Content>(value: Value, view: Content) -> Self](/documentation/appintents/intentresult/result(value:view:))
+- [static func result<Content>(view: Content) -> Self](/documentation/appintents/intentresult/result(view:))
+### Default Implementations
 
+- [IntentResult Implementations](/documentation/appintents/intentresult/intentresult-implementations)
+#### Type Methods
+
+- [static func result<OpensAppIntent>(opensIntent: OpensAppIntent) -> Self](/documentation/appintents/intentresult/result(opensintent:)-6l7s5)
+- [static func result<OpensAppIntent>(opensIntent: OpensAppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(opensintent:dialog:)-925mk)
+- [static func result<Value, OpensAppIntent>(value: Value, opensIntent: OpensAppIntent) -> Self](/documentation/appintents/intentresult/result(value:opensintent:)-1mbbt)
+- [static func result<Value, OpensAppIntent>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog) -> Self](/documentation/appintents/intentresult/result(value:opensintent:dialog:)-2j58s)
+
+
+- [IntentResultContainer](/documentation/appintents/intentresultcontainer)
+### Instance Properties
+
+- [var activityIdentifier: String?](/documentation/appintents/intentresultcontainer/activityidentifier)
+- [var dialog: IntentDialog?](/documentation/appintents/intentresultcontainer/dialog)
+- [var opensIntent: OpensAppIntent?](/documentation/appintents/intentresultcontainer/opensintent)
+
+- [OpensIntent](/documentation/appintents/opensintent)
+- [ProvidesDialog](/documentation/appintents/providesdialog)
+- [ReturnsValue](/documentation/appintents/returnsvalue)
+- [ShowsSnippetIntent](/documentation/appintents/showssnippetintent)
+- [ShowsSnippetView](/documentation/appintents/showssnippetview)
+- [ResultsCollection](/documentation/appintents/resultscollection)
+### Associated Types
+
+- [Result](/documentation/appintents/resultscollection/result)
+### Instance Properties
+
+- [var items: [Self.Result.ValueType]](/documentation/appintents/resultscollection/items)
+- [var promptLabel: LocalizedStringResource?](/documentation/appintents/resultscollection/promptlabel)
+- [var usesIndexedCollation: Bool](/documentation/appintents/resultscollection/usesindexedcollation)
+### Type Properties
+
+- [static var empty: Self](/documentation/appintents/resultscollection/empty)
+
+## Choices and confirmation
+
+- [IntentChoiceOption](/documentation/appintents/intentchoiceoption)
 ### Structures
 
 - [IntentChoiceOption.Style](/documentation/appintents/intentchoiceoption/style-swift.struct)
-
 #### Type Properties
 
 - [static var cancel: IntentChoiceOption.Style](/documentation/appintents/intentchoiceoption/style-swift.struct/cancel)
@@ -6301,31 +6658,39 @@ timestamp: 2026-02-19T07:56:01.983Z
 ### Initializers
 
 - [init(title: LocalizedStringResource, style: IntentChoiceOption.Style)](/documentation/appintents/intentchoiceoption/init(title:style:))
-
 ### Instance Properties
 
 - [let style: IntentChoiceOption.Style](/documentation/appintents/intentchoiceoption/style-swift.property)
 - [let title: LocalizedStringResource](/documentation/appintents/intentchoiceoption/title)
-
 ### Type Properties
 
 - [static var cancel: IntentChoiceOption](/documentation/appintents/intentchoiceoption/cancel)
-- [IntentModes](/documentation/appintents/intentmodes)
 
+- [ConfirmationConditions](/documentation/appintents/confirmationconditions)
+### Type Properties
+
+- [static let lowConfidenceSource: ConfirmationConditions](/documentation/appintents/confirmationconditions/lowconfidencesource)
+
+## Navigation and app launch
+
+- [AppIntentSceneDelegate](/documentation/appintents/appintentscenedelegate)
+### Instance Methods
+
+- [func scene(UIScene, willPerformAppIntent: any UISceneAppIntent)](/documentation/appintents/appintentscenedelegate/scene(_:willperformappintent:))
+
+- [IntentModes](/documentation/appintents/intentmodes)
 ### Structures
 
 - [IntentModes.Current](/documentation/appintents/intentmodes/current)
-
 #### Instance Properties
 
 - [var canContinueInForeground: Bool](/documentation/appintents/intentmodes/current/cancontinueinforeground)
-
 #### Type Properties
 
 - [static var background: IntentModes.Current](/documentation/appintents/intentmodes/current/background)
 - [static var foreground: IntentModes.Current](/documentation/appintents/intentmodes/current/foreground)
-- [IntentModes.ForegroundMode](/documentation/appintents/intentmodes/foregroundmode)
 
+- [IntentModes.ForegroundMode](/documentation/appintents/intentmodes/foregroundmode)
 #### Type Properties
 
 - [static var deferred: IntentModes.ForegroundMode](/documentation/appintents/intentmodes/foregroundmode/deferred)
@@ -6336,35 +6701,84 @@ timestamp: 2026-02-19T07:56:01.983Z
 
 - [static var background: IntentModes](/documentation/appintents/intentmodes/background)
 - [static var foreground: IntentModes](/documentation/appintents/intentmodes/foreground)
-
 ### Type Methods
 
 - [static func foreground(IntentModes.ForegroundMode) -> IntentModes](/documentation/appintents/intentmodes/foreground(_:))
-- [IntentURLRepresentation](/documentation/appintents/intenturlrepresentation)
 
-### Initializers
+- [CustomURLRepresentationParameterConvertible](/documentation/appintents/customurlrepresentationparameterconvertible)
+### Instance Properties
 
-- [init(String)](/documentation/appintents/intenturlrepresentation/init(_:))
+- [var urlRepresentationParameter: String?](/documentation/appintents/customurlrepresentationparameterconvertible/urlrepresentationparameter)
 
-## Macros
+## SiriKit migration
 
-- [macro UnionValue()](/documentation/appintents/unionvalue())
+- [Soup Chef with App Intents: Migrating custom intents](/documentation/sirikit/soup-chef-with-app-intents-migrating-custom-intents)
+- [CustomIntentMigratedAppIntent](/documentation/appintents/customintentmigratedappintent)
+### Specifying the migrated intent’s class name
+
+- [static var intentClassName: String](/documentation/appintents/customintentmigratedappintent/intentclassname)
+
+## Errors
+
+- [AppIntentError](/documentation/appintents/appintenterror)
+### Getting the error codes
+
+- [static var restartPerform: AppIntentError](/documentation/appintents/appintenterror/restartperform)
+### Enumerations
+
+- [AppIntentError.PermissionRequired](/documentation/appintents/appintenterror/permissionrequired)
+#### Type Properties
+
+- [static let bluetooth: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/bluetooth)
+- [static let contacts: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/contacts)
+- [static let localNetwork: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/localnetwork)
+- [static let photos: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/photos)
+- [static let siri: AppIntentError](/documentation/appintents/appintenterror/permissionrequired/siri)
+#### Type Methods
+
+- [static func location(precise: Bool) -> AppIntentError](/documentation/appintents/appintenterror/permissionrequired/location(precise:))
+
+- [AppIntentError.Unrecoverable](/documentation/appintents/appintenterror/unrecoverable)
+#### Type Properties
+
+- [static let entityNotFound: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/entitynotfound)
+- [static let featureCurrentlyRestricted: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/featurecurrentlyrestricted)
+- [static let networkFailure: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/networkfailure)
+- [static let notAllowed: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/notallowed)
+- [static let partialFailure: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/partialfailure)
+- [static let unknown: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/unknown)
+- [static let unsupportedOnDevice: AppIntentError](/documentation/appintents/appintenterror/unrecoverable/unsupportedondevice)
+
+- [AppIntentError.UserActionRequired](/documentation/appintents/appintenterror/useractionrequired)
+#### Type Properties
+
+- [static let accountSetup: AppIntentError](/documentation/appintents/appintenterror/useractionrequired/accountsetup)
+- [static let confirmation: AppIntentError](/documentation/appintents/appintenterror/useractionrequired/confirmation)
+- [static let signin: AppIntentError](/documentation/appintents/appintenterror/useractionrequired/signin)
+
+### Default Implementations
+
+- [CustomLocalizedStringResourceConvertible Implementations](/documentation/appintents/appintenterror/customlocalizedstringresourceconvertible-implementations)
+#### Instance Properties
+
+- [var localizedStringResource: LocalizedStringResource](/documentation/appintents/appintenterror/localizedstringresource)
+
+
+## Protocols
+
+- [UndoableIntent](/documentation/appintents/undoableintent)
+### Instance Properties
+
+- [var undoManager: UndoManager?](/documentation/appintents/undoableintent/undomanager)
 
 ## Enumerations
 
-- [AppShortcutPhraseToken](/documentation/appintents/appshortcutphrasetoken)
-
-### Getting the tokens
-
-- [case applicationName](/documentation/appintents/appshortcutphrasetoken/applicationname)
 - [VideoCategory](/documentation/appintents/videocategory)
-
 ### Enumeration Cases
 
 - [case freeform](/documentation/appintents/videocategory/freeform)
 - [case movies](/documentation/appintents/videocategory/movies)
 - [case tv](/documentation/appintents/videocategory/tv)
-
 ### Type Aliases
 
 - [VideoCategory.Specification](/documentation/appintents/videocategory/specification)
@@ -6373,5 +6787,5 @@ timestamp: 2026-02-19T07:56:01.983Z
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

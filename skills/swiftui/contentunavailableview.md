@@ -2,10 +2,10 @@
 title: ContentUnavailableView
 description: An interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 source: https://developer.apple.com/documentation/swiftui/contentunavailableview
-timestamp: 2026-02-19T07:52:37.118Z
+timestamp: 2026-04-09T12:04:34.751Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -68,8 +68,8 @@ struct ContentView: View {
 
 ## Getting built-in unavailable views
 
-- [search](/documentation/swiftui/contentunavailableview/search) Creates a  instance that conveys a search state.
-- [search(text:)](/documentation/swiftui/contentunavailableview/search(text:)) Creates a  instance that conveys a search state.
+- [search](/documentation/swiftui/contentunavailableview/search) Creates a `ContentUnavailableView` instance that conveys a search state.
+- [search(text:)](/documentation/swiftui/contentunavailableview/search(text:)) Creates a `ContentUnavailableView` instance that conveys a search state.
 
 ## Creating an unavailable view
 
@@ -83,5 +83,5 @@ struct ContentView: View {
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

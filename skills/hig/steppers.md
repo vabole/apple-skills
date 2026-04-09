@@ -2,7 +2,7 @@
 title: Steppers
 description: A stepper is a two-segment control that people use to increase or decrease an incremental value.
 source: https://developer.apple.com/design/human-interface-guidelines/steppers
-timestamp: 2026-01-17T15:45:23.340Z
+timestamp: 2026-04-09T13:37:25.815Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,7 +13,7 @@ timestamp: 2026-01-17T15:45:23.340Z
 
 > A stepper is a two-segment control that people use to increase or decrease an incremental value.
 
-
+![A stylized representation of a stepper control. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/78add8837be3be97de897bf330b30ec9/components-stepper-intro%402x.png)
 
 A stepper sits next to a field that displays its current value, because the stepper itself doesn’t display a value.
 
@@ -47,5 +47,5 @@ A stepper sits next to a field that displays its current value, because the step
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

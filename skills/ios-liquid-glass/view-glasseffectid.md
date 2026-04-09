@@ -2,10 +2,10 @@
 title: glassEffectID(_:in:)
 description: Associates an identity value to Liquid Glass effects defined within this view.
 source: https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in:)
-timestamp: 2026-01-17T15:42:39.748Z
+timestamp: 2026-04-09T12:04:24.831Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui) › [view](/documentation/swiftui/view)
+**Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
 
 **Instance Method**
 
@@ -21,9 +21,9 @@ nonisolated func glassEffectID(_ id: (some Hashable & Sendable)?, in namespace: 
 
 ## Discussion
 
-You use this modifier with the [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:)) view modifier and a [Glass Effect Container](/documentation/swiftui/glasseffectcontainer) view. When used together, SwiftUI uses the identifier to animate shapes to and from each other during transitions.
+You use this modifier with the [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:)) view modifier and a [GlassEffectContainer](/documentation/swiftui/glasseffectcontainer) view. When used together, SwiftUI uses the identifier to animate shapes to and from each other during transitions.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

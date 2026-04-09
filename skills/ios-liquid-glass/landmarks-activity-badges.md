@@ -2,10 +2,10 @@
 title: Landmarks: Displaying custom activity badges
 description: Provide people with a way to mark their adventures by displaying animated custom activity badges.
 source: https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges
-timestamp: 2026-02-19T07:56:02.477Z
+timestamp: 2026-04-09T13:37:28.029Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Sample Code**
 
@@ -25,7 +25,7 @@ This sample displays the badges in a vertical view that includes a toggle button
 
 ## Add a modifier to show badges in other views
 
-To make the badges available in other views, like `CollectionsView`, the sample uses a custom modifier, `ShowBadgesViewModifier`, as a [View Modifier](/documentation/swiftui/viewmodifier). The sample layers the badges over another view using a [ZStack](/documentation/swiftui/zstack), and positions the badge view in the lower trailing corner:
+To make the badges available in other views, like `CollectionsView`, the sample uses a custom modifier, `ShowBadgesViewModifier`, as a [ViewModifier](/documentation/swiftui/viewmodifier). The sample layers the badges over another view using a [ZStack](/documentation/swiftui/zstack), and positions the badge view in the lower trailing corner:
 
 ```swift
 private struct ShowsBadgesViewModifier: ViewModifier {
@@ -84,7 +84,7 @@ The morph effect is an animation for Liquid Glass views. During this animation, 
 
 To achieve the Liquid Glass morph effect, the app:
 
-- organizes the badges and toggle button into a [Glass Effect Container](/documentation/swiftui/glasseffectcontainer)
+- organizes the badges and toggle button into a [GlassEffectContainer](/documentation/swiftui/glasseffectcontainer)
 - adds [glassEffectID(_:in:)](/documentation/swiftui/view/glasseffectid(_:in:)) to each badge
 - adds [glassEffectID(_:in:)](/documentation/swiftui/view/glasseffectid(_:in:)) to the toggle button
 - wraps the command that toggles the `isExpanded` property in [withAnimation(_:_:)](/documentation/swiftui/withanimation(_:_:))
@@ -129,11 +129,11 @@ GlassEffectContainer(spacing: Constants.badgeGlassSpacing) {
 
 ## App features
 
-- [Landmarks: Applying a background extension effect](/documentation/swiftui/landmarks-applying-a-background-extension-effect)
-- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector)
-- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars)
+- [Landmarks: Applying a background extension effect](/documentation/swiftui/landmarks-applying-a-background-extension-effect) Configure an image to blur and extend under a sidebar or inspector panel.
+- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector) Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars) Organize toolbars into related groupings to improve their appearance and utility.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: Query
 description: A type that fetches models using the specified criteria, and manages those models so they remain in sync with the underlying data.
 source: https://developer.apple.com/documentation/swiftdata/query
-timestamp: 2026-01-19T10:21:53.652Z
+timestamp: 2026-04-09T12:04:32.338Z
 ---
 
-**Navigation:** [Swiftdata](/documentation/swiftdata)
+**Navigation:** [SwiftData](/documentation/swiftdata)
 
 **Structure**
 
@@ -38,7 +38,7 @@ timestamp: 2026-01-19T10:21:53.652Z
 
 ## Getting query configuration
 
-- [modelContext](/documentation/swiftdata/query/modelcontext) Current model context  interacts with.
+- [modelContext](/documentation/swiftdata/query/modelcontext) Current model context `Query` interacts with.
 - [fetchError](/documentation/swiftdata/query/fetcherror) An error encountered during the most recent attempt to fetch data.
 
 ## Accessing the value
@@ -47,12 +47,12 @@ timestamp: 2026-01-19T10:21:53.652Z
 
 ## Model fetch
 
-- [Filtering and sorting persistent data](/documentation/swiftdata/filtering-and-sorting-persistent-data)
-- [Query()](/documentation/swiftdata/query())
-- [Additional query macros](/documentation/swiftdata/additionalquerymacros)
-- [FetchDescriptor](/documentation/swiftdata/fetchdescriptor)
+- [Filtering and sorting persistent data](/documentation/swiftdata/filtering-and-sorting-persistent-data) Manage data store presentation using predicates and dynamic queries.
+- [Query()](/documentation/swiftdata/query()) Fetches all instances of the attached model type.
+- [Additional query macros](/documentation/swiftdata/additionalquerymacros) Supplementary macros that enable you to narrow query results and tell SwiftData how to sort and order those results.
+- [FetchDescriptor](/documentation/swiftdata/fetchdescriptor) A type that describes the criteria, sort order, and any additional configuration to use when performing a fetch.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

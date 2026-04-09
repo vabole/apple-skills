@@ -2,16 +2,16 @@
 title: AppIntent
 description: An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
 source: https://developer.apple.com/documentation/appintents/appintent
-timestamp: 2026-01-19T10:21:58.967Z
+timestamp: 2026-04-09T12:04:02.800Z
 ---
 
-**Navigation:** [Appintents](/documentation/appintents)
+**Navigation:** [App Intents](/documentation/appintents)
 
 **Protocol**
 
 # AppIntent
 
-**Available on:** iOS 16.0+, iPadOS 16.0+, Mac Catalyst undefined+, macOS 13.0+, tvOS 16.0+, visionOS undefined+, watchOS 9.0+
+**Available on:** iOS 16.0+, iPadOS 16.0+, Mac Catalyst, macOS 13.0+, tvOS 16.0+, visionOS, watchOS 9.0+
 
 > An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
 
@@ -25,8 +25,7 @@ To expose your app’s functionality to system experiences like Siri or the Shor
 
 The system instantiates an app intent you create parameter-less using the [init()](/documentation/appintents/appintent/init()) initializer whenever a person invokes it through a system service like Siri, Shortcuts, and so on. If available, the system sets parameters based on user input or other available sources. With set parameters, the system attempts to resolve them in the order of their declaration in the `AppIntent` body. After it resolves all parameters, the system calls [perform()](/documentation/appintents/appintent/perform()) to perform the app intent with its configured parameters. Note that the system retains the app intent and its output only for the duration of the invocation.
 
-> [!NOTE]
-> Session 10032: [10032](https://developer.apple.com/videos/play/wwdc2022/10032).
+> **Related sessions from WWDC22:** Session 10032: [Dive into App Intents](https://developer.apple.com/videos/play/wwdc2022/10032).
 
 ### Implement the AppIntent Protocol
 
@@ -39,7 +38,7 @@ struct OrderSoupIntent: AppIntent {
 }
 ```
 
-Then, declare the AppIntent’s parameters. When you implement an `AppIntent` type, parameters must be declared with the `@Parameter` property wrapper. For more information about declaring parameters, see [Adding-parameters-to-an-app](/documentation/appintents/adding-parameters-to-an-app-intent).
+Then, declare the AppIntent’s parameters. When you implement an `AppIntent` type, parameters must be declared with the `@Parameter` property wrapper. For more information about declaring parameters, see [Adding parameters to an app intent](/documentation/appintents/adding-parameters-to-an-app-intent).
 
 ```swift
 struct OrderSoupIntent: AppIntent {
@@ -51,7 +50,7 @@ struct OrderSoupIntent: AppIntent {
 }
 ```
 
-Next, implement the required [perform()](/documentation/appintents/appintent/perform())function: Validate your intent’s parameters, execute the intent, and return an [Intent Result](/documentation/appintents/intentresult) that represents the output of a completed intent; for example, a [Perform Result](/documentation/appintents/appintent/performresult).
+Next, implement the required [perform()](/documentation/appintents/appintent/perform())function: Validate your intent’s parameters, execute the intent, and return an [IntentResult](/documentation/appintents/intentresult) that represents the output of a completed intent; for example, a [PerformResult](/documentation/appintents/appintent/performresult).
 
 ```swift
 struct OrderSoupIntent: AppIntent {
@@ -175,6 +174,10 @@ struct OrderSoupIntent: AppIntent {
 - [AppIntent.Switch](/documentation/appintents/appintent/switch)
 - [AppIntent.When](/documentation/appintents/appintent/when)
 
+## URL representation
+
+- [IntentURLRepresentation](/documentation/appintents/intenturlrepresentation) The URL representation of an app intent.
+
 ## Instance Methods
 
 - [continueInForeground(_:alwaysConfirm:)](/documentation/appintents/appintent/continueinforeground(_:alwaysconfirm:)) A method you call to ask a person to continue an action in the foreground.
@@ -193,25 +196,11 @@ struct OrderSoupIntent: AppIntent {
 
 - [supportedModes](/documentation/appintents/appintent/supportedmodes) Defines the supported modes that describe the behavior of your app intent.
 
-## Actions
+## General actions
 
-- [AudioPlaybackIntent](/documentation/appintents/audioplaybackintent)
-- [AudioRecordingIntent](/documentation/appintents/audiorecordingintent)
-- [AudioStartingIntent](/documentation/appintents/audiostartingintent)
-- [CameraCaptureIntent](/documentation/appintents/cameracaptureintent)
-- [DeleteIntent](/documentation/appintents/deleteintent)
-- [DeprecatedAppIntent](/documentation/appintents/deprecatedappintent)
-- [ForegroundContinuableIntent](/documentation/appintents/foregroundcontinuableintent)
-- [OpenIntent](/documentation/appintents/openintent)
-- [OpenURLIntent](/documentation/appintents/openurlintent)
-- [PlayVideoIntent](/documentation/appintents/playvideointent)
-- [ProgressReportingIntent](/documentation/appintents/progressreportingintent)
-- [PushToTalkTransmissionIntent](/documentation/appintents/pushtotalktransmissionintent)
-- [URLRepresentableIntent](/documentation/appintents/urlrepresentableintent)
-- [SetValueIntent](/documentation/appintents/setvalueintent)
-- [ShowInAppSearchResultsIntent](/documentation/appintents/showinappsearchresultsintent)
+- [IntentDescription](/documentation/appintents/intentdescription) The human-readable description and metadata for an app intent.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

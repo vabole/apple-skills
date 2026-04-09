@@ -2,7 +2,7 @@
 title: RuleMark
 description: Chart content that represents data using a single horizontal or vertical rule.
 source: https://developer.apple.com/documentation/charts/rulemark
-timestamp: 2026-02-19T07:56:07.011Z
+timestamp: 2026-04-09T13:37:43.248Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -99,8 +99,7 @@ To plot a rule in a 3D chart, use the [init(x:y:z:)](/documentation/charts/rulem
 
 The rule extends along the axis that you provide a range for, and is positioned at the single points you specify for the other two axes.
 
-> [!IMPORTANT]
-> A 3D rule mark requires one parameter to be a numeric range and the other two parameters to be single numeric values.
+> **Important:** A 3D rule mark requires one parameter to be a numeric range and the other two parameters to be single numeric values.
 
 For example, the following `Chart3D` shows three rule marks. Each mark extends along one axis and is fixed at `0` on the other two.
 
@@ -153,14 +152,14 @@ Chart3D {
 
 ## Marks
 
-- [AreaMark](/documentation/charts/areamark)
-- [LineMark](/documentation/charts/linemark)
-- [PointMark](/documentation/charts/pointmark)
-- [RectangleMark](/documentation/charts/rectanglemark)
-- [BarMark](/documentation/charts/barmark)
-- [SectorMark](/documentation/charts/sectormark)
+- [AreaMark](/documentation/charts/areamark) Chart content that represents data using the area of one or more regions.
+- [LineMark](/documentation/charts/linemark) Chart content that represents data using a sequence of connected line segments.
+- [PointMark](/documentation/charts/pointmark) Chart content that represents data using points.
+- [RectangleMark](/documentation/charts/rectanglemark) Chart content that represents data using rectangles.
+- [BarMark](/documentation/charts/barmark) Chart content that represents data using bars.
+- [SectorMark](/documentation/charts/sectormark) A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: Button
 description: A control that initiates an action.
 source: https://developer.apple.com/documentation/swiftui/button
-timestamp: 2026-02-19T07:56:06.792Z
+timestamp: 2026-04-09T13:37:38.518Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -39,13 +39,13 @@ Button(action: signIn) {
 }
 ```
 
-For those common cases, you can also use the convenience initializers that take a title string or [Localized String Key](/documentation/swiftui/localizedstringkey) as their first parameter, and optionally a system image name or `ImageResource` as their second parameter, instead of a trailing closure:
+For those common cases, you can also use the convenience initializers that take a title string or [LocalizedStringKey](/documentation/swiftui/localizedstringkey) as their first parameter, and optionally a system image name or `ImageResource` as their second parameter, instead of a trailing closure:
 
 ```swift
 Button("Sign In", systemImage: "arrow.up", action: signIn)
 ```
 
-Prefer to use these convenience initializers, or a [Label](/documentation/swiftui/label) view, when providing both a title and an icon. This allows the button to dynamically adapt its appearance to render its title and icon correctly in containers such as toolbars and menus. For example, on iOS, buttons only display their icons by default when placed in toolbars, but show both a leading title and trailing icon in menus. Defining labels this way also helps with accessibility — for example, applying the [labelStyle(_:)](/documentation/swiftui/view/labelstyle(_:)) modifier with an [icon Only](/documentation/swiftui/labelstyle/icononly) style to the button will cause it to only visually display its icon, but still use its title to describe the button in accessibility modes like VoiceOver:
+Prefer to use these convenience initializers, or a [Label](/documentation/swiftui/label) view, when providing both a title and an icon. This allows the button to dynamically adapt its appearance to render its title and icon correctly in containers such as toolbars and menus. For example, on iOS, buttons only display their icons by default when placed in toolbars, but show both a leading title and trailing icon in menus. Defining labels this way also helps with accessibility — for example, applying the [labelStyle(_:)](/documentation/swiftui/view/labelstyle(_:)) modifier with an [iconOnly](/documentation/swiftui/labelstyle/icononly) style to the button will cause it to only visually display its icon, but still use its title to describe the button in accessibility modes like VoiceOver:
 
 ```swift
 Button("Sign In", systemImage: "arrow.up", action: signIn)
@@ -98,7 +98,7 @@ This pattern extends to most other container views in SwiftUI that have customiz
 
 ### Assigning a role
 
-You can optionally initialize a button with a [Button Role](/documentation/swiftui/buttonrole) that characterizes the button’s purpose. For example, you can create a [destructive](/documentation/swiftui/buttonrole/destructive) button for a deletion action:
+You can optionally initialize a button with a [ButtonRole](/documentation/swiftui/buttonrole) that characterizes the button’s purpose. For example, you can create a [destructive](/documentation/swiftui/buttonrole/destructive) button for a deletion action:
 
 ```swift
  Button("Delete", role: .destructive, action: delete)
@@ -126,7 +126,7 @@ If you apply the style to a container view, as in the example above, all the but
 
 ![A screenshot of two buttons, side by side, each with a capsule shaped](https://docs-assets.developer.apple.com/published/c8c08c1104d95b8ed8f6d0e35cf017db/Button-4%402x.png)
 
-You can also create custom styles. To add a custom appearance with standard interaction behavior, create a style that conforms to the [Button Style](/documentation/swiftui/buttonstyle) protocol. To customize both appearance and interaction behavior, create a style that conforms to the [Primitive Button Style](/documentation/swiftui/primitivebuttonstyle) protocol. Custom styles can also read the button’s role and use it to adjust the button’s appearance.
+You can also create custom styles. To add a custom appearance with standard interaction behavior, create a style that conforms to the [ButtonStyle](/documentation/swiftui/buttonstyle) protocol. To customize both appearance and interaction behavior, create a style that conforms to the [PrimitiveButtonStyle](/documentation/swiftui/primitivebuttonstyle) protocol. Custom styles can also read the button’s role and use it to adjust the button’s appearance.
 
 ## Conforms To
 
@@ -152,10 +152,10 @@ You can also create custom styles. To add a custom appearance with standard inte
 
 ## Creating a button to perform an App Intent
 
-- [init(_:intent:)](/documentation/swiftui/button/init(_:intent:)) Creates a button that performs an  and generates its label from a localized string key.
-- [init(intent:label:)](/documentation/swiftui/button/init(intent:label:)) Creates a button that performs an .
-- [init(_:role:intent:)](/documentation/swiftui/button/init(_:role:intent:)) Creates a button with a specified role that performs an  and generates its label from a string.
-- [init(role:intent:label:)](/documentation/swiftui/button/init(role:intent:label:)) Creates a button with a specified role that performs an .
+- [init(_:intent:)](/documentation/swiftui/button/init(_:intent:)) Creates a button that performs an `AppIntent` and generates its label from a localized string key.
+- [init(intent:label:)](/documentation/swiftui/button/init(intent:label:)) Creates a button that performs an `AppIntent`.
+- [init(_:role:intent:)](/documentation/swiftui/button/init(_:role:intent:)) Creates a button with a specified role that performs an `AppIntent` and generates its label from a string.
+- [init(role:intent:label:)](/documentation/swiftui/button/init(role:intent:label:)) Creates a button with a specified role that performs an `AppIntent`.
 - [init(_:image:role:intent:)](/documentation/swiftui/button/init(_:image:role:intent:)) Creates a button with a specified role that generates its label from a string and an image resource.
 - [init(_:systemImage:role:intent:)](/documentation/swiftui/button/init(_:systemimage:role:intent:)) Creates a button with a specified role that generates its label from a string and a system image.
 
@@ -165,16 +165,16 @@ You can also create custom styles. To add a custom appearance with standard inte
 
 ## Creating buttons
 
-- [buttonStyle(_:)](/documentation/swiftui/view/buttonstyle(_:))
-- [buttonBorderShape(_:)](/documentation/swiftui/view/buttonbordershape(_:))
-- [buttonRepeatBehavior(_:)](/documentation/swiftui/view/buttonrepeatbehavior(_:))
-- [buttonRepeatBehavior](/documentation/swiftui/environmentvalues/buttonrepeatbehavior)
-- [ButtonBorderShape](/documentation/swiftui/buttonbordershape)
-- [ButtonRole](/documentation/swiftui/buttonrole)
-- [ButtonRepeatBehavior](/documentation/swiftui/buttonrepeatbehavior)
-- [ButtonSizing](/documentation/swiftui/buttonsizing)
+- [buttonStyle(_:)](/documentation/swiftui/view/buttonstyle(_:)) Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
+- [buttonBorderShape(_:)](/documentation/swiftui/view/buttonbordershape(_:)) Sets the border shape for buttons in this view.
+- [buttonRepeatBehavior(_:)](/documentation/swiftui/view/buttonrepeatbehavior(_:)) Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
+- [buttonRepeatBehavior](/documentation/swiftui/environmentvalues/buttonrepeatbehavior) Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
+- [ButtonBorderShape](/documentation/swiftui/buttonbordershape) A shape used to draw a button’s border.
+- [ButtonRole](/documentation/swiftui/buttonrole) A value that describes the purpose of a button.
+- [ButtonRepeatBehavior](/documentation/swiftui/buttonrepeatbehavior) The options for controlling the repeatability of button actions.
+- [ButtonSizing](/documentation/swiftui/buttonsizing) The sizing behavior of `Button`s and other button-like controls.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

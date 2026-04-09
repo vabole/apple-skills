@@ -2,7 +2,7 @@
 title: LineMark
 description: Chart content that represents data using a sequence of connected line segments.
 source: https://developer.apple.com/documentation/charts/linemark
-timestamp: 2026-02-19T07:56:08.754Z
+timestamp: 2026-04-09T13:37:41.360Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -91,10 +91,9 @@ var body: some View {
 }
 ```
 
-![Multi-series line chart with date on x-axis and hours of sunshine on y-axis. Two lines showing 12 points representing hours of sunshine in a month for  a city. Seattle: 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62 and Cupertino: 1 196, 2 204, 3 253, 4 288, 5 311, 6 342, 7 360, 8 331, 9 300, 10 246, 11 212, 12 199.](https://docs-assets.developer.apple.com/published/664a5f51f8a32304b545b80911697bb0/LineMarkSwift.LineMarkMultiSeriesLineChart%402x.png)
+![Multi-series line chart with date on x-axis and hours of sunshine on y-axis. Two lines showing 12 points representing hours of sunshine in a month for a city. Seattle: 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62 and Cupertino: 1 196, 2 204, 3 253, 4 288, 5 311, 6 342, 7 360, 8 331, 9 300, 10 246, 11 212, 12 199.](https://docs-assets.developer.apple.com/published/664a5f51f8a32304b545b80911697bb0/LineMarkSwift.LineMarkMultiSeriesLineChart%402x.png)
 
-> [!NOTE]
-> Colors are repeated if the number of series is greater than the total number of colors.
+> **Note:** Colors are repeated if the number of series is greater than the total number of colors.
 
 ## Conforms To
 
@@ -111,14 +110,14 @@ var body: some View {
 
 ## Marks
 
-- [AreaMark](/documentation/charts/areamark)
-- [PointMark](/documentation/charts/pointmark)
-- [RectangleMark](/documentation/charts/rectanglemark)
-- [RuleMark](/documentation/charts/rulemark)
-- [BarMark](/documentation/charts/barmark)
-- [SectorMark](/documentation/charts/sectormark)
+- [AreaMark](/documentation/charts/areamark) Chart content that represents data using the area of one or more regions.
+- [PointMark](/documentation/charts/pointmark) Chart content that represents data using points.
+- [RectangleMark](/documentation/charts/rectanglemark) Chart content that represents data using rectangles.
+- [RuleMark](/documentation/charts/rulemark) Chart content that represents data using a single horizontal or vertical rule.
+- [BarMark](/documentation/charts/barmark) Chart content that represents data using bars.
+- [SectorMark](/documentation/charts/sectormark) A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

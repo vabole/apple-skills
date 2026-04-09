@@ -2,10 +2,10 @@
 title: Spacer
 description: A flexible space that expands along the major axis of its containing stack layout, or on both axes if not contained in a stack.
 source: https://developer.apple.com/documentation/swiftui/spacer
-timestamp: 2026-02-19T07:56:11.191Z
+timestamp: 2026-04-09T13:37:44.131Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -115,9 +115,9 @@ struct ChecklistRow: View {
 
 ## Separators
 
-- [Divider](/documentation/swiftui/divider)
+- [Divider](/documentation/swiftui/divider) A visual element that can be used to separate other content.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

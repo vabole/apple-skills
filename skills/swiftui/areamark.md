@@ -2,7 +2,7 @@
 title: AreaMark
 description: Chart content that represents data using the area of one or more regions.
 source: https://developer.apple.com/documentation/charts/areamark
-timestamp: 2026-02-19T07:56:08.120Z
+timestamp: 2026-04-09T13:37:37.829Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -46,7 +46,7 @@ struct Food: Identifiable {
 }
 ```
 
-You can create labeled data in the form of [Plottable Value](/documentation/charts/plottablevalue) instances for each of the `x` and `y` inputs to an area mark:
+You can create labeled data in the form of [PlottableValue](/documentation/charts/plottablevalue) instances for each of the `x` and `y` inputs to an area mark:
 
 ```swift
 Chart(cheeseburgerCost) { cost in
@@ -61,7 +61,7 @@ The resulting chart automatically scales and labels the axes based on the data, 
 
 ![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](https://docs-assets.developer.apple.com/published/36b91667605910cb6256e819437543de/AreaMark-1-macOS%402x.png)
 
-If you want only the line without filling in the area below the line, use [Line Mark](/documentation/charts/linemark) instead.
+If you want only the line without filling in the area below the line, use [LineMark](/documentation/charts/linemark) instead.
 
 ### Add detail with a stacked area chart
 
@@ -185,14 +185,14 @@ This creates a filled region that’s shaped by the start and end points on each
 
 ## Marks
 
-- [LineMark](/documentation/charts/linemark)
-- [PointMark](/documentation/charts/pointmark)
-- [RectangleMark](/documentation/charts/rectanglemark)
-- [RuleMark](/documentation/charts/rulemark)
-- [BarMark](/documentation/charts/barmark)
-- [SectorMark](/documentation/charts/sectormark)
+- [LineMark](/documentation/charts/linemark) Chart content that represents data using a sequence of connected line segments.
+- [PointMark](/documentation/charts/pointmark) Chart content that represents data using points.
+- [RectangleMark](/documentation/charts/rectanglemark) Chart content that represents data using rectangles.
+- [RuleMark](/documentation/charts/rulemark) Chart content that represents data using a single horizontal or vertical rule.
+- [BarMark](/documentation/charts/barmark) Chart content that represents data using bars.
+- [SectorMark](/documentation/charts/sectormark) A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

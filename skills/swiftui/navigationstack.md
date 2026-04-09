@@ -2,10 +2,10 @@
 title: NavigationStack
 description: A view that displays a root view and enables you to present additional views over the root view.
 source: https://developer.apple.com/documentation/swiftui/navigationstack
-timestamp: 2026-01-17T15:34:41.583Z
+timestamp: 2026-04-09T12:04:38.003Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -21,9 +21,9 @@ timestamp: 2026-01-17T15:34:41.583Z
 
 ## Overview
 
-Use a navigation stack to present a stack of views over a root view. People can add views to the top of the stack by clicking or tapping a [Navigation Link](/documentation/swiftui/navigationlink), and remove views using built-in, platform-appropriate controls, like a Back button or a swipe gesture. The stack always displays the most recently added view that hasn’t been removed, and doesn’t allow the root view to be removed.
+Use a navigation stack to present a stack of views over a root view. People can add views to the top of the stack by clicking or tapping a [NavigationLink](/documentation/swiftui/navigationlink), and remove views using built-in, platform-appropriate controls, like a Back button or a swipe gesture. The stack always displays the most recently added view that hasn’t been removed, and doesn’t allow the root view to be removed.
 
-To create navigation links, associate a view with a data type by adding a [navigationDestination(for:destination:)](/documentation/swiftui/view/navigationdestination(for:destination:)) modifier inside the stack’s view hierarchy. Then initialize a [Navigation Link](/documentation/swiftui/navigationlink) that presents an instance of the same kind of data. The following stack displays a `ParkDetails` view for navigation links that present data of type `Park`:
+To create navigation links, associate a view with a data type by adding a [navigationDestination(for:destination:)](/documentation/swiftui/view/navigationdestination(for:destination:)) modifier inside the stack’s view hierarchy. Then initialize a [NavigationLink](/documentation/swiftui/navigationlink) that presents an instance of the same kind of data. The following stack displays a `ParkDetails` view for navigation links that present data of type `Park`:
 
 ```swift
 NavigationStack {
@@ -73,7 +73,7 @@ The `showParks` method replaces the stack’s display with a view that shows det
 
 To create a stack that can present more than one kind of view, you can add multiple [navigationDestination(for:destination:)](/documentation/swiftui/view/navigationdestination(for:destination:)) modifiers inside the stack’s view hierarchy, with each modifier presenting a different data type. The stack matches navigation links with navigation destinations based on their respective data types.
 
-To create a path for programmatic navigation that contains more than one kind of data, you can use a [Navigation Path](/documentation/swiftui/navigationpath) instance as the path.
+To create a path for programmatic navigation that contains more than one kind of data, you can use a [NavigationPath](/documentation/swiftui/navigationpath) instance as the path.
 
 ## Conforms To
 
@@ -89,12 +89,12 @@ To create a path for programmatic navigation that contains more than one kind of
 
 ## Stacking views in one column
 
-- [NavigationPath](/documentation/swiftui/navigationpath)
-- [navigationDestination(for:destination:)](/documentation/swiftui/view/navigationdestination(for:destination:))
-- [navigationDestination(isPresented:destination:)](/documentation/swiftui/view/navigationdestination(ispresented:destination:))
-- [navigationDestination(item:destination:)](/documentation/swiftui/view/navigationdestination(item:destination:))
+- [NavigationPath](/documentation/swiftui/navigationpath) A type-erased list of data representing the content of a navigation stack.
+- [navigationDestination(for:destination:)](/documentation/swiftui/view/navigationdestination(for:destination:)) Associates a destination view with a presented data type for use within a navigation stack.
+- [navigationDestination(isPresented:destination:)](/documentation/swiftui/view/navigationdestination(ispresented:destination:)) Associates a destination view with a binding that can be used to push the view onto a [NavigationStack](/documentation/swiftui/navigationstack).
+- [navigationDestination(item:destination:)](/documentation/swiftui/view/navigationdestination(item:destination:)) Associates a destination view with a bound value for use within a navigation stack or navigation split view
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: SubscriptionStoreView
 description: A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 source: https://developer.apple.com/documentation/storekit/subscriptionstoreview
-timestamp: 2026-02-19T07:52:37.005Z
+timestamp: 2026-04-09T12:04:28.655Z
 ---
 
-**Navigation:** [Storekit](/documentation/storekit)
+**Navigation:** [StoreKit](/documentation/storekit)
 
 **Structure**
 
@@ -36,13 +36,13 @@ If you provide a subscription group identifier or a collection of product identi
 The subscription store view doesn’t draw a background by default. You can add a background as follows:
 
 - To layer a background behind the view, use a view modifier, such as `background(alignment:content:)`.
-- To set the container background of the subscription store using a view, use the `containerBackground(_:for:)` or `containerBackground(for:alignment:content:)` view modifier and specify a [Container Background Placement](/documentation/SwiftUI/ContainerBackgroundPlacement), such as [subscription Store Header](/documentation/SwiftUI/ContainerBackgroundPlacement/subscriptionStoreHeader).
+- To set the container background of the subscription store using a view, use the `containerBackground(_:for:)` or `containerBackground(for:alignment:content:)` view modifier and specify a [ContainerBackgroundPlacement](/documentation/SwiftUI/ContainerBackgroundPlacement), such as [subscriptionStoreHeader](/documentation/SwiftUI/ContainerBackgroundPlacement/subscriptionStoreHeader).
 
 You can optionally provide a view as a decorative icon next to each subscription option. Use the [subscriptionStoreControlIcon(icon:)](/documentation/SwiftUI/View/subscriptionStoreControlIcon(icon:)) view modifier to set a view that decorates individual subscription options within a subscription store.
 
 ### Order and filter subscriptions
 
-If you create the subscription store view by providing a subscription group identifier, the system orders the subscription options according to their rank. If the customer is already subscribed, you may want to merchandise upgrade or crossgrade options. By default, the subscription store view lists all the subscriptions in the group. To hide certain subscription options, provide the `visibleRelationships` parameter in the initializer. For more information about the visible relationships, see [Subscription Relationship](/documentation/storekit/product/subscriptionrelationship).
+If you create the subscription store view by providing a subscription group identifier, the system orders the subscription options according to their rank. If the customer is already subscribed, you may want to merchandise upgrade or crossgrade options. By default, the subscription store view lists all the subscriptions in the group. To hide certain subscription options, provide the `visibleRelationships` parameter in the initializer. For more information about the visible relationships, see [Product.SubscriptionRelationship](/documentation/storekit/product/subscriptionrelationship).
 
 If you create the subscription store view using one of the other initializers, the view orders the subscriptions according to the collection parameter’s order. The view excludes subscriptions that you don’t include in the collection parameter.
 
@@ -62,7 +62,7 @@ The subscription store view automatically shows a Close button. To override this
 
 ### Style the subscription store view
 
-You can further customize the subscription store’s appearance using control styles. Use subscription store control styles to customize the display of subscription options, and how people interact with your store. To try out standard styles, such as [Picker Subscription Store Control Style](/documentation/storekit/pickersubscriptionstorecontrolstyle), apply the style using the [subscriptionStoreControlStyle(_:)](/documentation/SwiftUI/View/subscriptionStoreControlStyle(_:)) modifier.
+You can further customize the subscription store’s appearance using control styles. Use subscription store control styles to customize the display of subscription options, and how people interact with your store. To try out standard styles, such as [PickerSubscriptionStoreControlStyle](/documentation/storekit/pickersubscriptionstorecontrolstyle), apply the style using the [subscriptionStoreControlStyle(_:)](/documentation/SwiftUI/View/subscriptionStoreControlStyle(_:)) modifier.
 
 ## Conforms To
 
@@ -95,12 +95,12 @@ You can further customize the subscription store’s appearance using control st
 
 ## Merchandising In-App Purchases, subscriptions, and offers
 
-- [ProductView](/documentation/storekit/productview)
-- [StoreView](/documentation/storekit/storeview)
+- [ProductView](/documentation/storekit/productview) A view that merchandises an individual In-App Purchase product.
+- [StoreView](/documentation/storekit/storeview) A view that merchandises a collection of In-App Purchase products.
 - [SubscriptionOfferView](/documentation/storekit/subscriptionofferview)
-- [Backyard Birds: Building an app with SwiftData and widgets](/documentation/SwiftUI/Backyard-birds-sample)
+- [Backyard Birds: Building an app with SwiftData and widgets](/documentation/SwiftUI/Backyard-birds-sample) Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

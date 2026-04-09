@@ -2,7 +2,7 @@
 title: SF Symbols
 description: SF Symbols provides thousands of consistent, highly configurable symbols that integrate seamlessly with the San Francisco system font, automatically aligning with text in all weights and sizes.
 source: https://developer.apple.com/design/human-interface-guidelines/sf-symbols
-timestamp: 2026-01-17T15:44:52.337Z
+timestamp: 2026-04-09T13:37:24.623Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,7 +13,7 @@ timestamp: 2026-01-17T15:44:52.337Z
 
 > SF Symbols provides thousands of consistent, highly configurable symbols that integrate seamlessly with the San Francisco system font, automatically aligning with text in all weights and sizes.
 
-
+![A sketch of the SF Symbols icon. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/06d528652b87b23f1cecaf5faceedf30/foundations-sf-symbols-intro%402x.png)
 
 You can use a symbol to convey an object or concept wherever interface icons can appear, such as in toolbars, tab bars, context menus, and within text.
 
@@ -27,9 +27,15 @@ SF Symbols provides four rendering modes — monochrome, hierarchical, palette, 
 
 To support the rendering modes, SF Symbols organizes a symbol’s paths into distinct layers. For example, the `cloud.sun.rain.fill` symbol consists of three layers: the primary layer contains the cloud paths, the secondary layer contains the paths that define the sun and its rays, and the tertiary layer contains the raindrop paths.
 
+![An image of the cloud sun rain fill symbol. The cloud is black and the raindrops and sun are gray to indicate that the cloud is in the primary layer.](https://docs-assets.developer.apple.com/published/42c350caa5e5117d40d45ac28c258832/sf-three-layers-primary%402x.png)
+
+![An image of the cloud sun rain fill symbol. The sun is black and the raindrops and cloud are gray to indicate that the sun is in the secondary layer.](https://docs-assets.developer.apple.com/published/9acc461ef73c512ab21e4713fcdc75a3/sf-three-layers-secondary%402x.png)
+
+![An image of the cloud sun rain fill symbol. The raindrops are black and the sun and cloud are gray to indicate that the raindrops are in the primary layer.](https://docs-assets.developer.apple.com/published/f2ec783b9aedc7f59c3485efb83fbb94/sf-three-layers-tertiary%402x.png)
+
 Depending on the rendering mode you choose, a symbol can produce various appearances. For example, Hierarchical rendering mode assigns a different opacity of a single color to each layer, creating a visual hierarchy that gives depth to the symbol.
 
-
+![An image of the cloud sun rain fill symbol that uses three different opacities of the system blue color in the symbol’s three different layers: the cloud is fully opaque, the sun is about 50% opaque, and the raindrops are about 25% opaque.](https://docs-assets.developer.apple.com/published/35fe9f56dee989f094845e640951fef5/sf-three-layers-color%402x.png)
 
 To learn more about supporting rendering modes in custom symbols, see [Custom symbols](/design/human-interface-guidelines/sf-symbols#Custom-symbols).
 
@@ -37,19 +43,19 @@ SF Symbols supports the following rendering modes.
 
 **Monochrome** — Applies one color to all layers in a symbol. Within a symbol, paths render in the color you specify or as a transparent shape within a color-filled path.
 
-
+![A diagram showing a row of eight symbols, all of which use a single opacity of the system blue color.](https://docs-assets.developer.apple.com/published/b296a9ee1b06b49c011209c83b537096/sf-monochrome%402x.png)
 
 **Hierarchical** — Applies one color to all layers in a symbol, varying the color’s opacity according to each layer’s hierarchical level.
 
-
+![A diagram showing a row of eight symbols, each of which uses different opacities of the system blue color. From the left, the square and arrow up symbol uses full opacity for the arrow and low opacity in the square. Next, folder badge plus uses full opacity for the badge and low opacity for the folder. Trash slash uses full opacity for the slash and low opacity for the can. Calendar day timeline right uses full opacity for the horizontal indicator and low opacity for the square and dots. List number uses full opacity for the column of numbers and low opacity for the horizontal lines. Text format A B C dotted underline uses full opacity for the dots under the low-opacity letters. iPhone radio waves left and right uses full opacity for the device outline, mid opacity in the screen area, and low opacity for the radio wave lines. Lastly, the PC symbol uses full opacity for the device outline and the onscreen sad face and horizontal lines and mid opacity in the screen background.](https://docs-assets.developer.apple.com/published/c035476f6266b094b051d4e392329092/sf-hierarchical%402x.png)
 
 **Palette** — Applies two or more colors to a symbol, using one color per layer. Specifying only two colors for a symbol that defines three levels of hierarchy means the secondary and tertiary layers use the same color.
 
-
+![A diagram showing a row of eight symbols, each of which uses a combination of gray and the system blue color. From the left, the square and arrow up symbol uses blue for the arrow and light gray for the square. Next, folder badge plus uses blue for the badge and light gray for the folder. Trash slash uses blue for the slash and light gray for the can. Calendar day timeline right uses blue for the horizontal indicator and light gray for the square and dots. List number uses blue for the column of numbers and light gray for the horizontal lines. Text format A B C dotted underline uses blue for the dots under the light gray letters. iPhone radio waves left and right uses blue for the device outline, medium gray in the screen area, and light gray for the radio wave lines. Lastly, the PC symbol uses blue for the device outline and the onscreen sad face and horizontal lines and medium gray in the screen background.](https://docs-assets.developer.apple.com/published/5ea6a976464ec36e5dbdbf30588a25e0/sf-palette%402x.png)
 
 **Multicolor** — Applies intrinsic colors to some symbols to enhance meaning. For example, the `leaf` symbol uses green to reflect the appearance of leaves in the physical world, whereas the `trash.slash` symbol uses red to signal data loss. Some multicolor symbols include layers that can receive other colors.
 
-
+![A diagram showing a row of eight symbols, using combinations of various colors. From the left, the square and arrow up symbol uses blue for all lines. Next, folder badge plus uses green for the badge and blue for the folder. Trash slash uses red for both the slash and the can. Calendar day timeline right uses red for the horizontal indicator, dark gray for the square, and light gray for the dots. List number uses black for the column of numbers and medium gray for the horizontal lines. Text format A B C dotted underline uses red for the dots under the black letters. iPhone radio waves left and right uses blue for all lines. Lastly, the PC symbol uses yellow for the device outline, white for the onscreen sad face and horizontal lines, and blue in the screen background.](https://docs-assets.developer.apple.com/published/82097ab3d98f098d12935ab4d6c1c896/sf-multicolor%402x.png)
 
 Regardless of rendering mode, using system-provided colors ensures that symbols automatically adapt to accessibility accommodations and appearance modes like vibrancy and Dark Mode. For developer guidance, see [renderingMode(_:)](https://developer.apple.com/documentation/swiftui/image/renderingmode(_:)).
 
@@ -59,13 +65,17 @@ Regardless of rendering mode, using system-provided colors ensures that symbols 
 
 In SF Symbols 7 and later, gradient rendering generates a smooth linear gradient from a single source color. You can use gradients across all rendering modes for both system and custom colors and for custom symbols. Gradients render for symbols of any size, but look best at larger sizes.
 
+![The sun symbol with a solid yellow fill.](https://docs-assets.developer.apple.com/published/2df52fad04d6250f02143138ff76da14/sf-symbols-sun-solid-fill%402x.png)
+
+![The sun symbol with a gradient fill derived from a single yellow source color. The gradient color is bright on the left edge of the symbol, and subtly darkens as it approaches the right edge.](https://docs-assets.developer.apple.com/published/18a48b9b3b9f3842ff42f1331edeb5fb/sf-symbols-sun-gradient-fill%402x.png)
+
 ## Variable color
 
 With variable color, you can represent a characteristic that can change over time — like capacity or strength — regardless of rendering mode. To visually communicate such a change, variable color applies color to different layers of a symbol as a value reaches different thresholds between zero and 100 percent.
 
 For example, you could use variable color with the `speaker.wave.3` symbol to communicate three different ranges of sound — plus the state where there’s no sound — by mapping the layers that represent the curved wave paths to different ranges of decibel values. In the case of no sound, no wave layers get color. In all other cases, a wave layer receives color when the sound reaches a threshold the system defines based on the  number of nonzero states you want to represent.
 
-
+![A diagram showing four versions of the speaker wave three symbol, each of which displays color in a different number of wave paths. From the left, the number of waves with color is zero, one, two, and three.](https://docs-assets.developer.apple.com/published/e03af602ef484d26ff5cc3428e98079a/sf-variable-color%402x.png)
 
 Sometimes, it can make sense for some of a symbol’s layers to opt out of variable color. For example, in the `speaker.wave.3` symbol shown above, the layer that contains the speaker path doesn’t receive variable color because a speaker doesn’t change as the sound level changes. A symbol can support variable color in any number of layers.
 
@@ -75,11 +85,17 @@ Sometimes, it can make sense for some of a symbol’s layers to opt out of varia
 
 SF Symbols provides symbols in a wide range of weights and scales to help you create adaptable designs.
 
-
+![A diagram showing the square and arrow up symbol in all 27 weights and scales.](https://docs-assets.developer.apple.com/published/a46e2c294c605c4f5e5f626c67d6bb2d/sf-scales-weights%402x.png)
 
 Each of the nine symbol weights — from ultralight to black — corresponds to a weight of the San Francisco system font, helping you achieve precise weight matching between symbols and adjacent text, while supporting flexibility for different sizes and contexts.
 
 Each symbol is also available in three scales: small, medium (the default), and large. The scales are defined relative to the cap height of the San Francisco system font.
+
+![A diagram showing the first of three images of the plus circle symbol followed by the capitalized word add. In each image, the word uses the same size, but the symbol uses a different size. The symbol size is small in this image. Two parallel horizontal lines appear across all three images. The top line shows the height of the capital letter A and the bottom line is the baseline under the word add. In this small symbol, the circle touches both lines.](https://docs-assets.developer.apple.com/published/bf6a6d81c531a772bbe9c768af32f0b8/sf-symbol-scale-small%402x.png)
+
+![The second of three images of the plus circle symbol followed by the capitalized word add. In this medium symbol, the circle extends slightly above and below the lines.](https://docs-assets.developer.apple.com/published/aa672f59358a8bb354e4ea9e7d258467/sf-symbol-scale-medium%402x.png)
+
+![The third of three images of the plus circle symbol followed by the capitalized word add. In this large symbol, the vertical line of the plus sign almost touches both lines.](https://docs-assets.developer.apple.com/published/6696a9dbf59f8ef7118ac712067de2e6/sf-symbol-scale-large%402x.png)
 
 Specifying a scale lets you adjust a symbol’s emphasis compared to adjacent text, without disrupting the weight matching with text that uses the same point size. For developer guidance, see [imageScale(_:)](/documentation/SwiftUI/View/imageScale(_:)) (SwiftUI), [UIImage.SymbolScale](/documentation/UIKit/UIImage/SymbolScale) (UIKit), and [NSImage.SymbolConfiguration](/documentation/AppKit/NSImage/SymbolConfiguration-swift.class) (AppKit).
 
@@ -91,11 +107,11 @@ Outline is the most common variant in SF Symbols. An outlined symbol has no soli
 
 In addition to outline and fill, SF Symbols also defines variants that include a slash or enclose a symbol within a shape like a circle, square, or rectangle. In many cases, enclosed and slash variants can combine with outline or fill variants.
 
-
+![A diagram showing two rows of the same five symbols. In the top row, every symbol uses the outline variant; the bottom row shows the fill variant of each symbol. From the left, the symbols are heart, heart slash, heart circle, heart square, and a heart in a rectangle.](https://docs-assets.developer.apple.com/published/c4486c6d1dc36ea164665276e912139a/sf-variants%402x.png)
 
 SF Symbols provides many variants for specific languages and writing systems, including Latin, Arabic, Hebrew, Hindi, Thai, Chinese, Japanese, Korean, Cyrillic, Devanagari, and several Indic numeral systems. Language- and script-specific variants adapt automatically when the device language changes. For guidance, see [Images](/design/human-interface-guidelines/right-to-left#Images).
 
-
+![A diagram with eight rows of the same twelve symbols, where each row shows a localized version of the symbol. From the left the symbols are doc rich text, doc rich text fill, character book closed, character book closed fill, character bubble, character bubble fill, character, text format superscript, text format subscript, text format size, character text box, and character cursor I beam.](https://docs-assets.developer.apple.com/published/cf9d526c8f3a39b600f0226125a2b228/sf-localized%402x.png)
 
 Symbol variants support a range of design goals. For example:
 
@@ -153,6 +169,8 @@ The arrangement of layers within a symbol determines how variable color behaves 
 
 If you need a symbol that SF Symbols doesn’t provide, you can create your own. To create a custom symbol, first export the template for a symbol that’s similar to the design you want, then use a vector-editing tool to modify it. For developer guidance, see [Creating custom symbol images for your app](/documentation/UIKit/creating-custom-symbol-images-for-your-app).
 
+> **Important:** SF Symbols includes copyrighted symbols that depict Apple products and features. You can display these symbols in your app, but you can’t customize them. To help you identify a noncustomizable symbol, the SF Symbols app badges it with an Info icon; to help you use the symbol correctly, the inspector pane describes its usage restrictions.
+
 Using a process called *annotating*, you can assign a specific color — or a specific hierarchical level, such as primary, secondary, or tertiary — to each layer in a custom symbol. Depending on the rendering modes you support, you can use a different mode in each instance of the symbol in your app.
 
 **Use the template as a guide.** Create a custom symbol that’s consistent with the ones the system provides in level of detail, optical weight, alignment, position, and perspective. Strive to design a symbol that is:
@@ -204,7 +222,14 @@ For guidance, see [Icons](/design/human-interface-guidelines/icons).
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| July 28, 2025 | Updated with guidance for Draw animations and gradient rendering in SF Symbols 7. |
+| June 10, 2024 | Updated with guidance for new animations and features of SF Symbols 6. |
+| June 5, 2023 | Added a new section on animations. Included animation guidance for custom symbols. |
+| September 14, 2022 | Added a new section on variable color. Removed instructions on creating custom symbol paths, exporting templates, and layering paths, deferring to developer articles that cover these topics. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

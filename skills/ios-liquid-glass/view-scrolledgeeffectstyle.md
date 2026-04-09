@@ -2,10 +2,10 @@
 title: scrollEdgeEffectStyle(_:for:)
 description: Configures the scroll edge effect style for scroll views within this hierarchy.
 source: https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectstyle(_:for:)
-timestamp: 2026-01-17T15:42:39.152Z
+timestamp: 2026-04-09T12:04:25.146Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui) › [view](/documentation/swiftui/view)
+**Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
 
 **Instance Method**
 
@@ -36,11 +36,11 @@ ScrollView {
 
 ## Configuring scroll edge effects
 
-- [scrollEdgeEffectHidden(_:for:)](/documentation/swiftui/view/scrolledgeeffecthidden(_:for:))
-- [ScrollEdgeEffectStyle](/documentation/swiftui/scrolledgeeffectstyle)
-- [safeAreaBar(edge:alignment:spacing:content:)](/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:))
+- [scrollEdgeEffectHidden(_:for:)](/documentation/swiftui/view/scrolledgeeffecthidden(_:for:)) Hides any scroll edge effects for scroll views within this hierarchy.
+- [ScrollEdgeEffectStyle](/documentation/swiftui/scrolledgeeffectstyle) A structure that defines the style of pocket a scroll view will have.
+- [safeAreaBar(edge:alignment:spacing:content:)](/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:)) Shows the specified content as a custom bar beside the modified view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

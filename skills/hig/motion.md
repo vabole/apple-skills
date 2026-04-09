@@ -2,7 +2,7 @@
 title: Motion
 description: Beautiful, fluid motions bring the interface to life, conveying status, providing feedback and instruction, and enriching the visual experience of your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/motion
-timestamp: 2026-01-17T15:44:51.133Z
+timestamp: 2026-04-09T13:37:21.565Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,7 +13,7 @@ timestamp: 2026-01-17T15:44:51.133Z
 
 > Beautiful, fluid motions bring the interface to life, conveying status, providing feedback and instruction, and enriching the visual experience of your app or game.
 
-
+![A sketch of three overlapping diamonds, suggesting the movement of an element from left to right. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/1a0efd7807cfcba7a5821be86b20bafc/foundations-motion-intro%402x.png)
 
 Many system components automatically include motion, letting you offer familiar and consistent experiences throughout your app or game. System components might also adjust their motion in response to factors like accessibility settings or different input methods. For example, the movement of [Liquid Glass](/design/human-interface-guidelines/materials#Liquid-Glass) responds to direct touch interaction with greater emphasis to reinforce the feeling of a tactile experience, but produces a more subdued effect when a person interacts using a trackpad.
 
@@ -55,6 +55,8 @@ In addition to subtly communicating context, drawing attention to information, a
 
 **Help people remain comfortable when showing the movement of large virtual objects.** If an object is large enough to fill a lot of the [Field of view](/design/human-interface-guidelines/spatial-layout#Field-of-view), occluding most or all of [Immersion and passthrough](/design/human-interface-guidelines/immersive-experiences#Immersion-and-passthrough), people can naturally perceive it as being part of their surroundings. To help people perceive the object’s movement without making them think that they or their surroundings are moving, you can increase the object’s translucency, helping people see through it, or lower its contrast to make its motion less noticeable.
 
+> **Note:** People can experience discomfort even when they’re the ones moving a large virtual object, such as a window. Although adjusting translucency and contrast can help in this scenario, consider also keeping a window’s size fairly small.
+
 **Consider using fades when you need to relocate an object.** When an object moves from one location to another, people naturally watch the movement. If such movement doesn’t communicate anything useful to people, you can fade the object out before moving it and fade it back in after it’s in the new location.
 
 **In general, avoid letting people rotate a virtual world.** When a virtual world rotates, the experience typically upsets people’s sense of stability, even when they control the rotation and the movement is subtle. Instead, consider using instantaneous directional changes during a quick fade-out.
@@ -66,6 +68,8 @@ In addition to subtly communicating context, drawing attention to information, a
 ### watchOS
 
 SwiftUI provides a powerful and streamlined way to add motion to your app. If you need to use WatchKit to animate layout and appearance changes — or create animated image sequences — see [WKInterfaceImage](/documentation/WatchKit/WKInterfaceImage#1652345).
+
+> **Note:** All layout- and appearance-based animations automatically include built-in easing that plays at the start and end of the animation. You can’t turn off or customize easing.
 
 ## Resources
 
@@ -91,7 +95,14 @@ SwiftUI provides a powerful and streamlined way to add motion to your app. If yo
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| September 9, 2025 | Added guidance for Liquid Glass. |
+| June 10, 2024 | Added game-specific examples and enhanced guidance for using motion in games. |
+| February 2, 2024 | Enhanced guidance for minimizing peripheral motion in visionOS apps. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

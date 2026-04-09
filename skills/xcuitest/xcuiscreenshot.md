@@ -2,16 +2,16 @@
 title: XCUIScreenshot
 description: A captured image of a screen, app, or UI element state.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuiscreenshot
-timestamp: 2026-01-19T10:23:37.083Z
+timestamp: 2026-04-09T12:04:46.644Z
 ---
 
-**Navigation:** [Xcuiautomation](/documentation/xcuiautomation)
+**Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
 
 **Class**
 
 # XCUIScreenshot
 
-**Available on:** iOS undefined+, iPadOS undefined+, Mac Catalyst undefined+, macOS undefined+, tvOS undefined+, visionOS undefined+, watchOS undefined+, Xcode 16.3+
+**Available on:** iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS, watchOS, Xcode 16.3+
 
 > A captured image of a screen, app, or UI element state.
 
@@ -21,7 +21,7 @@ timestamp: 2026-01-19T10:23:37.083Z
 
 ## Overview
 
-Screenshots capture the current UI state of classes that conform to the [XCUIScreenshot Providing](/documentation/xcuiautomation/xcuiscreenshotproviding) protocol, such as [XCUIScreen](/documentation/xcuiautomation/xcuiscreen) and [XCUIElement](/documentation/xcuiautomation/xcuielement). Each screenshot contains an image representation of the captured UI at the point the screenshot was taken.
+Screenshots capture the current UI state of classes that conform to the [XCUIScreenshotProviding](/documentation/xcuiautomation/xcuiscreenshotproviding) protocol, such as [XCUIScreen](/documentation/xcuiautomation/xcuiscreen) and [XCUIElement](/documentation/xcuiautomation/xcuielement). Each screenshot contains an image representation of the captured UI at the point the screenshot was taken.
 
 The following code demonstrates taking screenshots of a screen and a UI element:
 
@@ -39,7 +39,7 @@ func testTakeScreenshots() {
 }
 ```
 
-If you use [XCTest](/documentation/XCTest) for your UI automation tests, you can attach a screenshot of your app’s UI to a test or activity to store it for later analysis. Create an attachment for a screenshot by calling the [XCTAttachment](/documentation/XCTest/XCTAttachment) initializer [init(screenshot:)](/documentation/XCTest/XCTAttachment/init(screenshot:)) or [init(screenshot:quality:)](/documentation/XCTest/XCTAttachment/init(screenshot:quality:)). Add the attachment to a test or activity by calling the [XCTActivity](/documentation/XCTest/XCTActivity) method [add(_:)](/documentation/XCTest/XCTActivity/add(_:)). For more information, see [adding-attachments-to-tests-activities-and](/documentation/XCTest/adding-attachments-to-tests-activities-and-issues).
+If you use [XCTest](/documentation/XCTest) for your UI automation tests, you can attach a screenshot of your app’s UI to a test or activity to store it for later analysis. Create an attachment for a screenshot by calling the [XCTAttachment](/documentation/XCTest/XCTAttachment) initializer [init(screenshot:)](/documentation/XCTest/XCTAttachment/init(screenshot:)) or [init(screenshot:quality:)](/documentation/XCTest/XCTAttachment/init(screenshot:quality:)). Add the attachment to a test or activity by calling the [XCTActivity](/documentation/XCTest/XCTActivity) method [add(_:)](/documentation/XCTest/XCTActivity/add(_:)). For more information, see [Adding Attachments to Tests, Activities, and Issues](/documentation/XCTest/adding-attachments-to-tests-activities-and-issues).
 
 ## Inherits From
 
@@ -62,10 +62,10 @@ If you use [XCTest](/documentation/XCTest) for your UI automation tests, you can
 
 ## Screenshots
 
-- [XCUIScreen](/documentation/xcuiautomation/xcuiscreen)
-- [XCUIScreenshotProviding](/documentation/xcuiautomation/xcuiscreenshotproviding)
+- [XCUIScreen](/documentation/xcuiautomation/xcuiscreen) A physical screen attached to a device.
+- [XCUIScreenshotProviding](/documentation/xcuiautomation/xcuiscreenshotproviding) A type that can provide a screenshot of its current UI state.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

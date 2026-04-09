@@ -2,10 +2,10 @@
 title: TextField
 description: A control that displays an editable text interface.
 source: https://developer.apple.com/documentation/swiftui/textfield
-timestamp: 2026-02-19T07:56:07.517Z
+timestamp: 2026-04-09T13:37:45.100Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -49,7 +49,7 @@ var body: some View {
 
 ![A text field showing the typed email mruiz2@icloud.com, with a text](https://docs-assets.developer.apple.com/published/04af293882dc1735f3509e96b505c22f/SwiftUI-TextField-echoText%402x.png)
 
-The bound value doesn’t have to be a string. By using a [Format Style](/documentation/Foundation/FormatStyle), you can bind the text field to a nonstring type, using the format style to convert the typed text into an instance of the bound type. The following example uses a [Format Style](/documentation/Foundation/PersonNameComponents/FormatStyle) to convert the name typed in the text field to a [Person Name Components](/documentation/Foundation/PersonNameComponents) instance. A [Text](/documentation/swiftui/text) view below the text field shows the debug description string of this instance.
+The bound value doesn’t have to be a string. By using a [FormatStyle](/documentation/Foundation/FormatStyle), you can bind the text field to a nonstring type, using the format style to convert the typed text into an instance of the bound type. The following example uses a [PersonNameComponents.FormatStyle](/documentation/Foundation/PersonNameComponents/FormatStyle) to convert the name typed in the text field to a [PersonNameComponents](/documentation/Foundation/PersonNameComponents) instance. A [Text](/documentation/swiftui/text) view below the text field shows the debug description string of this instance.
 
 ```swift
 @State private var nameComponents = PersonNameComponents()
@@ -94,7 +94,7 @@ Form {
 
 ### Styling text fields
 
-SwiftUI provides a default text field style that reflects an appearance and behavior appropriate to the platform. The default style also takes the current context into consideration, like whether the text field is in a container that presents text fields with a special style. Beyond this, you can customize the appearance and interaction of text fields using the [textFieldStyle(_:)](/documentation/swiftui/view/textfieldstyle(_:)) modifier, passing in an instance of [Text Field Style](/documentation/swiftui/textfieldstyle). The following example applies the [rounded Border](/documentation/swiftui/textfieldstyle/roundedborder) style to both text fields within a [VStack](/documentation/swiftui/vstack).
+SwiftUI provides a default text field style that reflects an appearance and behavior appropriate to the platform. The default style also takes the current context into consideration, like whether the text field is in a container that presents text fields with a special style. Beyond this, you can customize the appearance and interaction of text fields using the [textFieldStyle(_:)](/documentation/swiftui/view/textfieldstyle(_:)) modifier, passing in an instance of [TextFieldStyle](/documentation/swiftui/textfieldstyle). The following example applies the [roundedBorder](/documentation/swiftui/textfieldstyle/roundedborder) style to both text fields within a [VStack](/documentation/swiftui/vstack).
 
 ```swift
 @State private var givenName: String = ""
@@ -127,19 +127,19 @@ var body: some View {
 
 - [init(_:text:)](/documentation/swiftui/textfield/init(_:text:)) Creates a text field with a text label generated from a localized title string.
 - [init(_:text:prompt:)](/documentation/swiftui/textfield/init(_:text:prompt:)) Creates a text field with a text label generated from a localized title string.
-- [init(text:prompt:label:)](/documentation/swiftui/textfield/init(text:prompt:label:)) Creates a text field with a prompt generated from a .
+- [init(text:prompt:label:)](/documentation/swiftui/textfield/init(text:prompt:label:)) Creates a text field with a prompt generated from a `Text`.
 
 ## Creating a scrollable text field
 
 - [init(_:text:axis:)](/documentation/swiftui/textfield/init(_:text:axis:)) Creates a text field with a preferred axis and a text label generated from a localized title string.
 - [init(_:text:prompt:axis:)](/documentation/swiftui/textfield/init(_:text:prompt:axis:)) Creates a text field with a preferred axis and a text label generated from a localized title string.
-- [init(text:prompt:axis:label:)](/documentation/swiftui/textfield/init(text:prompt:axis:label:)) Creates a text field with a preferred axis and a prompt generated from a .
+- [init(text:prompt:axis:label:)](/documentation/swiftui/textfield/init(text:prompt:axis:label:)) Creates a text field with a preferred axis and a prompt generated from a `Text`.
 
 ## Creating a text field with a value
 
 - [init(_:value:format:prompt:)](/documentation/swiftui/textfield/init(_:value:format:prompt:)) Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
 - [init(value:format:prompt:label:)](/documentation/swiftui/textfield/init(value:format:prompt:label:)) Creates a text field that applies a format style to a bound value, with a label generated from a view builder.
-- [init(_:value:formatter:)](/documentation/swiftui/textfield/init(_:value:formatter:)) Create an instance which binds over an arbitrary type, .
+- [init(_:value:formatter:)](/documentation/swiftui/textfield/init(_:value:formatter:)) Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:prompt:)](/documentation/swiftui/textfield/init(_:value:formatter:prompt:)) Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
 - [init(value:formatter:prompt:label:)](/documentation/swiftui/textfield/init(value:formatter:prompt:label:)) Creates a text field that applies a formatter to a bound optional value, with a label generated from a view builder.
 
@@ -150,16 +150,16 @@ var body: some View {
 ## Initializers
 
 - [init(_:text:selection:prompt:axis:)](/documentation/swiftui/textfield/init(_:text:selection:prompt:axis:)) Creates a text field with a binding to the current selection and a text label generated from a localized title string.
-- [init(text:selection:prompt:axis:label:)](/documentation/swiftui/textfield/init(text:selection:prompt:axis:label:)) Creates a text field with a binding to the current selection and a prompt generated from a .
+- [init(text:selection:prompt:axis:label:)](/documentation/swiftui/textfield/init(text:selection:prompt:axis:label:)) Creates a text field with a binding to the current selection and a prompt generated from a `Text`.
 
 ## Getting text input
 
-- [Building rich SwiftUI text experiences](/documentation/swiftui/building-rich-swiftui-text-experiences)
-- [textFieldStyle(_:)](/documentation/swiftui/view/textfieldstyle(_:))
-- [SecureField](/documentation/swiftui/securefield)
-- [TextEditor](/documentation/swiftui/texteditor)
+- [Building rich SwiftUI text experiences](/documentation/swiftui/building-rich-swiftui-text-experiences) Build an editor for formatted text using SwiftUI text editor views and attributed strings.
+- [textFieldStyle(_:)](/documentation/swiftui/view/textfieldstyle(_:)) Sets the style for text fields within this view.
+- [SecureField](/documentation/swiftui/securefield) A control into which people securely enter private text.
+- [TextEditor](/documentation/swiftui/texteditor) A view that can display and edit long-form text.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

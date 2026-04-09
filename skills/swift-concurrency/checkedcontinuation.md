@@ -2,7 +2,7 @@
 title: CheckedContinuation
 description: A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
 source: https://developer.apple.com/documentation/swift/checkedcontinuation
-timestamp: 2026-02-19T07:52:37.003Z
+timestamp: 2026-04-09T12:04:29.854Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -23,8 +23,7 @@ struct CheckedContinuation<T, E> where E : Error
 
 A *continuation* is an opaque representation of program state. To create a continuation in asynchronous code, call the `withCheckedContinuation(isolation:function:_:)` or `withCheckedThrowingContinuation(isolation:function:_:)` function. To resume the asynchronous task, call the `resume(returning:)`, `resume(throwing:)`, `resume(with:)`, or `resume()` method.
 
-> [!IMPORTANT]
-> You must call a resume method exactly once on every execution path throughout the program.
+> **Important:** You must call a resume method exactly once on every execution path throughout the program.
 
 Resuming from a continuation more than once is undefined behavior. Never resuming leaves the task in a suspended state indefinitely, and leaks any associated resources. `CheckedContinuation` logs a message if either of these invariants is violated.
 
@@ -44,19 +43,19 @@ Resuming from a continuation more than once is undefined behavior. Never resumin
 - [resume()](/documentation/swift/checkedcontinuation/resume()) Resume the task awaiting the continuation by having it return normally from its suspension point.
 - [resume(returning:)](/documentation/swift/checkedcontinuation/resume(returning:)) Resume the task awaiting the continuation by having it return normally from its suspension point.
 - [resume(throwing:)](/documentation/swift/checkedcontinuation/resume(throwing:)) Resume the task awaiting the continuation by having it throw an error from its suspension point.
-- [resume(with:)](/documentation/swift/checkedcontinuation/resume(with:)-3gh60) Resume the task awaiting the continuation by having it either return normally or throw an error based on the state of the given  value.
-- [resume(with:)](/documentation/swift/checkedcontinuation/resume(with:)-5n1a5) Resume the task awaiting the continuation by having it either return normally or throw an error based on the state of the given  value.
+- [resume(with:)](/documentation/swift/checkedcontinuation/resume(with:)-3gh60) Resume the task awaiting the continuation by having it either return normally or throw an error based on the state of the given `Result` value.
+- [resume(with:)](/documentation/swift/checkedcontinuation/resume(with:)-5n1a5) Resume the task awaiting the continuation by having it either return normally or throw an error based on the state of the given `Result` value.
 
 ## Continuations
 
-- [withCheckedContinuation(isolation:function:_:)](/documentation/swift/withcheckedcontinuation(isolation:function:_:))
-- [withCheckedThrowingContinuation(isolation:function:_:)](/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:))
-- [UnsafeContinuation](/documentation/swift/unsafecontinuation)
-- [withUnsafeContinuation(isolation:_:)](/documentation/swift/withunsafecontinuation(isolation:_:))
+- [withCheckedContinuation(isolation:function:_:)](/documentation/swift/withcheckedcontinuation(isolation:function:_:)) Invokes the passed in closure with a checked continuation for the current task.
+- [withCheckedThrowingContinuation(isolation:function:_:)](/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)) Invokes the passed in closure with a checked continuation for the current task.
+- [UnsafeContinuation](/documentation/swift/unsafecontinuation) A mechanism to interface between synchronous and asynchronous code, without correctness checking.
+- [withUnsafeContinuation(isolation:_:)](/documentation/swift/withunsafecontinuation(isolation:_:)) Invokes the passed in closure with a unsafe continuation for the current task.
 - [UnsafeThrowingContinuation](/documentation/swift/unsafethrowingcontinuation)
-- [withUnsafeThrowingContinuation(isolation:_:)](/documentation/swift/withunsafethrowingcontinuation(isolation:_:))
+- [withUnsafeThrowingContinuation(isolation:_:)](/documentation/swift/withunsafethrowingcontinuation(isolation:_:)) Invokes the passed in closure with a unsafe continuation for the current task.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: ProgressView
 description: A view that shows the progress toward completion of a task.
 source: https://developer.apple.com/documentation/swiftui/progressview
-timestamp: 2026-02-19T07:56:08.215Z
+timestamp: 2026-04-09T13:37:43.056Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -40,7 +40,7 @@ struct LinearProgressDemoView: View {
 }
 ```
 
-![A horizontal bar that represents progress, with a More button](https://docs-assets.developer.apple.com/published/3456594d290f72e26be845c9f9a84d6d/ProgressView-1-macOS%402x.png)
+![A horizontal bar that represents progress, with a More button](https://docs-assets.developer.apple.com/published/3456594d290f72e26be845c9f9a84d6d/ProgressView-1-macOS%402x.png)
 
 To create an indeterminate progress view, use an initializer that doesn’t take a progress value:
 
@@ -70,7 +70,7 @@ struct DateRelativeProgressDemoView: View {
 
 ### Styling progress views
 
-You can customize the appearance and interaction of progress views by creating styles that conform to the [Progress View Style](/documentation/swiftui/progressviewstyle) protocol. To set a specific style for all progress view instances within a view, use the [progressViewStyle(_:)](/documentation/swiftui/view/progressviewstyle(_:)) modifier. In the following example, a custom style adds a rounded pink border to all progress views within the enclosing [VStack](/documentation/swiftui/vstack):
+You can customize the appearance and interaction of progress views by creating styles that conform to the [ProgressViewStyle](/documentation/swiftui/progressviewstyle) protocol. To set a specific style for all progress view instances within a view, use the [progressViewStyle(_:)](/documentation/swiftui/view/progressviewstyle(_:)) modifier. In the following example, a custom style adds a rounded pink border to all progress views within the enclosing [VStack](/documentation/swiftui/vstack):
 
 ```swift
 struct BorderedProgressViews: View {
@@ -145,13 +145,13 @@ On platforms other than macOS, the circular style may appear as an indeterminate
 
 ## Indicating a value
 
-- [Gauge](/documentation/swiftui/gauge)
-- [gaugeStyle(_:)](/documentation/swiftui/view/gaugestyle(_:))
-- [progressViewStyle(_:)](/documentation/swiftui/view/progressviewstyle(_:))
-- [DefaultDateProgressLabel](/documentation/swiftui/defaultdateprogresslabel)
-- [DefaultButtonLabel](/documentation/swiftui/defaultbuttonlabel)
+- [Gauge](/documentation/swiftui/gauge) A view that shows a value within a range.
+- [gaugeStyle(_:)](/documentation/swiftui/view/gaugestyle(_:)) Sets the style for gauges within this view.
+- [progressViewStyle(_:)](/documentation/swiftui/view/progressviewstyle(_:)) Sets the style for progress views in this view.
+- [DefaultDateProgressLabel](/documentation/swiftui/defaultdateprogresslabel) The default type of the current value label when used by a date-relative progress view.
+- [DefaultButtonLabel](/documentation/swiftui/defaultbuttonlabel) The default label to use for a button.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

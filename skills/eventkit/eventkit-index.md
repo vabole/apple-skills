@@ -1,20 +1,20 @@
 ---
 title: EventKit
 source: https://developer.apple.com/documentation/eventkit
-timestamp: 2026-01-19T11:02:43.505Z
+timestamp: 2026-04-09T12:04:10.272Z
 ---
+
+**Navigation:** [EventKit](/documentation/eventkit)
 
 ## Essentials
 
 - [Accessing the event store](/documentation/eventkit/accessing-the-event-store)
 - [EKEventStore](/documentation/eventkit/ekeventstore)
-
 ### Creating event stores
 
 - [init()](/documentation/eventkit/ekeventstore/init())
 - [init(sources: [EKSource])](/documentation/eventkit/ekeventstore/init(sources:))
 - [var eventStoreIdentifier: String](/documentation/eventkit/ekeventstore/eventstoreidentifier)
-
 ### Requesting access to events and reminders
 
 - [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](/documentation/eventkit/ekeventstore/requestwriteonlyaccesstoevents(completion:))
@@ -22,7 +22,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [func requestFullAccessToReminders(completion: (Bool, (any Error)?) -> Void)](/documentation/eventkit/ekeventstore/requestfullaccesstoreminders(completion:))
 - [class func authorizationStatus(for: EKEntityType) -> EKAuthorizationStatus](/documentation/eventkit/ekeventstore/authorizationstatus(for:))
 - [EKAuthorizationStatus](/documentation/eventkit/ekauthorizationstatus)
-
 #### Status
 
 - [case fullAccess](/documentation/eventkit/ekauthorizationstatus/fullaccess)
@@ -30,31 +29,27 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case denied](/documentation/eventkit/ekauthorizationstatus/denied)
 - [case notDetermined](/documentation/eventkit/ekauthorizationstatus/notdetermined)
 - [case restricted](/documentation/eventkit/ekauthorizationstatus/restricted)
-
 #### Deprecated values
 
 - [static var authorized: EKAuthorizationStatus](/documentation/eventkit/ekauthorizationstatus/authorized)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekauthorizationstatus/init(rawvalue:))
+
 - [EKEventStoreRequestAccessCompletionHandler](/documentation/eventkit/ekeventstorerequestaccesscompletionhandler)
 - [NSCalendarsFullAccessUsageDescription](/documentation/bundleresources/information-property-list/nscalendarsfullaccessusagedescription)
 - [NSCalendarsWriteOnlyAccessUsageDescription](/documentation/bundleresources/information-property-list/nscalendarswriteonlyaccessusagedescription)
 - [NSRemindersFullAccessUsageDescription](/documentation/bundleresources/information-property-list/nsremindersfullaccessusagedescription)
-
 ### Accessing account sources
 
 - [var sources: [EKSource]](/documentation/eventkit/ekeventstore/sources)
 - [var delegateSources: [EKSource]](/documentation/eventkit/ekeventstore/delegatesources)
 - [func source(withIdentifier: String) -> EKSource?](/documentation/eventkit/ekeventstore/source(withidentifier:))
-
 ### Saving and restoring state
 
 - [func commit() throws](/documentation/eventkit/ekeventstore/commit())
 - [func reset()](/documentation/eventkit/ekeventstore/reset())
 - [func refreshSourcesIfNecessary()](/documentation/eventkit/ekeventstore/refreshsourcesifnecessary())
-
 ### Accessing calendars
 
 - [var defaultCalendarForNewEvents: EKCalendar?](/documentation/eventkit/ekeventstore/defaultcalendarfornewevents)
@@ -64,7 +59,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [func saveCalendar(EKCalendar, commit: Bool) throws](/documentation/eventkit/ekeventstore/savecalendar(_:commit:))
 - [func removeCalendar(EKCalendar, commit: Bool) throws](/documentation/eventkit/ekeventstore/removecalendar(_:commit:))
 - [var calendars: [EKCalendar]](/documentation/eventkit/ekeventstore/calendars)
-
 ### Accessing calendar events
 
 - [func event(withIdentifier: String) -> EKEvent?](/documentation/eventkit/ekeventstore/event(withidentifier:))
@@ -76,7 +70,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [func save(EKEvent, span: EKSpan) throws](/documentation/eventkit/ekeventstore/save(_:span:))
 - [func save(EKEvent, span: EKSpan, commit: Bool) throws](/documentation/eventkit/ekeventstore/save(_:span:commit:))
 - [func save(EKReminder, commit: Bool) throws](/documentation/eventkit/ekeventstore/save(_:commit:))
-
 ### Searching calendars
 
 - [func enumerateEvents(matching: NSPredicate, using: EKEventSearchCallback)](/documentation/eventkit/ekeventstore/enumerateevents(matching:using:))
@@ -88,20 +81,18 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [func predicateForCompletedReminders(withCompletionDateStarting: Date?, ending: Date?, calendars: [EKCalendar]?) -> NSPredicate](/documentation/eventkit/ekeventstore/predicateforcompletedreminders(withcompletiondatestarting:ending:calendars:))
 - [func predicateForIncompleteReminders(withDueDateStarting: Date?, ending: Date?, calendars: [EKCalendar]?) -> NSPredicate](/documentation/eventkit/ekeventstore/predicateforincompletereminders(withduedatestarting:ending:calendars:))
 - [EKEventSearchCallback](/documentation/eventkit/ekeventsearchcallback)
-
 ### Deprecated methods
 
 - [func requestAccess(to: EKEntityType, completion: (Bool, (any Error)?) -> Void)](/documentation/eventkit/ekeventstore/requestaccess(to:completion:))
-
 ### Structures
 
 - [EKEventStore.EventStoreChanged](/documentation/eventkit/ekeventstore/eventstorechanged)
-
 #### Initializers
 
 - [init()](/documentation/eventkit/ekeventstore/eventstorechanged/init())
-- [Accessing Calendar using EventKit and EventKitUI](/documentation/eventkit/accessing-calendar-using-eventkit-and-eventkitui)
 
+
+- [Accessing Calendar using EventKit and EventKitUI](/documentation/eventkit/accessing-calendar-using-eventkit-and-eventkitui)
 ## Events and reminders
 
 - [Creating events and reminders](/documentation/eventkit/creating-events-and-reminders)
@@ -109,27 +100,23 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [Updating with notifications](/documentation/eventkit/updating-with-notifications)
 - [Managing location-based reminders](/documentation/eventkit/managing-location-based-reminders)
 - [EKEvent](/documentation/eventkit/ekevent)
-
 ### Creating Events
 
 - [init(eventStore: EKEventStore)](/documentation/eventkit/ekevent/init(eventstore:))
-
 ### Scheduling Events
 
 - [EKEventStatus](/documentation/eventkit/ekeventstatus)
-
 #### Constants
 
 - [case none](/documentation/eventkit/ekeventstatus/none)
 - [case confirmed](/documentation/eventkit/ekeventstatus/confirmed)
 - [case tentative](/documentation/eventkit/ekeventstatus/tentative)
 - [case canceled](/documentation/eventkit/ekeventstatus/canceled)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekeventstatus/init(rawvalue:))
-- [EKEventAvailability](/documentation/eventkit/ekeventavailability)
 
+- [EKEventAvailability](/documentation/eventkit/ekeventavailability)
 #### Constants
 
 - [case notSupported](/documentation/eventkit/ekeventavailability/notsupported)
@@ -137,7 +124,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case free](/documentation/eventkit/ekeventavailability/free)
 - [case tentative](/documentation/eventkit/ekeventavailability/tentative)
 - [case unavailable](/documentation/eventkit/ekeventavailability/unavailable)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekeventavailability/init(rawvalue:))
@@ -145,7 +131,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 ### Comparing Events
 
 - [func compareStartDate(with: EKEvent) -> ComparisonResult](/documentation/eventkit/ekevent/comparestartdate(with:))
-
 ### Accessing Event Properties
 
 - [var eventIdentifier: String!](/documentation/eventkit/ekevent/eventidentifier)
@@ -161,30 +146,27 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [var structuredLocation: EKStructuredLocation?](/documentation/eventkit/ekevent/structuredlocation)
 - [var birthdayPersonID: Int](/documentation/eventkit/ekevent/birthdaypersonid)
 - [var birthdayPersonUniqueID: String?](/documentation/eventkit/ekevent/birthdaypersonuniqueid)
-
 ### Refreshing Event Data
 
 - [func refresh() -> Bool](/documentation/eventkit/ekevent/refresh())
-- [EKReminder](/documentation/eventkit/ekreminder)
 
+- [EKReminder](/documentation/eventkit/ekreminder)
 ### Creating a Reminder
 
 - [init(eventStore: EKEventStore)](/documentation/eventkit/ekreminder/init(eventstore:))
-
 ### Accessing Reminder Properties
 
 - [EKReminderPriority](/documentation/eventkit/ekreminderpriority)
-
 #### Constants
 
 - [case none](/documentation/eventkit/ekreminderpriority/none)
 - [case high](/documentation/eventkit/ekreminderpriority/high)
 - [case medium](/documentation/eventkit/ekreminderpriority/medium)
 - [case low](/documentation/eventkit/ekreminderpriority/low)
-
 #### Initializers
 
 - [init?(rawValue: UInt)](/documentation/eventkit/ekreminderpriority/init(rawvalue:))
+
 - [var priority: Int](/documentation/eventkit/ekreminder/priority)
 - [var startDateComponents: DateComponents?](/documentation/eventkit/ekreminder/startdatecomponents)
 - [var dueDateComponents: DateComponents?](/documentation/eventkit/ekreminder/duedatecomponents)
@@ -194,16 +176,13 @@ timestamp: 2026-01-19T11:02:43.505Z
 ## Calendars
 
 - [EKCalendar](/documentation/eventkit/ekcalendar)
-
 ### Creating Calendars
 
 - [init(for: EKEntityType, eventStore: EKEventStore)](/documentation/eventkit/ekcalendar/init(for:eventstore:))
 - [init(eventStore: EKEventStore)](/documentation/eventkit/ekcalendar/init(eventstore:))
-
 ### Accessing Calendar Properties
 
 - [EKCalendarType](/documentation/eventkit/ekcalendartype)
-
 #### Constants
 
 - [case local](/documentation/eventkit/ekcalendartype/local)
@@ -211,22 +190,21 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case exchange](/documentation/eventkit/ekcalendartype/exchange)
 - [case subscription](/documentation/eventkit/ekcalendartype/subscription)
 - [case birthday](/documentation/eventkit/ekcalendartype/birthday)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekcalendartype/init(rawvalue:))
-- [EKCalendarEventAvailabilityMask](/documentation/eventkit/ekcalendareventavailabilitymask)
 
+- [EKCalendarEventAvailabilityMask](/documentation/eventkit/ekcalendareventavailabilitymask)
 #### Initializers
 
 - [init(rawValue: UInt)](/documentation/eventkit/ekcalendareventavailabilitymask/init(rawvalue:))
-
 #### Type Properties
 
 - [static var busy: EKCalendarEventAvailabilityMask](/documentation/eventkit/ekcalendareventavailabilitymask/busy)
 - [static var free: EKCalendarEventAvailabilityMask](/documentation/eventkit/ekcalendareventavailabilitymask/free)
 - [static var tentative: EKCalendarEventAvailabilityMask](/documentation/eventkit/ekcalendareventavailabilitymask/tentative)
 - [static var unavailable: EKCalendarEventAvailabilityMask](/documentation/eventkit/ekcalendareventavailabilitymask/unavailable)
+
 - [var allowsContentModifications: Bool](/documentation/eventkit/ekcalendar/allowscontentmodifications)
 - [var cgColor: CGColor!](/documentation/eventkit/ekcalendar/cgcolor)
 - [var color: NSColor!](/documentation/eventkit/ekcalendar/color)
@@ -240,12 +218,11 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [var calendarIdentifier: String](/documentation/eventkit/ekcalendar/calendaridentifier)
 - [func DATETIME_COMPONENTS_DO_NOT_USE()](/documentation/eventkit/datetime_components_do_not_use())
 - [func DATE_COMPONENTS_DO_NOT_USE()](/documentation/eventkit/date_components_do_not_use())
-- [EKParticipant](/documentation/eventkit/ekparticipant)
 
+- [EKParticipant](/documentation/eventkit/ekparticipant)
 ### Defining Participants
 
 - [EKParticipantRole](/documentation/eventkit/ekparticipantrole)
-
 #### Constants
 
 - [case unknown](/documentation/eventkit/ekparticipantrole/unknown)
@@ -253,12 +230,11 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case optional](/documentation/eventkit/ekparticipantrole/optional)
 - [case chair](/documentation/eventkit/ekparticipantrole/chair)
 - [case nonParticipant](/documentation/eventkit/ekparticipantrole/nonparticipant)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekparticipantrole/init(rawvalue:))
-- [EKParticipantType](/documentation/eventkit/ekparticipanttype)
 
+- [EKParticipantType](/documentation/eventkit/ekparticipanttype)
 #### Constants
 
 - [case unknown](/documentation/eventkit/ekparticipanttype/unknown)
@@ -266,12 +242,11 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case room](/documentation/eventkit/ekparticipanttype/room)
 - [case resource](/documentation/eventkit/ekparticipanttype/resource)
 - [case group](/documentation/eventkit/ekparticipanttype/group)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekparticipanttype/init(rawvalue:))
-- [EKParticipantStatus](/documentation/eventkit/ekparticipantstatus)
 
+- [EKParticipantStatus](/documentation/eventkit/ekparticipantstatus)
 #### Constants
 
 - [case unknown](/documentation/eventkit/ekparticipantstatus/unknown)
@@ -282,12 +257,11 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case delegated](/documentation/eventkit/ekparticipantstatus/delegated)
 - [case completed](/documentation/eventkit/ekparticipantstatus/completed)
 - [case inProcess](/documentation/eventkit/ekparticipantstatus/inprocess)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekparticipantstatus/init(rawvalue:))
-- [EKParticipantScheduleStatus](/documentation/eventkit/ekparticipantschedulestatus)
 
+- [EKParticipantScheduleStatus](/documentation/eventkit/ekparticipantschedulestatus)
 #### Constants
 
 - [case none](/documentation/eventkit/ekparticipantschedulestatus/none)
@@ -299,7 +273,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case deliveryFailed](/documentation/eventkit/ekparticipantschedulestatus/deliveryfailed)
 - [case cannotDeliver](/documentation/eventkit/ekparticipantschedulestatus/cannotdeliver)
 - [case recipientNotAllowed](/documentation/eventkit/ekparticipantschedulestatus/recipientnotallowed)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekparticipantschedulestatus/init(rawvalue:))
@@ -313,7 +286,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [var participantType: EKParticipantType](/documentation/eventkit/ekparticipant/participanttype)
 - [var url: URL](/documentation/eventkit/ekparticipant/url)
 - [var contactPredicate: NSPredicate](/documentation/eventkit/ekparticipant/contactpredicate)
-
 ### Finding Participant Address Book Records
 
 - [func abRecord(with: ABAddressBook) -> ABRecord?](/documentation/eventkit/ekparticipant/abrecord(with:))
@@ -325,11 +297,9 @@ timestamp: 2026-01-19T11:02:43.505Z
 
 - [Creating a recurring event](/documentation/eventkit/creating-a-recurring-event)
 - [EKRecurrenceDayOfWeek](/documentation/eventkit/ekrecurrencedayofweek)
-
 ### Creating a Day of the Week
 
 - [EKWeekday](/documentation/eventkit/ekweekday)
-
 #### Constants
 
 - [case sunday](/documentation/eventkit/ekweekday/sunday)
@@ -339,7 +309,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case thursday](/documentation/eventkit/ekweekday/thursday)
 - [case friday](/documentation/eventkit/ekweekday/friday)
 - [case saturday](/documentation/eventkit/ekweekday/saturday)
-
 #### Deprecated
 
 - [static var EKSunday: EKWeekday](/documentation/eventkit/ekweekday/eksunday)
@@ -349,63 +318,57 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [static var EKThursday: EKWeekday](/documentation/eventkit/ekweekday/ekthursday)
 - [static var EKFriday: EKWeekday](/documentation/eventkit/ekweekday/ekfriday)
 - [static var EKSaturday: EKWeekday](/documentation/eventkit/ekweekday/eksaturday)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekweekday/init(rawvalue:))
+
 - [convenience init(EKWeekday)](/documentation/eventkit/ekrecurrencedayofweek/init(_:))
 - [convenience init(EKWeekday, weekNumber: Int)](/documentation/eventkit/ekrecurrencedayofweek/init(_:weeknumber:))
 - [init(dayOfTheWeek: EKWeekday, weekNumber: Int)](/documentation/eventkit/ekrecurrencedayofweek/init(dayoftheweek:weeknumber:))
-
 ### Accessing Properties of a Day of the Week
 
 - [var dayOfTheWeek: EKWeekday](/documentation/eventkit/ekrecurrencedayofweek/dayoftheweek)
 - [var weekNumber: Int](/documentation/eventkit/ekrecurrencedayofweek/weeknumber)
-- [EKRecurrenceEnd](/documentation/eventkit/ekrecurrenceend)
 
+- [EKRecurrenceEnd](/documentation/eventkit/ekrecurrenceend)
 ### Creating a Recurrence End
 
 - [convenience init(end: Date)](/documentation/eventkit/ekrecurrenceend/init(end:))
 - [convenience init(occurrenceCount: Int)](/documentation/eventkit/ekrecurrenceend/init(occurrencecount:))
-
 ### Accessing Recurrence End Properties
 
 - [var endDate: Date?](/documentation/eventkit/ekrecurrenceend/enddate)
 - [var occurrenceCount: Int](/documentation/eventkit/ekrecurrenceend/occurrencecount)
-- [EKRecurrenceRule](/documentation/eventkit/ekrecurrencerule)
 
+- [EKRecurrenceRule](/documentation/eventkit/ekrecurrencerule)
 ### Creating a Basic Recurrence Rule
 
 - [EKSpan](/documentation/eventkit/ekspan)
-
 #### Constants
 
 - [case thisEvent](/documentation/eventkit/ekspan/thisevent)
 - [case futureEvents](/documentation/eventkit/ekspan/futureevents)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekspan/init(rawvalue:))
-- [init(recurrenceWith: EKRecurrenceFrequency, interval: Int, end: EKRecurrenceEnd?)](/documentation/eventkit/ekrecurrencerule/init(recurrencewith:interval:end:))
 
+- [init(recurrenceWith: EKRecurrenceFrequency, interval: Int, end: EKRecurrenceEnd?)](/documentation/eventkit/ekrecurrencerule/init(recurrencewith:interval:end:))
 ### Creating a Complex Recurrence Rule
 
 - [init(recurrenceWith: EKRecurrenceFrequency, interval: Int, daysOfTheWeek: [EKRecurrenceDayOfWeek]?, daysOfTheMonth: [NSNumber]?, monthsOfTheYear: [NSNumber]?, weeksOfTheYear: [NSNumber]?, daysOfTheYear: [NSNumber]?, setPositions: [NSNumber]?, end: EKRecurrenceEnd?)](/documentation/eventkit/ekrecurrencerule/init(recurrencewith:interval:daysoftheweek:daysofthemonth:monthsoftheyear:weeksoftheyear:daysoftheyear:setpositions:end:))
-
 ### Accessing Recurrence Rule Properties
 
 - [EKRecurrenceFrequency](/documentation/eventkit/ekrecurrencefrequency)
-
 #### Constants
 
 - [case daily](/documentation/eventkit/ekrecurrencefrequency/daily)
 - [case weekly](/documentation/eventkit/ekrecurrencefrequency/weekly)
 - [case monthly](/documentation/eventkit/ekrecurrencefrequency/monthly)
 - [case yearly](/documentation/eventkit/ekrecurrencefrequency/yearly)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekrecurrencefrequency/init(rawvalue:))
+
 - [var calendarIdentifier: String](/documentation/eventkit/ekrecurrencerule/calendaridentifier)
 - [var recurrenceEnd: EKRecurrenceEnd?](/documentation/eventkit/ekrecurrencerule/recurrenceend)
 - [var frequency: EKRecurrenceFrequency](/documentation/eventkit/ekrecurrencerule/frequency)
@@ -423,57 +386,50 @@ timestamp: 2026-01-19T11:02:43.505Z
 
 - [Setting an alarm](/documentation/eventkit/setting-an-alarm)
 - [EKAlarm](/documentation/eventkit/ekalarm)
-
 ### Creating an Alarm
 
 - [init(absoluteDate: Date)](/documentation/eventkit/ekalarm/init(absolutedate:))
 - [init(relativeOffset: TimeInterval)](/documentation/eventkit/ekalarm/init(relativeoffset:))
-
 ### Accessing Alarm Dates
 
 - [var absoluteDate: Date?](/documentation/eventkit/ekalarm/absolutedate)
 - [var relativeOffset: TimeInterval](/documentation/eventkit/ekalarm/relativeoffset)
-
 ### Setting GeoFence-based Alarms
 
 - [EKAlarmProximity](/documentation/eventkit/ekalarmproximity)
-
 #### Constants
 
 - [case none](/documentation/eventkit/ekalarmproximity/none)
 - [case enter](/documentation/eventkit/ekalarmproximity/enter)
 - [case leave](/documentation/eventkit/ekalarmproximity/leave)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekalarmproximity/init(rawvalue:))
+
 - [var proximity: EKAlarmProximity](/documentation/eventkit/ekalarm/proximity)
 - [var structuredLocation: EKStructuredLocation?](/documentation/eventkit/ekalarm/structuredlocation)
-
 ### Triggering Alarm Actions
 
 - [EKAlarmType](/documentation/eventkit/ekalarmtype)
-
 #### Constants
 
 - [case display](/documentation/eventkit/ekalarmtype/display)
 - [case audio](/documentation/eventkit/ekalarmtype/audio)
 - [case procedure](/documentation/eventkit/ekalarmtype/procedure)
 - [case email](/documentation/eventkit/ekalarmtype/email)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekalarmtype/init(rawvalue:))
+
 - [var type: EKAlarmType](/documentation/eventkit/ekalarm/type)
 - [var emailAddress: String?](/documentation/eventkit/ekalarm/emailaddress)
 - [var soundName: String?](/documentation/eventkit/ekalarm/soundname)
-- [EKStructuredLocation](/documentation/eventkit/ekstructuredlocation)
 
+- [EKStructuredLocation](/documentation/eventkit/ekstructuredlocation)
 ### Creating Structured Locations
 
 - [convenience init(title: String)](/documentation/eventkit/ekstructuredlocation/init(title:))
 - [convenience init(mapItem: MKMapItem)](/documentation/eventkit/ekstructuredlocation/init(mapitem:))
-
 ### Accessing Structured Location Properties
 
 - [var title: String?](/documentation/eventkit/ekstructuredlocation/title)
@@ -483,13 +439,11 @@ timestamp: 2026-01-19T11:02:43.505Z
 ## Common objects
 
 - [EKCalendarItem](/documentation/eventkit/ekcalendaritem)
-
 ### Accessing Calendar Items
 
 - [var calendarItemIdentifier: String](/documentation/eventkit/ekcalendaritem/calendaritemidentifier)
 - [var calendarItemExternalIdentifier: String!](/documentation/eventkit/ekcalendaritem/calendaritemexternalidentifier)
 - [var uuid: String](/documentation/eventkit/ekcalendaritem/uuid)
-
 ### Accessing Calendar Item Properties
 
 - [var calendar: EKCalendar!](/documentation/eventkit/ekcalendaritem/calendar)
@@ -499,32 +453,28 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [var lastModifiedDate: Date?](/documentation/eventkit/ekcalendaritem/lastmodifieddate)
 - [var timeZone: TimeZone?](/documentation/eventkit/ekcalendaritem/timezone)
 - [var url: URL?](/documentation/eventkit/ekcalendaritem/url)
-
 ### Attaching Notes
 
 - [var hasNotes: Bool](/documentation/eventkit/ekcalendaritem/hasnotes)
 - [var notes: String?](/documentation/eventkit/ekcalendaritem/notes)
-
 ### Displaying Attendees
 
 - [var hasAttendees: Bool](/documentation/eventkit/ekcalendaritem/hasattendees)
 - [var attendees: [EKParticipant]?](/documentation/eventkit/ekcalendaritem/attendees)
-
 ### Adding and Removing Alarms
 
 - [var hasAlarms: Bool](/documentation/eventkit/ekcalendaritem/hasalarms)
 - [func addAlarm(EKAlarm)](/documentation/eventkit/ekcalendaritem/addalarm(_:))
 - [func removeAlarm(EKAlarm)](/documentation/eventkit/ekcalendaritem/removealarm(_:))
 - [var alarms: [EKAlarm]?](/documentation/eventkit/ekcalendaritem/alarms)
-
 ### Setting Recurrence Rules
 
 - [var hasRecurrenceRules: Bool](/documentation/eventkit/ekcalendaritem/hasrecurrencerules)
 - [func addRecurrenceRule(EKRecurrenceRule)](/documentation/eventkit/ekcalendaritem/addrecurrencerule(_:))
 - [func removeRecurrenceRule(EKRecurrenceRule)](/documentation/eventkit/ekcalendaritem/removerecurrencerule(_:))
 - [var recurrenceRules: [EKRecurrenceRule]?](/documentation/eventkit/ekcalendaritem/recurrencerules)
-- [EKObject](/documentation/eventkit/ekobject)
 
+- [EKObject](/documentation/eventkit/ekobject)
 ### Saving and Restoring State
 
 - [var hasChanges: Bool](/documentation/eventkit/ekobject/haschanges)
@@ -532,12 +482,11 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [func refresh() -> Bool](/documentation/eventkit/ekobject/refresh())
 - [func reset()](/documentation/eventkit/ekobject/reset())
 - [func rollback()](/documentation/eventkit/ekobject/rollback())
-- [EKSource](/documentation/eventkit/eksource)
 
+- [EKSource](/documentation/eventkit/eksource)
 ### Accessing Source Properties
 
 - [EKSourceType](/documentation/eventkit/eksourcetype)
-
 #### EventKit Source Types
 
 - [case local](/documentation/eventkit/eksourcetype/local)
@@ -546,31 +495,26 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case mobileMe](/documentation/eventkit/eksourcetype/mobileme)
 - [case subscribed](/documentation/eventkit/eksourcetype/subscribed)
 - [case birthdays](/documentation/eventkit/eksourcetype/birthdays)
-
 #### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/eksourcetype/init(rawvalue:))
+
 - [var sourceIdentifier: String](/documentation/eventkit/eksource/sourceidentifier)
 - [var sourceType: EKSourceType](/documentation/eventkit/eksource/sourcetype)
 - [var title: String](/documentation/eventkit/eksource/title)
-
 ### Accessing Calendars
 
 - [func calendars(for: EKEntityType) -> Set<EKCalendar>](/documentation/eventkit/eksource/calendars(for:))
 - [var calendars: Set<EKCalendar>](/documentation/eventkit/eksource/calendars)
-
 ### Entity Type
 
 - [EKEntityType](/documentation/eventkit/ekentitytype)
-
 #### Specifying Multiple Entities
 
 - [EKEntityMask](/documentation/eventkit/ekentitymask)
-
 ##### Initializers
 
 - [init(rawValue: UInt)](/documentation/eventkit/ekentitymask/init(rawvalue:))
-
 ##### Constants
 
 - [static var event: EKEntityMask](/documentation/eventkit/ekentitymask/event)
@@ -580,7 +524,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 
 - [case event](/documentation/eventkit/ekentitytype/event)
 - [case reminder](/documentation/eventkit/ekentitytype/reminder)
-
 #### Initializers
 
 - [init?(rawValue: UInt)](/documentation/eventkit/ekentitytype/init(rawvalue:))
@@ -591,42 +534,38 @@ timestamp: 2026-01-19T11:02:43.505Z
 
 ## Virtual conferences
 
+- [Implementing a virtual conference extension](/documentation/eventkit/implementing-a-virtual-conference-extension)
 - [EKVirtualConferenceProvider](/documentation/eventkit/ekvirtualconferenceprovider)
-
 ### Providing Rooms
 
 - [func fetchAvailableRoomTypes(completionHandler: ([EKVirtualConferenceRoomTypeDescriptor]?, (any Error)?) -> Void)](/documentation/eventkit/ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler:))
-
 ### Providing Virtual Conferences
 
 - [func fetchVirtualConference(identifier: EKVirtualConferenceRoomTypeIdentifier, completionHandler: (EKVirtualConferenceDescriptor?, (any Error)?) -> Void)](/documentation/eventkit/ekvirtualconferenceprovider/fetchvirtualconference(identifier:completionhandler:))
-- [EKVirtualConferenceDescriptor](/documentation/eventkit/ekvirtualconferencedescriptor)
 
+- [EKVirtualConferenceDescriptor](/documentation/eventkit/ekvirtualconferencedescriptor)
 ### Creating Conference Descriptors
 
 - [init(title: String?, urlDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)](/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:))
-
 ### Configuring Virtual Conferences
 
 - [var title: String?](/documentation/eventkit/ekvirtualconferencedescriptor/title)
 - [var urlDescriptors: [EKVirtualConferenceURLDescriptor]](/documentation/eventkit/ekvirtualconferencedescriptor/urldescriptors)
 - [EKVirtualConferenceURLDescriptor](/documentation/eventkit/ekvirtualconferenceurldescriptor)
-
 #### Creating URL Descriptors
 
 - [init(title: String?, url: URL)](/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:))
-
 #### Configuring URL Descriptors
 
 - [var title: String?](/documentation/eventkit/ekvirtualconferenceurldescriptor/title)
 - [var url: URL](/documentation/eventkit/ekvirtualconferenceurldescriptor/url)
-- [var conferenceDetails: String?](/documentation/eventkit/ekvirtualconferencedescriptor/conferencedetails)
-- [EKVirtualConferenceRoomTypeDescriptor](/documentation/eventkit/ekvirtualconferenceroomtypedescriptor)
 
+- [var conferenceDetails: String?](/documentation/eventkit/ekvirtualconferencedescriptor/conferencedetails)
+
+- [EKVirtualConferenceRoomTypeDescriptor](/documentation/eventkit/ekvirtualconferenceroomtypedescriptor)
 ### Creating Room Type Descriptors
 
 - [init(title: String, identifier: EKVirtualConferenceRoomTypeIdentifier)](/documentation/eventkit/ekvirtualconferenceroomtypedescriptor/init(title:identifier:))
-
 ### Configuring Room Type Descriptors
 
 - [var title: String](/documentation/eventkit/ekvirtualconferenceroomtypedescriptor/title)
@@ -636,7 +575,6 @@ timestamp: 2026-01-19T11:02:43.505Z
 ## Errors
 
 - [EKError](/documentation/eventkit/ekerror)
-
 ### Error Codes
 
 - [static var eventNotMutable: EKError.Code](/documentation/eventkit/ekerror/eventnotmutable)
@@ -676,17 +614,15 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [static var notificationCollectionMismatch: EKError.Code](/documentation/eventkit/ekerror/notificationcollectionmismatch)
 - [static var notificationSavedWithoutCollection: EKError.Code](/documentation/eventkit/ekerror/notificationsavedwithoutcollection)
 - [static var last: EKError.Code](/documentation/eventkit/ekerror/last)
-
 ### Error Domain
 
 - [let EKErrorDomain: String](/documentation/eventkit/ekerrordomain)
-
 ### Type Properties
 
 - [static var errorDomain: String](/documentation/eventkit/ekerror/errordomain)
 - [static var reminderAlarmContainsEmailOrUrl: EKError.Code](/documentation/eventkit/ekerror/reminderalarmcontainsemailorurl)
-- [EKError.Code](/documentation/eventkit/ekerror/code)
 
+- [EKError.Code](/documentation/eventkit/ekerror/code)
 ### Constants
 
 - [case eventNotMutable](/documentation/eventkit/ekerror/code/eventnotmutable)
@@ -726,17 +662,16 @@ timestamp: 2026-01-19T11:02:43.505Z
 - [case notificationCollectionMismatch](/documentation/eventkit/ekerror/code/notificationcollectionmismatch)
 - [case notificationSavedWithoutCollection](/documentation/eventkit/ekerror/code/notificationsavedwithoutcollection)
 - [case last](/documentation/eventkit/ekerror/code/last)
-
 ### Enumeration Cases
 
 - [case reminderAlarmContainsEmailOrUrl](/documentation/eventkit/ekerror/code/reminderalarmcontainsemailorurl)
-
 ### Initializers
 
 - [init?(rawValue: Int)](/documentation/eventkit/ekerror/code/init(rawvalue:))
+
 - [let EKErrorDomain: String](/documentation/eventkit/ekerrordomain)
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,16 +2,16 @@
 title: XCUIElementQuery
 description: An object that defines the search criteria a test uses to identify UI elements.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuielementquery
-timestamp: 2026-01-17T15:38:15.309Z
+timestamp: 2026-04-09T12:04:46.268Z
 ---
 
-**Navigation:** [Xcuiautomation](/documentation/xcuiautomation)
+**Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
 
 **Class**
 
 # XCUIElementQuery
 
-**Available on:** iOS undefined+, iPadOS undefined+, Mac Catalyst undefined+, macOS undefined+, tvOS undefined+, visionOS undefined+, watchOS undefined+, Xcode 16.3+
+**Available on:** iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS, watchOS, Xcode 16.3+
 
 > An object that defines the search criteria a test uses to identify UI elements.
 
@@ -86,9 +86,9 @@ func testClickingAddCreatesAnUntitledBook() throws {
 
 ## UI element queries
 
-- [XCUIElementTypeQueryProvider](/documentation/xcuiautomation/xcuielementtypequeryprovider)
+- [XCUIElementTypeQueryProvider](/documentation/xcuiautomation/xcuielementtypequeryprovider) A type that provides ready-made queries for locating descendant UI elements.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

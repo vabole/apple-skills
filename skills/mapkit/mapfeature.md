@@ -2,16 +2,16 @@
 title: MapFeature
 description: A tappable map feature.
 source: https://developer.apple.com/documentation/mapkit/mapfeature
-timestamp: 2026-02-19T07:52:37.000Z
+timestamp: 2026-04-09T12:04:26.033Z
 ---
 
-**Navigation:** [Mapkit](/documentation/mapkit)
+**Navigation:** [MapKit](/documentation/mapkit)
 
 **Structure**
 
 # MapFeature
 
-**Available on:** iOS 17.0+, iPadOS 17.0+, Mac Catalyst undefined+, macOS 14.0+, tvOS 17.0+, visionOS undefined+, watchOS 10.0+
+**Available on:** iOS 17.0+, iPadOS 17.0+, Mac Catalyst, macOS 14.0+, tvOS 17.0+, visionOS, watchOS 10.0+
 
 > A tappable map feature.
 
@@ -42,10 +42,10 @@ Tappable map features can include single points of interest, such as hotels and 
 
 ## Map features
 
-- [MapSelection](/documentation/mapkit/mapselection)
+- [MapSelection](/documentation/mapkit/mapselection) A value representing a selected feature on a map.
 - [MapSelectable](/documentation/mapkit/mapselectable)
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: ScrollView
 description: A scrollable view.
 source: https://developer.apple.com/documentation/swiftui/scrollview
-timestamp: 2026-02-19T07:56:06.406Z
+timestamp: 2026-04-09T13:37:43.413Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -63,7 +63,7 @@ ScrollView {
 
 After the scroll view initially renders, the user may scroll the content of the scroll view.
 
-To perform programmatic scrolling, wrap one or more scroll views with a [Scroll View Reader](/documentation/swiftui/scrollviewreader).
+To perform programmatic scrolling, wrap one or more scroll views with a [ScrollViewReader](/documentation/swiftui/scrollviewreader).
 
 ## Conforms To
 
@@ -86,10 +86,10 @@ To perform programmatic scrolling, wrap one or more scroll views with a [Scroll 
 
 ## Creating a scroll view
 
-- [ScrollViewReader](/documentation/swiftui/scrollviewreader)
-- [ScrollViewProxy](/documentation/swiftui/scrollviewproxy)
+- [ScrollViewReader](/documentation/swiftui/scrollviewreader) A view that provides programmatic scrolling, by working with a proxy to scroll to known child views.
+- [ScrollViewProxy](/documentation/swiftui/scrollviewproxy) A proxy value that supports programmatic scrolling of the scrollable views within a view hierarchy.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

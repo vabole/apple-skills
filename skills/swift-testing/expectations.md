@@ -2,7 +2,7 @@
 title: Expectations and confirmations
 description: Check for expected values, outcomes, and asynchronous events in tests.
 source: https://developer.apple.com/documentation/testing/expectations
-timestamp: 2026-02-19T07:52:36.973Z
+timestamp: 2026-04-09T12:04:30.915Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -15,9 +15,9 @@ timestamp: 2026-02-19T07:52:36.973Z
 
 ## Overview
 
-Use [expect(_:_:sourceLocation:)](/documentation/testing/expect(_:_:sourcelocation:)) and [require(_:_:sourceLocation:)](/documentation/testing/require(_:_:sourcelocation:)-5l63q) macros to validate expected outcomes. To validate that an error is thrown, or *not* thrown, the testing library provides several overloads of the macros that you can use. For more information, see [testing-for-errors-in-swift](/documentation/testing/testing-for-errors-in-swift-code).
+Use [expect(_:_:sourceLocation:)](/documentation/testing/expect(_:_:sourcelocation:)) and [require(_:_:sourceLocation:)](/documentation/testing/require(_:_:sourcelocation:)-5l63q) macros to validate expected outcomes. To validate that an error is thrown, or *not* thrown, the testing library provides several overloads of the macros that you can use. For more information, see [Testing for errors in Swift code](/documentation/testing/testing-for-errors-in-swift-code).
 
-Use a [Confirmation](/documentation/testing/confirmation) to confirm the occurrence of an asynchronous event that you can’t check directly using an expectation. For more information, see [testing-asynchronous](/documentation/testing/testing-asynchronous-code).
+Use a [Confirmation](/documentation/testing/confirmation) to confirm the occurrence of an asynchronous event that you can’t check directly using an expectation. For more information, see [Testing asynchronous code](/documentation/testing/testing-asynchronous-code).
 
 ### Validate your code’s result
 
@@ -41,13 +41,13 @@ Your test keeps running after [expect(_:_:sourceLocation:)](/documentation/testi
 }
 ```
 
-[require(_:_:sourceLocation:)](/documentation/testing/require(_:_:sourcelocation:)-5l63q) throws an instance of [Expectation Failed Error](/documentation/testing/expectationfailederror) when your code fails to satisfy the requirement.
+[require(_:_:sourceLocation:)](/documentation/testing/require(_:_:sourcelocation:)-5l63q) throws an instance of [ExpectationFailedError](/documentation/testing/expectationfailederror) when your code fails to satisfy the requirement.
 
 ## Checking expectations
 
 - [expect(_:_:sourceLocation:)](/documentation/testing/expect(_:_:sourcelocation:)) Check that an expectation has passed after a condition has been evaluated.
 - [require(_:_:sourceLocation:)](/documentation/testing/require(_:_:sourcelocation:)-5l63q) Check that an expectation has passed after a condition has been evaluated and throw an error if it failed.
-- [require(_:_:sourceLocation:)](/documentation/testing/require(_:_:sourcelocation:)-6w9oo) Unwrap an optional value or, if it is , fail and throw an error.
+- [require(_:_:sourceLocation:)](/documentation/testing/require(_:_:sourcelocation:)-6w9oo) Unwrap an optional value or, if it is `nil`, fail and throw an error.
 
 ## Checking that errors are thrown
 
@@ -86,9 +86,9 @@ Your test keeps running after [expect(_:_:sourceLocation:)](/documentation/testi
 
 ## Behavior validation
 
-- [Known issues](/documentation/testing/known-issues)
+- [Known issues](/documentation/testing/known-issues) Mark issues as known when running tests.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

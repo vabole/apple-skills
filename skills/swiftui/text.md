@@ -2,10 +2,10 @@
 title: Text
 description: A view that displays one or more lines of read-only text.
 source: https://developer.apple.com/documentation/swiftui/text
-timestamp: 2026-02-19T07:56:05.919Z
+timestamp: 2026-04-09T13:37:44.919Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -40,7 +40,7 @@ Text("by William Shakespeare")
 
 ![A text view showing by William Shakespeare in a 12 point, light, italic,](https://docs-assets.developer.apple.com/published/c6398423bafcaae5f2c2daccf3057e5e/SwiftUI-Text-font%402x.png)
 
-To apply styling within specific portions of the text, you can create the text view from an [Attributed String](/documentation/Foundation/AttributedString), which in turn allows you to use Markdown to style runs of text. You can mix string attributes and SwiftUI modifiers, with the string attributes taking priority.
+To apply styling within specific portions of the text, you can create the text view from an [AttributedString](/documentation/Foundation/AttributedString), which in turn allows you to use Markdown to style runs of text. You can mix string attributes and SwiftUI modifiers, with the string attributes taking priority.
 
 ```swift
 let attributedString = try! AttributedString(
@@ -89,7 +89,7 @@ To explicitly bypass localization for a string literal, use the [init(verbatim:)
 Text(verbatim: "pencil") // Displays the string "pencil" in any locale.
 ```
 
-If you initialize a text view with a variable value, the view uses the [init(_:)](/documentation/swiftui/text/init(_:)-9d1g4) initializer, which doesn’t localize the string. However, you can request localization by creating a [Localized String Key](/documentation/swiftui/localizedstringkey) instance first, which triggers the [init(_:tableName:bundle:comment:)](/documentation/swiftui/text/init(_:tablename:bundle:comment:)) initializer instead:
+If you initialize a text view with a variable value, the view uses the [init(_:)](/documentation/swiftui/text/init(_:)-9d1g4) initializer, which doesn’t localize the string. However, you can request localization by creating a [LocalizedStringKey](/documentation/swiftui/localizedstringkey) instance first, which triggers the [init(_:tableName:bundle:comment:)](/documentation/swiftui/text/init(_:tablename:bundle:comment:)) initializer instead:
 
 ```swift
 // Don't localize a string variable...
@@ -112,7 +112,7 @@ This would look up the `"Hello, %@"` localization key in the localized string fi
 
 Using string interpolation ensures that the text in your app can be localized correctly in all locales, especially in right-to-left languages.
 
-If you desire to style only parts of interpolated text while ensuring that the content can still be localized correctly, interpolate `Text` or [Attributed String](/documentation/Foundation/AttributedString):
+If you desire to style only parts of interpolated text while ensuring that the content can still be localized correctly, interpolate `Text` or [AttributedString](/documentation/Foundation/AttributedString):
 
 ```swift
 let name = Text(person.name).bold()
@@ -166,8 +166,8 @@ Using [appendInterpolation(_:)](/documentation/swiftui/localizedstringkey/string
 - [tracking(_:)](/documentation/swiftui/text/tracking(_:)) Sets the tracking for the text.
 - [baselineOffset(_:)](/documentation/swiftui/text/baselineoffset(_:)) Sets the vertical offset for the text relative to its baseline.
 - [Text.Case](/documentation/swiftui/text/case) A scheme for transforming the capitalization of characters within text.
-- [Text.DateStyle](/documentation/swiftui/text/datestyle) A predefined style used to display a .
-- [Text.LineStyle](/documentation/swiftui/text/linestyle) Description of the style used to draw the line for  and .
+- [Text.DateStyle](/documentation/swiftui/text/datestyle) A predefined style used to display a `Date`.
+- [Text.LineStyle](/documentation/swiftui/text/linestyle) Description of the style used to draw the line for `StrikethroughStyleAttribute` and `UnderlineStyleAttribute`.
 
 ## Fitting text into available space
 
@@ -203,8 +203,8 @@ Using [appendInterpolation(_:)](/documentation/swiftui/localizedstringkey/string
 ## Structures
 
 - [Text.AlignmentStrategy](/documentation/swiftui/text/alignmentstrategy) The way SwiftUI infers the appropriate text alignment if no value is explicitly provided.
-- [Text.Layout](/documentation/swiftui/text/layout) A value describing the layout and custom attributes of a tree of  views.
-- [Text.LayoutKey](/documentation/swiftui/text/layoutkey) A preference key that provides the  values for all text views in the queried subtree.
+- [Text.Layout](/documentation/swiftui/text/layout) A value describing the layout and custom attributes of a tree of `Text` views.
+- [Text.LayoutKey](/documentation/swiftui/text/layoutkey) A preference key that provides the `Text.Layout` values for all text views in the queried subtree.
 - [Text.WritingDirectionStrategy](/documentation/swiftui/text/writingdirectionstrategy) The way SwiftUI infers the appropriate writing direction if no value is explicitly provided.
 
 ## Instance Methods
@@ -214,10 +214,10 @@ Using [appendInterpolation(_:)](/documentation/swiftui/localizedstringkey/string
 
 ## Displaying text
 
-- [Label](/documentation/swiftui/label)
-- [labelStyle(_:)](/documentation/swiftui/view/labelstyle(_:))
+- [Label](/documentation/swiftui/label) A standard label for user interface items, consisting of an icon with a title.
+- [labelStyle(_:)](/documentation/swiftui/view/labelstyle(_:)) Sets the style for labels within this view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,7 +2,7 @@
 title: Organizing test functions with suite types
 description: Organize tests into test suites.
 source: https://developer.apple.com/documentation/testing/organizingtests
-timestamp: 2026-02-19T07:52:36.947Z
+timestamp: 2026-04-09T12:04:31.297Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -26,7 +26,7 @@ The `@Suite` attribute isn’t required for the testing library to recognize tha
 
 In addition to containing test functions and any other members that a Swift type might contain, test suite types can also contain additional test suites nested within them. To add a nested test suite type, simply declare an additional type within the scope of the outer test suite type.
 
-By default, tests contained within a suite run in parallel with each other. For more information about test parallelization, see [Parallelization](/documentation/testing/parallelization).
+By default, tests contained within a suite run in parallel with each other. For more information about test parallelization, see [Running tests serially or in parallel](/documentation/testing/parallelization).
 
 ### Customize a suite’s name
 
@@ -123,13 +123,13 @@ The compiler emits an error when presented with a test suite that doesn’t meet
 
 ## Essentials
 
-- [Defining test functions](/documentation/testing/definingtests)
-- [Migrating a test from XCTest](/documentation/testing/migratingfromxctest)
-- [Test(_:_:)](/documentation/testing/test(_:_:))
-- [Test](/documentation/testing/test)
-- [Suite(_:_:)](/documentation/testing/suite(_:_:))
+- [Defining test functions](/documentation/testing/definingtests) Define a test function to validate that code is working correctly.
+- [Migrating a test from XCTest](/documentation/testing/migratingfromxctest) Migrate an existing test method or test class written using XCTest.
+- [Test(_:_:)](/documentation/testing/test(_:_:)) Declare a test.
+- [Test](/documentation/testing/test) A type representing a test or suite.
+- [Suite(_:_:)](/documentation/testing/suite(_:_:)) Declare a test suite.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

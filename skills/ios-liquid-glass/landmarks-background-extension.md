@@ -2,10 +2,10 @@
 title: Landmarks: Applying a background extension effect
 description: Configure an image to blur and extend under a sidebar or inspector panel.
 source: https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect
-timestamp: 2026-02-19T07:56:02.665Z
+timestamp: 2026-04-09T13:37:28.205Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Sample Code**
 
@@ -21,6 +21,14 @@ The Landmarks app lets people explore interesting sites around the world. Whethe
 
 This sample demonstrates how to apply a background extension effect. In the top Landmarks view, the sample applies a background extension effect to the featured image in `LandmarksView`, and to the main image in `LandmarkDetailView`. The background extension effect blurs and extends the image under the sidebar or inspector panel when open. The following images show the main image in `LandmarkDetailView` both with and without the background extension effect.
 
+### With
+
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/32d9f0bd8395e9cbd92e197c7aa2b4b3/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
+
+### Without
+
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/bb19adc84554d4ae280227a56db4f08a/Landmarks-Building-an-app-with-Liquid-Glass-2r%402x.png)
+
 To apply the background extension effect, the sample:
 
 1. Aligns the view to the leading and trailing edges of the containing view.
@@ -31,7 +39,7 @@ To apply the background extension effect, the sample:
 
 To apply the [backgroundExtensionEffect()](/documentation/swiftui/view/backgroundextensioneffect()) to a view, align the leading edge of the view next to the sidebar, and align the trailing edge of the view to the trailing edge of the containing view.
 
-In `LandmarksView`, the `LandmarkFeaturedItemView` and the containing [Lazy VStack](/documentation/swiftui/lazyvstack) and [Scroll View](/documentation/swiftui/scrollview) don’t have padding. This allows the `LandmarkFeaturedItemView` to align with the leading edge of the view next to the sidebar.
+In `LandmarksView`, the `LandmarkFeaturedItemView` and the containing [LazyVStack](/documentation/swiftui/lazyvstack) and [ScrollView](/documentation/swiftui/scrollview) don’t have padding. This allows the `LandmarkFeaturedItemView` to align with the leading edge of the view next to the sidebar.
 
 ```swift
 ScrollView(showsIndicators: false) {
@@ -43,7 +51,7 @@ ScrollView(showsIndicators: false) {
 }
 ```
 
-In `LandmarkDetailView`, the [Scroll View](/documentation/swiftui/scrollview) and [VStack](/documentation/swiftui/vstack) that contain the main image also don’t have any padding. This allows the main image to align against the leading edge of the containing view.
+In `LandmarkDetailView`, the [ScrollView](/documentation/swiftui/scrollview) and [VStack](/documentation/swiftui/vstack) that contain the main image also don’t have any padding. This allows the main image to align against the leading edge of the containing view.
 
 ### Apply the background extension effect to the image
 
@@ -95,11 +103,11 @@ Image(decorative: landmark.backgroundImageName)
 
 ## App features
 
-- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector)
-- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars)
-- [Landmarks: Displaying custom activity badges](/documentation/swiftui/landmarks-displaying-custom-activity-badges)
+- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector) Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars) Organize toolbars into related groupings to improve their appearance and utility.
+- [Landmarks: Displaying custom activity badges](/documentation/swiftui/landmarks-displaying-custom-activity-badges) Provide people with a way to mark their adventures by displaying animated custom activity badges.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

@@ -2,10 +2,10 @@
 title: Product
 description: Information about a product that you configure in App Store Connect.
 source: https://developer.apple.com/documentation/storekit/product
-timestamp: 2026-02-19T07:52:37.023Z
+timestamp: 2026-04-09T12:04:27.657Z
 ---
 
-**Navigation:** [Storekit](/documentation/storekit)
+**Navigation:** [StoreKit](/documentation/storekit)
 
 **Structure**
 
@@ -25,17 +25,17 @@ The `Product` type represents the in-app purchases that you configure in App Sto
 
 To get a `Product` instance, call [products(for:)](/documentation/storekit/product/products(for:)) and provide one or more in-app purchase product identifiers. Use a `Product` instance to display in-app purchases and subscription offers in your store, as follows:
 
-- Show the localized name, description, and pricing information using [display Name](/documentation/storekit/product/displayname), [description](/documentation/storekit/product/description), and [display Price](/documentation/storekit/product/displayprice), respectively.
-- Determine whether a user is eligible for an introductory offer for the product using [is Eligible For Intro Offer](/documentation/storekit/product/subscriptioninfo/iseligibleforintrooffer).
+- Show the localized name, description, and pricing information using [displayName](/documentation/storekit/product/displayname), [description](/documentation/storekit/product/description), and [displayPrice](/documentation/storekit/product/displayprice), respectively.
+- Determine whether a user is eligible for an introductory offer for the product using [isEligibleForIntroOffer](/documentation/storekit/product/subscriptioninfo/iseligibleforintrooffer).
 - Display your subscription offers using the subscription information in [subscription](/documentation/storekit/product/subscription).
 
-When users initiate a purchase, call [purchase(options:)](/documentation/storekit/product/purchase(options:)) or [purchase(confirmIn:options:)](/documentation/storekit/product/purchase(confirmin:options:)-3bivf) on the product instance. If your app uses SwiftUI, you can also use [Purchase Action](/documentation/storekit/purchaseaction). Set purchase options ([Purchase Option](/documentation/storekit/product/purchaseoption)) to define an optional app account token, apply a promotional offer, or set a product quantity. Purchase options can also simulate an Ask to Buy scenario when you’re testing your app in the sandbox environment.
+When users initiate a purchase, call [purchase(options:)](/documentation/storekit/product/purchase(options:)) or [purchase(confirmIn:options:)](/documentation/storekit/product/purchase(confirmin:options:)-3bivf) on the product instance. If your app uses SwiftUI, you can also use [PurchaseAction](/documentation/storekit/purchaseaction). Set purchase options ([Product.PurchaseOption](/documentation/storekit/product/purchaseoption)) to define an optional app account token, apply a promotional offer, or set a product quantity. Purchase options can also simulate an Ask to Buy scenario when you’re testing your app in the sandbox environment.
 
-Use a `Product` instance to learn whether a user is entitled to a product by checking [current Entitlement](/documentation/storekit/product/currententitlement), which holds the transaction that entitles the user to the product. This transaction information, as well as the transaction in [latest Transaction](/documentation/storekit/product/latesttransaction), are cryptographically signed by the App Store in JSON Web Signature (JWS) format.
+Use a `Product` instance to learn whether a user is entitled to a product by checking [currentEntitlement](/documentation/storekit/product/currententitlement), which holds the transaction that entitles the user to the product. This transaction information, as well as the transaction in [latestTransaction](/documentation/storekit/product/latesttransaction), are cryptographically signed by the App Store in JSON Web Signature (JWS) format.
 
-If the product is an auto-renewable subscription, use the [status-swift.property](/documentation/storekit/product/subscriptioninfo/status-swift.property) and [renewal Info](/documentation/storekit/product/subscriptioninfo/status-swift.struct/renewalinfo) in the [subscription](/documentation/storekit/product/subscription) information to help manage subscriptions and inform business decisions, such as presenting subscription offers.
+If the product is an auto-renewable subscription, use the [status](/documentation/storekit/product/subscriptioninfo/status-swift.property) and [renewalInfo](/documentation/storekit/product/subscriptioninfo/status-swift.struct/renewalinfo) in the [subscription](/documentation/storekit/product/subscription) information to help manage subscriptions and inform business decisions, such as presenting subscription offers.
 
-For information about configuring In-App Purchases in App Store Connect, see [overview-for-configuring-in-app](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+For information about configuring In-App Purchases in App Store Connect, see [Overview for configuring In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 ## Conforms To
 
@@ -121,12 +121,12 @@ For information about configuring In-App Purchases in App Store Connect, see [ov
 
 ## Product and subscription information
 
-- [Implementing a store in your app using the StoreKit API](/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api)
-- [Product.SubscriptionInfo](/documentation/storekit/product/subscriptioninfo)
-- [SubscriptionInfo](/documentation/storekit/subscriptioninfo)
-- [SubscriptionStatus](/documentation/storekit/subscriptionstatus)
+- [Implementing a store in your app using the StoreKit API](/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api) Offer In-App Purchases and manage entitlements using signed transactions and status information.
+- [Product.SubscriptionInfo](/documentation/storekit/product/subscriptioninfo) Information about an auto-renewable subscription, such as its status, period, subscription group, and subscription offer details.
+- [SubscriptionInfo](/documentation/storekit/subscriptioninfo) Information about an auto-renewable subscription.
+- [SubscriptionStatus](/documentation/storekit/subscriptionstatus) Represents the renewal status information for an auto-renewable subscription.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

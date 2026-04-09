@@ -2,10 +2,10 @@
 title: AsyncImage
 description: A view that asynchronously loads and displays an image.
 source: https://developer.apple.com/documentation/swiftui/asyncimage
-timestamp: 2026-02-19T07:52:36.964Z
+timestamp: 2026-04-09T13:37:37.998Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -43,14 +43,13 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { image in
 .frame(width: 50, height: 50)
 ```
 
-For this example, SwiftUI shows a [Progress View](/documentation/swiftui/progressview) first, and then the image scaled to fit in the specified frame:
+For this example, SwiftUI shows a [ProgressView](/documentation/swiftui/progressview) first, and then the image scaled to fit in the specified frame:
 
 ![A diagram that shows a progress view on the left, the SwiftUI icon on the](https://docs-assets.developer.apple.com/published/d288fdb7e0fd01131459d0fa071516aa/AsyncImage-2%402x.png)
 
-> [!IMPORTANT]
-> You can’t apply image-specific modifiers, like [resizable(capInsets:resizingMode:)](/documentation/swiftui/image/resizable(capinsets:resizingmode:)), directly to an `AsyncImage`. Instead, apply them to the [Image](/documentation/swiftui/image) instance that your `content` closure gets when defining the view’s appearance.
+> **Important:** You can’t apply image-specific modifiers, like [resizable(capInsets:resizingMode:)](/documentation/swiftui/image/resizable(capinsets:resizingmode:)), directly to an `AsyncImage`. Instead, apply them to the [Image](/documentation/swiftui/image) instance that your `content` closure gets when defining the view’s appearance.
 
-To gain more control over the loading process, use the [init(url:scale:transaction:content:)](/documentation/swiftui/asyncimage/init(url:scale:transaction:content:)) initializer, which takes a `content` closure that receives an [Async Image Phase](/documentation/swiftui/asyncimagephase) to indicate the state of the loading operation. Return a view that’s appropriate for the current phase:
+To gain more control over the loading process, use the [init(url:scale:transaction:content:)](/documentation/swiftui/asyncimage/init(url:scale:transaction:content:)) initializer, which takes a `content` closure that receives an [AsyncImagePhase](/documentation/swiftui/asyncimagephase) to indicate the state of the loading operation. Return a view that’s appropriate for the current phase:
 
 ```swift
 AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
@@ -79,9 +78,9 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
 
 ## Loading images asynchronously
 
-- [AsyncImagePhase](/documentation/swiftui/asyncimagephase)
+- [AsyncImagePhase](/documentation/swiftui/asyncimagephase) The current phase of the asynchronous image loading operation.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

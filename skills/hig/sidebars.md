@@ -2,7 +2,7 @@
 title: Sidebars
 description: A sidebar appears on the leading side of a view and lets people navigate between sections in your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/sidebars
-timestamp: 2026-01-17T15:45:14.132Z
+timestamp: 2026-04-09T13:37:25.039Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,7 +13,7 @@ timestamp: 2026-01-17T15:45:14.132Z
 
 > A sidebar appears on the leading side of a view and lets people navigate between sections in your app or game.
 
-
+![A stylized representation of the top portion of a window's sidebar displaying a title, a section, and some folders. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/62aa8ac573216e11158b440a35f958a5/components-sidebar-intro%402x.png)
 
 A sidebar floats above content without being anchored to the edges of the view. It provides a broad, flat view of an app’s information hierarchy, giving people access to several peer content areas or modes at the same time.
 
@@ -22,6 +22,14 @@ A sidebar requires a large amount of vertical and horizontal space. When space i
 ## Best practices
 
 **Extend content beneath the sidebar.** In iOS, iPadOS, and macOS, as with other controls such as toolbars and tab bars, sidebars float above content in the [Liquid Glass](/design/human-interface-guidelines/materials#Liquid-Glass) layer. To reinforce the separation and floating appearance of the sidebar, extend content beneath it either by letting it horizontally scroll or applying a background extension view, which mirrors adjacent content to give the impression of stretching it under the sidebar. For developer guidance, see [backgroundExtensionEffect()](/documentation/SwiftUI/View/backgroundExtensionEffect()).
+
+![A screenshot of the leading side of an app on iPad. An image spans the upper part of the window, stopping at the edge of the sidebar.](https://docs-assets.developer.apple.com/published/d50ee5db90fbe0cae8f34304aa315053/sidebars-extend-content-beneath-sidebar-incorrect%402x.png)
+
+![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
+
+![A screenshot of the leading side of an app on iPad. An image spans the upper part of the window, and uses a background extension effect to flip, blur, and extend the image beneath the sidebar to the edge of the window.](https://docs-assets.developer.apple.com/published/5cdac1170561cddf1930b4d74325c4dd/sidebars-extend-content-beneath-sidebar-correct%402x.png)
+
+![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
 
 **When possible, let people customize the contents of a sidebar.** A sidebar lets people navigate to important areas in your app, so it works well when people can decide which areas are most important and in what order they appear.
 
@@ -47,6 +55,8 @@ A sidebar requires a large amount of vertical and horizontal space. When space i
 
 When you use the [sidebarAdaptable](/documentation/SwiftUI/TabViewStyle/sidebarAdaptable) style of tab view to present a sidebar, you choose whether to display a sidebar or a tab bar when your app opens. Both variations include a button that people can use to switch between them. This style also responds automatically to rotation and window resizing, providing a version of the control that’s appropriate to the width of the view.
 
+> **Developer note:** To display a sidebar only, use [NavigationSplitView](/documentation/SwiftUI/NavigationSplitView) to present a sidebar in the primary pane of a split view, or use [UISplitViewController](/documentation/UIKit/UISplitViewController).
+
 **Consider using a tab bar first.** A tab bar provides more space to feature content, and offers enough flexibility to navigate between many apps’ main areas. If you need to expose more areas than fit in a tab bar, the tab bar’s convertible sidebar-style appearance can provide access to content that people use less frequently. For guidance, see [Tab bars](/design/human-interface-guidelines/tab-bars).
 
 **If necessary, apply the correct appearance to a sidebar.** If you’re not using SwiftUI to create a sidebar, you can use the [UICollectionLayoutListConfiguration.Appearance.sidebar](/documentation/UIKit/UICollectionLayoutListConfiguration-swift.struct/Appearance-swift.enum/sidebar) appearance of a collection view list layout. For developer guidance, see [UICollectionLayoutListConfiguration.Appearance](/documentation/UIKit/UICollectionLayoutListConfiguration-swift.struct/Appearance-swift.enum).
@@ -65,7 +75,7 @@ A sidebar’s row height, text, and glyph size depend on its overall size, which
 
 **If your app’s hierarchy is deep, consider using a sidebar within a tab in a tab bar.** In this situation, a sidebar can support secondary navigation within the tab. If you do this, be sure to prevent selections in the sidebar from changing which tab is currently open.
 
-
+![A partial screenshot of the Music app in visionOS. The app's window includes a sidebar for navigating the music library, and the secondary pane includes a grid of playlists.](https://docs-assets.developer.apple.com/published/5e381525f4cccac8e9eb979fe4c984c6/visionos-sidebar-music%402x.png)
 
 ## Resources
 
@@ -95,7 +105,14 @@ A sidebar’s row height, text, and glyph size depend on its overall size, which
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| June 9, 2025 | Added guidance for extending content beneath the sidebar. |
+| August 6, 2024 | Updated guidance to include the SwiftUI adaptable sidebar style. |
+| December 5, 2023 | Added artwork for iPadOS. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,10 +2,10 @@
 title: LazyVStack
 description: A view that arranges its children in a line that grows vertically, creating items only as needed.
 source: https://developer.apple.com/documentation/swiftui/lazyvstack
-timestamp: 2026-01-19T10:23:13.239Z
+timestamp: 2026-04-09T12:04:36.844Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -23,7 +23,7 @@ struct LazyVStack<Content> where Content : View
 
 The stack is “lazy,” in that the stack view doesn’t create items until it needs to render them onscreen.
 
-In the following example, a [Scroll View](/documentation/swiftui/scrollview) contains a `LazyVStack` that consists of a vertical row of text views. The stack aligns to the leading edge of the scroll view, and uses default spacing between the text views.
+In the following example, a [ScrollView](/documentation/swiftui/scrollview) contains a `LazyVStack` that consists of a vertical row of text views. The stack aligns to the leading edge of the scroll view, and uses default spacing between the text views.
 
 ```swift
 ScrollView {
@@ -45,12 +45,12 @@ ScrollView {
 
 ## Dynamically arranging views in one dimension
 
-- [Grouping data with lazy stack views](/documentation/swiftui/grouping-data-with-lazy-stack-views)
-- [Creating performant scrollable stacks](/documentation/swiftui/creating-performant-scrollable-stacks)
-- [LazyHStack](/documentation/swiftui/lazyhstack)
-- [PinnedScrollableViews](/documentation/swiftui/pinnedscrollableviews)
+- [Grouping data with lazy stack views](/documentation/swiftui/grouping-data-with-lazy-stack-views) Split content into logical sections inside lazy stack views.
+- [Creating performant scrollable stacks](/documentation/swiftui/creating-performant-scrollable-stacks) Display large numbers of repeated views efficiently with scroll views, stack views, and lazy stacks.
+- [LazyHStack](/documentation/swiftui/lazyhstack) A view that arranges its children in a line that grows horizontally, creating items only as needed.
+- [PinnedScrollableViews](/documentation/swiftui/pinnedscrollableviews) A set of view types that may be pinned to the bounds of a scroll view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

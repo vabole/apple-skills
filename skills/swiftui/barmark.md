@@ -2,7 +2,7 @@
 title: BarMark
 description: Chart content that represents data using bars.
 source: https://developer.apple.com/documentation/charts/barmark
-timestamp: 2026-02-19T07:56:08.015Z
+timestamp: 2026-04-09T13:37:38.169Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -98,11 +98,11 @@ Chart(data) {
 
 ![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance with stacked product categories Gizmos, Gadgets, Widgets, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15,000: Gizmos 4000, Gadgets 5000, and Widgets 6000, Marketing 8000: Gizmos 2000, Gadgets 1000, and Widgets 5000, Finance 10000: Gizmos 2000, Gadgets 3000, and Widgets 500. Legend showing the color mapped to a product category.](https://docs-assets.developer.apple.com/published/f9963976e24f81fcb62eb62501d49795/BarMarkSwift.BarMarkStackedBarChartWithForegroundColor%402x.png)
 
-You can use the optional `stacking:` parameter in the `BarMark` initializer to modify the stacking mechanism. See [Mark Stacking Method](/documentation/charts/markstackingmethod) for the stacking options.
+You can use the optional `stacking:` parameter in the `BarMark` initializer to modify the stacking mechanism. See [MarkStackingMethod](/documentation/charts/markstackingmethod) for the stacking options.
 
 ### 1D Bar Chart
 
-To build a one dimensional chart, use one of the initializers that only requires a [Plottable Value](/documentation/charts/plottablevalue) for one dimension, like [init(x:yStart:yEnd:width:stacking:)](/documentation/charts/barmark/init(x:ystart:yend:width:stacking:)) for plotting with x. The example below reuses the data from the previous example to get the production department values:
+To build a one dimensional chart, use one of the initializers that only requires a [PlottableValue](/documentation/charts/plottablevalue) for one dimension, like [init(x:yStart:yEnd:width:stacking:)](/documentation/charts/barmark/init(x:ystart:yend:width:stacking:)) for plotting with x. The example below reuses the data from the previous example to get the production department values:
 
 ```swift
 Chart(data) { // Get the Production values.
@@ -169,14 +169,14 @@ var body: some View {
 
 ## Marks
 
-- [AreaMark](/documentation/charts/areamark)
-- [LineMark](/documentation/charts/linemark)
-- [PointMark](/documentation/charts/pointmark)
-- [RectangleMark](/documentation/charts/rectanglemark)
-- [RuleMark](/documentation/charts/rulemark)
-- [SectorMark](/documentation/charts/sectormark)
+- [AreaMark](/documentation/charts/areamark) Chart content that represents data using the area of one or more regions.
+- [LineMark](/documentation/charts/linemark) Chart content that represents data using a sequence of connected line segments.
+- [PointMark](/documentation/charts/pointmark) Chart content that represents data using points.
+- [RectangleMark](/documentation/charts/rectanglemark) Chart content that represents data using rectangles.
+- [RuleMark](/documentation/charts/rulemark) Chart content that represents data using a single horizontal or vertical rule.
+- [SectorMark](/documentation/charts/sectormark) A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

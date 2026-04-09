@@ -2,10 +2,10 @@
 title: DisclosureGroup
 description: A view that shows or hides another content view, based on the state of a disclosure control.
 source: https://developer.apple.com/documentation/swiftui/disclosuregroup
-timestamp: 2026-02-19T07:52:37.076Z
+timestamp: 2026-04-09T12:04:34.925Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -57,10 +57,10 @@ var body: some View {
 
 ## Disclosing information progressively
 
-- [OutlineGroup](/documentation/swiftui/outlinegroup)
-- [disclosureGroupStyle(_:)](/documentation/swiftui/view/disclosuregroupstyle(_:))
+- [OutlineGroup](/documentation/swiftui/outlinegroup) A structure that computes views and disclosure groups on demand from an underlying collection of tree-structured, identified data.
+- [disclosureGroupStyle(_:)](/documentation/swiftui/view/disclosuregroupstyle(_:)) Sets the style for disclosure groups within this view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

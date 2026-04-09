@@ -2,10 +2,10 @@
 title: Environment
 description: A property wrapper that reads a value from a view’s environment.
 source: https://developer.apple.com/documentation/swiftui/environment
-timestamp: 2026-01-17T15:34:41.994Z
+timestamp: 2026-04-09T12:04:35.126Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -21,13 +21,13 @@ timestamp: 2026-01-17T15:34:41.994Z
 
 ## Overview
 
-Use the `Environment` property wrapper to read a value stored in a view’s environment. Indicate the value to read using an [Environment Values](/documentation/swiftui/environmentvalues) key path in the property declaration. For example, you can create a property that reads the color scheme of the current view using the key path of the [color Scheme](/documentation/swiftui/environmentvalues/colorscheme) property:
+Use the `Environment` property wrapper to read a value stored in a view’s environment. Indicate the value to read using an [EnvironmentValues](/documentation/swiftui/environmentvalues) key path in the property declaration. For example, you can create a property that reads the color scheme of the current view using the key path of the [colorScheme](/documentation/swiftui/environmentvalues/colorscheme) property:
 
 ```swift
 @Environment(\.colorScheme) var colorScheme: ColorScheme
 ```
 
-You can condition a view’s content on the associated value, which you read from the declared property’s [wrapped Value](/documentation/swiftui/environment/wrappedvalue). As with any property wrapper, you access the wrapped value by directly referring to the property:
+You can condition a view’s content on the associated value, which you read from the declared property’s [wrappedValue](/documentation/swiftui/environment/wrappedvalue). As with any property wrapper, you access the wrapped value by directly referring to the property:
 
 ```swift
 if colorScheme == .dark { // Checks the wrapped value.
@@ -41,7 +41,7 @@ If the value changes, SwiftUI updates any parts of your view that depend on the 
 
 You can use this property wrapper to read — but not set — an environment value. SwiftUI updates some environment values automatically based on system settings and provides reasonable defaults for others. You can override some of these, as well as set custom environment values that you define, using the [environment(_:_:)](/documentation/swiftui/view/environment(_:_:)) view modifier.
 
-For the complete list of environment values SwiftUI provides, see the properties of the [Environment Values](/documentation/swiftui/environmentvalues) structure. For information about creating custom environment values, see the [Entry()](/documentation/swiftui/entry()) macro.
+For the complete list of environment values SwiftUI provides, see the properties of the [EnvironmentValues](/documentation/swiftui/environmentvalues) structure. For information about creating custom environment values, see the [Entry()](/documentation/swiftui/entry()) macro.
 
 ### Get an observable object
 
@@ -147,9 +147,9 @@ struct LibraryView: View {
 
 ## Accessing environment values
 
-- [EnvironmentValues](/documentation/swiftui/environmentvalues)
+- [EnvironmentValues](/documentation/swiftui/environmentvalues) A collection of environment values propagated through a view hierarchy.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

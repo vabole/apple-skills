@@ -2,10 +2,10 @@
 title: ModelContext
 description: An object that enables you to fetch, insert, and delete models, and save any changes to disk.
 source: https://developer.apple.com/documentation/swiftdata/modelcontext
-timestamp: 2026-01-19T10:21:54.101Z
+timestamp: 2026-04-09T12:04:32.138Z
 ---
 
-**Navigation:** [Swiftdata](/documentation/swiftdata)
+**Navigation:** [SwiftData](/documentation/swiftdata)
 
 **Class**
 
@@ -21,7 +21,7 @@ class ModelContext
 
 ## Overview
 
-A model context is central to SwiftData as it’s responsible for managing the entire lifecycle of your persistent models. You use a context to insert new models, track and persist changes to those models, and to delete those models when you no longer need them. A context understands your app’s schema but doesn’t know about any individual models until you tell it to fetch some from the persistent storage or populate it with new models. Afterwards, any changes made to those models exist only in memory until the context implicitly writes them to the persistent storage, or you manually invoke [save()](/documentation/swiftdata/modelcontext/save()). For more information about implicit writes, see [autosave Enabled](/documentation/swiftdata/modelcontext/autosaveenabled).
+A model context is central to SwiftData as it’s responsible for managing the entire lifecycle of your persistent models. You use a context to insert new models, track and persist changes to those models, and to delete those models when you no longer need them. A context understands your app’s schema but doesn’t know about any individual models until you tell it to fetch some from the persistent storage or populate it with new models. Afterwards, any changes made to those models exist only in memory until the context implicitly writes them to the persistent storage, or you manually invoke [save()](/documentation/swiftdata/modelcontext/save()). For more information about implicit writes, see [autosaveEnabled](/documentation/swiftdata/modelcontext/autosaveenabled).
 
 If your app’s schema describes relationships between models, you don’t need to manually insert each model into the context when you first create them. Instead, create the graph of related models and insert only the graph’s root model into the context. The context recognizes the hierarchy and automatically handles the insertion of the related models. The same behavior applies even if the graph contains both new and existing models.
 
@@ -34,14 +34,13 @@ struct LastModifiedView: View {
 }
 ```
 
-> [!IMPORTANT]
-> If you don’t explicitly attach a model container, the environment provides a context bound to an in-memory, schema-less container. Any attempt to insert a model into this context causes the framework to throw an error, and any fetches you run will return empty results.
+> **Important:** If you don’t explicitly attach a model container, the environment provides a context bound to an in-memory, schema-less container. Any attempt to insert a model into this context causes the framework to throw an error, and any fetches you run will return empty results.
 
-After you establish access to a model context, use that context’s [insert(_:)](/documentation/swiftdata/modelcontext/insert(_:)) and [delete(_:)](/documentation/swiftdata/modelcontext/delete(_:)) methods to add and remove models. You can also delete several models at once using [delete(model:where:includeSubclasses:)](/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses:)). There isn’t a corresponding method to update a model because the context automatically tracks all changes to its known models. Use the [has Changes](/documentation/swiftdata/modelcontext/haschanges) property to determine if the context has unsaved changes, and call [rollback()](/documentation/swiftdata/modelcontext/rollback()) to discard any pending inserts and deletes and any restore changed models to their most recent saved state.
+After you establish access to a model context, use that context’s [insert(_:)](/documentation/swiftdata/modelcontext/insert(_:)) and [delete(_:)](/documentation/swiftdata/modelcontext/delete(_:)) methods to add and remove models. You can also delete several models at once using [delete(model:where:includeSubclasses:)](/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses:)). There isn’t a corresponding method to update a model because the context automatically tracks all changes to its known models. Use the [hasChanges](/documentation/swiftdata/modelcontext/haschanges) property to determine if the context has unsaved changes, and call [rollback()](/documentation/swiftdata/modelcontext/rollback()) to discard any pending inserts and deletes and any restore changed models to their most recent saved state.
 
 Although you fetch models primarily with the `Query()` macro (and its variants), you can use a model context to perform almost identical fetches. For example, use the [fetch(_:)](/documentation/swiftdata/modelcontext/fetch(_:)) and [fetch(_:batchSize:)](/documentation/swiftdata/modelcontext/fetch(_:batchsize:)) methods to retrieve all models of a certain type that match a set of criteria. And use [fetchCount(_:)](/documentation/swiftdata/modelcontext/fetchcount(_:)) to determine the number of models that match some criteria without the overhead of fetching the models themselves. If you need to be able to identify models that match some criteria but don’t require all of the associated data, use [fetchIdentifiers(_:)](/documentation/swiftdata/modelcontext/fetchidentifiers(_:)) and [fetchIdentifiers(_:batchSize:)](/documentation/swiftdata/modelcontext/fetchidentifiers(_:batchsize:)) to retrieve only those models’ persistent identifiers.
 
-A model context posts a [will Save](/documentation/swiftdata/modelcontext/willsave) notification before it attempts a save operation, and a [did Save](/documentation/swiftdata/modelcontext/didsave) notification immediately after that operation succeeds. Subscribe to one, or both, of these notifications if your app needs to be aware of these events. The `didSave` notification provides additional information about any inserted, updated, and deleted models.
+A model context posts a [willSave](/documentation/swiftdata/modelcontext/willsave) notification before it attempts a save operation, and a [didSave](/documentation/swiftdata/modelcontext/didsave) notification immediately after that operation succeeds. Subscribe to one, or both, of these notifications if your app needs to be aware of these events. The `didSave` notification provides additional information about any inserted, updated, and deleted models.
 
 ```swift
 struct LastModifiedView: View {
@@ -62,8 +61,7 @@ struct LastModifiedView: View {
 }
 ```
 
-> [!NOTE]
-> To avoid receiving unwanted or unexpected notifications, always specify the model context as the `object` parameter when creating a publisher.
+> **Note:** To avoid receiving unwanted or unexpected notifications, always specify the model context as the `object` parameter when creating a publisher.
 
 ## Conforms To
 
@@ -145,15 +143,15 @@ struct LastModifiedView: View {
 
 ## Model life cycle
 
-- [ModelContainer](/documentation/swiftdata/modelcontainer)
-- [Fetching and filtering time-based model changes](/documentation/swiftdata/fetching-and-filtering-time-based-model-changes)
-- [HistoryDescriptor](/documentation/swiftdata/historydescriptor)
-- [Deleting persistent data from your app](/documentation/swiftdata/deleting-persistent-data-from-your-app)
-- [Reverting data changes using the undo manager](/documentation/swiftdata/reverting-data-changes-using-the-undo-manager)
-- [Syncing model data across a person’s devices](/documentation/swiftdata/syncing-model-data-across-a-persons-devices)
-- [Concurrency support](/documentation/swiftdata/concurrencysupport)
+- [ModelContainer](/documentation/swiftdata/modelcontainer) An object that manages an app’s schema and model storage configuration.
+- [Fetching and filtering time-based model changes](/documentation/swiftdata/fetching-and-filtering-time-based-model-changes) Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
+- [HistoryDescriptor](/documentation/swiftdata/historydescriptor) A type that describes the criteria, and, optionally, sort order, to use when fetching history data
+- [Deleting persistent data from your app](/documentation/swiftdata/deleting-persistent-data-from-your-app) Explore different ways to use SwiftData to delete persistent data.
+- [Reverting data changes using the undo manager](/documentation/swiftdata/reverting-data-changes-using-the-undo-manager) Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
+- [Syncing model data across a person’s devices](/documentation/swiftdata/syncing-model-data-across-a-persons-devices) Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
+- [Concurrency support](/documentation/swiftdata/concurrencysupport) Types you use to access model attributes and perform storage-related tasks in a safe and isolated way.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

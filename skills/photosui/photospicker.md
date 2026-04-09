@@ -2,16 +2,16 @@
 title: PhotosPicker
 description: A view that displays a Photos picker for choosing assets from the photo library.
 source: https://developer.apple.com/documentation/photosui/photospicker
-timestamp: 2026-01-19T11:03:11.932Z
+timestamp: 2026-04-09T12:04:27.254Z
 ---
 
-**Navigation:** [Photosui](/documentation/photosui)
+**Navigation:** [PhotosUI](/documentation/photosui)
 
 **Structure**
 
 # PhotosPicker
 
-**Available on:** iOS 16.0+, iPadOS 16.0+, Mac Catalyst undefined+, macOS 13.0+, visionOS undefined+, watchOS 9.0+
+**Available on:** iOS 16.0+, iPadOS 16.0+, Mac Catalyst, macOS 13.0+, visionOS, watchOS 9.0+
 
 > A view that displays a Photos picker for choosing assets from the photo library.
 
@@ -39,7 +39,7 @@ struct PhotosSelector: View {
 }
 ```
 
-When displaying the picker, you can use [PHPicker Filter-swift.struct](/documentation/photosui/phpickerfilter-swift.struct) options to customize what it displays. For example, the following code displays [images](/documentation/photosui/phpickerfilter-swift.struct/images) and excludes [screenshots](/documentation/photosui/phpickerfilter-swift.struct/screenshots).
+When displaying the picker, you can use [PHPickerFilter](/documentation/photosui/phpickerfilter-swift.struct) options to customize what it displays. For example, the following code displays [images](/documentation/photosui/phpickerfilter-swift.struct/images) and excludes [screenshots](/documentation/photosui/phpickerfilter-swift.struct/screenshots).
 
 ```swift
 PhotosPicker(selection: $selectedItems,
@@ -48,7 +48,7 @@ PhotosPicker(selection: $selectedItems,
 }
 ```
 
-The selection results you get are placeholder objects. A [Photos Picker Item](/documentation/photosui/photospickeritem) conforms to [Transferable](/documentation/CoreTransferable/Transferable), and allows you to load a representation you request. To load a SwiftUI [Image](/documentation/SwiftUI/Image) and track progress, use [loadTransferable(type:completionHandler:)](/documentation/photosui/photospickeritem/loadtransferable(type:completionhandler:)).
+The selection results you get are placeholder objects. A [PhotosPickerItem](/documentation/photosui/photospickeritem) conforms to [Transferable](/documentation/CoreTransferable/Transferable), and allows you to load a representation you request. To load a SwiftUI [Image](/documentation/SwiftUI/Image) and track progress, use [loadTransferable(type:completionHandler:)](/documentation/photosui/photospickeritem/loadtransferable(type:completionhandler:)).
 
 ```swift
 func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress {
@@ -70,8 +70,7 @@ func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress {
 
 A failure can occur when the system attempts to retrieve the data. For example, if the picker tries to download data from iCloud Photos without a network connection.
 
-> [!IMPORTANT]
-> [Image](/documentation/SwiftUI/Image) only supports `PNG` file types through its [Transferable](/documentation/CoreTransferable/Transferable) conformance, so you need to create a custom `Transferable` model to support other image types. See [bringing-photos-picker-to-your-swiftui](/documentation/photokit/bringing-photos-picker-to-your-swiftui-app) to learn more.
+> **Important:** [Image](/documentation/SwiftUI/Image) only supports `PNG` file types through its [Transferable](/documentation/CoreTransferable/Transferable) conformance, so you need to create a custom `Transferable` model to support other image types. See [Bringing Photos picker to your SwiftUI app](/documentation/photokit/bringing-photos-picker-to-your-swiftui-app) to learn more.
 
 ## Conforms To
 
@@ -99,13 +98,13 @@ A failure can occur when the system attempts to retrieve the data. For example, 
 
 ## Photos picker for SwiftUI
 
-- [Bringing Photos picker to your SwiftUI app](/documentation/photokit/bringing-photos-picker-to-your-swiftui-app)
-- [Implementing an inline Photos picker](/documentation/photokit/implementing-an-inline-photos-picker)
-- [PhotosPickerItem](/documentation/photosui/photospickeritem)
-- [PhotosPickerSelectionBehavior](/documentation/photosui/photospickerselectionbehavior)
+- [Bringing Photos picker to your SwiftUI app](/documentation/photokit/bringing-photos-picker-to-your-swiftui-app) Select media assets by using a Photos picker view that SwiftUI provides.
+- [Implementing an inline Photos picker](/documentation/photokit/implementing-an-inline-photos-picker) Embed a system-provided, half-height Photos picker into your app’s view.
+- [PhotosPickerItem](/documentation/photosui/photospickeritem) A type that represents an item you use with a Photos picker.
+- [PhotosPickerSelectionBehavior](/documentation/photosui/photospickerselectionbehavior) A type that describes how the Photos picker handles user selection.
 - [PhotosPickerStyle](/documentation/photosui/photospickerstyle)
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

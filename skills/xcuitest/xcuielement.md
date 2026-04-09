@@ -2,16 +2,16 @@
 title: XCUIElement
 description: A UI element in an application.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuielement
-timestamp: 2026-02-19T07:56:00.668Z
+timestamp: 2026-04-09T12:04:46.005Z
 ---
 
-**Navigation:** [Xcuiautomation](/documentation/xcuiautomation)
+**Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
 
 **Class**
 
 # XCUIElement
 
-**Available on:** iOS undefined+, iPadOS undefined+, Mac Catalyst undefined+, macOS undefined+, tvOS undefined+, visionOS undefined+, watchOS undefined+, Xcode 16.3+
+**Available on:** iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS, watchOS, Xcode 16.3+
 
 > A UI element in an application.
 
@@ -23,8 +23,7 @@ timestamp: 2026-02-19T07:56:00.668Z
 
 In macOS and iPadOS 15 and later, [XCUIElement](/documentation/xcuiautomation/xcuielement) provides a way to test your app with keyboard and mouse interactions, such as typing, clicking, scrolling, and moving and pausing the pointer. In iOS, [XCUIElement](/documentation/xcuiautomation/xcuielement) provides a way to test your app with gestures, such as tapping, swiping, pinching, and rotating.
 
-> [!NOTE]
-> [XCUIElement](/documentation/xcuiautomation/xcuielement) adopts the [XCUIElement Attributes](/documentation/xcuiautomation/xcuielementattributes) protocol, which provides additional properties for querying the current state of a UI element’s attributes.
+> **Note:** [XCUIElement](/documentation/xcuiautomation/xcuielement) adopts the [XCUIElementAttributes](/documentation/xcuiautomation/xcuielementattributes) protocol, which provides additional properties for querying the current state of a UI element’s attributes.
 
 ## Inherits From
 
@@ -147,12 +146,12 @@ In macOS and iPadOS 15 and later, [XCUIElement](/documentation/xcuiautomation/xc
 
 ## UI elements
 
-- [XCUIElementAttributes](/documentation/xcuiautomation/xcuielementattributes)
-- [XCUIElementSnapshot](/documentation/xcuiautomation/xcuielementsnapshot)
-- [XCUIElementSnapshotProviding](/documentation/xcuiautomation/xcuielementsnapshotproviding)
-- [XCUICoordinate](/documentation/xcuiautomation/xcuicoordinate)
+- [XCUIElementAttributes](/documentation/xcuiautomation/xcuielementattributes) Attributes exposed by UI elements.
+- [XCUIElementSnapshot](/documentation/xcuiautomation/xcuielementsnapshot) A set of attributes to express a snapshot of an element’s attributes and descendant user interface hierarchy.
+- [XCUIElementSnapshotProviding](/documentation/xcuiautomation/xcuielementsnapshotproviding) A method to capture a snapshot of an element’s attributes and descendant user interface hierarchy.
+- [XCUICoordinate](/documentation/xcuiautomation/xcuicoordinate) A location on screen relative to a UI element.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

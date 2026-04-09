@@ -2,10 +2,10 @@
 title: Grid
 description: A container view that arranges other views in a two dimensional layout.
 source: https://developer.apple.com/documentation/swiftui/grid
-timestamp: 2026-02-19T07:52:36.622Z
+timestamp: 2026-04-09T13:37:40.313Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -21,7 +21,7 @@ timestamp: 2026-02-19T07:52:36.622Z
 
 ## Overview
 
-Create a two dimensional layout by initializing a `Grid` with a collection of [Grid Row](/documentation/swiftui/gridrow) structures. The first view in each grid row appears in the grid’s first column, the second view in the second column, and so on. The following example creates a grid with two rows and two columns:
+Create a two dimensional layout by initializing a `Grid` with a collection of [GridRow](/documentation/swiftui/gridrow) structures. The first view in each grid row appears in the grid’s first column, the second view in the second column, and so on. The following example creates a grid with two rows and two columns:
 
 ```swift
 Grid {
@@ -40,12 +40,11 @@ A grid and its rows behave something like a collection of [HStack](/documentatio
 
 ![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/6ce3d6ec21845fdf9aab2ca5cbe95f03/Grid-1-iOS%402x.png)
 
-> [!NOTE]
-> If you need a grid that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [Any Layout](/documentation/swiftui/anylayout), use [Grid Layout](/documentation/swiftui/gridlayout) instead.
+> **Note:** If you need a grid that conforms to the [Layout](/documentation/swiftui/layout) protocol, like when you want to create a conditional layout using [AnyLayout](/documentation/swiftui/anylayout), use [GridLayout](/documentation/swiftui/gridlayout) instead.
 
 ### Multicolumn cells
 
-If you provide a view rather than a [Grid Row](/documentation/swiftui/gridrow) as an element in the grid’s content, the grid uses the view to create a row that spans all of the grid’s columns. For example, you can add a [Divider](/documentation/swiftui/divider) between the rows of the previous example:
+If you provide a view rather than a [GridRow](/documentation/swiftui/gridrow) as an element in the grid’s content, the grid uses the view to create a row that spans all of the grid’s columns. For example, you can add a [Divider](/documentation/swiftui/divider) between the rows of the previous example:
 
 ```swift
 Grid {
@@ -76,7 +75,7 @@ This restores the grid to the width that the text and images require:
 
 ![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/f9a8d394b17ecb1bfd61218fb597b5d4/Grid-3-iOS%402x.png)
 
-To make a cell span a specific number of columns rather than the whole grid, use the [gridCellColumns(_:)](/documentation/swiftui/view/gridcellcolumns(_:)) modifier on a view that’s contained inside a [Grid Row](/documentation/swiftui/gridrow).
+To make a cell span a specific number of columns rather than the whole grid, use the [gridCellColumns(_:)](/documentation/swiftui/view/gridcellcolumns(_:)) modifier on a view that’s contained inside a [GridRow](/documentation/swiftui/gridrow).
 
 ### Column count
 
@@ -125,7 +124,7 @@ You can override the alignment of specific cells or groups of cells. For example
 
 ### Performance considerations
 
-A grid can size its rows and columns correctly because it renders all of its child views immediately. If your app exhibits poor performance when it first displays a large grid that appears inside a [Scroll View](/documentation/swiftui/scrollview), consider switching to a [Lazy VGrid](/documentation/swiftui/lazyvgrid) or [Lazy HGrid](/documentation/swiftui/lazyhgrid) instead.
+A grid can size its rows and columns correctly because it renders all of its child views immediately. If your app exhibits poor performance when it first displays a large grid that appears inside a [ScrollView](/documentation/swiftui/scrollview), consider switching to a [LazyVGrid](/documentation/swiftui/lazyvgrid) or [LazyHGrid](/documentation/swiftui/lazyhgrid) instead.
 
 Lazy grids render their cells when SwiftUI needs to display them, rather than all at once. This reduces the initial cost of displaying a large scrollable grid that’s never fully visible, but also reduces the grid’s ability to optimally lay out cells. Switch to a lazy grid only if profiling your code shows a worthwhile performance improvement.
 
@@ -141,13 +140,13 @@ Lazy grids render their cells when SwiftUI needs to display them, rather than al
 
 ## Statically arranging views in two dimensions
 
-- [GridRow](/documentation/swiftui/gridrow)
-- [gridCellColumns(_:)](/documentation/swiftui/view/gridcellcolumns(_:))
-- [gridCellAnchor(_:)](/documentation/swiftui/view/gridcellanchor(_:))
-- [gridCellUnsizedAxes(_:)](/documentation/swiftui/view/gridcellunsizedaxes(_:))
-- [gridColumnAlignment(_:)](/documentation/swiftui/view/gridcolumnalignment(_:))
+- [GridRow](/documentation/swiftui/gridrow) A horizontal row in a two dimensional grid container.
+- [gridCellColumns(_:)](/documentation/swiftui/view/gridcellcolumns(_:)) Tells a view that acts as a cell in a grid to span the specified number of columns.
+- [gridCellAnchor(_:)](/documentation/swiftui/view/gridcellanchor(_:)) Specifies a custom alignment anchor for a view that acts as a grid cell.
+- [gridCellUnsizedAxes(_:)](/documentation/swiftui/view/gridcellunsizedaxes(_:)) Asks grid layouts not to offer the view extra size in the specified axes.
+- [gridColumnAlignment(_:)](/documentation/swiftui/view/gridcolumnalignment(_:)) Overrides the default horizontal alignment of the grid column that the view appears in.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

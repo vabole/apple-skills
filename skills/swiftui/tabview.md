@@ -2,10 +2,10 @@
 title: TabView
 description: A view that switches between multiple child views using interactive user interface elements.
 source: https://developer.apple.com/documentation/swiftui/tabview
-timestamp: 2026-02-19T07:56:06.030Z
+timestamp: 2026-04-09T13:37:44.671Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -80,11 +80,11 @@ TabView {
 
 ### Using tab sections
 
-The [sidebar Adaptable](/documentation/swiftui/tabviewstyle/sidebaradaptable) style supports declaring a secondary tab hierarchy by grouping tabs with a [Tab Section](/documentation/swiftui/tabsection).
+The [sidebarAdaptable](/documentation/swiftui/tabviewstyle/sidebaradaptable) style supports declaring a secondary tab hierarchy by grouping tabs with a [TabSection](/documentation/swiftui/tabsection).
 
 On iPadOS, tab sections appear in both the sidebar and the tab bar. On iOS and the horizontally compact size class on iPadOS, secondary tabs appear in the tab bar. When secondary tabs appear in the tab bar, the section header doesn’t appear in the tab bar. Consider limiting the number of tabs on iOS and the iPadOS horizontal compact size class so all tabs fit in the tab bar.
 
-The following example has 5 tabs, three of which are grouped within a [Tab Section](/documentation/swiftui/tabsection).
+The following example has 5 tabs, three of which are grouped within a [TabSection](/documentation/swiftui/tabsection).
 
 ```swift
 TabView {
@@ -255,13 +255,13 @@ TabView {
 
 ## Presenting views in tabs
 
-- [Enhancing your app’s content with tab navigation](/documentation/swiftui/enhancing-your-app-content-with-tab-navigation)
-- [Tab](/documentation/swiftui/tab)
-- [TabRole](/documentation/swiftui/tabrole)
-- [TabSection](/documentation/swiftui/tabsection)
-- [tabViewStyle(_:)](/documentation/swiftui/view/tabviewstyle(_:))
+- [Enhancing your app’s content with tab navigation](/documentation/swiftui/enhancing-your-app-content-with-tab-navigation) Keep your app content front and center while providing quick access to navigation using the tab bar.
+- [Tab](/documentation/swiftui/tab) The content for a tab and the tab’s associated tab item in a tab view.
+- [TabRole](/documentation/swiftui/tabrole) A value that defines the purpose of the tab.
+- [TabSection](/documentation/swiftui/tabsection) A container that you can use to add hierarchy within a tab view.
+- [tabViewStyle(_:)](/documentation/swiftui/view/tabviewstyle(_:)) Sets the style for the tab view within the current environment.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

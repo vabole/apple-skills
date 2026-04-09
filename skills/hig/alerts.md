@@ -2,7 +2,7 @@
 title: Alerts
 description: An alert gives people critical information they need right away.
 source: https://developer.apple.com/design/human-interface-guidelines/alerts
-timestamp: 2026-01-17T15:45:15.081Z
+timestamp: 2026-04-09T13:37:18.673Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,7 +13,7 @@ timestamp: 2026-01-17T15:45:15.081Z
 
 > An alert gives people critical information they need right away.
 
-
+![A stylized representation of an alert mockup that includes a title, description, primary button, and secondary button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e74ac90d149b111c3f2c7d21e3484100/components-alert-intro%402x.png)
 
 For example, an alert can tell people about a problem, warn them when their action might destroy data, and give them an opportunity to confirm a purchase or another important action they initiated.
 
@@ -30,6 +30,26 @@ For example, an alert can tell people about a problem, warn them when their acti
 ## Anatomy
 
 An alert is a modal view that can look different in different platforms and devices.
+
+### iOS
+
+![An illustration of an alert in the middle of the screen on iPhone.](https://docs-assets.developer.apple.com/published/ec9df875e228750105a393c96279bea5/alert-ios%402x.png)
+
+### macOS
+
+![An illustration of an alert in the middle of the screen on a Mac.](https://docs-assets.developer.apple.com/published/0dfc6fd9de495ce3b7201169d829d760/alert-macos%402x.png)
+
+### tvOS
+
+![An illustration of an alert on tvOS.](https://docs-assets.developer.apple.com/published/63dde83c2b156231420f095a4d9dfae3/alert-tvos%402x.jpg)
+
+### visionOS
+
+![An illustration of an alert on Apple Vision Pro.](https://docs-assets.developer.apple.com/published/1abb6467cc401af501648da039b2b317/alert-visionos%402x.png)
+
+### watchOS
+
+![An illustration of an alert on Apple Watch.](https://docs-assets.developer.apple.com/published/a452534204f5ddb4aaa6ba7679946f2e/alert-watchos%402x.png)
 
 ## Content
 
@@ -62,6 +82,12 @@ In all platforms, alerts display a title, optional informative text, and up to t
 **If there’s a destructive action, include a Cancel button to give people a clear, safe way to avoid the action.** Always use the title “Cancel” for a button that cancels an alert’s action. Note that you don’t want to make a Cancel button the default button. If you want to encourage people to read an alert and not just automatically press Return to dismiss it, avoid making any button the default button. Similarly, if you must display an alert with a single button that’s also the default, use a Done button, not a Cancel button.
 
 **Provide alternative ways to cancel an alert when it makes sense.** In addition to choosing a Cancel button, people appreciate using keyboard shortcuts or other quick ways to cancel an onscreen alert. For example:
+
+| Action | Platform |
+| --- | --- |
+| Exit to the Home Screen | iOS, iPadOS |
+| Pressing Escape (Esc) or Command-Period (.) on an attached keyboard | iOS, iPadOS, macOS, visionOS |
+| Pressing Menu on the remote | tvOS |
 
 ## Platform considerations
 
@@ -111,7 +137,13 @@ If you need to display an accessory view in a visionOS alert, create a view that
 
 ## Change log
 
+| Date | Changes |
+| --- | --- |
+| February 2, 2024 | Enhanced guidance for using default and Cancel buttons. |
+| September 12, 2023 | Added anatomy artwork for visionOS. |
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,10 +2,10 @@
 title: UNCalendarNotificationTrigger
 description: A trigger condition that causes a notification the system delivers at a specific date and time.
 source: https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger
-timestamp: 2026-01-19T10:22:53.676Z
+timestamp: 2026-04-09T13:37:47.582Z
 ---
 
-**Navigation:** [Usernotifications](/documentation/usernotifications)
+**Navigation:** [UserNotifications](/documentation/usernotifications)
 
 **Class**
 
@@ -21,11 +21,30 @@ class UNCalendarNotificationTrigger
 
 ## Overview
 
-Create a [UNCalendar Notification Trigger](/documentation/usernotifications/uncalendarnotificationtrigger) object when you want to schedule the delivery of a local notification at the date and time you specify. You use an [NSDate Components](/documentation/Foundation/NSDateComponents) object to specify only the time values that you want the system to use to determine the matching date and time.
+Create a [UNCalendarNotificationTrigger](/documentation/usernotifications/uncalendarnotificationtrigger) object when you want to schedule the delivery of a local notification at the date and time you specify. You use an [NSDateComponents](/documentation/Foundation/NSDateComponents) object to specify only the time values that you want the system to use to determine the matching date and time.
 
 Listing 1 creates a trigger that delivers its notification every morning at 8:30. The repeating behavior is achieved by specifying `true` for the `repeats` parameter when creating the trigger.
 
 Listing 1. Creating a trigger that repeats at a specific time
+
+### Swift
+
+```swift
+var date = DateComponents()
+date.hour = 8
+date.minute = 30 
+let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+```
+
+### Objective-C
+
+```objc
+NSDateComponents* date = [[NSDateComponents alloc] init];
+date.hour = 8;
+date.minute = 30; 
+UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
+                     triggerWithDateMatchingComponents:date repeats:YES];
+```
 
 ## Inherits From
 
@@ -54,12 +73,12 @@ Listing 1. Creating a trigger that repeats at a specific time
 
 ## Triggers
 
-- [UNTimeIntervalNotificationTrigger](/documentation/usernotifications/untimeintervalnotificationtrigger)
-- [UNLocationNotificationTrigger](/documentation/usernotifications/unlocationnotificationtrigger)
-- [UNPushNotificationTrigger](/documentation/usernotifications/unpushnotificationtrigger)
-- [UNNotificationTrigger](/documentation/usernotifications/unnotificationtrigger)
+- [UNTimeIntervalNotificationTrigger](/documentation/usernotifications/untimeintervalnotificationtrigger) A trigger condition that causes the system to deliver a notification after the amount of time you specify elapses.
+- [UNLocationNotificationTrigger](/documentation/usernotifications/unlocationnotificationtrigger) A trigger condition that causes the system to deliver a notification when the user’s device enters or exits a geographic region you specify.
+- [UNPushNotificationTrigger](/documentation/usernotifications/unpushnotificationtrigger) A trigger condition that indicates Apple Push Notification Service (APNs) has sent the notification.
+- [UNNotificationTrigger](/documentation/usernotifications/unnotificationtrigger) The common behavior for subclasses that trigger the delivery of a local or remote notification.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

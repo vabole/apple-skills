@@ -2,16 +2,16 @@
 title: XCUIApplication
 description: A proxy that can launch, monitor, and terminate a test application.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuiapplication
-timestamp: 2026-01-17T15:38:14.827Z
+timestamp: 2026-04-09T12:04:45.589Z
 ---
 
-**Navigation:** [Xcuiautomation](/documentation/xcuiautomation)
+**Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
 
 **Class**
 
 # XCUIApplication
 
-**Available on:** iOS undefined+, iPadOS undefined+, Mac Catalyst undefined+, macOS undefined+, tvOS undefined+, visionOS undefined+, watchOS undefined+, Xcode 16.3+
+**Available on:** iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS, watchOS, Xcode 16.3+
 
 > A proxy that can launch, monitor, and terminate a test application.
 
@@ -83,5 +83,5 @@ Use this class to launch, monitor, and terminate your app in a UI test. Use [wai
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

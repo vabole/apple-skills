@@ -2,10 +2,10 @@
 title: Picker
 description: A control for selecting from a set of mutually exclusive values.
 source: https://developer.apple.com/documentation/swiftui/picker
-timestamp: 2026-02-19T07:56:10.518Z
+timestamp: 2026-04-09T13:37:42.588Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -67,7 +67,7 @@ List {
 
 ### Iterating over a picker’s options
 
-To provide selection values for the `Picker` without explicitly listing each option, you can create the picker with a [For Each](/documentation/swiftui/foreach):
+To provide selection values for the `Picker` without explicitly listing each option, you can create the picker with a [ForEach](/documentation/swiftui/foreach):
 
 ```swift
 Picker("Flavor", selection: $selectedFlavor) {
@@ -77,7 +77,7 @@ Picker("Flavor", selection: $selectedFlavor) {
 }
 ```
 
-[For Each](/documentation/swiftui/foreach) automatically assigns a tag to the selection views using each option’s `id`. This is possible because `Flavor` conforms to the [Identifiable](/documentation/Swift/Identifiable) protocol.
+[ForEach](/documentation/swiftui/foreach) automatically assigns a tag to the selection views using each option’s `id`. This is possible because `Flavor` conforms to the [Identifiable](/documentation/Swift/Identifiable) protocol.
 
 The example above relies on the fact that `Flavor` defines the type of its `id` parameter to exactly match the selection type. If that’s not the case, you need to override the tag. For example, consider a `Topping` type and a suggested topping for each flavor:
 
@@ -123,11 +123,11 @@ When the user selects chocolate, the picker sets `suggestedTopping` to the value
 
 ![A screenshot of two list rows. The first has the string Flavor on the left](https://docs-assets.developer.apple.com/published/8fa91ba9fd3404ee7c37adcf43ed6ebc/Picker-2-iOS%402x.png)
 
-Another example of when the views in a picker’s [For Each](/documentation/swiftui/foreach) need an explicit tag modifier is when you select over the cases of an enumeration that conforms to the [Identifiable](/documentation/Swift/Identifiable) protocol by using anything besides `Self` as the `id` parameter type. For example, a string enumeration might use the case’s `rawValue` string as the `id`. That identifier type doesn’t match the selection type, which is the type of the enumeration itself.
+Another example of when the views in a picker’s [ForEach](/documentation/swiftui/foreach) need an explicit tag modifier is when you select over the cases of an enumeration that conforms to the [Identifiable](/documentation/Swift/Identifiable) protocol by using anything besides `Self` as the `id` parameter type. For example, a string enumeration might use the case’s `rawValue` string as the `id`. That identifier type doesn’t match the selection type, which is the type of the enumeration itself.
 
 ### Styling pickers
 
-You can customize the appearance and interaction of pickers using styles that conform to the [Picker Style](/documentation/swiftui/pickerstyle) protocol, like [segmented](/documentation/swiftui/pickerstyle/segmented) or [menu](/documentation/swiftui/pickerstyle/menu). To set a specific style for all picker instances within a view, use the [pickerStyle(_:)](/documentation/swiftui/view/pickerstyle(_:)) modifier. The following example applies the [segmented](/documentation/swiftui/pickerstyle/segmented) style to two pickers that independently select a flavor and a topping:
+You can customize the appearance and interaction of pickers using styles that conform to the [PickerStyle](/documentation/swiftui/pickerstyle) protocol, like [segmented](/documentation/swiftui/pickerstyle/segmented) or [menu](/documentation/swiftui/pickerstyle/menu). To set a specific style for all picker instances within a view, use the [pickerStyle(_:)](/documentation/swiftui/view/pickerstyle(_:)) modifier. The following example applies the [segmented](/documentation/swiftui/pickerstyle/segmented) style to two pickers that independently select a flavor and a topping:
 
 ```swift
 VStack {
@@ -185,14 +185,14 @@ VStack {
 
 ## Choosing from a set of options
 
-- [pickerStyle(_:)](/documentation/swiftui/view/pickerstyle(_:))
-- [horizontalRadioGroupLayout()](/documentation/swiftui/view/horizontalradiogrouplayout())
-- [defaultWheelPickerItemHeight(_:)](/documentation/swiftui/view/defaultwheelpickeritemheight(_:))
-- [defaultWheelPickerItemHeight](/documentation/swiftui/environmentvalues/defaultwheelpickeritemheight)
-- [paletteSelectionEffect(_:)](/documentation/swiftui/view/paletteselectioneffect(_:))
-- [PaletteSelectionEffect](/documentation/swiftui/paletteselectioneffect)
+- [pickerStyle(_:)](/documentation/swiftui/view/pickerstyle(_:)) Sets the style for pickers within this view.
+- [horizontalRadioGroupLayout()](/documentation/swiftui/view/horizontalradiogrouplayout()) Sets the style for radio group style pickers within this view to be horizontally positioned with the radio buttons inside the layout.
+- [defaultWheelPickerItemHeight(_:)](/documentation/swiftui/view/defaultwheelpickeritemheight(_:)) Sets the default wheel-style picker item height.
+- [defaultWheelPickerItemHeight](/documentation/swiftui/environmentvalues/defaultwheelpickeritemheight) The default height of an item in a wheel-style picker, such as a date picker.
+- [paletteSelectionEffect(_:)](/documentation/swiftui/view/paletteselectioneffect(_:)) Specifies the selection effect to apply to a palette item.
+- [PaletteSelectionEffect](/documentation/swiftui/paletteselectioneffect) The selection effect to apply to a palette item.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

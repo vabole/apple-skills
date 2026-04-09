@@ -2,7 +2,7 @@
 title: Popovers
 description: A popover is a transient view that appears above other content when people click or tap a control or interactive area.
 source: https://developer.apple.com/design/human-interface-guidelines/popovers
-timestamp: 2026-01-19T10:22:58.819Z
+timestamp: 2026-04-09T13:37:23.298Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -13,7 +13,7 @@ timestamp: 2026-01-19T10:22:58.819Z
 
 > A popover is a transient view that appears above other content when people click or tap a control or interactive area.
 
-
+![A stylized representation of a popover view. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e96917a44aa3ccdd2d1b4ddccf2a0e88/components-popover-intro%402x.png)
 
 ## Best practices
 
@@ -53,6 +53,14 @@ timestamp: 2026-01-19T10:22:58.819Z
 
 You can make a popover detachable in macOS, which becomes a separate panel when people drag it. The panel remains visible onscreen while people interact with other content.
 
+### Attached popover
+
+![An illustration of an event in Calendar with the attached version of the event's popover next to and pointing to it.](https://docs-assets.developer.apple.com/published/ef05d3cb071e4c11209cce39b596ca99/attached-popover%402x.png)
+
+### Detached popover
+
+![An illustration of an event in Calendar with the detached version of the event's popover next to it.](https://docs-assets.developer.apple.com/published/d0b16d14a582a887f385896669394ee4/detached-popover%402x.png)
+
 **Consider letting people detach a popover.** People might appreciate being able to convert a popover into a panel if they want to view other information while the popover remains visible.
 
 **Make minimal appearance changes to a detached popover.** A panel that looks similar to the original popover helps people maintain context.
@@ -79,5 +87,5 @@ You can make a popover detachable in macOS, which becomes a separate panel when 
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All Human Interface Guidelines belong to Apple Inc.*

@@ -2,7 +2,7 @@
 title: AsyncStream
 description: An asynchronous sequence generated from a closure that calls a continuation to produce new elements.
 source: https://developer.apple.com/documentation/swift/asyncstream
-timestamp: 2026-02-19T07:52:37.173Z
+timestamp: 2026-04-09T12:04:29.574Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -137,7 +137,7 @@ print("Stream finished.")
 
 ## Type Methods
 
-- [makeStream(of:bufferingPolicy:)](/documentation/swift/asyncstream/makestream(of:bufferingpolicy:)) Initializes a new  and an .
+- [makeStream(of:bufferingPolicy:)](/documentation/swift/asyncstream/makestream(of:bufferingpolicy:)) Initializes a new [AsyncStream](/documentation/swift/asyncstream) and an [AsyncStream.Continuation](/documentation/swift/asyncstream/continuation).
 
 ## Default Implementations
 
@@ -145,10 +145,10 @@ print("Stream finished.")
 
 ## Asynchronous Sequences
 
-- [AsyncSequence](/documentation/swift/asyncsequence)
-- [AsyncThrowingStream](/documentation/swift/asyncthrowingstream)
+- [AsyncSequence](/documentation/swift/asyncsequence) A type that provides asynchronous, sequential, iterated access to its elements.
+- [AsyncThrowingStream](/documentation/swift/asyncthrowingstream) An asynchronous sequence generated from an error-throwing closure that calls a continuation to produce new elements.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

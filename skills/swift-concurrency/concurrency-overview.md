@@ -2,7 +2,7 @@
 title: Concurrency
 description: Perform asynchronous and parallel operations.
 source: https://developer.apple.com/documentation/swift/concurrency
-timestamp: 2026-02-19T07:52:17.803Z
+timestamp: 2026-04-09T12:04:30.038Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -53,20 +53,20 @@ timestamp: 2026-02-19T07:52:17.803Z
 
 - [Sendable](/documentation/swift/sendable) A thread-safe type whose values can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 - [Actor](/documentation/swift/actor) Common protocol to which all actors conform.
-- [AnyActor](/documentation/swift/anyactor) Common marker protocol providing a shared “base” for both (local)  and (potentially remote)  types.
+- [AnyActor](/documentation/swift/anyactor) Common marker protocol providing a shared “base” for both (local) `Actor` and (potentially remote) `DistributedActor` types.
 - [MainActor](/documentation/swift/mainactor) A singleton actor whose executor is equivalent to the main dispatch queue.
 - [GlobalActor](/documentation/swift/globalactor) A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [SendableMetatype](/documentation/swift/sendablemetatype) A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 - [ConcurrentValue](/documentation/swift/concurrentvalue)
 - [UnsafeSendable](/documentation/swift/unsafesendable) A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
 - [UnsafeConcurrentValue](/documentation/swift/unsafeconcurrentvalue)
-- [isolation()](/documentation/swift/isolation()) Produce a reference to the actor to which the enclosing code is isolated, or  if the code is nonisolated.
+- [isolation()](/documentation/swift/isolation()) Produce a reference to the actor to which the enclosing code is isolated, or `nil` if the code is nonisolated.
 - [extractIsolation(_:)](/documentation/swift/extractisolation(_:))
 
 ## Task-Local Storage
 
 - [TaskLocal](/documentation/swift/tasklocal) Wrapper type that defines a task-local value key.
-- [TaskLocal()](/documentation/swift/tasklocal()) Macro that introduces a  binding.
+- [TaskLocal()](/documentation/swift/tasklocal()) Macro that introduces a [TaskLocal](/documentation/swift/tasklocal) binding.
 
 ## Executors
 
@@ -74,31 +74,30 @@ timestamp: 2026-02-19T07:52:17.803Z
 - [ExecutorJob](/documentation/swift/executorjob) A unit of schedulable work.
 - [SerialExecutor](/documentation/swift/serialexecutor) A service that executes jobs.
 - [TaskExecutor](/documentation/swift/taskexecutor) An executor that may be used as preferred executor by a task.
-- [SchedulingExecutor](/documentation/swift/schedulingexecutor)
 - [PartialAsyncTask](/documentation/swift/partialasynctask)
 - [UnownedJob](/documentation/swift/unownedjob) A unit of schedulable work.
 - [JobPriority](/documentation/swift/jobpriority) The priority of this job.
-- [UnownedSerialExecutor](/documentation/swift/unownedserialexecutor) An unowned reference to a serial executor (a  value).
+- [UnownedSerialExecutor](/documentation/swift/unownedserialexecutor) An unowned reference to a serial executor (a `SerialExecutor` value).
 - [UnownedTaskExecutor](/documentation/swift/unownedtaskexecutor)
 - [globalConcurrentExecutor](/documentation/swift/globalconcurrentexecutor) The global concurrent executor that is used by default for Swift Concurrency tasks.
-- [withTaskExecutorPreference(_:isolation:operation:)](/documentation/swift/withtaskexecutorpreference(_:isolation:operation:)) Configure the current task hierarchy’s task executor preference to the passed , and execute the passed in closure by immediately hopping to that executor.
+- [withTaskExecutorPreference(_:isolation:operation:)](/documentation/swift/withtaskexecutorpreference(_:isolation:operation:)) Configure the current task hierarchy’s task executor preference to the passed [TaskExecutor](/documentation/swift/taskexecutor), and execute the passed in closure by immediately hopping to that executor.
 
 ## Deprecated
 
-- [Job](/documentation/swift/job) Deprecated equivalent of .
+- [Job](/documentation/swift/job) Deprecated equivalent of [ExecutorJob](/documentation/swift/executorjob).
 
 ## Programming Tasks
 
-- [Input and Output](/documentation/swift/input-and-output)
-- [Debugging and Reflection](/documentation/swift/debugging-and-reflection)
-- [Macros](/documentation/swift/macros)
-- [Key-Path Expressions](/documentation/swift/key-path-expressions)
-- [Manual Memory Management](/documentation/swift/manual-memory-management)
-- [Type Casting and Existential Types](/documentation/swift/type-casting-and-existential-types)
-- [C Interoperability](/documentation/swift/c-interoperability)
-- [Operator Declarations](/documentation/swift/operator-declarations)
+- [Input and Output](/documentation/swift/input-and-output) Print values to the console, read from and write to text streams, and use command line arguments.
+- [Debugging and Reflection](/documentation/swift/debugging-and-reflection) Fortify your code with runtime checks, and examine your values’ runtime representation.
+- [Macros](/documentation/swift/macros) Generate boilerplate code and perform other compile-time operations.
+- [Key-Path Expressions](/documentation/swift/key-path-expressions) Use key-path expressions to access properties dynamically.
+- [Manual Memory Management](/documentation/swift/manual-memory-management) Allocate and manage memory manually.
+- [Type Casting and Existential Types](/documentation/swift/type-casting-and-existential-types) Perform casts between types or represent values of any type.
+- [C Interoperability](/documentation/swift/c-interoperability) Use imported C types or call C variadic functions.
+- [Operator Declarations](/documentation/swift/operator-declarations) Work with prefix, postfix, and infix operators.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

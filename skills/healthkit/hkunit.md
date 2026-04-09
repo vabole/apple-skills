@@ -2,10 +2,10 @@
 title: HKUnit
 description: A class for managing the units of measure within HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkunit
-timestamp: 2026-01-19T10:21:35.944Z
+timestamp: 2026-04-09T12:04:12.110Z
 ---
 
-**Navigation:** [Healthkit](/documentation/healthkit)
+**Navigation:** [HealthKit](/documentation/healthkit)
 
 **Class**
 
@@ -25,8 +25,7 @@ The unit class supports most standard SI units (meters, seconds, and grams), SI 
 
 You use units when working with HealthKit quantities. Quantities store both the value (as a `double` data type) and its corresponding unit. You can then request the value from the quantity in any compatible units. For more information on working with quantities, see [HKQuantity](/documentation/healthkit/hkquantity).
 
-> [!NOTE]
-> Number formatters that use units (for example, [Energy Formatter](/documentation/Foundation/EnergyFormatter), [Length Formatter](/documentation/Foundation/LengthFormatter), and [Mass Formatter](/documentation/Foundation/MassFormatter)) use a custom enumeration to specify their units. For example, the [Energy Formatter](/documentation/Foundation/EnergyFormatter) class uses the [Unit](/documentation/Foundation/EnergyFormatter/Unit) enum. The [HKUnit](/documentation/healthkit/hkunit) class provides several methods to translate between the formatter enumerations and the HealthKit units. For more information, see Working with formatter units.
+> **Note:** Number formatters that use units (for example, [EnergyFormatter](/documentation/Foundation/EnergyFormatter), [LengthFormatter](/documentation/Foundation/LengthFormatter), and [MassFormatter](/documentation/Foundation/MassFormatter)) use a custom enumeration to specify their units. For example, the [EnergyFormatter](/documentation/Foundation/EnergyFormatter) class uses the [EnergyFormatter.Unit](/documentation/Foundation/EnergyFormatter/Unit) enum. The [HKUnit](/documentation/healthkit/hkunit) class provides several methods to translate between the formatter enumerations and the HealthKit units. For more information, see Working with formatter units.
 
 ### Using Units
 
@@ -196,11 +195,11 @@ Additionally, the unit class uses a single unit instance to represent all copies
 
 ## Units and quantities
 
-- [Defining and converting units and quantities](/documentation/healthkit/defining-and-converting-units-and-quantities)
-- [HKQuantity](/documentation/healthkit/hkquantity)
-- [HKMetricPrefix](/documentation/healthkit/hkmetricprefix)
+- [Defining and converting units and quantities](/documentation/healthkit/defining-and-converting-units-and-quantities) Create and convert units and quantities.
+- [HKQuantity](/documentation/healthkit/hkquantity) An object that stores a value for a given unit.
+- [HKMetricPrefix](/documentation/healthkit/hkmetricprefix) Prefixes that can be added to SI units to change the order of magnitude.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

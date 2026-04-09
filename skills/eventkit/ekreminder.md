@@ -2,10 +2,10 @@
 title: EKReminder
 description: A class that represents a reminder in a calendar.
 source: https://developer.apple.com/documentation/eventkit/ekreminder
-timestamp: 2026-01-19T11:03:13.083Z
+timestamp: 2026-04-09T12:04:10.087Z
 ---
 
-**Navigation:** [Eventkit](/documentation/eventkit)
+**Navigation:** [EventKit](/documentation/eventkit)
 
 **Class**
 
@@ -51,13 +51,13 @@ Use the [init(eventStore:)](/documentation/eventkit/ekreminder/init(eventstore:)
 
 ## Events and reminders
 
-- [Creating events and reminders](/documentation/eventkit/creating-events-and-reminders)
-- [Retrieving events and reminders](/documentation/eventkit/retrieving-events-and-reminders)
-- [Updating with notifications](/documentation/eventkit/updating-with-notifications)
-- [Managing location-based reminders](/documentation/eventkit/managing-location-based-reminders)
-- [EKEvent](/documentation/eventkit/ekevent)
+- [Creating events and reminders](/documentation/eventkit/creating-events-and-reminders) Create and modify events and reminders in a person’s database.
+- [Retrieving events and reminders](/documentation/eventkit/retrieving-events-and-reminders) Fetch events and reminders from the Calendar database.
+- [Updating with notifications](/documentation/eventkit/updating-with-notifications) Register for notifications about changes and keep your app up to date.
+- [Managing location-based reminders](/documentation/eventkit/managing-location-based-reminders) Access reminders set up with geofence-enabled alarms on a person’s calendars.
+- [EKEvent](/documentation/eventkit/ekevent) A class that represents an event in a calendar.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

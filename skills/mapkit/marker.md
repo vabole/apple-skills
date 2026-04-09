@@ -2,16 +2,16 @@
 title: Marker
 description: A balloon-shaped annotation that marks a map location.
 source: https://developer.apple.com/documentation/mapkit/marker
-timestamp: 2026-02-19T07:52:36.984Z
+timestamp: 2026-04-09T12:04:27.072Z
 ---
 
-**Navigation:** [Mapkit](/documentation/mapkit)
+**Navigation:** [MapKit](/documentation/mapkit)
 
 **Structure**
 
 # Marker
 
-**Available on:** iOS 17.0+, iPadOS 17.0+, Mac Catalyst undefined+, macOS 14.0+, tvOS 17.0+, visionOS undefined+, watchOS 10.0+
+**Available on:** iOS 17.0+, iPadOS 17.0+, Mac Catalyst, macOS 14.0+, tvOS 17.0+, visionOS, watchOS 10.0+
 
 > A balloon-shaped annotation that marks a map location.
 
@@ -55,13 +55,13 @@ Use this view to create marker instances in the closure you provide to the `cont
 
 ## Annotations and overlays
 
-- [Annotation](/documentation/mapkit/annotation)
-- [MapCircle](/documentation/mapkit/mapcircle)
-- [MapPolygon](/documentation/mapkit/mappolygon)
-- [MapPolyline](/documentation/mapkit/mappolyline)
-- [UserAnnotation](/documentation/mapkit/userannotation)
+- [Annotation](/documentation/mapkit/annotation) A customizable annotation used to indicate a location on a map.
+- [MapCircle](/documentation/mapkit/mapcircle) A circular overlay with a configurable radius that you center on a geographic coordinate.
+- [MapPolygon](/documentation/mapkit/mappolygon) A closed polygon overlay.
+- [MapPolyline](/documentation/mapkit/mappolyline) An open polygon overlay consisting of one or more connected line segments.
+- [UserAnnotation](/documentation/mapkit/userannotation) Displays the person’s current location on the map.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

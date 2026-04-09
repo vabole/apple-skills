@@ -2,10 +2,10 @@
 title: Form
 description: A container for grouping controls used for data entry, such as in settings or inspectors.
 source: https://developer.apple.com/documentation/swiftui/form
-timestamp: 2026-02-19T07:56:06.603Z
+timestamp: 2026-04-09T13:37:39.942Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -100,11 +100,11 @@ var body: some View {
 
 ## Grouping inputs
 
-- [formStyle(_:)](/documentation/swiftui/view/formstyle(_:))
-- [LabeledContent](/documentation/swiftui/labeledcontent)
-- [labeledContentStyle(_:)](/documentation/swiftui/view/labeledcontentstyle(_:))
+- [formStyle(_:)](/documentation/swiftui/view/formstyle(_:)) Sets the style for forms in a view hierarchy.
+- [LabeledContent](/documentation/swiftui/labeledcontent) A container for attaching a label to a value-bearing view.
+- [labeledContentStyle(_:)](/documentation/swiftui/view/labeledcontentstyle(_:)) Sets a style for labeled content.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*

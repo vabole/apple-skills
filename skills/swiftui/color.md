@@ -2,10 +2,10 @@
 title: Color
 description: A representation of a color that adapts to a given context.
 source: https://developer.apple.com/documentation/swiftui/color
-timestamp: 2026-02-19T07:56:08.530Z
+timestamp: 2026-04-09T13:37:39.080Z
 ---
 
-**Navigation:** [Swiftui](/documentation/swiftui)
+**Navigation:** [SwiftUI](/documentation/swiftui)
 
 **Structure**
 
@@ -24,29 +24,29 @@ timestamp: 2026-02-19T07:56:08.530Z
 You can create a color in one of several ways:
 
 - Load a color from an Asset Catalog:
-
-```swift
-let aqua = Color("aqua") // Looks in your app's main bundle by default.
-```
+   
+   ```swift
+   let aqua = Color("aqua") // Looks in your app's main bundle by default.
+   ```
 - Specify component values, like red, green, and blue; hue, saturation, and brightness; or white level:
-
-```swift
-let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
-let lemonYellow = Color(hue: 0.1639, saturation: 1, brightness: 1)
-let steelGray = Color(white: 0.4745)
-```
+   
+   ```swift
+   let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
+   let lemonYellow = Color(hue: 0.1639, saturation: 1, brightness: 1)
+   let steelGray = Color(white: 0.4745)
+   ```
 - Create a color instance from another color, like a [UIColor](/documentation/UIKit/UIColor) or an [NSColor](/documentation/AppKit/NSColor):
-
-```swift
-#if os(iOS)
-let linkColor = Color(uiColor: .link)
-#elseif os(macOS)
-let linkColor = Color(nsColor: .linkColor)
-#endif
-```
+   
+   ```swift
+   #if os(iOS)
+   let linkColor = Color(uiColor: .link)
+   #elseif os(macOS)
+   let linkColor = Color(nsColor: .linkColor)
+   #endif
+   ```
 - Use one of a palette of predefined colors, like [black](/documentation/swiftui/shapestyle/black), [green](/documentation/swiftui/shapestyle/green), and [purple](/documentation/swiftui/shapestyle/purple).
 
-Some view modifiers can take a color as an argument. For example, [foregroundStyle(_:)](/documentation/swiftui/view/foregroundstyle(_:)) uses the color you provide to set the foreground color for view elements, like text or [sf](/design/Human-Interface-Guidelines/sf-symbols):
+Some view modifiers can take a color as an argument. For example, [foregroundStyle(_:)](/documentation/swiftui/view/foregroundstyle(_:)) uses the color you provide to set the foreground color for view elements, like text or [SF Symbols](/design/Human-Interface-Guidelines/sf-symbols):
 
 ```swift
 Image(systemName: "leaf.fill")
@@ -89,7 +89,7 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
 
 - [init(_:bundle:)](/documentation/swiftui/color/init(_:bundle:)) Creates a color from a color set that you indicate by name.
 - [init(_:)](/documentation/swiftui/color/init(_:)) Creates a constant color with the values specified by the resolved color.
-- [resolve(in:)](/documentation/swiftui/color/resolve(in:)) Evaluates this color to a resolved color given the current .
+- [resolve(in:)](/documentation/swiftui/color/resolve(in:)) Evaluates this color to a resolved color given the current `context`.
 
 ## Creating a color from component values
 
@@ -132,8 +132,8 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
 ## Modifying a color
 
 - [opacity(_:)](/documentation/swiftui/color/opacity(_:)) Multiplies the opacity of the color by the given amount.
-- [gradient](/documentation/swiftui/color/gradient) Returns the standard gradient for the color .
-- [mix(with:by:in:)](/documentation/swiftui/color/mix(with:by:in:)) Returns a version of self mixed with  by the amount specified by .
+- [gradient](/documentation/swiftui/color/gradient) Returns the standard gradient for the color `self`.
+- [mix(with:by:in:)](/documentation/swiftui/color/mix(with:by:in:)) Returns a version of self mixed with `rhs` by the amount specified by `fraction`.
 - [exposureAdjust(_:)](/documentation/swiftui/color/exposureadjust(_:)) Returns a new color with an exposure adjustment applied.
 - [headroom(_:)](/documentation/swiftui/color/headroom(_:)) Creates a new color with specified HDR content headroom.
 
@@ -162,9 +162,9 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
 
 ## Setting a color
 
-- [tint(_:)](/documentation/swiftui/view/tint(_:))
+- [tint(_:)](/documentation/swiftui/view/tint(_:)) Sets the tint color within this view.
 
 ---
 
-*Extracted by [sosumi.ai](https://sosumi.ai) - Making Apple docs AI-readable.*
+*Extracted from Apple DocC JSON by apple-skills tooling.*
 *This is unofficial content. All documentation belongs to Apple Inc.*
