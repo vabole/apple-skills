@@ -92,29 +92,11 @@ grep -i "notification" playing-haptics.md
 grep -i "navigation" hig-index.md
 ```
 
-## Fetching Additional Documentation
+## Fetching More Docs
 
-### The sosumi.ai Technique
-
-Apple's developer.apple.com uses JavaScript rendering. Replace with `sosumi.ai` for LLM-friendly markdown:
-
-```
-# Original (doesn't work)
-https://developer.apple.com/design/human-interface-guidelines/buttons
-
-# LLM-friendly
-https://sosumi.ai/design/human-interface-guidelines/buttons
-```
-
-### Downloading Docs via curl
-
-```bash
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/[topic]" > [topic].md
-
-# Examples:
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/progress-indicators" > progress-indicators.md
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/segmented-controls" > segmented-controls.md
-```
+1. Search this skill's local `.md` files first.
+2. If the topic is not here, check the other installed Apple skills you have available by their names, descriptions, or `SKILL.md` frontmatter, then grep their local files. This is faster and uses less context than fetching new docs from the internet.
+3. If no installed skill has the page, use the relevant Human Interface Guidelines path with the `sosumi.ai` Markdown mirror. For example, `/design/human-interface-guidelines/buttons` maps to `https://sosumi.ai/design/human-interface-guidelines/buttons`.
 
 ### Common HIG Doc Paths
 
@@ -135,27 +117,6 @@ curl -sL "https://sosumi.ai/design/human-interface-guidelines/segmented-controls
 | Navigation Bars | `human-interface-guidelines/navigation-bars` |
 | Sheets | `human-interface-guidelines/sheets` |
 | Alerts | `human-interface-guidelines/alerts` |
-
-### More Components (Not Downloaded)
-
-Download these as needed:
-
-```bash
-# Indicators
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/progress-indicators" > progress-indicators.md
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/activity-rings" > activity-rings.md
-
-# Presentation
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/popovers" > popovers.md
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/scroll-views" > scroll-views.md
-
-# Selection
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/segmented-controls" > segmented-controls.md
-
-# System
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/status-bars" > status-bars.md
-curl -sL "https://sosumi.ai/design/human-interface-guidelines/home-screen-quick-actions" > home-screen-quick-actions.md
-```
 
 ## Quick Reference
 
@@ -189,7 +150,3 @@ curl -sL "https://sosumi.ai/design/human-interface-guidelines/home-screen-quick-
 ### WWDC Sessions
 - [Design for Liquid Glass - WWDC25](https://developer.apple.com/videos/play/wwdc2025/10156/)
 - [What's new in UIKit - WWDC25](https://developer.apple.com/videos/play/wwdc2025/10144/)
-
-### LLM-Friendly Apple Docs (sosumi.ai)
-
-See [docs/apple-docs-for-llms.md](../../../docs/apple-docs-for-llms.md) for full documentation on this technique.

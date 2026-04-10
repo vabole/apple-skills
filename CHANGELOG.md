@@ -1,8 +1,14 @@
 # Changelog
 
+## 2026-04-10
+
+- Added the `uikit` skill with a full UIKit framework index and focused core API pages fetched through the direct Apple DocC workflow.
+- Updated skill fetch instructions to use `pnpm fetch-doc` instead of the old hosted proxy workflow.
+- Replaced stale generated "Not Found" docs for SwiftUI inspector and TipKit popover tips, and removed an unreferenced Liquid Glass "Not Found" page.
+
 ## 2026-04-09
 
-Refreshed all 179 skill docs from Apple’s DocC JSON directly (replaced sosumi).
+Refreshed all 179 skill docs from Apple's DocC JSON directly (replaced the hosted proxy path).
 
 ### What changed in the docs
 
@@ -15,6 +21,6 @@ Refreshed all 179 skill docs from Apple’s DocC JSON directly (replaced sosumi)
 
 ### Tooling
 
-- Fetch directly from `developer.apple.com` DocC JSON, drop sosumi dependency
+- Fetch directly from `developer.apple.com` DocC JSON, drop the hosted proxy dependency
 - Native Node TypeScript execution (25.2+), drop `tsx`
 - Add GitHub Actions CI

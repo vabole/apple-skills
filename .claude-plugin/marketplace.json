@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "apple-skills",
-  "description": "Apple development skills for Claude Code — iOS 26+ APIs, SwiftUI, Liquid Glass, SwiftData, and more.",
+  "description": "Apple development skills for Claude Code — iOS 26+ APIs, SwiftUI, UIKit, Liquid Glass, SwiftData, and more.",
   "owner": {
     "name": "vabole"
   },
   "plugins": [
     {
       "name": "apple-skills",
-      "description": "Apple development skills — iOS 26+ APIs, SwiftUI, Liquid Glass, SwiftData, and more.",
+      "description": "Apple development skills — iOS 26+ APIs, SwiftUI, UIKit, Liquid Glass, SwiftData, and more.",
       "source": "./",
       "version": "1.0.0",
       "category": "development"

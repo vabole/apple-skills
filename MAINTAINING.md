@@ -50,7 +50,7 @@ pnpm fetch-doc -- /design/human-interface-guidelines/buttons --output skills/hig
 
 **2026-04-09** — refreshed end to end with the local direct-fetch workflow against Apple's DocC JSON endpoints.
 
-### Why not `sosumi.ai`?
+### Why Direct DocC JSON?
 
 This repo no longer needs a hosted proxy to refresh docs. Apple already exposes the underlying DocC JSON on `developer.apple.com/tutorials/data`, so the local tooling fetches and renders that data directly.
 
@@ -88,10 +88,11 @@ Biome also enforces line-count limits so the refresh tooling stays modular inste
 ## Repo Structure
 
 ```
-skills/                     # 30 skills (26 reference + 4 guides)
-├── swiftui/                # 50 SwiftUI reference files
+skills/                     # 31 skills (27 reference + 4 guides)
+├── swiftui/                # SwiftUI reference docs
+├── uikit/                  # UIKit framework index and core APIs
 ├── hig/                    # 41 HIG reference files
-├── ios-liquid-glass/       # 17 Liquid Glass API docs
+├── ios-liquid-glass/       # Liquid Glass API docs
 ├── swift-testing/          # Swift Testing framework
 ├── swift-concurrency/      # async/await, actors
 ├── storekit/               # StoreKit 2

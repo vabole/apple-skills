@@ -1,7 +1,7 @@
 ---
 name: apple-docs-index
 user-invocable: true
-description: Index of Apple developer documentation for iOS, macOS, and related frameworks. Use when looking up what APIs exist in a framework, browsing available documentation, or deciding what docs to fetch. Covers SwiftUI, XCTest, HealthKit, Combine, SwiftData, and more.
+description: Index of Apple developer documentation for iOS, macOS, and related frameworks. Use when looking up what APIs exist in a framework, browsing available documentation, or deciding what docs to fetch. Covers SwiftUI, UIKit, XCTest, HealthKit, Combine, SwiftData, and more.
 ---
 
 # Apple Documentation Index
@@ -18,6 +18,7 @@ This skill provides indexes of Apple framework documentation. Use these to:
 | SwiftUI | `../swiftui/swiftui-overview.md` | 907KB | Views, modifiers, navigation, state |
 | XCTest | `xctest-index.md` | 55KB | Testing, assertions, expectations |
 | XCUIAutomation | `xcuiautomation-index.md` | 58KB | UI testing, elements, queries |
+| UIKit | `../uikit/uikit-overview.md` | 1.8MB | Views, controllers, controls, scenes |
 | HealthKit | `healthkit-index.md` | 312KB | Health data, workouts, records |
 | Combine | `combine-index.md` | 153KB | Publishers, subscribers, operators |
 | SwiftData | `swiftdata-index.md` | 86KB | Models, containers, queries |
@@ -45,44 +46,28 @@ Index files list all available documentation pages. Each entry shows the path:
 - [NavigationStack](/documentation/swiftui/navigationstack)
 ```
 
-### 3. Download Detailed Docs
+### 3. Fetch More Detailed Docs
 
-Once you find what you need, download the full documentation:
+1. Check whether the detailed page is already available in one of your installed Apple skills.
+2. Use skill names, descriptions, or `SKILL.md` frontmatter to find likely skill directories, then grep their local `.md` files before fetching. This is faster and uses less context than fetching new docs from the internet.
+3. If no installed skill has the page, use the same path with the `sosumi.ai` Markdown mirror.
 
-```bash
-# From an index entry like "/documentation/healthkit/hkworkout"
-curl -sL "https://sosumi.ai/documentation/healthkit/hkworkout" > hkworkout.md
+For example, `/documentation/healthkit/hkworkout` maps to `https://sosumi.ai/documentation/healthkit/hkworkout`.
 
-# Then grep as needed
-grep -i "startDate" hkworkout.md
+### 4. Browse Missing Framework Indexes
+
+If the local indexes don't include the framework you need, use the framework's `sosumi.ai` index:
+
+```text
+https://sosumi.ai/documentation/{framework}
 ```
 
-## Adding More Indexes
+For example, `https://sosumi.ai/documentation/foundation` provides a Markdown index you can search for Foundation paths.
 
-Download any framework index:
+If the Markdown mirror is unavailable and your environment can parse JSON, Apple's public DocC index endpoint is:
 
-```bash
-# Foundation (large)
-curl -sL "https://sosumi.ai/documentation/foundation" > foundation-index.md
-
-# UIKit (large)
-curl -sL "https://sosumi.ai/documentation/uikit" > uikit-index.md
-
-# Core Data
-curl -sL "https://sosumi.ai/documentation/coredata" > coredata-index.md
-
-# Any framework
-curl -sL "https://sosumi.ai/documentation/{framework}" > {framework}-index.md
+```text
+https://developer.apple.com/tutorials/data/index/{framework}
 ```
 
-## The sosumi.ai Technique
-
-Apple's developer.apple.com uses JavaScript rendering. Replace with sosumi.ai for markdown:
-
-```
-https://developer.apple.com/documentation/swiftui/view
-→
-https://sosumi.ai/documentation/swiftui/view
-```
-
-See [docs/apple-docs-for-llms.md](../../../docs/apple-docs-for-llms.md) for full documentation.
+The useful path tree is under `interfaceLanguages.swift[0].children`.
