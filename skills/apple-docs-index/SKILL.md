@@ -51,3 +51,21 @@ Index files list all available documentation pages. Each entry shows the path:
 Once you find a path, check whether the detailed page is already available in the relevant skill directory. If it isn't, use the same path with the `sosumi.ai` Markdown mirror.
 
 For example, `/documentation/healthkit/hkworkout` maps to `https://sosumi.ai/documentation/healthkit/hkworkout`.
+
+### 4. Browse Missing Framework Indexes
+
+If the local indexes don't include the framework you need, use the framework's `sosumi.ai` index:
+
+```text
+https://sosumi.ai/documentation/{framework}
+```
+
+For example, `https://sosumi.ai/documentation/foundation` provides a Markdown index you can search for Foundation paths.
+
+If the Markdown mirror is unavailable and your environment can parse JSON, Apple's public DocC index endpoint is:
+
+```text
+https://developer.apple.com/tutorials/data/index/{framework}
+```
+
+The useful path tree is under `interfaceLanguages.swift[0].children`.
