@@ -46,9 +46,11 @@ Index files list all available documentation pages. Each entry shows the path:
 - [NavigationStack](/documentation/swiftui/navigationstack)
 ```
 
-### 3. Look Up Missing Detailed Docs
+### 3. Fetch More Detailed Docs
 
-Once you find a path, check whether the detailed page is already available in the relevant skill directory. If it isn't, use the same path with the `sosumi.ai` Markdown mirror.
+1. Check whether the detailed page is already available in one of your installed Apple skills.
+2. Use skill names, descriptions, or `SKILL.md` frontmatter to find likely skill directories, then grep their local `.md` files before fetching. This is faster and uses less context than fetching new docs from the internet.
+3. If no installed skill has the page, use the same path with the `sosumi.ai` Markdown mirror.
 
 For example, `/documentation/healthkit/hkworkout` maps to `https://sosumi.ai/documentation/healthkit/hkworkout`.
 

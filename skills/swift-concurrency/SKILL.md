@@ -22,6 +22,8 @@ Structured concurrency, actors, and async sequences in Swift.
 | [asyncstream.md](asyncstream.md) | AsyncStream |
 | [checkedcontinuation.md](checkedcontinuation.md) | CheckedContinuation for bridging |
 
-## Missing Documentation
+## Fetching More Docs
 
-Search the local files first. If a topic is not available locally, use the relevant documentation path from `concurrency-overview.md` with the `sosumi.ai` Markdown mirror. For example, `/documentation/swift/task` maps to `https://sosumi.ai/documentation/swift/task`.
+1. Search this skill's local `.md` files first.
+2. If the topic is not here, check the other installed Apple skills you have available by their names, descriptions, or `SKILL.md` frontmatter, then grep their local files. This is faster and uses less context than fetching new docs from the internet.
+3. If no installed skill has the page, use the relevant documentation path from `concurrency-overview.md` with the `sosumi.ai` Markdown mirror. For example, `/documentation/swift/task` maps to `https://sosumi.ai/documentation/swift/task`.

@@ -27,9 +27,11 @@ The following Apple documentation pages are available locally (grep-friendly):
 | [tabview.md](tabview.md) | TabView |
 | [list.md](list.md) | List view |
 
-## Missing Documentation
+## Fetching More Docs
 
-Search the local files first. If a topic is not available locally, use the relevant documentation path from `swiftui-overview.md` with the `sosumi.ai` Markdown mirror. For example, `/documentation/swiftui/button` maps to `https://sosumi.ai/documentation/swiftui/button`.
+1. Search this skill's local `.md` files first.
+2. If the topic is not here, check the other installed Apple skills you have available by their names, descriptions, or `SKILL.md` frontmatter, then grep their local files. This is faster and uses less context than fetching new docs from the internet.
+3. If no installed skill has the page, use the relevant documentation path from `swiftui-overview.md` with the `sosumi.ai` Markdown mirror. For example, `/documentation/swiftui/button` maps to `https://sosumi.ai/documentation/swiftui/button`.
 
 ### Common SwiftUI Doc Paths
 
@@ -60,7 +62,7 @@ Search the local files first. If a topic is not available locally, use the relev
 
 1. **Check downloaded files first** - Grep the local `.md` files for your topic
 2. **Use the overview as an index** - Search `swiftui-overview.md` for documentation paths
-3. **Look up missing pages only when needed** - Use `sosumi.ai` with documentation paths from the overview
+3. **Fetch only when needed** - If no installed skill has the page, use `sosumi.ai` with documentation paths from the overview
 
 Example workflow:
 ```bash
