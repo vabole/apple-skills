@@ -1,6 +1,6 @@
 # Apple Skills
 
-Apple Skills is a collection of installable skills for coding agents that work on Apple platform projects. It packages Apple API references, Human Interface Guidelines, and practical SwiftUI workflow guides so Claude Code, Codex, Cursor, Windsurf, and other agents can use current iOS 26+ and Swift 6 patterns when editing your app.
+Apple development skills for **Claude Code**, **Codex**, and other coding agents — current iOS 26+ APIs, SwiftUI, Liquid Glass, Human Interface Guidelines, and practical workflow guides.
 
 ## Install
 
