@@ -25,5 +25,5 @@ Structured concurrency, actors, and async sequences in Swift.
 ## Fetching More Docs
 
 ```bash
-curl -sL "https://sosumi.ai/documentation/swift/{topic}" > {topic}.md
+pnpm fetch-doc -- /documentation/swift/{topic} --output skills/swift-concurrency/{topic}.md
 ```

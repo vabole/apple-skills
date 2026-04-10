@@ -24,5 +24,5 @@ StoreKit 2 for in-app purchases and subscriptions (iOS 26+).
 ## Fetching More Docs
 
 ```bash
-curl -sL "https://sosumi.ai/documentation/storekit/{topic}" > {topic}.md
+pnpm fetch-doc -- /documentation/storekit/{topic} --output skills/storekit/{topic}.md
 ```

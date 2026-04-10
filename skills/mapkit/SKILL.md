@@ -25,5 +25,5 @@ MapKit for SwiftUI — maps, annotations, and location features (iOS 26+).
 ## Fetching More Docs
 
 ```bash
-curl -sL "https://sosumi.ai/documentation/mapkit/{topic}" > {topic}.md
+pnpm fetch-doc -- /documentation/mapkit/{topic} --output skills/mapkit/{topic}.md
 ```

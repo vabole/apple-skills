@@ -862,10 +862,10 @@ See [patterns.md](patterns.md).
 - [Configuring UI tests with launch arguments | polpiella.dev](https://www.polpiella.dev/configuring-ui-tests-with-launch-arguments)
 - [UI Testing improvements in Xcode 16 | Jesse Squires](https://www.jessesquires.com/blog/2024/07/09/uitest-improvements-in-xcode-16/)
 
-### LLM-Friendly Apple Docs
-To get Apple documentation in Markdown format, replace `developer.apple.com` with `sosumi.ai`:
-```
-https://developer.apple.com/documentation/xcuiautomation/xcuielement
-→
-https://sosumi.ai/documentation/xcuiautomation/xcuielement
+### Fetch More Apple Docs
+
+Use the repo's direct Apple DocC fetcher:
+
+```bash
+pnpm fetch-doc -- /documentation/xcuiautomation/xcuielement --output skills/xcuitest/xcuielement.md
 ```

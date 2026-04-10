@@ -25,5 +25,5 @@ Apple's modern testing framework (`import Testing`) for iOS 26+.
 ## Fetching More Docs
 
 ```bash
-curl -sL "https://sosumi.ai/documentation/testing/{topic}" > {topic}.md
+pnpm fetch-doc -- /documentation/testing/{topic} --output skills/swift-testing/{topic}.md
 ```

@@ -1,7 +1,7 @@
 ---
 name: apple-docs-index
 user-invocable: true
-description: Index of Apple developer documentation for iOS, macOS, and related frameworks. Use when looking up what APIs exist in a framework, browsing available documentation, or deciding what docs to fetch. Covers SwiftUI, XCTest, HealthKit, Combine, SwiftData, and more.
+description: Index of Apple developer documentation for iOS, macOS, and related frameworks. Use when looking up what APIs exist in a framework, browsing available documentation, or deciding what docs to fetch. Covers SwiftUI, UIKit, XCTest, HealthKit, Combine, SwiftData, and more.
 ---
 
 # Apple Documentation Index
@@ -18,6 +18,7 @@ This skill provides indexes of Apple framework documentation. Use these to:
 | SwiftUI | `../swiftui/swiftui-overview.md` | 907KB | Views, modifiers, navigation, state |
 | XCTest | `xctest-index.md` | 55KB | Testing, assertions, expectations |
 | XCUIAutomation | `xcuiautomation-index.md` | 58KB | UI testing, elements, queries |
+| UIKit | `../uikit/uikit-overview.md` | 1.8MB | Views, controllers, controls, scenes |
 | HealthKit | `healthkit-index.md` | 312KB | Health data, workouts, records |
 | Combine | `combine-index.md` | 153KB | Publishers, subscribers, operators |
 | SwiftData | `swiftdata-index.md` | 86KB | Models, containers, queries |
@@ -51,10 +52,10 @@ Once you find what you need, download the full documentation:
 
 ```bash
 # From an index entry like "/documentation/healthkit/hkworkout"
-curl -sL "https://sosumi.ai/documentation/healthkit/hkworkout" > hkworkout.md
+pnpm fetch-doc -- /documentation/healthkit/hkworkout --output skills/healthkit/hkworkout.md
 
 # Then grep as needed
-grep -i "startDate" hkworkout.md
+grep -i "startDate" skills/healthkit/hkworkout.md
 ```
 
 ## Adding More Indexes
@@ -63,26 +64,22 @@ Download any framework index:
 
 ```bash
 # Foundation (large)
-curl -sL "https://sosumi.ai/documentation/foundation" > foundation-index.md
+pnpm fetch-doc -- /documentation/foundation --output skills/apple-docs-index/foundation-index.md
 
 # UIKit (large)
-curl -sL "https://sosumi.ai/documentation/uikit" > uikit-index.md
+pnpm fetch-doc -- /documentation/uikit --output skills/uikit/uikit-overview.md
 
 # Core Data
-curl -sL "https://sosumi.ai/documentation/coredata" > coredata-index.md
+pnpm fetch-doc -- /documentation/coredata --output skills/apple-docs-index/coredata-index.md
 
 # Any framework
-curl -sL "https://sosumi.ai/documentation/{framework}" > {framework}-index.md
+pnpm fetch-doc -- /documentation/{framework} --output skills/apple-docs-index/{framework}-index.md
 ```
 
-## The sosumi.ai Technique
+## Direct Apple DocC Fetching
 
-Apple's developer.apple.com uses JavaScript rendering. Replace with sosumi.ai for markdown:
+Use this repo's local tooling to fetch and render Apple's DocC JSON directly:
 
+```bash
+pnpm fetch-doc -- /documentation/swiftui/view --output skills/swiftui/view.md
 ```
-https://developer.apple.com/documentation/swiftui/view
-→
-https://sosumi.ai/documentation/swiftui/view
-```
-
-See [docs/apple-docs-for-llms.md](../../../docs/apple-docs-for-llms.md) for full documentation.

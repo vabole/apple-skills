@@ -1,6 +1,6 @@
 # Apple Skills
 
-Apple development skills for **Claude Code**, **Codex**, and other coding agents — current iOS 26+ APIs, SwiftUI, Liquid Glass, Human Interface Guidelines, and practical workflow guides.
+Apple development skills for **Claude Code**, **Codex**, and other coding agents — current iOS 26+ APIs, SwiftUI, UIKit, Liquid Glass, Human Interface Guidelines, and practical workflow guides.
 
 ## Install
 
@@ -64,7 +64,8 @@ npx skills remove -g
 
 | Skill | Files | Description |
 |-------|-------|-------------|
-| **swiftui** | 50 | SwiftUI views, modifiers, navigation, state management, charts |
+| **swiftui** | 49 | SwiftUI views, modifiers, navigation, state management, charts |
+| **uikit** | 30 | UIKit views, controllers, controls, scenes, Auto Layout, presentation |
 | **swift-testing** | 8 | Swift Testing framework (`@Test`, `@Suite`, `#expect`, `#require`) |
 | **swift-concurrency** | 8 | async/await, Task, TaskGroup, Actor, AsyncSequence |
 | **swiftdata** | — | @Model, ModelContext, @Query, schema migrations |
@@ -72,7 +73,7 @@ npx skills remove -g
 | **combine** | — | Publishers, subscribers, operators |
 | **storekit** | 7 | StoreKit 2 (Product, Transaction, SubscriptionStoreView) |
 | **mapkit** | 8 | MapKit for SwiftUI (Map, Marker, Annotation, MapCameraPosition) |
-| **tipkit** | 7 | TipKit (Tip protocol, TipView, PopoverTipView) |
+| **tipkit** | 7 | TipKit (Tip protocol, TipView, TipUIPopoverViewController) |
 | **appintents** | — | App Intents, Siri, Shortcuts, Spotlight integration |
 | **widgetkit** | — | Widget timelines, entries, providers |
 | **usernotifications** | — | Local/remote notifications, triggers |
@@ -87,7 +88,7 @@ npx skills remove -g
 | Skill | Files | Description |
 |-------|-------|-------------|
 | **hig** | 41 | Apple Human Interface Guidelines |
-| **ios-liquid-glass** | 17 | Liquid Glass API reference (iOS 26+) |
+| **ios-liquid-glass** | 16 | Liquid Glass API reference (iOS 26+) |
 | **ios-design-consultant** | — | UX/design guidance for Liquid Glass apps |
 | **ios-dev** | — | SwiftUI development patterns & aesthetics |
 
