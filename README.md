@@ -9,9 +9,9 @@ Pick your agent:
 <details open>
 <summary>Claude Code</summary>
 
-```text
-/plugin marketplace add vabole/apple-skills
-/plugin install apple-skills@apple-skills
+```bash
+claude plugin marketplace add vabole/apple-skills
+claude plugin install apple-skills@apple-skills
 ```
 
 </details>
@@ -20,7 +20,7 @@ Pick your agent:
 <summary>Codex</summary>
 
 ```bash
-npx skills add vabole/apple-skills --agent codex -g
+npx skills add vabole/apple-skills --agent codex --skill '*' -g -y
 ```
 
 </details>
@@ -29,26 +29,30 @@ npx skills add vabole/apple-skills --agent codex -g
 <summary>Cursor</summary>
 
 ```bash
-npx skills add vabole/apple-skills --agent cursor -g
+npx skills add vabole/apple-skills --agent cursor --skill '*' -g -y
 ```
 
 </details>
 
 ## Update
 
+For Claude Code marketplace installs:
+
 ```bash
-npx skills update -g
+claude plugin update apple-skills@apple-skills
 ```
+
+For Codex or Cursor, re-run the install command for your agent.
 
 ## Uninstall
 
 For Claude Code marketplace installs:
 
-```text
-/plugin uninstall apple-skills@apple-skills
+```bash
+claude plugin uninstall apple-skills@apple-skills
 ```
 
-For Skills CLI installs:
+For Skills CLI installs, run the remover and select the Apple Skills entries:
 
 ```bash
 npx skills remove -g
