@@ -62,47 +62,47 @@ npx skills remove -g
 
 ### Framework Reference Docs
 
-| Skill | Files | Description |
-|-------|-------|-------------|
-| **swiftui** | 49 | SwiftUI views, modifiers, navigation, state management, charts |
-| **uikit** | 30 | UIKit views, controllers, controls, scenes, Auto Layout, presentation |
-| **swift-testing** | 8 | Swift Testing framework (`@Test`, `@Suite`, `#expect`, `#require`) |
-| **swift-concurrency** | 8 | async/await, Task, TaskGroup, Actor, AsyncSequence |
-| **swiftdata** | — | @Model, ModelContext, @Query, schema migrations |
-| **healthkit** | — | HKHealthStore, HKQuantitySample, workouts, health data |
-| **combine** | — | Publishers, subscribers, operators |
-| **storekit** | 7 | StoreKit 2 (Product, Transaction, SubscriptionStoreView) |
-| **mapkit** | 8 | MapKit for SwiftUI (Map, Marker, Annotation, MapCameraPosition) |
-| **tipkit** | 7 | TipKit (Tip protocol, TipView, TipUIPopoverViewController) |
-| **appintents** | — | App Intents, Siri, Shortcuts, Spotlight integration |
-| **widgetkit** | — | Widget timelines, entries, providers |
-| **usernotifications** | — | Local/remote notifications, triggers |
-| **eventkit** | — | EKEventStore, EKEvent, EKReminder, calendar access |
-| **photosui** | — | PhotosPicker, photo selection |
-| **corehaptics** | — | CHHapticEngine, haptic patterns |
-| **backgroundtasks** | — | BGTaskScheduler, app refresh |
-| **xcuitest** | 10 | XCUITest with Swift 6 @MainActor patterns |
+| Skill | Description |
+|-------|-------------|
+| **swiftui** | SwiftUI views, modifiers, navigation, state management, charts |
+| **uikit** | UIKit views, controllers, controls, scenes, Auto Layout, presentation |
+| **swift-testing** | Swift Testing framework (`@Test`, `@Suite`, `#expect`, `#require`) |
+| **swift-concurrency** | async/await, Task, TaskGroup, Actor, AsyncSequence |
+| **swiftdata** | @Model, ModelContext, @Query, schema migrations |
+| **healthkit** | HKHealthStore, HKQuantitySample, workouts, health data |
+| **combine** | Publishers, subscribers, operators |
+| **storekit** | StoreKit 2 (Product, Transaction, SubscriptionStoreView) |
+| **mapkit** | MapKit for SwiftUI (Map, Marker, Annotation, MapCameraPosition) |
+| **tipkit** | TipKit (Tip protocol, TipView, TipUIPopoverViewController) |
+| **appintents** | App Intents, Siri, Shortcuts, Spotlight integration |
+| **widgetkit** | Widget timelines, entries, providers |
+| **usernotifications** | Local/remote notifications, triggers |
+| **eventkit** | EKEventStore, EKEvent, EKReminder, calendar access |
+| **photosui** | PhotosPicker, photo selection |
+| **corehaptics** | CHHapticEngine, haptic patterns |
+| **backgroundtasks** | BGTaskScheduler, app refresh |
+| **xcuitest** | XCUITest with Swift 6 @MainActor patterns |
 
 ### Design & Guidelines
 
-| Skill | Files | Description |
-|-------|-------|-------------|
-| **hig** | 41 | Apple Human Interface Guidelines |
-| **ios-liquid-glass** | 16 | Liquid Glass API reference (iOS 26+) |
-| **ios-design-consultant** | — | UX/design guidance for Liquid Glass apps |
-| **ios-dev** | — | SwiftUI development patterns & aesthetics |
+| Skill | Description |
+|-------|-------------|
+| **hig** | Apple Human Interface Guidelines |
+| **ios-liquid-glass** | Liquid Glass API reference (iOS 26+) |
+| **ios-design-consultant** | UX/design guidance for Liquid Glass apps |
+| **ios-dev** | SwiftUI development patterns & aesthetics |
 
 ### Workflow & Pattern Guides
 
 > Expert workflow/pattern guides that teach *how* to approach tasks, as opposed to the reference docs above which document *what APIs exist*.
 > Originally from [Dimillian/Skills](https://github.com/Dimillian/Skills) by Thomas Ricouard. MIT License.
 
-| Skill | Files | Description |
-|-------|-------|-------------|
-| **guide-swiftui-performance-audit** | 5 | Audit and improve SwiftUI runtime performance |
-| **guide-swiftui-ui-patterns** | 27 | Best practices for building SwiftUI views and components |
-| **guide-swiftui-view-refactor** | 2 | Refactor SwiftUI views for consistent structure and Observation usage |
-| **guide-macos-spm-packaging** | 16 | Scaffold, build, and package SwiftPM-based macOS apps without Xcode |
+| Skill | Description |
+|-------|-------------|
+| **guide-swiftui-performance-audit** | Audit and improve SwiftUI runtime performance |
+| **guide-swiftui-ui-patterns** | Best practices for building SwiftUI views and components |
+| **guide-swiftui-view-refactor** | Refactor SwiftUI views for consistent structure and Observation usage |
+| **guide-macos-spm-packaging** | Scaffold, build, and package SwiftPM-based macOS apps without Xcode |
 
 ### Utilities
 
