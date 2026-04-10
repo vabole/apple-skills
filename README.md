@@ -2,7 +2,7 @@
 
 Apple development skills for AI coding agents — latest iOS 26+ APIs, SwiftUI, Liquid Glass, Human Interface Guidelines, and more.
 
-These skills give your AI assistant up-to-date Apple API reference docs and iOS/macOS development patterns, so it can write production-grade Swift code without hallucinating deprecated APIs.
+These skills give your coding agent up-to-date Apple API reference docs and iOS/macOS development patterns, so it writes production-grade Swift code without hallucinating deprecated APIs.
 
 ## Install
 
