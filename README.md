@@ -17,23 +17,39 @@ These skills give your coding agent up-to-date Apple API reference docs and iOS/
 
 Works with Claude Code, Codex, Cursor, Windsurf, and [40+ other agents](https://skills.sh).
 
-```bash
-npx skills add vabole/apple-skills
-```
-
-This prompts you to pick which skills to install and which agents to install them to.
-
-To install all skills to all detected agents without prompts:
+**Install globally for a specific agent:**
 
 ```bash
-npx skills add vabole/apple-skills --all
+# Claude Code
+npx skills add vabole/apple-skills --agent claude-code -g -y
+
+# Codex
+npx skills add vabole/apple-skills --agent codex -g -y
 ```
 
-To install globally (user-level, available in all projects):
+**Install interactively** (pick skills and agents from a menu):
 
 ```bash
 npx skills add vabole/apple-skills -g
 ```
+
+**Install all skills to all detected agents without prompts:**
+
+```bash
+npx skills add vabole/apple-skills --all -g
+```
+
+**Uninstall:**
+
+```bash
+# Remove from Claude Code only (leaves skills available for other agents)
+npx skills remove --all --agent claude-code -g -y
+
+# Interactive removal (pick which skills to remove)
+npx skills remove -g
+```
+
+> **Note for universal agents (Codex, Cursor, Gemini CLI, GitHub Copilot):** These agents share a common `~/.agents/skills/` directory. If you have multiple universal agents installed, use interactive removal (`npx skills remove -g`) to manage which skills to remove rather than targeting a single agent.
 
 ## What's Included
 
