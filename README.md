@@ -116,6 +116,10 @@ npx skills remove -g
 
 ## Target Platform
 
+These skills intentionally target the latest Apple APIs and platform conventions.
+
+**Why bleeding edge?** LLMs already have plenty of legacy Apple APIs in their training data — when a project needs backward compatibility, agents can add it on their own. But for the newest APIs, agents need to be steered with up-to-date docs; without them, they'll hallucinate or fall back to deprecated patterns.
+
 **iOS 26+ / Swift 6** — no legacy patterns. Uses:
 - `@Observable` macro (not `ObservableObject`)
 - `NavigationStack` (not `NavigationView`)
