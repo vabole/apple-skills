@@ -42,14 +42,28 @@ npx skills add vabole/apple-skills --all -g
 **Uninstall:**
 
 ```bash
-# Remove from Claude Code only (leaves skills available for other agents)
-npx skills remove --all --agent claude-code -g -y
+# Remove apple-skills from Claude Code
+npx skills remove \
+  appintents apple-aso apple-docs-index backgroundtasks combine corehaptics \
+  eventkit guide-macos-spm-packaging guide-swiftui-performance-audit \
+  guide-swiftui-ui-patterns guide-swiftui-view-refactor healthkit hig \
+  ios-app-assets ios-app-icon ios-design-consultant ios-dev ios-liquid-glass \
+  mapkit photosui simulator-utils storekit swift-concurrency swift-testing \
+  swiftdata swiftui tipkit ui-percept-rapid-feedback usernotifications \
+  widgetkit xcuitest \
+  --agent claude-code -g -y
 
-# Interactive removal (pick which skills to remove)
-npx skills remove -g
+# Remove apple-skills from Codex
+npx skills remove \
+  appintents apple-aso apple-docs-index backgroundtasks combine corehaptics \
+  eventkit guide-macos-spm-packaging guide-swiftui-performance-audit \
+  guide-swiftui-ui-patterns guide-swiftui-view-refactor healthkit hig \
+  ios-app-assets ios-app-icon ios-design-consultant ios-dev ios-liquid-glass \
+  mapkit photosui simulator-utils storekit swift-concurrency swift-testing \
+  swiftdata swiftui tipkit ui-percept-rapid-feedback usernotifications \
+  widgetkit xcuitest \
+  --agent codex -g -y
 ```
-
-> **Note for universal agents (Codex, Cursor, Gemini CLI, GitHub Copilot):** These agents share a common `~/.agents/skills/` directory. If you have multiple universal agents installed, use interactive removal (`npx skills remove -g`) to manage which skills to remove rather than targeting a single agent.
 
 ## What's Included
 
