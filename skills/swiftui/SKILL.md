@@ -29,7 +29,7 @@ The following Apple documentation pages are available locally (grep-friendly):
 
 ## Missing Documentation
 
-Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
+Search the local files first. If a topic is not available locally, use the relevant documentation path from `swiftui-overview.md` with the `sosumi.ai` Markdown mirror. For example, `/documentation/swiftui/button` maps to `https://sosumi.ai/documentation/swiftui/button`.
 
 ### Common SwiftUI Doc Paths
 
@@ -60,7 +60,7 @@ Search the local files first. If a topic is not available locally, use the relev
 
 1. **Check downloaded files first** - Grep the local `.md` files for your topic
 2. **Use the overview as an index** - Search `swiftui-overview.md` for documentation paths
-3. **Look up missing pages only when needed** - Use Apple Developer Documentation paths from the overview
+3. **Look up missing pages only when needed** - Use `sosumi.ai` with documentation paths from the overview
 
 Example workflow:
 ```bash

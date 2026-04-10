@@ -24,4 +24,4 @@ MapKit for SwiftUI — maps, annotations, and location features (iOS 26+).
 
 ## Missing Documentation
 
-Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path from `mapkit-overview.md` with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
+Search the local files first. If a topic is not available locally, use the relevant documentation path from `mapkit-overview.md` with the `sosumi.ai` Markdown mirror. For example, `/documentation/mapkit/mkmapview` maps to `https://sosumi.ai/documentation/mapkit/mkmapview`.

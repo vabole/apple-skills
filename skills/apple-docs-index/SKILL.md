@@ -48,6 +48,6 @@ Index files list all available documentation pages. Each entry shows the path:
 
 ### 3. Look Up Missing Detailed Docs
 
-Once you find a path, check whether the detailed page is already available in the relevant skill directory. If it isn't, use the Apple Developer Documentation path with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
+Once you find a path, check whether the detailed page is already available in the relevant skill directory. If it isn't, use the same path with the `sosumi.ai` Markdown mirror.
 
-For example, `/documentation/healthkit/hkworkout` maps to `https://developer.apple.com/documentation/healthkit/hkworkout`.
+For example, `/documentation/healthkit/hkworkout` maps to `https://sosumi.ai/documentation/healthkit/hkworkout`.

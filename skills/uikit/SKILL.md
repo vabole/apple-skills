@@ -48,6 +48,6 @@ Search the local files first. `uikit-overview.md` is the full framework index an
 
 ## Missing Documentation
 
-Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path from `uikit-overview.md` with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
+Search the local files first. If a topic is not available locally, use the relevant documentation path from `uikit-overview.md` with the `sosumi.ai` Markdown mirror. For example, `/documentation/uikit/uiview` maps to `https://sosumi.ai/documentation/uikit/uiview`.
 
 Some UIKit-adjacent APIs live in other frameworks. For example, `UIHostingController` is documented under SwiftUI.

@@ -864,4 +864,4 @@ See [patterns.md](patterns.md).
 
 ### Missing Apple Docs
 
-Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path from the local XCTest or XCUIAutomation indexes with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
+Search the local files first. If a topic is not available locally, use the relevant documentation path from the local XCTest or XCUIAutomation indexes with the `sosumi.ai` Markdown mirror. For example, `/documentation/xcuiautomation/xcuielement` maps to `https://sosumi.ai/documentation/xcuiautomation/xcuielement`.
