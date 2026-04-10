@@ -1,35 +1,29 @@
 # Apple Skills
 
-Apple development skills for AI coding agents — latest iOS 26+ APIs, SwiftUI, Liquid Glass, Human Interface Guidelines, and more.
-
-These skills give your coding agent up-to-date Apple API reference docs and iOS/macOS development patterns, so it writes production-grade Swift code without hallucinating deprecated APIs.
+Apple Skills is a collection of installable skills for coding agents that work on Apple platform projects. It packages Apple API references, Human Interface Guidelines, and practical SwiftUI workflow guides so Claude Code, Codex, Cursor, Windsurf, and other agents can use current iOS 26+ and Swift 6 patterns when editing your app.
 
 ## Install
 
-### Claude Code (Marketplace)
+For Claude Code, install from the marketplace:
 
-```
+```text
 /plugin marketplace add vabole/apple-skills
 /plugin install apple-skills@apple-skills
 ```
 
-### Any Agent (npx)
-
-Works with Claude Code, Codex, Cursor, Windsurf, and [40+ other agents](https://skills.sh).
+For Codex, install with the Skills CLI:
 
 ```bash
-# Claude Code
-npx skills add vabole/apple-skills --agent claude-code -g -y
-
-# Codex
-npx skills add vabole/apple-skills --agent codex -g -y
-
-# Interactive — pick skills and agents from a menu
-npx skills add vabole/apple-skills -g
-
-# All skills, all detected agents, no prompts
-npx skills add vabole/apple-skills --all -g
+npx skills add vabole/apple-skills --agent codex -g
 ```
+
+For Cursor, Windsurf, or another supported agent, use the interactive installer:
+
+```bash
+npx skills add vabole/apple-skills -g
+```
+
+The `-g` flag installs the skills globally for your selected agent.
 
 ## Update
 
@@ -39,35 +33,17 @@ npx skills update -g
 
 ## Uninstall
 
-### Claude Code (Marketplace)
+For Claude Code marketplace installs:
 
-```
+```text
 /plugin uninstall apple-skills@apple-skills
 ```
 
-### Any Agent (npx)
+For Skills CLI installs:
 
 ```bash
-# Interactive — select which skills to remove
 npx skills remove -g
 ```
-
-<details>
-<summary>Script-friendly removal (explicit skill list)</summary>
-
-The `skills` CLI does not yet support package-level removal, so scripted uninstalls must list every skill name.
-
-```bash
-# Remove from Claude Code
-echo "appintents apple-aso apple-docs-index backgroundtasks combine corehaptics eventkit guide-macos-spm-packaging guide-swiftui-performance-audit guide-swiftui-ui-patterns guide-swiftui-view-refactor healthkit hig ios-app-assets ios-app-icon ios-design-consultant ios-dev ios-liquid-glass mapkit photosui simulator-utils storekit swift-concurrency swift-testing swiftdata swiftui tipkit ui-percept-rapid-feedback usernotifications widgetkit xcuitest" \
-  | xargs npx skills remove --agent claude-code -g -y
-
-# Remove from Codex
-echo "appintents apple-aso apple-docs-index backgroundtasks combine corehaptics eventkit guide-macos-spm-packaging guide-swiftui-performance-audit guide-swiftui-ui-patterns guide-swiftui-view-refactor healthkit hig ios-app-assets ios-app-icon ios-design-consultant ios-dev ios-liquid-glass mapkit photosui simulator-utils storekit swift-concurrency swift-testing swiftdata swiftui tipkit ui-percept-rapid-feedback usernotifications widgetkit xcuitest" \
-  | xargs npx skills remove --agent codex -g -y
-```
-
-</details>
 
 ## What's Included
 
