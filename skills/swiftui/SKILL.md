@@ -8,7 +8,7 @@ agent: Explore
 
 # SwiftUI Reference
 
-This skill provides access to SwiftUI documentation via downloaded reference files and the repo's direct Apple DocC fetcher.
+This skill provides access to SwiftUI documentation via downloaded reference files.
 
 ## Downloaded Reference Files
 
@@ -27,18 +27,9 @@ The following Apple documentation pages are available locally (grep-friendly):
 | [tabview.md](tabview.md) | TabView |
 | [list.md](list.md) | List view |
 
-## Fetching Additional Documentation
+## Missing Documentation
 
-To download any Apple documentation page:
-
-```bash
-pnpm fetch-doc -- /documentation/swiftui/[topic] --output skills/swiftui/[topic].md
-
-# Examples:
-pnpm fetch-doc -- /documentation/swiftui/text --output skills/swiftui/text.md
-pnpm fetch-doc -- /documentation/swiftui/button --output skills/swiftui/button.md
-pnpm fetch-doc -- /documentation/swiftui/sheet --output skills/swiftui/sheet.md
-```
+Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
 
 ### Common SwiftUI Doc Paths
 
@@ -68,16 +59,16 @@ pnpm fetch-doc -- /documentation/swiftui/sheet --output skills/swiftui/sheet.md
 ## Usage Instructions
 
 1. **Check downloaded files first** - Grep the local `.md` files for your topic
-2. **Download if missing** - Use `pnpm fetch-doc` to fetch specific documentation
-3. **Use source URLs** - Pass `/documentation/...` paths or `https://developer.apple.com/...` URLs to the fetcher
+2. **Use the overview as an index** - Search `swiftui-overview.md` for documentation paths
+3. **Look up missing pages only when needed** - Use Apple Developer Documentation paths from the overview
 
 Example workflow:
 ```bash
 # Looking for info on modifiers?
 grep -i "padding" view-protocol.md
 
-# Need full Text documentation?
-pnpm fetch-doc -- /documentation/swiftui/text --output skills/swiftui/text.md
+# Need full Text documentation? Check the local file first.
+grep -i "font" text.md
 ```
 
 ## Sources

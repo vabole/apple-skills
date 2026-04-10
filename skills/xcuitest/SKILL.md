@@ -862,10 +862,6 @@ See [patterns.md](patterns.md).
 - [Configuring UI tests with launch arguments | polpiella.dev](https://www.polpiella.dev/configuring-ui-tests-with-launch-arguments)
 - [UI Testing improvements in Xcode 16 | Jesse Squires](https://www.jessesquires.com/blog/2024/07/09/uitest-improvements-in-xcode-16/)
 
-### Fetch More Apple Docs
+### Missing Apple Docs
 
-Use the repo's direct Apple DocC fetcher:
-
-```bash
-pnpm fetch-doc -- /documentation/xcuiautomation/xcuielement --output skills/xcuitest/xcuielement.md
-```
+Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path from the local XCTest or XCUIAutomation indexes with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.

@@ -22,8 +22,6 @@ Apple's modern testing framework (`import Testing`) for iOS 26+.
 | [traits.md](traits.md) | Test traits (tags, conditions, time limits) |
 | [migrating-from-xctest.md](migrating-from-xctest.md) | Migration guide from XCTest |
 
-## Fetching More Docs
+## Missing Documentation
 
-```bash
-pnpm fetch-doc -- /documentation/testing/{topic} --output skills/swift-testing/{topic}.md
-```
+Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path from `testing-overview.md` with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.

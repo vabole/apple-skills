@@ -46,40 +46,8 @@ Index files list all available documentation pages. Each entry shows the path:
 - [NavigationStack](/documentation/swiftui/navigationstack)
 ```
 
-### 3. Download Detailed Docs
+### 3. Look Up Missing Detailed Docs
 
-Once you find what you need, download the full documentation:
+Once you find a path, check whether the detailed page is already available in the relevant skill directory. If it isn't, use the Apple Developer Documentation path with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
 
-```bash
-# From an index entry like "/documentation/healthkit/hkworkout"
-pnpm fetch-doc -- /documentation/healthkit/hkworkout --output skills/healthkit/hkworkout.md
-
-# Then grep as needed
-grep -i "startDate" skills/healthkit/hkworkout.md
-```
-
-## Adding More Indexes
-
-Download any framework index:
-
-```bash
-# Foundation (large)
-pnpm fetch-doc -- /documentation/foundation --output skills/apple-docs-index/foundation-index.md
-
-# UIKit (large)
-pnpm fetch-doc -- /documentation/uikit --output skills/uikit/uikit-overview.md
-
-# Core Data
-pnpm fetch-doc -- /documentation/coredata --output skills/apple-docs-index/coredata-index.md
-
-# Any framework
-pnpm fetch-doc -- /documentation/{framework} --output skills/apple-docs-index/{framework}-index.md
-```
-
-## Direct Apple DocC Fetching
-
-Use this repo's local tooling to fetch and render Apple's DocC JSON directly:
-
-```bash
-pnpm fetch-doc -- /documentation/swiftui/view --output skills/swiftui/view.md
-```
+For example, `/documentation/healthkit/hkworkout` maps to `https://developer.apple.com/documentation/healthkit/hkworkout`.

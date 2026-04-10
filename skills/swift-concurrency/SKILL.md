@@ -22,8 +22,6 @@ Structured concurrency, actors, and async sequences in Swift.
 | [asyncstream.md](asyncstream.md) | AsyncStream |
 | [checkedcontinuation.md](checkedcontinuation.md) | CheckedContinuation for bridging |
 
-## Fetching More Docs
+## Missing Documentation
 
-```bash
-pnpm fetch-doc -- /documentation/swift/{topic} --output skills/swift-concurrency/{topic}.md
-```
+Search the local files first. If a topic is not available locally, use the relevant Apple Developer Documentation path from `concurrency-overview.md` with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.

@@ -92,17 +92,9 @@ grep -i "notification" playing-haptics.md
 grep -i "navigation" hig-index.md
 ```
 
-## Fetching Additional Documentation
+## Missing Documentation
 
-Use the repo's direct Apple DocC fetcher:
-
-```bash
-pnpm fetch-doc -- /design/human-interface-guidelines/[topic] --output skills/hig/[topic].md
-
-# Examples:
-pnpm fetch-doc -- /design/human-interface-guidelines/progress-indicators --output skills/hig/progress-indicators.md
-pnpm fetch-doc -- /design/human-interface-guidelines/segmented-controls --output skills/hig/segmented-controls.md
-```
+Search the local files first. If a topic is not available locally, use the relevant Apple Human Interface Guidelines path with whatever web or documentation tools are available in the current environment. If direct Apple pages are hard to read in that environment, `sosumi.ai` can mirror the same documentation path as Markdown.
 
 ### Common HIG Doc Paths
 
@@ -123,27 +115,6 @@ pnpm fetch-doc -- /design/human-interface-guidelines/segmented-controls --output
 | Navigation Bars | `human-interface-guidelines/navigation-bars` |
 | Sheets | `human-interface-guidelines/sheets` |
 | Alerts | `human-interface-guidelines/alerts` |
-
-### More Components (Not Downloaded)
-
-Download these as needed:
-
-```bash
-# Indicators
-pnpm fetch-doc -- /design/human-interface-guidelines/progress-indicators --output skills/hig/progress-indicators.md
-pnpm fetch-doc -- /design/human-interface-guidelines/activity-rings --output skills/hig/activity-rings.md
-
-# Presentation
-pnpm fetch-doc -- /design/human-interface-guidelines/popovers --output skills/hig/popovers.md
-pnpm fetch-doc -- /design/human-interface-guidelines/scroll-views --output skills/hig/scroll-views.md
-
-# Selection
-pnpm fetch-doc -- /design/human-interface-guidelines/segmented-controls --output skills/hig/segmented-controls.md
-
-# System
-pnpm fetch-doc -- /design/human-interface-guidelines/status-bars --output skills/hig/status-bars.md
-pnpm fetch-doc -- /design/human-interface-guidelines/home-screen-quick-actions --output skills/hig/home-screen-quick-actions.md
-```
 
 ## Quick Reference
 
