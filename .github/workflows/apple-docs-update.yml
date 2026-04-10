@@ -1,0 +1,94 @@
+name: Apple Docs Update
+
+on:
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: apple-docs-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    name: Refresh Apple docs
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25.9.0
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Prepare documentation update
+        run: pnpm prepare-doc-update -- --apply
+
+      - name: Check for documentation changes
+        id: docs
+        shell: bash
+        run: |
+          if git diff --quiet --exit-code -- skills; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No Apple documentation updates found." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          {
+            echo "Apple documentation updates found:"
+            echo
+            git diff --stat -- skills
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run checks
+        if: steps.docs.outputs.changed == 'true'
+        run: pnpm check
+
+      - name: Create or update pull request
+        if: steps.docs.outputs.changed == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: automation/apple-docs-update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout -B "$BRANCH"
+          git add skills
+          git commit -m "docs: refresh Apple docs"
+
+          git fetch origin "+refs/heads/${BRANCH}:refs/remotes/origin/${BRANCH}" || true
+          git push --force-with-lease origin "$BRANCH"
+
+          pr_url="$(gh pr list --head "$BRANCH" --base main --state open --json url --jq '.[0].url // ""')"
+          if [[ -n "$pr_url" ]]; then
+            gh pr edit "$pr_url" \
+              --title "docs: refresh Apple docs" \
+              --body "Automated daily refresh of generated Apple documentation."
+            echo "Updated $pr_url" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "docs: refresh Apple docs" \
+            --body "Automated daily refresh of generated Apple documentation."

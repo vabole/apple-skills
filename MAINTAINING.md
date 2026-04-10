@@ -12,8 +12,14 @@ Native TypeScript execution requires Node 25.2 or newer.
 # Dry run — see what changed since last download
 ./scripts/refresh-docs.sh
 
+# Safe workflow-style dry run
+./scripts/prepare-doc-update.sh
+
 # Apply updates
 ./scripts/refresh-docs.sh --apply
+
+# Apply updates only after a failure-free dry run
+./scripts/prepare-doc-update.sh --apply
 
 # Install tooling for checks
 pnpm install
@@ -27,7 +33,9 @@ git add -A && git commit -m "docs: refresh Apple docs $(date +%Y-%m-%d)"
 
 ### How it works
 
-The refresh script finds all `.md` files with a `source: https://developer.apple.com/...` header, maps each source URL to Apple's underlying DocC JSON endpoint, renders markdown locally, and diffs against the checked-in copy. Only files with actual content changes (ignoring timestamp differences) are flagged.
+The refresh script finds all `.md` files with a `source: https://developer.apple.com/...` header, maps each source URL to Apple's underlying DocC JSON endpoint, renders markdown locally, and diffs against the checked-in copy. Only files with actual content changes (ignoring timestamp and trailing-whitespace differences) are flagged.
+
+The scheduled GitHub Actions refresh uses `scripts/prepare-doc-update.sh --apply`, which runs a dry refresh first and refuses to write generated docs if any Apple page fails to fetch or render. The workflow opens or updates a documentation PR when `skills/` changes. It intentionally does not bump `.claude-plugin` versions; handle release/version changes separately after the docs PR merges.
 
 Images stay in the main generated docs. When Apple embeds DocC videos in a page, the refresh flow keeps those links in a neighboring `*.videos.md` sidecar so most agents don't pay the context cost unless they explicitly need video references.
 
@@ -77,6 +85,7 @@ The `SKILL.md` files are hand-written skill descriptions and are the only non-ve
 ## Tooling
 
 - `pnpm refresh-docs` — native Node execution of the TypeScript refresh script
+- `pnpm prepare-doc-update` — workflow-style dry/apply wrapper for generated doc updates
 - `pnpm fetch-doc` — native Node execution for one-off downloads
 - `pnpm typecheck` — `tsgo` preview compiler as the main typecheck gate
 - `pnpm lint` — Biome formatter + linter, configured to fail on warnings

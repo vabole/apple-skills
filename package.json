@@ -8,6 +8,7 @@
   },
   "scripts": {
     "refresh-docs": "node scripts/apple-docs.ts refresh",
+    "prepare-doc-update": "./scripts/prepare-doc-update.sh",
     "fetch-doc": "node scripts/apple-docs.ts fetch",
     "typecheck": "tsgo --project tsconfig.json --noEmit",
     "typecheck:tsc": "tsc --noEmit",

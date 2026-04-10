@@ -33,7 +33,10 @@ export function isAppleSourceUrl(sourceUrl: string | null): sourceUrl is string 
 }
 
 export function normalizeForCompare(markdown: string): string {
-  return markdown.replace(/^timestamp:\s*.+$/m, "timestamp: <ignored>").trim()
+  return markdown
+    .replace(/^timestamp:\s*.+$/m, "timestamp: <ignored>")
+    .replace(/[ \t]+$/gm, "")
+    .trim()
 }
 
 export function oneLine(value: string): string {

@@ -12,6 +12,12 @@ import {
   normalizeForCompare,
 } from "./apple-docs/utils.ts"
 
+type RefreshChange = {
+  file: string
+  markdown: string
+  videoSidecar: string | null
+}
+
 async function main() {
   const rawArgs = process.argv.slice(2)
   const command = rawArgs[0] && !rawArgs[0].startsWith("-") ? rawArgs[0] : "refresh"
@@ -64,6 +70,7 @@ async function runRefresh(args: string[]) {
   let changed = 0
   let unchanged = 0
   let failed = 0
+  const changes: RefreshChange[] = []
 
   console.log("📥 Refreshing Apple docs directly from developer.apple.com...")
   console.log(`   apply=${apply ? "yes" : "no"}`)
@@ -91,10 +98,9 @@ async function runRefresh(args: string[]) {
 
       changed += 1
       console.log(`🔄 CHANGED: ${path.relative(process.cwd(), file)}`)
+      changes.push({ file, markdown: next.markdown, videoSidecar: next.videoSidecar })
       if (apply) {
-        await writeFile(file, next.markdown, "utf8")
-        await writeVideoSidecar(file, next.videoSidecar)
-        console.log("   ✅ Updated")
+        console.log("   Queued")
       }
     } catch (error) {
       failed += 1
@@ -114,6 +120,21 @@ async function runRefresh(args: string[]) {
   if (changed > 0 && !apply) {
     console.log("")
     console.log("Run with --apply to update changed files.")
+  }
+
+  if (failed > 0) {
+    console.log("")
+    console.log("Refresh failed; no files were updated.")
+    process.exitCode = 1
+    return
+  }
+
+  if (apply) {
+    for (const change of changes) {
+      await writeFile(change.file, change.markdown, "utf8")
+      await writeVideoSidecar(change.file, change.videoSidecar)
+      console.log(`✅ Updated: ${path.relative(process.cwd(), change.file)}`)
+    }
   }
 }
 
