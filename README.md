@@ -4,26 +4,35 @@ Apple development skills for **Claude Code**, **Codex**, and other coding agents
 
 ## Install
 
-For Claude Code, install from the marketplace:
+Pick your agent:
+
+<details open>
+<summary>Claude Code</summary>
 
 ```text
 /plugin marketplace add vabole/apple-skills
 /plugin install apple-skills@apple-skills
 ```
 
-For Codex, install with the Skills CLI:
+</details>
+
+<details>
+<summary>Codex</summary>
 
 ```bash
 npx skills add vabole/apple-skills --agent codex -g
 ```
 
-For Cursor, Windsurf, or another supported agent, use the interactive installer:
+</details>
+
+<details>
+<summary>Cursor</summary>
 
 ```bash
-npx skills add vabole/apple-skills -g
+npx skills add vabole/apple-skills --agent cursor -g
 ```
 
-The `-g` flag installs the skills globally for your selected agent.
+</details>
 
 ## Update
 
