@@ -1,0 +1,72 @@
+name: Bump Plugin Version
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: bump-plugin-version-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    name: Bump marketplace plugin version
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25.9.0
+
+      - name: Sync with latest main
+        run: git pull --ff-only origin main
+
+      - name: Bump version
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+          const path = '.claude-plugin/marketplace.json';
+          const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+          const version = data.plugins?.[0]?.version;
+
+          if (!version) {
+            throw new Error('Missing plugins[0].version in .claude-plugin/marketplace.json');
+          }
+
+          const parts = version.split('.').map(Number);
+          if (parts.length !== 3 || parts.some((value) => !Number.isInteger(value) || value < 0)) {
+            throw new Error(`Unsupported semver version: ${version}`);
+          }
+
+          parts[2] += 1;
+          data.plugins[0].version = parts.join('.');
+
+          fs.writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`);
+          console.log(`Bumped plugin version: ${version} -> ${data.plugins[0].version}`);
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .claude-plugin/marketplace.json
+
+          if git diff --cached --quiet; then
+            echo "No plugin version changes to commit." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          git commit -m "chore: bump plugin version [skip ci]"
+          git push
