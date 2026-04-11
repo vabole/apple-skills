@@ -12,184 +12,82 @@ license: MIT
 
 # SwiftUI Performance Audit
 
-## Overview
+## Quick start
 
-Audit SwiftUI view performance end-to-end, from instrumentation and baselining to root-cause analysis and concrete remediation steps.
+Use this skill to diagnose SwiftUI performance issues from code first, then request profiling evidence when code review alone cannot explain the symptoms.
 
-## Workflow Decision Tree
+## Workflow
 
-- If the user provides code, start with "Code-First Review."
-- If the user only describes symptoms, ask for minimal code/context, then do "Code-First Review."
-- If code review is inconclusive, go to "Guide the User to Profile" and ask for a trace or screenshots.
+1. Classify the symptom: slow rendering, janky scrolling, high CPU, memory growth, hangs, or excessive view updates.
+2. If code is available, start with a code-first review using `references/code-smells.md`.
+3. If code is not available, ask for the smallest useful slice: target view, data flow, reproduction steps, and deployment target.
+4. If code review is inconclusive or runtime evidence is required, guide the user through profiling with `references/profiling-intake.md`.
+5. Summarize likely causes, evidence, remediation, and validation steps using `references/report-template.md`.
 
-## 1. Code-First Review
+## 1. Intake
 
 Collect:
-- Target view/feature code.
-- Data flow: state, environment, observable models.
-- Symptoms and reproduction steps.
+- Target view or feature code.
+- Symptoms and exact reproduction steps.
+- Data flow: `@State`, `@Binding`, environment dependencies, and observable models.
+- Whether the issue shows up on device or simulator, and whether it was observed in Debug or Release.
+
+Ask the user to classify the issue if possible:
+- CPU spike or battery drain
+- Janky scrolling or dropped frames
+- High memory or image pressure
+- Hangs or unresponsive interactions
+- Excessive or unexpectedly broad view updates
+
+For the full profiling intake checklist, read `references/profiling-intake.md`.
+
+## 2. Code-First Review
 
 Focus on:
-- View invalidation storms from broad state changes.
-- Unstable identity in lists (`id` churn, `UUID()` per render).
-- Top-level conditional view swapping (`if/else` returning different root branches).
-- Heavy work in `body` (formatting, sorting, image decoding).
-- Layout thrash (deep stacks, `GeometryReader`, preference chains).
-- Large images without downsampling or resizing.
-- Over-animated hierarchies (implicit animations on large trees).
+- Invalidation storms from broad observation or environment reads.
+- Unstable identity in lists and `ForEach`.
+- Heavy derived work in `body` or view builders.
+- Layout thrash from complex hierarchies, `GeometryReader`, or preference chains.
+- Large image decode or resize work on the main thread.
+- Animation or transition work applied too broadly.
+
+Use `references/code-smells.md` for the detailed smell catalog and fix guidance.
 
 Provide:
 - Likely root causes with code references.
 - Suggested fixes and refactors.
 - If needed, a minimal repro or instrumentation suggestion.
 
-## 2. Guide the User to Profile
+## 3. Guide the User to Profile
 
-Explain how to collect data with Instruments:
-- Use the SwiftUI template in Instruments (Release build).
-- Reproduce the exact interaction (scroll, navigation, animation).
-- Capture SwiftUI timeline and Time Profiler.
-- Export or screenshot the relevant lanes and the call tree.
-
-Ask for:
-- Trace export or screenshots of SwiftUI lanes + Time Profiler call tree.
+If code review does not explain the issue, ask for runtime evidence:
+- A trace export or screenshots of the SwiftUI timeline and Time Profiler call tree.
 - Device/OS/build configuration.
+- The exact interaction being profiled.
+- Before/after metrics if the user is comparing a change.
 
-## 3. Analyze and Diagnose
+Use `references/profiling-intake.md` for the exact checklist and collection steps.
 
-Prioritize likely SwiftUI culprits:
-- View invalidation storms from broad state changes.
-- Unstable identity in lists (`id` churn, `UUID()` per render).
-- Top-level conditional view swapping (`if/else` returning different root branches).
-- Heavy work in `body` (formatting, sorting, image decoding).
-- Layout thrash (deep stacks, `GeometryReader`, preference chains).
-- Large images without downsampling or resizing.
-- Over-animated hierarchies (implicit animations on large trees).
+## 4. Analyze and Diagnose
 
-Summarize findings with evidence from traces/logs.
+- Map the evidence to the most likely category: invalidation, identity churn, layout thrash, main-thread work, image cost, or animation cost.
+- Prioritize problems by impact, not by how easy they are to explain.
+- Distinguish code-level suspicion from trace-backed evidence.
+- Call out when profiling is still insufficient and what additional evidence would reduce uncertainty.
 
-## 4. Remediate
+## 5. Remediate
 
 Apply targeted fixes:
-- Narrow state scope (`@State`/`@Observable` closer to leaf views).
+- Narrow state scope and reduce broad observation fan-out.
 - Stabilize identities for `ForEach` and lists.
-- Move heavy work out of `body` (precompute, cache, `@State`).
-- Use `equatable()` or value wrappers for expensive subtrees.
+- Move heavy work out of `body` into derived state updated from inputs, model-layer precomputation, memoized helpers, or background preprocessing. Use `@State` only for view-owned state, not as an ad hoc cache for arbitrary computation.
+- Use `equatable()` only when equality is cheaper than recomputing the subtree and the inputs are truly value-semantic.
 - Downsample images before rendering.
 - Reduce layout complexity or use fixed sizing where possible.
 
-## Common Code Smells (and Fixes)
+Use `references/code-smells.md` for examples, Observation-specific fan-out guidance, and remediation patterns.
 
-Look for these patterns during code review.
-
-### Expensive formatters in `body`
-
-```swift
-var body: some View {
-    let number = NumberFormatter() // slow allocation
-    let measure = MeasurementFormatter() // slow allocation
-    Text(measure.string(from: .init(value: meters, unit: .meters)))
-}
-```
-
-Prefer cached formatters in a model or a dedicated helper:
-
-```swift
-final class DistanceFormatter {
-    static let shared = DistanceFormatter()
-    let number = NumberFormatter()
-    let measure = MeasurementFormatter()
-}
-```
-
-### Computed properties that do heavy work
-
-```swift
-var filtered: [Item] {
-    items.filter { $0.isEnabled } // runs on every body eval
-}
-```
-
-Prefer precompute or cache on change:
-
-```swift
-@State private var filtered: [Item] = []
-// update filtered when inputs change
-```
-
-### Sorting/filtering in `body` or `ForEach`
-
-```swift
-List {
-    ForEach(items.sorted(by: sortRule)) { item in
-        Row(item)
-    }
-}
-```
-
-Prefer sort once before view updates:
-
-```swift
-let sortedItems = items.sorted(by: sortRule)
-```
-
-### Inline filtering in `ForEach`
-
-```swift
-ForEach(items.filter { $0.isEnabled }) { item in
-    Row(item)
-}
-```
-
-Prefer a prefiltered collection with stable identity.
-
-### Unstable identity
-
-```swift
-ForEach(items, id: \.self) { item in
-    Row(item)
-}
-```
-
-Avoid `id: \.self` for non-stable values; use a stable ID.
-
-### Top-level conditional view swapping
-
-```swift
-var content: some View {
-    if isEditing {
-        editingView
-    } else {
-        readOnlyView
-    }
-}
-```
-
-Prefer one stable base view and localize conditions to sections/modifiers (for example inside `toolbar`, row content, `overlay`, or `disabled`). This reduces root identity churn and helps SwiftUI diffing stay efficient.
-
-### Image decoding on the main thread
-
-```swift
-Image(uiImage: UIImage(data: data)!)
-```
-
-Prefer decode/downsample off the main thread and store the result.
-
-### Broad dependencies in observable models
-
-```swift
-@Observable class Model {
-    var items: [Item] = []
-}
-
-var body: some View {
-    Row(isFavorite: model.items.contains(item))
-}
-```
-
-Prefer granular view models or per-item state to reduce update fan-out.
-
-## 5. Verify
+## 6. Verify
 
 Ask the user to re-run the same capture and compare with baseline metrics.
 Summarize the delta (CPU, frame drops, memory peak) if provided.
@@ -201,9 +99,14 @@ Provide:
 - Top issues (ordered by impact).
 - Proposed fixes with estimated effort.
 
+Use `references/report-template.md` when formatting the final audit.
+
 ## References
 
-Add Apple documentation and WWDC resources under `references/` as they are supplied by the user.
+- Profiling intake and collection checklist: `references/profiling-intake.md`
+- Common code smells and remediation patterns: `references/code-smells.md`
+- Audit output template: `references/report-template.md`
+- Add Apple documentation and WWDC resources under `references/` as they are supplied by the user.
 - Optimizing SwiftUI performance with Instruments: `references/optimizing-swiftui-performance-instruments.md`
 - Understanding and improving SwiftUI performance: `references/understanding-improving-swiftui-performance.md`
 - Understanding hangs in your app: `references/understanding-hangs-in-your-app.md`

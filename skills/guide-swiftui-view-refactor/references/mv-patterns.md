@@ -1,69 +1,45 @@
 # MV Patterns Reference
 
-Source provided by user: "SwiftUI in 2025: Forget MVVM" (Thomas Ricouard).
+Distilled guidance for deciding whether a SwiftUI feature should stay as plain MV or introduce a view model.
 
-Use this as guidance when deciding whether to introduce a view model.
+Inspired by the user's provided source, "SwiftUI in 2025: Forget MVVM" (Thomas Ricouard), but rewritten here as a practical refactoring reference.
 
-Key points:
+## Default stance
+
 - Default to MV: views are lightweight state expressions and orchestration points.
-- Prefer `@State`, `@Environment`, `@Query`, `task`, and `onChange` over view models.
-- Inject services and shared models via `@Environment`; keep logic in services/models.
-- Split large views into smaller views instead of moving logic into a view model.
-- Avoid manual data fetching that duplicates SwiftUI/SwiftData mechanisms.
-- Test models/services and business logic; views should stay simple and declarative.
+- Prefer `@State`, `@Environment`, `@Query`, `.task`, `.task(id:)`, and `onChange` before reaching for a view model.
+- Keep business logic in services, models, or domain types, not in the view body.
+- Split large screens into smaller view types before inventing a view model layer.
+- Avoid manual fetching or state plumbing that duplicates SwiftUI or SwiftData mechanisms.
+- Test services, models, and transformations first; views should stay simple and declarative.
 
-# SwiftUI in 2025: Forget MVVM
+## When to avoid a view model
 
-*Let me tell you why*
+Do not introduce a view model when it would mostly:
+- mirror local view state,
+- wrap values already available through `@Environment`,
+- duplicate `@Query`, `@State`, or `Binding`-based data flow,
+- exist only because the view body is too long,
+- hold one-off async loading logic that can live in `.task` plus local view state.
 
-**Thomas Ricouard**
-10 min read · Jun 2, 2025
+In these cases, simplify the view and data flow instead of adding indirection.
 
----
+## When a view model may be justified
 
-It’s 2025, and I’m still getting asked the same question:
+A view model can be reasonable when at least one of these is true:
+- the user explicitly asks for one,
+- the codebase already standardizes on a view model pattern for that feature,
+- the screen needs a long-lived reference model with behavior that does not fit naturally in services alone,
+- the feature is adapting a non-SwiftUI API that needs a dedicated bridge object,
+- multiple views share the same presentation-specific state and that state is not better modeled as app-level environment data.
 
-> “Where are your ViewModels?”
+Even then, keep the view model small, explicit, and non-optional when possible.
 
-Every time I share this opinion or code from my open-source projects like my BlueSky client **IcySky**, or even the Medium iOS app, developers are surprised to see clean, simple views without a single ViewModel in sight.
-
-Let me be clear:
-
-You don’t need ViewModels in SwiftUI.
-You never did.
-You never will.
-
----
-
-## The MVVM Trap
-
-When SwiftUI launched in 2019, many developers brought their UIKit baggage with them. We were so used to the *Massive View Controller* problem that we immediately reached for MVVM as our savior.
-
-But SwiftUI isn’t UIKit.
-
-It was designed from the ground up with a different philosophy, highlighted in multiple WWDC sessions like:
-
-- *Data Flow Through SwiftUI (WWDC19)*
-- *Data Essentials in SwiftUI (WWDC20)*
-- *Discover Observation in SwiftUI (WWDC23)*
-
-Those sessions barely mention ViewModels.
-
-Why? Because ViewModels are almost alien to SwiftUI’s data flow model.
-
-SwiftUI views are **structs**, not classes. They are lightweight, disposable, and recreated frequently. Adding a ViewModel means fighting the framework’s core design.
-
----
-
-## Views as Pure State Expressions
-
-In my latest IcySky app, every view follows the same pattern I’ve advocated for years.
+## Preferred pattern: local state plus environment
 
 ```swift
 struct FeedView: View {
-
     @Environment(BlueSkyClient.self) private var client
-    @Environment(AppTheme.self) private var theme
 
     enum ViewState {
         case loading
@@ -72,138 +48,66 @@ struct FeedView: View {
     }
 
     @State private var viewState: ViewState = .loading
-    @State private var isRefreshing = false
 
     var body: some View {
-        NavigationStack {
-            List {
-                switch viewState {
-                case .loading:
-                    ProgressView("Loading feed...")
-                        .frame(maxWidth: .infinity)
-                        .listRowSeparator(.hidden)
-
-                case .error(let message):
-                    ErrorStateView(
-                        message: message,
-                        retryAction: { await loadFeed() }
-                    )
-                    .listRowSeparator(.hidden)
-
-                case .loaded(let posts):
-                    ForEach(posts) { post in
-                        PostRowView(post: post)
-                            .listRowInsets(.init())
-                    }
+        List {
+            switch viewState {
+            case .loading:
+                ProgressView("Loading feed...")
+            case .error(let message):
+                ErrorStateView(message: message, retryAction: { await loadFeed() })
+            case .loaded(let posts):
+                ForEach(posts) { post in
+                    PostRowView(post: post)
                 }
             }
-            .listStyle(.plain)
-            .refreshable { await refreshFeed() }
-            .task { await loadFeed() }
+        }
+        .task { await loadFeed() }
+    }
+
+    private func loadFeed() async {
+        do {
+            let posts = try await client.getFeed()
+            viewState = .loaded(posts)
+        } catch {
+            viewState = .error(error.localizedDescription)
         }
     }
 }
 ```
 
-The state is defined inside the view, using an enum.
+Why this is preferred:
+- state stays close to the UI that renders it,
+- dependencies come from the environment instead of a wrapper object,
+- the view coordinates UI flow while the service owns the real work.
 
-No ViewModel.
-No indirection.
-The view is a direct expression of state.
-
-## The Magic of Environment
-
-Instead of dependency injection through ViewModels, SwiftUI gives us @Environment.
-
-```swift
-@Environment(BlueSkyClient.self) private var client
-
-private func loadFeed() async {
-    do {
-        let posts = try await client.getFeed()
-        viewState = .loaded(posts)
-    } catch {
-        viewState = .error(error.localizedDescription)
-    }
-}
-```
-
-Your services live in the environment, are testable in isolation, and encapsulate complexity.
-
-The view orchestrates UI flow — nothing else.
-
-Real-World Complexity
-“This only works for simple apps.”
-
-No.
-
-IcySky handles authentication, complex feeds, navigation, and user interaction — without ViewModels.
-
-The Medium iOS app (millions of users) is now mostly SwiftUI and uses very few ViewModels, most of them legacy from 2019.
-
-For new features, we inject services into the environment and build lightweight views with local state.
-
-Using `.task(id:)` and `.onChange()`
-
-## SwiftUI’s modifiers act as small state reducers.
+## Preferred pattern: use modifiers as lightweight orchestration
 
 ```swift
 .task(id: searchText) {
-    guard !searchText.isEmpty else { return }
+    guard !searchText.isEmpty else {
+        results = []
+        return
+    }
     await searchFeed(query: searchText)
 }
+
 .onChange(of: isInSearch, initial: false) {
     guard !isInSearch else { return }
     Task { await fetchSuggestedFeed() }
 }
 ```
 
-Readable. Local. Explicit.
+Use view lifecycle modifiers for simple, local orchestration. Do not convert these into a view model by default unless the behavior clearly outgrows the view.
 
-## App-Level Environment Setup
+## SwiftData note
 
-```swift
-@main
-struct IcySkyApp: App {
+SwiftData is a strong argument for keeping data flow inside the view when possible.
 
-    @Environment(\.scenePhase) var scenePhase
-
-    @State var client: BSkyClient?
-    @State var auth: Auth = .init()
-    @State var currentUser: CurrentUser?
-    @State var router: AppRouter = .init(initialTab: .feed)
-
-    var body: some Scene {
-        WindowGroup {
-            TabView(selection: $router.selectedTab) {
-                if client != nil && currentUser != nil {
-                    ForEach(AppTab.allCases) { tab in
-                        AppTabRootView(tab: tab)
-                            .tag(tab)
-                            .toolbarVisibility(.hidden, for: .tabBar)
-                    }
-                } else {
-                    ProgressView()
-                        .containerRelativeFrame([.horizontal, .vertical])
-                }
-            }
-            .environment(client)
-            .environment(currentUser)
-            .environment(auth)
-            .environment(router)
-        }
-    }
-}
-```
-
-All dependencies are injected once and available everywhere.
-
-## SwiftData: The Perfect Example
-SwiftData was built to work directly in views.
+Prefer:
 
 ```swift
 struct BookListView: View {
-
     @Query private var books: [Book]
     @Environment(\.modelContext) private var modelContext
 
@@ -222,93 +126,36 @@ struct BookListView: View {
 }
 ```
 
-Now compare that to forcing a ViewModel:
+Avoid adding a view model that manually fetches and mirrors the same state unless the feature has an explicit reason to do so.
 
-```swift
-@Observable
-class BookListViewModel {
-    private var modelContext: ModelContext
-    var books: [Book] = []
+## Testing guidance
 
-    init(modelContext: ModelContext) {
-        self.modelContext = modelContext
-        fetchBooks()
-    }
+Prefer to test:
+- services and business rules,
+- models and state transformations,
+- async workflows at the service layer,
+- UI behavior with previews or higher-level UI tests.
 
-    func fetchBooks() {
-        let descriptor = FetchDescriptor<Book>()
-        books = try! modelContext.fetch(descriptor)
-    }
-}
-```
+Do not introduce a view model primarily to make a simple SwiftUI view "testable." That usually adds ceremony without improving the architecture.
 
-Manual fetching. Manual refresh. Boilerplate everywhere.
+## Refactor checklist
 
-You’re fighting the framework.
+When refactoring toward MV:
+- Remove view models that only wrap environment dependencies or local view state.
+- Replace optional or delayed-initialized view models when plain view state is enough.
+- Pull business logic out of the view body and into services/models.
+- Keep the view as a thin coordinator of UI state, navigation, and user actions.
+- Split large bodies into smaller view types before adding new layers of indirection.
 
-## Testing Reality
-Testing SwiftUI views provides minimal value.
+## Bottom line
 
-Instead:
+Treat view models as the exception, not the default.
 
-* Unit test services and business logic
+In modern SwiftUI, the default stack is:
+- `@State` for local state,
+- `@Environment` for shared dependencies,
+- `@Query` for SwiftData-backed collections,
+- lifecycle modifiers for lightweight orchestration,
+- services and models for business logic.
 
-* Test models and transformations
-
-* Use SwiftUI previews for visual regression
-
-* Use UI automation for E2E tests
-
-* If needed, use `ViewInspector` for view introspection.
-
-## The 2025 Reality
-
-SwiftUI is mature:
-
-* `@Observable`
-
-* Better Environment
-
-* Improved async & task lifecycle
-
-* Almost everything you need lives inside the view.
-
-I’ll reconsider ViewModels when Apple lets us access Environment outside views.
-
-Until then, vanilla SwiftUI is the canon.
-
-## Why This Matters
-
-Every ViewModel adds:
-
-* More complexity
-
-* More objects to sync
-
-* More indirection
-
-* More cognitive overhead
-
-SwiftUI gives you:
-
-* `@State`
-
-* `@Environment`
-
-* `@Observable`
-
-* Binding
-
-Use them. Trust the framework.
-
-## The Bottom Line
-In 2025, there’s no excuse for cluttering SwiftUI apps with unnecessary ViewModels.
-
-Let views be pure expressions of state.
-
-Focus complexity where it belongs: services and business logic.
-
-Goodbye MVVM 🚮
-Long live the View 👑
-
-Happy coding 🚀
+Reach for a view model only when the feature clearly needs one.
