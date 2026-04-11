@@ -10,6 +10,13 @@ Show how to wire the app shell (TabView + NavigationStack + sheets) and install 
 2) A dedicated view modifier installs global dependencies and lifecycle tasks (auth state, streaming watchers, push tokens, data containers).
 3) Feature views pull only what they need from the environment; feature-specific state stays local.
 
+## Dependency selection
+
+- Use `@Environment` for app-level services, shared clients, theme/configuration, and values that many descendants genuinely need.
+- Prefer initializer injection for feature-local dependencies and models. Do not move a dependency into the environment just to avoid passing one or two arguments.
+- Keep mutable feature state out of the environment unless it is intentionally shared across broad parts of the app.
+- Use `@EnvironmentObject` only as a legacy fallback or when the project already standardizes on it for a truly shared object.
+
 ## Root shell example (generic)
 
 ```swift
