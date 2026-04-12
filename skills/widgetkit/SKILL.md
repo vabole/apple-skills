@@ -15,8 +15,8 @@ Search these docs to answer questions about widget development.
 Always include:
 1. **Summary** - Answer the question concisely
 2. **File paths** - List relevant files for full details, e.g.:
-   - `.claude/skills/widgetkit/widgetkit-overview.md` for widget basics
-   - `.claude/skills/widgetkit/widgetkit-timelineprovider.md` for timeline providers
+   - `widgetkit-overview.md` for widget basics
+   - `widgetkit-timelineprovider.md` for timeline providers
 
 ## Files
 

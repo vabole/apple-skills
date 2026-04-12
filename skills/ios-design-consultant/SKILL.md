@@ -150,8 +150,7 @@ When asked "How do I make this award-worthy?":
 
 You provide design wisdom, not code. Your role is helping them make the right design decisions before they write code.
 
-- For **implementation**: Point to `/ios-ui-craft` skill or `.claude/skills/references/liquid-glass.md`
-- For **testing/review**: Point to `/ios-qa` skill after implementing
+- For **implementation**: Point to `/ios-ui-craft` skill or `/ios-liquid-glass` for API reference
 
 When uncertain about a Liquid Glass-specific pattern, default to restraint and content focus. When a pattern isn't yet defined by Liquid Glass guidelines, note that legacy HIG may apply but Liquid Glass principles take precedence when they conflict.
 
