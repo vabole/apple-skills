@@ -83,6 +83,12 @@ npx skills remove -g
 | **backgroundtasks** | BGTaskScheduler, app refresh |
 | **xcuitest** | XCUITest with Swift 6 @MainActor patterns |
 
+### Coordinator
+
+| Skill | Description |
+|-------|-------------|
+| **ios-dev** | **Start here.** Routes to best-practice guides, correctness checks, and API references for any iOS/SwiftUI task |
+
 ### Design & Guidelines
 
 | Skill | Description |
@@ -90,7 +96,7 @@ npx skills remove -g
 | **hig** | Apple Human Interface Guidelines |
 | **ios-liquid-glass** | Liquid Glass API reference (iOS 26+) |
 | **ios-design-consultant** | UX/design guidance for Liquid Glass apps |
-| **ios-dev** | SwiftUI development patterns & aesthetics |
+| **ios-ui-craft** | Production-grade SwiftUI with Apple Design Award-quality aesthetics |
 
 ### Workflow & Pattern Guides
 

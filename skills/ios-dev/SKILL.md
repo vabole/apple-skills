@@ -1,183 +1,112 @@
 ---
 name: ios-dev
 user-invocable: true
-description: Build beautiful iOS SwiftUI interfaces. Use this skill when the user asks to create, design, build, or fix any iOS screen, component, or view. Produces production-grade SwiftUI code with Apple Design Award-quality aesthetics using Liquid Glass (iOS 26+). Applies to any iOS UI task - new screens, redesigns, fixing ugly UI, share sheets, modals, cards, buttons, or full app interfaces.
+description: "Start here for any iOS or SwiftUI task. Coordinates best-practice guides, correctness checks, and full Apple API references. Use before navigating to other Apple skills — for building, reviewing, refactoring, or debugging iOS apps."
 ---
 
 # iOS Development
 
-Create distinctive, Apple Design Award-worthy iOS interfaces. This skill produces real, working SwiftUI code with exceptional attention to aesthetic details and creative choices that avoid generic AI-generated aesthetics.
+Start here. This skill coordinates the Apple skills collection — it tells you *which* skill to use and *when*, so you get opinionated guidance and full API references together.
 
-The user provides iOS requirements: a screen, component, view, or interface to build. They may include context about the purpose, audience, or technical constraints.
+## Operating Rules
 
-## Design Thinking
+- Do not bridge UIKit/AppKit when SwiftUI has a native solution — bridging adds state-sync bugs, breaks SwiftUI composition (animations, environment), and complicates lifecycle management
+- Do not enforce specific architectures (MVVM, VIPER, MV, TCA, etc.) — encourage separating business logic from views without mandating how
+- Liquid Glass is the default iOS 26+ design system — use system glass behaviors naturally, but add custom `GlassEffect` modifiers only when they serve the UI, not for decoration
+- Present performance optimizations as suggestions backed by reasoning, not blanket requirements
+- When you need exact API details, grep the framework reference skills — they contain full Apple documentation
 
-Before writing ANY code, understand the context and commit to a BOLD aesthetic direction:
+## Task Workflows
 
-1. **Purpose**: What problem does this interface solve? Who uses it?
-2. **Tone**: Pick a direction: calm/serene, playful/energetic, premium/refined, utilitarian/focused, editorial/magazine, brutalist/raw, warm/organic, cold/technical. Commit fully.
-3. **Inspiration**: Which Apple apps set the bar? (Weather, Health, Fitness, Notes, Apple TV, Journal)
-4. **Differentiation**: What makes this UNFORGETTABLE? What's the one thing users will remember?
-5. **Glass Philosophy**: Is glass framing content or would it compete with it?
+### Review existing code
 
-**CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work—the key is intentionality, not intensity.
+1. Read the code and identify which topics apply
+2. Run the **Correctness Checklist** below — violations are bugs
+3. Use the **Topic Router** to load the relevant guide for each topic
+4. For API correctness, grep the matching framework reference skill
 
-Then implement working SwiftUI code that is:
-- Production-grade and functional
-- Visually striking and memorable
-- Cohesive with a clear aesthetic point-of-view
-- Meticulously refined in every detail
+### Improve existing code
 
-## Anti-Patterns: What to Avoid
+1. Run the correctness checklist first
+2. For performance issues: use `guide-swiftui-performance-audit`
+3. For view structure / long bodies: use `guide-swiftui-view-refactor`
+4. For navigation, state, or pattern questions: use `guide-swiftui-ui-patterns`
+5. For visual quality: use `ios-ui-craft`
+6. For API details: grep the matching framework reference skill
 
-These are hallmarks of generic AI-generated iOS design. NEVER do these:
+### Build a new feature
 
-| Anti-Pattern | Why It's Bad | Instead |
-|--------------|--------------|---------|
-| **Boring solid backgrounds** | No depth or atmosphere | Gradients, subtle textures, or layered colors |
-| **System fonts everywhere** | No typographic intention | Intentional hierarchy, consider display fonts |
-| **Cookie-cutter tab bars** | No personality | Custom styling, meaningful icons |
-| **Purple/indigo gradients** | Quintessential AI slop | Find a distinctive, contextual palette |
-| **Flat, lifeless interactions** | No delight | Haptics, spring animations, feedback |
-| **Glass on everything** | Defeats the purpose | Glass only for controls/navigation layer |
-| **Ignoring content layer** | Glass where it doesn't belong | Glass frames content, never obscures |
-| **Generic card layouts** | White rectangles with shadows | Context-specific, purposeful containers |
-| **Emojis as design elements** | Lazy, unprofessional | SF Symbols, custom assets |
-| **Evenly distributed colors** | Timid, uncommitted | Dominant color with sharp accents |
+1. Design data flow first — identify owned vs. injected state
+2. For UI patterns and app wiring: use `guide-swiftui-ui-patterns`
+3. For API details: grep the matching framework reference skill
+4. Structure views for optimal diffing — extract subviews early
+5. Run the correctness checklist before finishing
+6. For visual polish: use `ios-ui-craft`
 
-## iOS Aesthetics Guidelines
+## Topic Router
 
-Focus on:
+For each topic, there is an **opinionated guide** (how to think about it) and a **framework reference** (full grepable Apple docs).
 
-- **Typography**: Create clear hierarchy. Display fonts for impact, proper weight progression. Don't default to system everywhere—make intentional choices. Consider SF Pro Display for headers, custom fonts for brand identity.
-- **Color & Theme**: Commit to a cohesive aesthetic. Dominant colors with sharp accents outperform timid, evenly-distributed palettes. Dark mode often produces more distinctive results. Design dark first, then adapt to light.
-- **Motion**: Spring/bouncy animations are the new default. Morph between states, don't swap. Add haptics to every meaningful interaction. Use `.bouncy` not `.easeInOut`.
-- **Spatial Composition**: Intentional spacing (8pt grid). Breathing room where needed, density where appropriate. Concentric corners that match device hardware.
-- **Backgrounds & Depth**: Create atmosphere. Gradients, subtle layers, radial glows. Never flat white unless that's a deliberate minimal choice.
+| Topic | Guide | API Reference |
+|-------|-------|---------------|
+| State management | `guide-swiftui-ui-patterns` | `swiftui` (state.md, binding.md, observation.md, environment.md) |
+| View composition | `guide-swiftui-view-refactor` | `swiftui` (view-protocol.md) |
+| Performance | `guide-swiftui-performance-audit` | — |
+| Navigation | `guide-swiftui-ui-patterns` | `swiftui` (navigationstack.md, navigationsplitview.md, navigationlink.md) |
+| Sheets & modals | `guide-swiftui-ui-patterns` | `swiftui` (sheet.md, inspector.md, alert.md, confirmationdialog.md) |
+| Lists & ForEach | `guide-swiftui-ui-patterns` | `swiftui` (list.md) |
+| ScrollView | `guide-swiftui-ui-patterns` | `swiftui` (scrollview.md) |
+| Forms & input | — | `swiftui` (form.md, textfield.md, picker.md, toggle.md, slider.md) |
+| Charts | — | `swiftui` (chart.md, charts-overview.md) |
+| Layout | `guide-swiftui-ui-patterns` | `swiftui` (geometryreader.md, grid.md, hstack.md, vstack.md, zstack.md, spacer.md) |
+| TabView | `guide-swiftui-ui-patterns` | `swiftui` (tabview.md) |
+| Liquid Glass | `ios-design-consultant` | `ios-liquid-glass` |
+| Visual design | `ios-ui-craft` | `hig` |
+| Accessibility | — | `hig` |
+| macOS apps | `guide-macos-spm-packaging` | `swiftui`, `uikit` |
+| Data persistence | — | `swiftdata` |
+| Testing | — | `swift-testing`, `xcuitest` |
+| Concurrency | — | `swift-concurrency` |
+| In-app purchases | — | `storekit` |
+| Maps | — | `mapkit` |
+| Health data | — | `healthkit` |
+| Notifications | — | `usernotifications` |
+| App Intents / Siri | — | `appintents` |
+| Widgets | — | `widgetkit` |
+| App Store metadata | `apple-aso` | — |
+| Finding docs | `apple-docs-index` | — |
 
-## The Three Principles
+## Correctness Checklist
 
-| Principle | Description |
-|-----------|-------------|
-| **Hierarchy** | Controls float above content. Glass frames, never obscures. Content is king. |
-| **Harmony** | Software design aligns with hardware. Concentric corners. Fluid gestures. |
-| **Consistency** | Adapt fluidly across iPhone, iPad, Mac. Same identity, contextual expression. |
+These are hard rules — violations are always bugs:
 
-## Required Reading
-
-Before implementing, read the shared Liquid Glass reference for API patterns:
-
-**`skills/ios-liquid-glass/`** - Core Liquid Glass API, code patterns, navigation patterns, animation philosophy, haptics
-
-This reference contains the technical implementation details. This skill provides the aesthetic vision; the reference provides the code patterns.
-
-## Typography That Speaks
-
-Don't default to system fonts for everything. Create typographic hierarchy:
-
-```swift
-// Display fonts for headers
-Text("Dashboard")
-    .font(.largeTitle.bold())
-    .foregroundStyle(.primary)
-
-// Secondary information
-Text("Last updated 5 min ago")
-    .font(.subheadline)
-    .foregroundStyle(.secondary)
-
-// Consider custom fonts for brand identity
-Text("Premium")
-    .font(.custom("PlayfairDisplay-Bold", size: 32))
-```
-
-### Font Recommendations
-
-| Use Case | Options |
-|----------|---------|
-| **Display** | SF Pro Display, New York, custom serif |
-| **Body** | SF Pro Text (system), custom sans |
-| **Technical** | SF Mono, custom monospace |
-| **Editorial** | New York, custom serif with character |
-
-## Color with Intention
-
-### Dominant + Accent
-
-Don't distribute color evenly. Choose:
-- **One dominant** that defines the brand/mood
-- **Sharp accents** for actions and highlights
-- **Neutral base** for content readability
-
-### Dark Mode First
-
-Dark mode often produces more distinctive results. Design dark, then adapt to light.
-
-```swift
-// Semantic colors that adapt
-.foregroundStyle(.primary)
-.foregroundStyle(.secondary)
-.background(.background)
-
-// Accent with purpose
-.tint(.accentColor)
-```
-
-## Development Loop: Screenshot-Driven Iteration
-
-**Never submit UI work without visually verifying it.** Use the screenshot script to iterate until the screen is both functional and beautiful.
-
-```bash
-# Screenshot simulator
-xcrun simctl io booted screenshot /tmp/screenshot.png && sips --resampleHeightWidthMax 1800 /tmp/screenshot.png
-```
-
-**The loop:**
-1. **Implement** your changes
-2. **Screenshot** the simulator
-3. **Evaluate** critically — is this share-worthy?
-4. **Iterate** if not — fix and screenshot again
-
-**Keep iterating until:**
-- You'd proudly screenshot it to show a friend
-- It could appear in an App Store feature
-- It feels like it belongs on Apple's marketing materials
-
-This is the quality bar: **share-worthy, award-worthy**.
-
-## Quality Checklist
-
-Before considering UI complete:
-
-- [ ] Committed to a clear aesthetic direction (not generic)
-- [ ] Glass applied only to navigation layer (not content)
-- [ ] Haptics on all meaningful interactions
-- [ ] Spring/bouncy animations (not linear)
-- [ ] SF Symbols (not emojis or random icons)
-- [ ] Dark mode tested and polished
-- [ ] Typography hierarchy clear and intentional
-- [ ] Colors are purposeful, not default blue
-- [ ] Morphing transitions where applicable
-- [ ] Loading states animated
-- [ ] Empty states designed
-- [ ] Error states helpful and styled
-- [ ] Accessibility settings respected
-- [ ] Screenshot taken and visually verified
-- [ ] Would I screenshot this to show someone? (If no, iterate)
-
-## The Mandate
-
-Remember: Claude is capable of extraordinary creative work. Don't settle for "working." Push for **memorable**.
-
-Every interface should have:
-1. **A point of view** - A clear aesthetic direction
-2. **Intentional details** - Nothing accidental
-3. **Emotional resonance** - Users feel something
-4. **Technical excellence** - Smooth, performant, accessible
-
-The goal is an app worthy of an Apple Design Award—an app that feels genuinely designed, not generated.
+- [ ] `@State` properties are `private`
+- [ ] `@Binding` only where a child needs to mutate parent state
+- [ ] Values passed in are never declared as `@State` — they silently ignore updates
+- [ ] Use `@State` with `@Observable` classes — not `@StateObject` or `ObservableObject`
+- [ ] Use `@Bindable` for injected observables that need bindings
+- [ ] `ForEach` uses stable identity — never `.indices` on dynamic content
+- [ ] Each `ForEach` element produces a constant number of views
+- [ ] `.animation(_:value:)` always includes the `value:` parameter
+- [ ] `@FocusState` properties are `private`
+- [ ] `@Observable` classes are `@MainActor` — Swift 6 strict concurrency requires it
+- [ ] No business logic in `body` — use `.task`, `.onChange`, or methods
+- [ ] No `AnyView` unless truly unavoidable — fix with better composition
 
 ## Related Skills
 
-- **`/ios-design-consultant`** - For design questions before coding
-- **`/image`** - Generate custom assets when SF Symbols aren't enough (never use emojis)
+**Design trio:**
+- `/ios-ui-craft` — Build visually striking interfaces (produces code)
+- `/ios-design-consultant` — Design advice and rationale (no code)
+- `/ios-liquid-glass` — Liquid Glass API reference
+
+**Workflow guides:**
+- `/guide-swiftui-ui-patterns` — Navigation, state, sheets, component patterns
+- `/guide-swiftui-view-refactor` — View structure, extraction, MV patterns
+- `/guide-swiftui-performance-audit` — Diagnose and fix performance issues
+- `/guide-macos-spm-packaging` — Build macOS apps with SwiftPM
+
+**Utilities:**
+- `/apple-docs-index` — Find the right Apple documentation
+- `/simulator-utils` — Simulator screenshots and device management
+- `/apple-aso` — App Store Optimization
