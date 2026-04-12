@@ -75,7 +75,12 @@ jobs:
           git add skills
           git commit -m "docs: refresh Apple docs"
 
-          patch_id="$(git diff HEAD^ HEAD -- skills | git patch-id --stable | cut -d' ' -f1)"
+          patch_id="$(
+            git diff HEAD^ HEAD -- skills \
+              | perl -ne 'print unless /^[+-]timestamp: /' \
+              | git patch-id --stable \
+              | cut -d' ' -f1
+          )"
           pr_body=$'Automated daily refresh of generated Apple documentation.\n\n<!-- apple-docs-update:patch-id='"$patch_id"' -->'
 
           pr_url="$(gh pr list --head "$BRANCH" --base main --state open --json url --jq '.[0].url // ""')"
