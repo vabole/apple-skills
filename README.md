@@ -101,14 +101,15 @@ npx skills remove -g
 ### Workflow & Pattern Guides
 
 > Expert workflow/pattern guides that teach *how* to approach tasks, as opposed to the reference docs above which document *what APIs exist*.
-> Originally from [Dimillian/Skills](https://github.com/Dimillian/Skills) by Thomas Ricouard. MIT License.
 
-| Skill | Description |
-|-------|-------------|
-| **guide-swiftui-performance-audit** | Audit and improve SwiftUI runtime performance |
-| **guide-swiftui-ui-patterns** | Best practices for building SwiftUI views and components |
-| **guide-swiftui-view-refactor** | Refactor SwiftUI views for consistent structure and Observation usage |
-| **guide-macos-spm-packaging** | Scaffold, build, and package SwiftPM-based macOS apps without Xcode |
+| Skill | Description | Origin |
+|-------|-------------|--------|
+| **guide-swiftui-animations** | Animation patterns — implicit/explicit, transitions, phase/keyframe, @Animatable | [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) |
+| **guide-swiftui-charts** | Swift Charts — marks, axes, selection, styling, Chart3D, accessibility | [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) |
+| **guide-swiftui-performance-audit** | Audit and improve SwiftUI runtime performance | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
+| **guide-swiftui-ui-patterns** | Best practices for building SwiftUI views and components | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
+| **guide-swiftui-view-refactor** | Refactor SwiftUI views for consistent structure and Observation usage | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
+| **guide-macos-spm-packaging** | Scaffold, build, and package SwiftPM-based macOS apps without Xcode | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
 
 ### Utilities
 

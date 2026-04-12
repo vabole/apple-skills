@@ -57,7 +57,8 @@ The **Guide** column has opinionated, short pattern guides. The **API Reference*
 | Lists & ForEach | `guide-swiftui-ui-patterns` | `swiftui` (list.md) |
 | ScrollView | `guide-swiftui-ui-patterns` | `swiftui` (scrollview.md) |
 | Forms & input | — | `swiftui` (form.md, textfield.md, picker.md, toggle.md, slider.md) |
-| Charts | — | `swiftui` (chart.md, charts-overview.md) |
+| Charts | `guide-swiftui-charts` | `swiftui` (chart.md, charts-overview.md) |
+| Animations | `guide-swiftui-animations` | `swiftui` (swiftui-overview.md) |
 | Layout | `guide-swiftui-ui-patterns` | `swiftui` (geometryreader.md, grid.md, hstack.md, vstack.md, zstack.md, spacer.md) |
 | TabView | `guide-swiftui-ui-patterns` | `swiftui` (tabview.md) |
 | Liquid Glass | `ios-design-consultant` | `ios-liquid-glass` |
