@@ -181,4 +181,5 @@ The goal is an app worthy of an Apple Design Award—an app that feels genuinely
 
 - **`/ios-dev`** - Start here for any iOS task — coordinates guides, correctness checks, and API references
 - **`/ios-design-consultant`** - For design questions before coding
-- **`/image`** - Generate custom assets when SF Symbols aren't enough (never use emojis)
+- **`/ios-app-assets`** - Generate custom in-app assets when SF Symbols aren't enough (never use emojis)
+- **`/ios-app-icon`** - App icon generation workflow

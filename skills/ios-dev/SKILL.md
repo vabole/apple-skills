@@ -45,7 +45,7 @@ Start here. This skill coordinates the Apple skills collection — it tells you 
 
 ## Topic Router
 
-The **Guide** column has opinionated, short pattern guides. The **API Reference** column has full Apple documentation as grepable Markdown ��� use `apple-docs-index` to find which framework has what.
+The **Guide** column has opinionated, short pattern guides. The **API Reference** column has full Apple documentation as grepable Markdown — use `apple-docs-index` to find which framework has what.
 
 | Topic | Guide | API Reference |
 |-------|-------|---------------|
