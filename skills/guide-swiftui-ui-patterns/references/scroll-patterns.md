@@ -1,0 +1,231 @@
+# SwiftUI ScrollView Patterns
+
+> Originally from [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) by Antoine van der Lee and Omar Elsayed. MIT License.
+
+## ScrollViewReader for Programmatic Scrolling
+
+Use `ScrollViewReader` for scroll-to-top, scroll-to-bottom, and anchor-based jumps.
+
+```swift
+struct ChatView: View {
+    @State private var messages: [Message] = []
+    private let bottomID = "bottom"
+
+    var body: some View {
+        ScrollViewReader { proxy in
+            ScrollView {
+                LazyVStack {
+                    ForEach(messages) { message in
+                        MessageRow(message: message)
+                            .id(message.id)
+                    }
+                    Color.clear
+                        .frame(height: 1)
+                        .id(bottomID)
+                }
+            }
+            .onChange(of: messages.count) { _, _ in
+                withAnimation {
+                    proxy.scrollTo(bottomID, anchor: .bottom)
+                }
+            }
+        }
+    }
+}
+```
+
+### Scroll-to-Top Pattern
+
+```swift
+struct FeedView: View {
+    @State private var items: [Item] = []
+    @State private var scrollToTop = false
+    private let topID = "top"
+
+    var body: some View {
+        ScrollViewReader { proxy in
+            ScrollView {
+                LazyVStack {
+                    Color.clear
+                        .frame(height: 1)
+                        .id(topID)
+
+                    ForEach(items) { item in
+                        ItemRow(item: item)
+                    }
+                }
+            }
+            .onChange(of: scrollToTop) { _, shouldScroll in
+                if shouldScroll {
+                    withAnimation {
+                        proxy.scrollTo(topID, anchor: .top)
+                    }
+                    scrollToTop = false
+                }
+            }
+        }
+    }
+}
+```
+
+## Scroll Position Tracking
+
+Storing scroll position directly triggers view updates on every scroll frame. Gate updates by threshold instead.
+
+```swift
+// GOOD — only updates state when crossing threshold
+struct ContentView: View {
+    @State private var startAnimation: Bool = false
+
+    var body: some View {
+        ScrollView {
+            content
+                .background(
+                    GeometryReader { geometry in
+                        Color.clear
+                            .preference(
+                                key: ScrollOffsetPreferenceKey.self,
+                                value: geometry.frame(in: .named("scroll")).minY
+                            )
+                    }
+                )
+        }
+        .coordinateSpace(name: "scroll")
+        .onPreferenceChange(ScrollOffsetPreferenceKey.self) { value in
+            if value < -100 {
+                startAnimation = true
+            } else {
+                startAnimation = false
+            }
+        }
+    }
+}
+
+struct ScrollOffsetPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+```
+
+### Scroll-Based Header Visibility
+
+```swift
+struct ContentView: View {
+    @State private var showHeader = true
+
+    var body: some View {
+        VStack(spacing: 0) {
+            if showHeader {
+                HeaderView()
+                    .transition(.move(edge: .top))
+            }
+
+            ScrollView {
+                content
+                    .background(
+                        GeometryReader { geometry in
+                            Color.clear
+                                .preference(
+                                    key: ScrollOffsetPreferenceKey.self,
+                                    value: geometry.frame(in: .named("scroll")).minY
+                                )
+                        }
+                    )
+            }
+            .coordinateSpace(name: "scroll")
+            .onPreferenceChange(ScrollOffsetPreferenceKey.self) { offset in
+                if offset < -50 {
+                   withAnimation { showHeader = false }
+                } else if offset > 50 {
+                  withAnimation { showHeader = true }
+                }
+            }
+        }
+    }
+}
+```
+
+## Scroll Transitions and Effects
+
+### Scroll-Based Opacity
+
+```swift
+ScrollView {
+    LazyVStack(spacing: 20) {
+        ForEach(items) { item in
+            ItemCard(item: item)
+                .visualEffect { content, geometry in
+                    let frame = geometry.frame(in: .scrollView)
+                    let distance = min(0, frame.minY)
+                    return content
+                        .opacity(1 + distance / 200)
+                }
+        }
+    }
+}
+```
+
+### Parallax Effect
+
+```swift
+ScrollView {
+    VStack(spacing: 0) {
+        Image("hero")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(height: 300)
+            .visualEffect { content, geometry in
+                let offset = geometry.frame(in: .scrollView).minY
+                return content
+                    .offset(y: offset > 0 ? -offset * 0.5 : 0)
+            }
+            .clipped()
+
+        ContentView()
+    }
+}
+```
+
+## Scroll Target Behavior
+
+### Paging ScrollView
+
+```swift
+ScrollView(.horizontal) {
+    LazyHStack(spacing: 0) {
+        ForEach(pages) { page in
+            PageView(page: page)
+                .containerRelativeFrame(.horizontal)
+        }
+    }
+    .scrollTargetLayout()
+}
+.scrollTargetBehavior(.paging)
+```
+
+### Snap to Items
+
+```swift
+ScrollView(.horizontal) {
+    LazyHStack(spacing: 16) {
+        ForEach(items) { item in
+            ItemCard(item: item)
+                .frame(width: 280)
+        }
+    }
+    .scrollTargetLayout()
+}
+.scrollTargetBehavior(.viewAligned)
+.contentMargins(.horizontal, 20)
+```
+
+## Summary Checklist
+
+- [ ] Use `ScrollViewReader` with stable IDs for programmatic scrolling
+- [ ] Always use explicit animations with `scrollTo()`
+- [ ] Use `.visualEffect` for scroll-based visual changes
+- [ ] Use `.scrollTargetBehavior(.paging)` for paging behavior
+- [ ] Use `.scrollTargetBehavior(.viewAligned)` for snap-to-item behavior
+- [ ] Gate frequent scroll position updates by thresholds
