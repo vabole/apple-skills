@@ -65,9 +65,9 @@ The **Guide** column has opinionated, short pattern guides. The **API Reference*
 | Visual design | `ios-ui-craft` | `hig` |
 | Accessibility | `guide-swiftui-ui-patterns` | `hig` |
 | macOS apps | `guide-macos-spm-packaging` | `swiftui`, `uikit` |
-| Data persistence | — | `swiftdata` |
-| Testing | — | `swift-testing`, `xcuitest` |
-| Concurrency | — | `swift-concurrency` |
+| Data persistence | `guide-swiftdata` | `swiftdata` |
+| Testing | `guide-swift-testing` | `swift-testing`, `xcuitest` |
+| Concurrency | `guide-swift-concurrency` | `swift-concurrency` |
 | In-app purchases | — | `storekit` |
 | Maps | — | `mapkit` |
 | Health data | — | `healthkit` |
@@ -108,6 +108,9 @@ These are hard rules — violations are always bugs:
 - `/guide-swiftui-charts` — Marks, axes, selection, styling, accessibility
 - `/guide-swiftui-view-refactor` — View structure, extraction, MV patterns
 - `/guide-swiftui-performance-audit` — Diagnose and fix performance issues
+- `/guide-swift-testing` — Swift Testing patterns, async tests, common agent mistakes
+- `/guide-swift-concurrency` — Concurrency patterns, actors, diagnostics, bug patterns
+- `/guide-swiftdata` — SwiftData patterns, predicates, CloudKit constraints
 - `/guide-macos-spm-packaging` — Build macOS apps with SwiftPM
 
 **Utilities:**

@@ -104,10 +104,13 @@ npx skills remove -g
 
 | Skill | Description | Origin |
 |-------|-------------|--------|
+| **guide-swift-concurrency** | Concurrency patterns — actors, structured concurrency, cancellation, diagnostics, GCD migration | [twostraws/Swift-Concurrency-Agent-Skill](https://github.com/twostraws/Swift-Concurrency-Agent-Skill) |
+| **guide-swift-testing** | Swift Testing patterns — structs over classes, async tests, exit tests, common agent mistakes | [twostraws/Swift-Testing-Agent-Skill](https://github.com/twostraws/Swift-Testing-Agent-Skill) |
+| **guide-swiftdata** | SwiftData patterns — autosave, predicates, CloudKit constraints, class inheritance | [twostraws/SwiftData-Agent-Skill](https://github.com/twostraws/SwiftData-Agent-Skill) |
 | **guide-swiftui-animations** | Animation patterns — implicit/explicit, transitions, phase/keyframe, @Animatable | [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) |
 | **guide-swiftui-charts** | Swift Charts — marks, axes, selection, styling, Chart3D, accessibility | [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) |
 | **guide-swiftui-performance-audit** | Audit and improve SwiftUI runtime performance | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
-| **guide-swiftui-ui-patterns** | Best practices for building SwiftUI views and components | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
+| **guide-swiftui-ui-patterns** | Best practices for building SwiftUI views and components | [Dimillian/Skills](https://github.com/Dimillian/Skills), [twostraws/SwiftUI-Agent-Skill](https://github.com/twostraws/SwiftUI-Agent-Skill) |
 | **guide-swiftui-view-refactor** | Refactor SwiftUI views for consistent structure and Observation usage | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
 | **guide-macos-spm-packaging** | Scaffold, build, and package SwiftPM-based macOS apps without Xcode | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
 
