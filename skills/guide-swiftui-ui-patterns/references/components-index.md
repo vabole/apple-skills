@@ -32,6 +32,12 @@ Use this file to find component and cross-cutting guidance. Each entry lists whe
 - Lightweight clients: `references/lightweight-clients.md` — Use for small, closure-based API clients injected into stores.
 - Accessibility patterns: `references/accessibility.md` — Use for Dynamic Type, @ScaledMetric, accessibility traits, element grouping, decorative images, and custom accessible controls.
 
+- State management: `references/state-management.md` — Use for `@State`, `@Binding`, `@Bindable`, `@Observable`, `@Environment`, `@ObservationIgnored`, and data flow patterns.
+- Sheet and navigation patterns: `references/sheet-navigation-patterns.md` — Use for item-driven sheets, enum-based sheet management, `NavigationSplitView`, Inspector, and presentation modifiers.
+- Layout best practices: `references/layout-best-practices.md` — Use for relative layout, context-agnostic views, GeometryReader alternatives, and layout performance.
+- Image optimization: `references/image-optimization.md` — Use for AsyncImage, downsampling, caching, and SF Symbols.
+- Deprecated API replacements: `references/latest-apis.md` — Use to find the modern replacement for any deprecated SwiftUI API.
+
 ## Cross-cutting references
 
 - App wiring and dependency graph: `references/app-wiring.md` — Use to wire the app shell, install shared dependencies, and decide what belongs in the environment.
