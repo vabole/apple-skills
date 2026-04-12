@@ -15,8 +15,8 @@ Search these docs to answer questions about HealthKit APIs.
 Always include:
 1. **Summary** - Answer the question concisely
 2. **File paths** - List relevant files for full details, e.g.:
-   - `.claude/skills/healthkit/hkhealthstore.md` for HKHealthStore API
-   - `.claude/skills/healthkit/hkunit.md` for unit conversions
+   - `hkhealthstore.md` for HKHealthStore API
+   - `hkunit.md` for unit conversions
 
 ## Files
 

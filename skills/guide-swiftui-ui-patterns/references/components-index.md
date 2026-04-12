@@ -19,7 +19,8 @@ Use this file to find component and cross-cutting guidance. Each entry lists whe
 - Input toolbar (bottom anchored): `references/input-toolbar.md` — Use for chat/composer screens with a sticky input bar.
 - Top bar overlays (iOS 26+ and fallback): `references/top-bar.md` — Use for pinned selectors or pills above scroll content.
 - Overlay and toasts: `references/overlay.md` — Use for transient UI like banners or toasts.
-- Focus handling: `references/focus.md` — Use for chaining fields and keyboard focus management.
+- Focus handling: `references/focus.md` — Use for `@FocusState`, field chaining, focusable views, focused values for commands, default focus, search focus, and common pitfalls.
+- Scroll patterns: `references/scroll-patterns.md` — Use for programmatic scrolling, scroll position tracking, paging, snap-to-item, parallax, and scroll-based effects.
 - Searchable: `references/searchable.md` — Use for native search UI with scopes and async results.
 - Async images and media: `references/media.md` — Use for remote media, previews, and media viewers.
 - Haptics: `references/haptics.md` — Use for tactile feedback tied to key actions.
@@ -29,6 +30,7 @@ Use this file to find component and cross-cutting guidance. Each entry lists whe
 - Menu bar commands: `references/menu-bar.md` — Use when adding or customizing macOS/iPadOS menu bar commands.
 - Loading & placeholders: `references/loading-placeholders.md` — Use for redacted skeletons, empty states, and loading UX.
 - Lightweight clients: `references/lightweight-clients.md` — Use for small, closure-based API clients injected into stores.
+- Accessibility patterns: `references/accessibility.md` — Use for Dynamic Type, @ScaledMetric, accessibility traits, element grouping, decorative images, and custom accessible controls.
 
 ## Cross-cutting references
 

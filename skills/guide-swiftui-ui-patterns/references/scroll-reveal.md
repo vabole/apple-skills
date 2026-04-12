@@ -129,5 +129,4 @@ This keeps the motion coherent and avoids duplicate-hit-target bugs.
 
 ## Concrete example
 
-- Pool iOS tile detail reveal: `/Users/dimillian/Documents/Dev/Pool/pool-ios/Pool/Sources/Features/Tile/Detail/TileDetailView.swift`
-- Secondary content anchor example: `/Users/dimillian/Documents/Dev/Pool/pool-ios/Pool/Sources/Features/Tile/Detail/TileDetailIntentListView.swift`
+The scroll-reveal pattern suits a tile detail screen where the primary tile fills the viewport and secondary content (intents, actions, metadata) slides in as the user scrolls down.

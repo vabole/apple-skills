@@ -15,8 +15,8 @@ Search these docs to answer questions about App Intents APIs.
 Always include:
 1. **Summary** - Answer the question concisely
 2. **File paths** - List relevant files for full details, e.g.:
-   - `.claude/skills/appintents/appintents-appintent.md` for AppIntent protocol
-   - `.claude/skills/appintents/appintents-appshortcut.md` for creating shortcuts
+   - `appintents-appintent.md` for AppIntent protocol
+   - `appintents-appshortcut.md` for creating shortcuts
 
 ## Files
 

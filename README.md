@@ -83,6 +83,12 @@ npx skills remove -g
 | **backgroundtasks** | BGTaskScheduler, app refresh |
 | **xcuitest** | XCUITest with Swift 6 @MainActor patterns |
 
+### Coordinator
+
+| Skill | Description |
+|-------|-------------|
+| **ios-dev** | **Start here.** Routes to best-practice guides, correctness checks, and API references for any iOS/SwiftUI task |
+
 ### Design & Guidelines
 
 | Skill | Description |
@@ -90,19 +96,20 @@ npx skills remove -g
 | **hig** | Apple Human Interface Guidelines |
 | **ios-liquid-glass** | Liquid Glass API reference (iOS 26+) |
 | **ios-design-consultant** | UX/design guidance for Liquid Glass apps |
-| **ios-dev** | SwiftUI development patterns & aesthetics |
+| **ios-ui-craft** | Production-grade SwiftUI with Apple Design Award-quality aesthetics |
 
 ### Workflow & Pattern Guides
 
 > Expert workflow/pattern guides that teach *how* to approach tasks, as opposed to the reference docs above which document *what APIs exist*.
-> Originally from [Dimillian/Skills](https://github.com/Dimillian/Skills) by Thomas Ricouard. MIT License.
 
-| Skill | Description |
-|-------|-------------|
-| **guide-swiftui-performance-audit** | Audit and improve SwiftUI runtime performance |
-| **guide-swiftui-ui-patterns** | Best practices for building SwiftUI views and components |
-| **guide-swiftui-view-refactor** | Refactor SwiftUI views for consistent structure and Observation usage |
-| **guide-macos-spm-packaging** | Scaffold, build, and package SwiftPM-based macOS apps without Xcode |
+| Skill | Description | Origin |
+|-------|-------------|--------|
+| **guide-swiftui-animations** | Animation patterns — implicit/explicit, transitions, phase/keyframe, @Animatable | [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) |
+| **guide-swiftui-charts** | Swift Charts — marks, axes, selection, styling, Chart3D, accessibility | [AvdLee/SwiftUI-Agent-Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) |
+| **guide-swiftui-performance-audit** | Audit and improve SwiftUI runtime performance | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
+| **guide-swiftui-ui-patterns** | Best practices for building SwiftUI views and components | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
+| **guide-swiftui-view-refactor** | Refactor SwiftUI views for consistent structure and Observation usage | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
+| **guide-macos-spm-packaging** | Scaffold, build, and package SwiftPM-based macOS apps without Xcode | [Dimillian/Skills](https://github.com/Dimillian/Skills) |
 
 ### Utilities
 
@@ -111,8 +118,6 @@ npx skills remove -g
 | **apple-docs-index** | Index of Apple developer documentation — start here to find what you need |
 | **simulator-utils** | iOS Simulator commands, screenshots, device management |
 | **apple-aso** | App Store Optimization for metadata |
-| **ios-app-icon** | App icon generation workflow |
-| **ios-app-assets** | In-app asset generation workflow |
 
 ## Target Platform
 

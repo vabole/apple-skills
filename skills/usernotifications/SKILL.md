@@ -15,8 +15,7 @@ Search these docs to answer questions about notification APIs.
 Always include:
 1. **Summary** - Answer the question concisely
 2. **File paths** - List relevant files for full details, e.g.:
-   - `.claude/skills/usernotifications/unusernotificationcenter.md` for notification center
-   - `.claude/skills/usernotifications/uncalendarnotificationtrigger.md` for calendar-based triggers
+   - `notifications-overview.md` for notification center and triggers
 
 ## Files
 
