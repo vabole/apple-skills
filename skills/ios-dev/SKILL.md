@@ -43,21 +43,9 @@ Start here. This skill coordinates the Apple skills collection — it tells you 
 5. Run the correctness checklist before finishing
 6. For visual polish: use `ios-ui-craft`
 
-## Two tiers of knowledge
-
-This skill collection has two tiers. Pick the right one for the situation:
-
-**Opinionated guides** (`guide-*`, `ios-ui-craft`, `ios-design-consultant`) — short, focused, tell you *how* to approach a task. Start here when you need patterns, best practices, or architectural direction. These are fast to load and won't overwhelm context.
-
-**Framework API references** (`swiftui`, `uikit`, `healthkit`, etc.) — full Apple documentation downloaded as grepable Markdown. These are large (the `swiftui` skill alone is 21k lines). Use them when you need exact API signatures, parameter details, or to verify that an API exists. Grep for what you need — don't load entire files. Use `apple-docs-index` to find which framework has the doc page you're looking for.
-
-**When to use which:**
-- "How should I structure navigation?" → opinionated guide
-- "What parameters does `NavigationStack` accept?" → grep the API reference
-- "Is there a SwiftUI API for X?" → grep the API reference, or use `apple-docs-index` to find the right framework
-- "Review this view for issues" → correctness checklist + opinionated guide, then API reference only if something looks wrong
-
 ## Topic Router
+
+The **Guide** column has opinionated, short pattern guides. The **API Reference** column has full Apple documentation as grepable Markdown ��� use `apple-docs-index` to find which framework has what.
 
 | Topic | Guide | API Reference |
 |-------|-------|---------------|
