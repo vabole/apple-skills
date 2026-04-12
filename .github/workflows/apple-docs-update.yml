@@ -75,20 +75,37 @@ jobs:
           git add skills
           git commit -m "docs: refresh Apple docs"
 
-          git fetch origin "+refs/heads/${BRANCH}:refs/remotes/origin/${BRANCH}" || true
-          git push --force-with-lease origin "$BRANCH"
+          patch_id="$(git diff HEAD^ HEAD -- skills | git patch-id --stable | cut -d' ' -f1)"
+          pr_body=$'Automated daily refresh of generated Apple documentation.\n\n<!-- apple-docs-update:patch-id='"$patch_id"' -->'
 
           pr_url="$(gh pr list --head "$BRANCH" --base main --state open --json url --jq '.[0].url // ""')"
           if [[ -n "$pr_url" ]]; then
+            git fetch origin "+refs/heads/${BRANCH}:refs/remotes/origin/${BRANCH}" || true
+            git push --force-with-lease origin "$BRANCH"
+
             gh pr edit "$pr_url" \
               --title "docs: refresh Apple docs" \
-              --body "Automated daily refresh of generated Apple documentation."
+              --body "$pr_body"
             echo "Updated $pr_url" >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
+
+          closed_pr_url="$(gh pr list --head "$BRANCH" --base main --state closed --json url,body,updatedAt --jq 'sort_by(.updatedAt) | reverse | map(select((.body // "") | contains("apple-docs-update:patch-id='"$patch_id"'"))) | .[0].url // ""')"
+          if [[ -n "$closed_pr_url" ]]; then
+            {
+              echo "Skipping pull request creation."
+              echo
+              echo "A previously closed pull request already captured this exact documentation diff:"
+              echo "$closed_pr_url"
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          git fetch origin "+refs/heads/${BRANCH}:refs/remotes/origin/${BRANCH}" || true
+          git push --force-with-lease origin "$BRANCH"
 
           gh pr create \
             --base main \
             --head "$BRANCH" \
             --title "docs: refresh Apple docs" \
-            --body "Automated daily refresh of generated Apple documentation."
+            --body "$pr_body"
