@@ -72,10 +72,10 @@ VStack {
 Read-only environment value that returns `true` when the nearest focusable ancestor has focus. Useful for styling non-focusable child views.
 
 ```swift
-struct HighlightWrapper: View {
+struct HighlightWrapperModifier: ViewModifier {
     @Environment(\.isFocused) private var isFocused
 
-    var body: some View {
+    func body(content: Content) -> some View {
         content
             .background(isFocused ? Color.accentColor.opacity(0.1) : .clear)
     }

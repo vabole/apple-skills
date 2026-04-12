@@ -217,6 +217,7 @@ struct AdaptiveTable: View {
 Use `TableColumnForEach` when the number of columns is not known at compile time:
 
 ```swift
+@MainActor
 @Observable
 class AudioSampleTrack {
     let channels: [AudioChannel]

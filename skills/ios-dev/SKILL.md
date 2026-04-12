@@ -104,6 +104,8 @@ These are hard rules — violations are always bugs:
 
 **Workflow guides:**
 - `/guide-swiftui-ui-patterns` — Navigation, state, sheets, component patterns
+- `/guide-swiftui-animations` — Implicit/explicit animation, transitions, keyframes
+- `/guide-swiftui-charts` — Marks, axes, selection, styling, accessibility
 - `/guide-swiftui-view-refactor` — View structure, extraction, MV patterns
 - `/guide-swiftui-performance-audit` — Diagnose and fix performance issues
 - `/guide-macos-spm-packaging` — Build macOS apps with SwiftPM
