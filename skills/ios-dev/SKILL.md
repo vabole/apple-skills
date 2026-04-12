@@ -91,6 +91,7 @@ These are hard rules — violations are always bugs:
 - [ ] `.animation(_:value:)` always includes the `value:` parameter
 - [ ] `@FocusState` properties are `private`
 - [ ] `@Observable` classes are `@MainActor` — Swift 6 strict concurrency requires it
+- [ ] Property wrappers (`@AppStorage`, `@SceneStorage`, `@Query`) inside `@Observable` classes are marked `@ObservationIgnored` — they conflict with the macro and cause compiler errors
 - [ ] No business logic in `body` — use `.task`, `.onChange`, or methods
 - [ ] No `AnyView` unless truly unavoidable — fix with better composition
 
