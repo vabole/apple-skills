@@ -118,8 +118,6 @@ npx skills remove -g
 | **apple-docs-index** | Index of Apple developer documentation — start here to find what you need |
 | **simulator-utils** | iOS Simulator commands, screenshots, device management |
 | **apple-aso** | App Store Optimization for metadata |
-| **ios-app-icon** | App icon generation workflow |
-| **ios-app-assets** | In-app asset generation workflow |
 
 ## Target Platform
 
