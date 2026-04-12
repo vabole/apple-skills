@@ -30,6 +30,7 @@ Use this file to find component and cross-cutting guidance. Each entry lists whe
 - Menu bar commands: `references/menu-bar.md` — Use when adding or customizing macOS/iPadOS menu bar commands.
 - Loading & placeholders: `references/loading-placeholders.md` — Use for redacted skeletons, empty states, and loading UX.
 - Lightweight clients: `references/lightweight-clients.md` — Use for small, closure-based API clients injected into stores.
+- Accessibility patterns: `references/accessibility.md` — Use for Dynamic Type, @ScaledMetric, accessibility traits, element grouping, decorative images, and custom accessible controls.
 
 ## Cross-cutting references
 

@@ -63,7 +63,7 @@ The **Guide** column has opinionated, short pattern guides. The **API Reference*
 | TabView | `guide-swiftui-ui-patterns` | `swiftui` (tabview.md) |
 | Liquid Glass | `ios-design-consultant` | `ios-liquid-glass` |
 | Visual design | `ios-ui-craft` | `hig` |
-| Accessibility | — | `hig` |
+| Accessibility | `guide-swiftui-ui-patterns` | `hig` |
 | macOS apps | `guide-macos-spm-packaging` | `swiftui`, `uikit` |
 | Data persistence | — | `swiftdata` |
 | Testing | — | `swift-testing`, `xcuitest` |
