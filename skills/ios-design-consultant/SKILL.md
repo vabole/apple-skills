@@ -71,11 +71,6 @@ When consulted on design decisions:
 
 ## Required Reading
 
-**Project references:**
-
-1. `.claude/skills/references/liquid-glass.md` - Core Liquid Glass API and principles
-2. `.claude/learnings/design.md` - Project-specific design learnings
-
 **Skill-specific docs (in this folder):**
 
 - `docs/liquid-glass-philosophy.md` — Core vision and principles
