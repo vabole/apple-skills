@@ -2,7 +2,9 @@
 title: Liquid Glass
 description: Learn how to design and develop beautiful interfaces that leverage Liquid Glass.
 source: https://developer.apple.com/documentation/technologyoverviews/liquid-glass
-timestamp: 2026-04-09T13:37:28.895Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/technologyoverviews/liquid-glass.json
+timestamp: 2026-04-14T13:14:26.798Z
 ---
 
 **Navigation:** [Technologyoverviews](/documentation/technologyoverviews)

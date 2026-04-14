@@ -2,7 +2,9 @@
 title: UIVisualEffectView
 description: An object that implements some complex visual effects.
 source: https://developer.apple.com/documentation/uikit/uivisualeffectview
-timestamp: 2026-04-10T12:11:37.840Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uivisualeffectview.json
+timestamp: 2026-04-14T13:14:54.820Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

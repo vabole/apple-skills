@@ -2,7 +2,9 @@
 title: Accessibility
 description: Accessible user interfaces empower everyone to have a great experience with your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/accessibility
-timestamp: 2026-04-09T13:37:17.733Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/accessibility.json
+timestamp: 2026-04-14T13:14:12.553Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

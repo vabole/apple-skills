@@ -2,7 +2,9 @@
 title: Scroll views
 description: A scroll view lets people view content that’s larger than the view’s boundaries by moving the content vertically or horizontally.
 source: https://developer.apple.com/design/human-interface-guidelines/scroll-views
-timestamp: 2026-04-09T13:37:23.500Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/scroll-views.json
+timestamp: 2026-04-14T13:14:19.353Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

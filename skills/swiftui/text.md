@@ -2,7 +2,9 @@
 title: Text
 description: A view that displays one or more lines of read-only text.
 source: https://developer.apple.com/documentation/swiftui/text
-timestamp: 2026-04-09T13:37:44.919Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/text.json
+timestamp: 2026-04-14T13:14:44.328Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

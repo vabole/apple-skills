@@ -1,7 +1,9 @@
 ---
 title: MapKit
 source: https://developer.apple.com/documentation/mapkit
-timestamp: 2026-04-09T12:04:26.882Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/mapkit
+timestamp: 2026-04-14T13:14:29.124Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)

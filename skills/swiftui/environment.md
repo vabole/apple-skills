@@ -2,7 +2,9 @@
 title: Environment
 description: A property wrapper that reads a value from a view’s environment.
 source: https://developer.apple.com/documentation/swiftui/environment
-timestamp: 2026-04-09T12:04:35.126Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/environment.json
+timestamp: 2026-04-14T13:14:38.439Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

@@ -2,7 +2,9 @@
 title: Product
 description: Information about a product that you configure in App Store Connect.
 source: https://developer.apple.com/documentation/storekit/product
-timestamp: 2026-04-09T12:04:27.657Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/storekit/product.json
+timestamp: 2026-04-14T13:14:30.171Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)

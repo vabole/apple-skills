@@ -2,7 +2,9 @@
 title: Picker
 description: A control for selecting from a set of mutually exclusive values.
 source: https://developer.apple.com/documentation/swiftui/picker
-timestamp: 2026-04-09T13:37:42.588Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/picker.json
+timestamp: 2026-04-14T13:14:41.923Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

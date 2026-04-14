@@ -2,7 +2,9 @@
 title: UITableView
 description: A view that presents data using rows in a single column.
 source: https://developer.apple.com/documentation/uikit/uitableview
-timestamp: 2026-04-10T12:11:27.883Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uitableview.json
+timestamp: 2026-04-14T13:14:53.908Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

@@ -2,7 +2,9 @@
 title: Landmarks: Displaying custom activity badges
 description: Provide people with a way to mark their adventures by displaying animated custom activity badges.
 source: https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges
-timestamp: 2026-04-09T13:37:28.029Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/landmarks-displaying-custom-activity-badges.json
+timestamp: 2026-04-14T13:14:25.672Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

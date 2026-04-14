@@ -2,7 +2,9 @@
 title: alert(_:isPresented:actions:)
 description: Presents an alert when a given condition is true, using a text view for the title.
 source: https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:)
-timestamp: 2026-04-09T12:04:32.545Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/alert(_:ispresented:actions:).json
+timestamp: 2026-04-14T13:14:35.739Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)

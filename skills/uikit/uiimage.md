@@ -2,7 +2,9 @@
 title: UIImage
 description: An object that manages image data in your app.
 source: https://developer.apple.com/documentation/uikit/uiimage
-timestamp: 2026-04-10T12:11:22.624Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiimage.json
+timestamp: 2026-04-14T13:14:51.360Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -69,12 +71,12 @@ The [isEqual(_:)](/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method
 ```swift
 // Load the same image twice.
 let image1 = UIImage(named: "MyImage")
-let image2 = UIImage(named: "MyImage")
+let image2 = UIImage(named: "MyImage") 
 
 // The image objects may be different, but the contents are still equal.
 if image1 != nil && image1!.isEqual(image2) {
     // Correct. This technique compares the image data correctly.
-}
+} 
 if image1 == image2 {
     // Incorrect! Direct object comparisons may not work.
 }
@@ -86,12 +88,12 @@ if image1 == image2 {
 // Load the same image twice.
 UIImage* image1 = [UIImage imageNamed:@"MyImage"];
 UIImage* image2 = [UIImage imageNamed:@"MyImage"];
-
+ 
 // The image objects may be different, but the contents are still equal
 if ([image1 isEqual:image2]) {
    // Correct. This technique compares the image data correctly.
 }
-
+ 
 if (image1 == image2) {
    // Incorrect! Direct object comparisons may not work.
 }

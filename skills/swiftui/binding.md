@@ -2,7 +2,9 @@
 title: Binding
 description: A property wrapper type that can read and write a value owned by a source of truth.
 source: https://developer.apple.com/documentation/swiftui/binding
-timestamp: 2026-04-09T12:04:33.525Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/binding.json
+timestamp: 2026-04-14T13:14:36.661Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

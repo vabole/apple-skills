@@ -1,7 +1,9 @@
 ---
 title: XCTest
 source: https://developer.apple.com/documentation/xctest
-timestamp: 2026-04-09T12:04:07.039Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/xctest
+timestamp: 2026-04-14T13:14:08.675Z
 ---
 
 **Navigation:** [XCTest](/documentation/xctest)

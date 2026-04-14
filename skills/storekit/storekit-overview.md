@@ -1,7 +1,9 @@
 ---
 title: StoreKit
 source: https://developer.apple.com/documentation/storekit
-timestamp: 2026-04-09T12:04:28.040Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/storekit
+timestamp: 2026-04-14T13:14:30.363Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)
@@ -3305,7 +3307,7 @@ timestamp: 2026-04-09T12:04:28.040Z
 - [Testing Family Sharing](/documentation/storekit/testing-family-sharing)
 #### Age Assurance
 
-- [Testing Age Assurance in Sandbox](/documentation/storekit/testing-age-assurance-in-sandbox)
+- [Testing age assurance in sandbox](/documentation/storekit/testing-age-assurance-in-sandbox)
 #### Refunds
 
 - [Testing refund requests](/documentation/storekit/testing-refund-requests)
@@ -3920,7 +3922,7 @@ timestamp: 2026-04-09T12:04:28.040Z
 - [Testing Family Sharing](/documentation/storekit/testing-family-sharing)
 ##### Age Assurance
 
-- [Testing Age Assurance in Sandbox](/documentation/storekit/testing-age-assurance-in-sandbox)
+- [Testing age assurance in sandbox](/documentation/storekit/testing-age-assurance-in-sandbox)
 ##### Refunds
 
 - [Testing refund requests](/documentation/storekit/testing-refund-requests)

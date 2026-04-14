@@ -6,15 +6,22 @@ import {
   renderIdentifierSections,
   renderInlineArray,
 } from "./render-shared.ts"
-import type { AppleDocJson, IndexNode } from "./types.ts"
+import type { AppleDocJson, IndexNode, RenderOptions } from "./types.ts"
 import { cleanTitle, titleize } from "./utils.ts"
 
-export function renderHIGPageArtifacts(json: AppleDocJson, sourceUrl: string): RenderArtifacts {
-  let markdown = renderFrontMatter({
-    title: cleanTitle(json.metadata?.title || ""),
-    description: renderInlineArray(json.abstract || [], json.references).trim(),
-    source: sourceUrl,
-  })
+export function renderHIGPageArtifacts(
+  json: AppleDocJson,
+  sourceUrl: string,
+  options: RenderOptions = {},
+): RenderArtifacts {
+  let markdown = renderFrontMatter(
+    {
+      title: cleanTitle(json.metadata?.title || ""),
+      description: renderInlineArray(json.abstract || [], json.references).trim(),
+      source: sourceUrl,
+    },
+    options,
+  )
 
   const breadcrumbs = renderHIGBreadcrumbs(sourceUrl)
   if (breadcrumbs) markdown += `${breadcrumbs}\n\n`
@@ -53,16 +60,23 @@ export function renderHIGPageArtifacts(json: AppleDocJson, sourceUrl: string): R
   }
 }
 
-export function renderHIGPageMarkdown(json: AppleDocJson, sourceUrl: string): string {
-  return renderHIGPageArtifacts(json, sourceUrl).markdown
+export function renderHIGPageMarkdown(
+  json: AppleDocJson,
+  sourceUrl: string,
+  options: RenderOptions = {},
+): string {
+  return renderHIGPageArtifacts(json, sourceUrl, options).markdown
 }
 
-export function renderHIGIndexMarkdown(json: AppleDocJson): string {
-  let markdown = renderFrontMatter({
-    title: "Human Interface Guidelines",
-    description: "Apple's Human Interface Guidelines - Complete table of contents",
-    source: "https://developer.apple.com/design/human-interface-guidelines/",
-  })
+export function renderHIGIndexMarkdown(json: AppleDocJson, options: RenderOptions = {}): string {
+  let markdown = renderFrontMatter(
+    {
+      title: "Human Interface Guidelines",
+      description: "Apple's Human Interface Guidelines - Complete table of contents",
+      source: "https://developer.apple.com/design/human-interface-guidelines/",
+    },
+    options,
+  )
 
   markdown += "# Human Interface Guidelines\n\n"
   markdown += "> Apple's comprehensive guide to designing interfaces for all Apple platforms.\n\n"

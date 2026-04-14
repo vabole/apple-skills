@@ -2,7 +2,9 @@
 title: PhotosPicker
 description: A view that displays a Photos picker for choosing assets from the photo library.
 source: https://developer.apple.com/documentation/photosui/photospicker
-timestamp: 2026-04-09T12:04:27.254Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/photosui/photospicker.json
+timestamp: 2026-04-14T13:14:29.651Z
 ---
 
 **Navigation:** [PhotosUI](/documentation/photosui)

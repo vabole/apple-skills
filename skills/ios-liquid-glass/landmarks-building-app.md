@@ -2,7 +2,9 @@
 title: Landmarks: Building an app with Liquid Glass
 description: Enhance your app experience with system-provided and custom Liquid Glass.
 source: https://developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass
-timestamp: 2026-04-09T13:37:28.377Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/landmarks-building-an-app-with-liquid-glass.json
+timestamp: 2026-04-14T13:14:26.175Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

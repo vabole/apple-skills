@@ -2,7 +2,9 @@
 title: ContentUnavailableView
 description: An interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 source: https://developer.apple.com/documentation/swiftui/contentunavailableview
-timestamp: 2026-04-09T12:04:34.751Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/contentunavailableview.json
+timestamp: 2026-04-14T13:14:38.039Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

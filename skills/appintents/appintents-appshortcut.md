@@ -2,7 +2,9 @@
 title: AppShortcut
 description: A type that defines a preconfigured shortcut for a specific app intent.
 source: https://developer.apple.com/documentation/appintents/appshortcut
-timestamp: 2026-04-09T12:04:03.526Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/appintents/appshortcut.json
+timestamp: 2026-04-14T13:14:05.910Z
 ---
 
 **Navigation:** [App Intents](/documentation/appintents)

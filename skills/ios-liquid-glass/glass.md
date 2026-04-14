@@ -2,7 +2,9 @@
 title: Glass
 description: A structure that defines the configuration of the Liquid Glass material.
 source: https://developer.apple.com/documentation/swiftui/glass
-timestamp: 2026-04-09T12:04:22.943Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/glass.json
+timestamp: 2026-04-14T13:14:25.016Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

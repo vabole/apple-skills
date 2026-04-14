@@ -2,7 +2,9 @@
 title: UIWindowScene
 description: A scene that manages one or more windows for your app.
 source: https://developer.apple.com/documentation/uikit/uiwindowscene
-timestamp: 2026-04-10T12:11:15.294Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiwindowscene.json
+timestamp: 2026-04-14T13:14:55.057Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

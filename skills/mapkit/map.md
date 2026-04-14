@@ -2,7 +2,9 @@
 title: Map
 description: A view that displays an embedded map interface.
 source: https://developer.apple.com/documentation/mapkit/map
-timestamp: 2026-04-09T12:04:25.678Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/mapkit/map.json
+timestamp: 2026-04-14T13:14:27.765Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)

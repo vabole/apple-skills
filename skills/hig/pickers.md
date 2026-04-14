@@ -2,7 +2,9 @@
 title: Pickers
 description: A picker displays one or more scrollable lists of distinct values that people can choose from.
 source: https://developer.apple.com/design/human-interface-guidelines/pickers
-timestamp: 2026-04-09T13:37:22.617Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pickers.json
+timestamp: 2026-04-14T13:14:18.530Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

@@ -2,7 +2,9 @@
 title: Sidebars
 description: A sidebar appears on the leading side of a view and lets people navigate between sections in your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/sidebars
-timestamp: 2026-04-09T13:37:25.039Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sidebars.json
+timestamp: 2026-04-14T13:14:21.479Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

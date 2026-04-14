@@ -2,7 +2,9 @@
 title: Designing for iOS
 description: People depend on their iPhone to help them stay connected, play games, view media, accomplish tasks, and track personal data in any location and while on the go.
 source: https://developer.apple.com/design/human-interface-guidelines/designing-for-ios
-timestamp: 2026-04-09T13:37:19.816Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-ios.json
+timestamp: 2026-04-14T13:14:14.277Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

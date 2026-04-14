@@ -2,7 +2,9 @@
 title: MapKit for SwiftUI
 description: MapKit for SwiftUI allows you to build map-centric views and apps across Apple platforms. You can design expressive and highly interactive Maps with minimal code by composing views, using ViewBuilders and view modifiers.
 source: https://developer.apple.com/documentation/mapkit/mapkit_for_swiftui
-timestamp: 2026-04-09T12:04:26.709Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/mapkit/mapkit_for_swiftui.json
+timestamp: 2026-04-14T13:14:28.904Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)

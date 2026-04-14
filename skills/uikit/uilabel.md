@@ -2,7 +2,9 @@
 title: UILabel
 description: A view that displays one or more lines of informational text.
 source: https://developer.apple.com/documentation/uikit/uilabel
-timestamp: 2026-04-10T12:11:21.417Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uilabel.json
+timestamp: 2026-04-14T13:14:52.198Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

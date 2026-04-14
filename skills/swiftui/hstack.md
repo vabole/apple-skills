@@ -2,7 +2,9 @@
 title: HStack
 description: A view that arranges its subviews in a horizontal line.
 source: https://developer.apple.com/documentation/swiftui/hstack
-timestamp: 2026-04-09T13:37:40.480Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/hstack.json
+timestamp: 2026-04-14T13:14:39.287Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

@@ -2,7 +2,9 @@
 title: glassEffectID(_:in:)
 description: Associates an identity value to Liquid Glass effects defined within this view.
 source: https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in:)
-timestamp: 2026-04-09T12:04:24.831Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/glasseffectid(_:in:).json
+timestamp: 2026-04-14T13:14:27.022Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)

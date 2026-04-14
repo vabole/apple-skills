@@ -2,7 +2,9 @@
 title: Task
 description: A unit of asynchronous work.
 source: https://developer.apple.com/documentation/swift/task
-timestamp: 2026-04-09T12:04:30.253Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swift/task.json
+timestamp: 2026-04-14T13:14:32.698Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)

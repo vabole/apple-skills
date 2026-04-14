@@ -2,7 +2,9 @@
 title: Layout
 description: A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
 source: https://developer.apple.com/design/human-interface-guidelines/layout
-timestamp: 2026-04-09T13:37:20.563Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/layout.json
+timestamp: 2026-04-14T13:14:15.180Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

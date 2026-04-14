@@ -2,7 +2,9 @@
 title: View
 description: A type that represents part of your app’s user interface and provides modifiers that you use to configure views.
 source: https://developer.apple.com/documentation/swiftui/view
-timestamp: 2026-04-09T12:04:41.692Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view.json
+timestamp: 2026-04-14T13:14:45.449Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

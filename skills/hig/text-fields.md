@@ -2,7 +2,9 @@
 title: Text fields
 description: A text field is a rectangular area in which people enter or edit small, specific pieces of text.
 source: https://developer.apple.com/design/human-interface-guidelines/text-fields
-timestamp: 2026-04-09T13:37:26.179Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/text-fields.json
+timestamp: 2026-04-14T13:14:22.846Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

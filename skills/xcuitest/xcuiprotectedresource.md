@@ -2,7 +2,9 @@
 title: XCUIProtectedResource
 description: A system resource that requires user authorization to access.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuiprotectedresource
-timestamp: 2026-04-09T12:04:46.433Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiprotectedresource.json
+timestamp: 2026-04-14T13:14:58.482Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)

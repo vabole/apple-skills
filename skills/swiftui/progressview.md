@@ -2,7 +2,9 @@
 title: ProgressView
 description: A view that shows the progress toward completion of a task.
 source: https://developer.apple.com/documentation/swiftui/progressview
-timestamp: 2026-04-09T13:37:43.056Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/progressview.json
+timestamp: 2026-04-14T13:14:42.341Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

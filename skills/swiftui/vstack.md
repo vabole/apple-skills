@@ -2,7 +2,9 @@
 title: VStack
 description: A view that arranges its subviews in a vertical line.
 source: https://developer.apple.com/documentation/swiftui/vstack
-timestamp: 2026-04-09T13:37:46.041Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/vstack.json
+timestamp: 2026-04-14T13:14:45.896Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

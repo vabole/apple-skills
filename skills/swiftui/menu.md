@@ -2,7 +2,9 @@
 title: Menu
 description: A control for presenting a menu of actions.
 source: https://developer.apple.com/documentation/swiftui/menu
-timestamp: 2026-04-09T12:04:37.457Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/menu.json
+timestamp: 2026-04-14T13:14:41.183Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

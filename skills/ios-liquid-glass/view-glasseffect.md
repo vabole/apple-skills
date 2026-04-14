@@ -2,7 +2,9 @@
 title: glassEffect(_:in:)
 description: Applies the Liquid Glass effect to a view.
 source: https://developer.apple.com/documentation/swiftui/view/glasseffect(_:in:)
-timestamp: 2026-04-09T12:04:24.623Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/glasseffect(_:in:).json
+timestamp: 2026-04-14T13:14:26.810Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)

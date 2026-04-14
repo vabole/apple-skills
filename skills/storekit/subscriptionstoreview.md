@@ -2,7 +2,9 @@
 title: SubscriptionStoreView
 description: A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 source: https://developer.apple.com/documentation/storekit/subscriptionstoreview
-timestamp: 2026-04-09T12:04:28.655Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/storekit/subscriptionstoreview.json
+timestamp: 2026-04-14T13:14:30.977Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)

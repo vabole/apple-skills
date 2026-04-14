@@ -2,7 +2,9 @@
 title: UNCalendarNotificationTrigger
 description: A trigger condition that causes a notification the system delivers at a specific date and time.
 source: https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger
-timestamp: 2026-04-09T13:37:47.582Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger.json
+timestamp: 2026-04-14T13:14:55.571Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)

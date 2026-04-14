@@ -2,7 +2,9 @@
 title: NavigationStack
 description: A view that displays a root view and enables you to present additional views over the root view.
 source: https://developer.apple.com/documentation/swiftui/navigationstack
-timestamp: 2026-04-09T12:04:38.003Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/navigationstack.json
+timestamp: 2026-04-14T13:14:41.703Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

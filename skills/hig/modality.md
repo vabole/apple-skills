@@ -2,7 +2,9 @@
 title: Modality
 description: Modality is a design technique that presents content in a separate, dedicated mode that prevents interaction with the parent view and requires an explicit action to dismiss.
 source: https://developer.apple.com/design/human-interface-guidelines/modality
-timestamp: 2026-04-09T13:37:21.400Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/modality.json
+timestamp: 2026-04-14T13:14:16.700Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

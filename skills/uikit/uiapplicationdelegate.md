@@ -2,7 +2,9 @@
 title: UIApplicationDelegate
 description: A set of methods to manage shared behaviors for your app.
 source: https://developer.apple.com/documentation/uikit/uiapplicationdelegate
-timestamp: 2026-04-10T12:11:14.055Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiapplicationdelegate.json
+timestamp: 2026-04-14T13:14:48.865Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

@@ -2,7 +2,9 @@
 title: RuleMark
 description: Chart content that represents data using a single horizontal or vertical rule.
 source: https://developer.apple.com/documentation/charts/rulemark
-timestamp: 2026-04-09T13:37:43.248Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/charts/rulemark.json
+timestamp: 2026-04-14T13:14:42.568Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)

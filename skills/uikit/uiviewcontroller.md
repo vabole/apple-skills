@@ -2,7 +2,9 @@
 title: UIViewController
 description: An object that manages a view hierarchy for your UIKit app.
 source: https://developer.apple.com/documentation/uikit/uiviewcontroller
-timestamp: 2026-04-10T12:11:17.907Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiviewcontroller.json
+timestamp: 2026-04-14T13:14:54.577Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -96,7 +98,7 @@ Here are the essential methods you might need to call:
 - [didMove(toParent:)](/documentation/uikit/uiviewcontroller/didmove(toparent:))
 
 > **Note:** You’re not required to override any methods when creating a container view controller.
->
+> 
 > By default, rotation and appearance callbacks are automatically forwarded to children. You may optionally override the [shouldAutomaticallyForwardRotationMethods()](/documentation/uikit/uiviewcontroller/shouldautomaticallyforwardrotationmethods()) and [shouldAutomaticallyForwardAppearanceMethods](/documentation/uikit/uiviewcontroller/shouldautomaticallyforwardappearancemethods) methods to take control of this behavior yourself.
 
 #### Manage memory

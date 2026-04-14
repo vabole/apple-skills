@@ -2,7 +2,9 @@
 title: UIScrollView
 description: A view that allows the scrolling and zooming of its contained views.
 source: https://developer.apple.com/documentation/uikit/uiscrollview
-timestamp: 2026-04-10T12:11:26.852Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiscrollview.json
+timestamp: 2026-04-14T13:14:52.713Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

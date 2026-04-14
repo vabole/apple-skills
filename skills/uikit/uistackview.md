@@ -2,7 +2,9 @@
 title: UIStackView
 description: A streamlined interface for laying out a collection of views in either a column or a row.
 source: https://developer.apple.com/documentation/uikit/uistackview
-timestamp: 2026-04-10T12:11:30.059Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uistackview.json
+timestamp: 2026-04-14T13:14:53.237Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

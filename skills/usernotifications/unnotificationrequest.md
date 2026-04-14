@@ -2,7 +2,9 @@
 title: UNNotificationRequest
 description: A request to schedule a local notification, which includes the content of the notification and the trigger conditions for delivery.
 source: https://developer.apple.com/documentation/usernotifications/unnotificationrequest
-timestamp: 2026-04-09T12:04:44.208Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest.json
+timestamp: 2026-04-14T13:14:56.059Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)

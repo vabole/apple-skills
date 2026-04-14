@@ -2,7 +2,9 @@
 title: Query
 description: A type that fetches models using the specified criteria, and manages those models so they remain in sync with the underlying data.
 source: https://developer.apple.com/documentation/swiftdata/query
-timestamp: 2026-04-09T12:04:32.338Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftdata/query.json
+timestamp: 2026-04-14T13:14:35.500Z
 ---
 
 **Navigation:** [SwiftData](/documentation/swiftdata)

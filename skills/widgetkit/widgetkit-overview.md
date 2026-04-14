@@ -1,7 +1,9 @@
 ---
 title: WidgetKit
 source: https://developer.apple.com/documentation/widgetkit
-timestamp: 2026-04-09T12:04:44.849Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/widgetkit
+timestamp: 2026-04-14T13:14:56.720Z
 ---
 
 **Navigation:** [WidgetKit](/documentation/widgetkit)

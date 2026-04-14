@@ -2,7 +2,9 @@
 title: Using SwiftUI with UIKit
 description: Learn how to incorporate SwiftUI views into a UIKit app.
 source: https://developer.apple.com/documentation/uikit/using-swiftui-with-uikit
-timestamp: 2026-04-10T12:11:48.049Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/using-swiftui-with-uikit.json
+timestamp: 2026-04-14T13:14:55.334Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

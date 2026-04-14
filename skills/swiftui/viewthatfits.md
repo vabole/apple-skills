@@ -2,7 +2,9 @@
 title: ViewThatFits
 description: A view that adapts to the available space by providing the first child view that fits.
 source: https://developer.apple.com/documentation/swiftui/viewthatfits
-timestamp: 2026-04-09T13:37:45.859Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/viewthatfits.json
+timestamp: 2026-04-14T13:14:45.653Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

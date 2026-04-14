@@ -73,11 +73,15 @@ All `.md` reference files (everything except `SKILL.md`) are generated from Appl
 title: Button
 description: A control that initiates an action.
 source: https://developer.apple.com/documentation/swiftui/button
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/button.json
 timestamp: 2026-02-19T07:52:54.922Z
 ---
 ```
 
 - `source` — the original Apple developer docs URL
+- `source_kind` — provenance classification for the generated file; Apple DocC pages use `apple-docc`
+- `source_json` — the exact Apple DocC JSON endpoint used to render the page
 - `timestamp` — when the file was rendered from Apple's JSON data
 
 The `SKILL.md` files are hand-written skill descriptions and are the only non-verbatim content.

@@ -2,7 +2,9 @@
 title: Sheets
 description: A sheet helps people perform a scoped task that’s closely related to their current context.
 source: https://developer.apple.com/design/human-interface-guidelines/sheets
-timestamp: 2026-04-09T13:37:24.865Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sheets.json
+timestamp: 2026-04-14T13:14:21.275Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

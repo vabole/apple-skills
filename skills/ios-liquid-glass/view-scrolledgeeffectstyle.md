@@ -2,7 +2,9 @@
 title: scrollEdgeEffectStyle(_:for:)
 description: Configures the scroll edge effect style for scroll views within this hierarchy.
 source: https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectstyle(_:for:)
-timestamp: 2026-04-09T12:04:25.146Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/scrolledgeeffectstyle(_:for:).json
+timestamp: 2026-04-14T13:14:27.224Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)

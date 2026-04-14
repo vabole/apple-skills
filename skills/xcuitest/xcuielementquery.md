@@ -2,7 +2,9 @@
 title: XCUIElementQuery
 description: An object that defines the search criteria a test uses to identify UI elements.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuielementquery
-timestamp: 2026-04-09T12:04:46.268Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery.json
+timestamp: 2026-04-14T13:14:58.197Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)

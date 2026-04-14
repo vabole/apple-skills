@@ -2,7 +2,9 @@
 title: UINavigationController
 description: A container view controller that defines a stack-based scheme for navigating hierarchical content.
 source: https://developer.apple.com/documentation/uikit/uinavigationcontroller
-timestamp: 2026-04-10T12:11:31.894Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uinavigationcontroller.json
+timestamp: 2026-04-14T13:14:52.415Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

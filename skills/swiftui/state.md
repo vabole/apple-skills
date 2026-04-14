@@ -2,7 +2,9 @@
 title: State
 description: A property wrapper type that can read and write a value managed by SwiftUI.
 source: https://developer.apple.com/documentation/swiftui/state
-timestamp: 2026-04-09T12:04:40.342Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/state.json
+timestamp: 2026-04-14T13:14:43.699Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

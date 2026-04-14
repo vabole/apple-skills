@@ -2,7 +2,9 @@
 title: Materials
 description: A material is a visual effect that creates a sense of depth, layering, and hierarchy between foreground and background elements.
 source: https://developer.apple.com/design/human-interface-guidelines/materials
-timestamp: 2026-04-09T13:37:20.942Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/materials.json
+timestamp: 2026-04-14T13:14:16.020Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

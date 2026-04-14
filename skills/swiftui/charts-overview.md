@@ -1,7 +1,9 @@
 ---
 title: Swift Charts
 source: https://developer.apple.com/documentation/charts
-timestamp: 2026-04-09T12:04:34.128Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/charts
+timestamp: 2026-04-14T13:14:37.169Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)

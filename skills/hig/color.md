@@ -2,7 +2,9 @@
 title: Color
 description: Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information.
 source: https://developer.apple.com/design/human-interface-guidelines/color
-timestamp: 2026-04-09T13:37:19.626Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/color.json
+timestamp: 2026-04-14T13:14:14.104Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

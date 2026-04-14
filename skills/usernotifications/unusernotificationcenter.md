@@ -2,7 +2,9 @@
 title: UNUserNotificationCenter
 description: The central object for managing notification-related activities for your app or app extension.
 source: https://developer.apple.com/documentation/usernotifications/unusernotificationcenter
-timestamp: 2026-04-09T12:04:44.790Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter.json
+timestamp: 2026-04-14T13:14:56.500Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)

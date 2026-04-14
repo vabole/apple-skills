@@ -2,7 +2,9 @@
 title: ZStack
 description: A view that overlays its subviews, aligning them in both axes.
 source: https://developer.apple.com/documentation/swiftui/zstack
-timestamp: 2026-04-09T13:37:46.202Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/zstack.json
+timestamp: 2026-04-14T13:14:46.108Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

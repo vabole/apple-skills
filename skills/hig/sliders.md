@@ -2,7 +2,9 @@
 title: Sliders
 description: A slider is a horizontal track with a control, called a thumb, that people can adjust between a minimum and maximum value.
 source: https://developer.apple.com/design/human-interface-guidelines/sliders
-timestamp: 2026-04-09T13:37:25.295Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sliders.json
+timestamp: 2026-04-14T13:14:21.676Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

@@ -1,7 +1,7 @@
 import { readdir } from "node:fs/promises"
 import path from "node:path"
 
-import { APPLE_BASE_URL, TITLE_OVERRIDES } from "./config.ts"
+import { APPLE_BASE_URL, APPLE_JSON_BASE_URL, TITLE_OVERRIDES } from "./config.ts"
 
 export function normalizeSourceInput(input: string): string {
   if (/^https?:\/\//i.test(input)) {
@@ -21,6 +21,35 @@ export function normalizeSourceInput(input: string): string {
 
 export function normalizeDocumentationPath(docPath: string): string {
   return docPath.trim().replace(/^\/?(?:documentation\/?)?/, "")
+}
+
+export function sourceUrlToAppleJsonUrl(sourceUrl: string): string | null {
+  const url = new URL(sourceUrl)
+
+  if (url.pathname.startsWith("/documentation/")) {
+    const normalizedPath = normalizeDocumentationPath(url.pathname)
+    const parts = normalizedPath.split("/").filter(Boolean)
+    return parts.length === 1
+      ? `${APPLE_JSON_BASE_URL}/index/${parts[0]}`
+      : `${APPLE_JSON_BASE_URL}/documentation/${normalizedPath}.json`
+  }
+
+  if (
+    url.pathname === "/design/human-interface-guidelines" ||
+    url.pathname === "/design/human-interface-guidelines/"
+  ) {
+    return `${APPLE_JSON_BASE_URL}/index/design--human-interface-guidelines`
+  }
+
+  if (url.pathname.startsWith("/design/human-interface-guidelines/")) {
+    const normalizedPath = url.pathname
+      .replace(/^\/design\/human-interface-guidelines\/?/, "")
+      .replace(/^\/+|\/+$/g, "")
+
+    return `${APPLE_JSON_BASE_URL}/design/human-interface-guidelines/${normalizedPath}.json`
+  }
+
+  return null
 }
 
 export function extractSourceUrl(markdown: string): string | null {

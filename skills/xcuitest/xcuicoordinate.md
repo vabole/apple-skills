@@ -2,7 +2,9 @@
 title: XCUICoordinate
 description: A location on screen relative to a UI element.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate
-timestamp: 2026-04-09T12:04:45.793Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate.json
+timestamp: 2026-04-14T13:14:57.667Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)

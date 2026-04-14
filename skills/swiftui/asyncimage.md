@@ -2,7 +2,9 @@
 title: AsyncImage
 description: A view that asynchronously loads and displays an image.
 source: https://developer.apple.com/documentation/swiftui/asyncimage
-timestamp: 2026-04-09T13:37:37.998Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/asyncimage.json
+timestamp: 2026-04-14T13:14:36.171Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

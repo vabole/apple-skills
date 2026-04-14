@@ -2,7 +2,9 @@
 title: TimelineEntry
 description: A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
 source: https://developer.apple.com/documentation/widgetkit/timelineentry
-timestamp: 2026-04-09T12:04:45.060Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/widgetkit/timelineentry.json
+timestamp: 2026-04-14T13:14:56.916Z
 ---
 
 **Navigation:** [WidgetKit](/documentation/widgetkit)

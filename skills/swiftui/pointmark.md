@@ -2,7 +2,9 @@
 title: PointMark
 description: Chart content that represents data using points.
 source: https://developer.apple.com/documentation/charts/pointmark
-timestamp: 2026-04-09T13:37:42.847Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/charts/pointmark.json
+timestamp: 2026-04-14T13:14:42.129Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)

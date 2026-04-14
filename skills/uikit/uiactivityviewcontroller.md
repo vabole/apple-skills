@@ -2,7 +2,9 @@
 title: UIActivityViewController
 description: A view controller that you use to offer standard services from your app.
 source: https://developer.apple.com/documentation/uikit/uiactivityviewcontroller
-timestamp: 2026-04-10T12:11:36.850Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiactivityviewcontroller.json
+timestamp: 2026-04-14T13:14:48.020Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

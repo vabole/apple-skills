@@ -2,7 +2,9 @@
 title: Chart
 description: A SwiftUI view that displays a chart.
 source: https://developer.apple.com/documentation/charts/chart
-timestamp: 2026-04-09T13:37:38.685Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/charts/chart.json
+timestamp: 2026-04-14T13:14:36.984Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)

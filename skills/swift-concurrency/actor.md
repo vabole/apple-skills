@@ -2,7 +2,9 @@
 title: Actor
 description: Common protocol to which all actors conform.
 source: https://developer.apple.com/documentation/swift/actor
-timestamp: 2026-04-09T12:04:29.036Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swift/actor.json
+timestamp: 2026-04-14T13:14:31.517Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)

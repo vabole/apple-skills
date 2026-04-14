@@ -2,7 +2,9 @@
 title: Launching
 description: A streamlined launch experience helps people start using your app or game immediately.
 source: https://developer.apple.com/design/human-interface-guidelines/launching
-timestamp: 2026-04-09T13:37:20.337Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/launching.json
+timestamp: 2026-04-14T13:14:14.969Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

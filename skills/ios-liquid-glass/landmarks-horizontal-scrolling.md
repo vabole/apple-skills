@@ -2,7 +2,9 @@
 title: Landmarks: Extending horizontal scrolling under a sidebar or inspector
 description: Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
 source: https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector
-timestamp: 2026-04-09T13:37:28.552Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.json
+timestamp: 2026-04-14T13:14:26.387Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

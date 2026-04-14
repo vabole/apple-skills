@@ -2,7 +2,9 @@
 title: Marker
 description: A balloon-shaped annotation that marks a map location.
 source: https://developer.apple.com/documentation/mapkit/marker
-timestamp: 2026-04-09T12:04:27.072Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/mapkit/marker.json
+timestamp: 2026-04-14T13:14:29.337Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)

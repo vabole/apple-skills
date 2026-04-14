@@ -2,7 +2,9 @@
 title: Organizing test functions with suite types
 description: Organize tests into test suites.
 source: https://developer.apple.com/documentation/testing/organizingtests
-timestamp: 2026-04-09T12:04:31.297Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/testing/organizingtests.json
+timestamp: 2026-04-14T13:14:34.054Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)

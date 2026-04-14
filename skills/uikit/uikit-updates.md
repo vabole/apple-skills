@@ -2,7 +2,9 @@
 title: UIKit updates
 description: Learn about important changes to UIKit.
 source: https://developer.apple.com/documentation/updates/uikit
-timestamp: 2026-04-10T12:16:40.873Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/updates/uikit.json
+timestamp: 2026-04-14T13:14:51.982Z
 ---
 
 **Navigation:** [Updates](/documentation/updates)

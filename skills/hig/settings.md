@@ -2,7 +2,9 @@
 title: Settings
 description: People expect apps and games to just work, but they also appreciate having ways to customize the experience to fit their needs.
 source: https://developer.apple.com/design/human-interface-guidelines/settings
-timestamp: 2026-04-09T13:37:24.341Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/settings.json
+timestamp: 2026-04-14T13:14:20.325Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

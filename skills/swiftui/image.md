@@ -2,7 +2,9 @@
 title: Image
 description: A view that displays an image.
 source: https://developer.apple.com/documentation/swiftui/image
-timestamp: 2026-04-09T13:37:40.659Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/image.json
+timestamp: 2026-04-14T13:14:39.493Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

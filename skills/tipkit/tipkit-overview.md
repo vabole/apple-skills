@@ -1,7 +1,9 @@
 ---
 title: TipKit
 source: https://developer.apple.com/documentation/tipkit
-timestamp: 2026-04-09T12:04:43.002Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/tipkit
+timestamp: 2026-04-14T13:14:46.968Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit)

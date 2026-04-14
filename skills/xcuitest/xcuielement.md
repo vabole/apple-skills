@@ -2,7 +2,9 @@
 title: XCUIElement
 description: A UI element in an application.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuielement
-timestamp: 2026-04-09T12:04:46.005Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement.json
+timestamp: 2026-04-14T13:14:57.958Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)

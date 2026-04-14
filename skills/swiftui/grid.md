@@ -2,7 +2,9 @@
 title: Grid
 description: A container view that arranges other views in a two dimensional layout.
 source: https://developer.apple.com/documentation/swiftui/grid
-timestamp: 2026-04-09T13:37:40.313Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/grid.json
+timestamp: 2026-04-14T13:14:39.086Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

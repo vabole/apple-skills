@@ -2,7 +2,9 @@
 title: Adopting Liquid Glass
 description: Find out how to bring the new material to your app.
 source: https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass
-timestamp: 2026-04-09T13:37:27.039Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/technologyoverviews/adopting-liquid-glass.json
+timestamp: 2026-04-14T13:14:24.541Z
 ---
 
 **Navigation:** [Technologyoverviews](/documentation/technologyoverviews)

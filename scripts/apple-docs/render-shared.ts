@@ -1,3 +1,4 @@
+import { appendAttributionLines } from "./attribution.ts"
 import { renderImageMarkdown } from "./media.ts"
 import type {
   ContentNode,
@@ -6,15 +7,21 @@ import type {
   IndexNode,
   InlineNode,
   ReferenceMap,
+  RenderOptions,
   SectionNode,
 } from "./types.ts"
 import { cleanTitle, oneLine, titleize } from "./utils.ts"
 
-export function renderFrontMatter({ title, description, source }: FrontMatter): string {
+export function renderFrontMatter(
+  { title, description, source, sourceKind, sourceJson }: FrontMatter,
+  options: RenderOptions = {},
+): string {
+  const attributionMode = options.attributionMode ?? "current"
   const lines = ["---"]
   if (title) lines.push(`title: ${oneLine(title)}`)
   if (description) lines.push(`description: ${oneLine(description)}`)
   lines.push(`source: ${source}`)
+  appendAttributionLines(lines, { attributionMode, source, sourceJson, sourceKind })
   lines.push(`timestamp: ${new Date().toISOString()}`)
   lines.push("---", "")
   return `${lines.join("\n")}\n`

@@ -2,7 +2,9 @@
 title: Charts
 description: Organize data in a chart to communicate information with clarity and visual appeal.
 source: https://developer.apple.com/design/human-interface-guidelines/charts
-timestamp: 2026-04-09T13:37:19.372Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/charts.json
+timestamp: 2026-04-14T13:14:13.916Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

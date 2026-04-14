@@ -2,7 +2,9 @@
 title: App icons
 description: A unique, memorable icon expresses your app’s or game’s purpose and personality and helps people recognize it at a glance.
 source: https://developer.apple.com/design/human-interface-guidelines/app-icons
-timestamp: 2026-04-09T13:35:39.380Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.json
+timestamp: 2026-04-14T13:14:13.394Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

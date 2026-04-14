@@ -1,7 +1,9 @@
 ---
 title: Background Tasks
 source: https://developer.apple.com/documentation/backgroundtasks
-timestamp: 2026-04-09T12:04:07.837Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/backgroundtasks
+timestamp: 2026-04-14T13:14:09.199Z
 ---
 
 **Navigation:** [BackgroundTasks](/documentation/backgroundtasks)

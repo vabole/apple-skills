@@ -2,7 +2,9 @@
 title: Form
 description: A container for grouping controls used for data entry, such as in settings or inspectors.
 source: https://developer.apple.com/documentation/swiftui/form
-timestamp: 2026-04-09T13:37:39.942Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/form.json
+timestamp: 2026-04-14T13:14:38.641Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

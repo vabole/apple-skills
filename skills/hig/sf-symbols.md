@@ -2,7 +2,9 @@
 title: SF Symbols
 description: SF Symbols provides thousands of consistent, highly configurable symbols that integrate seamlessly with the San Francisco system font, automatically aligning with text in all weights and sizes.
 source: https://developer.apple.com/design/human-interface-guidelines/sf-symbols
-timestamp: 2026-04-09T13:37:24.623Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sf-symbols.json
+timestamp: 2026-04-14T13:14:20.951Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

@@ -2,7 +2,9 @@
 title: TabView
 description: A view that switches between multiple child views using interactive user interface elements.
 source: https://developer.apple.com/documentation/swiftui/tabview
-timestamp: 2026-04-09T13:37:44.671Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/tabview.json
+timestamp: 2026-04-14T13:14:44.075Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

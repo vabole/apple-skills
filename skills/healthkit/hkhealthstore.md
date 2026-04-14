@@ -2,7 +2,9 @@
 title: HKHealthStore
 description: The access point for all data managed by HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkhealthstore
-timestamp: 2026-04-09T12:04:10.980Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore.json
+timestamp: 2026-04-14T13:14:11.093Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)

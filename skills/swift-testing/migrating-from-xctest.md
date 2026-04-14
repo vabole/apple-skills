@@ -2,7 +2,9 @@
 title: Migrating a test from XCTest
 description: Migrate an existing test method or test class written using XCTest.
 source: https://developer.apple.com/documentation/testing/migratingfromxctest
-timestamp: 2026-04-09T13:37:35.942Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/testing/migratingfromxctest.json
+timestamp: 2026-04-14T13:14:33.842Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)

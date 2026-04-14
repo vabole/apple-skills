@@ -2,7 +2,9 @@
 title: XCUIApplication
 description: A proxy that can launch, monitor, and terminate a test application.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuiapplication
-timestamp: 2026-04-09T12:04:45.589Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication.json
+timestamp: 2026-04-14T13:14:57.433Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
