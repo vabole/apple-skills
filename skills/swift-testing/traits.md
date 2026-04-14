@@ -2,7 +2,9 @@
 title: Traits
 description: Annotate test functions and suites, and customize their behavior.
 source: https://developer.apple.com/documentation/testing/traits
-timestamp: 2026-04-09T12:04:31.680Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/testing/traits.json
+timestamp: 2026-04-14T13:14:34.888Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)

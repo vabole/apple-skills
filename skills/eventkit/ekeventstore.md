@@ -2,7 +2,9 @@
 title: EKEventStore
 description: An object that accesses a person’s calendar events and reminders and supports the scheduling of new events.
 source: https://developer.apple.com/documentation/eventkit/ekeventstore
-timestamp: 2026-04-09T12:04:09.655Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore.json
+timestamp: 2026-04-14T13:14:10.258Z
 ---
 
 **Navigation:** [EventKit](/documentation/eventkit)

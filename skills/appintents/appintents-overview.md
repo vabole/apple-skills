@@ -1,7 +1,9 @@
 ---
 title: App Intents
 source: https://developer.apple.com/documentation/appintents
-timestamp: 2026-04-09T12:04:04.402Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/appintents
+timestamp: 2026-04-14T13:14:06.582Z
 ---
 
 **Navigation:** [App Intents](/documentation/appintents)

@@ -1,7 +1,9 @@
 ---
 title: EventKit
 source: https://developer.apple.com/documentation/eventkit
-timestamp: 2026-04-09T12:04:10.272Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/eventkit
+timestamp: 2026-04-14T13:14:10.821Z
 ---
 
 **Navigation:** [EventKit](/documentation/eventkit)

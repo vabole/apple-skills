@@ -2,7 +2,9 @@
 title: Concurrency
 description: Perform asynchronous and parallel operations.
 source: https://developer.apple.com/documentation/swift/concurrency
-timestamp: 2026-04-09T12:04:30.038Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swift/concurrency.json
+timestamp: 2026-04-14T13:14:32.475Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)

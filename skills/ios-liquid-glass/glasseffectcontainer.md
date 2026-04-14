@@ -2,7 +2,9 @@
 title: GlassEffectContainer
 description: A view that combines multiple Liquid Glass shapes into a single shape that can morph individual shapes into one another.
 source: https://developer.apple.com/documentation/swiftui/glasseffectcontainer
-timestamp: 2026-04-09T12:04:23.397Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/glasseffectcontainer.json
+timestamp: 2026-04-14T13:14:25.452Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

@@ -1,14 +1,13 @@
 import { APPLE_JSON_BASE_URL, DEFAULT_RETRIES, DEFAULT_TIMEOUT_MS, USER_AGENT } from "./config.ts"
 import type { AppleDocJson } from "./types.ts"
-import { normalizeDocumentationPath } from "./utils.ts"
+import { normalizeDocumentationPath, sourceUrlToAppleJsonUrl } from "./utils.ts"
 
 export async function fetchReferenceJSON(url: URL): Promise<AppleDocJson> {
-  const normalizedPath = normalizeDocumentationPath(url.pathname)
-  const parts = normalizedPath.split("/").filter(Boolean)
-  const jsonUrl =
-    parts.length === 1
-      ? `${APPLE_JSON_BASE_URL}/index/${parts[0]}`
-      : `${APPLE_JSON_BASE_URL}/documentation/${normalizedPath}.json`
+  const jsonUrl = sourceUrlToAppleJsonUrl(url.toString())
+  if (!jsonUrl) {
+    const normalizedPath = normalizeDocumentationPath(url.pathname)
+    throw new Error(`Unsupported Apple reference URL: ${normalizedPath}`)
+  }
 
   return fetchJsonWithRetries(jsonUrl)
 }

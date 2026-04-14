@@ -2,7 +2,9 @@
 title: AppIntent
 description: An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
 source: https://developer.apple.com/documentation/appintents/appintent
-timestamp: 2026-04-09T12:04:02.800Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/appintents/appintent.json
+timestamp: 2026-04-14T13:14:05.537Z
 ---
 
 **Navigation:** [App Intents](/documentation/appintents)

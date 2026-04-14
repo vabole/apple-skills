@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest"
 import { renderHIGPageArtifacts, renderHIGPageMarkdown } from "../scripts/apple-docs/render-hig.ts"
 import { renderReferenceMarkdown } from "../scripts/apple-docs/render-reference.ts"
 import type { AppleDocJson } from "../scripts/apple-docs/types.ts"
+import { sourceUrlToAppleJsonUrl } from "../scripts/apple-docs/utils.ts"
 
 function createMediaRichHIGJson(): AppleDocJson {
   return {
@@ -124,6 +125,41 @@ describe("renderReferenceMarkdown", () => {
     expect(markdown).toContain("struct NavigationStack")
     expect(markdown).toContain("## Conforms To")
     expect(markdown).toContain("[View](/documentation/swiftui/view)")
+  })
+
+  it("supports annotated attribution frontmatter", () => {
+    const json: AppleDocJson = {
+      metadata: { title: "NavigationStack", roleHeading: "Structure" },
+    }
+
+    const markdown = renderReferenceMarkdown(
+      json,
+      "https://developer.apple.com/documentation/swiftui/navigationstack",
+      { attributionMode: "annotated" },
+    )
+
+    expect(markdown).toContain(
+      "source: https://developer.apple.com/documentation/swiftui/navigationstack",
+    )
+    expect(markdown).toContain("source_kind: apple-docc")
+    expect(markdown).not.toContain("source_json:")
+  })
+
+  it("supports expanded attribution frontmatter", () => {
+    const json: AppleDocJson = {
+      metadata: { title: "NavigationStack", roleHeading: "Structure" },
+    }
+
+    const markdown = renderReferenceMarkdown(
+      json,
+      "https://developer.apple.com/documentation/swiftui/navigationstack",
+      { attributionMode: "expanded" },
+    )
+
+    expect(markdown).toContain("source_kind: apple-docc")
+    expect(markdown).toContain(
+      "source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/navigationstack.json",
+    )
   })
 })
 
@@ -247,6 +283,24 @@ describe("renderHIGPageMarkdown", () => {
     expect(artifacts.videoSidecar).toContain("[iOS app icon](https://docs-assets.example/demo.mp4)")
     expect(artifacts.videoSidecar).toContain(
       "[Poster image](https://docs-assets.example/poster.png)",
+    )
+  })
+})
+
+describe("sourceUrlToAppleJsonUrl", () => {
+  it("maps Apple reference pages to DocC JSON endpoints", () => {
+    expect(sourceUrlToAppleJsonUrl("https://developer.apple.com/documentation/swiftui")).toBe(
+      "https://developer.apple.com/tutorials/data/index/swiftui",
+    )
+    expect(
+      sourceUrlToAppleJsonUrl("https://developer.apple.com/documentation/swiftui/navigationstack"),
+    ).toBe("https://developer.apple.com/tutorials/data/documentation/swiftui/navigationstack.json")
+    expect(
+      sourceUrlToAppleJsonUrl(
+        "https://developer.apple.com/design/human-interface-guidelines/buttons",
+      ),
+    ).toBe(
+      "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/buttons.json",
     )
   })
 })

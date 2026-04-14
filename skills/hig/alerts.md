@@ -2,7 +2,9 @@
 title: Alerts
 description: An alert gives people critical information they need right away.
 source: https://developer.apple.com/design/human-interface-guidelines/alerts
-timestamp: 2026-04-09T13:37:18.673Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/alerts.json
+timestamp: 2026-04-14T13:14:13.116Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

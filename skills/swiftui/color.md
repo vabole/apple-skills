@@ -2,7 +2,9 @@
 title: Color
 description: A representation of a color that adapts to a given context.
 source: https://developer.apple.com/documentation/swiftui/color
-timestamp: 2026-04-09T13:37:39.080Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/color.json
+timestamp: 2026-04-14T13:14:37.568Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

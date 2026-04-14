@@ -81,7 +81,12 @@ jobs:
               | git patch-id --stable \
               | cut -d' ' -f1
           )"
-          pr_body=$'Automated daily refresh of generated Apple documentation.\n\n<!-- apple-docs-update:patch-id='"$patch_id"' -->'
+          changed_docs_count="$(git diff --name-only HEAD^ HEAD -- skills | wc -l | tr -d ' ')"
+          changed_docs_list="$(
+            git diff --name-only HEAD^ HEAD -- skills \
+              | sed 's#^#- `#; s#$#`#'
+          )"
+          pr_body=$'Automated daily refresh of generated Apple documentation.\n\n<details>\n<summary>Changed documents ('"$changed_docs_count"$')</summary>\n\n'"$changed_docs_list"$'\n\n</details>\n\n<!-- apple-docs-update:patch-id='"$patch_id"' -->'
 
           pr_url="$(gh pr list --head "$BRANCH" --base main --state open --json url --jq '.[0].url // ""')"
           if [[ -n "$pr_url" ]]; then

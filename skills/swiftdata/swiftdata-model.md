@@ -2,7 +2,9 @@
 title: Model()
 description: Converts a Swift class into a stored model that’s managed by SwiftData.
 source: https://developer.apple.com/documentation/swiftdata/model()
-timestamp: 2026-04-09T12:04:31.955Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftdata/model().json
+timestamp: 2026-04-14T13:14:35.099Z
 ---
 
 **Navigation:** [SwiftData](/documentation/swiftdata)

@@ -2,7 +2,9 @@
 title: Popovers
 description: A popover is a transient view that appears above other content when people click or tap a control or interactive area.
 source: https://developer.apple.com/design/human-interface-guidelines/popovers
-timestamp: 2026-04-09T13:37:23.298Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/popovers.json
+timestamp: 2026-04-14T13:14:18.861Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

@@ -10,6 +10,7 @@
     "refresh-docs": "node scripts/apple-docs.ts refresh",
     "prepare-doc-update": "./scripts/prepare-doc-update.sh",
     "fetch-doc": "node scripts/apple-docs.ts fetch",
+    "attribution-report": "node scripts/apple-docs.ts attribution-report",
     "typecheck": "tsgo --project tsconfig.json --noEmit",
     "typecheck:tsc": "tsc --noEmit",
     "lint": "biome check . --error-on-warnings",

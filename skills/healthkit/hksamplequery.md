@@ -2,7 +2,9 @@
 title: HKSampleQuery
 description: A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
 source: https://developer.apple.com/documentation/healthkit/hksamplequery
-timestamp: 2026-04-09T12:04:11.894Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hksamplequery.json
+timestamp: 2026-04-14T13:14:12.124Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)

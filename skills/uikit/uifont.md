@@ -2,7 +2,9 @@
 title: UIFont
 description: An object that provides access to the font’s characteristics.
 source: https://developer.apple.com/documentation/uikit/uifont
-timestamp: 2026-04-10T12:11:25.849Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uifont.json
+timestamp: 2026-04-14T13:14:50.324Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

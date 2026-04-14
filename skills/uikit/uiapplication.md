@@ -2,7 +2,9 @@
 title: UIApplication
 description: The centralized point of control and coordination for apps running in iOS.
 source: https://developer.apple.com/documentation/uikit/uiapplication
-timestamp: 2026-04-10T12:11:12.757Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiapplication.json
+timestamp: 2026-04-14T13:14:48.634Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

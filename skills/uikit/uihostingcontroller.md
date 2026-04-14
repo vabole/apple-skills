@@ -2,7 +2,9 @@
 title: UIHostingController
 description: A UIKit view controller that manages a SwiftUI view hierarchy.
 source: https://developer.apple.com/documentation/swiftui/uihostingcontroller
-timestamp: 2026-04-10T12:11:48.548Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/uihostingcontroller.json
+timestamp: 2026-04-14T13:14:50.959Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

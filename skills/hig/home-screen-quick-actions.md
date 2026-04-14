@@ -2,7 +2,9 @@
 title: Home Screen quick actions
 description: Home Screen quick actions give people a way to perform app-specific actions from the Home Screen.
 source: https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions
-timestamp: 2026-04-09T13:37:20.176Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/home-screen-quick-actions.json
+timestamp: 2026-04-14T13:14:14.763Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

@@ -11,15 +11,22 @@ import {
   renderPlatforms,
   renderProperties,
 } from "./render-shared.ts"
-import type { AppleDocJson } from "./types.ts"
+import type { AppleDocJson, RenderOptions } from "./types.ts"
 import { cleanTitle, titleize } from "./utils.ts"
 
-export function renderReferenceArtifacts(json: AppleDocJson, sourceUrl: string): RenderArtifacts {
-  let markdown = renderFrontMatter({
-    title: cleanTitle(json.metadata?.title || json.interfaceLanguages?.swift?.[0]?.title || ""),
-    description: renderInlineArray(json.abstract || [], json.references).trim(),
-    source: sourceUrl,
-  })
+export function renderReferenceArtifacts(
+  json: AppleDocJson,
+  sourceUrl: string,
+  options: RenderOptions = {},
+): RenderArtifacts {
+  let markdown = renderFrontMatter(
+    {
+      title: cleanTitle(json.metadata?.title || json.interfaceLanguages?.swift?.[0]?.title || ""),
+      description: renderInlineArray(json.abstract || [], json.references).trim(),
+      source: sourceUrl,
+    },
+    options,
+  )
 
   const breadcrumbs = renderReferenceBreadcrumbs(sourceUrl)
   if (breadcrumbs) markdown += `${breadcrumbs}\n\n`
@@ -66,8 +73,12 @@ export function renderReferenceArtifacts(json: AppleDocJson, sourceUrl: string):
   }
 }
 
-export function renderReferenceMarkdown(json: AppleDocJson, sourceUrl: string): string {
-  return renderReferenceArtifacts(json, sourceUrl).markdown
+export function renderReferenceMarkdown(
+  json: AppleDocJson,
+  sourceUrl: string,
+  options: RenderOptions = {},
+): string {
+  return renderReferenceArtifacts(json, sourceUrl, options).markdown
 }
 
 function renderReferenceBreadcrumbs(sourceUrl: string): string {

@@ -2,7 +2,9 @@
 title: configure(_:)
 description: Loads and configures the persistent state of all tips in your app.
 source: https://developer.apple.com/documentation/tipkit/tips/configure(_:)
-timestamp: 2026-04-09T12:04:42.626Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configure(_:).json
+timestamp: 2026-04-14T13:14:46.310Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit) › [Tips](/documentation/tipkit/tips)

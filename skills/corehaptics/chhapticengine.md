@@ -2,7 +2,9 @@
 title: CHHapticEngine
 description: An object that represents the connection to the haptic server.
 source: https://developer.apple.com/documentation/corehaptics/chhapticengine
-timestamp: 2026-04-09T13:37:14.265Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine.json
+timestamp: 2026-04-14T13:14:09.883Z
 ---
 
 **Navigation:** [Core Haptics](/documentation/corehaptics)

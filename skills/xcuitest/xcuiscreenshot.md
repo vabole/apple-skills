@@ -2,7 +2,9 @@
 title: XCUIScreenshot
 description: A captured image of a screen, app, or UI element state.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuiscreenshot
-timestamp: 2026-04-09T12:04:46.644Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiscreenshot.json
+timestamp: 2026-04-14T13:14:58.690Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)

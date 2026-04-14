@@ -2,7 +2,9 @@
 title: CheckedContinuation
 description: A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
 source: https://developer.apple.com/documentation/swift/checkedcontinuation
-timestamp: 2026-04-09T12:04:29.854Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swift/checkedcontinuation.json
+timestamp: 2026-04-14T13:14:32.266Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)

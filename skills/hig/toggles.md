@@ -2,7 +2,9 @@
 title: Toggles
 description: A toggle lets people choose between a pair of opposing states, like on and off, using a different appearance to indicate each state.
 source: https://developer.apple.com/design/human-interface-guidelines/toggles
-timestamp: 2026-04-09T13:37:26.572Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/toggles.json
+timestamp: 2026-04-14T13:14:23.550Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

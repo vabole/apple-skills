@@ -2,7 +2,9 @@
 title: Feedback
 description: Feedback helps people know what’s happening, discover what they can do next, understand the results of actions, and avoid mistakes.
 source: https://developer.apple.com/design/human-interface-guidelines/feedback
-timestamp: 2026-04-09T13:37:19.994Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/feedback.json
+timestamp: 2026-04-14T13:14:14.446Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

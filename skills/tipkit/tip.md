@@ -2,7 +2,9 @@
 title: Tip
 description: A type that sets a tip’s content, as well as the conditions for when it displays.
 source: https://developer.apple.com/documentation/tipkit/tip
-timestamp: 2026-04-09T12:04:42.831Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/tipkit/tip.json
+timestamp: 2026-04-14T13:14:46.780Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit)

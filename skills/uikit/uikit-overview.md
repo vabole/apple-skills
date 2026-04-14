@@ -1,7 +1,9 @@
 ---
 title: UIKit
 source: https://developer.apple.com/documentation/uikit
-timestamp: 2026-04-10T12:10:48.189Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/uikit
+timestamp: 2026-04-14T13:14:51.729Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -1992,11 +1994,11 @@ timestamp: 2026-04-10T12:10:48.189Z
 #### Observing data in table view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
+- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
 #### Observing data in table header and footer views
 
 - [func updateConfiguration(using: UIViewConfigurationState)](/documentation/uikit/uitableviewheaderfooterview/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
+- [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
 
 ### Adaptivity and traits
 
@@ -2044,11 +2046,11 @@ timestamp: 2026-04-10T12:10:48.189Z
 ##### Table view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
+- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
 ##### Table view headers and footers
 
 - [func updateConfiguration(using: UIViewConfigurationState)](/documentation/uikit/uitableviewheaderfooterview/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
+- [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
 ##### Collection view compositional layouts
 
 - [UICollectionViewCompositionalLayoutSectionProvider](/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider)
@@ -2912,11 +2914,11 @@ timestamp: 2026-04-10T12:10:48.189Z
 ##### Table view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
+- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
 ##### Table view headers and footers
 
 - [func updateConfiguration(using: UIViewConfigurationState)](/documentation/uikit/uitableviewheaderfooterview/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
+- [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
 ##### Collection view compositional layouts
 
 - [UICollectionViewCompositionalLayoutSectionProvider](/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider)
@@ -8490,7 +8492,7 @@ timestamp: 2026-04-10T12:10:48.189Z
 - [var configurationState: UICellConfigurationState](/documentation/uikit/uitableviewcell/configurationstate-4xwj0)
 - [func setNeedsUpdateConfiguration()](/documentation/uikit/uitableviewcell/setneedsupdateconfiguration())
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
+- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
 - [UITableViewCellConfigurationUpdateHandler](/documentation/uikit/uitableviewcell/configurationupdatehandler-swift.typealias)
 ##### Managing accessory views
 
@@ -8632,7 +8634,7 @@ timestamp: 2026-04-10T12:10:48.189Z
 - [var configurationState: UIViewConfigurationState](/documentation/uikit/uitableviewheaderfooterview/configurationstate-7xj7r)
 - [func setNeedsUpdateConfiguration()](/documentation/uikit/uitableviewheaderfooterview/setneedsupdateconfiguration())
 - [func updateConfiguration(using: UIViewConfigurationState)](/documentation/uikit/uitableviewheaderfooterview/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
+- [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
 - [UITableViewHeaderFooterViewConfigurationUpdateHandler](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-swift.typealias)
 ##### Deprecated
 
@@ -11824,7 +11826,7 @@ timestamp: 2026-04-10T12:10:48.189Z
 
 #### Overriding trait values
 
-- [var traitOverrides: UITraitOverrides](/documentation/uikit/uiviewcontroller/traitoverrides-1z1cc)
+- [traitOverrides](/documentation/uikit/uiviewcontroller/traitoverrides-1z1cc)
 - [UITraitOverrides](/documentation/uikit/uitraitoverrides-swift.struct)
 ##### Inspecting overrides
 
@@ -11879,6 +11881,72 @@ timestamp: 2026-04-10T12:10:48.189Z
 - [func setNeedsUpdateContentUnavailableConfiguration()](/documentation/uikit/uiviewcontroller/setneedsupdatecontentunavailableconfiguration())
 - [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](/documentation/uikit/uiviewcontroller/updatecontentunavailableconfiguration(using:))
 - [UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct)
+##### Structures
+
+- [UIContentUnavailableConfiguration.ButtonProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct)
+###### Instance Properties
+
+- [var isEnabled: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/isenabled)
+- [var menu: UIMenu?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/menu)
+- [var primaryAction: UIAction?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/primaryaction)
+- [var role: UIButton.Role](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/role)
+
+- [UIContentUnavailableConfiguration.ImageProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct)
+###### Instance Properties
+
+- [var accessibilityIgnoresInvertColors: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/accessibilityignoresinvertcolors)
+- [var cornerRadius: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/cornerradius)
+- [var maximumSize: CGSize](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/maximumsize)
+- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/preferredsymbolconfiguration)
+- [var tintColor: UIColor?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/tintcolor)
+
+- [UIContentUnavailableConfiguration.TextProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct)
+###### Instance Properties
+
+- [var adjustsFontSizeToFitWidth: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/adjustsfontsizetofitwidth)
+- [var allowsDefaultTighteningForTruncation: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/allowsdefaulttighteningfortruncation)
+- [var color: UIColor](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/color)
+- [var font: UIFont](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/font)
+- [var lineBreakMode: NSLineBreakMode](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/linebreakmode)
+- [var minimumScaleFactor: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/minimumscalefactor)
+- [var numberOfLines: Int](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/numberoflines)
+
+##### Instance Properties
+
+- [var alignment: UIContentUnavailableConfiguration.Alignment](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.property)
+- [var attributedText: NSAttributedString?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/attributedtext)
+- [var axesPreservingSuperviewLayoutMargins: UIAxis](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/axespreservingsuperviewlayoutmargins)
+- [var background: UIBackgroundConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/background)
+- [var button: UIButton.Configuration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/button)
+- [var buttonProperties: UIContentUnavailableConfiguration.ButtonProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.property)
+- [var buttonToSecondaryButtonPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttontosecondarybuttonpadding)
+- [var directionalLayoutMargins: NSDirectionalEdgeInsets](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/directionallayoutmargins)
+- [var image: UIImage?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/image)
+- [var imageProperties: UIContentUnavailableConfiguration.ImageProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.property)
+- [var imageToTextPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imagetotextpadding)
+- [var secondaryAttributedText: NSAttributedString?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondaryattributedtext)
+- [var secondaryButton: UIButton.Configuration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarybutton)
+- [var secondaryButtonProperties: UIContentUnavailableConfiguration.ButtonProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarybuttonproperties)
+- [var secondaryText: String?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarytext)
+- [var secondaryTextProperties: UIContentUnavailableConfiguration.TextProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarytextproperties)
+- [var text: String?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/text)
+- [var textProperties: UIContentUnavailableConfiguration.TextProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.property)
+- [var textToButtonPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/texttobuttonpadding)
+- [var textToSecondaryTextPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/texttosecondarytextpadding)
+##### Type Methods
+
+- [static func empty() -> UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/empty())
+- [static func loading() -> UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/loading())
+- [static func search() -> UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/search())
+##### Enumerations
+
+- [UIContentUnavailableConfiguration.Alignment](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.enum)
+###### Enumeration Cases
+
+- [case center](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.enum/center)
+- [case natural](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.enum/natural)
+
+
 #### Supporting app extensions
 
 - [var extensionContext: NSExtensionContext?](/documentation/uikit/uiviewcontroller/extensioncontext)
@@ -15077,6 +15145,72 @@ timestamp: 2026-04-10T12:10:48.189Z
 #### Unavailable content configurations
 
 - [UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct)
+##### Structures
+
+- [UIContentUnavailableConfiguration.ButtonProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct)
+###### Instance Properties
+
+- [var isEnabled: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/isenabled)
+- [var menu: UIMenu?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/menu)
+- [var primaryAction: UIAction?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/primaryaction)
+- [var role: UIButton.Role](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/role)
+
+- [UIContentUnavailableConfiguration.ImageProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct)
+###### Instance Properties
+
+- [var accessibilityIgnoresInvertColors: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/accessibilityignoresinvertcolors)
+- [var cornerRadius: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/cornerradius)
+- [var maximumSize: CGSize](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/maximumsize)
+- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/preferredsymbolconfiguration)
+- [var tintColor: UIColor?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/tintcolor)
+
+- [UIContentUnavailableConfiguration.TextProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct)
+###### Instance Properties
+
+- [var adjustsFontSizeToFitWidth: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/adjustsfontsizetofitwidth)
+- [var allowsDefaultTighteningForTruncation: Bool](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/allowsdefaulttighteningfortruncation)
+- [var color: UIColor](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/color)
+- [var font: UIFont](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/font)
+- [var lineBreakMode: NSLineBreakMode](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/linebreakmode)
+- [var minimumScaleFactor: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/minimumscalefactor)
+- [var numberOfLines: Int](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/numberoflines)
+
+##### Instance Properties
+
+- [var alignment: UIContentUnavailableConfiguration.Alignment](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.property)
+- [var attributedText: NSAttributedString?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/attributedtext)
+- [var axesPreservingSuperviewLayoutMargins: UIAxis](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/axespreservingsuperviewlayoutmargins)
+- [var background: UIBackgroundConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/background)
+- [var button: UIButton.Configuration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/button)
+- [var buttonProperties: UIContentUnavailableConfiguration.ButtonProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.property)
+- [var buttonToSecondaryButtonPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/buttontosecondarybuttonpadding)
+- [var directionalLayoutMargins: NSDirectionalEdgeInsets](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/directionallayoutmargins)
+- [var image: UIImage?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/image)
+- [var imageProperties: UIContentUnavailableConfiguration.ImageProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imageproperties-swift.property)
+- [var imageToTextPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/imagetotextpadding)
+- [var secondaryAttributedText: NSAttributedString?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondaryattributedtext)
+- [var secondaryButton: UIButton.Configuration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarybutton)
+- [var secondaryButtonProperties: UIContentUnavailableConfiguration.ButtonProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarybuttonproperties)
+- [var secondaryText: String?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarytext)
+- [var secondaryTextProperties: UIContentUnavailableConfiguration.TextProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/secondarytextproperties)
+- [var text: String?](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/text)
+- [var textProperties: UIContentUnavailableConfiguration.TextProperties](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/textproperties-swift.property)
+- [var textToButtonPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/texttobuttonpadding)
+- [var textToSecondaryTextPadding: CGFloat](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/texttosecondarytextpadding)
+##### Type Methods
+
+- [static func empty() -> UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/empty())
+- [static func loading() -> UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/loading())
+- [static func search() -> UIContentUnavailableConfiguration](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/search())
+##### Enumerations
+
+- [UIContentUnavailableConfiguration.Alignment](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.enum)
+###### Enumeration Cases
+
+- [case center](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.enum/center)
+- [case natural](/documentation/uikit/uicontentunavailableconfiguration-swift.struct/alignment-swift.enum/natural)
+
+
 - [UIContentUnavailableConfigurationState](/documentation/uikit/uicontentunavailableconfigurationstate-swift.struct)
 ##### Instance Properties
 

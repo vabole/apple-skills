@@ -2,7 +2,9 @@
 title: TaskGroup
 description: A group that contains dynamically created child tasks.
 source: https://developer.apple.com/documentation/swift/taskgroup
-timestamp: 2026-04-09T12:04:30.456Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swift/taskgroup.json
+timestamp: 2026-04-14T13:14:33.000Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)

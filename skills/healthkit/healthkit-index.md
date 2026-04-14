@@ -1,7 +1,9 @@
 ---
 title: HealthKit
 source: https://developer.apple.com/documentation/healthkit
-timestamp: 2026-04-09T12:04:10.511Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/healthkit
+timestamp: 2026-04-14T13:14:10.854Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)

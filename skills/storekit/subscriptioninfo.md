@@ -2,7 +2,9 @@
 title: Product.SubscriptionInfo
 description: Information about an auto-renewable subscription, such as its status, period, subscription group, and subscription offer details.
 source: https://developer.apple.com/documentation/storekit/product/subscriptioninfo
-timestamp: 2026-04-09T12:04:28.459Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo.json
+timestamp: 2026-04-14T13:14:30.767Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit) › [Product](/documentation/storekit/product)

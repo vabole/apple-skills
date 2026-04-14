@@ -2,7 +2,9 @@
 title: AsyncSequence
 description: A type that provides asynchronous, sequential, iterated access to its elements.
 source: https://developer.apple.com/documentation/swift/asyncsequence
-timestamp: 2026-04-09T12:04:29.338Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swift/asyncsequence.json
+timestamp: 2026-04-14T13:14:31.744Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)

@@ -2,7 +2,9 @@
 title: UIControl
 description: The base class for controls, which are visual elements that convey a specific action or intention in response to user interactions.
 source: https://developer.apple.com/documentation/uikit/uicontrol
-timestamp: 2026-04-10T12:11:19.205Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uicontrol.json
+timestamp: 2026-04-14T13:14:50.100Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

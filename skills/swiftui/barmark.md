@@ -2,7 +2,9 @@
 title: BarMark
 description: Chart content that represents data using bars.
 source: https://developer.apple.com/documentation/charts/barmark
-timestamp: 2026-04-09T13:37:38.169Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/charts/barmark.json
+timestamp: 2026-04-14T13:14:36.462Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)

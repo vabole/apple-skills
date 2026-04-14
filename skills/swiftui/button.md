@@ -2,7 +2,9 @@
 title: Button
 description: A control that initiates an action.
 source: https://developer.apple.com/documentation/swiftui/button
-timestamp: 2026-04-09T13:37:38.518Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/button.json
+timestamp: 2026-04-14T13:14:36.699Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

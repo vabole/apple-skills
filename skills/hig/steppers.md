@@ -2,7 +2,9 @@
 title: Steppers
 description: A stepper is a two-segment control that people use to increase or decrease an incremental value.
 source: https://developer.apple.com/design/human-interface-guidelines/steppers
-timestamp: 2026-04-09T13:37:25.815Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/steppers.json
+timestamp: 2026-04-14T13:14:22.391Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

@@ -2,7 +2,9 @@
 title: BGTaskScheduler
 description: A class for scheduling tasks that add background support to your app’s most critical work.
 source: https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler
-timestamp: 2026-04-09T12:04:08.034Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler.json
+timestamp: 2026-04-14T13:14:09.366Z
 ---
 
 **Navigation:** [BackgroundTasks](/documentation/backgroundtasks)

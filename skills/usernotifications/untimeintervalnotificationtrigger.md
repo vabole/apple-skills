@@ -2,7 +2,9 @@
 title: UNTimeIntervalNotificationTrigger
 description: A trigger condition that causes the system to deliver a notification after the amount of time you specify elapses.
 source: https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger
-timestamp: 2026-04-09T13:37:48.214Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger.json
+timestamp: 2026-04-14T13:14:56.286Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)

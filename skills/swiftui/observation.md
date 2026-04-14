@@ -1,7 +1,9 @@
 ---
 title: Observation
 source: https://developer.apple.com/documentation/observation
-timestamp: 2026-04-09T12:04:38.032Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/observation
+timestamp: 2026-04-14T13:14:41.710Z
 ---
 
 **Navigation:** [Observation](/documentation/observation)

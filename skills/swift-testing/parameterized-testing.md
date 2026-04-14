@@ -2,7 +2,9 @@
 title: Implementing parameterized tests
 description: Specify different input parameters to generate multiple test cases from a test function.
 source: https://developer.apple.com/documentation/testing/parameterizedtesting
-timestamp: 2026-04-09T12:04:31.429Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/testing/parameterizedtesting.json
+timestamp: 2026-04-14T13:14:34.265Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)

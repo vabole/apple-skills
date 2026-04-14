@@ -2,7 +2,9 @@
 title: UICollectionView
 description: An object that manages an ordered collection of data items and presents them using customizable layouts.
 source: https://developer.apple.com/documentation/uikit/uicollectionview
-timestamp: 2026-04-10T12:11:28.938Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uicollectionview.json
+timestamp: 2026-04-14T13:14:49.571Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

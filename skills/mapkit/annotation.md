@@ -2,7 +2,9 @@
 title: Annotation
 description: A customizable annotation used to indicate a location on a map.
 source: https://developer.apple.com/documentation/mapkit/annotation
-timestamp: 2026-04-09T12:04:25.338Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/mapkit/annotation.json
+timestamp: 2026-04-14T13:14:27.548Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)

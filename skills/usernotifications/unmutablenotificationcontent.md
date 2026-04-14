@@ -2,7 +2,9 @@
 title: UNMutableNotificationContent
 description: The editable content for a notification.
 source: https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent
-timestamp: 2026-04-09T13:37:47.801Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent.json
+timestamp: 2026-04-14T13:14:55.860Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)

@@ -2,7 +2,9 @@
 title: Applying Liquid Glass to custom views
 description: Configure, combine, and morph views using Liquid Glass effects.
 source: https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views
-timestamp: 2026-04-09T13:37:27.216Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/applying-liquid-glass-to-custom-views.json
+timestamp: 2026-04-14T13:14:24.807Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

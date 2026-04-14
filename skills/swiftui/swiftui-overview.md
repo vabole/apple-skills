@@ -1,7 +1,9 @@
 ---
 title: SwiftUI
 source: https://developer.apple.com/documentation/swiftui
-timestamp: 2026-04-09T12:04:40.436Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/swiftui
+timestamp: 2026-04-14T13:14:43.808Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

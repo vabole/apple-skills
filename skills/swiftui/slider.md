@@ -2,7 +2,9 @@
 title: Slider
 description: A control for selecting a value from a bounded linear range of values.
 source: https://developer.apple.com/documentation/swiftui/slider
-timestamp: 2026-04-09T13:37:43.916Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/slider.json
+timestamp: 2026-04-14T13:14:43.277Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

@@ -2,7 +2,9 @@
 title: StoreView
 description: A view that merchandises a collection of In-App Purchase products.
 source: https://developer.apple.com/documentation/storekit/storeview
-timestamp: 2026-04-09T12:04:28.283Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/storekit/storeview.json
+timestamp: 2026-04-14T13:14:30.564Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)

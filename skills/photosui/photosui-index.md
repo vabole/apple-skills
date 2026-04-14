@@ -1,7 +1,9 @@
 ---
 title: PhotosUI
 source: https://developer.apple.com/documentation/photosui
-timestamp: 2026-04-09T12:04:27.440Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/photosui
+timestamp: 2026-04-14T13:14:29.865Z
 ---
 
 **Navigation:** [PhotosUI](/documentation/photosui)

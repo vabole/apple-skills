@@ -2,7 +2,9 @@
 title: Defining test functions
 description: Define a test function to validate that code is working correctly.
 source: https://developer.apple.com/documentation/testing/definingtests
-timestamp: 2026-04-09T12:04:30.626Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/testing/definingtests.json
+timestamp: 2026-04-14T13:14:33.368Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)

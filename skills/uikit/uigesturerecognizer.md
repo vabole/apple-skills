@@ -2,7 +2,9 @@
 title: UIGestureRecognizer
 description: The base class for concrete gesture recognizers.
 source: https://developer.apple.com/documentation/uikit/uigesturerecognizer
-timestamp: 2026-04-10T12:11:34.690Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uigesturerecognizer.json
+timestamp: 2026-04-14T13:14:50.619Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

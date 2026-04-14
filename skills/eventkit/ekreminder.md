@@ -2,7 +2,9 @@
 title: EKReminder
 description: A class that represents a reminder in a calendar.
 source: https://developer.apple.com/documentation/eventkit/ekreminder
-timestamp: 2026-04-09T12:04:10.087Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/eventkit/ekreminder.json
+timestamp: 2026-04-14T13:14:10.652Z
 ---
 
 **Navigation:** [EventKit](/documentation/eventkit)

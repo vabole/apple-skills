@@ -2,7 +2,9 @@
 title: Action sheets
 description: An action sheet is a modal view that presents choices related to an action people initiate.
 source: https://developer.apple.com/design/human-interface-guidelines/action-sheets
-timestamp: 2026-04-09T13:37:18.063Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/action-sheets.json
+timestamp: 2026-04-14T13:14:12.718Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

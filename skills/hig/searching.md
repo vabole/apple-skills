@@ -2,7 +2,9 @@
 title: Searching
 description: People use various search techniques to find content on their device, within an app, and within a document or file.
 source: https://developer.apple.com/design/human-interface-guidelines/searching
-timestamp: 2026-04-09T13:37:23.883Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/searching.json
+timestamp: 2026-04-14T13:14:19.562Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

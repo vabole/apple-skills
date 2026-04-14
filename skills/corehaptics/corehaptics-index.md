@@ -1,7 +1,9 @@
 ---
 title: Core Haptics
 source: https://developer.apple.com/documentation/corehaptics
-timestamp: 2026-04-09T12:04:09.260Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/corehaptics
+timestamp: 2026-04-14T13:14:10.062Z
 ---
 
 **Navigation:** [Core Haptics](/documentation/corehaptics)

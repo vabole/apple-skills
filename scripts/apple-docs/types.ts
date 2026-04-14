@@ -86,4 +86,12 @@ export interface FrontMatter {
   title: string
   description: string
   source: string
+  sourceKind?: string
+  sourceJson?: string | null
+}
+
+export type AttributionMode = "current" | "annotated" | "expanded"
+
+export interface RenderOptions {
+  attributionMode?: AttributionMode
 }

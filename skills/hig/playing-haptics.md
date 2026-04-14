@@ -2,7 +2,9 @@
 title: Playing haptics
 description: Playing haptics can engage people’s sense of touch and bring their familiarity with the physical world into your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
-timestamp: 2026-04-09T13:37:23.078Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/playing-haptics.json
+timestamp: 2026-04-14T13:14:18.698Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

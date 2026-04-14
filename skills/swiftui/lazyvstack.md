@@ -2,7 +2,9 @@
 title: LazyVStack
 description: A view that arranges its children in a line that grows vertically, creating items only as needed.
 source: https://developer.apple.com/documentation/swiftui/lazyvstack
-timestamp: 2026-04-09T12:04:36.844Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/lazyvstack.json
+timestamp: 2026-04-14T13:14:40.332Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

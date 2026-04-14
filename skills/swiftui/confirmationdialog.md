@@ -2,7 +2,9 @@
 title: confirmationDialog(_:isPresented:titleVisibility:actions:)
 description: Presents a confirmation dialog when a given condition is true, using a text view for the title.
 source: https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)
-timestamp: 2026-04-09T12:04:34.570Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:).json
+timestamp: 2026-04-14T13:14:37.780Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)

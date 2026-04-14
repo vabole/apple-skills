@@ -2,7 +2,9 @@
 title: TipUIPopoverViewController
 description: A view controller that displays a popover tip in UIKit applications.
 source: https://developer.apple.com/documentation/tipkit/tipuipopoverviewcontroller
-timestamp: 2026-04-10T12:12:56.005Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller.json
+timestamp: 2026-04-14T13:14:46.521Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit)

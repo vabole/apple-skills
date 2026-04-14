@@ -1,7 +1,9 @@
 ---
 title: SwiftData
 source: https://developer.apple.com/documentation/swiftdata
-timestamp: 2026-04-09T12:04:31.718Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/swiftdata
+timestamp: 2026-04-14T13:14:34.902Z
 ---
 
 **Navigation:** [SwiftData](/documentation/swiftdata)

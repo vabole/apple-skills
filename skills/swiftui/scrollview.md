@@ -2,7 +2,9 @@
 title: ScrollView
 description: A scrollable view.
 source: https://developer.apple.com/documentation/swiftui/scrollview
-timestamp: 2026-04-09T13:37:43.413Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/scrollview.json
+timestamp: 2026-04-14T13:14:42.774Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

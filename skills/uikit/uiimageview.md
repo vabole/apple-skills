@@ -2,7 +2,9 @@
 title: UIImageView
 description: A view that displays a single image or a sequence of animated images in your interface.
 source: https://developer.apple.com/documentation/uikit/uiimageview
-timestamp: 2026-04-10T12:11:23.685Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiimageview.json
+timestamp: 2026-04-14T13:14:51.667Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

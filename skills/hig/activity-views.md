@@ -2,7 +2,9 @@
 title: Activity views
 description: An activity view — often called a *share sheet* — presents a range of tasks that people can perform in the current context.
 source: https://developer.apple.com/design/human-interface-guidelines/activity-views
-timestamp: 2026-04-09T13:37:18.463Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/activity-views.json
+timestamp: 2026-04-14T13:14:12.945Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

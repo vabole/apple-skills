@@ -2,7 +2,9 @@
 title: TipView
 description: A user interface element that represents an inline tip.
 source: https://developer.apple.com/documentation/tipkit/tipview
-timestamp: 2026-04-09T12:04:43.352Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/tipkit/tipview.json
+timestamp: 2026-04-14T13:14:47.475Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit)

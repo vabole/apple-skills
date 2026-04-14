@@ -2,7 +2,9 @@
 title: UIBlurEffect
 description: An object that applies a blurring effect to the content layered behind a visual effect view.
 source: https://developer.apple.com/documentation/uikit/uiblureffect
-timestamp: 2026-04-10T12:11:38.879Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiblureffect.json
+timestamp: 2026-04-14T13:14:49.093Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

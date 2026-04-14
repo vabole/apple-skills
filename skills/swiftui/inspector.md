@@ -2,7 +2,9 @@
 title: inspector(isPresented:content:)
 description: Inserts an inspector at the applied position in the view hierarchy.
 source: https://developer.apple.com/documentation/swiftui/view/inspector(ispresented:content:)
-timestamp: 2026-04-10T12:12:56.036Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/inspector(ispresented:content:).json
+timestamp: 2026-04-14T13:14:39.719Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)

@@ -2,7 +2,9 @@
 title: Expectations and confirmations
 description: Check for expected values, outcomes, and asynchronous events in tests.
 source: https://developer.apple.com/documentation/testing/expectations
-timestamp: 2026-04-09T12:04:30.915Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/testing/expectations.json
+timestamp: 2026-04-14T13:14:33.580Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)

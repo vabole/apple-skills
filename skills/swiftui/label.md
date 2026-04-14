@@ -2,7 +2,9 @@
 title: Label
 description: A standard label for user interface items, consisting of an icon with a title.
 source: https://developer.apple.com/documentation/swiftui/label
-timestamp: 2026-04-09T12:04:36.445Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/label.json
+timestamp: 2026-04-14T13:14:39.924Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

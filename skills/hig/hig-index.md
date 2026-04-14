@@ -2,7 +2,9 @@
 title: Human Interface Guidelines
 description: Apple's Human Interface Guidelines - Complete table of contents
 source: https://developer.apple.com/design/human-interface-guidelines/
-timestamp: 2026-04-09T12:04:14.438Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/design--human-interface-guidelines
+timestamp: 2026-04-14T13:14:14.613Z
 ---
 
 # Human Interface Guidelines

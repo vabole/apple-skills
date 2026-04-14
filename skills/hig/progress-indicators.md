@@ -2,7 +2,9 @@
 title: Progress indicators
 description: Progress indicators let people know that your app isn’t stalled while it loads content or performs lengthy operations.
 source: https://developer.apple.com/design/human-interface-guidelines/progress-indicators
-timestamp: 2026-04-09T13:37:23.472Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/progress-indicators.json
+timestamp: 2026-04-14T13:14:19.063Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

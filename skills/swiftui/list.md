@@ -2,7 +2,9 @@
 title: List
 description: A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
 source: https://developer.apple.com/documentation/swiftui/list
-timestamp: 2026-04-09T13:37:41.554Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/list.json
+timestamp: 2026-04-14T13:14:40.805Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

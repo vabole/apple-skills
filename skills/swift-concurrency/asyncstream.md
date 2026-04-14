@@ -2,7 +2,9 @@
 title: AsyncStream
 description: An asynchronous sequence generated from a closure that calls a continuation to produce new elements.
 source: https://developer.apple.com/documentation/swift/asyncstream
-timestamp: 2026-04-09T12:04:29.574Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swift/asyncstream.json
+timestamp: 2026-04-14T13:14:31.954Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)

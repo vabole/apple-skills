@@ -2,7 +2,9 @@
 title: NSLayoutConstraint
 description: The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
 source: https://developer.apple.com/documentation/uikit/nslayoutconstraint
-timestamp: 2026-04-10T12:11:30.879Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/nslayoutconstraint.json
+timestamp: 2026-04-14T13:14:47.808Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

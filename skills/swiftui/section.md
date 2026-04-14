@@ -2,7 +2,9 @@
 title: Section
 description: A container view that you can use to add hierarchy within certain views.
 source: https://developer.apple.com/documentation/swiftui/section
-timestamp: 2026-04-09T12:04:39.196Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/section.json
+timestamp: 2026-04-14T13:14:42.974Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

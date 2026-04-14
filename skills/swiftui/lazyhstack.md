@@ -2,7 +2,9 @@
 title: LazyHStack
 description: A view that arranges its children in a line that grows horizontally, creating items only as needed.
 source: https://developer.apple.com/documentation/swiftui/lazyhstack
-timestamp: 2026-04-09T12:04:36.669Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/lazyhstack.json
+timestamp: 2026-04-14T13:14:40.130Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

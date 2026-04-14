@@ -2,7 +2,9 @@
 title: Spacer
 description: A flexible space that expands along the major axis of its containing stack layout, or on both axes if not contained in a stack.
 source: https://developer.apple.com/documentation/swiftui/spacer
-timestamp: 2026-04-09T13:37:44.131Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/spacer.json
+timestamp: 2026-04-14T13:14:43.482Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

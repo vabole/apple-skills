@@ -1,7 +1,9 @@
 ---
 title: Combine
 source: https://developer.apple.com/documentation/combine
-timestamp: 2026-04-09T12:04:08.083Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/combine
+timestamp: 2026-04-14T13:14:09.380Z
 ---
 
 **Navigation:** [Combine](/documentation/combine)

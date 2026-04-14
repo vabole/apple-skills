@@ -2,7 +2,9 @@
 title: Transaction
 description: Information that represents the customer’s purchase of a product in your app.
 source: https://developer.apple.com/documentation/storekit/transaction
-timestamp: 2026-04-09T12:04:28.860Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/storekit/transaction.json
+timestamp: 2026-04-14T13:14:31.237Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)

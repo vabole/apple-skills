@@ -1,7 +1,9 @@
 ---
 title: User Notifications
 source: https://developer.apple.com/documentation/usernotifications
-timestamp: 2026-04-09T12:04:43.544Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/index/usernotifications
+timestamp: 2026-04-14T13:14:55.373Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)

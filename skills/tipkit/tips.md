@@ -2,7 +2,9 @@
 title: Tips
 description: TipKit namespace.
 source: https://developer.apple.com/documentation/tipkit/tips
-timestamp: 2026-04-09T12:04:43.176Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/tipkit/tips.json
+timestamp: 2026-04-14T13:14:47.175Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit)

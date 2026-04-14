@@ -2,7 +2,9 @@
 title: UIColor
 description: An object that stores color data and sometimes opacity.
 source: https://developer.apple.com/documentation/uikit/uicolor
-timestamp: 2026-04-10T12:11:24.835Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uicolor.json
+timestamp: 2026-04-14T13:14:49.842Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

@@ -2,7 +2,9 @@
 title: Motion
 description: Beautiful, fluid motions bring the interface to life, conveying status, providing feedback and instruction, and enriching the visual experience of your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/motion
-timestamp: 2026-04-09T13:37:21.565Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/motion.json
+timestamp: 2026-04-14T13:14:17.191Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

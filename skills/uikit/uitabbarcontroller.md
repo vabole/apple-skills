@@ -2,7 +2,9 @@
 title: UITabBarController
 description: A container view controller that manages a multiselection interface, where the selection determines which child view controller to display.
 source: https://developer.apple.com/documentation/uikit/uitabbarcontroller
-timestamp: 2026-04-10T12:11:32.589Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uitabbarcontroller.json
+timestamp: 2026-04-14T13:14:53.667Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

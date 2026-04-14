@@ -2,7 +2,9 @@
 title: sheet(isPresented:onDismiss:content:)
 description: Presents a sheet when a binding to a Boolean value that you provide is true.
 source: https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)
-timestamp: 2026-04-09T13:37:43.749Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/sheet(ispresented:ondismiss:content:).json
+timestamp: 2026-04-14T13:14:42.994Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)

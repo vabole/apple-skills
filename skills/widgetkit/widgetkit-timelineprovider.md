@@ -2,7 +2,9 @@
 title: TimelineProvider
 description: A type that advises WidgetKit when to update a widget’s display.
 source: https://developer.apple.com/documentation/widgetkit/timelineprovider
-timestamp: 2026-04-09T13:37:48.984Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/widgetkit/timelineprovider.json
+timestamp: 2026-04-14T13:14:57.164Z
 ---
 
 **Navigation:** [WidgetKit](/documentation/widgetkit)

@@ -2,7 +2,9 @@
 title: HKUnit
 description: A class for managing the units of measure within HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkunit
-timestamp: 2026-04-09T12:04:12.110Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkunit.json
+timestamp: 2026-04-14T13:14:12.346Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)

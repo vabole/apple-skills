@@ -2,7 +2,9 @@
 title: UIView
 description: An object that manages the content for a rectangular area on the screen.
 source: https://developer.apple.com/documentation/uikit/uiview
-timestamp: 2026-04-10T12:11:16.651Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiview.json
+timestamp: 2026-04-14T13:14:54.309Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -26,16 +28,16 @@ Views are the fundamental building blocks of your app’s user interface, and th
 Because view objects are the main way your application interacts with the user, they have a number of responsibilities. Here are just a few:
 
 - Drawing and animation
-
+   
    - Views draw content in their rectangular area using UIKit or Core Graphics.
    - You can animate some view properties to new values.
 - Layout and subview management
-
+   
    - Views may contain zero or more subviews.
    - Views can adjust the size and position of their subviews.
    - Use Auto Layout to define the rules for resizing and repositioning your views in response to changes in the view hierarchy.
 - Event handling
-
+   
    - A view is a subclass of [UIResponder](/documentation/uikit/uiresponder) and can respond to touches and other types of events.
    - Views can install gesture recognizers to handle common gestures.
 
@@ -99,23 +101,23 @@ For information about ways to avoid subclassing, see [Alternatives to subclassin
 When subclassing [UIView](/documentation/uikit/uiview), there are only a handful of methods you should override and many methods that you might override depending on your needs. Because [UIView](/documentation/uikit/uiview) is a highly configurable class, there are also many ways to implement sophisticated view behaviors without overriding custom methods, which are discussed in the Alternatives to Subclassing section. In the meantime, the following list includes the methods you might consider overriding in your [UIView](/documentation/uikit/uiview) subclasses:
 
 - Initialization:
-
+   
    - [init(frame:)](/documentation/uikit/uiview/init(frame:)) - It is recommended that you implement this method. You can also implement custom initialization methods in addition to, or instead of, this method.
    - [init(coder:)](/documentation/uikit/uiview/init(coder:)) - Implement this method if you load your view from storyboards or nib files and your view requires custom initialization.
    - [layerClass](/documentation/uikit/uiview/layerclass) Use this property only if you want your view to use a different Core Animation layer for its backing store. For example, if your view uses tiling to display a large scrollable area, you might want to set the property to the [CATiledLayer](/documentation/QuartzCore/CATiledLayer) class.
 - Drawing and printing:
-
+   
    - [draw(_:)](/documentation/uikit/uiview/draw(_:)) - Implement this method if your view draws custom content. If your view does not do any custom drawing, avoid overriding this method.
    - [draw(_:for:)](/documentation/uikit/uiview/draw(_:for:)) - Implement this method only if you want to draw your view’s content differently during printing.
 - Layout and Constraints:
-
+   
    - [requiresConstraintBasedLayout](/documentation/uikit/uiview/requiresconstraintbasedlayout) Use this property if your view class requires constraints to work properly.
    - [updateConstraints()](/documentation/uikit/uiview/updateconstraints()) - Implement this method if your view needs to create custom constraints between your subviews.
    - [alignmentRect(forFrame:)](/documentation/uikit/uiview/alignmentrect(forframe:)), [frame(forAlignmentRect:)](/documentation/uikit/uiview/frame(foralignmentrect:)) - Implement these methods to override how your views are aligned to other views.
    - [didAddSubview(_:)](/documentation/uikit/uiview/didaddsubview(_:)), [willRemoveSubview(_:)](/documentation/uikit/uiview/willremovesubview(_:)) - Implement these methods as needed to track the additions and removals of subviews.
    - [willMove(toSuperview:)](/documentation/uikit/uiview/willmove(tosuperview:)), [didMoveToSuperview()](/documentation/uikit/uiview/didmovetosuperview()) - Implement these methods as needed to track the movement of the current view in your view hierarchy.
 - Event Handling:
-
+   
    - [gestureRecognizerShouldBegin(_:)](/documentation/uikit/uiview/gesturerecognizershouldbegin(_:)) - Implement this method if your view handles touch events directly and might want to prevent attached gesture recognizers from triggering additional actions.
    - [touchesBegan(_:with:)](/documentation/uikit/uiresponder/touchesbegan(_:with:)), [touchesMoved(_:with:)](/documentation/uikit/uiresponder/touchesmoved(_:with:)), [touchesEnded(_:with:)](/documentation/uikit/uiresponder/touchesended(_:with:)), [touchesCancelled(_:with:)](/documentation/uikit/uiresponder/touchescancelled(_:with:)) - Implement these methods if you need to handle touch events directly. (For gesture-based input, use gesture recognizers.)
 

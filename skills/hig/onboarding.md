@@ -2,7 +2,9 @@
 title: Onboarding
 description: Onboarding can help people get a quick start using your app or game.
 source: https://developer.apple.com/design/human-interface-guidelines/onboarding
-timestamp: 2026-04-09T13:37:22.440Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/onboarding.json
+timestamp: 2026-04-14T13:14:18.327Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

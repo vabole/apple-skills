@@ -2,7 +2,9 @@
 title: Segmented controls
 description: A segmented control is a linear set of two or more segments, each of which functions as a button.
 source: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
-timestamp: 2026-04-09T13:37:24.054Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/segmented-controls.json
+timestamp: 2026-04-14T13:14:19.801Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

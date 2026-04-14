@@ -2,7 +2,9 @@
 title: Status bars
 description: A status bar appears along the upper edge of the screen and displays information about the device’s current state, like the time, cellular carrier, and battery level.
 source: https://developer.apple.com/design/human-interface-guidelines/status-bars
-timestamp: 2026-04-09T13:37:25.554Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/status-bars.json
+timestamp: 2026-04-14T13:14:22.175Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

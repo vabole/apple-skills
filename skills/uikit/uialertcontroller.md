@@ -2,7 +2,9 @@
 title: UIAlertController
 description: An object that displays an alert message.
 source: https://developer.apple.com/documentation/uikit/uialertcontroller
-timestamp: 2026-04-10T12:11:35.800Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uialertcontroller.json
+timestamp: 2026-04-14T13:14:48.258Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -28,8 +30,8 @@ In addition to displaying a message to a user, you can associate actions with yo
 ### Swift
 
 ```swift
-let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert)
-alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert) 
+alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in 
 NSLog("The \"OK\" alert occured.")
 }))
 self.present(alert, animated: true, completion: nil)
@@ -41,10 +43,10 @@ self.present(alert, animated: true, completion: nil)
 UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
                                message:@"This is an alert."
                                preferredStyle:UIAlertControllerStyleAlert];
-
+ 
 UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
    handler:^(UIAlertAction * action) {}];
-
+ 
 [alert addAction:defaultAction];
 [self presentViewController:alert animated:YES completion:nil];
 ```

@@ -2,7 +2,9 @@
 title: Typography
 description: Your typographic choices can help you display legible text, convey an information hierarchy, communicate important content, and express your brand or style.
 source: https://developer.apple.com/design/human-interface-guidelines/typography
-timestamp: 2026-04-09T13:37:26.808Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/typography.json
+timestamp: 2026-04-14T13:14:23.885Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)

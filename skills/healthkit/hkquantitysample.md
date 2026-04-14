@@ -2,7 +2,9 @@
 title: HKQuantitySample
 description: A sample that represents a quantity, including the value and the units.
 source: https://developer.apple.com/documentation/healthkit/hkquantitysample
-timestamp: 2026-04-09T12:04:11.226Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitysample.json
+timestamp: 2026-04-14T13:14:11.466Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)

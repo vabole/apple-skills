@@ -2,7 +2,9 @@
 title: TextField
 description: A control that displays an editable text interface.
 source: https://developer.apple.com/documentation/swiftui/textfield
-timestamp: 2026-04-09T13:37:45.100Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/textfield.json
+timestamp: 2026-04-14T13:14:44.546Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

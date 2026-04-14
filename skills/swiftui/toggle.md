@@ -2,7 +2,9 @@
 title: Toggle
 description: A control that toggles between on and off states.
 source: https://developer.apple.com/documentation/swiftui/toggle
-timestamp: 2026-04-09T12:04:41.401Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/toggle.json
+timestamp: 2026-04-14T13:14:44.851Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

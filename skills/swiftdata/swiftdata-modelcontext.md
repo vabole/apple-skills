@@ -2,7 +2,9 @@
 title: ModelContext
 description: An object that enables you to fetch, insert, and delete models, and save any changes to disk.
 source: https://developer.apple.com/documentation/swiftdata/modelcontext
-timestamp: 2026-04-09T12:04:32.138Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftdata/modelcontext.json
+timestamp: 2026-04-14T13:14:35.297Z
 ---
 
 **Navigation:** [SwiftData](/documentation/swiftdata)

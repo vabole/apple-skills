@@ -2,7 +2,9 @@
 title: AreaMark
 description: Chart content that represents data using the area of one or more regions.
 source: https://developer.apple.com/documentation/charts/areamark
-timestamp: 2026-04-09T13:37:37.829Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/charts/areamark.json
+timestamp: 2026-04-14T13:14:35.970Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)

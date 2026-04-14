@@ -2,7 +2,9 @@
 title: HKQuantityTypeIdentifier
 description: The identifiers that create quantity type objects.
 source: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
-timestamp: 2026-04-09T12:04:11.511Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitytypeidentifier.json
+timestamp: 2026-04-14T13:14:11.702Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)

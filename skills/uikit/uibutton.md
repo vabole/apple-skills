@@ -2,7 +2,9 @@
 title: UIButton
 description: A control that executes your custom code in response to user interactions.
 source: https://developer.apple.com/documentation/uikit/uibutton
-timestamp: 2026-04-10T12:11:20.344Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uibutton.json
+timestamp: 2026-04-14T13:14:49.322Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

@@ -2,7 +2,9 @@
 title: UISplitViewController
 description: A container view controller that implements a hierarchical interface.
 source: https://developer.apple.com/documentation/uikit/uisplitviewcontroller
-timestamp: 2026-04-10T12:11:33.646Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uisplitviewcontroller.json
+timestamp: 2026-04-14T13:14:52.945Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)

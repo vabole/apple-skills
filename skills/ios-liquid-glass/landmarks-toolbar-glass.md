@@ -2,7 +2,9 @@
 title: Landmarks: Refining the system provided Liquid Glass effect in toolbars
 description: Organize toolbars into related groupings to improve their appearance and utility.
 source: https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars
-timestamp: 2026-04-09T13:37:28.726Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars.json
+timestamp: 2026-04-14T13:14:26.604Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)

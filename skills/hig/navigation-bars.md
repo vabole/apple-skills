@@ -2,7 +2,9 @@
 title: Toolbars
 description: A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
 source: https://developer.apple.com/design/human-interface-guidelines/navigation-bars
-timestamp: 2026-04-09T13:37:22.258Z
+source_kind: apple-docc
+source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/navigation-bars.json
+timestamp: 2026-04-14T13:14:18.111Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
