@@ -3,7 +3,7 @@ title: StoreKit
 source: https://developer.apple.com/documentation/storekit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/storekit
-timestamp: 2026-04-14T13:14:30.363Z
+timestamp: 2026-04-15T06:05:31.567Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)
@@ -1047,7 +1047,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 ###### Structures
 
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let autoRenewPreference: String](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype)
@@ -1337,7 +1337,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 ###### Structures
 
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let autoRenewPreference: String](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype)
@@ -1365,20 +1365,20 @@ timestamp: 2026-04-14T13:14:30.363Z
 ##### Structures
 
 - [Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype)
-###### Type Properties
+###### Type Properties - generated
 
 - [static let monthly: Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype/monthly)
 - [static let upFront: Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype/upfront)
 
 - [Product.SubscriptionInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/commitmentinfo)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let displayPrice: String](/documentation/storekit/product/subscriptioninfo/commitmentinfo/displayprice)
 - [let period: SubscriptionPeriod](/documentation/storekit/product/subscriptioninfo/commitmentinfo/period)
 - [let price: Decimal](/documentation/storekit/product/subscriptioninfo/commitmentinfo/price)
 
 - [Product.SubscriptionInfo.PricingTerms](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let billingDisplayPrice: String](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/billingdisplayprice)
 - [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/billingperiod)
@@ -1386,7 +1386,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 - [let billingPrice: Decimal](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/billingprice)
 - [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/commitmentinfo)
 - [let subscriptionOffers: [Product.SubscriptionOffer]](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/subscriptionoffers)
-###### Subscripts
+###### Subscripts - generated
 
 - [subscript(offers _: Product.SubscriptionOffer.OfferType) -> [Product.SubscriptionOffer]](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/subscript(offers:))
 
@@ -1651,7 +1651,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 ###### Structures
 
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let autoRenewPreference: String](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype)
@@ -1932,7 +1932,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 ###### Structures
 
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let autoRenewPreference: String](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype)
@@ -2222,7 +2222,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 ##### Structures
 
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let autoRenewPreference: String](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype)
@@ -2250,20 +2250,20 @@ timestamp: 2026-04-14T13:14:30.363Z
 #### Structures
 
 - [Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype)
-##### Type Properties
+##### Type Properties - generated
 
 - [static let monthly: Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype/monthly)
 - [static let upFront: Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype/upfront)
 
 - [Product.SubscriptionInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/commitmentinfo)
-##### Instance Properties
+##### Instance Properties - generated
 
 - [let displayPrice: String](/documentation/storekit/product/subscriptioninfo/commitmentinfo/displayprice)
 - [let period: SubscriptionPeriod](/documentation/storekit/product/subscriptioninfo/commitmentinfo/period)
 - [let price: Decimal](/documentation/storekit/product/subscriptioninfo/commitmentinfo/price)
 
 - [Product.SubscriptionInfo.PricingTerms](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct)
-##### Instance Properties
+##### Instance Properties - generated
 
 - [let billingDisplayPrice: String](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/billingdisplayprice)
 - [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/billingperiod)
@@ -2271,7 +2271,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 - [let billingPrice: Decimal](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/billingprice)
 - [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/commitmentinfo)
 - [let subscriptionOffers: [Product.SubscriptionOffer]](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/subscriptionoffers)
-##### Subscripts
+##### Subscripts - generated
 
 - [subscript(offers _: Product.SubscriptionOffer.OfferType) -> [Product.SubscriptionOffer]](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct/subscript(offers:))
 
@@ -2568,7 +2568,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 #### Structures
 
 - [Transaction.CommitmentInfo](/documentation/storekit/transaction/commitmentinfo-swift.struct)
-##### Instance Properties
+##### Instance Properties - generated
 
 - [let billingPeriodNumber: UInt64](/documentation/storekit/transaction/commitmentinfo-swift.struct/billingperiodnumber)
 - [let expirationDate: Date](/documentation/storekit/transaction/commitmentinfo-swift.struct/expirationdate)
@@ -2820,7 +2820,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 ##### Structures
 
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct)
-###### Instance Properties
+###### Instance Properties - generated
 
 - [let autoRenewPreference: String](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype)
@@ -2997,7 +2997,7 @@ timestamp: 2026-04-14T13:14:30.363Z
 #### Structures
 
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct)
-##### Instance Properties
+##### Instance Properties - generated
 
 - [let autoRenewPreference: String](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype)
