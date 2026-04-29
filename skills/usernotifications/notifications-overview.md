@@ -3,7 +3,7 @@ title: User Notifications
 source: https://developer.apple.com/documentation/usernotifications
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/usernotifications
-timestamp: 2026-04-14T13:14:55.373Z
+timestamp: 2026-04-29T06:14:27.434Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)
@@ -244,6 +244,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 ### Instance Properties
 
 - [var directMessagesSetting: UNNotificationSetting](/documentation/usernotifications/unnotificationsettings/directmessagessetting)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationsettings/init(coder:))
 
 ## Remote notifications
 
@@ -291,12 +294,18 @@ timestamp: 2026-04-14T13:14:55.373Z
 - [var identifier: String](/documentation/usernotifications/unnotificationrequest/identifier)
 - [var content: UNNotificationContent](/documentation/usernotifications/unnotificationrequest/content)
 - [var trigger: UNNotificationTrigger?](/documentation/usernotifications/unnotificationrequest/trigger)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationrequest/init(coder:))
 
 - [UNNotification](/documentation/usernotifications/unnotification)
 ### Getting the Notification Details
 
 - [var request: UNNotificationRequest](/documentation/usernotifications/unnotification/request)
 - [var date: Date](/documentation/usernotifications/unnotification/date)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotification/init(coder:))
 
 ## Push notifications in Safari
 
@@ -310,6 +319,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 
 - [convenience init(systemImageName: String)](/documentation/usernotifications/unnotificationactionicon/init(systemimagename:))
 - [convenience init(templateImageName: String)](/documentation/usernotifications/unnotificationactionicon/init(templateimagename:))
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationactionicon/init(coder:))
 
 - [UNMutableNotificationContent](/documentation/usernotifications/unmutablenotificationcontent)
 ### Providing the primary content
@@ -391,11 +403,14 @@ timestamp: 2026-04-14T13:14:55.373Z
 ### Updating the notification’s content
 
 - [func updating(from: any UNNotificationContentProviding) throws -> UNNotificationContent](/documentation/usernotifications/unnotificationcontent/updating(from:))
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationcontent/init(coder:))
 
 - [UNNotificationAttachment](/documentation/usernotifications/unnotificationattachment)
 ### Creating an Attachment
 
-- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:))
+- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-83grx)
 - [let UNNotificationAttachmentOptionsTypeHintKey: String](/documentation/usernotifications/unnotificationattachmentoptionstypehintkey)
 - [let UNNotificationAttachmentOptionsThumbnailHiddenKey: String](/documentation/usernotifications/unnotificationattachmentoptionsthumbnailhiddenkey)
 - [let UNNotificationAttachmentOptionsThumbnailClippingRectKey: String](/documentation/usernotifications/unnotificationattachmentoptionsthumbnailclippingrectkey)
@@ -405,6 +420,10 @@ timestamp: 2026-04-14T13:14:55.373Z
 - [var identifier: String](/documentation/usernotifications/unnotificationattachment/identifier)
 - [var url: URL](/documentation/usernotifications/unnotificationattachment/url)
 - [var type: String](/documentation/usernotifications/unnotificationattachment/type)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationattachment/init(coder:))
+- [convenience init(identifier: String, URL: URL, options: [AnyHashable : Any]?) throws](/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-7oony)
 
 - [UNNotificationSound](/documentation/usernotifications/unnotificationsound)
 ### Creating Notification Sounds
@@ -423,6 +442,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 ### Type Methods
 
 - [class func ringtoneSoundNamed(UNNotificationSoundName) -> Self](/documentation/usernotifications/unnotificationsound/ringtonesoundnamed(_:))
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationsound/init(coder:))
 
 - [UNNotificationSoundName](/documentation/usernotifications/unnotificationsoundname)
 ### Initializers
@@ -440,6 +462,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 
 - [func nextTriggerDate() -> Date?](/documentation/usernotifications/uncalendarnotificationtrigger/nexttriggerdate())
 - [var dateComponents: DateComponents](/documentation/usernotifications/uncalendarnotificationtrigger/datecomponents)
+### Initializers
+
+- [convenience init(dateMatchingComponents: DateComponents, repeats: Bool)](/documentation/usernotifications/uncalendarnotificationtrigger/init(datematchingcomponents:repeats:))
 
 - [UNTimeIntervalNotificationTrigger](/documentation/usernotifications/untimeintervalnotificationtrigger)
 ### Creating a Time Interval Trigger
@@ -463,6 +488,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 ### Configuring the Trigger’s Behavior
 
 - [var repeats: Bool](/documentation/usernotifications/unnotificationtrigger/repeats)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationtrigger/init(coder:))
 
 ## Notification categories and user actions
 
@@ -499,6 +527,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 
 - [static var customDismissAction: UNNotificationCategoryOptions](/documentation/usernotifications/unnotificationcategoryoptions/customdismissaction)
 
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationcategory/init(coder:))
 
 - [UNNotificationAction](/documentation/usernotifications/unnotificationaction)
 ### Essentials
@@ -523,6 +554,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 - [static var destructive: UNNotificationActionOptions](/documentation/usernotifications/unnotificationactionoptions/destructive)
 - [static var foreground: UNNotificationActionOptions](/documentation/usernotifications/unnotificationactionoptions/foreground)
 
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationaction/init(coder:))
 
 - [UNTextInputNotificationAction](/documentation/usernotifications/untextinputnotificationaction)
 ### Essentials
@@ -545,6 +579,9 @@ timestamp: 2026-04-14T13:14:55.373Z
 - [var targetScene: UIScene?](/documentation/usernotifications/unnotificationresponse/targetscene)
 - [let UNNotificationDefaultActionIdentifier: String](/documentation/usernotifications/unnotificationdefaultactionidentifier)
 - [let UNNotificationDismissActionIdentifier: String](/documentation/usernotifications/unnotificationdismissactionidentifier)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/usernotifications/unnotificationresponse/init(coder:))
 
 - [UNTextInputNotificationResponse](/documentation/usernotifications/untextinputnotificationresponse)
 ### Getting the Text Response
