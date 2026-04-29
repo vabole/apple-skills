@@ -3,7 +3,7 @@ title: Core Haptics
 source: https://developer.apple.com/documentation/corehaptics
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/corehaptics
-timestamp: 2026-04-14T13:14:10.062Z
+timestamp: 2026-04-29T06:14:22.649Z
 ---
 
 **Navigation:** [Core Haptics](/documentation/corehaptics)
@@ -111,6 +111,9 @@ timestamp: 2026-04-14T13:14:10.062Z
 ### Managing Power
 
 - [var isAutoShutdownEnabled: Bool](/documentation/corehaptics/chhapticengine/isautoshutdownenabled)
+### Initializers
+
+- [init(andReturnError: ()) throws](/documentation/corehaptics/chhapticengine/init(andreturnerror:))
 ### Instance Properties
 
 - [var intendedSpatialExperience: any SpatialAudioExperience](/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0)
@@ -150,6 +153,9 @@ timestamp: 2026-04-14T13:14:10.062Z
 ### Exporting a Haptic Pattern
 
 - [func exportDictionary() throws -> [CHHapticPattern.Key : Any]](/documentation/corehaptics/chhapticpattern/exportdictionary())
+### Initializers
+
+- [init(contentsOfURL: URL) throws](/documentation/corehaptics/chhapticpattern/init(contentsofurl:))
 
 - [CHHapticPatternPlayer](/documentation/corehaptics/chhapticpatternplayer)
 ### Starting and Stopping Playback

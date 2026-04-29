@@ -4,7 +4,7 @@ description: A view that displays an embedded map interface.
 source: https://developer.apple.com/documentation/mapkit/map
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/mapkit/map.json
-timestamp: 2026-04-14T13:14:27.765Z
+timestamp: 2026-04-29T06:14:24.448Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)
@@ -102,7 +102,11 @@ You can also add a variety of controls to allow a person to interact with the ma
 ## Initializers
 
 - [init(bounds:interactionModes:selection:scope:content:)](/documentation/mapkit/map/init(bounds:interactionmodes:selection:scope:content:)-335qt)
+- [init(coordinateRegion:interactionModes:showsUserLocation:userTrackingMode:)](/documentation/mapkit/map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:)) Creates a map that displays a coordinate region and optionally configures available interactions, user location, and tracking behavior.
+- [init(coordinateRegion:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)](/documentation/mapkit/map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:)) Creates a map that displays a coordinate region with annotations, and optionally configures available interactions, user location, and tracking behavior.
 - [init(initialPosition:bounds:interactionModes:selection:scope:content:)](/documentation/mapkit/map/init(initialposition:bounds:interactionmodes:selection:scope:content:)-2u4ry)
+- [init(mapRect:interactionModes:showsUserLocation:userTrackingMode:)](/documentation/mapkit/map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:)) Creates a map that displays a map rectangle and optionally configures available interactions, user location, and tracking behavior.
+- [init(mapRect:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)](/documentation/mapkit/map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:)) Creates a map that displays a map rectangle with annotations, and optionally configures available interactions, user location, and tracking behavior.
 - [init(position:bounds:interactionModes:selection:scope:content:)](/documentation/mapkit/map/init(position:bounds:interactionmodes:selection:scope:content:)-96bhq)
 
 ## Essentials

@@ -4,7 +4,7 @@ description: A request to schedule a local notification, which includes the cont
 source: https://developer.apple.com/documentation/usernotifications/unnotificationrequest
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest.json
-timestamp: 2026-04-14T13:14:56.059Z
+timestamp: 2026-04-29T06:14:27.507Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)
@@ -69,6 +69,10 @@ let request = UNNotificationRequest(identifier: "com.example.mynotification", co
 - [identifier](/documentation/usernotifications/unnotificationrequest/identifier) The unique identifier for this notification request.
 - [content](/documentation/usernotifications/unnotificationrequest/content) The content associated with the notification.
 - [trigger](/documentation/usernotifications/unnotificationrequest/trigger) The conditions that trigger the delivery of the notification.
+
+## Initializers
+
+- [init(coder:)](/documentation/usernotifications/unnotificationrequest/init(coder:))
 
 ## Notification requests
 

@@ -4,7 +4,7 @@ description: An object that manages image data in your app.
 source: https://developer.apple.com/documentation/uikit/uiimage
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiimage.json
-timestamp: 2026-04-14T13:14:51.360Z
+timestamp: 2026-04-29T06:14:26.942Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -109,7 +109,6 @@ Image objects don’t provide direct access to their underlying image data. Howe
 
 ## Conforms To
 
-- [AttachableAsImage](/documentation/Testing/AttachableAsImage)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [Copyable](/documentation/Swift/Copyable)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
@@ -125,6 +124,7 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [NSSecureCoding](/documentation/Foundation/NSSecureCoding)
 - [Sendable](/documentation/Swift/Sendable)
 - [SendableMetatype](/documentation/Swift/SendableMetatype)
+- [Testing.AttachableAsImage](/doc://com.apple.uikit/7Testing17AttachableAsImageP)
 - [UIAccessibilityIdentification](/documentation/uikit/uiaccessibilityidentification)
 - [UIItemProviderPresentationSizeProviding](/documentation/uikit/uiitemproviderpresentationsizeproviding)
 
@@ -157,10 +157,10 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [init(contentsOfFile:)](/documentation/uikit/uiimage/init(contentsoffile:)) Initializes and returns the image object with the contents of the specified file.
 - [init(data:)](/documentation/uikit/uiimage/init(data:)) Initializes and returns the image object with the specified data.
 - [init(data:scale:)](/documentation/uikit/uiimage/init(data:scale:)) Initializes and returns the image object with the specified data and scale factor.
-- [init(cgImage:)](/documentation/uikit/uiimage/init(cgimage:)) Initializes and returns the image object with the specified Quartz image reference.
-- [init(cgImage:scale:orientation:)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:)) Initializes and returns an image object with the specified scale and orientation factors.
-- [init(ciImage:)](/documentation/uikit/uiimage/init(ciimage:)) Initializes and returns an image object with the specified Core Image object.
-- [init(ciImage:scale:orientation:)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:)) Initializes and returns an image object with the specified Core Image object and properties.
+- [init(cgImage:)](/documentation/uikit/uiimage/init(cgimage:)-14qlb) Initializes and returns the image object with the specified Quartz image reference.
+- [init(cgImage:scale:orientation:)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:)-2ouhh) Initializes and returns an image object with the specified scale and orientation factors.
+- [init(ciImage:)](/documentation/uikit/uiimage/init(ciimage:)-93vu1) Initializes and returns an image object with the specified Core Image object.
+- [init(ciImage:scale:orientation:)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:)-9gpyn) Initializes and returns an image object with the specified Core Image object and properties.
 - [UIImageReader](/documentation/uikit/uiimagereader-swift.struct)
 
 ## Creating animated images
@@ -263,6 +263,20 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [stretchableImage(withLeftCapWidth:topCapHeight:)](/documentation/uikit/uiimage/stretchableimage(withleftcapwidth:topcapheight:)) Creates and returns a new image object with the specified cap values.
 - [leftCapWidth](/documentation/uikit/uiimage/leftcapwidth) The horizontal end-cap size.
 - [topCapHeight](/documentation/uikit/uiimage/topcapheight) The vertical end-cap size.
+
+## Initializers
+
+- [init(CGImage:)](/documentation/uikit/uiimage/init(cgimage:)-8doi8)
+- [init(CGImage:)](/documentation/uikit/uiimage/init(cgimage:)-g30x)
+- [init(CGImage:scale:orientation:)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:)-3mxey)
+- [init(CGImage:scale:orientation:)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:)-3xlco)
+- [init(CIImage:)](/documentation/uikit/uiimage/init(ciimage:)-3kg9b)
+- [init(CIImage:)](/documentation/uikit/uiimage/init(ciimage:)-8dq4u)
+- [init(CIImage:scale:orientation:)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:)-3742c)
+- [init(CIImage:scale:orientation:)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:)-wlzf)
+- [init(coder:)](/documentation/uikit/uiimage/init(coder:))
+- [init(named:inBundle:compatibleWithTraitCollection:)](/documentation/uikit/uiimage/init(named:inbundle:compatiblewithtraitcollection:))
+- [init(named:inBundle:withConfiguration:)](/documentation/uikit/uiimage/init(named:inbundle:withconfiguration:))
 
 ## Representations
 

@@ -4,7 +4,7 @@ description: Information that represents the customer’s purchase of a product 
 source: https://developer.apple.com/documentation/storekit/transaction
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/storekit/transaction.json
-timestamp: 2026-04-14T13:14:31.237Z
+timestamp: 2026-04-29T06:14:24.840Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)
@@ -13,7 +13,7 @@ timestamp: 2026-04-14T13:14:31.237Z
 
 # Transaction
 
-**Available on:** iOS 15.0+, iPadOS 15.0+, macOS 12.0+, tvOS 15.0+, visionOS 1.0+, watchOS 8.0+
+**Available on:** iOS 15.0+, iPadOS 15.0+, Mac Catalyst 15.0+, macOS 12.0+, tvOS 15.0+, visionOS 1.0+, watchOS 8.0+
 
 > Information that represents the customer’s purchase of a product in your app.
 

@@ -4,7 +4,7 @@ description: A view that merchandises a collection of auto-renewable subscriptio
 source: https://developer.apple.com/documentation/storekit/subscriptionstoreview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/storekit/subscriptionstoreview.json
-timestamp: 2026-04-14T13:14:30.977Z
+timestamp: 2026-04-29T06:14:24.815Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)
@@ -13,7 +13,7 @@ timestamp: 2026-04-14T13:14:30.977Z
 
 # SubscriptionStoreView
 
-**Available on:** iOS 17.0+, iPadOS 17.0+, macOS 14.0+, tvOS 17.0+, visionOS 1.0+, watchOS 10.0+
+**Available on:** iOS 17.0+, iPadOS 17.0+, Mac Catalyst 17.0+, macOS 14.0+, tvOS 17.0+, visionOS 1.0+, watchOS 10.0+
 
 > A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 
