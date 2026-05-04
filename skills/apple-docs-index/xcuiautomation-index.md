@@ -3,7 +3,7 @@ title: XCUIAutomation
 source: https://developer.apple.com/documentation/xcuiautomation
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/xcuiautomation
-timestamp: 2026-04-14T13:14:09.029Z
+timestamp: 2026-05-04T06:25:01.086Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
@@ -600,7 +600,7 @@ timestamp: 2026-04-14T13:14:09.029Z
 
 - [init()](/documentation/xcuiautomation/xcuiapplication/init())
 - [init(bundleIdentifier: String)](/documentation/xcuiautomation/xcuiapplication/init(bundleidentifier:))
-- [init(url: URL)](/documentation/xcuiautomation/xcuiapplication/init(url:))
+- [init(url: URL)](/documentation/xcuiautomation/xcuiapplication/init(url:)-90e7z)
 ### Launching the application
 
 - [func launch()](/documentation/xcuiautomation/xcuiapplication/launch())
@@ -693,6 +693,9 @@ timestamp: 2026-04-14T13:14:09.029Z
 
 - [var element: XCUIElement?](/documentation/xcuiautomation/xcuiaccessibilityauditissue/element)
 
+### Initializers
+
+- [init(URL: URL)](/documentation/xcuiautomation/xcuiapplication/init(url:)-6ga10)
 
 ## Screenshots
 

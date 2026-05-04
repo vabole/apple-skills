@@ -4,7 +4,7 @@ description: A UIKit view controller that manages a SwiftUI view hierarchy.
 source: https://developer.apple.com/documentation/swiftui/uihostingcontroller
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/uihostingcontroller.json
-timestamp: 2026-04-14T13:14:50.959Z
+timestamp: 2026-05-04T06:25:05.025Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -43,9 +43,9 @@ Create a `UIHostingController` object when you want to integrate SwiftUI views i
 - [NSObjectProtocol](/documentation/ObjectiveC/NSObjectProtocol)
 - [NSTouchBarProvider](/documentation/AppKit/NSTouchBarProvider)
 - [UIActivityItemsConfigurationProviding](/documentation/UIKit/UIActivityItemsConfigurationProviding)
-- [UIAppearanceContainer](/documentation/UIKit/UIAppearanceContainer)
 - [UIContentContainer](/documentation/UIKit/UIContentContainer)
 - [UIFocusEnvironment](/documentation/UIKit/UIFocusEnvironment)
+- [UIKit.UIAppearanceContainer](/doc://com.apple.SwiftUI/objc(pl)UIAppearanceContainer)
 - [UIPasteConfigurationSupporting](/documentation/UIKit/UIPasteConfigurationSupporting)
 - [UIResponderStandardEditActions](/documentation/UIKit/UIResponderStandardEditActions)
 - [UIStateRestoring](/documentation/UIKit/UIStateRestoring)

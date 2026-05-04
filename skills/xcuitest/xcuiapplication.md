@@ -4,7 +4,7 @@ description: A proxy that can launch, monitor, and terminate a test application.
 source: https://developer.apple.com/documentation/xcuiautomation/xcuiapplication
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication.json
-timestamp: 2026-04-14T13:14:57.433Z
+timestamp: 2026-05-04T06:25:05.658Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
@@ -46,7 +46,7 @@ Use this class to launch, monitor, and terminate your app in a UI test. Use [wai
 
 - [init()](/documentation/xcuiautomation/xcuiapplication/init()) Creates a proxy for the application that’s configured as the Target Application in Xcode’s target settings.
 - [init(bundleIdentifier:)](/documentation/xcuiautomation/xcuiapplication/init(bundleidentifier:)) Creates a proxy for an application for the specified bundle identifier.
-- [init(url:)](/documentation/xcuiautomation/xcuiapplication/init(url:)) Creates a proxy for the application at the specified file system URL.
+- [init(url:)](/documentation/xcuiautomation/xcuiapplication/init(url:)-90e7z) Creates a proxy for the application at the specified file system URL.
 
 ## Launching the application
 
@@ -82,6 +82,10 @@ Use this class to launch, monitor, and terminate your app in a UI test. Use [wai
 - [performAccessibilityAudit(for:_:)](/documentation/xcuiautomation/xcuiapplication/performaccessibilityaudit(for:_:))
 - [XCUIAccessibilityAuditType](/documentation/xcuiautomation/xcuiaccessibilityaudittype)
 - [XCUIAccessibilityAuditIssue](/documentation/xcuiautomation/xcuiaccessibilityauditissue)
+
+## Initializers
+
+- [init(URL:)](/documentation/xcuiautomation/xcuiapplication/init(url:)-6ga10)
 
 ---
 

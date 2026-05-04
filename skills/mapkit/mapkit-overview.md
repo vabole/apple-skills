@@ -3,7 +3,7 @@ title: MapKit
 source: https://developer.apple.com/documentation/mapkit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/mapkit
-timestamp: 2026-04-14T13:14:29.124Z
+timestamp: 2026-05-04T06:25:03.159Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)
@@ -34,6 +34,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 
 - [init?(rawValue: Int)](/documentation/mapkit/mkmapconfiguration/elevationstyle-swift.enum/init(rawvalue:))
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/mapkit/mkmapconfiguration/init(coder:))
 
 - [MKStandardMapConfiguration](/documentation/mapkit/mkstandardmapconfiguration)
 ##### Creating a standard map configuration
@@ -209,6 +212,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 
 - [var maxCenterCoordinateDistance: CLLocationDistance](/documentation/mapkit/mkmapview/camerazoomrange-swift.class/maxcentercoordinatedistance)
 - [var minCenterCoordinateDistance: CLLocationDistance](/documentation/mapkit/mkmapview/camerazoomrange-swift.class/mincentercoordinatedistance)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/mapkit/mkmapview/camerazoomrange-swift.class/init(coder:))
 
 #### Configuring the map display
 
@@ -316,6 +322,11 @@ timestamp: 2026-04-14T13:14:29.124Z
 #### Accessing the map item attributes
 
 - [MKMapItem.Identifier](/documentation/mapkit/mkmapitem/identifier-swift.class)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/mapkit/mkmapitem/identifier-swift.class/init(coder:))
+- [init?(identifierString: String)](/documentation/mapkit/mkmapitem/identifier-swift.class/init(identifierstring:))
+
 - [var alternateIdentifiers: Set<MKMapItem.Identifier>](/documentation/mapkit/mkmapitem/alternateidentifiers)
 - [var identifier: MKMapItem.Identifier?](/documentation/mapkit/mkmapitem/identifier-swift.property)
 - [var isCurrentLocation: Bool](/documentation/mapkit/mkmapitem/iscurrentlocation)
@@ -541,6 +552,12 @@ timestamp: 2026-04-14T13:14:29.124Z
 - [var centerCoordinateDistance: CLLocationDistance](/documentation/mapkit/mkmapcamera/centercoordinatedistance)
 - [var pitch: CGFloat](/documentation/mapkit/mkmapcamera/pitch)
 - [var altitude: CLLocationDistance](/documentation/mapkit/mkmapcamera/altitude)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/mapkit/mkmapcamera/init(coder:))
+- [convenience init(lookingAtCenterCoordinate: CLLocationCoordinate2D, fromDistance: CLLocationDistance, pitch: CGFloat, heading: CLLocationDirection)](/documentation/mapkit/mkmapcamera/init(lookingatcentercoordinate:fromdistance:pitch:heading:))
+- [convenience init(lookingAtCenterCoordinate: CLLocationCoordinate2D, fromEyeCoordinate: CLLocationCoordinate2D, eyeAltitude: CLLocationDistance)](/documentation/mapkit/mkmapcamera/init(lookingatcentercoordinate:fromeyecoordinate:eyealtitude:))
+- [convenience init(lookingAtMapItem: MKMapItem, forViewSize: CGSize, allowPitch: Bool)](/documentation/mapkit/mkmapcamera/init(lookingatmapitem:forviewsize:allowpitch:))
 
 - [MKCompassButton](/documentation/mapkit/mkcompassbutton)
 #### Creating a compass button
@@ -872,6 +889,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 - [var coordinate: CLLocationCoordinate2D](/documentation/mapkit/mkcircle/coordinate)
 - [var radius: CLLocationDistance](/documentation/mapkit/mkcircle/radius)
 - [var boundingMapRect: MKMapRect](/documentation/mapkit/mkcircle/boundingmaprect)
+##### Initializers
+
+- [convenience init(centerCoordinate: CLLocationCoordinate2D, radius: CLLocationDistance)](/documentation/mapkit/mkcircle/init(centercoordinate:radius:))
 
 - [MKCircleRenderer](/documentation/mapkit/mkcirclerenderer)
 ##### Creating a circle renderer
@@ -917,6 +937,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 ##### Accessing polygons
 
 - [var polygons: [MKPolygon]](/documentation/mapkit/mkmultipolygon/polygons)
+##### Initializers
+
+- [init(polygons: [MKPolygon])](/documentation/mapkit/mkmultipolygon/init(polygons:))
 
 - [MKMultiPolygonRenderer](/documentation/mapkit/mkmultipolygonrenderer)
 ##### Creating a multipolygon renderer
@@ -971,6 +994,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 ##### Accessing polyline objects
 
 - [var polylines: [MKPolyline]](/documentation/mapkit/mkmultipolyline/polylines)
+##### Initializers
+
+- [init(polylines: [MKPolyline])](/documentation/mapkit/mkmultipolyline/init(polylines:))
 
 - [MKPolylineRenderer](/documentation/mapkit/mkpolylinerenderer)
 ##### Creating a polyline renderer
@@ -1005,7 +1031,7 @@ timestamp: 2026-04-14T13:14:29.124Z
 - [MKTileOverlay](/documentation/mapkit/mktileoverlay)
 ##### Creating a tile overlay
 
-- [init(urlTemplate: String?)](/documentation/mapkit/mktileoverlay/init(urltemplate:))
+- [init(urlTemplate: String?)](/documentation/mapkit/mktileoverlay/init(urltemplate:)-9s8h7)
 ##### Accessing the tile attributes
 
 - [var tileSize: CGSize](/documentation/mapkit/mktileoverlay/tilesize)
@@ -1030,6 +1056,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 - [var z: Int](/documentation/mapkit/mktileoverlaypath/z)
 - [var contentScaleFactor: CGFloat](/documentation/mapkit/mktileoverlaypath/contentscalefactor)
 
+##### Initializers
+
+- [init(URLTemplate: String?)](/documentation/mapkit/mktileoverlay/init(urltemplate:)-1wri0)
 
 - [MKTileOverlayRenderer](/documentation/mapkit/mktileoverlayrenderer)
 ##### Creating a tile renderer
@@ -1439,6 +1468,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 - [var mapItems: [MKMapItem]](/documentation/mapkit/mklocalsearch/response/mapitems)
 - [var boundingRegion: MKCoordinateRegion](/documentation/mapkit/mklocalsearch/response/boundingregion)
 
+#### Initializers
+
+- [init(pointsOfInterestRequest: MKLocalPointsOfInterestRequest)](/documentation/mapkit/mklocalsearch/init(pointsofinterestrequest:))
 
 - [MKAddressFilter.Options](/documentation/mapkit/mkaddressfilter/options)
 #### Creating a filter result
@@ -1489,6 +1521,11 @@ timestamp: 2026-04-14T13:14:29.124Z
 - [class var includingAll: MKAddressFilter](/documentation/mapkit/mkaddressfilter/includingall)
 - [func excludes(MKAddressFilter.Options) -> Bool](/documentation/mapkit/mkaddressfilter/excludes(_:))
 - [func includes(MKAddressFilter.Options) -> Bool](/documentation/mapkit/mkaddressfilter/includes(_:))
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/mapkit/mkaddressfilter/init(coder:))
+- [init(excludingOptions: MKAddressFilter.Options)](/documentation/mapkit/mkaddressfilter/init(excludingoptions:))
+- [init(includingOptions: MKAddressFilter.Options)](/documentation/mapkit/mkaddressfilter/init(includingoptions:))
 
 - [MKLocalSearchCompleter.ResultType](/documentation/mapkit/mklocalsearchcompleter/resulttype)
 #### Type properties
@@ -1580,6 +1617,9 @@ timestamp: 2026-04-14T13:14:29.124Z
 #### Getting the maximum radius
 
 - [class let maxRadius: CLLocationDistance](/documentation/mapkit/mklocalpointsofinterestrequest/maxradius)
+#### Initializers
+
+- [init(centerCoordinate: CLLocationCoordinate2D, radius: CLLocationDistance)](/documentation/mapkit/mklocalpointsofinterestrequest/init(centercoordinate:radius:))
 
 ### Exploring at street level
 
@@ -1791,6 +1831,11 @@ timestamp: 2026-04-14T13:14:29.124Z
 
 - [func excludes(MKPointOfInterestCategory) -> Bool](/documentation/mapkit/mkpointofinterestfilter/excludes(_:))
 - [func includes(MKPointOfInterestCategory) -> Bool](/documentation/mapkit/mkpointofinterestfilter/includes(_:))
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/mapkit/mkpointofinterestfilter/init(coder:))
+- [init(excludingCategories: [MKPointOfInterestCategory])](/documentation/mapkit/mkpointofinterestfilter/init(excludingcategories:))
+- [init(includingCategories: [MKPointOfInterestCategory])](/documentation/mapkit/mkpointofinterestfilter/init(includingcategories:))
 
 - [MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory)
 #### Category creation
@@ -2115,7 +2160,11 @@ timestamp: 2026-04-14T13:14:29.124Z
 #### Initializers
 
 - [init<SelectedValue, C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](/documentation/mapkit/map/init(bounds:interactionmodes:selection:scope:content:)-335qt)
+- [init(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](/documentation/mapkit/map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:))
+- [init<Items, Annotation>(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](/documentation/mapkit/map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:))
 - [init<SelectedValue, C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](/documentation/mapkit/map/init(initialposition:bounds:interactionmodes:selection:scope:content:)-2u4ry)
+- [init(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](/documentation/mapkit/map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:))
+- [init<Items, Annotation>(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](/documentation/mapkit/map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:))
 - [init<SelectedValue, C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](/documentation/mapkit/map/init(position:bounds:interactionmodes:selection:scope:content:)-96bhq)
 
 - [MapStyle](/documentation/mapkit/mapstyle)
@@ -2444,6 +2493,11 @@ timestamp: 2026-04-14T13:14:29.124Z
 #### Accessing the map item attributes
 
 - [MKMapItem.Identifier](/documentation/mapkit/mkmapitem/identifier-swift.class)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/mapkit/mkmapitem/identifier-swift.class/init(coder:))
+- [init?(identifierString: String)](/documentation/mapkit/mkmapitem/identifier-swift.class/init(identifierstring:))
+
 - [var alternateIdentifiers: Set<MKMapItem.Identifier>](/documentation/mapkit/mkmapitem/alternateidentifiers)
 - [var identifier: MKMapItem.Identifier?](/documentation/mapkit/mkmapitem/identifier-swift.property)
 - [var isCurrentLocation: Bool](/documentation/mapkit/mkmapitem/iscurrentlocation)

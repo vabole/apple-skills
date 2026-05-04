@@ -4,7 +4,7 @@ description: A segmented control is a linear set of two or more segments, each o
 source: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/segmented-controls.json
-timestamp: 2026-04-14T13:14:19.801Z
+timestamp: 2026-05-04T06:25:02.264Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -25,7 +25,7 @@ A segmented control offers a single choice from among a set of options, or in ma
 
 ![A partial screenshot of a segmented control that consists of four font types. Three of the four options are selected.](https://docs-assets.developer.apple.com/published/0b1d550e9c4fc6e201d45640fad819eb/segmented-control-multiple-choices%402x.png)
 
-In addition to representing the state of a single or multiple-choice selection, a segmented control can function as a set of buttons that perform actions without showing a selection state. For example, the Reply, Reply all, and Forward buttons in macOS Mail. For developer guidance, see [isMomentary](/documentation/UIKit/UISegmentedControl/isMomentary) and [NSSegmentedControl.SwitchTracking.momentary](/documentation/AppKit/NSSegmentedControl/SwitchTracking/momentary).
+In addition to representing the state of a single or multiple-choice selection, a segmented control can function as a set of buttons that perform actions without showing a selection state. For example, the Reply, Reply all, and Forward buttons in macOS Mail. For developer guidance, see [isMomentary](/documentation/UIKit/UISegmentedControl/isMomentary) and doc://com.apple.documentation/documentation/appkit/nssegmentedcontrol/switchtracking/momentary.
 
 ## Best practices
 
