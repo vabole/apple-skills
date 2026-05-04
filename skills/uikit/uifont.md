@@ -4,7 +4,7 @@ description: An object that provides access to the font’s characteristics.
 source: https://developer.apple.com/documentation/uikit/uifont
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uifont.json
-timestamp: 2026-04-14T13:14:50.324Z
+timestamp: 2026-05-04T06:25:04.986Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -99,6 +99,10 @@ In Objective-C, don’t create font objects using the `alloc` and `init` methods
 
 - [fontDescriptor](/documentation/uikit/uifont/fontdescriptor) A font descriptor for the font.
 - [UIFontDescriptor](/documentation/uikit/uifontdescriptor) A collection of attributes that describes a font.
+
+## Initializers
+
+- [init(coder:)](/documentation/uikit/uifont/init(coder:))
 
 ## Fonts
 

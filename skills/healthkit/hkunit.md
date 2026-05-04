@@ -4,7 +4,7 @@ description: A class for managing the units of measure within HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkunit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkunit.json
-timestamp: 2026-04-14T13:14:12.346Z
+timestamp: 2026-05-04T06:25:01.415Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)
@@ -188,6 +188,14 @@ Additionally, the unit class uses a single unit instance to represent all copies
 ## Constants
 
 - [HKMetricPrefix](/documentation/healthkit/hkmetricprefix) Prefixes that can be added to SI units to change the order of magnitude.
+
+## Initializers
+
+- [init(coder:)](/documentation/healthkit/hkunit/init(coder:))
+- [init(fromEnergyFormatterUnit:)](/documentation/healthkit/hkunit/init(fromenergyformatterunit:))
+- [init(fromLengthFormatterUnit:)](/documentation/healthkit/hkunit/init(fromlengthformatterunit:))
+- [init(fromMassFormatterUnit:)](/documentation/healthkit/hkunit/init(frommassformatterunit:))
+- [init(fromString:)](/documentation/healthkit/hkunit/init(fromstring:))
 
 ## Type Methods
 

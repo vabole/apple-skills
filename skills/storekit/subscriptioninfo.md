@@ -4,7 +4,7 @@ description: Information about an auto-renewable subscription, such as its statu
 source: https://developer.apple.com/documentation/storekit/product/subscriptioninfo
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo.json
-timestamp: 2026-04-14T13:14:30.767Z
+timestamp: 2026-05-04T06:25:03.309Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit) › [Product](/documentation/storekit/product)
@@ -13,7 +13,7 @@ timestamp: 2026-04-14T13:14:30.767Z
 
 # Product.SubscriptionInfo
 
-**Available on:** iOS 15.0+, iPadOS 15.0+, macOS 12.0+, tvOS 15.0+, visionOS 1.0+, watchOS 8.0+
+**Available on:** iOS 15.0+, iPadOS 15.0+, Mac Catalyst 15.0+, macOS 12.0+, tvOS 15.0+, visionOS 1.0+, watchOS 8.0+
 
 > Information about an auto-renewable subscription, such as its status, period, subscription group, and subscription offer details.
 
@@ -83,6 +83,8 @@ struct SubscriptionInfo
 ## Product and subscription information
 
 - [Implementing a store in your app using the StoreKit API](/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api) Offer In-App Purchases and manage entitlements using signed transactions and status information.
+- [Supporting monthly subscriptions with a 12-month commitment](/documentation/storekit/supporting-monthly-subscriptions-with-a-12-month-commitment) Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](/documentation/storekit/managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-) Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
 - [Product](/documentation/storekit/product) Information about a product that you configure in App Store Connect.
 - [SubscriptionInfo](/documentation/storekit/subscriptioninfo) Information about an auto-renewable subscription.
 - [SubscriptionStatus](/documentation/storekit/subscriptionstatus) Represents the renewal status information for an auto-renewable subscription.

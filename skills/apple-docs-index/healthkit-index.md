@@ -3,7 +3,7 @@ title: HealthKit
 source: https://developer.apple.com/documentation/healthkit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/healthkit
-timestamp: 2026-04-14T13:14:07.334Z
+timestamp: 2026-05-04T06:25:00.996Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)
@@ -90,6 +90,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkbiologicalsex/init(rawvalue:))
 
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkbiologicalsexobject/init(coder:))
 
 - [HKBiologicalSex](/documentation/healthkit/hkbiologicalsex)
 ##### Constants
@@ -129,6 +132,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkbloodtype/init(rawvalue:))
 
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkbloodtypeobject/init(coder:))
 
 - [HKBloodType](/documentation/healthkit/hkbloodtype)
 ##### Constants
@@ -173,6 +179,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkfitzpatrickskintype/init(rawvalue:))
 
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkfitzpatrickskintypeobject/init(coder:))
 
 - [HKFitzpatrickSkinType](/documentation/healthkit/hkfitzpatrickskintype)
 ##### Constants
@@ -209,6 +218,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkwheelchairuse/init(rawvalue:))
 
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkwheelchairuseobject/init(coder:))
 
 - [HKWheelchairUse](/documentation/healthkit/hkwheelchairuse)
 ##### Constants
@@ -840,6 +852,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [var identifier: String](/documentation/healthkit/hkobjecttype/identifier)
 - [func requiresPerObjectAuthorization() -> Bool](/documentation/healthkit/hkobjecttype/requiresperobjectauthorization())
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkobjecttype/init(coder:))
 #### Type Methods
 
 - [class func medicationDoseEventType() -> HKMedicationDoseEventType](/documentation/healthkit/hkobjecttype/medicationdoseeventtype())
@@ -922,6 +937,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [var creationDate: Date](/documentation/healthkit/hkattachment/creationdate)
 - [var metadata: [String : Any]?](/documentation/healthkit/hkattachment/metadata)
 - [HKAttachment.AsyncBytes](/documentation/healthkit/hkattachment/asyncbytes)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkattachment/init(coder:))
 
 - [HKAttachmentStore](/documentation/healthkit/hkattachmentstore)
 #### Creating an attachment store
@@ -1390,6 +1408,11 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [let HKPredicateKeyPathQuantity: String](/documentation/healthkit/hkpredicatekeypathquantity)
 - [let HKPredicateKeyPathCount: String](/documentation/healthkit/hkpredicatekeypathcount)
+#### Initializers
+
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:))
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:device:metadata:))
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date, metadata: [String : Any]?)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:metadata:))
 
 - [HKCategorySample](/documentation/healthkit/hkcategorysample)
 #### Creating Category Samples
@@ -1605,6 +1628,11 @@ timestamp: 2026-04-14T13:14:07.334Z
 #### Specifying Predicate Key Paths
 
 - [let HKPredicateKeyPathCategoryValue: String](/documentation/healthkit/hkpredicatekeypathcategoryvalue)
+#### Initializers
+
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date)](/documentation/healthkit/hkcategorysample/init(type:value:startdate:enddate:))
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkcategorysample/init(type:value:startdate:enddate:device:metadata:))
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, metadata: [String : Any]?)](/documentation/healthkit/hkcategorysample/init(type:value:startdate:enddate:metadata:))
 
 - [HKCorrelation](/documentation/healthkit/hkcorrelation)
 #### Creating Correlations
@@ -1620,6 +1648,11 @@ timestamp: 2026-04-14T13:14:07.334Z
 #### Specifying Predicate Key Paths
 
 - [let HKPredicateKeyPathCorrelation: String](/documentation/healthkit/hkpredicatekeypathcorrelation)
+#### Initializers
+
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>)](/documentation/healthkit/hkcorrelation/init(type:startdate:enddate:objects:))
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkcorrelation/init(type:startdate:enddate:objects:device:metadata:))
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, metadata: [String : Any]?)](/documentation/healthkit/hkcorrelation/init(type:startdate:enddate:objects:metadata:))
 
 - [Units and quantities](/documentation/healthkit/units-and-quantities)
 #### Units and quantities
@@ -1636,6 +1669,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 ##### Comparing Quantities
 
 - [func compare(HKQuantity) -> ComparisonResult](/documentation/healthkit/hkquantity/compare(_:))
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkquantity/init(coder:))
 
 - [HKUnit](/documentation/healthkit/hkunit)
 ##### Working with units
@@ -1772,6 +1808,13 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [init?(rawValue: Int)](/documentation/healthkit/hkmetricprefix/init(rawvalue:))
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkunit/init(coder:))
+- [convenience init(fromEnergyFormatterUnit: EnergyFormatter.Unit)](/documentation/healthkit/hkunit/init(fromenergyformatterunit:))
+- [convenience init(fromLengthFormatterUnit: LengthFormatter.Unit)](/documentation/healthkit/hkunit/init(fromlengthformatterunit:))
+- [convenience init(fromMassFormatterUnit: MassFormatter.Unit)](/documentation/healthkit/hkunit/init(frommassformatterunit:))
+- [convenience init(fromString: String)](/documentation/healthkit/hkunit/init(fromstring:))
 ##### Type Methods
 
 - [class func appleEffortScore() -> Self](/documentation/healthkit/hkunit/appleeffortscore())
@@ -2193,6 +2236,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 #### Ending the Collection
 
 - [func finishSeries(completion: (HKHeartbeatSeriesSample?, (any Error)?) -> Void)](/documentation/healthkit/hkheartbeatseriesbuilder/finishseries(completion:))
+#### Initializers
+
+- [init(healthStore: HKHealthStore, device: HKDevice?, startDate: Date)](/documentation/healthkit/hkheartbeatseriesbuilder/init(healthstore:device:startdate:))
 
 - [HKHeartbeatSeriesSample](/documentation/healthkit/hkheartbeatseriessample)
 #### Metadata
@@ -2286,6 +2332,8 @@ timestamp: 2026-04-14T13:14:07.334Z
 #### Initializers
 
 - [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkaudiogramsample/init(sensitivitypoints:start:end:device:metadata:))
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkaudiogramsample/init(sensitivitypoints:startdate:enddate:device:metadata:))
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, metadata: [String : Any]?)](/documentation/healthkit/hkaudiogramsample/init(sensitivitypoints:startdate:enddate:metadata:))
 
 - [HKAudiogramSensitivityPoint](/documentation/healthkit/hkaudiogramsensitivitypoint)
 #### Creating Sensitivity Points
@@ -2298,6 +2346,7 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [var rightEarSensitivity: HKQuantity?](/documentation/healthkit/hkaudiogramsensitivitypoint/rightearsensitivity)
 #### Initializers
 
+- [init?(coder: NSCoder)](/documentation/healthkit/hkaudiogramsensitivitypoint/init(coder:))
 - [convenience init(frequency: HKQuantity, tests: [HKAudiogramSensitivityTest]) throws](/documentation/healthkit/hkaudiogramsensitivitypoint/init(frequency:tests:))
 #### Instance Properties
 
@@ -2346,6 +2395,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [init(rawValue: String)](/documentation/healthkit/hkfhirrelease/init(rawvalue:))
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkfhirversion/init(coder:))
 
 - [var resourceType: HKFHIRResourceType](/documentation/healthkit/hkfhirresource/resourcetype)
 - [HKFHIRResourceType](/documentation/healthkit/hkfhirresourcetype)
@@ -2369,6 +2421,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [var sourceURL: URL?](/documentation/healthkit/hkfhirresource/sourceurl)
 - [var data: Data](/documentation/healthkit/hkfhirresource/data)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkfhirresource/init(coder:))
 
 - [HKVerifiableClinicalRecord](/documentation/healthkit/hkverifiableclinicalrecord)
 #### Identifying the Subject
@@ -2404,6 +2459,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [var fullName: String](/documentation/healthkit/hkverifiableclinicalrecordsubject/fullname)
 - [var dateOfBirthComponents: DateComponents?](/documentation/healthkit/hkverifiableclinicalrecordsubject/dateofbirthcomponents)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkverifiableclinicalrecordsubject/init(coder:))
 
 - [HKCDADocumentSample](/documentation/healthkit/hkcdadocumentsample)
 #### Creating CDA Samples
@@ -2431,6 +2489,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [let HKPredicateKeyPathCDACustodianName: String](/documentation/healthkit/hkpredicatekeypathcdacustodianname)
 - [let HKPredicateKeyPathCDAPatientName: String](/documentation/healthkit/hkpredicatekeypathcdapatientname)
 - [let HKPredicateKeyPathCDATitle: String](/documentation/healthkit/hkpredicatekeypathcdatitle)
+#### Initializers
+
+- [convenience init(data: Data, startDate: Date, endDate: Date, metadata: [String : Any]?) throws](/documentation/healthkit/hkcdadocumentsample/init(data:startdate:enddate:metadata:))
 
 - [HKDocumentSample](/documentation/healthkit/hkdocumentsample)
 #### Accessing the Document Sample Properties
@@ -2496,6 +2557,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [var nearPupillaryDistance: HKQuantity?](/documentation/healthkit/hkglasseslensspecification/nearpupillarydistance)
 - [var prism: HKVisionPrism?](/documentation/healthkit/hkglasseslensspecification/prism)
 - [var vertexDistance: HKQuantity?](/documentation/healthkit/hkglasseslensspecification/vertexdistance)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkglasseslensspecification/init(coder:))
 
 - [HKContactsLensSpecification](/documentation/healthkit/hkcontactslensspecification)
 #### Creating contacts lens specifications
@@ -2505,6 +2569,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [var baseCurve: HKQuantity?](/documentation/healthkit/hkcontactslensspecification/basecurve)
 - [var diameter: HKQuantity?](/documentation/healthkit/hkcontactslensspecification/diameter)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkcontactslensspecification/init(coder:))
 
 - [HKLensSpecification](/documentation/healthkit/hklensspecification)
 #### Accessing lens specification data
@@ -2549,6 +2616,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [init?(rawValue: Int)](/documentation/healthkit/hkprismbase/init(rawvalue:))
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkvisionprism/init(coder:))
 
 - [HKPrescriptionType](/documentation/healthkit/hkprescriptiontype)
 ### Walking steadiness classifications
@@ -2587,6 +2657,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [var creationDate: Date](/documentation/healthkit/hkattachment/creationdate)
 - [var metadata: [String : Any]?](/documentation/healthkit/hkattachment/metadata)
 - [HKAttachment.AsyncBytes](/documentation/healthkit/hkattachment/asyncbytes)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkattachment/init(coder:))
 
 - [HKAttachmentStore](/documentation/healthkit/hkattachmentstore)
 #### Creating an attachment store
@@ -2636,6 +2709,11 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [let HKPredicateKeyPathQuantity: String](/documentation/healthkit/hkpredicatekeypathquantity)
 - [let HKPredicateKeyPathCount: String](/documentation/healthkit/hkpredicatekeypathcount)
+#### Initializers
+
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:))
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:device:metadata:))
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date, metadata: [String : Any]?)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:metadata:))
 
 - [HKSample](/documentation/healthkit/hksample)
 #### Accessing the Sample’s Data
@@ -2665,6 +2743,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [let HKPredicateKeyPathUUID: String](/documentation/healthkit/hkpredicatekeypathuuid)
 - [let HKPredicateKeyPathMetadata: String](/documentation/healthkit/hkpredicatekeypathmetadata)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkobject/init(coder:))
 
 ### Deprecated classes
 
@@ -2788,6 +2869,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [var predicate: NSPredicate?](/documentation/healthkit/hkquerydescriptor/predicate)
 - [var sampleType: HKSampleType](/documentation/healthkit/hkquerydescriptor/sampletype)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkquerydescriptor/init(coder:))
 
 - [HKQuery](/documentation/healthkit/hkquery)
 #### Accessing properties
@@ -3127,6 +3211,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init(electrocardiogram: HKElectrocardiogram, dataHandler: (HKElectrocardiogramQuery, HKElectrocardiogram.VoltageMeasurement?, Bool, (any Error)?) -> Void)](/documentation/healthkit/hkelectrocardiogramquery/init(electrocardiogram:datahandler:))
 
 - [HKWorkoutEffortRelationship](/documentation/healthkit/hkworkouteffortrelationship)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkworkouteffortrelationship/init(coder:))
 #### Instance Properties
 
 - [var activity: HKWorkoutActivity?](/documentation/healthkit/hkworkouteffortrelationship/activity)
@@ -3237,6 +3324,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 ##### Creating Anchor Objects
 
 - [convenience init(fromValue: Int)](/documentation/healthkit/hkqueryanchor/init(fromvalue:))
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkqueryanchor/init(coder:))
 
 #### Tracking Deleted Objects
 
@@ -3245,6 +3335,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [var uuid: UUID](/documentation/healthkit/hkdeletedobject/uuid)
 - [var metadata: [String : Any]?](/documentation/healthkit/hkdeletedobject/metadata)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkdeletedobject/init(coder:))
 
 
 - [HKObserverQuery](/documentation/healthkit/hkobserverquery)
@@ -3298,6 +3391,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [let HKSourceRevisionAnyProductType: String](/documentation/healthkit/hksourcerevisionanyproducttype)
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hksourcerevision/init(coder:))
 
 - [HKSource](/documentation/healthkit/hksource)
 #### Getting the Current Source
@@ -3307,11 +3403,14 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [var bundleIdentifier: String](/documentation/healthkit/hksource/bundleidentifier)
 - [var name: String](/documentation/healthkit/hksource/name)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hksource/init(coder:))
 
 - [HKDevice](/documentation/healthkit/hkdevice)
 #### Creating Device Objects
 
-- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, udiDeviceIdentifier: String?)](/documentation/healthkit/hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:))
+- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, udiDeviceIdentifier: String?)](/documentation/healthkit/hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:)-3663q)
 - [class func local() -> HKDevice](/documentation/healthkit/hkdevice/local())
 #### Accessing Data About a Device
 
@@ -3323,6 +3422,10 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [var model: String?](/documentation/healthkit/hkdevice/model)
 - [var name: String?](/documentation/healthkit/hkdevice/name)
 - [var softwareVersion: String?](/documentation/healthkit/hkdevice/softwareversion)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkdevice/init(coder:))
+- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, UDIDeviceIdentifier: String?)](/documentation/healthkit/hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:)-6cari)
 
 - [HKSourceQuery](/documentation/healthkit/hksourcequery)
 #### Creating Source Queries
@@ -3445,6 +3548,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [func mostRecentQuantity(for: HKSource) -> HKQuantity?](/documentation/healthkit/hkstatistics/mostrecentquantity(for:))
 - [func mostRecentQuantityDateInterval() -> DateInterval?](/documentation/healthkit/hkstatistics/mostrecentquantitydateinterval())
 - [func mostRecentQuantityDateInterval(for: HKSource) -> DateInterval?](/documentation/healthkit/hkstatistics/mostrecentquantitydateinterval(for:))
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkstatistics/init(coder:))
 
 - [HKStatisticsCollection](/documentation/healthkit/hkstatisticscollection)
 #### Accessing Statistics Collections
@@ -3541,6 +3647,7 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [HKClinicalCoding](/documentation/healthkit/hkclinicalcoding)
 #### Initializers
 
+- [init?(coder: NSCoder)](/documentation/healthkit/hkclinicalcoding/init(coder:))
 - [init(system: String, version: String?, code: String)](/documentation/healthkit/hkclinicalcoding/init(system:version:code:))
 #### Instance Properties
 
@@ -3549,11 +3656,17 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [var version: String?](/documentation/healthkit/hkclinicalcoding/version)
 
 - [HKHealthConceptIdentifier](/documentation/healthkit/hkhealthconceptidentifier)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkhealthconceptidentifier/init(coder:))
 #### Instance Properties
 
 - [var domain: HKHealthConceptDomain](/documentation/healthkit/hkhealthconceptidentifier/domain)
 
 - [HKMedicationConcept](/documentation/healthkit/hkmedicationconcept)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkmedicationconcept/init(coder:))
 #### Instance Properties
 
 - [var displayText: String](/documentation/healthkit/hkmedicationconcept/displaytext)
@@ -3599,6 +3712,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 - [HKMedicationDoseEventType](/documentation/healthkit/hkmedicationdoseeventtype)
 - [HKUserAnnotatedMedication](/documentation/healthkit/hkuserannotatedmedication)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkuserannotatedmedication/init(coder:))
 #### Instance Properties
 
 - [var hasSchedule: Bool](/documentation/healthkit/hkuserannotatedmedication/hasschedule)
@@ -3817,6 +3933,15 @@ timestamp: 2026-04-14T13:14:07.334Z
 
 
 
+#### Initializers
+
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date)](/documentation/healthkit/hkworkout/init(activitytype:startdate:enddate:))
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkworkout/init(activitytype:startdate:enddate:duration:totalenergyburned:totaldistance:device:metadata:))
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)](/documentation/healthkit/hkworkout/init(activitytype:startdate:enddate:duration:totalenergyburned:totaldistance:metadata:))
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:device:metadata:))
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)](/documentation/healthkit/hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:metadata:))
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalFlightsClimbed: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:totalflightsclimbed:device:metadata:))
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalSwimmingStrokeCount: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](/documentation/healthkit/hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:totalswimmingstrokecount:device:metadata:))
 #### Instance Properties
 
 - [var workoutPlan: WorkoutPlan?](/documentation/healthkit/hkworkout/workoutplan)
@@ -3847,6 +3972,10 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [let HKPredicateKeyPathWorkoutActivityMaximumQuantity: String](/documentation/healthkit/hkpredicatekeypathworkoutactivitymaximumquantity)
 - [let HKPredicateKeyPathWorkoutActivityMinimumQuantity: String](/documentation/healthkit/hkpredicatekeypathworkoutactivityminimumquantity)
 - [let HKPredicateKeyPathWorkoutActivitySumQuantity: String](/documentation/healthkit/hkpredicatekeypathworkoutactivitysumquantity)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkworkoutactivity/init(coder:))
+- [init(workoutConfiguration: HKWorkoutConfiguration, startDate: Date, endDate: Date?, metadata: [String : Any]?)](/documentation/healthkit/hkworkoutactivity/init(workoutconfiguration:startdate:enddate:metadata:))
 
 - [HKWorkoutBuilder](/documentation/healthkit/hkworkoutbuilder)
 #### Creating the builder
@@ -4051,6 +4180,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [convenience init(type: HKWorkoutEventType, date: Date)](/documentation/healthkit/hkworkoutevent/init(type:date:))
 - [convenience init(type: HKWorkoutEventType, date: Date, metadata: [String : Any])](/documentation/healthkit/hkworkoutevent/init(type:date:metadata:))
 - [var date: Date](/documentation/healthkit/hkworkoutevent/date)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkworkoutevent/init(coder:))
 
 ### Sessions
 
@@ -4112,6 +4244,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init(configuration: HKWorkoutConfiguration) throws](/documentation/healthkit/hkworkoutsession/init(configuration:))
 - [var activityType: HKWorkoutActivityType](/documentation/healthkit/hkworkoutsession/activitytype)
 - [var locationType: HKWorkoutSessionLocationType](/documentation/healthkit/hkworkoutsession/locationtype)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkworkoutsession/init(coder:))
 
 - [HKWorkoutConfiguration](/documentation/healthkit/hkworkoutconfiguration)
 #### Session settings
@@ -4140,6 +4275,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkworkoutswimminglocationtype/init(rawvalue:))
 
 - [var lapLength: HKQuantity?](/documentation/healthkit/hkworkoutconfiguration/laplength)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkworkoutconfiguration/init(coder:))
 
 - [HKWorkoutSessionState](/documentation/healthkit/hkworkoutsessionstate)
 #### Session states
@@ -4224,6 +4362,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 #### Specifying predicate key paths
 
 - [let HKPredicateKeyPathDateComponents: String](/documentation/healthkit/hkpredicatekeypathdatecomponents)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkactivitysummary/init(coder:))
 #### Instance Properties
 
 - [var isPaused: Bool](/documentation/healthkit/hkactivitysummary/ispaused)
@@ -4271,6 +4412,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 #### Accessing the data
 
 - [var activityMoveMode: HKActivityMoveMode](/documentation/healthkit/hkactivitymovemodeobject/activitymovemode)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkactivitymovemodeobject/init(coder:))
 
 ### Route data
 
@@ -4653,6 +4797,7 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [HKAudiogramSensitivityPointClampingRange](/documentation/healthkit/hkaudiogramsensitivitypointclampingrange)
 #### Initializers
 
+- [init?(coder: NSCoder)](/documentation/healthkit/hkaudiogramsensitivitypointclampingrange/init(coder:))
 - [convenience init(lowerBound: NSNumber?, upperBound: NSNumber?) throws](/documentation/healthkit/hkaudiogramsensitivitypointclampingrange/init(lowerbound:upperbound:))
 #### Instance Properties
 
@@ -4662,6 +4807,7 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [HKAudiogramSensitivityTest](/documentation/healthkit/hkaudiogramsensitivitytest)
 #### Initializers
 
+- [init?(coder: NSCoder)](/documentation/healthkit/hkaudiogramsensitivitytest/init(coder:))
 - [init(sensitivity: HKQuantity, type: HKAudiogramConductionType, masked: Bool, side: HKAudiogramSensitivityTestSide, clampingRange: HKAudiogramSensitivityPointClampingRange?) throws](/documentation/healthkit/hkaudiogramsensitivitytest/init(sensitivity:type:masked:side:clampingrange:))
 #### Instance Properties
 
@@ -4689,6 +4835,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkbiologicalsex/init(rawvalue:))
 
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkbiologicalsexobject/init(coder:))
 
 - [HKBloodTypeObject](/documentation/healthkit/hkbloodtypeobject)
 #### Getting Blood Type Data
@@ -4713,6 +4862,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkbloodtype/init(rawvalue:))
 
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkbloodtypeobject/init(coder:))
 
 - [HKFitzpatrickSkinTypeObject](/documentation/healthkit/hkfitzpatrickskintypeobject)
 #### Accessing Skin Type Data
@@ -4735,6 +4887,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkfitzpatrickskintype/init(rawvalue:))
 
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkfitzpatrickskintypeobject/init(coder:))
 
 - [HKGAD7Assessment](/documentation/healthkit/hkgad7assessment)
 #### Initializers
@@ -4794,6 +4949,9 @@ timestamp: 2026-04-14T13:14:07.334Z
 - [init?(rawValue: Int)](/documentation/healthkit/hkwheelchairuse/init(rawvalue:))
 
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/healthkit/hkwheelchairuseobject/init(coder:))
 
 
 - [HealthKit Constants](/documentation/healthkit/healthkit-constants)

@@ -4,7 +4,7 @@ description: A sample that represents a quantity, including the value and the un
 source: https://developer.apple.com/documentation/healthkit/hkquantitysample
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkquantitysample.json
-timestamp: 2026-04-14T13:14:11.466Z
+timestamp: 2026-05-04T06:25:01.350Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)
@@ -73,6 +73,12 @@ For more information, see [init(type:quantity:start:end:metadata:)](/documentati
 
 - [HKPredicateKeyPathQuantity](/documentation/healthkit/hkpredicatekeypathquantity) The key path for accessing the sample’s quantity.
 - [HKPredicateKeyPathCount](/documentation/healthkit/hkpredicatekeypathcount) A key path for the sample’s count.
+
+## Initializers
+
+- [init(type:quantity:startDate:endDate:)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:))
+- [init(type:quantity:startDate:endDate:device:metadata:)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:device:metadata:))
+- [init(type:quantity:startDate:endDate:metadata:)](/documentation/healthkit/hkquantitysample/init(type:quantity:startdate:enddate:metadata:))
 
 ## Basic samples
 
