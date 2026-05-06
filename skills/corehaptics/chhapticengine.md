@@ -4,7 +4,7 @@ description: An object that represents the connection to the haptic server.
 source: https://developer.apple.com/documentation/corehaptics/chhapticengine
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine.json
-timestamp: 2026-04-14T13:14:09.883Z
+timestamp: 2026-05-06T06:19:04.507Z
 ---
 
 **Navigation:** [Core Haptics](/documentation/corehaptics)
@@ -156,6 +156,10 @@ Although it’s possible to create content—[CHHapticPattern](/documentation/co
 ## Managing Power
 
 - [isAutoShutdownEnabled](/documentation/corehaptics/chhapticengine/isautoshutdownenabled) A Boolean value that indicates whether the haptic engine starts and stops automatically on request from one of its pattern players, or when idle.
+
+## Initializers
+
+- [init(andReturnError:)](/documentation/corehaptics/chhapticengine/init(andreturnerror:))
 
 ## Instance Properties
 

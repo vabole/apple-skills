@@ -3,7 +3,7 @@ title: SwiftUI
 source: https://developer.apple.com/documentation/swiftui
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/swiftui
-timestamp: 2026-04-14T13:14:43.808Z
+timestamp: 2026-05-06T06:19:05.899Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -4498,6 +4498,7 @@ timestamp: 2026-04-14T13:14:43.808Z
 ### Redacting private content
 
 - [Designing your app for the Always On state](/documentation/watchos-apps/designing-your-app-for-the-always-on-state)
+- [Protecting sensitive content when screen sharing and remote control are active](/documentation/swiftui/protecting-sensitive-content-when-screen-sharing)
 - [func privacySensitive(Bool) -> some View](/documentation/swiftui/view/privacysensitive(_:))
 - [func redacted(reason: RedactionReasons) -> some View](/documentation/swiftui/view/redacted(reason:))
 - [func unredacted() -> some View](/documentation/swiftui/view/unredacted())

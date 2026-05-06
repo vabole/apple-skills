@@ -3,7 +3,7 @@ title: StoreKit
 source: https://developer.apple.com/documentation/storekit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/storekit
-timestamp: 2026-04-15T06:05:31.567Z
+timestamp: 2026-05-06T06:19:05.364Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)
@@ -790,6 +790,8 @@ timestamp: 2026-04-15T06:05:31.567Z
 ### Product and subscription information
 
 - [Implementing a store in your app using the StoreKit API](/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api)
+- [Supporting monthly subscriptions with a 12-month commitment](/documentation/storekit/supporting-monthly-subscriptions-with-a-12-month-commitment)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](/documentation/storekit/managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-)
 - [Product](/documentation/storekit/product)
 #### Requesting products from the App Store
 

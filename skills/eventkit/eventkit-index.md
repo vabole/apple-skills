@@ -3,7 +3,7 @@ title: EventKit
 source: https://developer.apple.com/documentation/eventkit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/eventkit
-timestamp: 2026-04-14T13:14:10.821Z
+timestamp: 2026-05-06T06:19:04.550Z
 ---
 
 **Navigation:** [EventKit](/documentation/eventkit)
@@ -220,6 +220,9 @@ timestamp: 2026-04-14T13:14:10.821Z
 - [var calendarIdentifier: String](/documentation/eventkit/ekcalendar/calendaridentifier)
 - [func DATETIME_COMPONENTS_DO_NOT_USE()](/documentation/eventkit/datetime_components_do_not_use())
 - [func DATE_COMPONENTS_DO_NOT_USE()](/documentation/eventkit/date_components_do_not_use())
+### Initializers
+
+- [init(forEntityType: EKEntityType, eventStore: EKEventStore)](/documentation/eventkit/ekcalendar/init(forentitytype:eventstore:))
 
 - [EKParticipant](/documentation/eventkit/ekparticipant)
 ### Defining Participants
@@ -331,6 +334,9 @@ timestamp: 2026-04-14T13:14:10.821Z
 
 - [var dayOfTheWeek: EKWeekday](/documentation/eventkit/ekrecurrencedayofweek/dayoftheweek)
 - [var weekNumber: Int](/documentation/eventkit/ekrecurrencedayofweek/weeknumber)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/eventkit/ekrecurrencedayofweek/init(coder:))
 
 - [EKRecurrenceEnd](/documentation/eventkit/ekrecurrenceend)
 ### Creating a Recurrence End
@@ -341,6 +347,10 @@ timestamp: 2026-04-14T13:14:10.821Z
 
 - [var endDate: Date?](/documentation/eventkit/ekrecurrenceend/enddate)
 - [var occurrenceCount: Int](/documentation/eventkit/ekrecurrenceend/occurrencecount)
+### Initializers
+
+- [init?(coder: NSCoder)](/documentation/eventkit/ekrecurrenceend/init(coder:))
+- [convenience init(endDate: Date)](/documentation/eventkit/ekrecurrenceend/init(enddate:))
 
 - [EKRecurrenceRule](/documentation/eventkit/ekrecurrencerule)
 ### Creating a Basic Recurrence Rule
@@ -383,6 +393,10 @@ timestamp: 2026-04-14T13:14:10.821Z
 - [var monthsOfTheYear: [NSNumber]?](/documentation/eventkit/ekrecurrencerule/monthsoftheyear)
 - [var setPositions: [NSNumber]?](/documentation/eventkit/ekrecurrencerule/setpositions)
 - [func EK_LOSE_FRACTIONAL_SECONDS_DO_NOT_USE()](/documentation/eventkit/ek_lose_fractional_seconds_do_not_use())
+### Initializers
+
+- [init(recurrenceWithFrequency: EKRecurrenceFrequency, interval: Int, daysOfTheWeek: [EKRecurrenceDayOfWeek]?, daysOfTheMonth: [NSNumber]?, monthsOfTheYear: [NSNumber]?, weeksOfTheYear: [NSNumber]?, daysOfTheYear: [NSNumber]?, setPositions: [NSNumber]?, end: EKRecurrenceEnd?)](/documentation/eventkit/ekrecurrencerule/init(recurrencewithfrequency:interval:daysoftheweek:daysofthemonth:monthsoftheyear:weeksoftheyear:daysoftheyear:setpositions:end:))
+- [init(recurrenceWithFrequency: EKRecurrenceFrequency, interval: Int, end: EKRecurrenceEnd?)](/documentation/eventkit/ekrecurrencerule/init(recurrencewithfrequency:interval:end:))
 
 ## Alarms
 
@@ -548,7 +562,7 @@ timestamp: 2026-04-14T13:14:10.821Z
 - [EKVirtualConferenceDescriptor](/documentation/eventkit/ekvirtualconferencedescriptor)
 ### Creating Conference Descriptors
 
-- [init(title: String?, urlDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)](/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:))
+- [init(title: String?, urlDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)](/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-4yf7)
 ### Configuring Virtual Conferences
 
 - [var title: String?](/documentation/eventkit/ekvirtualconferencedescriptor/title)
@@ -556,13 +570,19 @@ timestamp: 2026-04-14T13:14:10.821Z
 - [EKVirtualConferenceURLDescriptor](/documentation/eventkit/ekvirtualconferenceurldescriptor)
 #### Creating URL Descriptors
 
-- [init(title: String?, url: URL)](/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:))
+- [init(title: String?, url: URL)](/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:)-8l9d9)
 #### Configuring URL Descriptors
 
 - [var title: String?](/documentation/eventkit/ekvirtualconferenceurldescriptor/title)
 - [var url: URL](/documentation/eventkit/ekvirtualconferenceurldescriptor/url)
+#### Initializers
+
+- [init(title: String?, URL: URL)](/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:)-alzy)
 
 - [var conferenceDetails: String?](/documentation/eventkit/ekvirtualconferencedescriptor/conferencedetails)
+### Initializers
+
+- [init(title: String?, URLDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)](/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-1a9zt)
 
 - [EKVirtualConferenceRoomTypeDescriptor](/documentation/eventkit/ekvirtualconferenceroomtypedescriptor)
 ### Creating Room Type Descriptors

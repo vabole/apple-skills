@@ -4,7 +4,7 @@ description: A view controller that displays a popover tip in UIKit applications
 source: https://developer.apple.com/documentation/tipkit/tipuipopoverviewcontroller
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller.json
-timestamp: 2026-04-14T13:14:46.521Z
+timestamp: 2026-05-06T06:19:05.999Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit)
@@ -97,9 +97,9 @@ class CatTracksViewController: UIViewController {
 - [NSObjectProtocol](/documentation/ObjectiveC/NSObjectProtocol)
 - [NSTouchBarProvider](/documentation/AppKit/NSTouchBarProvider)
 - [UIActivityItemsConfigurationProviding](/documentation/UIKit/UIActivityItemsConfigurationProviding)
-- [UIAppearanceContainer](/documentation/UIKit/UIAppearanceContainer)
 - [UIContentContainer](/documentation/UIKit/UIContentContainer)
 - [UIFocusEnvironment](/documentation/UIKit/UIFocusEnvironment)
+- [UIKit.UIAppearanceContainer](/doc://com.apple.TipKit/objc(pl)UIAppearanceContainer)
 - [UIPasteConfigurationSupporting](/documentation/UIKit/UIPasteConfigurationSupporting)
 - [UIResponderStandardEditActions](/documentation/UIKit/UIResponderStandardEditActions)
 - [UIStateRestoring](/documentation/UIKit/UIStateRestoring)

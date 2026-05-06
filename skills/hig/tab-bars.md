@@ -4,7 +4,7 @@ description: A tab bar lets people navigate between top-level sections of your a
 source: https://developer.apple.com/design/human-interface-guidelines/tab-bars
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tab-bars.json
-timestamp: 2026-04-14T13:14:22.633Z
+timestamp: 2026-05-06T06:19:05.039Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -73,7 +73,7 @@ The system displays a tab bar near the top of the screen. You can choose to have
 
 ### Sidebar
 
-![A screenshot showing the Music app on iPad with the tab bar converted to a sidebar on the leading edge of the screen.](https://docs-assets.developer.apple.com/published/cb52cc194e4067efff244c3b991a02a4/ipad-sidebar-music-app%402x.png)
+![A screenshot showing the Music app on iPad with the tab bar converted to a sidebar on the leading edge of the screen.](https://docs-assets.developer.apple.com/published/0014d2d0207333d9624513167a69f2b2/ipad-sidebar-music-app%402x.png)
 
 > **Note:** To present a sidebar without the option to convert it to a tab bar, use a [navigation split view](https://developer.apple.com/documentation/swiftui/navigationsplitview) instead of a tab view. For guidance, see [Sidebars](/design/human-interface-guidelines/sidebars).
 

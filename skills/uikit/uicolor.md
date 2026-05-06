@@ -4,7 +4,7 @@ description: An object that stores color data and sometimes opacity.
 source: https://developer.apple.com/documentation/uikit/uicolor
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uicolor.json
-timestamp: 2026-04-14T13:14:49.842Z
+timestamp: 2026-05-06T06:19:06.110Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -92,6 +92,11 @@ Use color to customize your app’s appearance, communicate status, and help peo
 
 ## Initializers
 
+- [init(CGColor:)](/documentation/uikit/uicolor/init(cgcolor:)-58l83)
+- [init(CGColor:)](/documentation/uikit/uicolor/init(cgcolor:)-9d9vs)
+- [init(CIColor:)](/documentation/uikit/uicolor/init(cicolor:)-2b5ik)
+- [init(CIColor:)](/documentation/uikit/uicolor/init(cicolor:)-5fqhu)
+- [init(coder:)](/documentation/uikit/uicolor/init(coder:))
 - [init(named:in:compatibleWith:)](/documentation/uikit/uicolor/init(named:in:compatiblewith:))
 
 ## Default Implementations

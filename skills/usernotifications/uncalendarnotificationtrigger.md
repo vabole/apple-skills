@@ -4,7 +4,7 @@ description: A trigger condition that causes a notification the system delivers 
 source: https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger.json
-timestamp: 2026-04-14T13:14:55.571Z
+timestamp: 2026-05-06T06:19:06.380Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)
@@ -72,6 +72,10 @@ UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
 
 - [nextTriggerDate()](/documentation/usernotifications/uncalendarnotificationtrigger/nexttriggerdate()) The next date at which the trigger conditions are met.
 - [dateComponents](/documentation/usernotifications/uncalendarnotificationtrigger/datecomponents) The date components to construct this object.
+
+## Initializers
+
+- [init(dateMatchingComponents:repeats:)](/documentation/usernotifications/uncalendarnotificationtrigger/init(datematchingcomponents:repeats:))
 
 ## Triggers
 
