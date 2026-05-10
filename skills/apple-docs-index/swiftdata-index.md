@@ -3,7 +3,7 @@ title: SwiftData
 source: https://developer.apple.com/documentation/swiftdata
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/swiftdata
-timestamp: 2026-04-14T13:14:08.443Z
+timestamp: 2026-05-10T06:22:46.721Z
 ---
 
 **Navigation:** [SwiftData](/documentation/swiftdata)
@@ -314,9 +314,25 @@ timestamp: 2026-04-14T13:14:08.443Z
 ###### Instance Properties
 
 - [var isAttribute: Bool](/documentation/swiftdata/schemaproperty/isattribute)
+###### SchemaProperty Implementations
+
+- [var isAttribute: Bool](/documentation/swiftdata/schemaproperty/isattribute-9nk86)
+
 - [var isOptional: Bool](/documentation/swiftdata/schemaproperty/isoptional)
+###### SchemaProperty Implementations
+
+- [var isOptional: Bool](/documentation/swiftdata/schemaproperty/isoptional-2bqsz)
+
 - [var isRelationship: Bool](/documentation/swiftdata/schemaproperty/isrelationship)
+###### SchemaProperty Implementations
+
+- [var isRelationship: Bool](/documentation/swiftdata/schemaproperty/isrelationship-ksdo)
+
 - [var isTransient: Bool](/documentation/swiftdata/schemaproperty/istransient)
+###### SchemaProperty Implementations
+
+- [var isTransient: Bool](/documentation/swiftdata/schemaproperty/istransient-6du5j)
+
 - [var isUnique: Bool](/documentation/swiftdata/schemaproperty/isunique)
 - [var name: String](/documentation/swiftdata/schemaproperty/name)
 - [var originalName: String](/documentation/swiftdata/schemaproperty/originalname)
@@ -783,9 +799,25 @@ timestamp: 2026-04-14T13:14:08.443Z
 ###### Instance Properties
 
 - [var isAttribute: Bool](/documentation/swiftdata/schemaproperty/isattribute)
+###### SchemaProperty Implementations
+
+- [var isAttribute: Bool](/documentation/swiftdata/schemaproperty/isattribute-9nk86)
+
 - [var isOptional: Bool](/documentation/swiftdata/schemaproperty/isoptional)
+###### SchemaProperty Implementations
+
+- [var isOptional: Bool](/documentation/swiftdata/schemaproperty/isoptional-2bqsz)
+
 - [var isRelationship: Bool](/documentation/swiftdata/schemaproperty/isrelationship)
+###### SchemaProperty Implementations
+
+- [var isRelationship: Bool](/documentation/swiftdata/schemaproperty/isrelationship-ksdo)
+
 - [var isTransient: Bool](/documentation/swiftdata/schemaproperty/istransient)
+###### SchemaProperty Implementations
+
+- [var isTransient: Bool](/documentation/swiftdata/schemaproperty/istransient-6du5j)
+
 - [var isUnique: Bool](/documentation/swiftdata/schemaproperty/isunique)
 - [var name: String](/documentation/swiftdata/schemaproperty/name)
 - [var originalName: String](/documentation/swiftdata/schemaproperty/originalname)
@@ -1181,6 +1213,10 @@ timestamp: 2026-04-14T13:14:08.443Z
 #### Instance Methods
 
 - [func validate() throws](/documentation/swiftdata/datastoreconfiguration/validate())
+##### DataStoreConfiguration Implementations
+
+- [func validate() throws](/documentation/swiftdata/datastoreconfiguration/validate()-7u64l)
+
 
 - [var identifier: String](/documentation/swiftdata/datastore/identifier)
 - [var schema: Schema](/documentation/swiftdata/datastore/schema)
@@ -1217,7 +1253,15 @@ timestamp: 2026-04-14T13:14:08.443Z
 
 - [DataStoreSnapshotValue](/documentation/swiftdata/datastoresnapshotvalue)
 - [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](/documentation/swiftdata/datastore/fetchcount(_:))
+#### DataStore Implementations
+
+- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](/documentation/swiftdata/datastore/fetchcount(_:)-91yf3)
+
 - [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](/documentation/swiftdata/datastore/fetchidentifiers(_:))
+#### DataStore Implementations
+
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](/documentation/swiftdata/datastore/fetchidentifiers(_:)-6p9oh)
+
 ### Persisting model data
 
 - [func save(DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>](/documentation/swiftdata/datastore/save(_:))
@@ -1242,16 +1286,32 @@ timestamp: 2026-04-14T13:14:08.443Z
 ### Removing all persisted model data
 
 - [func erase() throws](/documentation/swiftdata/datastore/erase())
+#### DataStore Implementations
+
+- [func erase() throws](/documentation/swiftdata/datastore/erase()-4xvdm)
+
 ### Sharing cached data between model contexts
 
 - [func initializeState(for: EditingState)](/documentation/swiftdata/datastore/initializestate(for:))
+#### DataStore Implementations
+
+- [func initializeState(for: EditingState)](/documentation/swiftdata/datastore/initializestate(for:)-55cts)
+
 - [EditingState](/documentation/swiftdata/editingstate)
 #### Instance Properties
 
 - [var author: String?](/documentation/swiftdata/editingstate/author)
 
 - [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](/documentation/swiftdata/datastore/cachedsnapshots(for:editingstate:))
+#### DataStore Implementations
+
+- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](/documentation/swiftdata/datastore/cachedsnapshots(for:editingstate:)-8e689)
+
 - [func invalidateState(for: EditingState)](/documentation/swiftdata/datastore/invalidatestate(for:))
+#### DataStore Implementations
+
+- [func invalidateState(for: EditingState)](/documentation/swiftdata/datastore/invalidatestate(for:)-8z39v)
+
 
 - [DataStoreBatching](/documentation/swiftdata/datastorebatching)
 ### Deleting persisted model data

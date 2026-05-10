@@ -3,7 +3,7 @@ title: App Intents
 source: https://developer.apple.com/documentation/appintents
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/appintents
-timestamp: 2026-04-14T13:14:06.582Z
+timestamp: 2026-05-10T06:22:46.600Z
 ---
 
 **Navigation:** [App Intents](/documentation/appintents)
@@ -1044,18 +1044,30 @@ timestamp: 2026-04-14T13:14:06.582Z
 ###### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaintent/isassistantonly)
+###### AssistantSchemaIntent Implementations
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaintent/isassistantonly-p4hd)
+
 
 - [AssistantEntity](/documentation/appintents/assistantentity)
 - [AssistantSchemaEntity](/documentation/appintents/assistantschemaentity)
 ###### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaentity/isassistantonly)
+###### AssistantSchemaEntity Implementations
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaentity/isassistantonly-84q7m)
+
 
 - [AssistantEnum](/documentation/appintents/assistantenum)
 - [AssistantSchemaEnum](/documentation/appintents/assistantschemaenum)
 ###### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaenum/isassistantonly)
+###### AssistantSchemaEnum Implementations
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaenum/isassistantonly-91o1k)
+
 
 
 #### Deprecated macros
@@ -1211,6 +1223,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Configuring shortcut tiles
 
 - [static var shortcutTileColor: ShortcutTileColor](/documentation/appintents/appshortcutsprovider/shortcuttilecolor)
+##### AppShortcutsProvider Implementations
+
+- [static var shortcutTileColor: ShortcutTileColor](/documentation/appintents/appshortcutsprovider/shortcuttilecolor-png1)
+
 - [ShortcutTileColor](/documentation/appintents/shortcuttilecolor)
 ##### Getting the tile colors
 
@@ -1592,9 +1608,17 @@ timestamp: 2026-04-14T13:14:06.582Z
 
 - [static var current: Self](/documentation/appintents/setfocusfilterintent/current)
 - [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](/documentation/appintents/setfocusfilterintent/suggestedfocusfilters(for:))
+##### SetFocusFilterIntent Implementations
+
+- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](/documentation/appintents/setfocusfilterintent/suggestedfocusfilters(for:)-3d5tv)
+
 #### Configuring app context for the Focus
 
 - [var appContext: FocusFilterAppContext](/documentation/appintents/setfocusfilterintent/appcontext)
+##### SetFocusFilterIntent Implementations
+
+- [var appContext: FocusFilterAppContext](/documentation/appintents/setfocusfilterintent/appcontext-72yyc)
+
 - [static func invalidateFocusFilterAppContext()](/documentation/appintents/setfocusfilterintent/invalidatefocusfilterappcontext())
 
 - [Defining your app’s Focus filter](/documentation/appintents/defining-your-app-s-focus-filter)
@@ -1636,6 +1660,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Specifying the authentication policy
 
 - [static var authenticationPolicy: IntentAuthenticationPolicy](/documentation/appintents/appintent/authenticationpolicy)
+##### AppIntent Implementations
+
+- [static var authenticationPolicy: IntentAuthenticationPolicy](/documentation/appintents/appintent/authenticationpolicy-1r9kh)
+
 - [IntentAuthenticationPolicy](/documentation/appintents/intentauthenticationpolicy)
 ##### Authentication policies
 
@@ -1646,12 +1674,47 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Configuring the metadata
 
 - [static var title: LocalizedStringResource](/documentation/appintents/appintent/title)
+##### AppIntent Implementations
+
+- [static var title: LocalizedStringResource](/documentation/appintents/appintent/title-4a26m)
+
 - [static var description: IntentDescription?](/documentation/appintents/appintent/description)
+##### AppIntent Implementations
+
+- [static var description: IntentDescription?](/documentation/appintents/appintent/description-9po8e)
+
 - [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun)
+##### AppIntent Implementations
+
+- [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun-223b1)
+- [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun-3ej7y)
+- [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun-475kn)
+- [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun-5iruo)
+- [static var openAppWhenRun: Bool](/documentation/appintents/appintent/openappwhenrun-7ggw4)
+
 - [static var isDiscoverable: Bool](/documentation/appintents/appintent/isdiscoverable)
+##### AppIntent Implementations
+
+- [static var isDiscoverable: Bool](/documentation/appintents/appintent/isdiscoverable-95nxm)
+
 #### Performing the action
 
 - [func perform() async throws -> Self.PerformResult](/documentation/appintents/appintent/perform())
+##### AppIntent Implementations
+
+- [func perform() async throws -> some IntentResult](/documentation/appintents/appintent/perform()-1zvwi)
+- [func perform() async throws -> Self.NeverResult](/documentation/appintents/appintent/perform()-2523c)
+- [func perform() async throws -> Never](/documentation/appintents/appintent/perform()-28etm)
+- [func perform() async throws -> Self.NeverResult](/documentation/appintents/appintent/perform()-39thw)
+- [func perform() async throws -> Never](/documentation/appintents/appintent/perform()-5jtv1)
+- [func perform() async throws -> some IntentResult](/documentation/appintents/appintent/perform()-5wt2l)
+- [func perform() async throws -> Never](/documentation/appintents/appintent/perform()-pjg0)
+- [func perform() async throws -> some IntentResult](/documentation/appintents/appintent/perform()-rp9j)
+##### UISceneAppIntent Implementations
+
+- [func perform() async throws -> some IntentResult](/documentation/appintents/uisceneappintent/perform()-9wmom)
+- [func perform() async throws -> some IntentResult](/documentation/appintents/uisceneappintent/perform()-s290)
+
 - [var systemContext: IntentSystemContext](/documentation/appintents/appintent/systemcontext)
 - [PerformResult](/documentation/appintents/appintent/performresult)
 #### Requesting confirmation
@@ -1673,6 +1736,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 
 - [SummaryContent](/documentation/appintents/appintent/summarycontent)
 - [static var parameterSummary: Self.SummaryContent](/documentation/appintents/appintent/parametersummary)
+##### AppIntent Implementations
+
+- [static var parameterSummary: some ParameterSummary](/documentation/appintents/appintent/parametersummary-4vgic)
+
 - [static var parameterSummary: some ParameterSummary](/documentation/appintents/appintent/parametersummary-4vgic)
 - [ParameterSummaryBuilder](/documentation/appintents/parametersummarybuilder)
 ##### Type Methods
@@ -1708,6 +1775,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var supportedModes: IntentModes](/documentation/appintents/appintent/supportedmodes)
+##### AppIntent Implementations
+
+- [static var supportedModes: IntentModes](/documentation/appintents/appintent/supportedmodes-5zhmb)
+
 
 - [IntentDescription](/documentation/appintents/intentdescription)
 #### Creating a description
@@ -1740,6 +1811,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var deprecation: IntentDeprecation<Self.ReplacementIntent>](/documentation/appintents/deprecatedappintent/deprecation)
+##### DeprecatedAppIntent Implementations
+
+- [static var deprecation: IntentDeprecation<Never>](/documentation/appintents/deprecatedappintent/deprecation-55gu8)
+
 
 - [ForegroundContinuableIntent](/documentation/appintents/foregroundcontinuableintent)
 #### Instance Methods
@@ -1783,6 +1858,11 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Scoping the search
 
 - [static var searchScopes: Self.Criteria.SearchScopes](/documentation/appintents/showinappsearchresultsintent/searchscopes)
+##### ShowInAppSearchResultsIntent Implementations
+
+- [static var searchScopes: [StringSearchScope]](/documentation/appintents/showinappsearchresultsintent/searchscopes-5p2sw)
+- [static var searchScopes: Void](/documentation/appintents/showinappsearchresultsintent/searchscopes-7ve8b)
+
 - [StringSearchScope](/documentation/appintents/stringsearchscope)
 ##### Search scopes
 
@@ -1835,6 +1915,14 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Instance Properties
 
 - [var contentIdentifier: String](/documentation/appintents/targetcontentprovidingintent/contentidentifier)
+##### TargetContentProvidingIntent Implementations
+
+- [var contentIdentifier: String](/documentation/appintents/targetcontentprovidingintent/contentidentifier-4cvg3)
+- [var contentIdentifier: String](/documentation/appintents/targetcontentprovidingintent/contentidentifier-596wr)
+##### UISceneAppIntent Implementations
+
+- [var contentIdentifier: String](/documentation/appintents/uisceneappintent/contentidentifier)
+
 
 - [UISceneAppIntent](/documentation/appintents/uisceneappintent)
 #### Instance Properties
@@ -1843,6 +1931,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Instance Methods
 
 - [func performNavigation(forScene: UIScene)](/documentation/appintents/uisceneappintent/performnavigation(forscene:))
+##### UISceneAppIntent Implementations
+
+- [func performNavigation(forScene: UIScene)](/documentation/appintents/uisceneappintent/performnavigation(forscene:)-7qecn)
+
 
 - [URLRepresentableIntent](/documentation/appintents/urlrepresentableintent)
 #### Type Aliases
@@ -1851,6 +1943,12 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableintent/urlrepresentation-4fzwq)
+##### URLRepresentableIntent Implementations
+
+- [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableintent/urlrepresentation-35e40)
+- [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableintent/urlrepresentation-8rzp8)
+- [var urlRepresentation: URL?](/documentation/appintents/urlrepresentableintent/urlrepresentation-swift.property)
+
 
 ### Media actions
 
@@ -2936,18 +3034,30 @@ timestamp: 2026-04-14T13:14:06.582Z
 ##### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaintent/isassistantonly)
+###### AssistantSchemaIntent Implementations
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaintent/isassistantonly-p4hd)
+
 
 - [AssistantEntity](/documentation/appintents/assistantentity)
 - [AssistantSchemaEntity](/documentation/appintents/assistantschemaentity)
 ##### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaentity/isassistantonly)
+###### AssistantSchemaEntity Implementations
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaentity/isassistantonly-84q7m)
+
 
 - [AssistantEnum](/documentation/appintents/assistantenum)
 - [AssistantSchemaEnum](/documentation/appintents/assistantschemaenum)
 ##### Type Properties
 
 - [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaenum/isassistantonly)
+###### AssistantSchemaEnum Implementations
+
+- [static var isAssistantOnly: Bool](/documentation/appintents/assistantschemaenum/isassistantonly-91o1k)
+
 
 
 ### Deprecated macros
@@ -2997,6 +3107,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var includedPackages: [any AppIntentsPackage.Type]](/documentation/appintents/appintentspackage/includedpackages)
+##### AppIntentsPackage Implementations
+
+- [static var includedPackages: [any AppIntentsPackage.Type]](/documentation/appintents/appintentspackage/includedpackages-77zgd)
+
 
 ### Supplementary content
 
@@ -4355,7 +4469,15 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Returning the parameter options
 
 - [func results() async throws -> Self.Result](/documentation/appintents/dynamicoptionsprovider/results())
+##### DynamicOptionsProvider Implementations
+
+- [func results() async throws -> Self.Result](/documentation/appintents/dynamicoptionsprovider/results()-5xj97)
+
 - [func defaultResult() async -> Self.DefaultValue?](/documentation/appintents/dynamicoptionsprovider/defaultresult())
+##### DynamicOptionsProvider Implementations
+
+- [func defaultResult() async -> Self.DefaultValue?](/documentation/appintents/dynamicoptionsprovider/defaultresult()-57ptr)
+
 - [Result](/documentation/appintents/dynamicoptionsprovider/result)
 #### Associated Types
 
@@ -4877,6 +4999,11 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Making the entity queryable
 
 - [static var defaultQuery: Self.DefaultQuery](/documentation/appintents/appentity/defaultquery-4khg7)
+##### AppEntity Implementations
+
+- [static var defaultQuery: _RawRepresentableStringQuery<Self>](/documentation/appintents/appentity/defaultquery-3qobd)
+- [static var defaultQuery: _TransientAppEntityQuery<Self>](/documentation/appintents/appentity/defaultquery-8vl7p)
+
 - [DefaultQuery](/documentation/appintents/appentity/defaultquery-swift.associatedtype)
 - [static var defaultResolverSpecification: EmptyResolverSpecification<Self>](/documentation/appintents/appentity/defaultresolverspecification-2dpf2)
 - [static var defaultResolverSpecification: some ResolverSpecification](/documentation/appintents/appentity/defaultresolverspecification-589eq)
@@ -4904,10 +5031,18 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Specifying entity-related attributes
 
 - [var attributeSet: CSSearchableItemAttributeSet](/documentation/appintents/indexedentity/attributeset)
+##### IndexedEntity Implementations
+
+- [var attributeSet: CSSearchableItemAttributeSet](/documentation/appintents/indexedentity/attributeset-15ddg)
+
 - [var defaultAttributeSet: CSSearchableItemAttributeSet](/documentation/appintents/indexedentity/defaultattributeset)
 #### Hiding an entity from search results
 
 - [var hideInSpotlight: Bool](/documentation/appintents/indexedentity/hideinspotlight)
+##### IndexedEntity Implementations
+
+- [var hideInSpotlight: Bool](/documentation/appintents/indexedentity/hideinspotlight-7sp5n)
+
 
 - [TransientAppEntity](/documentation/appintents/transientappentity)
 #### Initializers
@@ -4922,6 +5057,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableentity/urlrepresentation-swift.type.property)
+##### URLRepresentableEntity Implementations
+
+- [var urlRepresentation: URL?](/documentation/appintents/urlrepresentableentity/urlrepresentation-swift.property)
+
 
 - [macro UnionValue()](/documentation/appintents/unionvalue())
 ### Entity identity
@@ -4930,6 +5069,12 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var persistentIdentifier: String](/documentation/appintents/persistentlyidentifiable/persistentidentifier)
+##### PersistentlyIdentifiable Implementations
+
+- [static var persistentIdentifier: String](/documentation/appintents/persistentlyidentifiable/persistentidentifier-4ozxg)
+- [static var persistentIdentifier: String](/documentation/appintents/persistentlyidentifiable/persistentidentifier-4x5zb)
+- [static var persistentIdentifier: String](/documentation/appintents/persistentlyidentifiable/persistentidentifier-719w)
+
 
 - [EntityIdentifier](/documentation/appintents/entityidentifier)
 #### Creating an entity identifier
@@ -6118,6 +6263,11 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Providing the visual content
 
 - [var displayRepresentation: DisplayRepresentation](/documentation/appintents/instancedisplayrepresentable/displayrepresentation)
+##### InstanceDisplayRepresentable Implementations
+
+- [var displayRepresentation: DisplayRepresentation](/documentation/appintents/instancedisplayrepresentable/displayrepresentation-61s5n)
+- [var displayRepresentation: DisplayRepresentation](/documentation/appintents/instancedisplayrepresentable/displayrepresentation-pd0c)
+
 #### Providing a localized description
 
 - [var localizedStringResource: LocalizedStringResource](/documentation/appintents/instancedisplayrepresentable/localizedstringresource)
@@ -6126,6 +6276,11 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Describing the type
 
 - [static var typeDisplayRepresentation: TypeDisplayRepresentation](/documentation/appintents/typedisplayrepresentable/typedisplayrepresentation)
+##### TypeDisplayRepresentable Implementations
+
+- [static var typeDisplayRepresentation: TypeDisplayRepresentation](/documentation/appintents/typedisplayrepresentable/typedisplayrepresentation-21sz0)
+- [static var typeDisplayRepresentation: TypeDisplayRepresentation](/documentation/appintents/typedisplayrepresentable/typedisplayrepresentation-2jryr)
+
 
 - [TypeDisplayRepresentation](/documentation/appintents/typedisplayrepresentation)
 #### Initializers
@@ -6175,6 +6330,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var urlRepresentation: Self.URLRepresentation](/documentation/appintents/urlrepresentableenum/urlrepresentation-swift.type.property)
+##### URLRepresentableEnum Implementations
+
+- [var urlRepresentation: URL?](/documentation/appintents/urlrepresentableenum/urlrepresentation-swift.property)
+
 
 
 - [Entity queries](/documentation/appintents/entity-queries)
@@ -6187,10 +6346,20 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Searching for entities
 
 - [func entities(for: [Self.Entity.ID]) async throws -> [Self.Entity]](/documentation/appintents/entityquery/entities(for:))
+##### EntityQuery Implementations
+
+- [func entities(for: [Self.Unique.ID]) async throws -> [Self.Unique]](/documentation/appintents/entityquery/entities(for:)-luma)
+
 - [Entity](/documentation/appintents/entityquery/entity)
 #### Suggesting entities
 
 - [func suggestedEntities() async throws -> Self.Result](/documentation/appintents/entityquery/suggestedentities())
+##### EntityQuery Implementations
+
+- [func suggestedEntities() async throws -> Self.Result](/documentation/appintents/entityquery/suggestedentities()-9n95r)
+- [func suggestedEntities() async throws -> [Self.Unique]](/documentation/appintents/entityquery/suggestedentities()-9ukup)
+- [func suggestedEntities() async throws -> Self.Result](/documentation/appintents/entityquery/suggestedentities()-yu39)
+
 #### Associated Types
 
 - [Result](/documentation/appintents/entityquery/result)
@@ -6199,9 +6368,17 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Instance Methods
 
 - [func allEntities() async throws -> Self.Result](/documentation/appintents/enumerableentityquery/allentities())
+##### EnumerableEntityQuery Implementations
+
+- [func allEntities() async throws -> [Self.Unique]](/documentation/appintents/enumerableentityquery/allentities()-9mekw)
+
 #### Type Properties
 
 - [static var findIntentDescription: IntentDescription?](/documentation/appintents/enumerableentityquery/findintentdescription)
+##### EnumerableEntityQuery Implementations
+
+- [static var findIntentDescription: IntentDescription?](/documentation/appintents/enumerableentityquery/findintentdescription-5hspv)
+
 
 ### String-based queries
 
@@ -6238,6 +6415,10 @@ timestamp: 2026-04-14T13:14:06.582Z
 #### Type Properties
 
 - [static var findIntentDescription: IntentDescription?](/documentation/appintents/entitypropertyquery/findintentdescription)
+##### EntityPropertyQuery Implementations
+
+- [static var findIntentDescription: IntentDescription?](/documentation/appintents/entitypropertyquery/findintentdescription-7dj5i)
+
 
 - [EntityQueryProperties](/documentation/appintents/entityqueryproperties)
 #### Creating the query properties
@@ -6711,6 +6892,11 @@ timestamp: 2026-04-14T13:14:06.582Z
 ### Instance Properties
 
 - [var urlRepresentationParameter: String?](/documentation/appintents/customurlrepresentationparameterconvertible/urlrepresentationparameter)
+#### CustomURLRepresentationParameterConvertible Implementations
+
+- [var urlRepresentationParameter: String?](/documentation/appintents/customurlrepresentationparameterconvertible/urlrepresentationparameter-1g4au)
+- [var urlRepresentationParameter: String?](/documentation/appintents/customurlrepresentationparameterconvertible/urlrepresentationparameter-6j32h)
+
 
 ## SiriKit migration
 

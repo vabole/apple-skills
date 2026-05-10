@@ -3,7 +3,7 @@ title: Swift Testing
 source: https://developer.apple.com/documentation/testing
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/testing
-timestamp: 2026-04-14T13:14:34.458Z
+timestamp: 2026-05-10T06:22:49.159Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -148,6 +148,10 @@ timestamp: 2026-04-14T13:14:34.458Z
 #### Instance Properties
 
 - [var testDescription: String](/documentation/testing/customteststringconvertible/testdescription)
+##### CustomTestStringConvertible Implementations
+
+- [var testDescription: String](/documentation/testing/customteststringconvertible/testdescription-3ar66)
+
 
 ### Representing source locations
 
@@ -261,6 +265,10 @@ timestamp: 2026-04-14T13:14:34.458Z
 
 - [static func tags(Tag...) -> Self](/documentation/testing/trait/tags(_:))
 - [var comments: [Comment]](/documentation/testing/trait/comments)
+##### Trait Implementations
+
+- [var comments: [Comment]](/documentation/testing/trait/comments-5i8gy)
+
 #### Associating bugs
 
 - [static func bug(String, Comment?) -> Self](/documentation/testing/trait/bug(_:_:))
@@ -274,8 +282,18 @@ timestamp: 2026-04-14T13:14:34.458Z
 - [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](/documentation/testing/testscoping/providescope(for:testcase:performing:))
 
 - [func scopeProvider(for: Test, testCase: Test.Case?) -> Self.TestScopeProvider?](/documentation/testing/trait/scopeprovider(for:testcase:))
+##### Trait Implementations
+
+- [func scopeProvider(for: Test, testCase: Test.Case?) -> Self?](/documentation/testing/trait/scopeprovider(for:testcase:)-1z8kh)
+- [func scopeProvider(for: Test, testCase: Test.Case?) -> Never?](/documentation/testing/trait/scopeprovider(for:testcase:)-9fxg4)
+- [func scopeProvider(for: Test, testCase: Test.Case?) -> Self?](/documentation/testing/trait/scopeprovider(for:testcase:)-inmj)
+
 - [TestScopeProvider](/documentation/testing/trait/testscopeprovider)
 - [func prepare(for: Test) async throws](/documentation/testing/trait/prepare(for:))
+##### Trait Implementations
+
+- [func prepare(for: Test) async throws](/documentation/testing/trait/prepare(for:)-4pe01)
+
 #### Type Methods
 
 - [static func compactMapIssues((Issue) -> Issue?) -> Self](/documentation/testing/trait/compactmapissues(_:))
@@ -286,6 +304,10 @@ timestamp: 2026-04-14T13:14:34.458Z
 #### Instance Properties
 
 - [var isRecursive: Bool](/documentation/testing/suitetrait/isrecursive)
+##### SuiteTrait Implementations
+
+- [var isRecursive: Bool](/documentation/testing/suitetrait/isrecursive-2z41z)
+
 
 - [TestScoping](/documentation/testing/testscoping)
 #### Instance Methods
@@ -384,10 +406,26 @@ timestamp: 2026-04-14T13:14:34.458Z
 #### Instance Properties
 
 - [var estimatedAttachmentByteCount: Int?](/documentation/testing/attachable/estimatedattachmentbytecount)
+##### Attachable Implementations
+
+- [var estimatedAttachmentByteCount: Int?](/documentation/testing/attachable/estimatedattachmentbytecount-28nbn)
+- [var estimatedAttachmentByteCount: Int?](/documentation/testing/attachable/estimatedattachmentbytecount-6c2cj)
+- [var estimatedAttachmentByteCount: Int?](/documentation/testing/attachable/estimatedattachmentbytecount-o90w)
+
 #### Instance Methods
 
 - [func preferredName(for: borrowing Attachment<Self>, basedOn: String) -> String](/documentation/testing/attachable/preferredname(for:basedon:))
+##### Attachable Implementations
+
+- [func preferredName(for: borrowing Attachment<Self>, basedOn: String) -> String](/documentation/testing/attachable/preferredname(for:basedon:)-9bptj)
+- [func preferredName(for: borrowing Attachment<Self>, basedOn: String) -> String](/documentation/testing/attachable/preferredname(for:basedon:)-aal5)
+
 - [func withUnsafeBytes<R>(for: borrowing Attachment<Self>, (UnsafeRawBufferPointer) throws -> R) throws -> R](/documentation/testing/attachable/withunsafebytes(for:_:))
+##### Attachable Implementations
+
+- [func withUnsafeBytes<R>(for: borrowing Attachment<Self>, (UnsafeRawBufferPointer) throws -> R) throws -> R](/documentation/testing/attachable/withunsafebytes(for:_:)-4m3s9)
+- [func withUnsafeBytes<R>(for: borrowing Attachment<Self>, (UnsafeRawBufferPointer) throws -> R) throws -> R](/documentation/testing/attachable/withunsafebytes(for:_:)-8ied9)
+
 
 - [AttachableWrapper](/documentation/testing/attachablewrapper)
 #### Associated Types

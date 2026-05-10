@@ -3,7 +3,7 @@ title: Combine
 source: https://developer.apple.com/documentation/combine
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/combine
-timestamp: 2026-04-14T13:14:09.380Z
+timestamp: 2026-05-10T06:22:46.833Z
 ---
 
 **Navigation:** [Combine](/documentation/combine)
@@ -2585,6 +2585,10 @@ timestamp: 2026-04-14T13:14:09.380Z
 ### Publishing changes
 
 - [var objectWillChange: Self.ObjectWillChangePublisher](/documentation/combine/observableobject/objectwillchange)
+#### ObservableObject Implementations
+
+- [var objectWillChange: ObservableObjectPublisher](/documentation/combine/observableobject/objectwillchange-5gopl)
+
 - [ObjectWillChangePublisher](/documentation/combine/observableobject/objectwillchangepublisher)
 
 - [ObservableObjectPublisher](/documentation/combine/observableobjectpublisher)
@@ -2653,6 +2657,10 @@ timestamp: 2026-04-14T13:14:09.380Z
 ### Identifying publisher streams
 
 - [var combineIdentifier: CombineIdentifier](/documentation/combine/customcombineidentifierconvertible/combineidentifier)
+#### CustomCombineIdentifierConvertible Implementations
+
+- [var combineIdentifier: CombineIdentifier](/documentation/combine/customcombineidentifierconvertible/combineidentifier-v253)
+
 
 - [CombineIdentifier](/documentation/combine/combineidentifier)
 ### Creating a Combine identifier

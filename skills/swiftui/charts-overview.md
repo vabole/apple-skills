@@ -3,7 +3,7 @@ title: Swift Charts
 source: https://developer.apple.com/documentation/charts
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/charts
-timestamp: 2026-04-14T13:14:37.169Z
+timestamp: 2026-05-10T06:22:49.407Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -624,9 +624,19 @@ timestamp: 2026-04-14T13:14:37.169Z
 ### Initializers
 
 - [init?(primitivePlottable: Self.PrimitivePlottable)](/documentation/charts/plottable/init(primitiveplottable:))
+#### Plottable Implementations
+
+- [init?(primitivePlottable: Self.PrimitivePlottable)](/documentation/charts/plottable/init(primitiveplottable:)-6vv53)
+- [init?(primitivePlottable: Self.RawValue)](/documentation/charts/plottable/init(primitiveplottable:)-7l0ao)
+
 ### Instance Properties
 
 - [var primitivePlottable: Self.PrimitivePlottable](/documentation/charts/plottable/primitiveplottable-xwx8)
+#### Plottable Implementations
+
+- [var primitivePlottable: String](/documentation/charts/plottable/primitiveplottable-4a60p)
+- [var primitivePlottable: Self](/documentation/charts/plottable/primitiveplottable-8wzif)
+
 
 ## Scales
 
@@ -1000,6 +1010,10 @@ timestamp: 2026-04-14T13:14:37.169Z
 ### Instance Methods
 
 - [func updateTarget(inout ScrollTarget, context: ChartScrollTargetBehaviorContext)](/documentation/charts/chartscrolltargetbehavior/updatetarget(_:context:))
+#### ChartScrollTargetBehavior Implementations
+
+- [func updateTarget(inout ScrollTarget, context: ScrollTargetBehaviorContext)](/documentation/charts/chartscrolltargetbehavior/updatetarget(_:context:)-8j5z4)
+
 ### Type Methods
 
 - [static func valueAligned(matching: DateComponents, majorAlignment: MajorValueAlignment<Date>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](/documentation/charts/chartscrolltargetbehavior/valuealigned(matching:majoralignment:limitbehavior:))

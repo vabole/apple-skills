@@ -3,7 +3,7 @@ title: XCUIAutomation
 source: https://developer.apple.com/documentation/xcuiautomation
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/xcuiautomation
-timestamp: 2026-04-14T13:14:57.446Z
+timestamp: 2026-05-10T06:22:51.236Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
@@ -600,7 +600,7 @@ timestamp: 2026-04-14T13:14:57.446Z
 
 - [init()](/documentation/xcuiautomation/xcuiapplication/init())
 - [init(bundleIdentifier: String)](/documentation/xcuiautomation/xcuiapplication/init(bundleidentifier:))
-- [init(url: URL)](/documentation/xcuiautomation/xcuiapplication/init(url:))
+- [init(url: URL)](/documentation/xcuiautomation/xcuiapplication/init(url:)-90e7z)
 ### Launching the application
 
 - [func launch()](/documentation/xcuiautomation/xcuiapplication/launch())
@@ -693,6 +693,9 @@ timestamp: 2026-04-14T13:14:57.446Z
 
 - [var element: XCUIElement?](/documentation/xcuiautomation/xcuiaccessibilityauditissue/element)
 
+### Initializers
+
+- [init(URL: URL)](/documentation/xcuiautomation/xcuiapplication/init(url:)-6ga10)
 
 ## Screenshots
 
@@ -810,26 +813,26 @@ timestamp: 2026-04-14T13:14:57.446Z
 
 - [func press(XCUIRemote.Button)](/documentation/xcuiautomation/xcuiremote/press(_:))
 - [func press(XCUIRemote.Button, forDuration: TimeInterval)](/documentation/xcuiautomation/xcuiremote/press(_:forduration:))
-- [XCUIRemoteButton](/documentation/xcuiautomation/xcuiremote/button)
+- [XCUIRemoteButton](/documentation/xcuiautomation/xcuiremotebutton)
 #### Remote buttons
 
-- [case up](/documentation/xcuiautomation/xcuiremote/button/up)
-- [case down](/documentation/xcuiautomation/xcuiremote/button/down)
-- [case left](/documentation/xcuiautomation/xcuiremote/button/left)
-- [case right](/documentation/xcuiautomation/xcuiremote/button/right)
-- [case select](/documentation/xcuiautomation/xcuiremote/button/select)
-- [case menu](/documentation/xcuiautomation/xcuiremote/button/menu)
-- [case playPause](/documentation/xcuiautomation/xcuiremote/button/playpause)
-- [case home](/documentation/xcuiautomation/xcuiremote/button/home)
-- [case pageUp](/documentation/xcuiautomation/xcuiremote/button/pageup)
-- [case pageDown](/documentation/xcuiautomation/xcuiremote/button/pagedown)
-- [case guide](/documentation/xcuiautomation/xcuiremote/button/guide)
-- [case fourColors](/documentation/xcuiautomation/xcuiremote/button/fourcolors)
-- [case oneTwoThree](/documentation/xcuiautomation/xcuiremote/button/onetwothree)
-- [case tvProvider](/documentation/xcuiautomation/xcuiremote/button/tvprovider)
+- [case up](/documentation/xcuiautomation/xcuiremotebutton/up)
+- [case down](/documentation/xcuiautomation/xcuiremotebutton/down)
+- [case left](/documentation/xcuiautomation/xcuiremotebutton/left)
+- [case right](/documentation/xcuiautomation/xcuiremotebutton/right)
+- [case select](/documentation/xcuiautomation/xcuiremotebutton/select)
+- [case menu](/documentation/xcuiautomation/xcuiremotebutton/menu)
+- [case playPause](/documentation/xcuiautomation/xcuiremotebutton/playpause)
+- [case home](/documentation/xcuiautomation/xcuiremotebutton/home)
+- [case pageUp](/documentation/xcuiautomation/xcuiremotebutton/pageup)
+- [case pageDown](/documentation/xcuiautomation/xcuiremotebutton/pagedown)
+- [case guide](/documentation/xcuiautomation/xcuiremotebutton/guide)
+- [case fourColors](/documentation/xcuiautomation/xcuiremotebutton/fourcolors)
+- [case oneTwoThree](/documentation/xcuiautomation/xcuiremotebutton/onetwothree)
+- [case tvProvider](/documentation/xcuiautomation/xcuiremotebutton/tvprovider)
 #### Initializers
 
-- [init?(rawValue: UInt)](/documentation/xcuiautomation/xcuiremote/button/init(rawvalue:))
+- [init?(rawValue: UInt)](/documentation/xcuiautomation/xcuiremotebutton/init(rawvalue:))
 
 
 ## UI testing availability

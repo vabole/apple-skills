@@ -3,7 +3,7 @@ title: TipKit
 source: https://developer.apple.com/documentation/tipkit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/tipkit
-timestamp: 2026-04-14T13:14:46.968Z
+timestamp: 2026-05-10T06:22:50.287Z
 ---
 
 **Navigation:** [TipKit](/documentation/tipkit)
@@ -241,7 +241,8 @@ timestamp: 2026-04-14T13:14:46.968Z
 - [init((any Tip)?, isPresented: Binding<Bool>?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](/documentation/tipkit/tipview/init(_:ispresented:arrowedge:action:))
 - [init<AnchorID>((any Tip)?, isPresented: Binding<Bool>?, arrowEdge: Edge?, anchorID: AnchorID, action: (Tips.Action) -> Void)](/documentation/tipkit/tipview/init(_:ispresented:arrowedge:anchorid:action:))
 
-- [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](/documentation/swiftui/view/popovertip(_:arrowedge:action:))
+- [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View
+](/documentation/swiftui/view/popovertip(_:arrowedge:action:))
 ## UIKit Views
 
 - [TipUIView](/documentation/tipkit/tipuiview)
@@ -502,7 +503,8 @@ timestamp: 2026-04-14T13:14:46.968Z
 
 ## View Style
 
-- [func tipViewStyle(some TipViewStyle) -> some View](/documentation/swiftui/view/tipviewstyle(_:))
+- [func tipViewStyle(some TipViewStyle) -> some View
+](/documentation/swiftui/view/tipviewstyle(_:))
 - [TipViewStyle](/documentation/tipkit/tipviewstyle)
 ### Associated Types
 

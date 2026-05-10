@@ -3,7 +3,7 @@ title: WidgetKit
 source: https://developer.apple.com/documentation/widgetkit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/widgetkit
-timestamp: 2026-04-14T13:14:56.720Z
+timestamp: 2026-05-10T06:22:51.135Z
 ---
 
 **Navigation:** [WidgetKit](/documentation/widgetkit)
@@ -47,23 +47,34 @@ timestamp: 2026-04-14T13:14:56.720Z
 - [var body: Self.Body](/documentation/swiftui/widgetconfiguration/body-swift.property)
 #### Setting the display name
 
-- [func configurationDisplayName<S>(S) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-2c3zv)
-- [func configurationDisplayName(Text) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-3sbn4)
-- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-4v9q)
+- [func configurationDisplayName<S>(S) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-2c3zv)
+- [func configurationDisplayName(Text) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-3sbn4)
+- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-4v9q)
 #### Setting the description
 
-- [func description(Text) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-1bvuj)
-- [func description<S>(S) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-2bfr)
-- [func description(LocalizedStringKey) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-4q9pa)
+- [func description(Text) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-1bvuj)
+- [func description<S>(S) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-2bfr)
+- [func description(LocalizedStringKey) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-4q9pa)
 #### Setting the supported families
 
-- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/supportedfamilies(_:))
-- [func supplementalActivityFamilies([ActivityFamily]) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/supplementalactivityfamilies(_:))
+- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/supportedfamilies(_:))
+- [func supplementalActivityFamilies([ActivityFamily]) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/supplementalactivityfamilies(_:))
 #### Handling background network requests
 
-- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/backgroundtask(_:action:))
-- [func onBackgroundURLSessionEvents(matching: ((String) -> Bool)?, (String, () -> Void) -> Void) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-2e152)
-- [func onBackgroundURLSessionEvents(matching: String, (String, () -> Void) -> Void) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-fw6x)
+- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/backgroundtask(_:action:))
+- [func onBackgroundURLSessionEvents(matching: ((String) -> Bool)?, (String, () -> Void) -> Void) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-2e152)
+- [func onBackgroundURLSessionEvents(matching: String, (String, () -> Void) -> Void) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-fw6x)
 
 ### Configurable widgets
 
@@ -76,22 +87,32 @@ timestamp: 2026-04-14T13:14:56.720Z
 - [var body: Self.Body](/documentation/swiftui/widgetconfiguration/body-swift.property)
 #### Setting the display name
 
-- [func configurationDisplayName<S>(S) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-2c3zv)
-- [func configurationDisplayName(Text) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-3sbn4)
-- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-4v9q)
+- [func configurationDisplayName<S>(S) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-2c3zv)
+- [func configurationDisplayName(Text) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-3sbn4)
+- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-4v9q)
 #### Setting the description
 
-- [func description(Text) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-1bvuj)
-- [func description<S>(S) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-2bfr)
-- [func description(LocalizedStringKey) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-4q9pa)
+- [func description(Text) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-1bvuj)
+- [func description<S>(S) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-2bfr)
+- [func description(LocalizedStringKey) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-4q9pa)
 #### Setting the supported families
 
-- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/supportedfamilies(_:))
+- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/supportedfamilies(_:))
 #### Handling background network requests
 
-- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/backgroundtask(_:action:))
-- [func onBackgroundURLSessionEvents(matching: ((String) -> Bool)?, (String, () -> Void) -> Void) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-2e152)
-- [func onBackgroundURLSessionEvents(matching: String, (String, () -> Void) -> Void) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-fw6x)
+- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/backgroundtask(_:action:))
+- [func onBackgroundURLSessionEvents(matching: ((String) -> Bool)?, (String, () -> Void) -> Void) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-2e152)
+- [func onBackgroundURLSessionEvents(matching: String, (String, () -> Void) -> Void) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-fw6x)
 
 - [WidgetInfo](/documentation/widgetkit/widgetinfo)
 #### Getting Configured Widget Information
@@ -164,13 +185,25 @@ timestamp: 2026-04-14T13:14:56.720Z
 #### Providing relevance clues
 
 - [func relevance() async -> WidgetRelevance<Void>](/documentation/widgetkit/timelineprovider/relevance())
+##### TimelineProvider Implementations
+
+- [func relevance() async -> WidgetRelevance<Void>](/documentation/widgetkit/timelineprovider/relevance()-7036j)
+
 
 - [AppIntentTimelineProvider](/documentation/widgetkit/appintenttimelineprovider)
 #### Generating timelines
 
 - [func placeholder(in: Self.Context) -> Self.Entry](/documentation/widgetkit/appintenttimelineprovider/placeholder(in:))
 - [func recommendations() -> [AppIntentRecommendation<Self.Intent>]](/documentation/widgetkit/appintenttimelineprovider/recommendations())
+##### AppIntentTimelineProvider Implementations
+
+- [func recommendations() -> [AppIntentRecommendation<Self.Intent>]](/documentation/widgetkit/appintenttimelineprovider/recommendations()-5xfj5)
+
 - [func relevance() async -> WidgetRelevance<Self.Intent>](/documentation/widgetkit/appintenttimelineprovider/relevance())
+##### AppIntentTimelineProvider Implementations
+
+- [func relevance() async -> WidgetRelevance<Self.Intent>](/documentation/widgetkit/appintenttimelineprovider/relevance()-9vl5j)
+
 - [func snapshot(for: Self.Intent, in: Self.Context) async -> Self.Entry](/documentation/widgetkit/appintenttimelineprovider/snapshot(for:in:))
 - [func timeline(for: Self.Intent, in: Self.Context) async -> Timeline<Self.Entry>](/documentation/widgetkit/appintenttimelineprovider/timeline(for:in:))
 - [AppIntentTimelineProvider.Context](/documentation/widgetkit/appintenttimelineprovider/context)
@@ -186,10 +219,18 @@ timestamp: 2026-04-14T13:14:56.720Z
 - [Entry](/documentation/widgetkit/intenttimelineprovider/entry)
 - [Intent](/documentation/widgetkit/intenttimelineprovider/intent)
 - [func recommendations() -> [IntentRecommendation<Self.Intent>]](/documentation/widgetkit/intenttimelineprovider/recommendations())
+##### IntentTimelineProvider Implementations
+
+- [func recommendations() -> [IntentRecommendation<Self.Intent>]](/documentation/widgetkit/intenttimelineprovider/recommendations()-5qmcg)
+
 - [IntentTimelineProvider.Context](/documentation/widgetkit/intenttimelineprovider/context)
 #### Instance Methods
 
 - [func relevance() async -> WidgetRelevance<Self.Intent>](/documentation/widgetkit/intenttimelineprovider/relevance())
+##### IntentTimelineProvider Implementations
+
+- [func relevance() async -> WidgetRelevance<Self.Intent>](/documentation/widgetkit/intenttimelineprovider/relevance()-4bbqo)
+
 
 - [TimelineProviderContext](/documentation/widgetkit/timelineprovidercontext)
 #### Preparing Preview Content
@@ -214,6 +255,10 @@ timestamp: 2026-04-14T13:14:56.720Z
 
 - [var date: Date](/documentation/widgetkit/timelineentry/date)
 - [var relevance: TimelineEntryRelevance?](/documentation/widgetkit/timelineentry/relevance)
+##### TimelineEntry Implementations
+
+- [var relevance: TimelineEntryRelevance?](/documentation/widgetkit/timelineentry/relevance-9msg1)
+
 
 - [Timeline](/documentation/widgetkit/timeline)
 #### Creating a Timeline
@@ -332,14 +377,16 @@ timestamp: 2026-04-14T13:14:56.720Z
 ### visionOS widgets
 
 - [Updating your widgets for visionOS](/documentation/widgetkit/updating-your-widgets-for-visionos)
-- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/widgettexture(_:))
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/widgettexture(_:))
 - [WidgetTexture](/documentation/widgetkit/widgettexture)
 #### Textures
 
 - [static let glass: WidgetTexture](/documentation/widgetkit/widgettexture/glass)
 - [static let paper: WidgetTexture](/documentation/widgetkit/widgettexture/paper)
 
-- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/supportedmountingstyles(_:))
+- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/supportedmountingstyles(_:))
 - [WidgetMountingStyle](/documentation/widgetkit/widgetmountingstyle)
 #### Type Properties
 
@@ -456,22 +503,32 @@ timestamp: 2026-04-14T13:14:56.720Z
 - [var body: Self.Body](/documentation/swiftui/widgetconfiguration/body-swift.property)
 #### Setting the display name
 
-- [func configurationDisplayName<S>(S) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-2c3zv)
-- [func configurationDisplayName(Text) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-3sbn4)
-- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-4v9q)
+- [func configurationDisplayName<S>(S) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-2c3zv)
+- [func configurationDisplayName(Text) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-3sbn4)
+- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/configurationdisplayname(_:)-4v9q)
 #### Setting the description
 
-- [func description(Text) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-1bvuj)
-- [func description<S>(S) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-2bfr)
-- [func description(LocalizedStringKey) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/description(_:)-4q9pa)
+- [func description(Text) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-1bvuj)
+- [func description<S>(S) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-2bfr)
+- [func description(LocalizedStringKey) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/description(_:)-4q9pa)
 #### Setting the supported families
 
-- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/supportedfamilies(_:))
+- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/supportedfamilies(_:))
 #### Handling background network requests
 
-- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/backgroundtask(_:action:))
-- [func onBackgroundURLSessionEvents(matching: ((String) -> Bool)?, (String, () -> Void) -> Void) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-2e152)
-- [func onBackgroundURLSessionEvents(matching: String, (String, () -> Void) -> Void) -> some WidgetConfiguration](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-fw6x)
+- [func backgroundTask<D, R>(BackgroundTask<D, R>, action: (D) async -> R) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/backgroundtask(_:action:))
+- [func onBackgroundURLSessionEvents(matching: ((String) -> Bool)?, (String, () -> Void) -> Void) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-2e152)
+- [func onBackgroundURLSessionEvents(matching: String, (String, () -> Void) -> Void) -> some WidgetConfiguration
+](/documentation/swiftui/widgetconfiguration/onbackgroundurlsessionevents(matching:_:)-fw6x)
 
 - [IntentRecommendation](/documentation/widgetkit/intentrecommendation)
 #### Creating a Recommended Widget Configuration
@@ -524,7 +581,8 @@ timestamp: 2026-04-14T13:14:56.720Z
 - [static let leading: DynamicIslandExpandedRegionPosition](/documentation/widgetkit/dynamicislandexpandedregionposition/leading)
 - [static let trailing: DynamicIslandExpandedRegionPosition](/documentation/widgetkit/dynamicislandexpandedregionposition/trailing)
 
-- [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View](/documentation/swiftui/view/dynamicisland(verticalplacement:))
+- [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
+](/documentation/swiftui/view/dynamicisland(verticalplacement:))
 - [DynamicIslandExpandedRegionVerticalPlacement](/documentation/widgetkit/dynamicislandexpandedregionverticalplacement)
 ###### Configuring vertical content placement
 

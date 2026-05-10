@@ -3,7 +3,7 @@ title: UIKit
 source: https://developer.apple.com/documentation/uikit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/uikit
-timestamp: 2026-04-14T13:14:51.729Z
+timestamp: 2026-05-10T06:22:50.716Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -867,7 +867,36 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITraitChangeObservable](/documentation/uikit/uitraitchangeobservable-67e94)
 ###### Observing trait changes
 
+- [func registerForTraitChanges([UITrait], action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:action:))
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:))
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:))
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](/documentation/uikit/uitraitchangeobservable-67e94/unregisterfortraitchanges(_:))
+- [UITraitChangeObservable.TraitChangeHandler](/documentation/uikit/uitraitchangeobservable-67e94/traitchangehandler)
 - [UITraitChangeRegistration](/documentation/uikit/uitraitchangeregistration)
+###### Registering traits for observation
+
+- [UITraitAccessibilityContrast](/documentation/uikit/uitraitaccessibilitycontrast-swift.struct)
+- [UITraitActiveAppearance](/documentation/uikit/uitraitactiveappearance-swift.struct)
+- [UITraitDisplayGamut](/documentation/uikit/uitraitdisplaygamut-swift.struct)
+- [UITraitDisplayScale](/documentation/uikit/uitraitdisplayscale-swift.struct)
+- [UITraitForceTouchCapability](/documentation/uikit/uitraitforcetouchcapability-swift.struct)
+- [UITraitHDRHeadroomUsageLimit](/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct)
+- [UITraitHorizontalSizeClass](/documentation/uikit/uitraithorizontalsizeclass-swift.struct)
+- [UITraitImageDynamicRange](/documentation/uikit/uitraitimagedynamicrange-swift.struct)
+- [UITraitLayoutDirection](/documentation/uikit/uitraitlayoutdirection-swift.struct)
+- [UITraitLegibilityWeight](/documentation/uikit/uitraitlegibilityweight-swift.struct)
+- [UITraitListEnvironment](/documentation/uikit/uitraitlistenvironment-swift.struct)
+- [UITraitPreferredContentSizeCategory](/documentation/uikit/uitraitpreferredcontentsizecategory-swift.struct)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](/documentation/uikit/uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct)
+- [UITraitSceneCaptureState](/documentation/uikit/uitraitscenecapturestate-swift.struct)
+- [UITraitSplitViewControllerLayoutEnvironment](/documentation/uikit/uitraitsplitviewcontrollerlayoutenvironment-swift.struct)
+- [UITraitTabAccessoryEnvironment](/documentation/uikit/uitraittabaccessoryenvironment-swift.struct)
+- [UITraitToolbarItemPresentationSize](/documentation/uikit/uitraittoolbaritempresentationsize-swift.struct)
+- [UITraitTypesettingLanguage](/documentation/uikit/uitraittypesettinglanguage-swift.struct)
+- [UITraitUserInterfaceIdiom](/documentation/uikit/uitraituserinterfaceidiom-swift.struct)
+- [UITraitUserInterfaceLevel](/documentation/uikit/uitraituserinterfacelevel-swift.struct)
+- [UITraitUserInterfaceStyle](/documentation/uikit/uitraituserinterfacestyle-swift.struct)
+- [UITraitVerticalSizeClass](/documentation/uikit/uitraitverticalsizeclass-swift.struct)
 
 ##### Overriding trait values
 
@@ -1134,6 +1163,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init(UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](/documentation/uikit/uiwindowscene/activationinteraction/init(_:errorhandler:))
 - [UIWindowScene.ActivationInteraction.ConfigurationProvider](/documentation/uikit/uiwindowscene/activationinteraction/configurationprovider)
+###### Initializers
+
+- [init(configurationProvider: UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](/documentation/uikit/uiwindowscene/activationinteraction/init(configurationprovider:errorhandler:))
 
 - [UIWindowScene.ActivationRequestOptions](/documentation/uikit/uiwindowscene/activationrequestoptions)
 ###### Positioning windows
@@ -1418,6 +1450,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 ###### Identifying the scene
 
@@ -1426,6 +1461,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var stateRestorationActivity: NSUserActivity?](/documentation/uikit/uiscenesession/staterestorationactivity)
 - [var userInfo: [String : Any]?](/documentation/uikit/uiscenesession/userinfo)
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiscenesession/init(coder:))
 
 ##### Opening URLs
 
@@ -1659,6 +1697,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 - [UISceneSession](/documentation/uikit/uiscenesession)
 ##### Getting the scene information
@@ -1715,6 +1756,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 ##### Identifying the scene
 
@@ -1723,6 +1767,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var stateRestorationActivity: NSUserActivity?](/documentation/uikit/uiscenesession/staterestorationactivity)
 - [var userInfo: [String : Any]?](/documentation/uikit/uiscenesession/userinfo)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiscenesession/init(coder:))
 
 #### Activation and destruction
 
@@ -1990,7 +2037,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Observing data in collection view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uicollectionviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
+- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
 #### Observing data in table view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
@@ -2042,7 +2089,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Collection view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uicollectionviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
+- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
 ##### Table view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
@@ -2353,7 +2400,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init(preferredContentSizeCategory: UIContentSizeCategory)](/documentation/uikit/uitraitcollection/init(preferredcontentsizecategory:))
 - [init(activeAppearance: UIUserInterfaceActiveAppearance)](/documentation/uikit/uitraitcollection/init(activeappearance:))
 - [init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)](/documentation/uikit/uitraitcollection/init(toolbaritempresentationsize:))
-- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](/documentation/uikit/uitraitcollection/init(hdrheadroomusagelimit:))
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](/documentation/uikit/uitraitcollection/init(hdrheadroomusagelimit:)-5zqph)
 - [init(imageDynamicRange: UIImage.DynamicRange)](/documentation/uikit/uitraitcollection/init(imagedynamicrange:))
 - [init(listEnvironment: UIListEnvironment)](/documentation/uikit/uitraitcollection/init(listenvironment:))
 - [convenience init(resolvesNaturalAlignmentWithBaseWritingDirection: Bool)](/documentation/uikit/uitraitcollection/init(resolvesnaturalalignmentwithbasewritingdirection:))
@@ -2364,6 +2411,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init(traitsFrom: [UITraitCollection])](/documentation/uikit/uitraitcollection/init(traitsfrom:))
 ##### Initializers
 
+- [init(HDRHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](/documentation/uikit/uitraitcollection/init(hdrheadroomusagelimit:)-3nnko)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-3as8f)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-3fg2)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-4100d)
@@ -2380,6 +2428,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-836bk)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-8k1t1)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-vvgw)
+- [init(traitsFromCollections: [UITraitCollection])](/documentation/uikit/uitraitcollection/init(traitsfromcollections:))
 ##### Instance Methods
 
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](/documentation/uikit/uitraitcollection/replacing(_:value:)-162et)
@@ -2428,17 +2477,80 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITraitChangeObservable](/documentation/uikit/uitraitchangeobservable-67e94)
 ##### Observing trait changes
 
+- [func registerForTraitChanges([UITrait], action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:action:))
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:))
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:))
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](/documentation/uikit/uitraitchangeobservable-67e94/unregisterfortraitchanges(_:))
+- [UITraitChangeObservable.TraitChangeHandler](/documentation/uikit/uitraitchangeobservable-67e94/traitchangehandler)
 - [UITraitChangeRegistration](/documentation/uikit/uitraitchangeregistration)
+##### Registering traits for observation
+
+- [UITraitAccessibilityContrast](/documentation/uikit/uitraitaccessibilitycontrast-swift.struct)
+- [UITraitActiveAppearance](/documentation/uikit/uitraitactiveappearance-swift.struct)
+- [UITraitDisplayGamut](/documentation/uikit/uitraitdisplaygamut-swift.struct)
+- [UITraitDisplayScale](/documentation/uikit/uitraitdisplayscale-swift.struct)
+- [UITraitForceTouchCapability](/documentation/uikit/uitraitforcetouchcapability-swift.struct)
+- [UITraitHDRHeadroomUsageLimit](/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct)
+- [UITraitHorizontalSizeClass](/documentation/uikit/uitraithorizontalsizeclass-swift.struct)
+- [UITraitImageDynamicRange](/documentation/uikit/uitraitimagedynamicrange-swift.struct)
+- [UITraitLayoutDirection](/documentation/uikit/uitraitlayoutdirection-swift.struct)
+- [UITraitLegibilityWeight](/documentation/uikit/uitraitlegibilityweight-swift.struct)
+- [UITraitListEnvironment](/documentation/uikit/uitraitlistenvironment-swift.struct)
+- [UITraitPreferredContentSizeCategory](/documentation/uikit/uitraitpreferredcontentsizecategory-swift.struct)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](/documentation/uikit/uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct)
+- [UITraitSceneCaptureState](/documentation/uikit/uitraitscenecapturestate-swift.struct)
+- [UITraitSplitViewControllerLayoutEnvironment](/documentation/uikit/uitraitsplitviewcontrollerlayoutenvironment-swift.struct)
+- [UITraitTabAccessoryEnvironment](/documentation/uikit/uitraittabaccessoryenvironment-swift.struct)
+- [UITraitToolbarItemPresentationSize](/documentation/uikit/uitraittoolbaritempresentationsize-swift.struct)
+- [UITraitTypesettingLanguage](/documentation/uikit/uitraittypesettinglanguage-swift.struct)
+- [UITraitUserInterfaceIdiom](/documentation/uikit/uitraituserinterfaceidiom-swift.struct)
+- [UITraitUserInterfaceLevel](/documentation/uikit/uitraituserinterfacelevel-swift.struct)
+- [UITraitUserInterfaceStyle](/documentation/uikit/uitraituserinterfacestyle-swift.struct)
+- [UITraitVerticalSizeClass](/documentation/uikit/uitraitverticalsizeclass-swift.struct)
 
 - [UIMutableTraits](/documentation/uikit/uimutabletraits-13ja5)
-##### Bridging traits
+##### Getting and setting trait values
 
-- [UITraitBridgedEnvironmentKey](/documentation/uikit/uitraitbridgedenvironmentkey)
-###### Type Methods
+- [var accessibilityContrast: UIAccessibilityContrast](/documentation/uikit/uimutabletraits-13ja5/accessibilitycontrast)
+- [var activeAppearance: UIUserInterfaceActiveAppearance](/documentation/uikit/uimutabletraits-13ja5/activeappearance)
+- [var displayGamut: UIDisplayGamut](/documentation/uikit/uimutabletraits-13ja5/displaygamut)
+- [var displayScale: CGFloat](/documentation/uikit/uimutabletraits-13ja5/displayscale)
+- [var forceTouchCapability: UIForceTouchCapability](/documentation/uikit/uimutabletraits-13ja5/forcetouchcapability)
+- [var headroomUsageLimit: UITraitHDRHeadroomUsageLimit.Value](/documentation/uikit/uimutabletraits-13ja5/headroomusagelimit)
+- [var horizontalSizeClass: UIUserInterfaceSizeClass](/documentation/uikit/uimutabletraits-13ja5/horizontalsizeclass)
+- [var imageDynamicRange: UIImage.DynamicRange](/documentation/uikit/uimutabletraits-13ja5/imagedynamicrange)
+- [var layoutDirection: UITraitEnvironmentLayoutDirection](/documentation/uikit/uimutabletraits-13ja5/layoutdirection)
+- [var legibilityWeight: UILegibilityWeight](/documentation/uikit/uimutabletraits-13ja5/legibilityweight)
+- [var listEnvironment: UIListEnvironment](/documentation/uikit/uimutabletraits-13ja5/listenvironment)
+- [var preferredContentSizeCategory: UIContentSizeCategory](/documentation/uikit/uimutabletraits-13ja5/preferredcontentsizecategory)
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](/documentation/uikit/uimutabletraits-13ja5/resolvesnaturalalignmentwithbasewritingdirection)
+- [var sceneCaptureState: UISceneCaptureState](/documentation/uikit/uimutabletraits-13ja5/scenecapturestate)
+- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](/documentation/uikit/uimutabletraits-13ja5/splitviewcontrollerlayoutenvironment)
+- [var tabAccessoryEnvironment: UITabAccessory.Environment](/documentation/uikit/uimutabletraits-13ja5/tabaccessoryenvironment)
+- [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](/documentation/uikit/uimutabletraits-13ja5/toolbaritempresentationsize)
+- [var typesettingLanguage: Locale.Language?](/documentation/uikit/uimutabletraits-13ja5/typesettinglanguage)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](/documentation/uikit/uimutabletraits-13ja5/userinterfaceidiom)
+- [var userInterfaceLevel: UIUserInterfaceLevel](/documentation/uikit/uimutabletraits-13ja5/userinterfacelevel)
+- [var userInterfaceStyle: UIUserInterfaceStyle](/documentation/uikit/uimutabletraits-13ja5/userinterfacestyle)
+- [var verticalSizeClass: UIUserInterfaceSizeClass](/documentation/uikit/uimutabletraits-13ja5/verticalsizeclass)
+##### Subscripts
 
-- [static func read(from: UITraitCollection) -> Self.Value](/documentation/uikit/uitraitbridgedenvironmentkey/read(from:))
-- [static func write(to: inout any UIMutableTraits, value: Self.Value)](/documentation/uikit/uitraitbridgedenvironmentkey/write(to:value:))
-
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-19j2e)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-1b2k9)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-1k64j)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-2n1bn)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-2tbov)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-4tqsr)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-5h7go)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-6s6f5)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-7jap6)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-7kxs)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-7m9p0)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-8vqxe)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-9ld0y)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-9za2c)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-dwij)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-ve6h)
 
 - [UIAdaptivePresentationControllerDelegate](/documentation/uikit/uiadaptivepresentationcontrollerdelegate)
 ##### Adapting the presentation style
@@ -2475,14 +2587,48 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [Providing data to the view hierarchy with custom traits](/documentation/uikit/providing-data-to-the-view-hierarchy-with-custom-traits)
 - [UIMutableTraits](/documentation/uikit/uimutabletraits-13ja5)
-##### Bridging traits
+##### Getting and setting trait values
 
-- [UITraitBridgedEnvironmentKey](/documentation/uikit/uitraitbridgedenvironmentkey)
-###### Type Methods
+- [var accessibilityContrast: UIAccessibilityContrast](/documentation/uikit/uimutabletraits-13ja5/accessibilitycontrast)
+- [var activeAppearance: UIUserInterfaceActiveAppearance](/documentation/uikit/uimutabletraits-13ja5/activeappearance)
+- [var displayGamut: UIDisplayGamut](/documentation/uikit/uimutabletraits-13ja5/displaygamut)
+- [var displayScale: CGFloat](/documentation/uikit/uimutabletraits-13ja5/displayscale)
+- [var forceTouchCapability: UIForceTouchCapability](/documentation/uikit/uimutabletraits-13ja5/forcetouchcapability)
+- [var headroomUsageLimit: UITraitHDRHeadroomUsageLimit.Value](/documentation/uikit/uimutabletraits-13ja5/headroomusagelimit)
+- [var horizontalSizeClass: UIUserInterfaceSizeClass](/documentation/uikit/uimutabletraits-13ja5/horizontalsizeclass)
+- [var imageDynamicRange: UIImage.DynamicRange](/documentation/uikit/uimutabletraits-13ja5/imagedynamicrange)
+- [var layoutDirection: UITraitEnvironmentLayoutDirection](/documentation/uikit/uimutabletraits-13ja5/layoutdirection)
+- [var legibilityWeight: UILegibilityWeight](/documentation/uikit/uimutabletraits-13ja5/legibilityweight)
+- [var listEnvironment: UIListEnvironment](/documentation/uikit/uimutabletraits-13ja5/listenvironment)
+- [var preferredContentSizeCategory: UIContentSizeCategory](/documentation/uikit/uimutabletraits-13ja5/preferredcontentsizecategory)
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](/documentation/uikit/uimutabletraits-13ja5/resolvesnaturalalignmentwithbasewritingdirection)
+- [var sceneCaptureState: UISceneCaptureState](/documentation/uikit/uimutabletraits-13ja5/scenecapturestate)
+- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](/documentation/uikit/uimutabletraits-13ja5/splitviewcontrollerlayoutenvironment)
+- [var tabAccessoryEnvironment: UITabAccessory.Environment](/documentation/uikit/uimutabletraits-13ja5/tabaccessoryenvironment)
+- [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](/documentation/uikit/uimutabletraits-13ja5/toolbaritempresentationsize)
+- [var typesettingLanguage: Locale.Language?](/documentation/uikit/uimutabletraits-13ja5/typesettinglanguage)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](/documentation/uikit/uimutabletraits-13ja5/userinterfaceidiom)
+- [var userInterfaceLevel: UIUserInterfaceLevel](/documentation/uikit/uimutabletraits-13ja5/userinterfacelevel)
+- [var userInterfaceStyle: UIUserInterfaceStyle](/documentation/uikit/uimutabletraits-13ja5/userinterfacestyle)
+- [var verticalSizeClass: UIUserInterfaceSizeClass](/documentation/uikit/uimutabletraits-13ja5/verticalsizeclass)
+##### Subscripts
 
-- [static func read(from: UITraitCollection) -> Self.Value](/documentation/uikit/uitraitbridgedenvironmentkey/read(from:))
-- [static func write(to: inout any UIMutableTraits, value: Self.Value)](/documentation/uikit/uitraitbridgedenvironmentkey/write(to:value:))
-
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-19j2e)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-1b2k9)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-1k64j)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-2n1bn)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-2tbov)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-4tqsr)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-5h7go)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-6s6f5)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-7jap6)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-7kxs)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-7m9p0)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-8vqxe)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-9ld0y)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-9za2c)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-dwij)
+- [subscript<T>(T.Type) -> T.Value](/documentation/uikit/uimutabletraits-13ja5/subscript(_:)-ve6h)
 
 - [UITrait](/documentation/uikit/uitrait-9423)
 - [UITraitDefinition](/documentation/uikit/uitraitdefinition-64c15)
@@ -2492,9 +2638,21 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Type Properties
 
 - [static var affectsColorAppearance: Bool](/documentation/uikit/uitraitdefinition-64c15/affectscolorappearance)
+###### UITraitDefinition Implementations
+
+- [static var affectsColorAppearance: Bool](/documentation/uikit/uitraitdefinition-64c15/affectscolorappearance-2co0n)
+
 - [static var defaultValue: Self.Value](/documentation/uikit/uitraitdefinition-64c15/defaultvalue)
 - [static var identifier: String](/documentation/uikit/uitraitdefinition-64c15/identifier)
+###### UITraitDefinition Implementations
+
+- [static var identifier: String](/documentation/uikit/uitraitdefinition-64c15/identifier-302h7)
+
 - [static var name: String](/documentation/uikit/uitraitdefinition-64c15/name)
+###### UITraitDefinition Implementations
+
+- [static var name: String](/documentation/uikit/uitraitdefinition-64c15/name-9ueb5)
+
 
 
 - [Responding to changing display modes on Apple TV](/documentation/uikit/responding-to-changing-display-modes-on-apple-tv)
@@ -2804,7 +2962,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init(preferredContentSizeCategory: UIContentSizeCategory)](/documentation/uikit/uitraitcollection/init(preferredcontentsizecategory:))
 - [init(activeAppearance: UIUserInterfaceActiveAppearance)](/documentation/uikit/uitraitcollection/init(activeappearance:))
 - [init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)](/documentation/uikit/uitraitcollection/init(toolbaritempresentationsize:))
-- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](/documentation/uikit/uitraitcollection/init(hdrheadroomusagelimit:))
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](/documentation/uikit/uitraitcollection/init(hdrheadroomusagelimit:)-5zqph)
 - [init(imageDynamicRange: UIImage.DynamicRange)](/documentation/uikit/uitraitcollection/init(imagedynamicrange:))
 - [init(listEnvironment: UIListEnvironment)](/documentation/uikit/uitraitcollection/init(listenvironment:))
 - [convenience init(resolvesNaturalAlignmentWithBaseWritingDirection: Bool)](/documentation/uikit/uitraitcollection/init(resolvesnaturalalignmentwithbasewritingdirection:))
@@ -2815,6 +2973,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init(traitsFrom: [UITraitCollection])](/documentation/uikit/uitraitcollection/init(traitsfrom:))
 ##### Initializers
 
+- [init(HDRHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](/documentation/uikit/uitraitcollection/init(hdrheadroomusagelimit:)-3nnko)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-3as8f)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-3fg2)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-4100d)
@@ -2831,6 +2990,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-836bk)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-8k1t1)
 - [convenience init<T>(T.Type, value: T.Value)](/documentation/uikit/uitraitcollection/init(_:value:)-vvgw)
+- [init(traitsFromCollections: [UITraitCollection])](/documentation/uikit/uitraitcollection/init(traitsfromcollections:))
 ##### Instance Methods
 
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](/documentation/uikit/uitraitcollection/replacing(_:value:)-162et)
@@ -2910,7 +3070,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Collection view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uicollectionviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
+- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
 ##### Table view cells
 
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
@@ -3014,7 +3174,36 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITraitChangeObservable](/documentation/uikit/uitraitchangeobservable-67e94)
 ###### Observing trait changes
 
+- [func registerForTraitChanges([UITrait], action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:action:))
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:))
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:))
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](/documentation/uikit/uitraitchangeobservable-67e94/unregisterfortraitchanges(_:))
+- [UITraitChangeObservable.TraitChangeHandler](/documentation/uikit/uitraitchangeobservable-67e94/traitchangehandler)
 - [UITraitChangeRegistration](/documentation/uikit/uitraitchangeregistration)
+###### Registering traits for observation
+
+- [UITraitAccessibilityContrast](/documentation/uikit/uitraitaccessibilitycontrast-swift.struct)
+- [UITraitActiveAppearance](/documentation/uikit/uitraitactiveappearance-swift.struct)
+- [UITraitDisplayGamut](/documentation/uikit/uitraitdisplaygamut-swift.struct)
+- [UITraitDisplayScale](/documentation/uikit/uitraitdisplayscale-swift.struct)
+- [UITraitForceTouchCapability](/documentation/uikit/uitraitforcetouchcapability-swift.struct)
+- [UITraitHDRHeadroomUsageLimit](/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct)
+- [UITraitHorizontalSizeClass](/documentation/uikit/uitraithorizontalsizeclass-swift.struct)
+- [UITraitImageDynamicRange](/documentation/uikit/uitraitimagedynamicrange-swift.struct)
+- [UITraitLayoutDirection](/documentation/uikit/uitraitlayoutdirection-swift.struct)
+- [UITraitLegibilityWeight](/documentation/uikit/uitraitlegibilityweight-swift.struct)
+- [UITraitListEnvironment](/documentation/uikit/uitraitlistenvironment-swift.struct)
+- [UITraitPreferredContentSizeCategory](/documentation/uikit/uitraitpreferredcontentsizecategory-swift.struct)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](/documentation/uikit/uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct)
+- [UITraitSceneCaptureState](/documentation/uikit/uitraitscenecapturestate-swift.struct)
+- [UITraitSplitViewControllerLayoutEnvironment](/documentation/uikit/uitraitsplitviewcontrollerlayoutenvironment-swift.struct)
+- [UITraitTabAccessoryEnvironment](/documentation/uikit/uitraittabaccessoryenvironment-swift.struct)
+- [UITraitToolbarItemPresentationSize](/documentation/uikit/uitraittoolbaritempresentationsize-swift.struct)
+- [UITraitTypesettingLanguage](/documentation/uikit/uitraittypesettinglanguage-swift.struct)
+- [UITraitUserInterfaceIdiom](/documentation/uikit/uitraituserinterfaceidiom-swift.struct)
+- [UITraitUserInterfaceLevel](/documentation/uikit/uitraituserinterfacelevel-swift.struct)
+- [UITraitUserInterfaceStyle](/documentation/uikit/uitraituserinterfacestyle-swift.struct)
+- [UITraitVerticalSizeClass](/documentation/uikit/uitraitverticalsizeclass-swift.struct)
 
 ###### Overriding trait values
 
@@ -3281,6 +3470,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init(UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](/documentation/uikit/uiwindowscene/activationinteraction/init(_:errorhandler:))
 - [UIWindowScene.ActivationInteraction.ConfigurationProvider](/documentation/uikit/uiwindowscene/activationinteraction/configurationprovider)
+###### Initializers
+
+- [init(configurationProvider: UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](/documentation/uikit/uiwindowscene/activationinteraction/init(configurationprovider:errorhandler:))
 
 - [UIWindowScene.ActivationRequestOptions](/documentation/uikit/uiwindowscene/activationrequestoptions)
 ###### Positioning windows
@@ -3565,6 +3757,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 ###### Identifying the scene
 
@@ -3573,6 +3768,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var stateRestorationActivity: NSUserActivity?](/documentation/uikit/uiscenesession/staterestorationactivity)
 - [var userInfo: [String : Any]?](/documentation/uikit/uiscenesession/userinfo)
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiscenesession/init(coder:))
 
 ###### Opening URLs
 
@@ -3806,6 +4004,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 - [UISceneSession](/documentation/uikit/uiscenesession)
 ###### Getting the scene information
@@ -3862,6 +4063,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 ###### Identifying the scene
 
@@ -3870,6 +4074,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var stateRestorationActivity: NSUserActivity?](/documentation/uikit/uiscenesession/staterestorationactivity)
 - [var userInfo: [String : Any]?](/documentation/uikit/uiscenesession/userinfo)
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiscenesession/init(coder:))
 
 ##### Activation and destruction
 
@@ -4258,6 +4465,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: UInt)](/documentation/uikit/uipastecontrol/displaymode/init(rawvalue:))
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uipastecontrol/configuration-swift.class/init(coder:))
 ##### Instance Properties
 
 - [var imagePlacement: NSDirectionalRectEdge](/documentation/uikit/uipastecontrol/configuration-swift.class/imageplacement)
@@ -4288,6 +4498,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: UInt)](/documentation/uikit/uipastecontrol/displaymode/init(rawvalue:))
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uipastecontrol/configuration-swift.class/init(coder:))
 #### Instance Properties
 
 - [var imagePlacement: NSDirectionalRectEdge](/documentation/uikit/uipastecontrol/configuration-swift.class/imageplacement)
@@ -4486,6 +4699,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [func addAcceptableTypeIdentifiers([String])](/documentation/uikit/uipasteconfiguration/addacceptabletypeidentifiers(_:))
 - [func addTypeIdentifiers(forAccepting: any NSItemProviderReading.Type)](/documentation/uikit/uipasteconfiguration/addtypeidentifiers(foraccepting:)-4fvd6)
 - [func addTypeIdentifiers<T>(forAccepting: T.Type)](/documentation/uikit/uipasteconfiguration/addtypeidentifiers(foraccepting:)-8af7o)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uipasteconfiguration/init(coder:))
+- [convenience init(typeIdentifiersForAcceptingClass: any NSItemProviderReading.Type)](/documentation/uikit/uipasteconfiguration/init(typeidentifiersforacceptingclass:))
 
 - [UIPasteConfigurationSupporting](/documentation/uikit/uipasteconfigurationsupporting)
 #### Accessing the paste configuration
@@ -4832,6 +5049,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var alertTitle: String?](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/alerttitle)
 - [var disabledMode: UIActivityCollaborationMode](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/disabledmode)
 - [func description() -> String](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/description())
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/init(coder:))
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunchurl:))
 
 - [UIActivityCollaborationMode](/documentation/uikit/uiactivitycollaborationmode)
 ###### Enumeration Cases
@@ -5035,6 +5256,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var toolTip: String](/documentation/uikit/uitooltipconfiguration/tooltip)
 - [var sourceRect: CGRect?](/documentation/uikit/uitooltipconfiguration/sourcerect-8zvo1)
+###### Initializers
+
+- [convenience init(toolTip: String, inRect: CGRect)](/documentation/uikit/uitooltipconfiguration/init(tooltip:inrect:))
 
 
 
@@ -5051,6 +5275,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var toolTip: String](/documentation/uikit/uitooltipconfiguration/tooltip)
 - [var sourceRect: CGRect?](/documentation/uikit/uitooltipconfiguration/sourcerect-8zvo1)
+##### Initializers
+
+- [convenience init(toolTip: String, inRect: CGRect)](/documentation/uikit/uitooltipconfiguration/init(tooltip:inrect:))
 
 
 
@@ -5145,7 +5372,36 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITraitChangeObservable](/documentation/uikit/uitraitchangeobservable-67e94)
 ##### Observing trait changes
 
+- [func registerForTraitChanges([UITrait], action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:action:))
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:))
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:))
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](/documentation/uikit/uitraitchangeobservable-67e94/unregisterfortraitchanges(_:))
+- [UITraitChangeObservable.TraitChangeHandler](/documentation/uikit/uitraitchangeobservable-67e94/traitchangehandler)
 - [UITraitChangeRegistration](/documentation/uikit/uitraitchangeregistration)
+##### Registering traits for observation
+
+- [UITraitAccessibilityContrast](/documentation/uikit/uitraitaccessibilitycontrast-swift.struct)
+- [UITraitActiveAppearance](/documentation/uikit/uitraitactiveappearance-swift.struct)
+- [UITraitDisplayGamut](/documentation/uikit/uitraitdisplaygamut-swift.struct)
+- [UITraitDisplayScale](/documentation/uikit/uitraitdisplayscale-swift.struct)
+- [UITraitForceTouchCapability](/documentation/uikit/uitraitforcetouchcapability-swift.struct)
+- [UITraitHDRHeadroomUsageLimit](/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct)
+- [UITraitHorizontalSizeClass](/documentation/uikit/uitraithorizontalsizeclass-swift.struct)
+- [UITraitImageDynamicRange](/documentation/uikit/uitraitimagedynamicrange-swift.struct)
+- [UITraitLayoutDirection](/documentation/uikit/uitraitlayoutdirection-swift.struct)
+- [UITraitLegibilityWeight](/documentation/uikit/uitraitlegibilityweight-swift.struct)
+- [UITraitListEnvironment](/documentation/uikit/uitraitlistenvironment-swift.struct)
+- [UITraitPreferredContentSizeCategory](/documentation/uikit/uitraitpreferredcontentsizecategory-swift.struct)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](/documentation/uikit/uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct)
+- [UITraitSceneCaptureState](/documentation/uikit/uitraitscenecapturestate-swift.struct)
+- [UITraitSplitViewControllerLayoutEnvironment](/documentation/uikit/uitraitsplitviewcontrollerlayoutenvironment-swift.struct)
+- [UITraitTabAccessoryEnvironment](/documentation/uikit/uitraittabaccessoryenvironment-swift.struct)
+- [UITraitToolbarItemPresentationSize](/documentation/uikit/uitraittoolbaritempresentationsize-swift.struct)
+- [UITraitTypesettingLanguage](/documentation/uikit/uitraittypesettinglanguage-swift.struct)
+- [UITraitUserInterfaceIdiom](/documentation/uikit/uitraituserinterfaceidiom-swift.struct)
+- [UITraitUserInterfaceLevel](/documentation/uikit/uitraituserinterfacelevel-swift.struct)
+- [UITraitUserInterfaceStyle](/documentation/uikit/uitraituserinterfacestyle-swift.struct)
+- [UITraitVerticalSizeClass](/documentation/uikit/uitraitverticalsizeclass-swift.struct)
 
 #### Requesting trait updates
 
@@ -6011,7 +6267,13 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 ##### Creating cells
 
-- [UICollectionViewCellRegistration](/documentation/uikit/uicollectionview/cellregistration)
+- [UICollectionView.CellRegistration](/documentation/uikit/uicollectionview/cellregistration)
+###### Creating a cell registration
+
+- [init(handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](/documentation/uikit/uicollectionview/cellregistration/init(handler:))
+- [init(cellNib: UINib, handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](/documentation/uikit/uicollectionview/cellregistration/init(cellnib:handler:))
+- [UICollectionView.CellRegistration.Handler](/documentation/uikit/uicollectionview/cellregistration/handler)
+
 - [func dequeueConfiguredReusableCell<Cell, Item>(using: UICollectionView.CellRegistration<Cell, Item>, for: IndexPath, item: Item?) -> Cell](/documentation/uikit/uicollectionview/dequeueconfiguredreusablecell(using:for:item:))
 - [func register(AnyClass?, forCellWithReuseIdentifier: String)](/documentation/uikit/uicollectionview/register(_:forcellwithreuseidentifier:)-3vaho)
 - [func register(UINib?, forCellWithReuseIdentifier: String)](/documentation/uikit/uicollectionview/register(_:forcellwithreuseidentifier:)-6z6t4)
@@ -6597,8 +6859,8 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var configurationState: UICellConfigurationState](/documentation/uikit/uicollectionviewcell/configurationstate-4u37h)
 - [func setNeedsUpdateConfiguration()](/documentation/uikit/uicollectionviewcell/setneedsupdateconfiguration())
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uicollectionviewcell/updateconfiguration(using:))
-- [configurationUpdateHandler](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
-- [UICollectionViewCellConfigurationUpdateHandler](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-swift.typealias)
+- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-7rqbu)
+- [UICollectionViewCell.ConfigurationUpdateHandler](/documentation/uikit/uicollectionviewcell/configurationupdatehandler-swift.typealias)
 - [var isSelected: Bool](/documentation/uikit/uicollectionviewcell/isselected)
 - [var isHighlighted: Bool](/documentation/uikit/uicollectionviewcell/ishighlighted)
 ##### Managing drag state changes
@@ -7121,6 +7383,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var top: NSCollectionLayoutSpacing?](/documentation/uikit/nscollectionlayoutedgespacing/top)
 - [var trailing: NSCollectionLayoutSpacing?](/documentation/uikit/nscollectionlayoutedgespacing/trailing)
 - [var bottom: NSCollectionLayoutSpacing?](/documentation/uikit/nscollectionlayoutedgespacing/bottom)
+###### Initializers
+
+- [convenience init(forLeading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)](/documentation/uikit/nscollectionlayoutedgespacing/init(forleading:top:trailing:bottom:))
 
 - [NSCollectionLayoutContainer](/documentation/uikit/nscollectionlayoutcontainer)
 ###### Getting content size
@@ -7507,6 +7772,11 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var alpha: CGFloat](/documentation/uikit/uicollectionviewlayoutattributes/alpha)
 - [var zIndex: Int](/documentation/uikit/uicollectionviewlayoutattributes/zindex)
 - [var isHidden: Bool](/documentation/uikit/uicollectionviewlayoutattributes/ishidden)
+###### Initializers
+
+- [convenience init(forCellWithIndexPath: IndexPath)](/documentation/uikit/uicollectionviewlayoutattributes/init(forcellwithindexpath:))
+- [convenience init(forDecorationViewOfKind: String, withIndexPath: IndexPath)](/documentation/uikit/uicollectionviewlayoutattributes/init(fordecorationviewofkind:withindexpath:))
+- [convenience init(forSupplementaryViewOfKind: String, withIndexPath: IndexPath)](/documentation/uikit/uicollectionviewlayoutattributes/init(forsupplementaryviewofkind:withindexpath:))
 
 - [UICollectionViewFlowLayoutInvalidationContext](/documentation/uikit/uicollectionviewflowlayoutinvalidationcontext)
 ###### Specifying what to invalidate
@@ -7701,6 +7971,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: UInt)](/documentation/uikit/uidropoperation/init(rawvalue:))
 
+##### Initializers
+
+- [init(dropOperation: UIDropOperation, intent: UICollectionViewDropProposal.Intent)](/documentation/uikit/uicollectionviewdropproposal/init(dropoperation:intent:))
 
 - [UICollectionViewDropItem](/documentation/uikit/uicollectionviewdropitem)
 ##### Getting the Drag Item
@@ -8493,7 +8766,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [func setNeedsUpdateConfiguration()](/documentation/uikit/uitableviewcell/setneedsupdateconfiguration())
 - [func updateConfiguration(using: UICellConfigurationState)](/documentation/uikit/uitableviewcell/updateconfiguration(using:))
 - [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewcell/configurationupdatehandler-974)
-- [UITableViewCellConfigurationUpdateHandler](/documentation/uikit/uitableviewcell/configurationupdatehandler-swift.typealias)
+- [UITableViewCell.ConfigurationUpdateHandler](/documentation/uikit/uitableviewcell/configurationupdatehandler-swift.typealias)
 ##### Managing accessory views
 
 - [var accessoryType: UITableViewCell.AccessoryType](/documentation/uikit/uitableviewcell/accessorytype-swift.property)
@@ -8635,7 +8908,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [func setNeedsUpdateConfiguration()](/documentation/uikit/uitableviewheaderfooterview/setneedsupdateconfiguration())
 - [func updateConfiguration(using: UIViewConfigurationState)](/documentation/uikit/uitableviewheaderfooterview/updateconfiguration(using:))
 - [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-49slo)
-- [UITableViewHeaderFooterViewConfigurationUpdateHandler](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-swift.typealias)
+- [UITableViewHeaderFooterView.ConfigurationUpdateHandler](/documentation/uikit/uitableviewheaderfooterview/configurationupdatehandler-swift.typealias)
 ##### Deprecated
 
 - [var textLabel: UILabel?](/documentation/uikit/uitableviewheaderfooterview/textlabel)
@@ -8793,6 +9066,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: UInt)](/documentation/uikit/uidropoperation/init(rawvalue:))
 
+##### Initializers
+
+- [init(dropOperation: UIDropOperation, intent: UITableViewDropProposal.Intent)](/documentation/uikit/uitableviewdropproposal/init(dropoperation:intent:))
 
 #### Placeholder cells
 
@@ -9110,6 +9386,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: Int)](/documentation/uikit/uiactivityindicatorview/style-swift.enum/init(rawvalue:))
 
+#### Initializers
+
+- [init(activityIndicatorStyle: UIActivityIndicatorView.Style)](/documentation/uikit/uiactivityindicatorview/init(activityindicatorstyle:))
 
 - [UICalendarView](/documentation/uikit/uicalendarview)
 #### Setting calendar details
@@ -9145,6 +9424,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Creating Image Decoration Views
 
 - [static func image(UIImage?, color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](/documentation/uikit/uicalendarview/decoration/image(_:color:size:))
+##### Initializers
+
+- [convenience init(customViewProvider: () -> UIView)](/documentation/uikit/uicalendarview/decoration/init(customviewprovider:))
 
 - [UICalendarView.DecorationSize](/documentation/uikit/uicalendarview/decorationsize)
 ##### Decoration View Sizes
@@ -9287,6 +9569,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Initializers
 
 - [convenience init(any ContentTransitionSymbolEffect & SymbolEffect, options: SymbolEffectOptions)](/documentation/uikit/uisymbolcontenttransition/init(_:options:))
+- [init?(coder: NSCoder)](/documentation/uikit/uisymbolcontenttransition/init(coder:))
 ##### Instance Properties
 
 - [var contentTransition: any ContentTransitionSymbolEffect & SymbolEffect](/documentation/uikit/uisymbolcontenttransition/contenttransition-52cbh)
@@ -9556,9 +9839,30 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Creating buttons from a configuration object
 
 - [convenience init(configuration: UIButton.Configuration, primaryAction: UIAction?)](/documentation/uikit/uibutton/init(configuration:primaryaction:))
-- [UIButtonConfiguration](/documentation/uikit/uibutton/configuration-swift.struct)
+- [UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct)
+##### Creating configurations
+
+- [static func plain() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/plain())
+- [static func gray() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/gray())
+- [static func tinted() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/tinted())
+- [static func filled() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/filled())
+- [static func borderless() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/borderless())
+- [static func bordered() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/bordered())
+- [static func borderedTinted() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/borderedtinted())
+- [static func borderedProminent() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/borderedprominent())
+- [static func glass() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/glass())
+- [static func prominentGlass() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/prominentglass())
+- [static func clearGlass() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/clearglass())
+- [static func prominentClearGlass() -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/prominentclearglass())
+- [func updated(for: UIButton) -> UIButton.Configuration](/documentation/uikit/uibutton/configuration-swift.struct/updated(for:))
 ##### Configuring titles
 
+- [var title: String?](/documentation/uikit/uibutton/configuration-swift.struct/title)
+- [var subtitle: String?](/documentation/uikit/uibutton/configuration-swift.struct/subtitle)
+- [var attributedTitle: AttributedString?](/documentation/uikit/uibutton/configuration-swift.struct/attributedtitle)
+- [var attributedSubtitle: AttributedString?](/documentation/uikit/uibutton/configuration-swift.struct/attributedsubtitle)
+- [var titleTextAttributesTransformer: UIConfigurationTextAttributesTransformer?](/documentation/uikit/uibutton/configuration-swift.struct/titletextattributestransformer)
+- [var subtitleTextAttributesTransformer: UIConfigurationTextAttributesTransformer?](/documentation/uikit/uibutton/configuration-swift.struct/subtitletextattributestransformer)
 - [UIConfigurationTextAttributesTransformer](/documentation/uikit/uiconfigurationtextattributestransformer-swift.struct)
 ###### Creating a text attributes transformer
 
@@ -9570,6 +9874,89 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [func callAsFunction(AttributeContainer) -> AttributeContainer](/documentation/uikit/uiconfigurationtextattributestransformer-swift.struct/callasfunction(_:))
 
+- [var titlePadding: CGFloat](/documentation/uikit/uibutton/configuration-swift.struct/titlepadding)
+- [var titleAlignment: UIButton.Configuration.TitleAlignment](/documentation/uikit/uibutton/configuration-swift.struct/titlealignment-swift.property)
+- [UIButton.Configuration.TitleAlignment](/documentation/uikit/uibutton/configuration-swift.struct/titlealignment-swift.enum)
+###### Title alignments
+
+- [case automatic](/documentation/uikit/uibutton/configuration-swift.struct/titlealignment-swift.enum/automatic)
+- [case center](/documentation/uikit/uibutton/configuration-swift.struct/titlealignment-swift.enum/center)
+- [case leading](/documentation/uikit/uibutton/configuration-swift.struct/titlealignment-swift.enum/leading)
+- [case trailing](/documentation/uikit/uibutton/configuration-swift.struct/titlealignment-swift.enum/trailing)
+
+- [var titleLineBreakMode: NSLineBreakMode](/documentation/uikit/uibutton/configuration-swift.struct/titlelinebreakmode)
+- [var subtitleLineBreakMode: NSLineBreakMode](/documentation/uikit/uibutton/configuration-swift.struct/subtitlelinebreakmode)
+##### Configuring images
+
+- [var image: UIImage?](/documentation/uikit/uibutton/configuration-swift.struct/image)
+- [var imagePadding: CGFloat](/documentation/uikit/uibutton/configuration-swift.struct/imagepadding)
+- [var imagePlacement: NSDirectionalRectEdge](/documentation/uikit/uibutton/configuration-swift.struct/imageplacement)
+- [var imageReservation: CGFloat](/documentation/uikit/uibutton/configuration-swift.struct/imagereservation)
+- [var imageColorTransformer: UIConfigurationColorTransformer?](/documentation/uikit/uibutton/configuration-swift.struct/imagecolortransformer)
+- [var preferredSymbolConfigurationForImage: UIImage.SymbolConfiguration?](/documentation/uikit/uibutton/configuration-swift.struct/preferredsymbolconfigurationforimage)
+##### Configuring layout
+
+- [var buttonSize: UIButton.Configuration.Size](/documentation/uikit/uibutton/configuration-swift.struct/buttonsize)
+- [UIButton.Configuration.Size](/documentation/uikit/uibutton/configuration-swift.struct/size)
+###### Button sizes
+
+- [case large](/documentation/uikit/uibutton/configuration-swift.struct/size/large)
+- [case medium](/documentation/uikit/uibutton/configuration-swift.struct/size/medium)
+- [case small](/documentation/uikit/uibutton/configuration-swift.struct/size/small)
+- [case mini](/documentation/uikit/uibutton/configuration-swift.struct/size/mini)
+
+- [var contentInsets: NSDirectionalEdgeInsets](/documentation/uikit/uibutton/configuration-swift.struct/contentinsets)
+- [func setDefaultContentInsets()](/documentation/uikit/uibutton/configuration-swift.struct/setdefaultcontentinsets())
+##### Configuring button colors
+
+- [var baseBackgroundColor: UIColor?](/documentation/uikit/uibutton/configuration-swift.struct/basebackgroundcolor)
+- [var baseForegroundColor: UIColor?](/documentation/uikit/uibutton/configuration-swift.struct/baseforegroundcolor)
+##### Configuring the button background
+
+- [var background: UIBackgroundConfiguration](/documentation/uikit/uibutton/configuration-swift.struct/background)
+- [var cornerStyle: UIButton.Configuration.CornerStyle](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.property)
+- [UIButton.Configuration.CornerStyle](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.enum)
+###### Corner styles
+
+- [case dynamic](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.enum/dynamic)
+- [case fixed](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.enum/fixed)
+- [case capsule](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.enum/capsule)
+- [case large](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.enum/large)
+- [case medium](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.enum/medium)
+- [case small](/documentation/uikit/uibutton/configuration-swift.struct/cornerstyle-swift.enum/small)
+
+##### Configuring the indicator
+
+- [var indicator: UIButton.Configuration.Indicator](/documentation/uikit/uibutton/configuration-swift.struct/indicator-swift.property)
+- [UIButton.Configuration.Indicator](/documentation/uikit/uibutton/configuration-swift.struct/indicator-swift.enum)
+###### Indicator styles
+
+- [case automatic](/documentation/uikit/uibutton/configuration-swift.struct/indicator-swift.enum/automatic)
+- [case none](/documentation/uikit/uibutton/configuration-swift.struct/indicator-swift.enum/none)
+- [case popup](/documentation/uikit/uibutton/configuration-swift.struct/indicator-swift.enum/popup)
+
+- [var indicatorColorTransformer: UIConfigurationColorTransformer?](/documentation/uikit/uibutton/configuration-swift.struct/indicatorcolortransformer)
+##### Configuring the activity indicator
+
+- [var showsActivityIndicator: Bool](/documentation/uikit/uibutton/configuration-swift.struct/showsactivityindicator)
+- [var activityIndicatorColorTransformer: UIConfigurationColorTransformer?](/documentation/uikit/uibutton/configuration-swift.struct/activityindicatorcolortransformer)
+##### Configuring selection behavior
+
+- [var automaticallyUpdateForSelection: Bool](/documentation/uikit/uibutton/configuration-swift.struct/automaticallyupdateforselection)
+##### Configuring the appearance on macOS
+
+- [var macIdiomStyle: UIButton.Configuration.MacIdiomStyle](/documentation/uikit/uibutton/configuration-swift.struct/macidiomstyle-swift.property)
+- [UIButton.Configuration.MacIdiomStyle](/documentation/uikit/uibutton/configuration-swift.struct/macidiomstyle-swift.enum)
+###### Button styles
+
+- [case automatic](/documentation/uikit/uibutton/configuration-swift.struct/macidiomstyle-swift.enum/automatic)
+- [case bordered](/documentation/uikit/uibutton/configuration-swift.struct/macidiomstyle-swift.enum/bordered)
+- [case borderless](/documentation/uikit/uibutton/configuration-swift.struct/macidiomstyle-swift.enum/borderless)
+- [case borderlessTinted](/documentation/uikit/uibutton/configuration-swift.struct/macidiomstyle-swift.enum/borderlesstinted)
+
+##### Instance Properties
+
+- [var symbolContentTransition: UISymbolContentTransition?](/documentation/uikit/uibutton/configuration-swift.struct/symbolcontenttransition)
 
 #### Managing the appearance with a configuration object
 
@@ -10740,6 +11127,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 ### Visual effects
 
 - [UIVisualEffect](/documentation/uikit/uivisualeffect)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uivisualeffect/init(coder:))
+
 - [UIVisualEffectView](/documentation/uikit/uivisualeffectview)
 #### Creating a visual effect view
 
@@ -10783,6 +11174,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Initializers
 
 - [init(blurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](/documentation/uikit/uivibrancyeffect/init(blureffect:style:))
+- [init(forBlurEffect: UIBlurEffect)](/documentation/uikit/uivibrancyeffect/init(forblureffect:))
 #### Default Implementations
 
 - [UIVibrancyEffect Implementations](/documentation/uikit/uivibrancyeffect/uivibrancyeffect-implementations)
@@ -11822,11 +12214,40 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITraitChangeObservable](/documentation/uikit/uitraitchangeobservable-67e94)
 ##### Observing trait changes
 
+- [func registerForTraitChanges([UITrait], action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:action:))
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:))
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:))
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](/documentation/uikit/uitraitchangeobservable-67e94/unregisterfortraitchanges(_:))
+- [UITraitChangeObservable.TraitChangeHandler](/documentation/uikit/uitraitchangeobservable-67e94/traitchangehandler)
 - [UITraitChangeRegistration](/documentation/uikit/uitraitchangeregistration)
+##### Registering traits for observation
+
+- [UITraitAccessibilityContrast](/documentation/uikit/uitraitaccessibilitycontrast-swift.struct)
+- [UITraitActiveAppearance](/documentation/uikit/uitraitactiveappearance-swift.struct)
+- [UITraitDisplayGamut](/documentation/uikit/uitraitdisplaygamut-swift.struct)
+- [UITraitDisplayScale](/documentation/uikit/uitraitdisplayscale-swift.struct)
+- [UITraitForceTouchCapability](/documentation/uikit/uitraitforcetouchcapability-swift.struct)
+- [UITraitHDRHeadroomUsageLimit](/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct)
+- [UITraitHorizontalSizeClass](/documentation/uikit/uitraithorizontalsizeclass-swift.struct)
+- [UITraitImageDynamicRange](/documentation/uikit/uitraitimagedynamicrange-swift.struct)
+- [UITraitLayoutDirection](/documentation/uikit/uitraitlayoutdirection-swift.struct)
+- [UITraitLegibilityWeight](/documentation/uikit/uitraitlegibilityweight-swift.struct)
+- [UITraitListEnvironment](/documentation/uikit/uitraitlistenvironment-swift.struct)
+- [UITraitPreferredContentSizeCategory](/documentation/uikit/uitraitpreferredcontentsizecategory-swift.struct)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](/documentation/uikit/uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct)
+- [UITraitSceneCaptureState](/documentation/uikit/uitraitscenecapturestate-swift.struct)
+- [UITraitSplitViewControllerLayoutEnvironment](/documentation/uikit/uitraitsplitviewcontrollerlayoutenvironment-swift.struct)
+- [UITraitTabAccessoryEnvironment](/documentation/uikit/uitraittabaccessoryenvironment-swift.struct)
+- [UITraitToolbarItemPresentationSize](/documentation/uikit/uitraittoolbaritempresentationsize-swift.struct)
+- [UITraitTypesettingLanguage](/documentation/uikit/uitraittypesettinglanguage-swift.struct)
+- [UITraitUserInterfaceIdiom](/documentation/uikit/uitraituserinterfaceidiom-swift.struct)
+- [UITraitUserInterfaceLevel](/documentation/uikit/uitraituserinterfacelevel-swift.struct)
+- [UITraitUserInterfaceStyle](/documentation/uikit/uitraituserinterfacestyle-swift.struct)
+- [UITraitVerticalSizeClass](/documentation/uikit/uitraitverticalsizeclass-swift.struct)
 
 #### Overriding trait values
 
-- [traitOverrides](/documentation/uikit/uiviewcontroller/traitoverrides-1z1cc)
+- [var traitOverrides: UITraitOverrides](/documentation/uikit/uiviewcontroller/traitoverrides-1z1cc)
 - [UITraitOverrides](/documentation/uikit/uitraitoverrides-swift.struct)
 ##### Inspecting overrides
 
@@ -12511,7 +12932,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Configuring the title
 
 - [var title: String?](/documentation/uikit/uinavigationitem/title)
-- [attributedTitle](/documentation/uikit/uinavigationitem/attributedtitle-25fxb)
+- [var attributedTitle: AttributedString?](/documentation/uikit/uinavigationitem/attributedtitle-25fxb)
 - [var largeTitle: String?](/documentation/uikit/uinavigationitem/largetitle)
 - [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](/documentation/uikit/uinavigationitem/largetitledisplaymode-swift.property)
 - [UINavigationItem.LargeTitleDisplayMode](/documentation/uikit/uinavigationitem/largetitledisplaymode-swift.enum)
@@ -12629,7 +13050,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UIDocumentProperties](/documentation/uikit/uidocumentproperties)
 ##### Creating a document header
 
-- [init(url: URL)](/documentation/uikit/uidocumentproperties/init(url:))
+- [init(url: URL)](/documentation/uikit/uidocumentproperties/init(url:)-zeio)
 - [init(metadata: LPLinkMetadata)](/documentation/uikit/uidocumentproperties/init(metadata:))
 - [var metadata: LPLinkMetadata](/documentation/uikit/uidocumentproperties/metadata)
 ##### Generating a document preview
@@ -12641,6 +13062,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Supporting sharing
 
 - [var activityViewControllerProvider: (() -> UIActivityViewController)?](/documentation/uikit/uidocumentproperties/activityviewcontrollerprovider)
+##### Initializers
+
+- [init(URL: URL)](/documentation/uikit/uidocumentproperties/init(url:)-1rzp3)
 
 #### Renaming documents
 
@@ -12649,10 +13073,22 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Determining rename support
 
 - [func navigationItemShouldBeginRenaming(UINavigationItem) -> Bool](/documentation/uikit/uinavigationitemrenamedelegate-5j4ws/navigationitemshouldbeginrenaming(_:))
+###### UINavigationItemRenameDelegate Implementations
+
+- [func navigationItemShouldBeginRenaming(UINavigationItem) -> Bool](/documentation/uikit/uinavigationitemrenamedelegate-5j4ws/navigationitemshouldbeginrenaming(_:)-7kane)
+
 - [func navigationItem(UINavigationItem, shouldEndRenamingWith: String) -> Bool](/documentation/uikit/uinavigationitemrenamedelegate-5j4ws/navigationitem(_:shouldendrenamingwith:))
+###### UINavigationItemRenameDelegate Implementations
+
+- [func navigationItem(UINavigationItem, shouldEndRenamingWith: String) -> Bool](/documentation/uikit/uinavigationitemrenamedelegate-5j4ws/navigationitem(_:shouldendrenamingwith:)-5ld6b)
+
 ##### Handling the rename process
 
 - [func navigationItem(UINavigationItem, willBeginRenamingWith: String, selectedRange: Range<String.Index>) -> (String, Range<String.Index>)](/documentation/uikit/uinavigationitemrenamedelegate-5j4ws/navigationitem(_:willbeginrenamingwith:selectedrange:))
+###### UINavigationItemRenameDelegate Implementations
+
+- [func navigationItem(UINavigationItem, willBeginRenamingWith: String, selectedRange: Range<String.Index>) -> (String, Range<String.Index>)](/documentation/uikit/uinavigationitemrenamedelegate-5j4ws/navigationitem(_:willbeginrenamingwith:selectedrange:)-396y6)
+
 - [func navigationItem(UINavigationItem, didEndRenamingWith: String)](/documentation/uikit/uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:))
 
 
@@ -13220,7 +13656,36 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITraitChangeObservable](/documentation/uikit/uitraitchangeobservable-67e94)
 ##### Observing trait changes
 
+- [func registerForTraitChanges([UITrait], action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:action:))
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:))
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:))
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](/documentation/uikit/uitraitchangeobservable-67e94/unregisterfortraitchanges(_:))
+- [UITraitChangeObservable.TraitChangeHandler](/documentation/uikit/uitraitchangeobservable-67e94/traitchangehandler)
 - [UITraitChangeRegistration](/documentation/uikit/uitraitchangeregistration)
+##### Registering traits for observation
+
+- [UITraitAccessibilityContrast](/documentation/uikit/uitraitaccessibilitycontrast-swift.struct)
+- [UITraitActiveAppearance](/documentation/uikit/uitraitactiveappearance-swift.struct)
+- [UITraitDisplayGamut](/documentation/uikit/uitraitdisplaygamut-swift.struct)
+- [UITraitDisplayScale](/documentation/uikit/uitraitdisplayscale-swift.struct)
+- [UITraitForceTouchCapability](/documentation/uikit/uitraitforcetouchcapability-swift.struct)
+- [UITraitHDRHeadroomUsageLimit](/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct)
+- [UITraitHorizontalSizeClass](/documentation/uikit/uitraithorizontalsizeclass-swift.struct)
+- [UITraitImageDynamicRange](/documentation/uikit/uitraitimagedynamicrange-swift.struct)
+- [UITraitLayoutDirection](/documentation/uikit/uitraitlayoutdirection-swift.struct)
+- [UITraitLegibilityWeight](/documentation/uikit/uitraitlegibilityweight-swift.struct)
+- [UITraitListEnvironment](/documentation/uikit/uitraitlistenvironment-swift.struct)
+- [UITraitPreferredContentSizeCategory](/documentation/uikit/uitraitpreferredcontentsizecategory-swift.struct)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](/documentation/uikit/uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct)
+- [UITraitSceneCaptureState](/documentation/uikit/uitraitscenecapturestate-swift.struct)
+- [UITraitSplitViewControllerLayoutEnvironment](/documentation/uikit/uitraitsplitviewcontrollerlayoutenvironment-swift.struct)
+- [UITraitTabAccessoryEnvironment](/documentation/uikit/uitraittabaccessoryenvironment-swift.struct)
+- [UITraitToolbarItemPresentationSize](/documentation/uikit/uitraittoolbaritempresentationsize-swift.struct)
+- [UITraitTypesettingLanguage](/documentation/uikit/uitraittypesettinglanguage-swift.struct)
+- [UITraitUserInterfaceIdiom](/documentation/uikit/uitraituserinterfaceidiom-swift.struct)
+- [UITraitUserInterfaceLevel](/documentation/uikit/uitraituserinterfacelevel-swift.struct)
+- [UITraitUserInterfaceStyle](/documentation/uikit/uitraituserinterfacestyle-swift.struct)
+- [UITraitVerticalSizeClass](/documentation/uikit/uitraitverticalsizeclass-swift.struct)
 
 #### Overriding trait values
 
@@ -13236,6 +13701,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Deprecated
 
 - [var overrideTraitCollection: UITraitCollection?](/documentation/uikit/uipresentationcontroller/overridetraitcollection)
+#### Initializers
+
+- [init(presentedViewController: UIViewController, presentingViewController: UIViewController?)](/documentation/uikit/uipresentationcontroller/init(presentedviewcontroller:presentingviewcontroller:))
 #### Instance Properties
 
 - [var backgroundEffect: UIVisualEffect?](/documentation/uikit/uipresentationcontroller/backgroundeffect)
@@ -13891,6 +14359,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var recentDocumentsContentTypes: [String]](/documentation/uikit/uidocumentbrowserviewcontroller/recentdocumentscontenttypes)
 - [var allowedContentTypes: [String]](/documentation/uikit/uidocumentbrowserviewcontroller/allowedcontenttypes)
 - [func transitionController(forDocumentURL: URL) -> UIDocumentBrowserTransitionController](/documentation/uikit/uidocumentbrowserviewcontroller/transitioncontroller(fordocumenturl:))
+#### Initializers
+
+- [init(forOpeningContentTypes: [UTType]?)](/documentation/uikit/uidocumentbrowserviewcontroller/init(foropeningcontenttypes:))
 
 - [UIDocumentPickerViewController](/documentation/uikit/uidocumentpickerviewcontroller)
 #### Creating a document picker
@@ -13932,11 +14403,18 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init(documentTypes: [String], in: UIDocumentPickerMode)](/documentation/uikit/uidocumentpickerviewcontroller/init(documenttypes:in:))
 - [init(url: URL, in: UIDocumentPickerMode)](/documentation/uikit/uidocumentpickerviewcontroller/init(url:in:))
 - [init(urls: [URL], in: UIDocumentPickerMode)](/documentation/uikit/uidocumentpickerviewcontroller/init(urls:in:))
+#### Initializers
+
+- [init(URL: URL, inMode: UIDocumentPickerMode)](/documentation/uikit/uidocumentpickerviewcontroller/init(url:inmode:))
+- [init(URLs: [URL], inMode: UIDocumentPickerMode)](/documentation/uikit/uidocumentpickerviewcontroller/init(urls:inmode:))
+- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](/documentation/uikit/uidocumentpickerviewcontroller/init(documenttypes:inmode:))
+- [convenience init(forExportingURLs: [URL])](/documentation/uikit/uidocumentpickerviewcontroller/init(forexportingurls:))
+- [init(forExportingURLs: [URL], asCopy: Bool)](/documentation/uikit/uidocumentpickerviewcontroller/init(forexportingurls:ascopy:))
 
 - [UIDocumentInteractionController](/documentation/uikit/uidocumentinteractioncontroller)
 #### Creating the document interaction controller
 
-- [init(url: URL)](/documentation/uikit/uidocumentinteractioncontroller/init(url:))
+- [init(url: URL)](/documentation/uikit/uidocumentinteractioncontroller/init(url:)-8wb4p)
 #### Handling document-related interactions
 
 - [var delegate: (any UIDocumentInteractionControllerDelegate)?](/documentation/uikit/uidocumentinteractioncontroller/delegate)
@@ -13984,6 +14462,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Accessing the controller attributes
 
 - [var gestureRecognizers: [UIGestureRecognizer]](/documentation/uikit/uidocumentinteractioncontroller/gesturerecognizers)
+#### Initializers
+
+- [init(URL: URL)](/documentation/uikit/uidocumentinteractioncontroller/init(url:)-39lrq)
 
 ### iCloud Sharing
 
@@ -14104,6 +14585,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var alertTitle: String?](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/alerttitle)
 - [var disabledMode: UIActivityCollaborationMode](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/disabledmode)
 - [func description() -> String](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/description())
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/init(coder:))
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](/documentation/uikit/uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunchurl:))
 
 - [UIActivityCollaborationMode](/documentation/uikit/uiactivitycollaborationmode)
 ###### Enumeration Cases
@@ -14373,6 +14858,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITextFormattingViewController.Component](/documentation/uikit/uitextformattingviewcontroller/component)
 ##### Initializers
 
+- [init?(coder: NSCoder)](/documentation/uikit/uitextformattingviewcontroller/component/init(coder:))
 - [init(componentKey: UITextFormattingViewController.ComponentKey, preferredSize: UITextFormattingViewController.ComponentSize)](/documentation/uikit/uitextformattingviewcontroller/component/init(componentkey:preferredsize:))
 ##### Instance Properties
 
@@ -14385,6 +14871,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITextFormattingViewController.ComponentGroup](/documentation/uikit/uitextformattingviewcontroller/componentgroup)
 ##### Initializers
 
+- [init?(coder: NSCoder)](/documentation/uikit/uitextformattingviewcontroller/componentgroup/init(coder:))
 - [init(components: [UITextFormattingViewController.Component])](/documentation/uikit/uitextformattingviewcontroller/componentgroup/init(components:))
 ##### Instance Properties
 
@@ -14397,6 +14884,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Initializers
 
 - [init()](/documentation/uikit/uitextformattingviewcontroller/configuration-swift.class/init())
+- [init?(coder: NSCoder)](/documentation/uikit/uitextformattingviewcontroller/configuration-swift.class/init(coder:))
 - [convenience init(groups: [UITextFormattingViewController.ComponentGroup])](/documentation/uikit/uitextformattingviewcontroller/configuration-swift.class/init(groups:))
 ##### Instance Properties
 
@@ -14440,9 +14928,21 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Instance Methods
 
 - [func textFormattingDidFinish(UITextFormattingViewController)](/documentation/uikit/uitextformattingviewcontroller/delegate-swift.protocol/textformattingdidfinish(_:))
+###### UITextFormattingViewController.Delegate Implementations
+
+- [func textFormattingDidFinish(UITextFormattingViewController)](/documentation/uikit/uitextformattingviewcontroller/delegate-swift.protocol/textformattingdidfinish(_:)-3rw35)
+
 - [func textFormattingViewController(UITextFormattingViewController, didChangeValue: UITextFormattingViewController.ChangeValue)](/documentation/uikit/uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:didchangevalue:))
 - [func textFormattingViewController(UITextFormattingViewController, shouldPresentColorPicker: UIColorPickerViewController) -> Bool](/documentation/uikit/uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:shouldpresentcolorpicker:))
+###### UITextFormattingViewController.Delegate Implementations
+
+- [func textFormattingViewController(UITextFormattingViewController, shouldPresentColorPicker: UIColorPickerViewController) -> Bool](/documentation/uikit/uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:shouldpresentcolorpicker:)-58rps)
+
 - [func textFormattingViewController(UITextFormattingViewController, shouldPresentFontPicker: UIFontPickerViewController) -> Bool](/documentation/uikit/uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:shouldpresentfontpicker:))
+###### UITextFormattingViewController.Delegate Implementations
+
+- [func textFormattingViewController(UITextFormattingViewController, shouldPresentFontPicker: UIFontPickerViewController) -> Bool](/documentation/uikit/uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:shouldpresentfontpicker:)-7951p)
+
 
 #### Structures
 
@@ -14842,6 +15342,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [func removeAllTrackedConstraints()](/documentation/uikit/uitrackinglayoutguide/removealltrackedconstraints())
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uilayoutguide/init(coder:))
 
 - [NSLayoutDimension](/documentation/uikit/nslayoutdimension)
 #### Building constraints
@@ -14873,6 +15376,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var hasAmbiguousLayout: Bool](/documentation/appkit/nslayoutanchor/hasambiguouslayout)
 - [var name: String](/documentation/appkit/nslayoutanchor/name)
 - [var item: AnyObject?](/documentation/appkit/nslayoutanchor/item)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/nslayoutanchor/init(coder:))
 
 - [NSLayoutXAxisAnchor](/documentation/uikit/nslayoutxaxisanchor)
 #### Building system spacing constraints
@@ -15141,6 +15647,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Determining configuration support
 
 - [func supports(any UIContentConfiguration) -> Bool](/documentation/uikit/uicontentview-5fh3z/supports(_:))
+###### UIContentView Implementations
+
+- [func supports(any UIContentConfiguration) -> Bool](/documentation/uikit/uicontentview-5fh3z/supports(_:)-q5rd)
+
 
 #### Unavailable content configurations
 
@@ -15923,6 +16433,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [static let zero: UIOffset](/documentation/uikit/uioffset/zero)
 
+##### Initializers
+
+- [convenience init(item: any UIDynamicItem, attachedToItem: any UIDynamicItem)](/documentation/uikit/uiattachmentbehavior/init(item:attachedtoitem:))
+- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedToItem: any UIDynamicItem, offsetFromCenter: UIOffset)](/documentation/uikit/uiattachmentbehavior/init(item:offsetfromcenter:attachedtoitem:offsetfromcenter:))
 
 - [UICollisionBehavior](/documentation/uikit/uicollisionbehavior)
 ##### Initializing and managing a collision behavior
@@ -16049,6 +16563,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var snapPoint: CGPoint](/documentation/uikit/uisnapbehavior/snappoint)
 - [var damping: CGFloat](/documentation/uikit/uisnapbehavior/damping)
+##### Initializers
+
+- [init(item: any UIDynamicItem, snapToPoint: CGPoint)](/documentation/uikit/uisnapbehavior/init(item:snaptopoint:))
 
 #### Animation regions
 
@@ -16067,6 +16584,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Interacting with a region
 
 - [func contains(CGPoint) -> Bool](/documentation/uikit/uiregion/contains(_:))
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiregion/init(coder:))
 
 
 ### Parallax effects
@@ -16365,7 +16885,36 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UITraitChangeObservable](/documentation/uikit/uitraitchangeobservable-67e94)
 ###### Observing trait changes
 
+- [func registerForTraitChanges([UITrait], action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:action:))
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:))
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](/documentation/uikit/uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:))
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](/documentation/uikit/uitraitchangeobservable-67e94/unregisterfortraitchanges(_:))
+- [UITraitChangeObservable.TraitChangeHandler](/documentation/uikit/uitraitchangeobservable-67e94/traitchangehandler)
 - [UITraitChangeRegistration](/documentation/uikit/uitraitchangeregistration)
+###### Registering traits for observation
+
+- [UITraitAccessibilityContrast](/documentation/uikit/uitraitaccessibilitycontrast-swift.struct)
+- [UITraitActiveAppearance](/documentation/uikit/uitraitactiveappearance-swift.struct)
+- [UITraitDisplayGamut](/documentation/uikit/uitraitdisplaygamut-swift.struct)
+- [UITraitDisplayScale](/documentation/uikit/uitraitdisplayscale-swift.struct)
+- [UITraitForceTouchCapability](/documentation/uikit/uitraitforcetouchcapability-swift.struct)
+- [UITraitHDRHeadroomUsageLimit](/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct)
+- [UITraitHorizontalSizeClass](/documentation/uikit/uitraithorizontalsizeclass-swift.struct)
+- [UITraitImageDynamicRange](/documentation/uikit/uitraitimagedynamicrange-swift.struct)
+- [UITraitLayoutDirection](/documentation/uikit/uitraitlayoutdirection-swift.struct)
+- [UITraitLegibilityWeight](/documentation/uikit/uitraitlegibilityweight-swift.struct)
+- [UITraitListEnvironment](/documentation/uikit/uitraitlistenvironment-swift.struct)
+- [UITraitPreferredContentSizeCategory](/documentation/uikit/uitraitpreferredcontentsizecategory-swift.struct)
+- [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](/documentation/uikit/uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct)
+- [UITraitSceneCaptureState](/documentation/uikit/uitraitscenecapturestate-swift.struct)
+- [UITraitSplitViewControllerLayoutEnvironment](/documentation/uikit/uitraitsplitviewcontrollerlayoutenvironment-swift.struct)
+- [UITraitTabAccessoryEnvironment](/documentation/uikit/uitraittabaccessoryenvironment-swift.struct)
+- [UITraitToolbarItemPresentationSize](/documentation/uikit/uitraittoolbaritempresentationsize-swift.struct)
+- [UITraitTypesettingLanguage](/documentation/uikit/uitraittypesettinglanguage-swift.struct)
+- [UITraitUserInterfaceIdiom](/documentation/uikit/uitraituserinterfaceidiom-swift.struct)
+- [UITraitUserInterfaceLevel](/documentation/uikit/uitraituserinterfacelevel-swift.struct)
+- [UITraitUserInterfaceStyle](/documentation/uikit/uitraituserinterfacestyle-swift.struct)
+- [UITraitVerticalSizeClass](/documentation/uikit/uitraitverticalsizeclass-swift.struct)
 
 ##### Overriding trait values
 
@@ -16632,6 +17181,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init(UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](/documentation/uikit/uiwindowscene/activationinteraction/init(_:errorhandler:))
 - [UIWindowScene.ActivationInteraction.ConfigurationProvider](/documentation/uikit/uiwindowscene/activationinteraction/configurationprovider)
+###### Initializers
+
+- [init(configurationProvider: UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](/documentation/uikit/uiwindowscene/activationinteraction/init(configurationprovider:errorhandler:))
 
 - [UIWindowScene.ActivationRequestOptions](/documentation/uikit/uiwindowscene/activationrequestoptions)
 ###### Positioning windows
@@ -16916,6 +17468,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 ###### Identifying the scene
 
@@ -16924,6 +17479,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var stateRestorationActivity: NSUserActivity?](/documentation/uikit/uiscenesession/staterestorationactivity)
 - [var userInfo: [String : Any]?](/documentation/uikit/uiscenesession/userinfo)
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiscenesession/init(coder:))
 
 ##### Opening URLs
 
@@ -17157,6 +17715,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 - [UISceneSession](/documentation/uikit/uiscenesession)
 ##### Getting the scene information
@@ -17213,6 +17774,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [static let immersiveSpaceApplication: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/immersivespaceapplication)
 - [static let windowApplicationVolumetric: UISceneSession.Role](/documentation/uikit/uiscenesession/role-swift.struct/windowapplicationvolumetric)
 
+###### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uisceneconfiguration/init(coder:))
 
 ##### Identifying the scene
 
@@ -17221,6 +17785,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var stateRestorationActivity: NSUserActivity?](/documentation/uikit/uiscenesession/staterestorationactivity)
 - [var userInfo: [String : Any]?](/documentation/uikit/uiscenesession/userinfo)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uiscenesession/init(coder:))
 
 #### Activation and destruction
 
@@ -18541,6 +19108,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init(String)](/documentation/uikit/uideferredmenuelement/identifier-swift.struct/init(_:))
 - [init(rawValue: String)](/documentation/uikit/uideferredmenuelement/identifier-swift.struct/init(rawvalue:))
 
+#### Initializers
+
+- [convenience init(provider: (([UIMenuElement]) -> Void) -> Void)](/documentation/uikit/uideferredmenuelement/init(provider:))
+- [convenience init(uncachedProvider: (([UIMenuElement]) -> Void) -> Void)](/documentation/uikit/uideferredmenuelement/init(uncachedprovider:))
 
 - [UIDeferredMenuElement.Provider](/documentation/uikit/uideferredmenuelement/provider)
 #### Initializers
@@ -18823,6 +19394,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Configuring the maximum line count
 
 - [var maximumNumberOfTitleLines: Int](/documentation/uikit/uimenudisplaypreferences/maximumnumberoftitlelines)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uimenudisplaypreferences/init(coder:))
 
 
 - [UIMenuBuilder](/documentation/uikit/uimenubuilder)
@@ -19230,23 +19804,55 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [func compare(UITextRange, toRange: UITextRange, document: Self.DocumentIdentifier?) -> ComparisonResult](/documentation/uikit/uitextsearching-3wkjv/compare(_:torange:document:))
 - [func compare(document: Self.DocumentIdentifier, toDocument: Self.DocumentIdentifier) -> ComparisonResult](/documentation/uikit/uitextsearching-3wkjv/compare(document:todocument:))
+##### UITextSearching Implementations
+
+- [func compare(document: Self.DocumentIdentifier, toDocument: Self.DocumentIdentifier) -> ComparisonResult](/documentation/uikit/uitextsearching-3wkjv/compare(document:todocument:)-8h4x9)
+
 - [DocumentIdentifier](/documentation/uikit/uitextsearching-3wkjv/documentidentifier)
 #### Displaying results
 
 - [func decorate(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, usingStyle: UITextSearchFoundTextStyle)](/documentation/uikit/uitextsearching-3wkjv/decorate(foundtextrange:document:usingstyle:))
 - [func clearAllDecoratedFoundText()](/documentation/uikit/uitextsearching-3wkjv/clearalldecoratedfoundtext())
 - [func willHighlight(foundTextRange: UITextRange, document: Self.DocumentIdentifier?)](/documentation/uikit/uitextsearching-3wkjv/willhighlight(foundtextrange:document:))
+##### UITextSearching Implementations
+
+- [func willHighlight(foundTextRange: UITextRange, document: Self.DocumentIdentifier?)](/documentation/uikit/uitextsearching-3wkjv/willhighlight(foundtextrange:document:)-55xf1)
+
 - [func scrollRangeToVisible(UITextRange, inDocument: Self.DocumentIdentifier?)](/documentation/uikit/uitextsearching-3wkjv/scrollrangetovisible(_:indocument:))
+##### UITextSearching Implementations
+
+- [func scrollRangeToVisible(UITextRange, inDocument: Self.DocumentIdentifier?)](/documentation/uikit/uitextsearching-3wkjv/scrollrangetovisible(_:indocument:)-8v4iu)
+
 #### Identifying selected text
 
 - [var selectedTextRange: UITextRange?](/documentation/uikit/uitextsearching-3wkjv/selectedtextrange)
 - [var selectedTextSearchDocument: Self.DocumentIdentifier?](/documentation/uikit/uitextsearching-3wkjv/selectedtextsearchdocument)
+##### UITextSearching Implementations
+
+- [var selectedTextSearchDocument: Self.DocumentIdentifier?](/documentation/uikit/uitextsearching-3wkjv/selectedtextsearchdocument-72uzm)
+
 #### Handling replacements
 
 - [var supportsTextReplacement: Bool](/documentation/uikit/uitextsearching-3wkjv/supportstextreplacement)
+##### UITextSearching Implementations
+
+- [var supportsTextReplacement: Bool](/documentation/uikit/uitextsearching-3wkjv/supportstextreplacement-68rh6)
+
 - [func replace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String)](/documentation/uikit/uitextsearching-3wkjv/replace(foundtextrange:document:withtext:))
+##### UITextSearching Implementations
+
+- [func replace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String)](/documentation/uikit/uitextsearching-3wkjv/replace(foundtextrange:document:withtext:)-4psma)
+
 - [func replaceAll(queryString: String, options: UITextSearchOptions, withText: String)](/documentation/uikit/uitextsearching-3wkjv/replaceall(querystring:options:withtext:))
+##### UITextSearching Implementations
+
+- [func replaceAll(queryString: String, options: UITextSearchOptions, withText: String)](/documentation/uikit/uitextsearching-3wkjv/replaceall(querystring:options:withtext:)-72c3k)
+
 - [func shouldReplace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String) -> Bool](/documentation/uikit/uitextsearching-3wkjv/shouldreplace(foundtextrange:document:withtext:))
+##### UITextSearching Implementations
+
+- [func shouldReplace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String) -> Bool](/documentation/uikit/uitextsearching-3wkjv/shouldreplace(foundtextrange:document:withtext:)-58mw8)
+
 
 - [UITextSearchOptions](/documentation/uikit/uitextsearchoptions)
 #### Configuring searches
@@ -19566,6 +20172,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Checking for drag items
 
 - [func canLoadObjects(ofClass: any NSItemProviderReading.Type) -> Bool](/documentation/uikit/uidragdropsession/canloadobjects(ofclass:))
+##### UIDragDropSession Implementations
+
+- [func canLoadObjects<T>(ofClass: T.Type) -> Bool](/documentation/uikit/uidragdropsession/canloadobjects(ofclass:)-6x43t)
+
 - [func hasItemsConforming(toTypeIdentifiers: [String]) -> Bool](/documentation/uikit/uidragdropsession/hasitemsconforming(totypeidentifiers:))
 - [var items: [UIDragItem]](/documentation/uikit/uidragdropsession/items)
 #### Checking for drag and drop session restrictions
@@ -19596,6 +20206,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Loading objects
 
 - [func loadObjects(ofClass: any NSItemProviderReading.Type, completion: ([any NSItemProviderReading]) -> Void) -> Progress](/documentation/uikit/uidropsession/loadobjects(ofclass:completion:))
+##### UIDropSession Implementations
+
+- [func loadObjects<T>(ofClass: T.Type, completion: ([T]) -> Void) -> Progress](/documentation/uikit/uidropsession/loadobjects(ofclass:completion:)-3ab01)
+
 #### Showing a progress indicator
 
 - [var progressIndicatorStyle: UIDropSessionProgressIndicatorStyle](/documentation/uikit/uidropsession/progressindicatorstyle)
@@ -19609,6 +20223,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var isPrecise: Bool](/documentation/uikit/uidropproposal/isprecise)
 - [var prefersFullSizePreview: Bool](/documentation/uikit/uidropproposal/prefersfullsizepreview)
+#### Initializers
+
+- [init(dropOperation: UIDropOperation)](/documentation/uikit/uidropproposal/init(dropoperation:))
 
 - [UIDropOperation](/documentation/uikit/uidropoperation)
 #### Drop operation types
@@ -19668,6 +20285,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [func addAcceptableTypeIdentifiers([String])](/documentation/uikit/uipasteconfiguration/addacceptabletypeidentifiers(_:))
 - [func addTypeIdentifiers(forAccepting: any NSItemProviderReading.Type)](/documentation/uikit/uipasteconfiguration/addtypeidentifiers(foraccepting:)-4fvd6)
 - [func addTypeIdentifiers<T>(forAccepting: T.Type)](/documentation/uikit/uipasteconfiguration/addtypeidentifiers(foraccepting:)-8af7o)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uipasteconfiguration/init(coder:))
+- [convenience init(typeIdentifiersForAcceptingClass: any NSItemProviderReading.Type)](/documentation/uikit/uipasteconfiguration/init(typeidentifiersforacceptingclass:))
 
 - [UIPasteConfigurationSupporting](/documentation/uikit/uipasteconfigurationsupporting)
 #### Accessing the paste configuration
@@ -19803,7 +20424,24 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Getting the position
 
 - [var position: __UIPointerAccessoryPosition](/documentation/uikit/uipointeraccessory/position-swift.property)
-- [UIPointerAccessoryPosition](/documentation/uikit/uipointeraccessory/position-swift.struct)
+- [UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct)
+###### Getting an accessory position
+
+- [static var top: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/top)
+- [static var topRight: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/topright)
+- [static var right: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/right)
+- [static var bottomRight: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/bottomright)
+- [static var bottom: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/bottom)
+- [static var bottomLeft: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/bottomleft)
+- [static var left: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/left)
+- [static var topLeft: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/topleft)
+###### Creating a custom accessory position
+
+- [init(offset: CGFloat, angle: CGFloat)](/documentation/uikit/uipointeraccessory/position-swift.struct/init(offset:angle:))
+- [var angle: CGFloat](/documentation/uikit/uipointeraccessory/position-swift.struct/angle)
+- [var offset: CGFloat](/documentation/uikit/uipointeraccessory/position-swift.struct/offset)
+- [static let defaultOffset: CGFloat](/documentation/uikit/uipointeraccessory/position-swift.struct/defaultoffset)
+
 
 
 - [UIPointerShape](/documentation/uikit/uipointershape-swift.enum)
@@ -19863,7 +20501,24 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Getting the position
 
 - [var position: __UIPointerAccessoryPosition](/documentation/uikit/uipointeraccessory/position-swift.property)
-- [UIPointerAccessoryPosition](/documentation/uikit/uipointeraccessory/position-swift.struct)
+- [UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct)
+##### Getting an accessory position
+
+- [static var top: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/top)
+- [static var topRight: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/topright)
+- [static var right: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/right)
+- [static var bottomRight: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/bottomright)
+- [static var bottom: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/bottom)
+- [static var bottomLeft: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/bottomleft)
+- [static var left: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/left)
+- [static var topLeft: UIPointerAccessory.Position](/documentation/uikit/uipointeraccessory/position-swift.struct/topleft)
+##### Creating a custom accessory position
+
+- [init(offset: CGFloat, angle: CGFloat)](/documentation/uikit/uipointeraccessory/position-swift.struct/init(offset:angle:))
+- [var angle: CGFloat](/documentation/uikit/uipointeraccessory/position-swift.struct/angle)
+- [var offset: CGFloat](/documentation/uikit/uipointeraccessory/position-swift.struct/offset)
+- [static let defaultOffset: CGFloat](/documentation/uikit/uipointeraccessory/position-swift.struct/defaultoffset)
+
 
 ### Pointer region
 
@@ -19933,6 +20588,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Starting the interaction
 
 - [var shouldBeginHandler: ((UIBandSelectionInteraction, CGPoint) -> Bool)?](/documentation/uikit/uibandselectioninteraction/shouldbeginhandler)
+#### Initializers
+
+- [init(selectionHandler: (UIBandSelectionInteraction) -> Void)](/documentation/uikit/uibandselectioninteraction/init(selectionhandler:))
 
 - [UIBandSelectionInteraction.State](/documentation/uikit/uibandselectioninteraction/state-swift.enum)
 #### Getting the selection state
@@ -19958,9 +20616,11 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 ### Apple Pencil interactions in SwiftUI
 
-- [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](/documentation/swiftui/view/onpencildoubletap(perform:))
+- [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View
+](/documentation/swiftui/view/onpencildoubletap(perform:))
 - [PencilDoubleTapGestureValue](/documentation/swiftui/pencildoubletapgesturevalue)
-- [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](/documentation/swiftui/view/onpencilsqueeze(perform:))
+- [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View
+](/documentation/swiftui/view/onpencilsqueeze(perform:))
 - [PencilSqueezeGesturePhase](/documentation/swiftui/pencilsqueezegesturephase)
 - [PencilSqueezeGestureValue](/documentation/swiftui/pencilsqueezegesturevalue)
 - [PencilPreferredAction](/documentation/swiftui/pencilpreferredaction)
@@ -20222,6 +20882,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var focusSystem: UIFocusSystem](/documentation/uikit/uifocussystem/movementdidfailmessage/focussystem)
 - [var updateContext: UIFocusUpdateContext?](/documentation/uikit/uifocussystem/movementdidfailmessage/updatecontext)
 
+#### Initializers
+
+- [init?(forEnvironment: any UIFocusEnvironment)](/documentation/uikit/uifocussystem/init(forenvironment:))
 
 - [UIFocusUpdateContext](/documentation/uikit/uifocusupdatecontext)
 #### Locating focus direction
@@ -21289,6 +21952,11 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var name: String](/documentation/uikit/uiaccessibilitycustomrotor/name)
 - [var attributedName: NSAttributedString](/documentation/uikit/uiaccessibilitycustomrotor/attributedname)
+#### Initializers
+
+- [init(attributedName: NSAttributedString, itemSearchBlock: UIAccessibilityCustomRotor.Search)](/documentation/uikit/uiaccessibilitycustomrotor/init(attributedname:itemsearchblock:))
+- [init(name: String, itemSearchBlock: UIAccessibilityCustomRotor.Search)](/documentation/uikit/uiaccessibilitycustomrotor/init(name:itemsearchblock:))
+- [init(systemType: UIAccessibilityCustomRotor.SystemRotorType, itemSearchBlock: UIAccessibilityCustomRotor.Search)](/documentation/uikit/uiaccessibilitycustomrotor/init(systemtype:itemsearchblock:))
 
 - [UIAccessibilityCustomRotorItemResult](/documentation/uikit/uiaccessibilitycustomrotoritemresult)
 #### Creating a rotor item result
@@ -21328,6 +21996,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var attributedName: NSAttributedString](/documentation/uikit/uiaccessibilitylocationdescriptor/attributedname)
 - [var point: CGPoint](/documentation/uikit/uiaccessibilitylocationdescriptor/point)
 - [var view: UIView?](/documentation/uikit/uiaccessibilitylocationdescriptor/view)
+#### Initializers
+
+- [init(attributedName: NSAttributedString, point: CGPoint, inView: UIView)](/documentation/uikit/uiaccessibilitylocationdescriptor/init(attributedname:point:inview:))
+- [convenience init(name: String, point: CGPoint, inView: UIView)](/documentation/uikit/uiaccessibilitylocationdescriptor/init(name:point:inview:))
 
 ### Notifications
 
@@ -21478,10 +22150,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init?(contentsOfFile: String)](/documentation/uikit/uiimage/init(contentsoffile:))
 - [init?(data: Data)](/documentation/uikit/uiimage/init(data:))
 - [init?(data: Data, scale: CGFloat)](/documentation/uikit/uiimage/init(data:scale:))
-- [init(cgImage: CGImage)](/documentation/uikit/uiimage/init(cgimage:))
-- [init(cgImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:))
-- [init(ciImage: CIImage)](/documentation/uikit/uiimage/init(ciimage:))
-- [init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:))
+- [init(cgImage: CGImage)](/documentation/uikit/uiimage/init(cgimage:)-14qlb)
+- [init(cgImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:)-2ouhh)
+- [init(ciImage: CIImage)](/documentation/uikit/uiimage/init(ciimage:)-93vu1)
+- [init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:)-9gpyn)
 - [UIImageReader](/documentation/uikit/uiimagereader-swift.struct)
 ##### Structures
 
@@ -21540,6 +22212,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var traitCollection: UITraitCollection?](/documentation/uikit/uiimage/configuration-swift.class/traitcollection)
 ##### Initializers
 
+- [init?(coder: NSCoder)](/documentation/uikit/uiimage/configuration-swift.class/init(coder:))
 - [convenience init(locale: Locale?)](/documentation/uikit/uiimage/configuration-swift.class/init(locale:))
 - [convenience init(traitCollection: UITraitCollection?)](/documentation/uikit/uiimage/configuration-swift.class/init(traitcollection:))
 ##### Instance Properties
@@ -21744,6 +22417,19 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [func stretchableImage(withLeftCapWidth: Int, topCapHeight: Int) -> UIImage](/documentation/uikit/uiimage/stretchableimage(withleftcapwidth:topcapheight:))
 - [var leftCapWidth: Int](/documentation/uikit/uiimage/leftcapwidth)
 - [var topCapHeight: Int](/documentation/uikit/uiimage/topcapheight)
+#### Initializers
+
+- [init(CGImage: CGImage)](/documentation/uikit/uiimage/init(cgimage:)-8doi8)
+- [init(CGImage: CGImage)](/documentation/uikit/uiimage/init(cgimage:)-g30x)
+- [init(CGImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:)-3mxey)
+- [init(CGImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(cgimage:scale:orientation:)-3xlco)
+- [init(CIImage: CIImage)](/documentation/uikit/uiimage/init(ciimage:)-3kg9b)
+- [init(CIImage: CIImage)](/documentation/uikit/uiimage/init(ciimage:)-8dq4u)
+- [init(CIImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:)-3742c)
+- [init(CIImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](/documentation/uikit/uiimage/init(ciimage:scale:orientation:)-wlzf)
+- [init?(coder: NSCoder)](/documentation/uikit/uiimage/init(coder:))
+- [init?(named: String, inBundle: Bundle?, compatibleWithTraitCollection: UITraitCollection?)](/documentation/uikit/uiimage/init(named:inbundle:compatiblewithtraitcollection:))
+- [init?(named: String, inBundle: Bundle?, withConfiguration: UIImage.Configuration?)](/documentation/uikit/uiimage/init(named:inbundle:withconfiguration:))
 
 - [UIImage.SymbolConfiguration](/documentation/uikit/uiimage/symbolconfiguration-swift.class)
 #### Creating a symbol configuration
@@ -21842,6 +22528,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var traitCollection: UITraitCollection?](/documentation/uikit/uiimage/configuration-swift.class/traitcollection)
 #### Initializers
 
+- [init?(coder: NSCoder)](/documentation/uikit/uiimage/configuration-swift.class/init(coder:))
 - [convenience init(locale: Locale?)](/documentation/uikit/uiimage/configuration-swift.class/init(locale:))
 - [convenience init(traitCollection: UITraitCollection?)](/documentation/uikit/uiimage/configuration-swift.class/init(traitcollection:))
 #### Instance Properties
@@ -22095,8 +22782,8 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Creating a color from another color object
 
 - [convenience init(Color)](/documentation/uikit/uicolor/init(_:))
-- [init(ciColor: CIColor)](/documentation/uikit/uicolor/init(cicolor:))
-- [init(cgColor: CGColor)](/documentation/uikit/uicolor/init(cgcolor:))
+- [init(ciColor: CIColor)](/documentation/uikit/uicolor/init(cicolor:)-2z057)
+- [init(cgColor: CGColor)](/documentation/uikit/uicolor/init(cgcolor:)-27r9g)
 - [func withAlphaComponent(CGFloat) -> UIColor](/documentation/uikit/uicolor/withalphacomponent(_:))
 ##### Creating a pattern-based color
 
@@ -22145,6 +22832,11 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [var standardDynamicRange: UIColor](/documentation/uikit/uicolor/standarddynamicrange)
 #### Initializers
 
+- [init(CGColor: CGColor)](/documentation/uikit/uicolor/init(cgcolor:)-58l83)
+- [init(CGColor: CGColor)](/documentation/uikit/uicolor/init(cgcolor:)-9d9vs)
+- [init(CIColor: CIColor)](/documentation/uikit/uicolor/init(cicolor:)-2b5ik)
+- [init(CIColor: CIColor)](/documentation/uikit/uicolor/init(cicolor:)-5fqhu)
+- [init?(coder: NSCoder)](/documentation/uikit/uicolor/init(coder:))
 - [init?(named: String, in: Bundle?, compatibleWith: UITraitCollection?)](/documentation/uikit/uicolor/init(named:in:compatiblewith:))
 #### Default Implementations
 
@@ -22241,6 +22933,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init?(rawValue: Int)](/documentation/uikit/uigraphicsimagerendererformat/range/init(rawvalue:))
 
 - [var prefersExtendedRange: Bool](/documentation/uikit/uigraphicsimagerendererformat/prefersextendedrange)
+#### Initializers
+
+- [convenience init(forTraitCollection: UITraitCollection)](/documentation/uikit/uigraphicsimagerendererformat/init(fortraitcollection:))
 #### Instance Properties
 
 - [var supportsHighDynamicRange: Bool](/documentation/uikit/uigraphicsimagerendererformat/supportshighdynamicrange)
@@ -22284,7 +22979,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [convenience init(roundedRect: CGRect, cornerRadius: CGFloat)](/documentation/uikit/uibezierpath/init(roundedrect:cornerradius:))
 - [convenience init(roundedRect: CGRect, byRoundingCorners: UIRectCorner, cornerRadii: CGSize)](/documentation/uikit/uibezierpath/init(roundedrect:byroundingcorners:cornerradii:))
 - [convenience init(arcCenter: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](/documentation/uikit/uibezierpath/init(arccenter:radius:startangle:endangle:clockwise:))
-- [convenience init(cgPath: CGPath)](/documentation/uikit/uibezierpath/init(cgpath:))
+- [convenience init(cgPath: CGPath)](/documentation/uikit/uibezierpath/init(cgpath:)-833n8)
 - [func reversing() -> UIBezierPath](/documentation/uikit/uibezierpath/reversing())
 - [init()](/documentation/uikit/uibezierpath/init())
 - [init?(coder: NSCoder)](/documentation/uikit/uibezierpath/init(coder:))
@@ -22341,6 +23036,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init(rawValue: UInt)](/documentation/uikit/uirectcorner/init(rawvalue:))
 
+#### Initializers
+
+- [convenience init(CGPath: CGPath)](/documentation/uikit/uibezierpath/init(cgpath:)-7bop1)
+- [convenience init(ovalInRect: CGRect)](/documentation/uikit/uibezierpath/init(ovalinrect:))
 
 - [func UIRectFill(CGRect)](/documentation/uikit/uirectfill(_:))
 - [func UIRectFillUsingBlendMode(CGRect, CGBlendMode)](/documentation/uikit/uirectfillusingblendmode(_:_:))
@@ -22633,7 +23332,7 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UIPrinter](/documentation/uikit/uiprinter)
 #### Creating a printer object
 
-- [init(url: URL)](/documentation/uikit/uiprinter/init(url:))
+- [init(url: URL)](/documentation/uikit/uiprinter/init(url:)-1mibn)
 #### Getting the printer’s address
 
 - [var url: URL](/documentation/uikit/uiprinter/url)
@@ -22678,6 +23377,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: Int)](/documentation/uikit/uiprinter/cutterbehavior/init(rawvalue:))
 
+#### Initializers
+
+- [init(URL: URL)](/documentation/uikit/uiprinter/init(url:)-80zxj)
 
 - [UIPrintInfo](/documentation/uikit/uiprintinfo)
 #### Creating a print info object
@@ -22723,6 +23425,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init?(rawValue: Int)](/documentation/uikit/uiprintinfo/outputtype-swift.enum/init(rawvalue:))
 
 - [var printerID: String?](/documentation/uikit/uiprintinfo/printerid)
+#### Initializers
+
+- [init()](/documentation/uikit/uiprintinfo/init())
 
 - [UIPrintPaper](/documentation/uikit/uiprintpaper)
 #### Getting the paper size and the printing area
@@ -22799,12 +23504,16 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [UIPrinterDestination](/documentation/uikit/uiprinterdestination)
 #### Creating a printer destination
 
-- [init(url: URL)](/documentation/uikit/uiprinterdestination/init(url:))
+- [init(url: URL)](/documentation/uikit/uiprinterdestination/init(url:)-7ck5j)
 #### Describing the printer
 
 - [var displayName: String?](/documentation/uikit/uiprinterdestination/displayname)
 - [var txtRecord: Data?](/documentation/uikit/uiprinterdestination/txtrecord)
 - [var url: URL](/documentation/uikit/uiprinterdestination/url)
+#### Initializers
+
+- [init(URL: URL)](/documentation/uikit/uiprinterdestination/init(url:)-c1e8)
+- [init?(coder: NSCoder)](/documentation/uikit/uiprinterdestination/init(coder:))
 
 ### Keyboard shortcut
 
@@ -23494,6 +24203,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [func updateTextAttributes(conversionHandler: ([NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any])](/documentation/uikit/uitextformattingcoordinatordelegate/updatetextattributes(conversionhandler:))
 
+#### Initializers
+
+- [convenience init(forWindowScene: UIWindowScene)](/documentation/uikit/uitextformattingcoordinator/init(forwindowscene:))
 
 - [UITextAttributesConversionHandler](/documentation/uikit/uitextattributesconversionhandler)
 ### Fonts
@@ -23798,6 +24510,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [init(rawValue: CGFloat)](/documentation/uikit/uifont/width/init(rawvalue:))
 
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uifont/init(coder:))
 
 - [UIFontDescriptor](/documentation/uikit/uifontdescriptor)
 #### Creating a font descriptor
@@ -24330,6 +25045,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: Int)](/documentation/uikit/nswritingdirection/init(rawvalue:))
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/nsparagraphstyle/init(coder:))
 
 - [NSMutableParagraphStyle](/documentation/uikit/nsmutableparagraphstyle)
 #### Setting style information
@@ -24395,6 +25113,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [convenience init(type: NSParagraphStyle.TextTabType, location: CGFloat)](/documentation/appkit/nstexttab/init(type:location:))
 - [var tabStopType: NSParagraphStyle.TextTabType](/documentation/appkit/nstexttab/tabstoptype)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/nstexttab/init(coder:))
 
 - [NSTextList](/documentation/uikit/nstextlist)
 #### Creating a text list
@@ -24484,6 +25205,11 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var attributedString: NSAttributedString](/documentation/uikit/nstextlistelement/attributedstring)
 - [var contents: NSAttributedString?](/documentation/uikit/nstextlistelement/contents)
+#### Initializers
+
+- [convenience init?(childElements: [NSTextListElement], textList: NSTextList, nestingLevel: Int)](/documentation/uikit/nstextlistelement/init(childelements:textlist:nestinglevel:))
+- [convenience init(contents: NSAttributedString, markerAttributes: [NSAttributedString.Key : Any]?, textList: NSTextList, childElements: [NSTextListElement]?)](/documentation/uikit/nstextlistelement/init(contents:markerattributes:textlist:childelements:))
+- [init(parentElement: NSTextListElement?, textList: NSTextList, contents: NSAttributedString?, markerAttributes: [NSAttributedString.Key : Any]?, childElements: [NSTextListElement]?)](/documentation/uikit/nstextlistelement/init(parentelement:textlist:contents:markerattributes:childelements:))
 
 - [NSTextElement](/documentation/uikit/nstextelement)
 #### Creating a text element
@@ -24551,6 +25277,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [func contains(any NSTextLocation) -> Bool](/documentation/uikit/nstextrange/contains(_:)-7hvi0)
 - [func contains(NSTextRange) -> Bool](/documentation/uikit/nstextrange/contains(_:)-5j4y2)
+#### Initializers
+
+- [init?(location: any NSTextLocation, endLocation: (any NSTextLocation)?)](/documentation/uikit/nstextrange/init(location:endlocation:))
 
 - [NSTextSelection](/documentation/uikit/nstextselection)
 #### Creating a text selection
@@ -24598,6 +25327,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Creating subselections
 
 - [func textSelection([NSTextRange]) -> NSTextSelection](/documentation/uikit/nstextselection/textselection(_:))
+#### Initializers
+
+- [convenience init(location: any NSTextLocation, affinity: NSTextSelection.Affinity)](/documentation/uikit/nstextselection/init(location:affinity:))
+- [init(ranges: [NSTextRange], affinity: NSTextSelection.Affinity, granularity: NSTextSelection.Granularity)](/documentation/uikit/nstextselection/init(ranges:affinity:granularity:))
 
 - [NSTextSelectionNavigation](/documentation/uikit/nstextselectionnavigation)
 #### Creating a selection navigation
@@ -24965,6 +25698,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [class func registerViewProviderClass(AnyClass, forFileType: String)](/documentation/uikit/nstextattachment/registerviewproviderclass(_:forfiletype:))
 - [class func textAttachmentViewProviderClass(forFileType: String) -> AnyClass?](/documentation/uikit/nstextattachment/textattachmentviewproviderclass(forfiletype:))
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/nstextattachment/init(coder:))
 
 - [NSTextAttachmentViewProvider](/documentation/uikit/nstextattachmentviewprovider)
 #### Initializing a text attachment view
@@ -25815,6 +26551,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 ##### Getting the rules
 
 - [var passwordRulesDescriptor: String](/documentation/uikit/uitextinputpasswordrules/passwordrulesdescriptor)
+##### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uitextinputpasswordrules/init(coder:))
 
 #### Configuring math expression completion
 
@@ -25862,6 +26601,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init()](/documentation/uikit/uitextinputmode/currentinputmodedidchangemessage/init())
 
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uitextinputmode/init(coder:))
 
 - [UITextInputAssistantItem](/documentation/uikit/uitextinputassistantitem)
 #### Configuring the shortcuts bar
@@ -25909,6 +26651,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: Int)](/documentation/uikit/uitextinteractionmode/init(rawvalue:))
 
+#### Initializers
+
+- [convenience init(forMode: UITextInteractionMode)](/documentation/uikit/uitextinteraction/init(formode:))
 
 - [UITextInteractionDelegate](/documentation/uikit/uitextinteractiondelegate)
 #### Handling text interaction events
@@ -26381,6 +27126,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [var characters: String](/documentation/uikit/uikey/characters)
 - [var charactersIgnoringModifiers: String](/documentation/uikit/uikey/charactersignoringmodifiers)
+#### Initializers
+
+- [init?(coder: NSCoder)](/documentation/uikit/uikey/init(coder:))
 
 - [UIKeyboardHIDUsage](/documentation/uikit/uikeyboardhidusage)
 #### Alphabetical keys
@@ -26876,10 +27624,22 @@ timestamp: 2026-04-14T13:14:51.729Z
 - [func indirectScribbleInteraction(any UIInteraction, isElementFocused: Self.ElementIdentifier) -> Bool](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:iselementfocused:))
 - [func indirectScribbleInteraction(any UIInteraction, focusElementIfNeeded: Self.ElementIdentifier, referencePoint: CGPoint, completion: ((any UIResponder & UITextInput)?) -> Void)](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:focuselementifneeded:referencepoint:completion:))
 - [func indirectScribbleInteraction(any UIInteraction, shouldDelayFocusForElement: Self.ElementIdentifier) -> Bool](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:shoulddelayfocusforelement:))
+##### UIIndirectScribbleInteractionDelegate Implementations
+
+- [func indirectScribbleInteraction(any UIInteraction, shouldDelayFocusForElement: Self.ElementIdentifier) -> Bool](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:shoulddelayfocusforelement:)-9dmtl)
+
 #### Tracking Scribble Input
 
 - [func indirectScribbleInteraction(any UIInteraction, willBeginWritingInElement: Self.ElementIdentifier)](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:willbeginwritinginelement:))
+##### UIIndirectScribbleInteractionDelegate Implementations
+
+- [func indirectScribbleInteraction(any UIInteraction, willBeginWritingInElement: Self.ElementIdentifier)](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:willbeginwritinginelement:)-8qsa)
+
 - [func indirectScribbleInteraction(any UIInteraction, didFinishWritingInElement: Self.ElementIdentifier)](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:didfinishwritinginelement:))
+##### UIIndirectScribbleInteractionDelegate Implementations
+
+- [func indirectScribbleInteraction(any UIInteraction, didFinishWritingInElement: Self.ElementIdentifier)](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:didfinishwritinginelement:)-9q7os)
+
 #### Finding Elements and Frames
 
 - [func indirectScribbleInteraction(any UIInteraction, frameForElement: Self.ElementIdentifier) -> CGRect](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:frameforelement:))
@@ -26887,7 +27647,15 @@ timestamp: 2026-04-14T13:14:51.729Z
 #### Instance Methods
 
 - [func indirectScribbleInteraction(any UIInteraction, focusElementIfNeeded: Self.ElementIdentifier, referencePoint: CGPoint) async -> (any UIResponder & UITextInput)?](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:focuselementifneeded:referencepoint:))
+##### UIIndirectScribbleInteractionDelegate Implementations
+
+- [func indirectScribbleInteraction(any UIInteraction, focusElementIfNeeded: Self.ElementIdentifier, referencePoint: CGPoint) async -> (any UIResponder & UITextInput)?](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:focuselementifneeded:referencepoint:)-4w6qr)
+
 - [func indirectScribbleInteraction(any UIInteraction, requestElementsIn: CGRect) async -> [Self.ElementIdentifier]](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:requestelementsin:))
+##### UIIndirectScribbleInteractionDelegate Implementations
+
+- [func indirectScribbleInteraction(any UIInteraction, requestElementsIn: CGRect) async -> [Self.ElementIdentifier]](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:requestelementsin:)-8cdw5)
+
 
 - [ElementIdentifier](/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/elementidentifier)
 
@@ -27008,6 +27776,10 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init?(rawValue: UInt)](/documentation/uikit/uidocumentmenuorder/init(rawvalue:))
 
+#### Initializers
+
+- [init(URL: URL, inMode: UIDocumentPickerMode)](/documentation/uikit/uidocumentmenuviewcontroller/init(url:inmode:))
+- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](/documentation/uikit/uidocumentmenuviewcontroller/init(documenttypes:inmode:))
 
 - [UILocalNotification](/documentation/uikit/uilocalnotification)
 #### Scheduling a local notification
@@ -27399,6 +28171,9 @@ timestamp: 2026-04-14T13:14:51.729Z
 
 - [init(rawValue: UInt)](/documentation/uikit/uiusernotificationtype/init(rawvalue:))
 
+#### Initializers
+
+- [convenience init(forTypes: UIUserNotificationType, categories: Set<UIUserNotificationCategory>?)](/documentation/uikit/uiusernotificationsettings/init(fortypes:categories:))
 
 ### Deprecated protocols
 

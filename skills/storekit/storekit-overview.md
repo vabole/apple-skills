@@ -3,7 +3,7 @@ title: StoreKit
 source: https://developer.apple.com/documentation/storekit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/storekit
-timestamp: 2026-04-15T06:05:31.567Z
+timestamp: 2026-05-10T06:22:48.825Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)
@@ -120,8 +120,10 @@ timestamp: 2026-04-15T06:05:31.567Z
 - [Backyard Birds: Building an app with SwiftData and widgets](/documentation/swiftui/backyard-birds-sample)
 #### Styling product views
 
-- [func productViewStyle(some ProductViewStyle) -> some View](/documentation/swiftui/view/productviewstyle(_:))
-- [func productIconBorder() -> some View](/documentation/swiftui/view/producticonborder())
+- [func productViewStyle(some ProductViewStyle) -> some View
+](/documentation/swiftui/view/productviewstyle(_:))
+- [func productIconBorder() -> some View
+](/documentation/swiftui/view/producticonborder())
 - [ProductViewStyle](/documentation/storekit/productviewstyle)
 ##### Getting built-in product view styles
 
@@ -185,8 +187,10 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Styling subscription store controls
 
-- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View](/documentation/swiftui/view/subscriptionstorecontrolstyle(_:))
-- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View](/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement:))
+- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View
+](/documentation/swiftui/view/subscriptionstorecontrolstyle(_:))
+- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View
+](/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement:))
 - [SubscriptionStoreControlStyle](/documentation/storekit/subscriptionstorecontrolstyle)
 ##### Getting built-in subscription store control styles
 
@@ -507,10 +511,14 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Configuring subscription store controls
 
-- [func subscriptionStoreControlIcon(icon: (Product, Product.SubscriptionInfo) -> some View) -> some View](/documentation/swiftui/view/subscriptionstorecontrolicon(icon:))
-- [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some View](/documentation/swiftui/view/subscriptionstorepickeritembackground(_:))
-- [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some View](/documentation/swiftui/view/subscriptionstorepickeritembackground(_:in:))
-- [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some View](/documentation/swiftui/view/subscriptionstorebuttonlabel(_:))
+- [func subscriptionStoreControlIcon(icon: (Product, Product.SubscriptionInfo) -> some View) -> some View
+](/documentation/swiftui/view/subscriptionstorecontrolicon(icon:))
+- [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some View
+](/documentation/swiftui/view/subscriptionstorepickeritembackground(_:))
+- [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some View
+](/documentation/swiftui/view/subscriptionstorepickeritembackground(_:in:))
+- [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some View
+](/documentation/swiftui/view/subscriptionstorebuttonlabel(_:))
 - [SubscriptionStoreButtonLabel](/documentation/storekit/subscriptionstorebuttonlabel)
 ##### Instance Properties
 
@@ -587,7 +595,8 @@ timestamp: 2026-04-15T06:05:31.567Z
 - [init(idType: GroupID.Type, groupedBy: (Product) -> GroupID, label: (GroupID) -> Label, marketingContent: (GroupID) -> MarketingContent)](/documentation/storekit/subscriptionoptiongroupset/init(idtype:groupedby:label:marketingcontent:))
 ##### Creating the group style
 
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
+](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
 
 - [SubscriptionPeriodGroupSet](/documentation/storekit/subscriptionperiodgroupset)
 ##### Creating subscription period group sets
@@ -597,7 +606,8 @@ timestamp: 2026-04-15T06:05:31.567Z
 - [init(marketingContent: (Product.SubscriptionPeriod?) -> MarketingContent, label: (Product.SubscriptionPeriod?) -> Label)](/documentation/storekit/subscriptionperiodgroupset/init(marketingcontent:label:))
 ##### Creating the group style
 
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
+](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
 
 - [SubscriptionOptionSection](/documentation/storekit/subscriptionoptionsection)
 ##### Creating subscription option sections
@@ -607,7 +617,8 @@ timestamp: 2026-04-15T06:05:31.567Z
 - [init(isIncluded: (Product) -> Bool, header: () -> Header, footer: () -> Footer)](/documentation/storekit/subscriptionoptionsection/init(isincluded:header:footer:))
 ##### Choosing a subscription option group style
 
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
+](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
 
 - [StoreContent](/documentation/storekit/storecontent)
 ##### Implementing store content
@@ -644,7 +655,8 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Styling subscription option groups
 
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
+](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](/documentation/storekit/storecontent/subscriptionstoreoptiongroupstyle(_:))
 - [SubscriptionOptionGroupStyle](/documentation/storekit/subscriptionoptiongroupstyle)
 ##### Getting built-in subscription option group styles
@@ -680,10 +692,14 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Adding backgrounds to subscription stores
 
-- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](/documentation/swiftui/view/containerbackground(_:for:))
-- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](/documentation/swiftui/view/containerbackground(for:alignment:content:))
-- [func subscriptionStoreControlBackground(some ShapeStyle) -> some View](/documentation/swiftui/view/subscriptionstorecontrolbackground(_:)-7jxa9)
-- [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some View](/documentation/swiftui/view/subscriptionstorecontrolbackground(_:)-7ev89)
+- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View
+](/documentation/swiftui/view/containerbackground(_:for:))
+- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View
+](/documentation/swiftui/view/containerbackground(for:alignment:content:))
+- [func subscriptionStoreControlBackground(some ShapeStyle) -> some View
+](/documentation/swiftui/view/subscriptionstorecontrolbackground(_:)-7jxa9)
+- [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some View
+](/documentation/swiftui/view/subscriptionstorecontrolbackground(_:)-7ev89)
 - [static var subscriptionStore: ContainerBackgroundPlacement](/documentation/swiftui/containerbackgroundplacement/subscriptionstore)
 - [static var subscriptionStoreHeader: ContainerBackgroundPlacement](/documentation/swiftui/containerbackgroundplacement/subscriptionstoreheader)
 - [static var subscriptionStoreFullHeight: ContainerBackgroundPlacement](/documentation/swiftui/containerbackgroundplacement/subscriptionstorefullheight)
@@ -696,8 +712,10 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Configuring accessory buttons
 
-- [func storeButton(Visibility, for: StoreButtonKind...) -> some View](/documentation/swiftui/view/storebutton(_:for:))
-- [func subscriptionStoreSignInAction((() -> ())?) -> some View](/documentation/swiftui/view/subscriptionstoresigninaction(_:))
+- [func storeButton(Visibility, for: StoreButtonKind...) -> some View
+](/documentation/swiftui/view/storebutton(_:for:))
+- [func subscriptionStoreSignInAction((() -> ())?) -> some View
+](/documentation/swiftui/view/subscriptionstoresigninaction(_:))
 - [StoreButtonKind](/documentation/storekit/storebuttonkind)
 ##### Getting button types for store views
 
@@ -716,10 +734,14 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Configuring the subscription store policies
 
-- [func subscriptionStorePolicyDestination(for: SubscriptionStorePolicyKind, destination: () -> some View) -> some View](/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:))
-- [func subscriptionStorePolicyDestination(url: URL, for: SubscriptionStorePolicyKind) -> some View](/documentation/swiftui/view/subscriptionstorepolicydestination(url:for:))
-- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle) -> some View](/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:))
-- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle, some ShapeStyle) -> some View](/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:_:))
+- [func subscriptionStorePolicyDestination(for: SubscriptionStorePolicyKind, destination: () -> some View) -> some View
+](/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:))
+- [func subscriptionStorePolicyDestination(url: URL, for: SubscriptionStorePolicyKind) -> some View
+](/documentation/swiftui/view/subscriptionstorepolicydestination(url:for:))
+- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle) -> some View
+](/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:))
+- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle, some ShapeStyle) -> some View
+](/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:_:))
 - [SubscriptionStorePolicyKind](/documentation/storekit/subscriptionstorepolicykind)
 ##### Getting policy types
 
@@ -728,23 +750,34 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Selecting subscription offers
 
-- [func subscriptionPromotionalOffer(offer: (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, signature: (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> Product.SubscriptionOffer.Signature) -> some View](/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:))
-- [func preferredSubscriptionOffer((Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View](/documentation/swiftui/view/preferredsubscriptionoffer(_:))
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:))
+- [func subscriptionPromotionalOffer(offer: (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, signature: (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> Product.SubscriptionOffer.Signature) -> some View
+](/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:))
+- [func preferredSubscriptionOffer((Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View
+](/documentation/swiftui/view/preferredsubscriptionoffer(_:))
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
+](/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:))
 #### Configuring purchase options and product descriptions
 
-- [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View](/documentation/swiftui/view/inapppurchaseoptions(_:))
-- [func productDescription(Visibility) -> some View](/documentation/swiftui/view/productdescription(_:))
+- [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View
+](/documentation/swiftui/view/inapppurchaseoptions(_:))
+- [func productDescription(Visibility) -> some View
+](/documentation/swiftui/view/productdescription(_:))
 #### Responding to store events
 
-- [func onInAppPurchaseStart(perform: ((Product) async -> ())?) -> some View](/documentation/swiftui/view/oninapppurchasestart(perform:))
-- [func onInAppPurchaseCompletion(perform: ((Product, Result<Product.PurchaseResult, any Error>) async -> ())?) -> some View](/documentation/swiftui/view/oninapppurchasecompletion(perform:))
+- [func onInAppPurchaseStart(perform: ((Product) async -> ())?) -> some View
+](/documentation/swiftui/view/oninapppurchasestart(perform:))
+- [func onInAppPurchaseCompletion(perform: ((Product, Result<Product.PurchaseResult, any Error>) async -> ())?) -> some View
+](/documentation/swiftui/view/oninapppurchasecompletion(perform:))
 #### Loading StoreKit data
 
-- [func storeProductTask(for: Product.ID, priority: TaskPriority, action: (Product.TaskState) async -> ()) -> some View](/documentation/swiftui/view/storeproducttask(for:priority:action:))
-- [func storeProductsTask(for: some Collection<String> & Equatable & Sendable, priority: TaskPriority, action: (Product.CollectionTaskState) async -> ()) -> some View](/documentation/swiftui/view/storeproductstask(for:priority:action:))
-- [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](/documentation/swiftui/view/currententitlementtask(for:priority:action:))
-- [func subscriptionStatusTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<[Product.SubscriptionInfo.Status]>) async -> ()) -> some View](/documentation/swiftui/view/subscriptionstatustask(for:priority:action:))
+- [func storeProductTask(for: Product.ID, priority: TaskPriority, action: (Product.TaskState) async -> ()) -> some View
+](/documentation/swiftui/view/storeproducttask(for:priority:action:))
+- [func storeProductsTask(for: some Collection<String> & Equatable & Sendable, priority: TaskPriority, action: (Product.CollectionTaskState) async -> ()) -> some View
+](/documentation/swiftui/view/storeproductstask(for:priority:action:))
+- [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View
+](/documentation/swiftui/view/currententitlementtask(for:priority:action:))
+- [func subscriptionStatusTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<[Product.SubscriptionInfo.Status]>) async -> ()) -> some View
+](/documentation/swiftui/view/subscriptionstatustask(for:priority:action:))
 - [Product.CollectionTaskState](/documentation/storekit/product/collectiontaskstate)
 ##### Collection task states
 
@@ -785,11 +818,14 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 #### Requesting a refund
 
-- [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](/documentation/swiftui/view/refundrequestsheet(for:ispresented:ondismiss:))
+- [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View
+](/documentation/swiftui/view/refundrequestsheet(for:ispresented:ondismiss:))
 
 ### Product and subscription information
 
 - [Implementing a store in your app using the StoreKit API](/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api)
+- [Supporting monthly subscriptions with a 12-month commitment](/documentation/storekit/supporting-monthly-subscriptions-with-a-12-month-commitment)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](/documentation/storekit/managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-)
 - [Product](/documentation/storekit/product)
 #### Requesting products from the App Store
 
@@ -3184,7 +3220,8 @@ timestamp: 2026-04-15T06:05:31.567Z
 
 - [Supporting offer codes in your app](/documentation/storekit/supporting-offer-codes-in-your-app)
 - [static func presentOfferCodeRedeemSheet(in: UIWindowScene) async throws](/documentation/storekit/appstore/presentoffercoderedeemsheet(in:))
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:))
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
+](/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:))
 - [static func presentOfferCodeRedeemSheet(from: NSViewController) async throws](/documentation/storekit/appstore/presentoffercoderedeemsheet(from:))
 #### Restoring purchases
 
@@ -4759,6 +4796,10 @@ timestamp: 2026-04-15T06:05:31.567Z
 - [static let SKStorefrontIdentifierDidChange: NSNotification.Name](/documentation/foundation/nsnotification/name-swift.struct/skstorefrontidentifierdidchange)
 - [static let SKCloudServiceCapabilitiesDidChange: NSNotification.Name](/documentation/foundation/nsnotification/name-swift.struct/skcloudservicecapabilitiesdidchange)
 - [static let SKStorefrontCountryCodeDidChange: NSNotification.Name](/documentation/foundation/nsnotification/name-swift.struct/skstorefrontcountrycodedidchange)
+
+## Articles
+
+- [Supporting subscription offer codes in your app](/documentation/storekit/supporting-subscription-offer-codes-in-your-app)
 
 ---
 
