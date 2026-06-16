@@ -38,6 +38,8 @@ keyword1,keyword2,multi word phrase,keyword3
 - Comma-separated with NO spaces after commas (saves characters)
 - Spaces allowed within multi-word phrases
 - 100 characters total
+- Aim for ~8-10 terms: capping the term count is a more reliable way to stay under the
+  100-char limit than counting characters (and keeps a weaker model from overshooting)
 
 ### Must Follow
 
