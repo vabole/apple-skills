@@ -4,7 +4,7 @@ description: A control for presenting a menu of actions.
 source: https://developer.apple.com/documentation/swiftui/menu
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/menu.json
-timestamp: 2026-04-14T13:14:41.183Z
+timestamp: 2026-06-26T06:39:36.691Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:41.183Z
 > A control for presenting a menu of actions.
 
 ```swift
-struct Menu<Label, Content> where Label : View, Content : View
+nonisolated struct Menu<Label, Content> where Label : View, Content : View
 ```
 
 ## Overview
@@ -38,7 +38,7 @@ Menu("Actions") {
 }
 ```
 
-You can create the menu’s title with a [LocalizedStringKey](/documentation/swiftui/localizedstringkey), as seen in the previous example, or with a view builder that creates multiple views, such as an image and a text view:
+You can create the menu’s title with a [LocalizedStringKey](/documentation/swiftui/localizedstringkey), as seen in the previous example, or with a content builder that creates multiple views, such as an image and a text view:
 
 ```swift
 Menu {

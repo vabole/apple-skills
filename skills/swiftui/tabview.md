@@ -4,7 +4,7 @@ description: A view that switches between multiple child views using interactive
 source: https://developer.apple.com/documentation/swiftui/tabview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/tabview.json
-timestamp: 2026-04-14T13:14:44.075Z
+timestamp: 2026-06-26T06:39:36.829Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:44.075Z
 > A view that switches between multiple child views using interactive user interface elements.
 
 ```swift
-struct TabView<SelectionValue, Content> where SelectionValue : Hashable, Content : View
+nonisolated struct TabView<SelectionValue, Content> where SelectionValue : Hashable, Content : View
 ```
 
 ## Overview
@@ -248,7 +248,7 @@ TabView {
 
 ## Creating a tab view
 
-- [init(content:)](/documentation/swiftui/tabview/init(content:)) Creates a tab view that uses a builder to create its tabs.
+- [init(content:)](/documentation/swiftui/tabview/init(content:))
 - [init(selection:content:)](/documentation/swiftui/tabview/init(selection:content:)) Creates a tab view that uses a builder to create and specify selection values for its tabs.
 
 ## Configuring search activation

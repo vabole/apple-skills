@@ -4,7 +4,7 @@ description: Information about an auto-renewable subscription, such as its statu
 source: https://developer.apple.com/documentation/storekit/product/subscriptioninfo
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/storekit/product/subscriptioninfo.json
-timestamp: 2026-05-10T06:22:48.865Z
+timestamp: 2026-06-26T06:39:36.488Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit) › [Product](/documentation/storekit/product)
@@ -69,11 +69,13 @@ struct SubscriptionInfo
 ## Structures
 
 - [Product.SubscriptionInfo.BillingPlanType](/documentation/storekit/product/subscriptioninfo/billingplantype)
+- [Product.SubscriptionInfo.BundledSubscription](/documentation/storekit/product/subscriptioninfo/bundledsubscription) Properties and functionality specific to auto-renewable subscriptions included in a subscription bundle.
 - [Product.SubscriptionInfo.CommitmentInfo](/documentation/storekit/product/subscriptioninfo/commitmentinfo)
 - [Product.SubscriptionInfo.PricingTerms](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.struct)
 
 ## Instance Properties
 
+- [bundledSubscriptions](/documentation/storekit/product/subscriptioninfo/bundledsubscriptions) Properties and functionality specific to auto-renewable subscriptions included in a subscription bundle.
 - [pricingTerms](/documentation/storekit/product/subscriptioninfo/pricingterms-swift.property)
 
 ## Type Aliases

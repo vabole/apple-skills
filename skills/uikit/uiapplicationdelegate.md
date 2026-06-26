@@ -4,7 +4,7 @@ description: A set of methods to manage shared behaviors for your app.
 source: https://developer.apple.com/documentation/uikit/uiapplicationdelegate
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiapplicationdelegate.json
-timestamp: 2026-04-14T13:14:48.865Z
+timestamp: 2026-06-26T06:39:36.918Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -172,6 +172,7 @@ In iOS 12 and earlier, you use your app delegate to manage major life cycle even
 - [Responding to the launch of your app](/documentation/uikit/responding-to-the-launch-of-your-app) Initialize your app’s data structures, prepare your app to run, and respond to any launch-time requests from the system.
 - [UIApplication](/documentation/uikit/uiapplication) The centralized point of control and coordination for apps running in iOS.
 - [Scenes](/documentation/uikit/scenes) Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI.
+- [Transitioning to the UIKit scene-based life cycle](/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle) Adopt the scene-based life cycle to replace the app delegate life cycle in UIKit.
 
 ---
 

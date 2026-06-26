@@ -4,7 +4,7 @@ description: A type that defines a preconfigured shortcut for a specific app int
 source: https://developer.apple.com/documentation/appintents/appshortcut
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/appintents/appshortcut.json
-timestamp: 2026-04-14T13:14:05.910Z
+timestamp: 2026-06-26T06:39:35.606Z
 ---
 
 **Navigation:** [App Intents](/documentation/appintents)
@@ -35,7 +35,6 @@ struct AppShortcut
 
 ## App Shortcut definition
 
-- [AppShortcutsContent](/documentation/appintents/appshortcutscontent)
 - [AppShortcutPhrase](/documentation/appintents/appshortcutphrase) A spoken phrase that causes the system to run the corresponding App Shortcut.
 - [AppShortcutPhraseToken](/documentation/appintents/appshortcutphrasetoken) Dynamic values you can include in the spoken phrases that run your shortcut.
 - [NegativeAppShortcutPhrase](/documentation/appintents/negativeappshortcutphrase) An object that represents a negative phrase.
@@ -44,6 +43,7 @@ struct AppShortcut
 - [NSAppIconComplementingColorNames](/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconComplementingColorNames) The names of the colors to use for the background of the App Shortcuts platter.
 - [AppShortcutsBuilder](/documentation/appintents/appshortcutsbuilder) A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
 - [ShortcutTileColor](/documentation/appintents/shortcuttilecolor) Describes the colors a shortcut tile in the Shortcuts app.
+- [AppShortcutsContent](/documentation/appintents/appshortcutscontent)
 
 ---
 

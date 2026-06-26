@@ -4,7 +4,7 @@ description: A control that toggles between on and off states.
 source: https://developer.apple.com/documentation/swiftui/toggle
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/toggle.json
-timestamp: 2026-04-14T13:14:44.851Z
+timestamp: 2026-06-26T06:39:36.843Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:44.851Z
 > A control that toggles between on and off states.
 
 ```swift
-struct Toggle<Label> where Label : View
+nonisolated struct Toggle<Label> where Label : View
 ```
 
 ## Overview

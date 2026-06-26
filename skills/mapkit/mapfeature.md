@@ -4,7 +4,7 @@ description: A tappable map feature.
 source: https://developer.apple.com/documentation/mapkit/mapfeature
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/mapkit/mapfeature.json
-timestamp: 2026-04-14T13:14:28.179Z
+timestamp: 2026-06-26T06:39:36.430Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)
@@ -27,9 +27,7 @@ Tappable map features can include single points of interest, such as hotels and 
 
 ## Conforms To
 
-- [Copyable](/documentation/Swift/Copyable)
 - [Equatable](/documentation/Swift/Equatable)
-- [Escapable](/documentation/Swift/Escapable)
 - [Hashable](/documentation/Swift/Hashable)
 
 ## Accessing the feature’s properties

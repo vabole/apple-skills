@@ -4,7 +4,7 @@ description: A unit of asynchronous work.
 source: https://developer.apple.com/documentation/swift/task
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swift/task.json
-timestamp: 2026-04-14T13:14:32.698Z
+timestamp: 2026-06-26T06:39:36.525Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -94,9 +94,7 @@ deinit actor
 
 ## Conforms To
 
-- [Copyable](/documentation/swift/copyable)
 - [Equatable](/documentation/swift/equatable)
-- [Escapable](/documentation/swift/escapable)
 - [Hashable](/documentation/swift/hashable)
 - [Sendable](/documentation/swift/sendable)
 - [SendableMetatype](/documentation/swift/sendablemetatype)
@@ -120,20 +118,16 @@ deinit actor
 
 ## Creating a Task that Starts Immediately
 
-- [immediate(name:priority:executorPreference:operation:)](/documentation/swift/task/immediate(name:priority:executorpreference:operation:)-88o80) Create and immediately start running a new detached task in the context of the calling thread/task.
-- [immediate(name:priority:executorPreference:operation:)](/documentation/swift/task/immediate(name:priority:executorpreference:operation:)-9bghc) Create and immediately start running a new detached task in the context of the calling thread/task.
-- [immediateDetached(name:priority:executorPreference:operation:)](/documentation/swift/task/immediatedetached(name:priority:executorpreference:operation:)-52ipd) Create and immediately start running a new task in the context of the calling thread/task.
-- [immediateDetached(name:priority:executorPreference:operation:)](/documentation/swift/task/immediatedetached(name:priority:executorpreference:operation:)-7h41b) Create and immediately start running a new task in the context of the calling thread/task.
+- [immediate(name:priority:executorPreference:operation:)](/documentation/swift/task/immediate(name:priority:executorpreference:operation:)-88o80) Create and immediately start running a new task in the context of the calling thread/task.
+- [immediate(name:priority:executorPreference:operation:)](/documentation/swift/task/immediate(name:priority:executorpreference:operation:)-9bghc) Create and immediately start running a new task in the context of the calling thread/task.
+- [immediateDetached(name:priority:executorPreference:operation:)](/documentation/swift/task/immediatedetached(name:priority:executorpreference:operation:)-52ipd) Create and immediately start running a new detached task in the context of the calling thread/task.
+- [immediateDetached(name:priority:executorPreference:operation:)](/documentation/swift/task/immediatedetached(name:priority:executorpreference:operation:)-7h41b) Create and immediately start running a new detached task in the context of the calling thread/task.
 
 ## Accessing Results
 
 - [value](/documentation/swift/task/value-60t02) The result from a throwing task, after it completes.
 - [value](/documentation/swift/task/value-40dtq) The result from a nonthrowing task, after it completes.
 - [result](/documentation/swift/task/result) The result or error from a throwing task, after it completes.
-
-## Accessing the Current Task’s Name
-
-- [name](/documentation/swift/task/name) Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 
 ## Canceling Tasks
 
@@ -178,6 +172,15 @@ deinit actor
 - [runDetached(priority:operation:)](/documentation/swift/task/rundetached(priority:operation:)-8s8lh) Deprecated, available only for source compatibility reasons.
 - [withCancellationHandler(handler:operation:)](/documentation/swift/task/withcancellationhandler(handler:operation:))
 - [withGroup(resultType:returning:body:)](/documentation/swift/task/withgroup(resulttype:returning:body:))
+
+## Instance Properties
+
+- [name](/documentation/swift/task/name-swift.property) Return the task’s name, if it was set during its creation.
+
+## Type Properties
+
+- [hasActiveCancellationShield](/documentation/swift/task/hasactivecancellationshield) Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)` function.
+- [name](/documentation/swift/task/name-swift.type.property) Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 
 ## Default Implementations
 

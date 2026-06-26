@@ -3,7 +3,7 @@ title: Swift Testing
 source: https://developer.apple.com/documentation/testing
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/testing
-timestamp: 2026-05-10T06:22:49.159Z
+timestamp: 2026-06-26T06:39:36.556Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -143,15 +143,6 @@ timestamp: 2026-05-10T06:22:49.159Z
 #### Instance Properties
 
 - [var expectation: Expectation](/documentation/testing/expectationfailederror/expectation)
-
-- [CustomTestStringConvertible](/documentation/testing/customteststringconvertible)
-#### Instance Properties
-
-- [var testDescription: String](/documentation/testing/customteststringconvertible/testdescription)
-##### CustomTestStringConvertible Implementations
-
-- [var testDescription: String](/documentation/testing/customteststringconvertible/testdescription-3ar66)
-
 
 ### Representing source locations
 
@@ -300,6 +291,10 @@ timestamp: 2026-05-10T06:22:49.159Z
 - [static func filterIssues((Issue) -> Bool) -> Self](/documentation/testing/trait/filterissues(_:))
 
 - [TestTrait](/documentation/testing/testtrait)
+#### Type Methods
+
+- [static func evaluates(any Evaluation, info: [String : String]) -> Self](/documentation/testing/testtrait/evaluates(_:info:))
+
 - [SuiteTrait](/documentation/testing/suitetrait)
 #### Instance Properties
 
@@ -369,6 +364,23 @@ timestamp: 2026-05-10T06:22:49.159Z
 - [var timeLimit: Duration](/documentation/testing/timelimittrait/timelimit)
 
 
+## Value description and reflection
+
+- [Describing and reflecting values](/documentation/testing/describing-values)
+- [CustomTestReflectable](/documentation/testing/customtestreflectable)
+### Instance Properties
+
+- [var customTestMirror: Mirror](/documentation/testing/customtestreflectable/customtestmirror)
+
+- [CustomTestStringConvertible](/documentation/testing/customteststringconvertible)
+### Instance Properties
+
+- [var testDescription: String](/documentation/testing/customteststringconvertible/testdescription)
+#### CustomTestStringConvertible Implementations
+
+- [var testDescription: String](/documentation/testing/customteststringconvertible/testdescription-3ar66)
+
+
 ## Data collection
 
 - [Attachments](/documentation/testing/attachments)
@@ -380,6 +392,7 @@ timestamp: 2026-05-10T06:22:49.159Z
 - [init<T>(T, named: String?, as: AttachableImageFormat?, sourceLocation: SourceLocation)](/documentation/testing/attachment/init(_:named:as:sourcelocation:))
 - [init(consuming AttachableValue, named: String?, sourceLocation: SourceLocation)](/documentation/testing/attachment/init(_:named:sourcelocation:))
 - [init(contentsOf: URL, named: String?, sourceLocation: SourceLocation) async throws](/documentation/testing/attachment/init(contentsof:named:sourcelocation:))
+- [init<T>(exporting: T, as: UTType?, named: String?, sourceLocation: SourceLocation) async throws](/documentation/testing/attachment/init(exporting:as:named:sourcelocation:))
 #### Instance Properties
 
 - [var attachableValue: AttachableValue](/documentation/testing/attachment/attachablevalue-2tnj5)

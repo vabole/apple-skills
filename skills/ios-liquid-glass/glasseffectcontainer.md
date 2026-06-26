@@ -4,7 +4,7 @@ description: A view that combines multiple Liquid Glass shapes into a single sha
 source: https://developer.apple.com/documentation/swiftui/glasseffectcontainer
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/glasseffectcontainer.json
-timestamp: 2026-04-14T13:14:25.452Z
+timestamp: 2026-06-26T06:39:36.375Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -42,6 +42,9 @@ Configure how shapes interact with one another by customizing the default spacin
 - [Applying Liquid Glass to custom views](/documentation/swiftui/applying-liquid-glass-to-custom-views) Configure, combine, and morph views using Liquid Glass effects.
 - [Landmarks: Building an app with Liquid Glass](/documentation/swiftui/landmarks-building-an-app-with-liquid-glass) Enhance your app experience with system-provided and custom Liquid Glass.
 - [glassEffect(_:in:)](/documentation/swiftui/view/glasseffect(_:in:)) Applies the Liquid Glass effect to a view.
+- [glassEffectID(_:in:)](/documentation/swiftui/view/glasseffectid(_:in:)) Associates an identity value to Liquid Glass effects defined within this view.
+- [glassEffectTransition(_:)](/documentation/swiftui/view/glasseffecttransition(_:)) Associates a glass effect transition with any glass effects defined within this view.
+- [glassEffectUnion(id:namespace:)](/documentation/swiftui/view/glasseffectunion(id:namespace:)) Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
 - [interactive(_:)](/documentation/swiftui/glass/interactive(_:)) Returns a copy of the structure configured to be interactive.
 - [GlassEffectTransition](/documentation/swiftui/glasseffecttransition) A structure that describes changes to apply when a glass effect is added or removed from the view hierarchy.
 - [GlassButtonStyle](/documentation/swiftui/glassbuttonstyle) A button style that applies glass border artwork based on the button’s context.

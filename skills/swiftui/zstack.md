@@ -4,7 +4,7 @@ description: A view that overlays its subviews, aligning them in both axes.
 source: https://developer.apple.com/documentation/swiftui/zstack
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/zstack.json
-timestamp: 2026-04-14T13:14:46.108Z
+timestamp: 2026-06-26T06:39:36.860Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:46.108Z
 > A view that overlays its subviews, aligning them in both axes.
 
 ```swift
-@frozen struct ZStack<Content> where Content : View
+@frozen nonisolated struct ZStack<Content> where Content : View
 ```
 
 ## Overview

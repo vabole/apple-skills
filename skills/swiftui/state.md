@@ -4,7 +4,7 @@ description: A property wrapper type that can read and write a value managed by 
 source: https://developer.apple.com/documentation/swiftui/state
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/state.json
-timestamp: 2026-04-14T13:14:43.699Z
+timestamp: 2026-06-26T06:39:36.801Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -22,6 +22,8 @@ timestamp: 2026-04-14T13:14:43.699Z
 ```
 
 ## Overview
+
+> **Important:** When you build with Xcode 27 or later, the system uses the [State()](/documentation/swiftui/state()) macro instead.
 
 Use state as the single source of truth for a given value type that you store in a view hierarchy. Create a state value in an [App](/documentation/swiftui/app), [Scene](/documentation/swiftui/scene), or [View](/documentation/swiftui/view) by applying the `@State` attribute to a property declaration and providing an initial value. Declare state as private to prevent setting it in a memberwise initializer, which can conflict with the storage management that SwiftUI provides:
 
@@ -75,7 +77,7 @@ struct PlayerView: View {
 }
 ```
 
-Like you do for a [StateObject](/documentation/swiftui/stateobject), declare `State` as private to prevent setting it in a memberwise initializer, which can conflict with the storage management that SwiftUI provides. Unlike a state object, always initialize state by providing a default value in the state’s declaration, as in the above examples. Use state only for storage that’s local to a view and its subviews.
+Initialize state by providing a default value in the state’s declaration, as in the above examples. Use state only for storage that’s local to a view and its subviews.
 
 ### Store observable objects
 
@@ -97,7 +99,7 @@ struct ContentView: View {
 }
 ```
 
-A `State` property always instantiates its default value when SwiftUI instantiates the view. For this reason, avoid side effects and performance-intensive work when initializing the default value. For example, if a view updates frequently, allocating a new default object each time the view initializes can become expensive. Instead, you can defer the creation of the object using the `View/task(priority:_:)` modifier, which is called only once when the view first appears:
+A `State` property always instantiates its default value when SwiftUI instantiates the view. For this reason, avoid side effects and performance-intensive work when initializing the default value. For example, if a view updates frequently, allocating a new default object each time the view initializes can become expensive. Instead, you can defer the creation of the object using the [task(name:priority:file:line:_:)](/documentation/swiftui/view/task(name:priority:file:line:_:)) modifier, which is called only once when the view first appears:
 
 ```swift
 struct ContentView: View {
@@ -112,7 +114,7 @@ struct ContentView: View {
 }
 ```
 
-Delaying the creation of the observable state object ensures that unnecessary allocations of the object doesn’t happen each time SwiftUI initializes the view. Using the `View/task(priority:_:)` modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
+Delaying the creation of the observable state object ensures that unnecessary allocations of the object don’t happen each time SwiftUI initializes the view. Using the [task(name:priority:file:line:_:)](/documentation/swiftui/view/task(name:priority:file:line:_:)) modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
 
 > **Note:** It’s possible to store an object that conforms to the [ObservableObject](/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [StateObject](/documentation/swiftui/stateobject) instead of [State](/documentation/swiftui/state) when storing the object.
 
@@ -239,6 +241,9 @@ struct BookEditorView: View {
 ## Creating and sharing view state
 
 - [Managing user interface state](/documentation/swiftui/managing-user-interface-state) Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
+- [State()](/documentation/swiftui/state()) Creates a property that can read and write a value managed by SwiftUI.
+- [State(initialValue:)](/documentation/swiftui/state(initialvalue:)) Creates a property with an initial value that can read and write a value managed by SwiftUI.
+- [State(wrappedValue:)](/documentation/swiftui/state(wrappedvalue:)) Creates a property with a wrapped value that can read and write a value managed by SwiftUI.
 - [Bindable](/documentation/swiftui/bindable) A property wrapper type that supports creating bindings to the mutable properties of observable objects.
 - [Binding](/documentation/swiftui/binding) A property wrapper type that can read and write a value owned by a source of truth.
 

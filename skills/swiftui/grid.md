@@ -4,7 +4,7 @@ description: A container view that arranges other views in a two dimensional lay
 source: https://developer.apple.com/documentation/swiftui/grid
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/grid.json
-timestamp: 2026-04-14T13:14:39.086Z
+timestamp: 2026-06-26T06:39:36.654Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:39.086Z
 > A container view that arranges other views in a two dimensional layout.
 
 ```swift
-@frozen struct Grid<Content> where Content : View
+@frozen nonisolated struct Grid<Content> where Content : View
 ```
 
 ## Overview

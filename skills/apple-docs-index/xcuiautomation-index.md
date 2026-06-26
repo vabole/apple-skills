@@ -3,7 +3,7 @@ title: XCUIAutomation
 source: https://developer.apple.com/documentation/xcuiautomation
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/xcuiautomation
-timestamp: 2026-05-25T06:52:04.373Z
+timestamp: 2026-06-26T06:39:35.821Z
 ---
 
 **Navigation:** [XCUIAutomation](/documentation/xcuiautomation)
@@ -789,6 +789,9 @@ timestamp: 2026-05-25T06:52:04.373Z
 ### Deprecated
 
 - [init()](/documentation/xcuiautomation/xcuidevice/init())
+### Instance Properties
+
+- [var voiceOverService: XCUIVoiceOverService](/documentation/xcuiautomation/xcuidevice/voiceoverservice)
 
 - [XCUISystem](/documentation/xcuiautomation/xcuisystem)
 ### Opening items in applications by URL
@@ -838,6 +841,57 @@ timestamp: 2026-05-25T06:52:04.373Z
 ## UI testing availability
 
 - [var XCUI_UI_TESTING_AVAILABLE: Int32](/documentation/xcuiautomation/xcui_ui_testing_available)
+## Classes
+
+- [XCUIVoiceOverService](/documentation/xcuiautomation/xcuivoiceoverservice)
+### Classes
+
+- [XCUIVoiceOverService.Output](/documentation/xcuiautomation/xcuivoiceoverservice/output)
+#### Instance Properties
+
+- [var utterance: String](/documentation/xcuiautomation/xcuivoiceoverservice/output/utterance)
+
+### Structures
+
+- [XCUIVoiceOverService.Error](/documentation/xcuiautomation/xcuivoiceoverservice/error)
+#### Type Properties
+
+- [static var errorDomain: String](/documentation/xcuiautomation/xcuivoiceoverservice/error/errordomain)
+- [static var failedToStart: XCUIVoiceOverService.Error.Code](/documentation/xcuiautomation/xcuivoiceoverservice/error/failedtostart)
+- [static var failedToStop: XCUIVoiceOverService.Error.Code](/documentation/xcuiautomation/xcuivoiceoverservice/error/failedtostop)
+- [static var noSpeech: XCUIVoiceOverService.Error.Code](/documentation/xcuiautomation/xcuivoiceoverservice/error/nospeech)
+- [static var notRunning: XCUIVoiceOverService.Error.Code](/documentation/xcuiautomation/xcuivoiceoverservice/error/notrunning)
+#### Enumerations
+
+- [XCUIVoiceOverService.Error.Code](/documentation/xcuiautomation/xcuivoiceoverservice/error/code)
+##### Enumeration Cases
+
+- [case failedToStart](/documentation/xcuiautomation/xcuivoiceoverservice/error/code/failedtostart)
+- [case failedToStop](/documentation/xcuiautomation/xcuivoiceoverservice/error/code/failedtostop)
+- [case noSpeech](/documentation/xcuiautomation/xcuivoiceoverservice/error/code/nospeech)
+- [case notRunning](/documentation/xcuiautomation/xcuivoiceoverservice/error/code/notrunning)
+##### Initializers
+
+- [init?(rawValue: Int)](/documentation/xcuiautomation/xcuivoiceoverservice/error/code/init(rawvalue:))
+
+
+### Instance Properties
+
+- [var debugDescription: String](/documentation/xcuiautomation/xcuivoiceoverservice/debugdescription)
+- [var isEnabled: Bool](/documentation/xcuiautomation/xcuivoiceoverservice/isenabled)
+### Instance Methods
+
+- [func currentSpeech() throws -> XCUIVoiceOverService.Output](/documentation/xcuiautomation/xcuivoiceoverservice/currentspeech())
+- [func disable() throws](/documentation/xcuiautomation/xcuivoiceoverservice/disable())
+- [func enable() throws](/documentation/xcuiautomation/xcuivoiceoverservice/enable())
+- [func moveBackward() throws -> XCUIVoiceOverService.Output](/documentation/xcuiautomation/xcuivoiceoverservice/movebackward())
+- [func moveForward() throws -> XCUIVoiceOverService.Output](/documentation/xcuiautomation/xcuivoiceoverservice/moveforward())
+- [func moveIn() throws -> XCUIVoiceOverService.Output](/documentation/xcuiautomation/xcuivoiceoverservice/movein())
+- [func moveOut() throws -> XCUIVoiceOverService.Output](/documentation/xcuiautomation/xcuivoiceoverservice/moveout())
+
+## Variables
+
+- [let XCUIVoiceOverServiceErrorDomain: String](/documentation/xcuiautomation/xcuivoiceoverserviceerrordomain)
 
 ---
 

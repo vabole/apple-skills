@@ -4,7 +4,7 @@ description: A container that presents rows of data arranged in a single column,
 source: https://developer.apple.com/documentation/swiftui/list
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/list.json
-timestamp: 2026-04-14T13:14:40.805Z
+timestamp: 2026-06-26T06:39:36.687Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:40.805Z
 > A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
 
 ```swift
-@MainActor @preconcurrency struct List<SelectionValue, Content> where SelectionValue : Hashable, Content : View
+nonisolated struct List<SelectionValue, Content> where SelectionValue : Hashable, Content : View
 ```
 
 ## Overview

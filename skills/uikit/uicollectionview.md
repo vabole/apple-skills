@@ -4,7 +4,7 @@ description: An object that manages an ordered collection of data items and pres
 source: https://developer.apple.com/documentation/uikit/uicollectionview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uicollectionview.json
-timestamp: 2026-04-14T13:14:49.571Z
+timestamp: 2026-06-26T06:39:36.937Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -103,6 +103,8 @@ For general information about making your interface accessible, see [Accessibili
 ## Conforms To
 
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [Copyable](/documentation/Swift/Copyable)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
@@ -297,6 +299,10 @@ For general information about making your interface accessible, see [Accessibili
 
 - [selfSizingInvalidation](/documentation/uikit/uicollectionview/selfsizinginvalidation-swift.property) The mode that the collection view uses for invalidating the size of self-sizing cells.
 - [UICollectionView.SelfSizingInvalidation](/documentation/uikit/uicollectionview/selfsizinginvalidation-swift.enum) Constants that describe modes for invalidating the size of self-sizing collection view cells.
+
+## Instance Properties
+
+- [appIntentsDataSource](/documentation/uikit/uicollectionview/appintentsdatasource) The object acting as the collection view’s data source for app entity identifiers that make a cell’s content avdiscoverable by Apple Intelligence and Siri.
 
 ## Instance Methods
 

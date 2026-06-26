@@ -4,7 +4,7 @@ description: A view that arranges its subviews in a horizontal line.
 source: https://developer.apple.com/documentation/swiftui/hstack
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/hstack.json
-timestamp: 2026-04-14T13:14:39.287Z
+timestamp: 2026-06-26T06:39:36.659Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:39.287Z
 > A view that arranges its subviews in a horizontal line.
 
 ```swift
-@frozen struct HStack<Content> where Content : View
+@frozen nonisolated struct HStack<Content> where Content : View
 ```
 
 ## Overview

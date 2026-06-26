@@ -4,7 +4,7 @@ description: A view that displays a root view and enables you to present additio
 source: https://developer.apple.com/documentation/swiftui/navigationstack
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/navigationstack.json
-timestamp: 2026-04-14T13:14:41.703Z
+timestamp: 2026-06-26T06:39:36.705Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:41.703Z
 > A view that displays a root view and enables you to present additional views over the root view.
 
 ```swift
-@MainActor @preconcurrency struct NavigationStack<Data, Root> where Root : View
+nonisolated struct NavigationStack<Data, Root> where Root : View
 ```
 
 ## Overview

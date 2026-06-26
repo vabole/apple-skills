@@ -4,7 +4,7 @@ description: Inserts an inspector at the applied position in the view hierarchy.
 source: https://developer.apple.com/documentation/swiftui/view/inspector(ispresented:content:)
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/inspector(ispresented:content:).json
-timestamp: 2026-04-14T13:14:39.719Z
+timestamp: 2026-06-26T06:39:36.667Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:39.719Z
 > Inserts an inspector at the applied position in the view hierarchy.
 
 ```swift
-nonisolated func inspector<V>(isPresented: Binding<Bool>, @ViewBuilder content: () -> V) -> some View where V : View
+nonisolated func inspector<V>(isPresented: Binding<Bool>, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
 ## Parameters

@@ -4,7 +4,7 @@ description: A control for selecting from a set of mutually exclusive values.
 source: https://developer.apple.com/documentation/swiftui/picker
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/picker.json
-timestamp: 2026-04-14T13:14:41.923Z
+timestamp: 2026-06-26T06:39:36.760Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:41.923Z
 > A control for selecting from a set of mutually exclusive values.
 
 ```swift
-struct Picker<Label, SelectionValue, Content> where Label : View, SelectionValue : Hashable, Content : View
+nonisolated struct Picker<Label, SelectionValue, Content> where Label : View, SelectionValue : Hashable, Content : View
 ```
 
 ## Overview

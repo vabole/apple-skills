@@ -4,7 +4,7 @@ description: A consistent layout that adapts to various contexts makes your expe
 source: https://developer.apple.com/design/human-interface-guidelines/layout
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/layout.json
-timestamp: 2026-04-14T13:14:15.180Z
+timestamp: 2026-06-26T06:39:36.136Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -31,7 +31,7 @@ Apple provides templates, guides, and other resources that can help you integrat
 
 When your content doesn’t span the full window, use a background extension view to provide the appearance of content behind the control layer on either side of the screen, such as beneath the sidebar or inspector. For developer guidance, see [backgroundExtensionEffect()](/documentation/SwiftUI/View/backgroundExtensionEffect()) and [UIBackgroundExtensionView](/documentation/UIKit/UIBackgroundExtensionView).
 
-![A screenshot of a full screen iPad app with a sidebar on the leading edge. A photo of Mount Fuji fills the top half of the content area. The photo subtly blurs as it reaches the top of the screen, where toolbar items float above it grouped on the trailing edge. Where the photo meets the sidebar, the image flips, blurs, and extends fully beneath the sidebar to the edge of the screen.](https://docs-assets.developer.apple.com/published/ffacfee843cc378d0af09d8926f2408b/layout-background-extention-view%402x.png)
+![A screenshot of a full screen iPad app with a sidebar on the leading edge. A photo of Mount Fuji fills the top half of the content area. The photo subtly blurs as it reaches the top of the screen, where toolbar items float above it grouped on the trailing edge. Where the photo meets the sidebar, the image flips, blurs, and extends fully beneath the sidebar to the edge of the screen.](https://docs-assets.developer.apple.com/published/a0d9038c944109aff5bd4e2d440671d9/layout-background-extention-view%402x.png)
 
 ## Visual hierarchy
 
@@ -62,7 +62,7 @@ Here are some of the most common device and system variations you need to handle
 
 **Be prepared for text-size changes.** People appreciate apps and games that respond when they choose a different text size. When you support [Supporting Dynamic Type](/design/human-interface-guidelines/typography#Supporting-Dynamic-Type) — a feature that lets people choose the size of visible text in iOS, iPadOS, tvOS, visionOS, and watchOS — your app or game can respond appropriately when people adjust text size. To support Dynamic Type in your Unity-based game, use Apple’s accessibility plug-in (for developer guidance, see [Apple – Accessibility](https://github.com/apple/unityplugins/blob/main/plug-ins/Apple.Accessibility/Apple.Accessibility_Unity/Assets/Apple.Accessibility/Documentation~/Apple.Accessibility.md)). For guidance on displaying text in your app, see [Typography](/design/human-interface-guidelines/typography).
 
-**Preview your app on multiple devices, using different orientations, localizations, and text sizes.** You can streamline the testing process by first testing versions of your experience that use the largest and the smallest layouts. Although it’s generally best to preview features like wide-gamut color on actual devices, you can use Xcode Simulator to check for clipping and other layout issues. For example, if your iOS app or game supports landscape mode, you can use Simulator to make sure your layouts look great whether the device rotates left or right.
+**Preview your app on multiple devices, using different orientations, localizations, and text sizes.** You can streamline the testing process by first testing versions of your experience that use the largest and the smallest layouts. Although it’s generally best to preview features like wide-gamut color on actual devices, you can test on a simulated device in Device Hub to check for clipping and other layout issues. For example, if your iOS app or game supports landscape mode, you can use the simulator to make sure your layouts look great whether the device rotates left or right.
 
 **When necessary, scale artwork in response to display changes.** For example, viewing your app or game in a different context — such as on a screen with a different aspect ratio — might make your artwork appear cropped, letterboxed, or pillarboxed. If this happens, don’t change the aspect ratio of the artwork; instead, scale it so that important visual content remains visible. In visionOS, the system automatically [Scale](/design/human-interface-guidelines/spatial-layout#Scale) a window when it moves along the z-axis.
 
@@ -256,9 +256,11 @@ The guidance below can help you lay out content within the windows of your visio
 
 | Model | Dimensions (portrait) |
 | --- | --- |
+| iPad Pro 13-inch | 1032x1376 pt (2064x2752 px @2x) |
 | iPad Pro 12.9-inch | 1024x1366 pt (2048x2732 px @2x) |
-| iPad Pro 11-inch | 834x1194 pt (1668x2388 px @2x) |
-| iPad Pro 10.5-inch | 834x1194 pt (1668x2388 px @2x) |
+| iPad Pro 11-inch 5th and 6th generation | 834x1210 pt (1668x2420 px @2x) |
+| iPad Pro 11-inch 1st–4th generation | 834x1194 pt (1668x2388 px @2x) |
+| iPad Pro 10.5-inch | 834x1112 pt (1668x2224 px @2x) |
 | iPad Pro 9.7-inch | 768x1024 pt (1536x2048 px @2x) |
 | iPad Air 13-inch | 1024x1366 pt (2048x2732 px @2x) |
 | iPad Air 11-inch | 820x1180 pt (1640x2360 px @2x) |
@@ -290,11 +292,11 @@ The guidance below can help you lay out content within the windows of your visio
 | iPhone 13 Pro Max | 428x926 pt (1284x2778 px @3x) |
 | iPhone 13 Pro | 390x844 pt (1170x2532 px @3x) |
 | iPhone 13 | 390x844 pt (1170x2532 px @3x) |
-| iPhone 13 mini | 375x812 pt (1125x2436 px @3x) |
+| iPhone 13 mini | 360x780 pt (1080x2340 px @3x) |
 | iPhone 12 Pro Max | 428x926 pt (1284x2778 px @3x) |
 | iPhone 12 Pro | 390x844 pt (1170x2532 px @3x) |
 | iPhone 12 | 390x844 pt (1170x2532 px @3x) |
-| iPhone 12 mini | 375x812 pt (1125x2436 px @3x) |
+| iPhone 12 mini | 360x780 pt (1080x2340 px @3x) |
 | iPhone 11 Pro Max | 414x896 pt (1242x2688 px @3x) |
 | iPhone 11 Pro | 375x812 pt (1125x2436 px @3x) |
 | iPhone 11 | 414x896 pt (828x1792 px @2x) |

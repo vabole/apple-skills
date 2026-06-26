@@ -4,7 +4,7 @@ description: A view that displays one or more lines of informational text.
 source: https://developer.apple.com/documentation/uikit/uilabel
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uilabel.json
-timestamp: 2026-04-14T13:14:52.198Z
+timestamp: 2026-06-26T06:39:37.060Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -69,6 +69,8 @@ For design guidance, see [Human Interface Guidelines](https://developer.apple.co
 ## Conforms To
 
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
 - [CustomStringConvertible](/documentation/Swift/CustomStringConvertible)

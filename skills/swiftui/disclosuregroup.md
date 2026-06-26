@@ -4,7 +4,7 @@ description: A view that shows or hides another content view, based on the state
 source: https://developer.apple.com/documentation/swiftui/disclosuregroup
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/disclosuregroup.json
-timestamp: 2026-04-14T13:14:38.237Z
+timestamp: 2026-06-26T06:39:36.634Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:38.237Z
 > A view that shows or hides another content view, based on the state of a disclosure control.
 
 ```swift
-struct DisclosureGroup<Label, Content> where Label : View, Content : View
+nonisolated struct DisclosureGroup<Label, Content> where Label : View, Content : View
 ```
 
 ## Overview

@@ -4,7 +4,7 @@ description: A view that shows the progress toward completion of a task.
 source: https://developer.apple.com/documentation/swiftui/progressview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/progressview.json
-timestamp: 2026-04-14T13:14:42.341Z
+timestamp: 2026-06-26T06:39:36.769Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:42.341Z
 > A view that shows the progress toward completion of a task.
 
 ```swift
-struct ProgressView<Label, CurrentValueLabel> where Label : View, CurrentValueLabel : View
+nonisolated struct ProgressView<Label, CurrentValueLabel> where Label : View, CurrentValueLabel : View
 ```
 
 ## Overview

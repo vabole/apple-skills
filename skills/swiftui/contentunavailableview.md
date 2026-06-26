@@ -4,7 +4,7 @@ description: An interface, consisting of a label and additional content, that yo
 source: https://developer.apple.com/documentation/swiftui/contentunavailableview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/contentunavailableview.json
-timestamp: 2026-04-14T13:14:38.039Z
+timestamp: 2026-06-26T06:39:36.631Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:38.039Z
 > An interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 
 ```swift
-struct ContentUnavailableView<Label, Description, Actions> where Label : View, Description : View, Actions : View
+nonisolated struct ContentUnavailableView<Label, Description, Actions> where Label : View, Description : View, Actions : View
 ```
 
 ## Overview

@@ -4,7 +4,7 @@ description: A control that initiates an action.
 source: https://developer.apple.com/documentation/swiftui/button
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/button.json
-timestamp: 2026-04-14T13:14:36.699Z
+timestamp: 2026-06-26T06:39:36.603Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:36.699Z
 > A control that initiates an action.
 
 ```swift
-struct Button<Label> where Label : View
+nonisolated struct Button<Label> where Label : View
 ```
 
 ## Overview
@@ -169,12 +169,13 @@ You can also create custom styles. To add a custom appearance with standard inte
 
 - [buttonStyle(_:)](/documentation/swiftui/view/buttonstyle(_:)) Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
 - [buttonBorderShape(_:)](/documentation/swiftui/view/buttonbordershape(_:)) Sets the border shape for buttons in this view.
-- [buttonRepeatBehavior(_:)](/documentation/swiftui/view/buttonrepeatbehavior(_:)) Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
-- [buttonRepeatBehavior](/documentation/swiftui/environmentvalues/buttonrepeatbehavior) Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
 - [ButtonBorderShape](/documentation/swiftui/buttonbordershape) A shape used to draw a button’s border.
-- [ButtonRole](/documentation/swiftui/buttonrole) A value that describes the purpose of a button.
+- [buttonRepeatBehavior(_:)](/documentation/swiftui/view/buttonrepeatbehavior(_:)) Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
 - [ButtonRepeatBehavior](/documentation/swiftui/buttonrepeatbehavior) The options for controlling the repeatability of button actions.
+- [buttonRepeatBehavior](/documentation/swiftui/environmentvalues/buttonrepeatbehavior) Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
+- [buttonSizing(_:)](/documentation/swiftui/view/buttonsizing(_:)) The preferred sizing behavior of buttons in the view hierarchy.
 - [ButtonSizing](/documentation/swiftui/buttonsizing) The sizing behavior of `Button`s and other button-like controls.
+- [ButtonRole](/documentation/swiftui/buttonrole) A value that describes the purpose of a button.
 
 ---
 

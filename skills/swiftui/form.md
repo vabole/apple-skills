@@ -4,7 +4,7 @@ description: A container for grouping controls used for data entry, such as in s
 source: https://developer.apple.com/documentation/swiftui/form
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/form.json
-timestamp: 2026-04-14T13:14:38.641Z
+timestamp: 2026-06-26T06:39:36.642Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:38.641Z
 > A container for grouping controls used for data entry, such as in settings or inspectors.
 
 ```swift
-struct Form<Content> where Content : View
+nonisolated struct Form<Content> where Content : View
 ```
 
 ## Overview

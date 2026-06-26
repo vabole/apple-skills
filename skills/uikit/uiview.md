@@ -4,7 +4,7 @@ description: An object that manages the content for a rectangular area on the sc
 source: https://developer.apple.com/documentation/uikit/uiview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiview.json
-timestamp: 2026-04-14T13:14:54.309Z
+timestamp: 2026-06-26T06:39:37.106Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -137,6 +137,21 @@ Many view behaviors can be configured without the need for subclassing. Before y
 
 Animations are another way to make visible changes to a view without requiring you to subclass and implement complex drawing code. Many properties of the [UIView](/documentation/uikit/uiview) class are animatable, which means changes to those properties can trigger system-generated animations. Starting animations requires as little as one line of code to indicate that any changes that follow should be animated. For more information about animation support for views, see [Animate views](/documentation/uikit/uiview#Animate-views).
 
+### Sensor coordinate orientation
+
+`UIView` conforms to [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable) and [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable), informing Core Location and Core Motion how the app’s UI and this view are situated with respect to reference physical orientations. They use this information to transform the sensor values they provide, such as compass headings and device motion data, so those values align with your UI’s actual orientation. Without this association, Core Location and Core Motion report sensor values relative to the device’s physical orientation, which can produce unexpected results, such as a navigation map that appears rotated.
+
+To use this approach, set any view as the body on a `CLLocationManager` or `CMMotionManager` instance. The system tracks orientation changes through the view and applies the correct transformation automatically.
+
+```swift
+let motionManager = CMMotionManager()
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    motionManager.deviceMotionBody = view
+}
+```
+
 ## Inherits From
 
 - [UIResponder](/documentation/uikit/uiresponder)
@@ -174,7 +189,10 @@ Animations are another way to make visible changes to a view without requiring y
 
 ## Conforms To
 
+- [AppEntityAnnotatable](/documentation/AppIntents/AppEntityAnnotatable)
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [Copyable](/documentation/Swift/Copyable)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
@@ -376,7 +394,7 @@ Animations are another way to make visible changes to a view without requiring y
 - [setNeedsLayout()](/documentation/uikit/uiview/setneedslayout()) Invalidates the current layout of the receiver and triggers a layout update during the next update cycle.
 - [layoutIfNeeded()](/documentation/uikit/uiview/layoutifneeded()) Lays out the subviews immediately, if layout updates are pending.
 - [requiresConstraintBasedLayout](/documentation/uikit/uiview/requiresconstraintbasedlayout) A Boolean value that indicates whether the receiver depends on the constraint-based layout system.
-- [translatesAutoresizingMaskIntoConstraints](/documentation/uikit/uiview/translatesautoresizingmaskintoconstraints) A Boolean value that determines whether the view’s autoresizing mask is translated into Auto Layout constraints.
+- [translatesAutoresizingMaskIntoConstraints](/documentation/uikit/uiview/translatesautoresizingmaskintoconstraints) A Boolean value that determines whether the view’s autoresizing mask converts to Auto Layout constraints.
 
 ## Accessing insets and layout guides
 
@@ -514,6 +532,11 @@ Animations are another way to make visible changes to a view without requiring y
 - [performWithoutAnimation(_:)](/documentation/uikit/uiview/performwithoutanimation(_:)) Disables a view transition animation.
 - [modifyAnimations(withRepeatCount:autoreverses:animations:)](/documentation/uikit/uiview/modifyanimations(withrepeatcount:autoreverses:animations:)) Repeats the specified animations a specific number of times, optionally running the animation forward and backward.
 
+## Sensor coordinate orientation
+
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
+
 ## Constants
 
 - [UIView.AnimationCurve](/documentation/uikit/uiview/animationcurve) Specifies the supported animation curves.
@@ -537,6 +560,10 @@ Animations are another way to make visible changes to a view without requiring y
 
 - [init()](/documentation/uikit/uiview/init())
 
+## Instance Properties
+
+- [appEntityUIElementProvider](/documentation/uikit/uiview/appentityuielementprovider) return AppEntityUIElement( identifier: EntityIdentifier( for: PhotoModel.self, identifier: photo.id ), bounds: photo.frame, state: State(isSelected: photo.isSelected) ) } } } }
+
 ## Instance Methods
 
 - [setNeedsUpdateProperties()](/documentation/uikit/uiview/setneedsupdateproperties()) Call to manually request a properties update for the view. Multiple requests may be coalesced into a single update alongside the next layout pass.
@@ -546,6 +573,10 @@ Animations are another way to make visible changes to a view without requiring y
 ## Enumerations
 
 - [UIView.Invalidations](/documentation/uikit/uiview/invalidations) Changes that cause an aspect of a view to be invalid and require an update.
+
+## Default Implementations
+
+- [AppEntityAnnotatable Implementations](/documentation/uikit/uiview/appentityannotatable-implementations)
 
 ## View fundamentals
 

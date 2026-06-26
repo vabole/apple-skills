@@ -4,7 +4,7 @@ description: Presents a confirmation dialog when a given condition is true, usin
 source: https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:).json
-timestamp: 2026-04-14T13:14:37.780Z
+timestamp: 2026-06-26T06:39:36.627Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:37.780Z
 > Presents a confirmation dialog when a given condition is true, using a text view for the title.
 
 ```swift
-nonisolated func confirmationDialog<A>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ViewBuilder actions: () -> A) -> some View where A : View
+nonisolated func confirmationDialog<A>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A) -> some View where A : View
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ The visibility of the dialog’s title. The default value is [Visibility.automat
 
 **actions**
 
-A view builder returning the dialog’s actions.
+A [ContentBuilder](/documentation/swiftui/contentbuilder) returning the dialog’s actions.
 
 ## Discussion
 

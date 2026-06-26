@@ -4,7 +4,7 @@ description: A view that arranges its children in a line that grows vertically, 
 source: https://developer.apple.com/documentation/swiftui/lazyvstack
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/lazyvstack.json
-timestamp: 2026-04-14T13:14:40.332Z
+timestamp: 2026-06-26T06:39:36.678Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:40.332Z
 > A view that arranges its children in a line that grows vertically, creating items only as needed.
 
 ```swift
-struct LazyVStack<Content> where Content : View
+nonisolated struct LazyVStack<Content> where Content : View
 ```
 
 ## Overview

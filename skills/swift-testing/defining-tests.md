@@ -4,7 +4,7 @@ description: Define a test function to validate that code is working correctly.
 source: https://developer.apple.com/documentation/testing/definingtests
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/testing/definingtests.json
-timestamp: 2026-04-14T13:14:33.368Z
+timestamp: 2026-06-26T06:39:36.534Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -63,7 +63,7 @@ As with other Swift functions, test functions can be marked `async` and `throws`
 
 ### Limit the availability of a test
 
-If a test function can only run on newer versions of an operating system or of the Swift language, use the `@available` attribute when declaring it. Use the `message` argument of the `@available` attribute to specify a message to log if a test is unable to run due to limited availability:
+If a test function can only run on newer versions of an operating system or of the Swift language, use the `@available` attribute when declaring it. When a test can’t run due to limited availability, the testing library reports it as skipped. Use the `message` argument of the `@available` attribute to include a message explaining why the test is unable to run:
 
 ```swift
 @available(macOS 11.0, *)

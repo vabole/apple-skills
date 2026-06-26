@@ -4,7 +4,7 @@ description: An object that manages image data in your app.
 source: https://developer.apple.com/documentation/uikit/uiimage
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiimage.json
-timestamp: 2026-05-10T06:22:50.612Z
+timestamp: 2026-06-26T06:39:36.970Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -109,6 +109,7 @@ Image objects don’t provide direct access to their underlying image data. Howe
 
 ## Conforms To
 
+- [AttachableAsImage](/documentation/Testing/AttachableAsImage)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [Copyable](/documentation/Swift/Copyable)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
@@ -124,7 +125,6 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [NSSecureCoding](/documentation/Foundation/NSSecureCoding)
 - [Sendable](/documentation/Swift/Sendable)
 - [SendableMetatype](/documentation/Swift/SendableMetatype)
-- [Testing.AttachableAsImage](/doc://com.apple.uikit/7Testing17AttachableAsImageP)
 - [UIAccessibilityIdentification](/documentation/uikit/uiaccessibilityidentification)
 - [UIItemProviderPresentationSizeProviding](/documentation/uikit/uiitemproviderpresentationsizeproviding)
 

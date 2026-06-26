@@ -4,7 +4,7 @@ description: A general query that returns a snapshot of all the matching samples
 source: https://developer.apple.com/documentation/healthkit/hksamplequery
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hksamplequery.json
-timestamp: 2026-04-14T13:14:12.124Z
+timestamp: 2026-06-26T06:39:36.053Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)
@@ -29,7 +29,7 @@ The sample query returns sample objects that match the provided type and predica
 
 Sample queries are immutable: The query’s properties are set when the query is first created, and they can’t change.
 
-> **Note:** Like many HealthKit classes, the [HKSampleQuery](/documentation/healthkit/hksamplequery) class should not be subclassed.
+> **Note:** As with many HealthKit classes, don’t subclass the [HKSampleQuery](/documentation/healthkit/hksamplequery) class.
 
 ## Inherits From
 

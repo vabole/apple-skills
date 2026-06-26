@@ -4,7 +4,7 @@ description: A view that allows the scrolling and zooming of its contained views
 source: https://developer.apple.com/documentation/uikit/uiscrollview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiscrollview.json
-timestamp: 2026-04-14T13:14:52.713Z
+timestamp: 2026-06-26T06:39:37.072Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -52,6 +52,8 @@ If you assign a value to this view’s [restorationIdentifier](/documentation/ui
 ## Conforms To
 
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
 - [CustomStringConvertible](/documentation/Swift/CustomStringConvertible)

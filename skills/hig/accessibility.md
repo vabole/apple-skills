@@ -4,7 +4,7 @@ description: Accessible user interfaces empower everyone to have a great experie
 source: https://developer.apple.com/design/human-interface-guidelines/accessibility
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/accessibility.json
-timestamp: 2026-04-14T13:14:12.553Z
+timestamp: 2026-06-26T06:39:36.064Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -240,9 +240,9 @@ For additional guidance, see [Create accessible spatial experiences](https://dev
 
 #### Videos
 
+- [Refine accessibility for custom controls](https://developer.apple.com/videos/play/wwdc2026/220) - Unlock the full potential of your app’s interactive elements by making them accessible to everyone. We’ll break down how people understand and use controls with VoiceOver and other assistive technologies, exploring a variety of input methods like actions, the passthrough gesture, and direct touch. Join us for an in-depth exploration of several example controls as we refine and elevate the accessibility experience in each one.
 - [Principles of inclusive app design](https://developer.apple.com/videos/play/wwdc2025/316) - Discover how understanding disability can help you create better apps for everyone. Find out how to make your apps more inclusive by supporting multiple types of interaction, providing customization, and adopting accessibility APIs.
 - [Evaluate your app for Accessibility Nutrition Labels](https://developer.apple.com/videos/play/wwdc2025/224) - Use Accessibility Nutrition Labels on your App Store product page to highlight the accessibility features supported by your app. You’ll learn how to evaluate your app’s accessibility features — such as VoiceOver, Larger Text, Captions, and more — and choose accurate and informative Accessibility Nutrition Labels. You’ll also find out how to approach accessibility throughout the design phase.
-- [Catch up on accessibility in SwiftUI](https://developer.apple.com/videos/play/wwdc2024/10073) - SwiftUI makes it easy to build amazing experiences that are accessible to everyone. We’ll discover how assistive technologies understand and navigate your app through the rich accessibility elements provided by SwiftUI. We’ll also discuss how you can further customize these experiences by providing more information about your app’s content and interactions by using accessibility modifiers.
 
 ## Change log
 

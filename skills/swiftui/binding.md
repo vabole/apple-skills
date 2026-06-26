@@ -4,7 +4,7 @@ description: A property wrapper type that can read and write a value owned by a 
 source: https://developer.apple.com/documentation/swiftui/binding
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/binding.json
-timestamp: 2026-04-14T13:14:36.661Z
+timestamp: 2026-06-26T06:39:36.598Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -106,6 +106,9 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 ## Creating and sharing view state
 
 - [Managing user interface state](/documentation/swiftui/managing-user-interface-state) Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
+- [State()](/documentation/swiftui/state()) Creates a property that can read and write a value managed by SwiftUI.
+- [State(initialValue:)](/documentation/swiftui/state(initialvalue:)) Creates a property with an initial value that can read and write a value managed by SwiftUI.
+- [State(wrappedValue:)](/documentation/swiftui/state(wrappedvalue:)) Creates a property with a wrapped value that can read and write a value managed by SwiftUI.
 - [State](/documentation/swiftui/state) A property wrapper type that can read and write a value managed by SwiftUI.
 - [Bindable](/documentation/swiftui/bindable) A property wrapper type that supports creating bindings to the mutable properties of observable objects.
 

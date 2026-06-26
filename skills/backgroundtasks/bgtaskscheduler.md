@@ -4,7 +4,7 @@ description: A class for scheduling tasks that add background support to your ap
 source: https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler.json
-timestamp: 2026-04-14T13:14:09.366Z
+timestamp: 2026-06-26T06:39:35.835Z
 ---
 
 **Navigation:** [BackgroundTasks](/documentation/backgroundtasks)
@@ -68,6 +68,10 @@ Background tasks give your app a way to run code even when the app is suspended:
 - [BGTaskScheduler.Error](/documentation/backgroundtasks/bgtaskscheduler/error) The Errors for the `BGTaskSchedulerError` domain.
 - [BGTaskScheduler.Error.Code](/documentation/backgroundtasks/bgtaskscheduler/error/code) An enumeration of the task scheduling errors.
 - [errorDomain](/documentation/backgroundtasks/bgtaskscheduler/errordomain) The background tasks error domain as a string.
+
+## Instance Methods
+
+- [submitTaskRequest(_:completionHandler:)](/documentation/backgroundtasks/bgtaskscheduler/submittaskrequest(_:completionhandler:)) Submits a background task request to be scheduled with a completion handler.
 
 ## Essentials
 

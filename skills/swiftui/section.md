@@ -4,7 +4,7 @@ description: A container view that you can use to add hierarchy within certain v
 source: https://developer.apple.com/documentation/swiftui/section
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/section.json
-timestamp: 2026-04-14T13:14:42.974Z
+timestamp: 2026-06-26T06:39:36.782Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -52,7 +52,7 @@ Create sections that expand and collapse by using an initializer that accepts an
 ## Controlling collapsibility
 
 - [init(_:isExpanded:content:)](/documentation/swiftui/section/init(_:isexpanded:content:)) Creates a section with the provided section content.
-- [init(isExpanded:content:header:)](/documentation/swiftui/section/init(isexpanded:content:header:)) Creates a section with a header, the provided section content, and a binding representing the section’s expansion state.
+- [init(isExpanded:content:header:)](/documentation/swiftui/section/init(isexpanded:content:header:)) Creates a section with the provided section content.
 
 ## Deprecated symbols
 

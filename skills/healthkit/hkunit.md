@@ -4,7 +4,7 @@ description: A class for managing the units of measure within HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkunit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkunit.json
-timestamp: 2026-05-10T06:22:47.109Z
+timestamp: 2026-06-26T06:39:36.058Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)
@@ -31,7 +31,7 @@ You use units when working with HealthKit quantities. Quantities store both the 
 
 ### Using Units
 
-Like many HealthKit classes, the `HKUnit` class is not extendable and should not be subclassed.
+As with many HealthKit classes, don’t subclass the [HKUnit](/documentation/healthkit/hkunit) class.
 
 The `HKUnit` class is implemented using a facade design pattern. It uses custom subclasses to represent instances of the different unit types. For example, the [second()](/documentation/healthkit/hkunit/second()) convenience method actually returns an instance of the private `HKTimeUnit` subclass.
 

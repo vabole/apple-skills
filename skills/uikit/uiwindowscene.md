@@ -4,7 +4,7 @@ description: A scene that manages one or more windows for your app.
 source: https://developer.apple.com/documentation/uikit/uiwindowscene
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiwindowscene.json
-timestamp: 2026-04-14T13:14:55.057Z
+timestamp: 2026-06-26T06:39:37.125Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -134,6 +134,15 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 
 - [coordinateSpace](/documentation/uikit/uiwindowscene/coordinatespace) The coordinate space occupied by the scene.
 - [interfaceOrientation](/documentation/uikit/uiwindowscene/interfaceorientation) The orientation to use when displaying content in your windows.
+
+## Instance Properties
+
+- [closureConfirmation](/documentation/uikit/uiwindowscene/closureconfirmation) A configuration describing a confirmation dialog to be shown when a user action will result in destruction of the scene session and disconnection of the scene.
+
+## Instance Methods
+
+- [displayLink(action:)](/documentation/uikit/uiwindowscene/displaylink(action:))
+- [displayLink(target:selector:)](/documentation/uikit/uiwindowscene/displaylink(target:selector:)) Creates a display link targeting the display associated with this scene.
 
 ## Window scenes
 

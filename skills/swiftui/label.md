@@ -4,7 +4,7 @@ description: A standard label for user interface items, consisting of an icon wi
 source: https://developer.apple.com/documentation/swiftui/label
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/label.json
-timestamp: 2026-04-14T13:14:39.924Z
+timestamp: 2026-06-26T06:39:36.670Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:39.924Z
 > A standard label for user interface items, consisting of an icon with a title.
 
 ```swift
-struct Label<Title, Icon> where Title : View, Icon : View
+nonisolated struct Label<Title, Icon> where Title : View, Icon : View
 ```
 
 ## Overview

@@ -4,7 +4,7 @@ description: A control that displays an editable text interface.
 source: https://developer.apple.com/documentation/swiftui/textfield
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/textfield.json
-timestamp: 2026-04-14T13:14:44.546Z
+timestamp: 2026-06-26T06:39:36.838Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:44.546Z
 > A control that displays an editable text interface.
 
 ```swift
-struct TextField<Label> where Label : View
+nonisolated struct TextField<Label> where Label : View
 ```
 
 ## Overview
@@ -77,7 +77,7 @@ var body: some View {
 
 You can set an explicit prompt on the text field to guide users on what text they should provide. Each text field style determines where and when the text field uses a prompt and label. For example, a form on macOS always places the label at the leading edge of the field and uses a prompt, when available, as placeholder text within the field itself. In the same context on iOS, the text field uses either the prompt or label as placeholder text, depending on whether the initializer provided a prompt.
 
-The following example shows a [Form](/documentation/swiftui/form) with two text fields, each of which provides a prompt to indicate that the field is required, and a view builder to provide a label:
+The following example shows a [Form](/documentation/swiftui/form) with two text fields, each of which provides a prompt to indicate that the field is required, and a content builder to provide a label:
 
 ```swift
 Form {
@@ -140,10 +140,10 @@ var body: some View {
 ## Creating a text field with a value
 
 - [init(_:value:format:prompt:)](/documentation/swiftui/textfield/init(_:value:format:prompt:)) Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
-- [init(value:format:prompt:label:)](/documentation/swiftui/textfield/init(value:format:prompt:label:)) Creates a text field that applies a format style to a bound value, with a label generated from a view builder.
+- [init(value:format:prompt:label:)](/documentation/swiftui/textfield/init(value:format:prompt:label:)) Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
 - [init(_:value:formatter:)](/documentation/swiftui/textfield/init(_:value:formatter:)) Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:prompt:)](/documentation/swiftui/textfield/init(_:value:formatter:prompt:)) Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
-- [init(value:formatter:prompt:label:)](/documentation/swiftui/textfield/init(value:formatter:prompt:label:)) Creates a text field that applies a formatter to a bound optional value, with a label generated from a view builder.
+- [init(value:formatter:prompt:label:)](/documentation/swiftui/textfield/init(value:formatter:prompt:label:)) Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 
 ## Deprecated initializers
 

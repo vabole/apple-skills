@@ -4,7 +4,7 @@ description: A view type that supports immediate mode drawing.
 source: https://developer.apple.com/documentation/swiftui/canvas
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/canvas.json
-timestamp: 2026-05-13T20:40:05.649Z
+timestamp: 2026-06-26T06:39:36.607Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-05-13T20:40:05.649Z
 > A view type that supports immediate mode drawing.
 
 ```swift
-struct Canvas<Symbols> where Symbols : View
+nonisolated struct Canvas<Symbols> where Symbols : View
 ```
 
 ## Overview

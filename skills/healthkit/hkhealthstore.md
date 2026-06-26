@@ -4,7 +4,7 @@ description: The access point for all data managed by HealthKit.
 source: https://developer.apple.com/documentation/healthkit/hkhealthstore
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/healthkit/hkhealthstore.json
-timestamp: 2026-04-14T13:14:11.093Z
+timestamp: 2026-06-26T06:39:36.033Z
 ---
 
 **Navigation:** [HealthKit](/documentation/healthkit)
@@ -23,7 +23,7 @@ class HKHealthStore
 
 ## Overview
 
-Use a [HKHealthStore](/documentation/healthkit/hkhealthstore) object to request permission to share or read HealthKit data. After you have permission, you can use the HealthKit store to save new samples to the store, or to manage the samples that your app saved. Additionally, you can use the HealthKit store to start, stop, and manage queries.
+Use a [HKHealthStore](/documentation/healthkit/hkhealthstore) object to request permission to share or read HealthKit data. People can grant your app full access to a data type, limited access restricted to a recent window of data, or no access at all. After requesting authorization, you can check the scope of your read access for specific data types before making queries. You can also use the HealthKit store to save new samples to the store, manage the samples that your app saves, and start, stop, and manage queries.
 
 For more information, see [Setting up HealthKit](/documentation/healthkit/setting-up-healthkit).
 
@@ -55,6 +55,8 @@ For more information, see [Setting up HealthKit](/documentation/healthkit/settin
 - [requestPerObjectReadAuthorization(for:predicate:completion:)](/documentation/healthkit/hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:)) Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
 - [handleAuthorizationForExtension(completion:)](/documentation/healthkit/hkhealthstore/handleauthorizationforextension(completion:)) Requests permission to save and read the data types specified by an extension.
 - [authorizationViewControllerPresenter](/documentation/healthkit/hkhealthstore/authorizationviewcontrollerpresenter) The view controller that presents HealthKit authorization sheets.
+- [getEarliestAuthorizedSampleDate(for:completion:)](/documentation/healthkit/hkhealthstore/getearliestauthorizedsampledate(for:completion:)) Returns the earliest date that the person permits your app to read samples for the given data types.
+- [earliestPermittedSampleDate()](/documentation/healthkit/hkhealthstore/earliestpermittedsampledate()) Returns the earliest date that the framework permits your app to save or read samples.
 
 ## Querying HealthKit data
 
@@ -75,13 +77,13 @@ For more information, see [Setting up HealthKit](/documentation/healthkit/settin
 - [delete(_:withCompletion:)](/documentation/healthkit/hkhealthstore/delete(_:withcompletion:)-78l1m) Deletes the specified object from the HealthKit store.
 - [delete(_:withCompletion:)](/documentation/healthkit/hkhealthstore/delete(_:withcompletion:)-17hzm) Deletes the specified objects from the HealthKit store.
 - [deleteObjects(of:predicate:withCompletion:)](/documentation/healthkit/hkhealthstore/deleteobjects(of:predicate:withcompletion:)) Deletes objects saved by this application that match the provided type and predicate.
-- [earliestPermittedSampleDate()](/documentation/healthkit/hkhealthstore/earliestpermittedsampledate()) Returns the earliest date permitted for samples.
 - [save(_:withCompletion:)](/documentation/healthkit/hkhealthstore/save(_:withcompletion:)-6fmtg) Saves the provided object to the HealthKit store.
 - [save(_:withCompletion:)](/documentation/healthkit/hkhealthstore/save(_:withcompletion:)-47iwb) Saves an array of objects to the HealthKit store.
 
 ## Accessing the preferred units
 
 - [preferredUnits(for:completion:)](/documentation/healthkit/hkhealthstore/preferredunits(for:completion:)) Returns the user’s preferred units for the given quantity types.
+- [preferredWorkoutZoneConfiguration(for:)](/documentation/healthkit/hkhealthstore/preferredworkoutzoneconfiguration(for:)) Returns someone’s preferred zone configuration for the specified quantity type.
 - [HKUserPreferencesDidChange](/documentation/Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange) Notifies observers whenever the user changes his or her preferred units.
 
 ## Managing background delivery

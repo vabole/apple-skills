@@ -4,7 +4,7 @@ description: The editable content for a notification.
 source: https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent.json
-timestamp: 2026-04-14T13:14:55.860Z
+timestamp: 2026-06-26T06:39:37.142Z
 ---
 
 **Navigation:** [UserNotifications](/documentation/usernotifications)
@@ -123,6 +123,10 @@ Localize the strings you display in a notification alert for the current user. A
 - [categoryIdentifier](/documentation/usernotifications/unmutablenotificationcontent/categoryidentifier) The identifier of the notification’s category.
 - [summaryArgument](/documentation/usernotifications/unmutablenotificationcontent/summaryargument) The text the system adds to the notification summary to provide additional context.
 - [summaryArgumentCount](/documentation/usernotifications/unmutablenotificationcontent/summaryargumentcount) The number the system adds to the notification summary when the notification represents multiple items.
+
+## Instance Properties
+
+- [appEntityIdentifiers](/documentation/usernotifications/unmutablenotificationcontent/appentityidentifiers)
 
 ## Notification content
 

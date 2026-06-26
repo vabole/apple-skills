@@ -4,7 +4,7 @@ description: A view that controls a navigation presentation.
 source: https://developer.apple.com/documentation/swiftui/navigationlink
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/navigationlink.json
-timestamp: 2026-04-14T13:14:41.203Z
+timestamp: 2026-06-26T06:39:36.696Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:41.203Z
 > A view that controls a navigation presentation.
 
 ```swift
-struct NavigationLink<Label, Destination> where Label : View, Destination : View
+nonisolated struct NavigationLink<Label, Destination> where Label : View, Destination : View
 ```
 
 ## Overview

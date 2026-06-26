@@ -4,7 +4,7 @@ description: Apple's Human Interface Guidelines - Complete table of contents
 source: https://developer.apple.com/design/human-interface-guidelines/
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/design--human-interface-guidelines
-timestamp: 2026-04-14T13:14:14.613Z
+timestamp: 2026-06-26T06:39:36.122Z
 ---
 
 # Human Interface Guidelines
@@ -15,6 +15,7 @@ timestamp: 2026-04-14T13:14:14.613Z
 
 ### Getting started
 
+- [Design principles](/design/human-interface-guidelines/design-principles)
 - [Designing for iOS](/design/human-interface-guidelines/designing-for-ios)
 - [Designing for iPadOS](/design/human-interface-guidelines/designing-for-ipados)
 - [Designing for macOS](/design/human-interface-guidelines/designing-for-macos)
@@ -138,6 +139,7 @@ timestamp: 2026-04-14T13:14:14.613Z
   - [Controls](/design/human-interface-guidelines/controls)
   - [Live Activities](/design/human-interface-guidelines/live-activities)
   - [Notifications](/design/human-interface-guidelines/notifications)
+  - [Snippets](/design/human-interface-guidelines/snippets)
   - [Status bars](/design/human-interface-guidelines/status-bars)
   - [Top Shelf](/design/human-interface-guidelines/top-shelf)
   - [Watch faces](/design/human-interface-guidelines/watch-faces)

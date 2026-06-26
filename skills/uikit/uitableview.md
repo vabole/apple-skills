@@ -4,7 +4,7 @@ description: A view that presents data using rows in a single column.
 source: https://developer.apple.com/documentation/uikit/uitableview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uitableview.json
-timestamp: 2026-04-14T13:14:53.908Z
+timestamp: 2026-06-26T06:39:37.098Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -56,6 +56,8 @@ For information about how to save and restore your app’s state information, se
 ## Conforms To
 
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [Copyable](/documentation/Swift/Copyable)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
@@ -270,6 +272,10 @@ For information about how to save and restore your app’s state information, se
 ## Structures
 
 - [UITableView.SelectionDidChangeMessage](/documentation/uikit/uitableview/selectiondidchangemessage)
+
+## Instance Properties
+
+- [appIntentsDataSource](/documentation/uikit/uitableview/appintentsdatasource) The object acting as the table view’s data source for app entity identifiers that make a cell’s content discoverable by Apple Intelligence and Siri.
 
 ---
 

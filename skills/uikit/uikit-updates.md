@@ -4,7 +4,7 @@ description: Learn about important changes to UIKit.
 source: https://developer.apple.com/documentation/updates/uikit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/updates/uikit.json
-timestamp: 2026-04-14T13:14:51.982Z
+timestamp: 2026-06-26T06:39:37.055Z
 ---
 
 **Navigation:** [Updates](/documentation/updates)
@@ -18,6 +18,30 @@ timestamp: 2026-04-14T13:14:51.982Z
 ## Overview
 
 Browse notable changes in [UIKit](/documentation/UIKit).
+
+## June 2026
+
+### General
+
+- Align sensor data from Core Location and Core Motion with your app’s UI orientation by setting a [UIView](/documentation/UIKit/UIView) as the body of a [CLLocationManager](/documentation/CoreLocation/CLLocationManager) or [CMMotionManager](/documentation/CoreMotion/CMMotionManager) instance.
+- Use [UICollectionViewCompositionalLayoutSectionProvider](/documentation/UIKit/UICollectionViewCompositionalLayoutSectionProvider) closures as part of automatic observation tracking to automatically invalidate and update compositional layouts when observable objects change.
+- Use [UIRefreshControl](/documentation/UIKit/UIRefreshControl) and [UIStepper](/documentation/UIKit/UIStepper) in Mac apps built with Mac Catalyst. These controls are now fully supported in the Mac idiom.
+
+### App life cycle
+
+- Adopt the UIKit scene-based life cycle using the guidance in [Transitioning to the UIKit scene-based life cycle](/documentation/UIKit/transitioning-to-the-uikit-scene-based-life-cycle). Starting in iOS 27, apps built with the latest SDK must use the scene-based life cycle or they fail to launch.
+
+### Drag and drop
+
+- Control drag initiation timing in gesture-rich views by configuring [UIDragInteraction](/documentation/UIKit/UIDragInteraction). Use [allowsPointerDragBeforeLiftDelay](/documentation/UIKit/UIDragInteraction/allowsPointerDragBeforeLiftDelay) to independently control when pointer-initiated drags begin.
+
+### Text views
+
+- Override viewport layout methods directly in a [UITextView](/documentation/UIKit/UITextView) subclass by conforming to [NSTextViewportLayoutControllerDelegate](/documentation/UIKit/NSTextViewportLayoutControllerDelegate).
+- Register a [UITextAttachmentViewProviderReusePolicy](/documentation/UIKit/UITextAttachmentViewProviderReusePolicy) on `UITextView` to retain attachment views during scrolling and editing, preventing flicker and preserving view state.
+- Use [NSTextTable](/documentation/UIKit/NSTextTable), [NSTextBlock](/documentation/UIKit/NSTextBlock), and [NSTextTableBlock](/documentation/UIKit/NSTextTableBlock) to represent table structures in attributed strings.
+- Access paragraph text blocks using [textBlocks](/documentation/UIKit/NSParagraphStyle/textBlocks).
+- Use [NSTextViewportRenderingSurface](/documentation/UIKit/NSTextViewportRenderingSurface) to render text in custom views and layers, and [NSTextViewportRenderingSurfaceKey](/documentation/UIKit/NSTextViewportRenderingSurfaceKey) to identify them for caching.
 
 ## June 2025
 
@@ -108,7 +132,7 @@ Browse notable changes in [UIKit](/documentation/UIKit).
 - Display your menu as a palette with [displayAsPalette](/documentation/UIKit/UIMenu/Options-swift.struct/displayAsPalette) for it to appear as a row of menu elements for choosing from a collection of items.
 - Take advantage of the [UIStatusBarStyle.default](/documentation/UIKit/UIStatusBarStyle/default) status bar style, which now automatically chooses a light or dark appearance that maintains contrast with the content underneath it.
 
-## Technology updates
+## Technology and frameworks
 
 - [Accelerate updates](/documentation/updates/accelerate) Learn about important changes to Accelerate.
 - [Accessibility updates](/documentation/updates/accessibility) Learn about important changes to Accessibility.

@@ -4,7 +4,7 @@ description: Information that represents the customer’s purchase of a product 
 source: https://developer.apple.com/documentation/storekit/transaction
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/storekit/transaction.json
-timestamp: 2026-05-10T06:22:48.904Z
+timestamp: 2026-06-26T06:39:36.497Z
 ---
 
 **Navigation:** [StoreKit](/documentation/storekit)
@@ -152,7 +152,12 @@ All In-App Purchases that customers make are equally available to your app in th
 ## Instance Properties
 
 - [billingPlanType](/documentation/storekit/transaction/billingplantype)
+- [bundleOriginalTransactionID](/documentation/storekit/transaction/bundleoriginaltransactionid)
+- [bundleProductID](/documentation/storekit/transaction/bundleproductid) Identifies the bundle product the transaction is for. If this transaction is created as a result of a subscription bundle purchase or renewal, this field will be populated with the product ID of the bundle.
+- [bundleSubscriptionGroupID](/documentation/storekit/transaction/bundlesubscriptiongroupid) Identifies the subscription bundle group the transaction is for.
+- [bundleTransactionID](/documentation/storekit/transaction/bundletransactionid)
 - [commitmentInfo](/documentation/storekit/transaction/commitmentinfo-swift.property)
+- [previousOriginalTransactionID](/documentation/storekit/transaction/previousoriginaltransactionid) The original transaction ID of the subscription this one replaced when a customer switched between a standalone auto-renewable subscription and a subscription bundle (in either direction).
 - [revocationPercentage](/documentation/storekit/transaction/revocationpercentage) The percentage of the transaction amount that the App Store has refunded or revoked, expressed as a decimal.
 - [revocationType](/documentation/storekit/transaction/revocationtype-swift.property) The type of refund or revocation that applies to the transaction.
 - [revocationTypeStringRepresentation](/documentation/storekit/transaction/revocationtypestringrepresentation) The string representation of the [revocationType](/documentation/storekit/transaction/revocationtype-swift.property), or `nil` if the transaction was not revoked.

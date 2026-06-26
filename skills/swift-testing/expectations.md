@@ -4,7 +4,7 @@ description: Check for expected values, outcomes, and asynchronous events in tes
 source: https://developer.apple.com/documentation/testing/expectations
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/testing/expectations.json
-timestamp: 2026-04-14T13:14:33.580Z
+timestamp: 2026-06-26T06:39:36.538Z
 ---
 
 **Navigation:** [Testing](/documentation/testing)
@@ -29,7 +29,7 @@ To validate that your code produces an expected value, use [expect(_:_:sourceLoc
 @Test func calculatingOrderTotal() {
   let calculator = OrderCalculator()
   #expect(calculator.total(of: [3, 3]) == 7)
-  // Prints "Expectation failed: (calculator.total(of: [3, 3]) → 6) == 7"
+  // Prints "Expectation failed: calculator.total(of: [3, 3]) == 7"
 }
 ```
 
@@ -80,7 +80,6 @@ Your test keeps running after [expect(_:_:sourceLocation:)](/documentation/testi
 
 - [Expectation](/documentation/testing/expectation) A type describing an expectation that has been evaluated.
 - [ExpectationFailedError](/documentation/testing/expectationfailederror) A type describing an error thrown when an expectation fails during evaluation.
-- [CustomTestStringConvertible](/documentation/testing/customteststringconvertible) A protocol describing types with a custom string representation when presented as part of a test’s output.
 
 ## Representing source locations
 

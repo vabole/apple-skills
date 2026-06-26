@@ -4,7 +4,7 @@ description: A container view controller that manages a multiselection interface
 source: https://developer.apple.com/documentation/uikit/uitabbarcontroller
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uitabbarcontroller.json
-timestamp: 2026-04-14T13:14:53.667Z
+timestamp: 2026-06-26T06:39:37.091Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -153,6 +153,15 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
 - [selectedTab](/documentation/uikit/uitabbarcontroller/selectedtab) The currently selected tab, which can be a root tab or any of their descendants.
 - [selectedViewController](/documentation/uikit/uitabbarcontroller/selectedviewcontroller) The view controller associated with the currently selected tab item.
 - [selectedIndex](/documentation/uikit/uitabbarcontroller/selectedindex) The index of the view controller associated with the currently selected tab item.
+
+## Instance Properties
+
+- [prominentTabIdentifier](/documentation/uikit/uitabbarcontroller/prominenttabidentifier) The identifier of the tab that should be displayed as prominent. Where supported, the specified tab receives enhanced visual emphasis in the tab bar. If this property is nil, and there is a `UISearchTab` that could become prominent (when `automaticallyActivatesSearch = true`), then the search tab will receive the prominent treatment by default.
+
+## Instance Methods
+
+- [performBatchUpdates(_:)](/documentation/uikit/uitabbarcontroller/performbatchupdates(_:)) Animates multiple tab changes as a single update.
+- [setProminentTabIdentifier(_:animated:)](/documentation/uikit/uitabbarcontroller/setprominenttabidentifier(_:animated:)) Sets the prominent tab identifier with an option to animate the change.
 
 ## Container view controllers
 

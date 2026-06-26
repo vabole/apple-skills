@@ -4,7 +4,7 @@ description: A view that adapts to the available space by providing the first ch
 source: https://developer.apple.com/documentation/swiftui/viewthatfits
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/viewthatfits.json
-timestamp: 2026-04-14T13:14:45.653Z
+timestamp: 2026-06-26T06:39:36.852Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:45.653Z
 > A view that adapts to the available space by providing the first child view that fits.
 
 ```swift
-@frozen struct ViewThatFits<Content> where Content : View
+@frozen nonisolated struct ViewThatFits<Content> where Content : View
 ```
 
 ## Overview
@@ -73,7 +73,7 @@ VStack {
 
 ## Creating a view that fits
 
-- [init(in:content:)](/documentation/swiftui/viewthatfits/init(in:content:)) Produces a view constrained in the given axes from one of several alternatives provided by a view builder.
+- [init(in:content:)](/documentation/swiftui/viewthatfits/init(in:content:)) Produces a view constrained in the given axes from one of several alternatives provided by a content builder.
 
 ---
 

@@ -4,7 +4,7 @@ description: A control that executes your custom code in response to user intera
 source: https://developer.apple.com/documentation/uikit/uibutton
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uibutton.json
-timestamp: 2026-04-14T13:14:49.322Z
+timestamp: 2026-06-26T06:39:36.929Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -144,6 +144,8 @@ For more information about making iOS controls accessible, see the accessibility
 ## Conforms To
 
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [Copyable](/documentation/Swift/Copyable)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)

@@ -4,7 +4,7 @@ description: Presents a sheet when a binding to a Boolean value that you provide
 source: https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/sheet(ispresented:ondismiss:content:).json
-timestamp: 2026-04-14T13:14:42.994Z
+timestamp: 2026-06-26T06:39:36.786Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:42.994Z
 > Presents a sheet when a binding to a Boolean value that you provide is true.
 
 ```swift
-nonisolated func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View where Content : View
+nonisolated func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ContentBuilder content: @escaping () -> Content) -> some View where Content : View
 ```
 
 ## Parameters

@@ -3,7 +3,7 @@ title: Swift Charts
 source: https://developer.apple.com/documentation/charts
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/charts
-timestamp: 2026-05-10T06:22:49.407Z
+timestamp: 2026-06-26T06:39:36.618Z
 ---
 
 **Navigation:** [Charts](/documentation/charts)
@@ -99,8 +99,6 @@ timestamp: 2026-05-10T06:22:49.407Z
 - [ChartContentBuilder](/documentation/charts/chartcontentbuilder)
 ### Building chart content
 
-- [static func buildPartialBlock<T>(first: T) -> T](/documentation/charts/chartcontentbuilder/buildpartialblock(first:))
-- [static func buildPartialBlock(accumulated: some ChartContent, next: some ChartContent) -> some ChartContent](/documentation/charts/chartcontentbuilder/buildpartialblock(accumulated:next:))
 - [static func buildBlock() -> some ChartContent](/documentation/charts/chartcontentbuilder/buildblock())
 ### Building conditionally
 
@@ -748,8 +746,6 @@ timestamp: 2026-05-10T06:22:49.407Z
 - [static func buildExpression<Content>(Content) -> Content](/documentation/charts/axiscontentbuilder/buildexpression(_:))
 - [static func buildIf<T>(T?) -> T?](/documentation/charts/axiscontentbuilder/buildif(_:))
 - [static func buildLimitedAvailability<Content>(Content) -> AnyAxisContent](/documentation/charts/axiscontentbuilder/buildlimitedavailability(_:))
-- [static func buildPartialBlock(accumulated: some AxisContent, next: some AxisContent) -> some AxisContent](/documentation/charts/axiscontentbuilder/buildpartialblock(accumulated:next:))
-- [static func buildPartialBlock<T>(first: T) -> T](/documentation/charts/axiscontentbuilder/buildpartialblock(first:))
 
 ## Axis marks
 
@@ -842,8 +838,6 @@ timestamp: 2026-05-10T06:22:49.407Z
 - [static func buildExpression<Content>(Content) -> Content](/documentation/charts/axismarkbuilder/buildexpression(_:))
 - [static func buildIf<T>(T?) -> T?](/documentation/charts/axismarkbuilder/buildif(_:))
 - [static func buildLimitedAvailability<Content>(Content) -> AnyAxisMark](/documentation/charts/axismarkbuilder/buildlimitedavailability(_:))
-- [static func buildPartialBlock(accumulated: some AxisMark, next: some AxisMark) -> some AxisMark](/documentation/charts/axismarkbuilder/buildpartialblock(accumulated:next:))
-- [static func buildPartialBlock<T>(first: T) -> T](/documentation/charts/axismarkbuilder/buildpartialblock(first:))
 
 ## Annotations
 

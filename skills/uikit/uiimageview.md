@@ -4,7 +4,7 @@ description: A view that displays a single image or a sequence of animated image
 source: https://developer.apple.com/documentation/uikit/uiimageview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiimageview.json
-timestamp: 2026-04-14T13:14:51.667Z
+timestamp: 2026-06-26T06:39:36.976Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -120,6 +120,8 @@ When you assign a value to an image view’s [restorationIdentifier](/documentat
 ## Conforms To
 
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [Copyable](/documentation/Swift/Copyable)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)

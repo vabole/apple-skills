@@ -4,7 +4,7 @@ description: Presents an alert when a given condition is true, using a text view
 source: https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:)
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/alert(_:ispresented:actions:).json
-timestamp: 2026-04-14T13:14:35.739Z
+timestamp: 2026-06-26T06:39:36.581Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:35.739Z
 > Presents an alert when a given condition is true, using a text view for the title.
 
 ```swift
-nonisolated func alert<A>(_ title: Text, isPresented: Binding<Bool>, @ViewBuilder actions: () -> A) -> some View where A : View
+nonisolated func alert<A>(_ title: Text, isPresented: Binding<Bool>, @ContentBuilder actions: () -> A) -> some View where A : View
 ```
 
 ## Parameters
@@ -33,7 +33,7 @@ A binding to a Boolean value that determines whether to present the alert. When 
 
 **actions**
 
-A [ViewBuilder](/documentation/swiftui/viewbuilder) returning the alert’s actions.
+A [ContentBuilder](/documentation/swiftui/contentbuilder) returning the alert’s actions.
 
 ## Discussion
 
@@ -58,7 +58,7 @@ struct Login: View {
 }
 ```
 
-All actions in an alert dismiss the alert after the action runs. The default button is shown with greater prominence.  You can influence the default button by assigning it the [defaultAction](/documentation/swiftui/keyboardshortcut/defaultaction) keyboard shortcut.
+All actions in an alert dismiss the alert after the action runs. The default button is shown with greater prominence. You can influence the default button by assigning it the [defaultAction](/documentation/swiftui/keyboardshortcut/defaultaction) keyboard shortcut.
 
 The system may reorder the buttons based on their role and prominence.
 
@@ -70,9 +70,13 @@ On iOS, tvOS, and watchOS, alerts only support controls with labels that are [Te
 
 - [AlertScene](/documentation/swiftui/alertscene) A scene that renders itself as a standalone alert dialog.
 - [alert(_:isPresented:presenting:actions:)](/documentation/swiftui/view/alert(_:ispresented:presenting:actions:)) Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [alert(_:item:actions:)](/documentation/swiftui/view/alert(_:item:actions:)) Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [alert(error:actions:)](/documentation/swiftui/view/alert(error:actions:)) Presents an alert when an error is present.
 - [alert(isPresented:error:actions:)](/documentation/swiftui/view/alert(ispresented:error:actions:)) Presents an alert when an error is present.
 - [alert(_:isPresented:actions:message:)](/documentation/swiftui/view/alert(_:ispresented:actions:message:)) Presents an alert with a message when a given condition is true using a text view as a title.
 - [alert(_:isPresented:presenting:actions:message:)](/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message:)) Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+- [alert(_:item:actions:message:)](/documentation/swiftui/view/alert(_:item:actions:message:)) Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [alert(error:actions:message:)](/documentation/swiftui/view/alert(error:actions:message:)) Presents an alert with a message when an error is present.
 - [alert(isPresented:error:actions:message:)](/documentation/swiftui/view/alert(ispresented:error:actions:message:)) Presents an alert with a message when an error is present.
 
 ---

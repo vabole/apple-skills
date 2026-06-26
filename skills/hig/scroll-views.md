@@ -4,7 +4,7 @@ description: A scroll view lets people view content that’s larger than the vie
 source: https://developer.apple.com/design/human-interface-guidelines/scroll-views
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/design/human-interface-guidelines/scroll-views.json
-timestamp: 2026-04-14T13:14:19.353Z
+timestamp: 2026-06-26T06:39:36.277Z
 ---
 
 **Navigation:** [Human Interface Guidelines](/design/human-interface-guidelines)
@@ -42,16 +42,19 @@ In all cases, automatically scroll the content only as much as necessary to help
 
 ## Scroll edge effects
 
-In iOS, iPadOS, and macOS, a *scroll edge effect* is a variable blur that provides a transition between a content area and an area with [Liquid Glass](/design/human-interface-guidelines/materials#Liquid-Glass) controls, such as [Toolbars](/design/human-interface-guidelines/toolbars). In most cases, the system applies a scroll edge effect automatically when a pinned element overlaps with scrolling content. If you use custom controls or layouts, the effect might not appear, and you may need to add it manually. For developer guidance, see [ScrollEdgeEffectStyle](/documentation/SwiftUI/ScrollEdgeEffectStyle) and [UIScrollEdgeEffect](/documentation/UIKit/UIScrollEdgeEffect).
+In iOS, iPadOS, and macOS, a *scroll edge effect* provides a visual separation between certain interface elements, such as [Toolbars](/design/human-interface-guidelines/toolbars), and the scrolling content area behind them. If you use custom bars, you might want to add this effect manually if the top layer of your interface needs extra clarity, or adjust its style from automatic to the hard or soft style.
 
-There are two styles of scroll edge effect: soft and hard.
+![A screenshot of the top half of an iPhone app, with a photograph of a palm tree as the background and a top toolbar with a Back button, title label, and Add button. The transition between the toolbar and background uses a hard scroll edge effect, which applies a more opaque blur with a defined edge at the bottom of the bar.](https://docs-assets.developer.apple.com/published/82a59338e82cc9dea4063790f53e2e13/scroll-views-scroll-edge-effect-hard%402x.png)
 
-- Use a [soft](/documentation/SwiftUI/ScrollEdgeEffectStyle/soft) edge effect in most cases, especially in iOS and iPadOS, to provide a subtle transition that works well for toolbars and interactive elements like buttons.
-- Use a [hard](/documentation/SwiftUI/ScrollEdgeEffectStyle/hard) edge effect primarily in macOS for a stronger, more opaque boundary that’s ideal for interactive text, backless controls, or pinned table headers that need extra clarity.
+![A screenshot of the top half of an iPhone app, with a photograph of a palm tree as the background and a top toolbar with a Back button, title label, and Add button. The transition between the toolbar and background uses a soft scroll edge effect, which applies a variable blur that provides a softer fade toward the bottom of the bar.](https://docs-assets.developer.apple.com/published/efdf39bd6f191c814326f8340c85955f/scroll-views-scroll-edge-effect-soft%402x.png)
 
-**Only use a scroll edge effect when a scroll view is adjacent to floating interface elements.** Scroll edge effects aren’t decorative. They don’t block or darken like overlays; they exist to clarify where controls and content meet.
+**Prefer the automatic scroll edge effect style.** Where possible, use the default [automatic](/documentation/SwiftUI/ScrollEdgeEffectStyle/automatic) style of the scroll edge effect. This style provides a more opaque visual separation for top toolbars that contain a large number of controls, text that appears outside of [Liquid Glass](/design/human-interface-guidelines/materials#Liquid-Glass) controls, and pinned table headers. If you use the soft scroll edge effect style instead, thoroughly test your interface to ensure your controls maintain legibility in a variety of contexts.
+
+**Only use a scroll edge effect when a scroll view is behind floating interface elements.** Scroll edge effects aren’t decorative. They don’t block or darken like overlays; they exist to ensure controls stay visually distinct.
 
 **Apply one scroll edge effect per view.** In split view layouts on iPad and Mac, each pane can have its own scroll edge effect; in this case, keep them consistent in height to maintain alignment.
+
+For developer guidance, see [ScrollEdgeEffectStyle](/documentation/SwiftUI/ScrollEdgeEffectStyle), [UIScrollEdgeEffect.Style](/documentation/UIKit/UIScrollEdgeEffect/Style-swift.class), and [NSScrollEdgeEffectStyle](/documentation/AppKit/NSScrollEdgeEffectStyle).
 
 ## Platform considerations
 
@@ -125,6 +128,7 @@ In views that support Look to Scroll, people can scroll using only their eyes. S
 
 | Date | Changes |
 | --- | --- |
+| June 8, 2026 | Updated guidance for scroll edge effects. |
 | March 24, 2026 | Added guidance for Look to Scroll in visionOS. |
 | July 28, 2025 | Added guidance for scroll edge effects. |
 | February 2, 2024 | Added artwork showing the behavior of the visionOS scroll indicator. |

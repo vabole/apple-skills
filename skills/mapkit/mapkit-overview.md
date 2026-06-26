@@ -3,7 +3,7 @@ title: MapKit
 source: https://developer.apple.com/documentation/mapkit
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/index/mapkit
-timestamp: 2026-05-25T06:52:05.030Z
+timestamp: 2026-06-26T06:39:36.450Z
 ---
 
 **Navigation:** [MapKit](/documentation/mapkit)
@@ -1936,6 +1936,19 @@ timestamp: 2026-05-25T06:52:05.030Z
 - [static let kayaking: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/kayaking)
 - [static let surfing: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/surfing)
 - [static let swimming: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/swimming)
+#### Type Properties
+
+- [static let airportTerminal: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/airportterminal)
+- [static let automotiveDealership: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/automotivedealership)
+- [static let commercialVehicleDealership: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/commercialvehicledealership)
+- [static let informationBooth: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/informationbooth)
+- [static let motorbikeDealership: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/motorbikedealership)
+- [static let picnicArea: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/picnicarea)
+- [static let rangerStation: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/rangerstation)
+- [static let restArea: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/restarea)
+- [static let scenicView: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/scenicview)
+- [static let ticketOffice: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/ticketoffice)
+- [static let visitorCenter: MKPointOfInterestCategory](/documentation/mapkit/mkpointofinterestcategory/visitorcenter)
 
 ### Static map snapshots
 

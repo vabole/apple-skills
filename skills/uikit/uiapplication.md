@@ -4,7 +4,7 @@ description: The centralized point of control and coordination for apps running 
 source: https://developer.apple.com/documentation/uikit/uiapplication
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uiapplication.json
-timestamp: 2026-04-14T13:14:48.634Z
+timestamp: 2026-06-26T06:39:36.913Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -232,6 +232,7 @@ Intercepting events is only rarely required and you should avoid it if possible.
 - [Responding to the launch of your app](/documentation/uikit/responding-to-the-launch-of-your-app) Initialize your app’s data structures, prepare your app to run, and respond to any launch-time requests from the system.
 - [UIApplicationDelegate](/documentation/uikit/uiapplicationdelegate) A set of methods to manage shared behaviors for your app.
 - [Scenes](/documentation/uikit/scenes) Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI.
+- [Transitioning to the UIKit scene-based life cycle](/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle) Adopt the scene-based life cycle to replace the app delegate life cycle in UIKit.
 
 ---
 

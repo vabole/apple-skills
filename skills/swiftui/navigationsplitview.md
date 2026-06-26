@@ -4,7 +4,7 @@ description: A view that presents views in two or three columns, where selection
 source: https://developer.apple.com/documentation/swiftui/navigationsplitview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/navigationsplitview.json
-timestamp: 2026-04-14T13:14:41.410Z
+timestamp: 2026-06-26T06:39:36.700Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:41.410Z
 > A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.
 
 ```swift
-struct NavigationSplitView<Sidebar, Content, Detail> where Sidebar : View, Content : View, Detail : View
+nonisolated struct NavigationSplitView<Sidebar, Content, Detail> where Sidebar : View, Content : View, Detail : View
 ```
 
 ## Overview

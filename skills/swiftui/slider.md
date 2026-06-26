@@ -4,7 +4,7 @@ description: A control for selecting a value from a bounded linear range of valu
 source: https://developer.apple.com/documentation/swiftui/slider
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/slider.json
-timestamp: 2026-04-14T13:14:43.277Z
+timestamp: 2026-06-26T06:39:36.791Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:43.277Z
 > A control for selecting a value from a bounded linear range of values.
 
 ```swift
-struct Slider<Label, ValueLabel> where Label : View, ValueLabel : View
+nonisolated struct Slider<Label, ValueLabel> where Label : View, ValueLabel : View
 ```
 
 ## Overview

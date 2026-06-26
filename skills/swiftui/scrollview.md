@@ -4,7 +4,7 @@ description: A scrollable view.
 source: https://developer.apple.com/documentation/swiftui/scrollview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/scrollview.json
-timestamp: 2026-04-14T13:14:42.774Z
+timestamp: 2026-06-26T06:39:36.778Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui)
@@ -18,7 +18,7 @@ timestamp: 2026-04-14T13:14:42.774Z
 > A scrollable view.
 
 ```swift
-struct ScrollView<Content> where Content : View
+nonisolated struct ScrollView<Content> where Content : View
 ```
 
 ## Overview
@@ -45,7 +45,7 @@ var body: some View {
 
 You can influence where a scroll view is initially scrolled by using the [defaultScrollAnchor(_:)](/documentation/swiftui/view/defaultscrollanchor(_:)) view modifier.
 
-Provide a value of `UnitPoint/center`` to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
+Provide a value of [center](/documentation/swiftui/unitpoint/center) to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
 
 ```swift
 ScrollView([.horizontal, .vertical]) {
@@ -54,7 +54,7 @@ ScrollView([.horizontal, .vertical]) {
 .defaultScrollAnchor(.center)
 ```
 
-Or provide an alignment of `UnitPoint/bottom`` to have the scroll view start at the bottom of its content when a scroll view is scrollable in its vertical axes.
+Or provide an alignment of [bottom](/documentation/swiftui/unitpoint/bottom) to have the scroll view start at the bottom of its content when a scroll view is scrollable in its vertical axes.
 
 ```swift
 ScrollView {

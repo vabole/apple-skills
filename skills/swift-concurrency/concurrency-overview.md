@@ -4,7 +4,7 @@ description: Perform asynchronous and parallel operations.
 source: https://developer.apple.com/documentation/swift/concurrency
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swift/concurrency.json
-timestamp: 2026-04-14T13:14:32.475Z
+timestamp: 2026-06-26T06:39:36.519Z
 ---
 
 **Navigation:** [Swift](/documentation/swift)
@@ -44,12 +44,12 @@ timestamp: 2026-04-14T13:14:32.475Z
 ## Continuations
 
 - [CheckedContinuation](/documentation/swift/checkedcontinuation) A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
-- [withCheckedContinuation(isolation:function:_:)](/documentation/swift/withcheckedcontinuation(isolation:function:_:)) Invokes the passed in closure with a checked continuation for the current task.
-- [withCheckedThrowingContinuation(isolation:function:_:)](/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)) Invokes the passed in closure with a checked continuation for the current task.
+- [withCheckedContinuation(isolation:function:_:)](/documentation/swift/withcheckedcontinuation(isolation:function:_:)) Source-compatibility overload; replaced by [withCheckedContinuation(function:_:)](/documentation/swift/withcheckedcontinuation(function:_:)).
+- [withCheckedThrowingContinuation(isolation:function:_:)](/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)) Source-compatibility overload; replaced by `withCheckedThrowingContinuation(function:_:)`.
 - [UnsafeContinuation](/documentation/swift/unsafecontinuation) A mechanism to interface between synchronous and asynchronous code, without correctness checking.
-- [withUnsafeContinuation(isolation:_:)](/documentation/swift/withunsafecontinuation(isolation:_:)) Invokes the passed in closure with a unsafe continuation for the current task.
+- [withUnsafeContinuation(isolation:_:)](/documentation/swift/withunsafecontinuation(isolation:_:)) Source-compatibility overload; replaced by [withUnsafeContinuation(_:)](/documentation/swift/withunsafecontinuation(_:)).
 - [UnsafeThrowingContinuation](/documentation/swift/unsafethrowingcontinuation)
-- [withUnsafeThrowingContinuation(isolation:_:)](/documentation/swift/withunsafethrowingcontinuation(isolation:_:)) Invokes the passed in closure with a unsafe continuation for the current task.
+- [withUnsafeThrowingContinuation(isolation:_:)](/documentation/swift/withunsafethrowingcontinuation(isolation:_:)) Source-compatibility overload; replaced by `withUnsafeThrowingContinuation(_:)`.
 
 ## Actors
 
@@ -58,7 +58,7 @@ timestamp: 2026-04-14T13:14:32.475Z
 - [AnyActor](/documentation/swift/anyactor) Common marker protocol providing a shared “base” for both (local) `Actor` and (potentially remote) `DistributedActor` types.
 - [MainActor](/documentation/swift/mainactor) A singleton actor whose executor is equivalent to the main dispatch queue.
 - [GlobalActor](/documentation/swift/globalactor) A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
-- [SendableMetatype](/documentation/swift/sendablemetatype) A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
+- [SendableMetatype](/documentation/swift/sendablemetatype) A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
 - [ConcurrentValue](/documentation/swift/concurrentvalue)
 - [UnsafeSendable](/documentation/swift/unsafesendable) A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
 - [UnsafeConcurrentValue](/documentation/swift/unsafeconcurrentvalue)

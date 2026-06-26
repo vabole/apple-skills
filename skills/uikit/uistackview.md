@@ -4,7 +4,7 @@ description: A streamlined interface for laying out a collection of views in eit
 source: https://developer.apple.com/documentation/uikit/uistackview
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/uikit/uistackview.json
-timestamp: 2026-04-14T13:14:53.237Z
+timestamp: 2026-06-26T06:39:37.083Z
 ---
 
 **Navigation:** [UIKit](/documentation/uikit)
@@ -195,6 +195,8 @@ Finally, you can define size-class specific values for many of the stack view’
 ## Conforms To
 
 - [CALayerDelegate](/documentation/QuartzCore/CALayerDelegate)
+- [CLBodyIdentifiable](/documentation/CoreLocation/CLBodyIdentifiable)
+- [CMBodyIdentifiable](/documentation/CoreMotion/CMBodyIdentifiable)
 - [CVarArg](/documentation/Swift/CVarArg)
 - [CustomDebugStringConvertible](/documentation/Swift/CustomDebugStringConvertible)
 - [CustomStringConvertible](/documentation/Swift/CustomStringConvertible)

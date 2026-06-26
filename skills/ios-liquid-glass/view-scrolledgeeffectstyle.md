@@ -4,7 +4,7 @@ description: Configures the scroll edge effect style for scroll views within thi
 source: https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectstyle(_:for:)
 source_kind: apple-docc
 source_json: https://developer.apple.com/tutorials/data/documentation/swiftui/view/scrolledgeeffectstyle(_:for:).json
-timestamp: 2026-04-14T13:14:27.224Z
+timestamp: 2026-06-26T06:39:36.413Z
 ---
 
 **Navigation:** [SwiftUI](/documentation/swiftui) › [View](/documentation/swiftui/view)
@@ -39,7 +39,7 @@ ScrollView {
 ## Configuring scroll edge effects
 
 - [scrollEdgeEffectHidden(_:for:)](/documentation/swiftui/view/scrolledgeeffecthidden(_:for:)) Hides any scroll edge effects for scroll views within this hierarchy.
-- [ScrollEdgeEffectStyle](/documentation/swiftui/scrolledgeeffectstyle) A structure that defines the style of pocket a scroll view will have.
+- [ScrollEdgeEffectStyle](/documentation/swiftui/scrolledgeeffectstyle) A structure that specifies blur transitions between scrolling content and an area with controls, such as toolbars.
 - [safeAreaBar(edge:alignment:spacing:content:)](/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:)) Shows the specified content as a custom bar beside the modified view.
 
 ---
